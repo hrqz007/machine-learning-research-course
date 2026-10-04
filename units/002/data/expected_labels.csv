@@ -1,0 +1,11 @@
+event_id,expected_label,reason
+E01,1,confirmed_within_window
+E02,1,confirmed_within_window
+E03,0,complete_window_no_sale
+E04,0,sale_after_window
+E05,1,confirmed_within_window
+E06,0,complete_window_no_sale
+E07,1,confirmed_within_window
+E08,,insufficient_followup
+E09,,record_arrives_after_cutoff
+E10,1,day_30_included

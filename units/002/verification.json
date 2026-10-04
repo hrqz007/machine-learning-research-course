@@ -1,0 +1,164 @@
+{
+  "unit": "002",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 16,
+    "figures": 10
+  },
+  "lab": {
+    "pages": 5
+  },
+  "answers": {
+    "pages": 4,
+    "contains": "exercise solutions, per-event label reasoning, complete data dictionary"
+  },
+  "visual_review": "all final lecture/lab/answer pages rendered and inspected; no clipped text or broken math observed",
+  "code": {
+    "python": "3.12.14",
+    "status": "passed",
+    "script_from_unrelated_cwd": "passed",
+    "repeated_results_identical": true,
+    "boundary_checks": [
+      "day_30_included",
+      "day_31_excluded",
+      "short_followup_is_unknown",
+      "verification_not_yet_available",
+      "delayed_record_changes_knowledge",
+      "day_0_included",
+      "prediction_not_yet_occurred",
+      "conflicting_duplicate_rejected",
+      "no_known_labels_no_division_by_zero"
+    ]
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 8,
+    "kernel": "ipykernel InProcessKernel in new Python process",
+    "all_cells_executed_in_order": true,
+    "all_outputs_retained": true,
+    "script_and_notebook_consistent": true,
+    "limitation": "Build sandbox blocks socket transport; browser Jupyter UI and out-of-process kernel transport not tested."
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Entire dataset synthetic; no model training or deployment claim.",
+    "Manual event-ID audit does not detect unknown near-duplicates.",
+    "Known-label proportion not a target-population estimate.",
+    "Complete verification assumed available on observed_through date.",
+    "Actual learner Anaconda installation not tested."
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 43500,
+      "sha256": "223ba44fadb6791bf46cf1d817b9793da471fb340b10239ef09826c44964c4bd"
+    },
+    "lecture.pdf": {
+      "bytes": 1782327,
+      "sha256": "9ae7e3d6212f3b8b7a0c9868358ac9b2e48f5a5f931c4d0144fd050066df764a"
+    },
+    "lab.md": {
+      "bytes": 15537,
+      "sha256": "286e40333f223570729f334cac3db1628857003501e2331235cf359c2db64e7d"
+    },
+    "lab.pdf": {
+      "bytes": 627130,
+      "sha256": "9b15951c2c4119788673e9837ebc9402084857a2e291a355ce4fc3caaaf6fba7"
+    },
+    "answers.md": {
+      "bytes": 10911,
+      "sha256": "481b2ca4ccde5a6fd2579ce3c40567462bf92a9d352271116a24b499ead6f8e0"
+    },
+    "answers.pdf": {
+      "bytes": 440232,
+      "sha256": "09efa6940654b43446689fa297767529de41a8e3070564fa759ebd388b26c888"
+    },
+    "experiment.py": {
+      "bytes": 12557,
+      "sha256": "52dff07d99d3196f77365805242b1eef1124575d330432a1baf78f1f1867d9d8"
+    },
+    "experiment.ipynb": {
+      "bytes": 13176,
+      "sha256": "de3fa66a55a9cb2616643563bca1a1e3f3c30b3bb7af32db8a3f4d7384df41ee"
+    },
+    "README.md": {
+      "bytes": 1809,
+      "sha256": "0b6fdb03ad22fb8d4c69f78eeae71cf63a34938654ccb48c0329d002af4192c8"
+    },
+    "source-checks.json": {
+      "bytes": 2690,
+      "sha256": "943c83a2607cde290412e03a606fc99671482bd2ac198c2c30000374821c8060"
+    },
+    "data/raw_events.csv": {
+      "bytes": 1475,
+      "sha256": "659c6101c10cfe5b0c06c1487ab9173c0f26846c078409e8a732a1afdbb93689"
+    },
+    "data/expected_labels.csv": {
+      "bytes": 328,
+      "sha256": "20d1c8a50b605860a8a8f393d6057adf914923e5c44c0aeaeb349caa170520a7"
+    },
+    "data/README.md": {
+      "bytes": 679,
+      "sha256": "cbbca61623d8ab0e4885c4ae112888b5c6fc607988b1985e819a833e4d7e18fc"
+    },
+    "figures/01_task.png": {
+      "bytes": 119836,
+      "sha256": "f4dac0034b1001cb4aa420c0bbe133d6ee1ebf9572663ca556b9e7144e620f2e"
+    },
+    "figures/02_units.png": {
+      "bytes": 94187,
+      "sha256": "90743263ffb5d98b6a05f2d0efb0cab6154d1bc39afaff97909c31f3216131bb"
+    },
+    "figures/03_sets.png": {
+      "bytes": 94119,
+      "sha256": "aa1a5d463fbb2a740f2faeb969194d89fd5657987efc00bba490bdbfe69a730c"
+    },
+    "figures/04_timeline.png": {
+      "bytes": 112074,
+      "sha256": "06dc0b2ead218403ca344510159221f7778817f89c811e34e18bc94bd43d49db"
+    },
+    "figures/05_selection.png": {
+      "bytes": 124911,
+      "sha256": "62dc77a0454679966d3698dcea0608560bce1bf834b19ce79d2e958fab5e2b1e"
+    },
+    "figures/06_labels.png": {
+      "bytes": 99779,
+      "sha256": "27778ee5905a8b9a626b5c2c3f7eba349555821698afc3908eb43b6c07758b21"
+    },
+    "figures/07_dictionary.png": {
+      "bytes": 158983,
+      "sha256": "22b4d1cd30e33ce397fbfa96abd5ad82e1c00b0cf33ca87d5cdf890961a16208"
+    },
+    "figures/08_leakage.png": {
+      "bytes": 135027,
+      "sha256": "fa2e4fe39c0297ae6182f3a326b257c4034e3287cfee00e41818e5c67579ab8e"
+    },
+    "figures/09_overlap.png": {
+      "bytes": 84052,
+      "sha256": "273626dcb4f00d3971a49a77ae108813eaddb76e3fa4e2e59053101c6064acd8"
+    },
+    "figures/10_contract.png": {
+      "bytes": 141323,
+      "sha256": "a0d5fe63b85f4e0f17d811fc283a1f3e8ef00aa68c8ea5f2d8e31d5ca859e4d2"
+    }
+  },
+  "review_fixes": [
+    "Used indexed sample family instead of value-deduplicating set for D; equal-valued distinct events preserved.",
+    "Area field definition now requires per-event availability audit."
+  ],
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "14 independent code/check groups",
+      "all final lecture and lab/answer pages visually reviewed",
+      "fresh IPython kernel notebook execution",
+      "all 23 candidate payload hashes matched",
+      "scientific and prerequisite review"
+    ],
+    "limitations": [
+      "actual Anaconda installation not tested",
+      "Jupyter browser UI and out-of-process socket transport not tested"
+    ]
+  }
+}

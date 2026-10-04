@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Python Introduction",
+    "url": "https://docs.python.org/3/tutorial/introduction.html",
+    "role": "表达式、赋值与基本数据",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  },
+  {
+    "title": "Python Control Flow",
+    "url": "https://docs.python.org/3/tutorial/controlflow.html",
+    "role": "分支、循环与range",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  },
+  {
+    "title": "Python Data Structures",
+    "url": "https://docs.python.org/3/tutorial/datastructures.html",
+    "role": "列表操作与复制",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  },
+  {
+    "title": "Python Floating Point",
+    "url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+    "role": "二进制近似与数值比较",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  },
+  {
+    "title": "Python Built-in Types",
+    "url": "https://docs.python.org/3/library/stdtypes.html",
+    "role": "类型与序列语义",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  },
+  {
+    "title": "Jupyter Notebook",
+    "url": "https://jupyter-notebook.readthedocs.io/en/stable/notebook.html",
+    "role": "内核与单元执行",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  },
+  {
+    "title": "Python assert",
+    "url": "https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement",
+    "role": "assert语义",
+    "checked": "2026-10-04",
+    "status": "read_official_documentation"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "unit": "002",
+  "check_date_utc": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Datasheets for Datasets",
+      "authors": "Timnit Gebru et al.",
+      "url": "https://arxiv.org/abs/1803.09010",
+      "source_type": "primary author research paper",
+      "checked": "2026-10-04",
+      "access": "Opened arXiv paper abstract and version history; v8 dated 2021-12-01.",
+      "supports": "Dataset documentation should explain motivation, composition, collection process, recommended uses.",
+      "used_in": "lecture section 七; no copied examples or extended quotations"
+    },
+    {
+      "id": "S2",
+      "title": "scikit-learn Common pitfalls Data leakage",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage",
+      "source_type": "official library documentation",
+      "checked": "2026-10-04",
+      "access": "Opened official page and read Data leakage section.",
+      "supports": "Prediction-time unavailable information and train-test information mixing create leakage; optimistic evaluation risk.",
+      "used_in": "lecture section 十一; no scikit-learn code dependency"
+    },
+    {
+      "id": "S3",
+      "title": "scikit-learn Cross-validation iterators for grouped data",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
+      "source_type": "official library documentation",
+      "checked": "2026-10-04",
+      "access": "Opened official page and read grouped-data discussion and time-series subsection.",
+      "supports": "For assessing unseen groups, corresponding training and validation groups should not overlap; temporal ordering has separate requirements.",
+      "used_in": "lecture section 十三; introductory conceptual adaptation"
+    },
+    {
+      "id": "S4",
+      "title": "Anaconda Distribution official download entry",
+      "url": "https://www.anaconda.com/download",
+      "source_type": "official vendor documentation and download entry",
+      "checked": "2026-10-04",
+      "access": "Opened current official download page; it lists Python, Jupyter Notebook, JupyterLab in Distribution.",
+      "supports": "Official distribution download entry and bundled notebook tools; interface labels may vary.",
+      "used_in": "lab section 二; no software installed by learner material"
+    }
+  ],
+  "original_content": "All houses, dates, values, teaching figures, examples and experiment data are original synthetic teaching content. No real market or personal records are used.",
+  "quotation_policy": "No copied textbook passage or copied figure; limited paraphrase of explicitly cited methodological principles."
+}

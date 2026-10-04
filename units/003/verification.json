@@ -1,0 +1,141 @@
+{
+  "unit": "003",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 17,
+    "figures": 12,
+    "visual": "all final pages inspected"
+  },
+  "lab": {
+    "pages": 6,
+    "visual": "all final pages inspected; pagination checked"
+  },
+  "code": {
+    "python": "3.12.14",
+    "command": "python experiment.py",
+    "checks": 15,
+    "status": "passed",
+    "notebook_script_sections_identical": true
+  },
+  "notebook": {
+    "code_cells": 13,
+    "status": "passed",
+    "execution": "fresh Python process, ipykernel InProcessKernel, sequential order; outputs saved",
+    "limitation": "socket/Jupyter browser UI not tested; actual Anaconda installation not tested"
+  },
+  "sources": "source-checks.json",
+  "files": {
+    "README.md": {
+      "bytes": 1824,
+      "sha256": "ee0a21a7d95c21091e23813ecbadf8e155d8ddc18da0ce5e6a9f95a8d0f90f76"
+    },
+    "lecture.pdf": {
+      "bytes": 1202371,
+      "sha256": "af4a4bda172c17eae33b90be668b0ae185a51491dc8587c0bbd9597c0d22b1b4"
+    },
+    "make_figures.py": {
+      "bytes": 5890,
+      "sha256": "30b0fb4d96d65e0b19ac4baad8209adf45d7f13119570766da8394571f2c14db"
+    },
+    "lab.pdf": {
+      "bytes": 632000,
+      "sha256": "67d7cdbb440f1c7beef2ed8f019e5d57dc9ea449eefbe653de8234c535f18953"
+    },
+    "lab.md": {
+      "bytes": 15323,
+      "sha256": "139bd293e601084922bccb8b7e2a280ff3ab43a4de0f429a75e1065390413a90"
+    },
+    "source-checks.json": {
+      "bytes": 1599,
+      "sha256": "c2111984b093e365692b89a2881c08e30d6f34cfe0223c901ef54e3e2bf27ae2"
+    },
+    "experiment.py": {
+      "bytes": 5315,
+      "sha256": "198b9561217a465a3c2ef2f83c972439597c162ee8e52614c95648776f75e32a"
+    },
+    "experiment.ipynb": {
+      "bytes": 13428,
+      "sha256": "eeed97572d1ff11be86ef57d7e8426cfb618c9db9333dff511f5d19174ed59f8"
+    },
+    "lecture.md": {
+      "bytes": 34807,
+      "sha256": "ed3eb8a8ce14cfd68a2d3df401be031ab9c372e4a0d687bf04d83ea51b4226c0"
+    },
+    "data/README.md": {
+      "bytes": 477,
+      "sha256": "67655fd99c71fd1be6e1cd4f4eb07c36bb32775634c480e07a32ee3b799de36c"
+    },
+    "data/hand_calculation.csv": {
+      "bytes": 138,
+      "sha256": "dfadca6e1f20a922911bec0465a4c39b4678fb847c397f34a7cea0b5f8604483"
+    },
+    "figures/07_alias.png": {
+      "bytes": 36671,
+      "sha256": "7e5b3876f734831f6d802d1d807228fbcaffe068595e289bcafeeed7ee3dc93e"
+    },
+    "figures/11_nested.png": {
+      "bytes": 45893,
+      "sha256": "a27ad9cc4ab61f6e5907d0fce8d2d44f18b49fecce9591f3573057694eade41b"
+    },
+    "figures/02_execution.png": {
+      "bytes": 40454,
+      "sha256": "1fbc4ee9cfe31d434a591dc54570e5694d0be6aecfa50bdbec15d75b189701e3"
+    },
+    "figures/10_accumulator.png": {
+      "bytes": 34322,
+      "sha256": "7dd71d78294a2b770ba5b1a37160129bb185d866b0fe4626993bdc178fa6ef77"
+    },
+    "figures/12_float.png": {
+      "bytes": 30779,
+      "sha256": "94c9c845c95a1f425714b4e2e9009d156e4e57ba7a109d5c019ff7304556b416"
+    },
+    "figures/08_branch.png": {
+      "bytes": 31002,
+      "sha256": "0886a15fcc0195e3f68d12ecff717c404a778b2f089151da379df6974de2083c"
+    },
+    "figures/03_assignment.png": {
+      "bytes": 31278,
+      "sha256": "a951022e363040d660b5c9e1e22fe1113fc13c9b7aa31b2404b51cebc568fb04"
+    },
+    "figures/06_index.png": {
+      "bytes": 27499,
+      "sha256": "adc9b8207326a8dc1ea6f140db7a3138fd4337481695415fffc02558e135fa20"
+    },
+    "figures/09_loop.png": {
+      "bytes": 47593,
+      "sha256": "5e1f4ed45ad8a5fe5bf020e93b63e2a1979d2f910ddf9860ecaf2aac1938b243"
+    },
+    "figures/04_types.png": {
+      "bytes": 22235,
+      "sha256": "7a6161361258643c25f49ced90c45d66f825cd2554f8eea8844dfda97c3c63e4"
+    },
+    "figures/05_precedence.png": {
+      "bytes": 31987,
+      "sha256": "b6d8ee2efa9336e3a491d98a87e32a91d5fb4f618b089f88d1880d28c99023ac"
+    },
+    "figures/01_expression.png": {
+      "bytes": 26141,
+      "sha256": "c35a2ffb3fa7aa504883538bdac87fe151a8169eaaab62fc13d793dede221ae4"
+    }
+  },
+  "review_fixes": [
+    "Separated pure display formatting from round returning a rounded numeric value.",
+    "NameError exercise now explicitly uses new temporary cell containing only print(prediction)."
+  ],
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "15 independent code/check groups",
+      "all final lecture and lab/answer pages visually reviewed",
+      "fresh IPython kernel notebook execution",
+      "all 23 candidate payload hashes matched",
+      "scientific and prerequisite review"
+    ],
+    "limitations": [
+      "actual Anaconda installation not tested",
+      "Jupyter browser UI and out-of-process socket transport not tested"
+    ]
+  }
+}

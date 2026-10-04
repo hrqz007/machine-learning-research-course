@@ -1,0 +1,7 @@
+id,area_m2,price_wan,role
+H1,50,110,train
+H2,60,130,train
+H3,80,170,train
+H4,90,190,train
+T1,65,144,teaching_test
+T2,85,174,teaching_test

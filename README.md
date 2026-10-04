@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲与第 1 讲教学包；其余单元尚未发布。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲与第 001–003 讲完整教学包。第 004–007 讲制作中，其余单元尚未完成。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -14,6 +14,13 @@
   - [Python 实验脚本](units/001/experiment.py)
   - [教学数据及说明](units/001/data/README.md)
   - [执行与检查记录](units/001/verification.json)
+
+- [第 002 讲：任务定义与数据生成](units/002/README.md)
+  - [正文 PDF（16 页）](units/002/lecture.pdf) · [实验指南（5 页）](units/002/lab.pdf) · [详细答案（4 页）](units/002/answers.pdf)
+  - [Notebook](units/002/experiment.ipynb) · [Python 脚本](units/002/experiment.py) · [验证记录](units/002/verification.json)
+- [第 003 讲：Python 执行与基本运算](units/003/README.md)
+  - [正文 PDF（17 页）](units/003/lecture.pdf) · [实验指南（6 页）](units/003/lab.pdf)
+  - [Notebook](units/003/experiment.ipynb) · [Python 脚本](units/003/experiment.py) · [验证记录](units/003/verification.json)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
