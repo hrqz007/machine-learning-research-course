@@ -1,0 +1,479 @@
+{
+  "unit": "038",
+  "title": "Newton与拟Newton方法",
+  "date_utc": "2026-10-04",
+  "status": "frozen candidate; independent review pending",
+  "lecture_sections": 20,
+  "full_solutions": 20,
+  "original_figures": 10,
+  "pdf_pages": {
+    "lecture": 12,
+    "lab": 3,
+    "answers": 7
+  },
+  "execution": {
+    "unit": "038",
+    "status": "author/coordinator checks passed; independent reviewer pending",
+    "normal_audit": {
+      "status": "passed",
+      "checks": 4627,
+      "groups": {
+        "fraction_checks": 806,
+        "decimal_difference_checks": 352,
+        "bfgs_lbfgs_checks": 2401,
+        "trace_and_failure_checks": 978,
+        "precallback_guards": 26,
+        "file_guards": 64
+      },
+      "exact_main_states": [
+        {
+          "theta": [
+            "0",
+            "3/2"
+          ],
+          "F": "15/4",
+          "g": [
+            "-1",
+            "15"
+          ],
+          "H": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "46"
+            ]
+          ]
+        },
+        {
+          "theta": [
+            "1",
+            "27/23"
+          ],
+          "F": "919841/2238728",
+          "g": [
+            "0",
+            "43200/12167"
+          ],
+          "H": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "13264/529"
+            ]
+          ]
+        },
+        {
+          "theta": [
+            "1",
+            "19683/19067"
+          ],
+          "F": "141285388452139121/1057351664417112968",
+          "g": [
+            "0",
+            "3758665680000/6931817173763"
+          ],
+          "H": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "6389687824/363550489"
+            ]
+          ]
+        }
+      ],
+      "report_sha256": "62d232cb551f1967f5f938f5fc92349b45fa87b99a0678b7b24645ba5d8b4be2",
+      "limitations": [
+        "finite declared tests, not all possible inputs",
+        "high-precision path comparison is default Newton only",
+        "independent QA still required for publication"
+      ]
+    },
+    "optimized_audit": {
+      "status": "passed",
+      "checks": 4627,
+      "groups": {
+        "fraction_checks": 806,
+        "decimal_difference_checks": 352,
+        "bfgs_lbfgs_checks": 2401,
+        "trace_and_failure_checks": 978,
+        "precallback_guards": 26,
+        "file_guards": 64
+      },
+      "exact_main_states": [
+        {
+          "theta": [
+            "0",
+            "3/2"
+          ],
+          "F": "15/4",
+          "g": [
+            "-1",
+            "15"
+          ],
+          "H": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "46"
+            ]
+          ]
+        },
+        {
+          "theta": [
+            "1",
+            "27/23"
+          ],
+          "F": "919841/2238728",
+          "g": [
+            "0",
+            "43200/12167"
+          ],
+          "H": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "13264/529"
+            ]
+          ]
+        },
+        {
+          "theta": [
+            "1",
+            "19683/19067"
+          ],
+          "F": "141285388452139121/1057351664417112968",
+          "g": [
+            "0",
+            "3758665680000/6931817173763"
+          ],
+          "H": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "6389687824/363550489"
+            ]
+          ]
+        }
+      ],
+      "report_sha256": "62d232cb551f1967f5f938f5fc92349b45fa87b99a0678b7b24645ba5d8b4be2",
+      "limitations": [
+        "finite declared tests, not all possible inputs",
+        "high-precision path comparison is default Newton only",
+        "independent QA still required for publication"
+      ]
+    },
+    "core_report": {
+      "all_three_routes_identical": true,
+      "bytes": 6772586,
+      "sha256": "62d232cb551f1967f5f938f5fc92349b45fa87b99a0678b7b24645ba5d8b4be2",
+      "fresh_processes": 2,
+      "working_directories": "two unrelated directories"
+    },
+    "notebook": {
+      "code_cells": 15,
+      "actual_PNG_outputs": 6,
+      "sequential_real_kernel": "fresh Python process, InProcessKernel",
+      "first_cell_mutation_tests": [
+        {
+          "mutated": "data/regression.csv",
+          "fresh_real_kernel_first_cell": "rejected",
+          "error": "默认输入已改变，固定说明不适用：data/regression.csv",
+          "numeric_or_graphic_outputs": 0
+        },
+        {
+          "mutated": "data/model_spec.json",
+          "fresh_real_kernel_first_cell": "rejected",
+          "error": "默认输入已改变，固定说明不适用：data/model_spec.json",
+          "numeric_or_graphic_outputs": 0
+        }
+      ],
+      "library_comparison": "actual SciPy functions executed in notebook, not merely read from a record",
+      "benchmark_display": "recorded actual benchmark JSON read; six plots freshly rendered from numerical values"
+    },
+    "benchmark": {
+      "dimensions": [
+        8,
+        32,
+        64
+      ],
+      "repetitions_per_method_dimension": 5,
+      "timed_method_runs": 60,
+      "separate_python_memory_runs": 12,
+      "all_60_targets_met": true,
+      "BLAS_during_measurement": [
+        {
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "user_api": "blas",
+          "version": "0.3.30"
+        }
+      ],
+      "RSS_measured": false,
+      "BFGS_timing_caveat": "literal V C V.T and Cholesky verification contribute O(d^3) cost; not optimized rank-two BFGS performance"
+    },
+    "library": {
+      "scipy": "1.17.0",
+      "all_four_solver_status_success": true,
+      "all_four_common_two_norm_gradient_targets_met": true,
+      "BFGS_strategy_max_absolute_difference": 1.1102230246251565e-16,
+      "actual_Wolfe_step": {
+        "alpha": 0.26153846153846155,
+        "armijo": true,
+        "function_calls_reported": 3,
+        "gradient_calls_reported": 1,
+        "new_slope": 8.881784197001252e-16,
+        "old_slope": -17.0,
+        "strong_wolfe": true
+      }
+    },
+    "visual": {
+      "all_final_pages_individually_viewed": 22,
+      "pdf_pages": {
+        "lecture": 12,
+        "lab": 3,
+        "answers": 7
+      },
+      "actual_Notebook_PNGs_individually_viewed": 6,
+      "original_figures_viewed_in_final_lecture": 10,
+      "observed_final_defects": "none",
+      "repairs": [
+        "kept each four-row table together",
+        "converted raw theta-star/integral notation to TeX",
+        "corrected rounded indefinite example decimal",
+        "removed final one-paragraph orphan using answers-only paragraph rhythm",
+        "explicit BFGS dense multiplication/Cholesky cost disclosure before timing interpretation"
+      ],
+      "pdfs": {
+        "lecture": {
+          "bytes": 1631624,
+          "sha256": "e2798ba6a1d60d8c2ccf43bc41df30e6edfd9528e93b23b80a681a3669075de4",
+          "pages": 12
+        },
+        "lab": {
+          "bytes": 444645,
+          "sha256": "41929a2c588a8ff9e31f6b254030cefd3e163b32b24de4de637b525bd7778060",
+          "pages": 3
+        },
+        "answers": {
+          "bytes": 585845,
+          "sha256": "25c07242d39b31c46c5dce2bc021cd9aee0fb52313395eb45c16784c6e8d6c67",
+          "pages": 7
+        }
+      },
+      "notebook_pngs": {
+        "PNG1": {
+          "bytes": 74613,
+          "sha256": "75e9a93384108f4a84d4d0922612349aa8a4dc1db6fdeda47d8aa92afb5b3f0b"
+        },
+        "PNG2": {
+          "bytes": 44678,
+          "sha256": "76068727d4ecd0002aedd06ac50b6aeae7056693f6c0932d141828d451b23eaa"
+        },
+        "PNG3": {
+          "bytes": 37742,
+          "sha256": "ba6184492018c9eac14c98c00859891196f0b920b182e5de505c242caa76362a"
+        },
+        "PNG4": {
+          "bytes": 53865,
+          "sha256": "773038160b476fd36b0d270e1c1103717c766b8a4a84360c117ec67948db490d"
+        },
+        "PNG5": {
+          "bytes": 27478,
+          "sha256": "f9ffdf0efea18f20f0a852244793a7c493c50d84f8dccb99f58e14aadb9949a1"
+        },
+        "PNG6": {
+          "bytes": 71435,
+          "sha256": "b07a35de5d655ad3109e427f519da5fa211d7e07732958690f2b77a6e88b981f"
+        }
+      }
+    },
+    "limits": [
+      "finite synthetic tests, not an all-input or general convergence proof",
+      "strict quadratic benchmark is separate from four-row nonlinear pedagogy",
+      "wall-clock and traced-memory observations are nondeterministic and are not core-report equality targets",
+      "no browser Jupyter UI, socket transport, fresh Conda installation, native RSS, GPU, or real-world generalization experiment tested",
+      "source records explicitly describe failed retrievals and primary-source errors not adopted"
+    ]
+  },
+  "scientific_anchors": {
+    "linear_objective": "1/8+(a-1)^2/2+2(b-1)^2",
+    "nonlinear_objective": "1/8+(a-1)^2/2+2(b^2-1)^2",
+    "nonlinear_main_parameters": [
+      [
+        "0",
+        "3/2"
+      ],
+      [
+        "1",
+        "27/23"
+      ],
+      [
+        "1",
+        "19683/19067"
+      ]
+    ],
+    "nonlinear_main_losses": [
+      "15/4",
+      "919841/2238728",
+      "141285388452139121/1057351664417112968"
+    ],
+    "indefinite_raw_slope": "225/416 > 0",
+    "shifted_direction": "lambda=8, p=(0,5/4), accepted alpha=1/2",
+    "BFGS_first_inverse": "[[4417,-12],[-12,1057]]/4225",
+    "scope": "fixed finite examples; explicit local Hessian positivity/Lipschitz/full-step assumptions"
+  },
+  "excluded": [
+    "build_assets.py",
+    "__pycache__",
+    "notebook_results",
+    "outputs",
+    "qa",
+    "runtime reports",
+    "private build/renders/source copies"
+  ],
+  "hash_scope": "all listed public files except this self-describing verification.json",
+  "files": {
+    "README.md": {
+      "bytes": 6739,
+      "sha256": "1a72e5e157bd1f93aa1a24f6d2b6fae9c63ac0e1b9d5156ff410e5d3e03c46d1"
+    },
+    "answers.md": {
+      "bytes": 15627,
+      "sha256": "a19fc8e9addf556b0f9f3bb6dd99d433b58cb19c5ec13ce459bdbe399d1e528a"
+    },
+    "answers.pdf": {
+      "bytes": 585845,
+      "sha256": "25c07242d39b31c46c5dce2bc021cd9aee0fb52313395eb45c16784c6e8d6c67"
+    },
+    "audit.py": {
+      "bytes": 14382,
+      "sha256": "4e5c54d95f58c40da04bd19e4ddf32edf78536f5c81f6390d8dc8fb1c81b0049"
+    },
+    "benchmark-result.json": {
+      "bytes": 38796,
+      "sha256": "75c66ed4078a31a6456be182f3ccbc55ca1d15d743a1bbc90484526e92e2ff45"
+    },
+    "benchmark.py": {
+      "bytes": 6223,
+      "sha256": "f4c2b7a8009a05fc5b659c0369bb7fe63ecb4bd698382ae5f2473a90f52f1a44"
+    },
+    "data/README.md": {
+      "bytes": 1082,
+      "sha256": "1fb282deae1f20595788fa8ee2b4c547f55ce8397ead9e7142fa1cb111ff6df1"
+    },
+    "data/model_spec.json": {
+      "bytes": 819,
+      "sha256": "638e0d251248eeaa96d5fdfcb814ab4ba0bcd1c400627266d4ac13ab6b0dd82c"
+    },
+    "data/regression.csv": {
+      "bytes": 47,
+      "sha256": "0bd28e7888af84c067bf6e4cec62e6d44e1e53f663f257d078dd104aaabb9105"
+    },
+    "environment.yml": {
+      "bytes": 216,
+      "sha256": "62fd1df41059525272f9ae505ea902aa32d636a3d160f312c46bf542bd047a8c"
+    },
+    "experiment.ipynb": {
+      "bytes": 445126,
+      "sha256": "49f3151fdfb2d565a9446eb822c6aec70b1cade4525ef45c558a7ee39cad1791"
+    },
+    "experiment.py": {
+      "bytes": 23357,
+      "sha256": "6af5fe7680b63968d2155dc5d3d6ba0e40a30af000a4a093275d00ae0d919e82"
+    },
+    "figures/01_direction_and_step.png": {
+      "bytes": 86265,
+      "sha256": "c145546c332b6b85961a4429a0d5e0d6078341bcd984e59f0f76f34b20792efd"
+    },
+    "figures/02_quadratic_forward_chain.png": {
+      "bytes": 66802,
+      "sha256": "9d1514e9ee317c8848167dc95d5ce16ecb31bcaebdf1896cf3530930d6e21135"
+    },
+    "figures/03_hessian_two_terms.png": {
+      "bytes": 67782,
+      "sha256": "f7154f8c6f56e717431efa6fa3077deb1a0bca83c337274e65435e86c2dfe435"
+    },
+    "figures/04_armijo_trials.png": {
+      "bytes": 74658,
+      "sha256": "624edbe3a661755f99f1eb2ecbedd97f732c5544e2c053500b241bbf098666ee"
+    },
+    "figures/05_indefinite_correction.png": {
+      "bytes": 67664,
+      "sha256": "510f8d17428dea926cb71ecbcb7fab1d3514486f9332fb8df0719f827d4ae77b"
+    },
+    "figures/06_local_convergence.png": {
+      "bytes": 79514,
+      "sha256": "1bdf9428f20b231f33b10dd86000ab512041a3b88393813b1d943f5caa2b3aea"
+    },
+    "figures/07_secant_bfgs.png": {
+      "bytes": 69509,
+      "sha256": "b9e27f6a216478de75618b14835d3fc1805eb049a5f12b22664e1de42a2ac7c5"
+    },
+    "figures/08_lbfgs_two_loop.png": {
+      "bytes": 74032,
+      "sha256": "92adc26f05148c8cadba22a5a0ac4b9dd5f966b9cec02263b3bd2fed5e69b191"
+    },
+    "figures/09_cost_accounting.png": {
+      "bytes": 84273,
+      "sha256": "9bd09a8f4f37588d39a347c1787b883fc8aff0b02d6d328ee0b7f165e905e90c"
+    },
+    "figures/10_validation_chain.png": {
+      "bytes": 78037,
+      "sha256": "75253d2b78334257783827903d2bebeaba833ee1938ec17997c013a39dac16c9"
+    },
+    "lab.md": {
+      "bytes": 6585,
+      "sha256": "d2db610f7910cf899da0219b6071917e6ea98197d1ad585d2deb2b565044e84f"
+    },
+    "lab.pdf": {
+      "bytes": 444645,
+      "sha256": "41929a2c588a8ff9e31f6b254030cefd3e163b32b24de4de637b525bd7778060"
+    },
+    "lecture.md": {
+      "bytes": 21760,
+      "sha256": "fc708ae59d91995536d6e7c8ec590db3ee3ba5c41644b846233ad62b3ed63f12"
+    },
+    "lecture.pdf": {
+      "bytes": 1631624,
+      "sha256": "e2798ba6a1d60d8c2ccf43bc41df30e6edfd9528e93b23b80a681a3669075de4"
+    },
+    "library-result.json": {
+      "bytes": 3981,
+      "sha256": "60d813b2a4cc192136c124657d484b0dddc64df301f8e2155c5c04c34defeec5"
+    },
+    "library_check.py": {
+      "bytes": 3721,
+      "sha256": "e19c388170fe784b5de6d77a601665fea3e630f15f88a54685be267cccef3c12"
+    },
+    "requirements.txt": {
+      "bytes": 67,
+      "sha256": "fad71a2b9faf97517c831491763eae84515621926627f2bff976d01c3cf4521d"
+    },
+    "source-checks.json": {
+      "bytes": 4329,
+      "sha256": "18cb8324402684d0470a9992038474b94652ac0250e71366398069b616bef8f8"
+    },
+    "test-result.json": {
+      "bytes": 7978,
+      "sha256": "8128ed16fb5463a4028dbafb5266bd41b825fab7d689f002e7b3a54c936b76ec"
+    }
+  }
+}

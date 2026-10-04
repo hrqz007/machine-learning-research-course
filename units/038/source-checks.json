@@ -1,0 +1,82 @@
+{
+  "unit": "038",
+  "checked_utc": "2026-10-04",
+  "sources": [
+    {
+      "title": "Boyd Vandenberghe unconstrained optimization",
+      "url": "https://web.stanford.edu/class/ee364a/lectures/unconstrained.pdf",
+      "status": "read",
+      "scope": "Read official41page chapter, Newton direction, decrement, backtracking, local Hessian-Lipschitz assumptions and Cholesky/solve implementation."
+    },
+    {
+      "title": "CMU quasi-Newton lecture",
+      "url": "https://www.stat.cmu.edu/~ryantibs/convexopt-F16/lectures/quasi-newton.pdf",
+      "status": "read",
+      "scope": "Read30page official instructor lecture, secant equation/BFGS inverse formula/curvature and L-BFGS two-loop. Incorrect displayed Wolfe absolute-value sign and min-vs-max history bound not adopted; own algebra crosschecked."
+    },
+    {
+      "title": "Nocedal official L-BFGS",
+      "url": "https://users.iems.northwestern.edu/~nocedal/lbfgs.html",
+      "status": "read",
+      "scope": "Read official project provenance and original1980/1989 paper references. Software not downloaded/reused; original PS paper retrieval failed."
+    },
+    {
+      "title": "SciPy1.17 line_search",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.optimize.line_search.html",
+      "status": "read",
+      "scope": "Read strong Wolfe, descent-direction requirement, function/gradient counts, None on failure; numerical execution still pending038completion."
+    },
+    {
+      "title": "SciPy1.17 BFGS minimize",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/optimize.minimize-bfgs.html",
+      "status": "read",
+      "scope": "Read gtol/norm/xrtol/c1/c2/hess_inv0 options; actual runtime SciPy1.17.0 imported."
+    },
+    {
+      "title": "SciPy1.17 BFGS update strategy",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.optimize.BFGS.html",
+      "status": "read",
+      "scope": "Read skip_update/damp_update and normalization/initialization options, distinguished from minimize(method=BFGS)."
+    },
+    {
+      "title": "SciPy1.17 L-BFGS-B",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/optimize.minimize-lbfgsb.html",
+      "status": "read",
+      "scope": "Read maxcor, projected-gradient stopping, ftol, maxls and maxfun semantics; no claim identical to custom unconstrained L-BFGS."
+    },
+    {
+      "title": "NumPy2.3 solve",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.solve.html",
+      "status": "read",
+      "scope": "Read full-rank square-system API and singular failure semantics; use solve rather than explicit inverse."
+    },
+    {
+      "title": "Python3.12 time",
+      "url": "https://docs.python.org/3.12/library/time.html",
+      "status": "read",
+      "scope": "Read perf_counter elapsed difference/high-resolution monotonic timing, documentation patch3.12.15 versus actualruntime3.12.14."
+    },
+    {
+      "title": "Python3.12 tracemalloc",
+      "url": "https://docs.python.org/3.12/library/tracemalloc.html",
+      "status": "read",
+      "scope": "Read Python memory block tracking and current/peak traced memory; not claimed as full native-process memory."
+    }
+  ],
+  "limitations": [
+    "Full Boyd textbook fetch timed out; official41page chapter succeeded.",
+    "Original Nocedal compressed PS paper retrieval failed; official project page supplies provenance only.",
+    "CMU student Newton scribe notes were inspected but not used for convergence constants/signs; main source is instructor Boyd chapter.",
+    "CMU quasi-Newton slides contain sign/index display errors. Weak Wolfe is new_slope >= c2*old_slope, not c2*abs(old_slope); oldest retained index is max(0,k-m), not min."
+  ],
+  "original_work": "All lecture exposition, proofs, four-row nonlinear chain, hand calculations and ten mechanism figures independently authored.",
+  "execution_followup": {
+    "date_utc": "2026-10-04",
+    "actual_scipy": "1.17.0",
+    "actual_numpy": "2.3.5",
+    "actual_python": "3.12.14",
+    "library_record": "library-result.json",
+    "wallclock_and_separate_python_memory_record": "benchmark-result.json",
+    "note": "Actual optimize BFGS and L-BFGS-B, explicit-identity BFGS strategy, strong-Wolfe line_search, 60 rotated timed runs and 12 separate traced-memory runs executed."
+  }
+}

@@ -1,0 +1,1290 @@
+{
+  "designs": [
+    {
+      "common_gradient_target": 1.1487537835627431e-05,
+      "conditioning_target": 20.0,
+      "d": 8,
+      "data_generation_ns_excluded": 933623,
+      "gradient_initial_norm": 11.487537835627432,
+      "max_updates": 2000,
+      "methods": {
+        "bfgs": {
+          "algorithm_state_nbytes": 640,
+          "all_targets_met": true,
+          "max_ns": 2483925,
+          "median_ns": 2433169.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 2114384,
+          "python_traced_peak_increment_bytes": 11692,
+          "python_traced_retained_increment_bytes": 2476,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 1,
+                "cholesky": 15,
+                "f": 41,
+                "g": 15,
+                "line_trials": 25,
+                "solve": 0
+              },
+              "elapsed_ns": 2114384,
+              "gradient_norm": 4.99939871497462e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 14
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 1,
+                "cholesky": 15,
+                "f": 41,
+                "g": 15,
+                "line_trials": 25,
+                "solve": 0
+              },
+              "elapsed_ns": 2483925,
+              "gradient_norm": 4.99939871497462e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 14
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 1,
+                "cholesky": 15,
+                "f": 41,
+                "g": 15,
+                "line_trials": 25,
+                "solve": 0
+              },
+              "elapsed_ns": 2433169,
+              "gradient_norm": 4.99939871497462e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 14
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 1,
+                "cholesky": 15,
+                "f": 41,
+                "g": 15,
+                "line_trials": 25,
+                "solve": 0
+              },
+              "elapsed_ns": 2434963,
+              "gradient_norm": 4.99939871497462e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 14
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 1,
+                "cholesky": 15,
+                "f": 41,
+                "g": 15,
+                "line_trials": 25,
+                "solve": 0
+              },
+              "elapsed_ns": 2231606,
+              "gradient_norm": 4.99939871497462e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 14
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 512
+        },
+        "gd": {
+          "algorithm_state_nbytes": 128,
+          "all_targets_met": true,
+          "max_ns": 19354552,
+          "median_ns": 14402479.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 12417727,
+          "python_traced_peak_increment_bytes": 6408,
+          "python_traced_retained_increment_bytes": 1576,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 128,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 449,
+                "g": 86,
+                "line_trials": 362,
+                "solve": 0
+              },
+              "elapsed_ns": 16353998,
+              "gradient_norm": 8.146040338219659e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 85
+            },
+            {
+              "algorithm_state_nbytes": 128,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 449,
+                "g": 86,
+                "line_trials": 362,
+                "solve": 0
+              },
+              "elapsed_ns": 12417727,
+              "gradient_norm": 8.146040338219659e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 85
+            },
+            {
+              "algorithm_state_nbytes": 128,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 449,
+                "g": 86,
+                "line_trials": 362,
+                "solve": 0
+              },
+              "elapsed_ns": 12457252,
+              "gradient_norm": 8.146040338219659e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 85
+            },
+            {
+              "algorithm_state_nbytes": 128,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 449,
+                "g": 86,
+                "line_trials": 362,
+                "solve": 0
+              },
+              "elapsed_ns": 14402479,
+              "gradient_norm": 8.146040338219659e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 85
+            },
+            {
+              "algorithm_state_nbytes": 128,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 449,
+                "g": 86,
+                "line_trials": 362,
+                "solve": 0
+              },
+              "elapsed_ns": 19354552,
+              "gradient_norm": 8.146040338219659e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 85
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 64
+        },
+        "lbfgs": {
+          "algorithm_state_nbytes": 768,
+          "all_targets_met": true,
+          "max_ns": 5566794,
+          "median_ns": 3682246.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 3360034,
+          "python_traced_peak_increment_bytes": 7004,
+          "python_traced_retained_increment_bytes": 1516,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 768,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 53,
+                "g": 24,
+                "line_trials": 28,
+                "solve": 0
+              },
+              "elapsed_ns": 3682246,
+              "gradient_norm": 8.601657623887559e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 23
+            },
+            {
+              "algorithm_state_nbytes": 768,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 53,
+                "g": 24,
+                "line_trials": 28,
+                "solve": 0
+              },
+              "elapsed_ns": 3681508,
+              "gradient_norm": 8.601657623887559e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 23
+            },
+            {
+              "algorithm_state_nbytes": 768,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 53,
+                "g": 24,
+                "line_trials": 28,
+                "solve": 0
+              },
+              "elapsed_ns": 3360034,
+              "gradient_norm": 8.601657623887559e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 23
+            },
+            {
+              "algorithm_state_nbytes": 768,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 53,
+                "g": 24,
+                "line_trials": 28,
+                "solve": 0
+              },
+              "elapsed_ns": 3711885,
+              "gradient_norm": 8.601657623887559e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 23
+            },
+            {
+              "algorithm_state_nbytes": 768,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 53,
+                "g": 24,
+                "line_trials": 28,
+                "solve": 0
+              },
+              "elapsed_ns": 5566794,
+              "gradient_norm": 8.601657623887559e-06,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 23
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 64
+        },
+        "newton": {
+          "algorithm_state_nbytes": 640,
+          "all_targets_met": true,
+          "max_ns": 566202,
+          "median_ns": 450972.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 362767,
+          "python_traced_peak_increment_bytes": 9088,
+          "python_traced_retained_increment_bytes": 2744,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 566202,
+              "gradient_norm": 2.6935993545162357e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 362767,
+              "gradient_norm": 2.6935993545162357e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 363187,
+              "gradient_norm": 2.6935993545162357e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 450972,
+              "gradient_norm": 2.6935993545162357e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 640,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 507989,
+              "gradient_norm": 2.6935993545162357e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 512
+        }
+      },
+      "n": 16,
+      "orders": [
+        [
+          "gd",
+          "newton",
+          "bfgs",
+          "lbfgs"
+        ],
+        [
+          "newton",
+          "bfgs",
+          "lbfgs",
+          "gd"
+        ],
+        [
+          "bfgs",
+          "lbfgs",
+          "gd",
+          "newton"
+        ],
+        [
+          "lbfgs",
+          "gd",
+          "newton",
+          "bfgs"
+        ],
+        [
+          "gd",
+          "newton",
+          "bfgs",
+          "lbfgs"
+        ]
+      ]
+    },
+    {
+      "common_gradient_target": 1.312426659650561e-05,
+      "conditioning_target": 20.0,
+      "d": 32,
+      "data_generation_ns_excluded": 391347,
+      "gradient_initial_norm": 13.124266596505612,
+      "max_updates": 2000,
+      "methods": {
+        "bfgs": {
+          "algorithm_state_nbytes": 8704,
+          "all_targets_met": true,
+          "max_ns": 9742218,
+          "median_ns": 7081894.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 6704686,
+          "python_traced_peak_increment_bytes": 60868,
+          "python_traced_retained_increment_bytes": 6292,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 1,
+                "cholesky": 35,
+                "f": 115,
+                "g": 35,
+                "line_trials": 79,
+                "solve": 0
+              },
+              "elapsed_ns": 6704686,
+              "gradient_norm": 1.2634156295022333e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 34
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 1,
+                "cholesky": 35,
+                "f": 115,
+                "g": 35,
+                "line_trials": 79,
+                "solve": 0
+              },
+              "elapsed_ns": 6776415,
+              "gradient_norm": 1.2634156295022333e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 34
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 1,
+                "cholesky": 35,
+                "f": 115,
+                "g": 35,
+                "line_trials": 79,
+                "solve": 0
+              },
+              "elapsed_ns": 7926861,
+              "gradient_norm": 1.2634156295022333e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 34
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 1,
+                "cholesky": 35,
+                "f": 115,
+                "g": 35,
+                "line_trials": 79,
+                "solve": 0
+              },
+              "elapsed_ns": 7081894,
+              "gradient_norm": 1.2634156295022333e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 34
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 1,
+                "cholesky": 35,
+                "f": 115,
+                "g": 35,
+                "line_trials": 79,
+                "solve": 0
+              },
+              "elapsed_ns": 9742218,
+              "gradient_norm": 1.2634156295022333e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 34
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 8192
+        },
+        "gd": {
+          "algorithm_state_nbytes": 512,
+          "all_targets_met": true,
+          "max_ns": 16563996,
+          "median_ns": 15360684.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 13982467,
+          "python_traced_peak_increment_bytes": 28788,
+          "python_traced_retained_increment_bytes": 6628,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 512,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 427,
+                "g": 82,
+                "line_trials": 344,
+                "solve": 0
+              },
+              "elapsed_ns": 15360684,
+              "gradient_norm": 1.3094824441822137e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 81
+            },
+            {
+              "algorithm_state_nbytes": 512,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 427,
+                "g": 82,
+                "line_trials": 344,
+                "solve": 0
+              },
+              "elapsed_ns": 13982467,
+              "gradient_norm": 1.3094824441822137e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 81
+            },
+            {
+              "algorithm_state_nbytes": 512,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 427,
+                "g": 82,
+                "line_trials": 344,
+                "solve": 0
+              },
+              "elapsed_ns": 15145007,
+              "gradient_norm": 1.3094824441822137e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 81
+            },
+            {
+              "algorithm_state_nbytes": 512,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 427,
+                "g": 82,
+                "line_trials": 344,
+                "solve": 0
+              },
+              "elapsed_ns": 16563996,
+              "gradient_norm": 1.3094824441822137e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 81
+            },
+            {
+              "algorithm_state_nbytes": 512,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 427,
+                "g": 82,
+                "line_trials": 344,
+                "solve": 0
+              },
+              "elapsed_ns": 15807917,
+              "gradient_norm": 1.3094824441822137e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 81
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 256
+        },
+        "lbfgs": {
+          "algorithm_state_nbytes": 3072,
+          "all_targets_met": true,
+          "max_ns": 6134240,
+          "median_ns": 5100927.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 4615704,
+          "python_traced_peak_increment_bytes": 27876,
+          "python_traced_retained_increment_bytes": 4280,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 3072,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 67,
+                "g": 31,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 4846051,
+              "gradient_norm": 1.2715309507335135e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 30
+            },
+            {
+              "algorithm_state_nbytes": 3072,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 67,
+                "g": 31,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 4615704,
+              "gradient_norm": 1.2715309507335135e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 30
+            },
+            {
+              "algorithm_state_nbytes": 3072,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 67,
+                "g": 31,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 5143720,
+              "gradient_norm": 1.2715309507335135e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 30
+            },
+            {
+              "algorithm_state_nbytes": 3072,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 67,
+                "g": 31,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 6134240,
+              "gradient_norm": 1.2715309507335135e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 30
+            },
+            {
+              "algorithm_state_nbytes": 3072,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 67,
+                "g": 31,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 5100927,
+              "gradient_norm": 1.2715309507335135e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 30
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 256
+        },
+        "newton": {
+          "algorithm_state_nbytes": 8704,
+          "all_targets_met": true,
+          "max_ns": 1134081,
+          "median_ns": 577516.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 507346,
+          "python_traced_peak_increment_bytes": 79636,
+          "python_traced_retained_increment_bytes": 6572,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 548662,
+              "gradient_norm": 4.717040272513601e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 577516,
+              "gradient_norm": 4.717040272513601e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 1134081,
+              "gradient_norm": 4.717040272513601e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 722578,
+              "gradient_norm": 4.717040272513601e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 8704,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 507346,
+              "gradient_norm": 4.717040272513601e-15,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 8192
+        }
+      },
+      "n": 64,
+      "orders": [
+        [
+          "gd",
+          "newton",
+          "bfgs",
+          "lbfgs"
+        ],
+        [
+          "newton",
+          "bfgs",
+          "lbfgs",
+          "gd"
+        ],
+        [
+          "bfgs",
+          "lbfgs",
+          "gd",
+          "newton"
+        ],
+        [
+          "lbfgs",
+          "gd",
+          "newton",
+          "bfgs"
+        ],
+        [
+          "gd",
+          "newton",
+          "bfgs",
+          "lbfgs"
+        ]
+      ]
+    },
+    {
+      "common_gradient_target": 2.3266533985174187e-05,
+      "conditioning_target": 20.0,
+      "d": 64,
+      "data_generation_ns_excluded": 914903,
+      "gradient_initial_norm": 23.26653398517419,
+      "max_updates": 2000,
+      "methods": {
+        "bfgs": {
+          "algorithm_state_nbytes": 33792,
+          "all_targets_met": true,
+          "max_ns": 28637865,
+          "median_ns": 13761107.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 12399043,
+          "python_traced_peak_increment_bytes": 214308,
+          "python_traced_retained_increment_bytes": 10748,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 1,
+                "cholesky": 47,
+                "f": 172,
+                "g": 47,
+                "line_trials": 124,
+                "solve": 0
+              },
+              "elapsed_ns": 13761107,
+              "gradient_norm": 1.59117427430187e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 46
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 1,
+                "cholesky": 47,
+                "f": 172,
+                "g": 47,
+                "line_trials": 124,
+                "solve": 0
+              },
+              "elapsed_ns": 13075074,
+              "gradient_norm": 1.59117427430187e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 46
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 1,
+                "cholesky": 47,
+                "f": 172,
+                "g": 47,
+                "line_trials": 124,
+                "solve": 0
+              },
+              "elapsed_ns": 24953827,
+              "gradient_norm": 1.59117427430187e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 46
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 1,
+                "cholesky": 47,
+                "f": 172,
+                "g": 47,
+                "line_trials": 124,
+                "solve": 0
+              },
+              "elapsed_ns": 12399043,
+              "gradient_norm": 1.59117427430187e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 46
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 1,
+                "cholesky": 47,
+                "f": 172,
+                "g": 47,
+                "line_trials": 124,
+                "solve": 0
+              },
+              "elapsed_ns": 28637865,
+              "gradient_norm": 1.59117427430187e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 46
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 32768
+        },
+        "gd": {
+          "algorithm_state_nbytes": 1024,
+          "all_targets_met": true,
+          "max_ns": 21097860,
+          "median_ns": 17289413.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 13542248,
+          "python_traced_peak_increment_bytes": 88180,
+          "python_traced_retained_increment_bytes": 9700,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 1024,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 406,
+                "g": 78,
+                "line_trials": 327,
+                "solve": 0
+              },
+              "elapsed_ns": 16048589,
+              "gradient_norm": 2.1983608101384693e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 77
+            },
+            {
+              "algorithm_state_nbytes": 1024,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 406,
+                "g": 78,
+                "line_trials": 327,
+                "solve": 0
+              },
+              "elapsed_ns": 17400237,
+              "gradient_norm": 2.1983608101384693e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 77
+            },
+            {
+              "algorithm_state_nbytes": 1024,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 406,
+                "g": 78,
+                "line_trials": 327,
+                "solve": 0
+              },
+              "elapsed_ns": 17289413,
+              "gradient_norm": 2.1983608101384693e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 77
+            },
+            {
+              "algorithm_state_nbytes": 1024,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 406,
+                "g": 78,
+                "line_trials": 327,
+                "solve": 0
+              },
+              "elapsed_ns": 13542248,
+              "gradient_norm": 2.1983608101384693e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 77
+            },
+            {
+              "algorithm_state_nbytes": 1024,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 406,
+                "g": 78,
+                "line_trials": 327,
+                "solve": 0
+              },
+              "elapsed_ns": 21097860,
+              "gradient_norm": 2.1983608101384693e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 77
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 512
+        },
+        "lbfgs": {
+          "algorithm_state_nbytes": 6144,
+          "all_targets_met": true,
+          "max_ns": 6829944,
+          "median_ns": 5772522.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 5368794,
+          "python_traced_peak_increment_bytes": 85960,
+          "python_traced_retained_increment_bytes": 9160,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 6144,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 66,
+                "g": 30,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 5509389,
+              "gradient_norm": 2.1959600525805896e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 29
+            },
+            {
+              "algorithm_state_nbytes": 6144,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 66,
+                "g": 30,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 5368794,
+              "gradient_norm": 2.1959600525805896e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 29
+            },
+            {
+              "algorithm_state_nbytes": 6144,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 66,
+                "g": 30,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 6829944,
+              "gradient_norm": 2.1959600525805896e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 29
+            },
+            {
+              "algorithm_state_nbytes": 6144,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 66,
+                "g": 30,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 5772522,
+              "gradient_norm": 2.1959600525805896e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 29
+            },
+            {
+              "algorithm_state_nbytes": 6144,
+              "counts": {
+                "H": 1,
+                "cholesky": 0,
+                "f": 66,
+                "g": 30,
+                "line_trials": 35,
+                "solve": 0
+              },
+              "elapsed_ns": 6074187,
+              "gradient_norm": 2.1959600525805896e-05,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 29
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 512
+        },
+        "newton": {
+          "algorithm_state_nbytes": 33792,
+          "all_targets_met": true,
+          "max_ns": 2888820,
+          "median_ns": 956739.0,
+          "memory_run_status": "gradient_stationary",
+          "min_ns": 898594,
+          "python_traced_peak_increment_bytes": 307220,
+          "python_traced_retained_increment_bytes": 9644,
+          "raw_runs": [
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 956739,
+              "gradient_norm": 1.1290280764220163e-14,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 916890,
+              "gradient_norm": 1.1290280764220163e-14,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 1096354,
+              "gradient_norm": 1.1290280764220163e-14,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 898594,
+              "gradient_norm": 1.1290280764220163e-14,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            },
+            {
+              "algorithm_state_nbytes": 33792,
+              "counts": {
+                "H": 3,
+                "cholesky": 1,
+                "f": 4,
+                "g": 2,
+                "line_trials": 1,
+                "solve": 1
+              },
+              "elapsed_ns": 2888820,
+              "gradient_norm": 1.1290280764220163e-14,
+              "status": "gradient_stationary",
+              "target_met": true,
+              "updates": 1
+            }
+          ],
+          "temporary_dense_array_scale_bytes": 32768
+        }
+      },
+      "n": 128,
+      "orders": [
+        [
+          "gd",
+          "newton",
+          "bfgs",
+          "lbfgs"
+        ],
+        [
+          "newton",
+          "bfgs",
+          "lbfgs",
+          "gd"
+        ],
+        [
+          "bfgs",
+          "lbfgs",
+          "gd",
+          "newton"
+        ],
+        [
+          "lbfgs",
+          "gd",
+          "newton",
+          "bfgs"
+        ],
+        [
+          "gd",
+          "newton",
+          "bfgs",
+          "lbfgs"
+        ]
+      ]
+    }
+  ],
+  "measurement_contract": [
+    "input generation and one warmup per method excluded from timed intervals",
+    "entire optimize call included: validation, method setup, every requested row f/g/H computation, factorization, line search and final curvature diagnostic",
+    "no precomputed Hessian or factorization cache offered to any method",
+    "pedagogical BFGS literally forms V C V.T and checks Cholesky every accepted update; these O(d^3) operations are timed, unlike an optimized O(d^2) rank-two implementation",
+    "all timed runs trace=False; scalar stopping state and operation counters remain enabled",
+    "five default raw repetitions with rotating orders; median/range describe only this run",
+    "tracemalloc run is separate from timing; Python-traced allocations are not complete native RSS or BLAS workspace",
+    "resident array bytes count parameter, gradient and H/C/history state; exclude data, model, trace, temporaries and native workspace",
+    "temporary scale is one representative array size, not a measured peak or full allocation bound",
+    "target failures are retained and must not be ranked as successful speedups",
+    "strict dense quadratic control permits a specialized direct least-squares alternative, not benchmarked here"
+  ],
+  "metadata": {
+    "architecture": "x86_64",
+    "blas_before_limit": [
+      {
+        "architecture": "SkylakeX",
+        "internal_api": "openblas",
+        "num_threads": 9,
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "blas_during_measurement": [
+      {
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0",
+    "system": "Linux",
+    "thread_limit": 1,
+    "timer": "perf_counter_ns"
+  },
+  "unit": "038"
+}

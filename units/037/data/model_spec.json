@@ -1,0 +1,12 @@
+{
+  "kind": "synthetic_lasso_two_features",
+  "initial_parameters": [0.0, 0.5],
+  "steps": 80,
+  "learning_rate": 0.5,
+  "lambda": 0.5,
+  "tolerance": 1e-10,
+  "lower_bounds": [0.0, 0.0],
+  "upper_bounds": [1.0, 1.0],
+  "coordinate_order": [0, 1],
+  "stress_rho": 0.875
+}

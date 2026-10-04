@@ -1,0 +1,58 @@
+{
+  "absolute_tolerance": 2e-09,
+  "comparisons": [
+    {
+      "coef": [
+        1.5,
+        0.0
+      ],
+      "design": "main",
+      "dual_gap": 0.0,
+      "intercept": 0.0,
+      "library_kkt": 0.0,
+      "library_objective": 1.03125,
+      "max_absolute_difference": 0.0,
+      "n_iter": 2,
+      "our_kkt": 0.0,
+      "our_status": "tolerance_satisfied",
+      "our_theta": [
+        1.5,
+        0.0
+      ]
+    },
+    {
+      "coef": [
+        1.5,
+        0.0
+      ],
+      "design": "correlated",
+      "dual_gap": 0.0,
+      "intercept": 0.0,
+      "library_kkt": 0.0,
+      "library_objective": 1.03125,
+      "max_absolute_difference": 0.0,
+      "n_iter": 2,
+      "our_kkt": 0.0,
+      "our_status": "tolerance_satisfied",
+      "our_theta": [
+        1.5,
+        0.0
+      ]
+    }
+  ],
+  "numpy": "2.3.5",
+  "objective": "||X theta-y||^2/(2n) + alpha ||theta||_1; alpha=lambda",
+  "python": "3.12.14",
+  "scipy": "1.17.0",
+  "settings": {
+    "alpha": 0.5,
+    "fit_intercept": false,
+    "max_iter": 10000,
+    "positive": false,
+    "precompute": false,
+    "selection": "cyclic",
+    "tol": 1e-12
+  },
+  "sklearn": "1.8.0",
+  "status": "author library check passed"
+}

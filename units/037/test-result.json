@@ -1,0 +1,206 @@
+{
+  "all_five_full_reports_byte_identical": true,
+  "date_utc": "2026-10-04",
+  "full_reports": {
+    "cli-normal-root": {
+      "bytes": 2127554,
+      "sha256": "8d183926d7ac08f42ac5ee36d2e445da22ff97eae75e517b861249d40bfe6efe"
+    },
+    "cli-normal-tmp": {
+      "bytes": 2127554,
+      "sha256": "8d183926d7ac08f42ac5ee36d2e445da22ff97eae75e517b861249d40bfe6efe"
+    },
+    "cli-optimized-root": {
+      "bytes": 2127554,
+      "sha256": "8d183926d7ac08f42ac5ee36d2e445da22ff97eae75e517b861249d40bfe6efe"
+    },
+    "cli-optimized-tmp": {
+      "bytes": 2127554,
+      "sha256": "8d183926d7ac08f42ac5ee36d2e445da22ff97eae75e517b861249d40bfe6efe"
+    },
+    "notebook": {
+      "bytes": 2127554,
+      "sha256": "8d183926d7ac08f42ac5ee36d2e445da22ff97eae75e517b861249d40bfe6efe"
+    }
+  },
+  "library": {
+    "absolute_tolerance": 2e-09,
+    "comparisons": [
+      {
+        "coef": [
+          1.5,
+          0.0
+        ],
+        "design": "main",
+        "dual_gap": 0.0,
+        "intercept": 0.0,
+        "library_kkt": 0.0,
+        "library_objective": 1.03125,
+        "max_absolute_difference": 0.0,
+        "n_iter": 2,
+        "our_kkt": 0.0,
+        "our_status": "tolerance_satisfied",
+        "our_theta": [
+          1.5,
+          0.0
+        ]
+      },
+      {
+        "coef": [
+          1.5,
+          0.0
+        ],
+        "design": "correlated",
+        "dual_gap": 0.0,
+        "intercept": 0.0,
+        "library_kkt": 0.0,
+        "library_objective": 1.03125,
+        "max_absolute_difference": 0.0,
+        "n_iter": 2,
+        "our_kkt": 0.0,
+        "our_status": "tolerance_satisfied",
+        "our_theta": [
+          1.5,
+          0.0
+        ]
+      }
+    ],
+    "numpy": "2.3.5",
+    "objective": "||X theta-y||^2/(2n) + alpha ||theta||_1; alpha=lambda",
+    "python": "3.12.14",
+    "scipy": "1.17.0",
+    "settings": {
+      "alpha": 0.5,
+      "fit_intercept": false,
+      "max_iter": 10000,
+      "positive": false,
+      "precompute": false,
+      "selection": "cyclic",
+      "tol": 1e-12
+    },
+    "sklearn": "1.8.0",
+    "status": "author library check passed"
+  },
+  "notebook": {
+    "actual_png_outputs": 8,
+    "code_cells": 12,
+    "first_sha256": "9309dc2b8be1bf77f4391bcaf35a93fc92ea31c15f6ae0cdb2f81237aeb875b8",
+    "fresh_rerun": {
+      "code_cells": 12,
+      "kernel": "ipykernel InProcessKernel, fresh Python process; sequential execution",
+      "notebook": "experiment.ipynb",
+      "python": "3.12.14",
+      "seconds": 4.972,
+      "status": "passed",
+      "transport_note": "socket transport unavailable in build sandbox; Jupyter browser UI not tested"
+    },
+    "notebook_bytes_identical": true,
+    "second_sha256": "9309dc2b8be1bf77f4391bcaf35a93fc92ea31c15f6ae0cdb2f81237aeb875b8",
+    "status": "author notebook checks passed",
+    "tamper_runs": [
+      {
+        "changed": "data/regression.csv",
+        "first_cell_error": "Default input SHA mismatch: data/regression.csv",
+        "later_outputs": 0,
+        "output_directory_created": false,
+        "returncode": 1
+      },
+      {
+        "changed": "data/model_spec.json",
+        "first_cell_error": "Default input SHA mismatch: data/model_spec.json",
+        "later_outputs": 0,
+        "output_directory_created": false,
+        "returncode": 1
+      },
+      {
+        "changed": "experiment.py",
+        "first_cell_error": "Default input SHA mismatch: experiment.py",
+        "later_outputs": 0,
+        "output_directory_created": false,
+        "returncode": 1
+      },
+      {
+        "changed": "build_assets.py",
+        "first_cell_error": "Default input SHA mismatch: build_assets.py",
+        "later_outputs": 0,
+        "output_directory_created": false,
+        "returncode": 1
+      }
+    ]
+  },
+  "numerical_and_guard_checks": {
+    "checks": {
+      "analytical_optimality": true,
+      "custom_boundary_and_range_stop": true,
+      "decimal_precision": 120,
+      "file_and_cli_protection": true,
+      "finite_difference_max_error": 2.2160695500872407e-10,
+      "fraction_two_full_rounds": true,
+      "max_decimal_parameter_abs_error": 2.220446049250313e-16,
+      "paths_and_statuses": {
+        "coordinate": {
+          "status": "tolerance_satisfied",
+          "updates": 1
+        },
+        "projected": {
+          "status": "tolerance_satisfied",
+          "updates": 32
+        },
+        "proximal": {
+          "status": "tolerance_satisfied",
+          "updates": 34
+        },
+        "subgradient": {
+          "status": "fixed_budget_completed",
+          "updates": 80
+        }
+      },
+      "pre_solver_rejections": 19,
+      "primitive_chain_checked_scalars": 6658,
+      "random_dyadic_cases": 32
+    },
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "status": "author checks passed; independent review pending"
+  },
+  "process_runs": {
+    "audit_reports": {
+      "audit-normal-root.json": {
+        "bytes": 952,
+        "sha256": "93ca294a0569504b0631b70a651b713c7e3aae403bbeabb8182aa8f0e4a89256"
+      },
+      "audit-normal-tmp.json": {
+        "bytes": 952,
+        "sha256": "93ca294a0569504b0631b70a651b713c7e3aae403bbeabb8182aa8f0e4a89256"
+      },
+      "audit-optimized-root.json": {
+        "bytes": 952,
+        "sha256": "93ca294a0569504b0631b70a651b713c7e3aae403bbeabb8182aa8f0e4a89256"
+      },
+      "audit-optimized-tmp.json": {
+        "bytes": 952,
+        "sha256": "93ca294a0569504b0631b70a651b713c7e3aae403bbeabb8182aa8f0e4a89256"
+      }
+    },
+    "four_audit_reports_byte_identical": true,
+    "modes": [
+      "normal",
+      "python -O"
+    ],
+    "working_directories": [
+      "project root",
+      "unrelated temporary directory"
+    ]
+  },
+  "scope_limits": [
+    "Finite synthetic tests do not establish universal convergence, generalization, or all-input correctness.",
+    "InProcessKernel executes real code cells sequentially; browser Jupyter UI and socket transport were not tested.",
+    "Library initialization differs from our coordinate path; only final solution and diagnostics are compared."
+  ],
+  "status": "author verification passed; independent external review pending",
+  "unit": "037",
+  "write_failure_injection": {
+    "new_nested_output_directories_removed": true,
+    "os_replace_failure_old_bytes_preserved": true
+  }
+}

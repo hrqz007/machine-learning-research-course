@@ -1,0 +1,200 @@
+{
+  "date_utc": "2026-10-04",
+  "execution_modes": {
+    "normal_and_optimized": true,
+    "project_and_new_working_directory": true,
+    "reports_byte_identical_in_all_modes_and_notebook": true,
+    "twelve_process_runs": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5770,
+      "sha256": "840e45b40e08fa5a61c611c070fa3b24aebffa422b4980927db2cf82aa9380f2"
+    },
+    "answers.md": {
+      "bytes": 13616,
+      "sha256": "d1c0c51fe5e3edf892464f83c36b3c4a7289ea013b1d94a350fb29f4100724c5"
+    },
+    "answers.pdf": {
+      "bytes": 669182,
+      "sha256": "da2801da300ca881bea42f911b7a35be852bb7d8b6b8ea992faf7f4753db13ab"
+    },
+    "audit.py": {
+      "bytes": 17210,
+      "sha256": "e0ac302b62635ebe62b6373f5a762e9eb1f8cfe9e1c674b482bb28b1cb6f3483"
+    },
+    "build_assets.py": {
+      "bytes": 9998,
+      "sha256": "3e9a20f1b883dfcfd3d1054f02397e091f05df7a6e30dfce4884029d106979ca"
+    },
+    "data/README.md": {
+      "bytes": 2668,
+      "sha256": "e7194e3159611c267176b3e996aafdd2b7779763c370e0c31480d8cca30fecc4"
+    },
+    "data/experiment_config.json": {
+      "bytes": 495,
+      "sha256": "30e03ce3508734a5b4ddd872b80a77d3aa87d5c981eb7420702480fca40f0cb9"
+    },
+    "data/observations.csv": {
+      "bytes": 32,
+      "sha256": "94b9e81521b3d750c1ba88f1de7475b317eaf983fb7a80182fcf06f3d797f511"
+    },
+    "environment.yml": {
+      "bytes": 237,
+      "sha256": "02bbae1ff116f88a484e473d52d3549867900f9c3626a51b3570b3cf43f3d479"
+    },
+    "experiment-result.json": {
+      "bytes": 371072,
+      "sha256": "596d45394bbec20cca98c1f7a3b2927dee1d6fd826e7509ff7994d5eb7769d3e"
+    },
+    "experiment.ipynb": {
+      "bytes": 864868,
+      "sha256": "270390d7757b6c263557f2b127b72893d24509d5b605dd5730ed45bf1635821a"
+    },
+    "experiment.py": {
+      "bytes": 25106,
+      "sha256": "ff94c8dde120eb02d4001a70e4162b3d57b6d2f76159f2753fc7a5a2b124e8ca"
+    },
+    "figures/01_frozen_chain.png": {
+      "bytes": 80978,
+      "sha256": "9e03a9eb3e077834d3b522f2df9df57d40504076786415a071532d0ac5fda303"
+    },
+    "figures/02_broadcast_pairing.png": {
+      "bytes": 72263,
+      "sha256": "13e98fd85a4f4face2a309ef3bcfd1a93769c71e30215b1ebdc607bff41fb28d"
+    },
+    "figures/03_two_rounds.png": {
+      "bytes": 99425,
+      "sha256": "c6e9f164d37b039b2c06e6361cf5fa417a422e061527558c46b3daff496b1007"
+    },
+    "figures/04_gradient_checks.png": {
+      "bytes": 107388,
+      "sha256": "7021091633197a3b0904cfde2b732cfc3f76507eb8b8dfe13291785cce458ac4"
+    },
+    "figures/05_fault_paths.png": {
+      "bytes": 109874,
+      "sha256": "9b97d2ba3b415cc6aee14b201755e857c49124ec9fe23fe8abcecbc22673ff30"
+    },
+    "figures/06_stable_logits.png": {
+      "bytes": 121176,
+      "sha256": "590d0630618a39a1eefc68635e013950ed099d29d58a231b1199c3c4a28aa6f9"
+    },
+    "figures/07_update_diagnostics.png": {
+      "bytes": 81848,
+      "sha256": "33ce457ec452572e57e573696502aca8b2bb32d8d03111ef1850e23f4a6ddd39"
+    },
+    "figures/08_nonsmooth_boundary.png": {
+      "bytes": 96431,
+      "sha256": "e73f9aefde8f12880d7beab093000e172d2471e3dcacdd585ba248735b329f73"
+    },
+    "lab.md": {
+      "bytes": 10049,
+      "sha256": "998859d9c839b8ecc2d90493277f80356e2adcb2387ef03155657347015ba4a2"
+    },
+    "lab.pdf": {
+      "bytes": 743657,
+      "sha256": "d47b4de4e8c524e3bcca95a2aa84d42839cf7347c41d733b4e5b4bcba44b3d54"
+    },
+    "lecture.md": {
+      "bytes": 28320,
+      "sha256": "65c74bf07d7ef12fe002f3ad28eabade8bb5cbfa1a787a18ddf0eaf0cfd2d969"
+    },
+    "lecture.pdf": {
+      "bytes": 1744428,
+      "sha256": "8b6b63c293c2ba349dec71d3ee9ce0f1dfe67114cc7ce05d02702757ebef3f74"
+    },
+    "library-result.json": {
+      "bytes": 22603,
+      "sha256": "170b1437b17c83b5a607ce04b29feef0544be47830b74d6c9f99eb72d9b5ecc9"
+    },
+    "library_check.py": {
+      "bytes": 5866,
+      "sha256": "a5d28ea1f0bf1d67ef44b28581b5e8b527c34b3acaaed799fcfa451263119b56"
+    },
+    "requirements.txt": {
+      "bytes": 96,
+      "sha256": "6ee4f114919695a25edeb0603e5c39b900fc5200a8e3d03e740f1346953edff6"
+    },
+    "source-checks.json": {
+      "bytes": 4286,
+      "sha256": "ec7a58bf54db8d2d2e55e1ccdf9f270c8b77b5312a51cbfc5eb551510f5c33f9"
+    },
+    "test-result.json": {
+      "bytes": 21395,
+      "sha256": "53ece2a5a2a0064848eec0eda09b354200e2d04f8376d45d24ddaee573a16794"
+    }
+  },
+  "full_exercise_solutions": 16,
+  "input_and_output_checks": {
+    "atomic_replace_failure_preserves_previous_report": true,
+    "extended_precision_nonzero_conversion_guard_normal_O": true,
+    "normal_result_can_be_replaced_on_rerun": true,
+    "optimized_subprocess_last_field_corruptions": 6,
+    "raw_rejections": 43,
+    "six_actual_notebook_tamper_failures": true,
+    "six_normal_optimized_short_trace_cli_successes": true,
+    "strict_json_rejections": 6
+  },
+  "library_versions": {
+    "decimal_softplus_precision": 1100,
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "limits": [
+    "Finite deterministic synthetic tests do not prove all-input correctness or real-task generalization.",
+    "No browser Jupyter UI, socket transport, Windows, or Anaconda installation was tested.",
+    "Only finite-input binary-label logit loss is covered; no weighted/soft-label BCE, nonfinite LSE, PyTorch, GPU or optimizer-state parity claim.",
+    "Author checks do not replace independent acceptance. No remote publication was performed."
+  ],
+  "notebook": {
+    "actual_code_cells": 11,
+    "actual_pngs": 8,
+    "browser_ui_tested": false,
+    "first_cell_full_byte_gate": true,
+    "full_report_matches_all_four_cli_modes": true,
+    "real_kernel": "ipykernel InProcessKernel, fresh process for each full run and each tamper case",
+    "sha256": "270390d7757b6c263557f2b127b72893d24509d5b605dd5730ed45bf1635821a",
+    "two_clean_runs_byte_identical": true
+  },
+  "numerical_checks": {
+    "actual_update_distinct_from_proposed_update": true,
+    "failed_after_work_counted": true,
+    "finite_difference": {
+      "broadcast_self_error": 1.933188992107807e-12,
+      "broadcast_vs_intended_error": 0.4207031619105641,
+      "logistic_error": 3.3409713425218014e-12,
+      "paired_error": 2.0925144499236066e-12,
+      "sign_error": 1.9999999999992808
+    },
+    "fraction_checked_scalars": 120,
+    "fraction_two_full_rounds": true,
+    "legal_internal_state_outside_initial_bounds": true,
+    "logistic_h_squared_ratio": 99.67273656508785,
+    "max_decimal_parameter_error": 1.1102230246251565e-16,
+    "nonfinite_fault_values_not_averaged_away": true,
+    "nonsmooth_boundary_not_misclassified": true,
+    "primitive_checked_scalars": 7168,
+    "random_dyadic_cases": 32
+  },
+  "original_figures": 8,
+  "pdf_pages": {
+    "answers": 5,
+    "lab": 5,
+    "lecture": 13
+  },
+  "prerequisites": [
+    "005",
+    "014",
+    "015",
+    "032"
+  ],
+  "source_count": 7,
+  "status": "coordinator revision2 complete; independent review pending",
+  "title": "优化实现与故障诊断",
+  "unit": "039",
+  "visual": {
+    "all_actual_notebook_pngs_individually_viewed": 8,
+    "all_counts_read_from_final_artifacts": true,
+    "all_pdf_pages_individually_viewed": 23
+  }
+}

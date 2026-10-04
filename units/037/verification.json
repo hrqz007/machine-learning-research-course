@@ -1,0 +1,218 @@
+{
+  "date_utc": "2026-10-04",
+  "execution": {
+    "analytical_optimality": true,
+    "custom_boundary_and_range_stop": true,
+    "decimal_precision": 120,
+    "file_and_cli_protection": true,
+    "finite_difference_max_error": 2.2160695500872407e-10,
+    "fraction_two_full_rounds": true,
+    "max_decimal_parameter_abs_error": 2.220446049250313e-16,
+    "paths_and_statuses": {
+      "coordinate": {
+        "status": "tolerance_satisfied",
+        "updates": 1
+      },
+      "projected": {
+        "status": "tolerance_satisfied",
+        "updates": 32
+      },
+      "proximal": {
+        "status": "tolerance_satisfied",
+        "updates": 34
+      },
+      "subgradient": {
+        "status": "fixed_budget_completed",
+        "updates": 80
+      }
+    },
+    "pre_solver_rejections": 19,
+    "primitive_chain_checked_scalars": 6658,
+    "random_dyadic_cases": 32
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5275,
+      "sha256": "45115e67a0e81503e96eb7bb4e864795630c87fd23dfe0e8edace1989144d1c7"
+    },
+    "answers.md": {
+      "bytes": 11561,
+      "sha256": "b6f1d0a5645376b3d668e0de72dd0901d982e04bf8c8afd6d355b1a2d04357e0"
+    },
+    "answers.pdf": {
+      "bytes": 662769,
+      "sha256": "d02affdd4a12f72205878a6afa8d779bc3c6a4dae52e7f964042597f8e17a123"
+    },
+    "author_audit.py": {
+      "bytes": 12434,
+      "sha256": "69f2c4f961acec71ab53d72c84e411e26e9b357a4f39c7649c3fd3358c200d29"
+    },
+    "build_assets.py": {
+      "bytes": 7379,
+      "sha256": "7b10a09d0c92a5d41f70d9d7be6e8747434da1965550070111d09ee568756f04"
+    },
+    "data/README.md": {
+      "bytes": 1615,
+      "sha256": "8f192ae3480e6a429e37597045d4a8969c40d123cf2e1eb381c5c89bd76806d5"
+    },
+    "data/model_spec.json": {
+      "bytes": 272,
+      "sha256": "31f8f77a12923784553156be71fc52402981c6725b2cf25ea609635d0926860d"
+    },
+    "data/regression.csv": {
+      "bytes": 65,
+      "sha256": "ceb8b9714329621915b48941973270e4621b8c36a1e8a09ab44e6192a610155d"
+    },
+    "environment.yml": {
+      "bytes": 213,
+      "sha256": "3494145083f81cde4f776fec1d232f9ddda99c8a9606b533a0c4cb09df0b5fb5"
+    },
+    "experiment.ipynb": {
+      "bytes": 911614,
+      "sha256": "9309dc2b8be1bf77f4391bcaf35a93fc92ea31c15f6ae0cdb2f81237aeb875b8"
+    },
+    "experiment.py": {
+      "bytes": 15299,
+      "sha256": "41f9139f51af672551ef59b8ff9e760bfd60e58978fbd9aa5fae45b26457826f"
+    },
+    "figures/01_kink_subgradients.png": {
+      "bytes": 79602,
+      "sha256": "5e300c7caeb34a8f4b903e34d40498aa180cb52bed8682b406d80e952bc68a02"
+    },
+    "figures/02_proximal_threshold.png": {
+      "bytes": 101441,
+      "sha256": "775d3d5b82de2c184300cc90b5a5be7467532bce0846b62f0db1d68a6939e81d"
+    },
+    "figures/03_two_step_ledger.png": {
+      "bytes": 64821,
+      "sha256": "14ac43576972dee9d5b8961df91b8f4e6c239f1c011d69da577f86489b04a8c1"
+    },
+    "figures/04_objectives_and_sparsity.png": {
+      "bytes": 67772,
+      "sha256": "3f170e66573440ccd32e23bb835117a1329013864e9b5bfbb6cbb2be9692f401"
+    },
+    "figures/05_three_residuals.png": {
+      "bytes": 78599,
+      "sha256": "119ab3b3003552236f183c4210fc8eab331b2899463009b3197872577fb300bf"
+    },
+    "figures/06_box_projection.png": {
+      "bytes": 77493,
+      "sha256": "1ffe888b786e12e31b38c64bc67cd49a759995841c43e26a92ebc1d1d998ac60"
+    },
+    "figures/07_cyclic_vs_simultaneous.png": {
+      "bytes": 74823,
+      "sha256": "ae807e5b462a7c2a74ad426e6a60d3fabf97677dbaa9a7e929b4907f55741892"
+    },
+    "figures/08_subgradient_failure.png": {
+      "bytes": 110304,
+      "sha256": "6ff1ea04767af9e0dcbfea4a67b5750ad1648c9644002bf2504e3375b8e4a9e8"
+    },
+    "figures/09_feature_scaling.png": {
+      "bytes": 82613,
+      "sha256": "d42e530b6d43bec8deeb223600e0603466c9a94ba29717f92b5ed30712ba66c4"
+    },
+    "lab.md": {
+      "bytes": 9530,
+      "sha256": "8dc82359c246906ee08c59281c484cfd16fa0a15cc44db159a4ac4e47f411dc2"
+    },
+    "lab.pdf": {
+      "bytes": 723934,
+      "sha256": "392aef3ebfbacc97dceeab12e5944edf56522c72e77bf9dc5be8b369b8dd3898"
+    },
+    "lecture.md": {
+      "bytes": 24756,
+      "sha256": "ee61bbabf016f36e61f5dda8fcf14464e269aad82f8b4b2fd1285cfe57268360"
+    },
+    "lecture.pdf": {
+      "bytes": 1710920,
+      "sha256": "137ca834240b5ebb3019c33e2d42469df90f59e89af361686ae8725176ddf0f4"
+    },
+    "library-result.json": {
+      "bytes": 1191,
+      "sha256": "0c093e722cf6f22dae3d73f85dd6c88e84332ec37a2afe5f3093444221faa5fb"
+    },
+    "library_check.py": {
+      "bytes": 2238,
+      "sha256": "5afa5e9edd377e74d3e90b02070958e56abdd5e206125c3f960c07b5966be7c4"
+    },
+    "requirements-library.txt": {
+      "bytes": 47,
+      "sha256": "cfa889a8d30e9997012f953793fae40cb3bed01d74c29f5dea7b986387bdeea2"
+    },
+    "requirements.txt": {
+      "bytes": 66,
+      "sha256": "11a64b16afa4a909a58ef51324be6a9ee7a8054268a6025323e33e43250ec319"
+    },
+    "source-checks.json": {
+      "bytes": 4201,
+      "sha256": "5ccc8bca48d729f3be8123ed83cad17de74ae7ff6a8bf369c043ac313684958e"
+    },
+    "test-result.json": {
+      "bytes": 6259,
+      "sha256": "120addddc80f359f009c6f1a3c5eddbc2ca50fbe52203ecb9178a1ed23d171c0"
+    }
+  },
+  "full_solutions": 20,
+  "lecture_sections": 22,
+  "library_parity": {
+    "actual_designs": 2,
+    "alpha": 0.5,
+    "dual_gaps": [
+      0.0,
+      0.0
+    ],
+    "fit_intercept": false,
+    "max_absolute_coef_difference": 0.0,
+    "max_iter": 10000,
+    "scipy": "1.17.0",
+    "selection": "cyclic",
+    "sklearn": "1.8.0",
+    "tol": 1e-12
+  },
+  "limits": [
+    "Author self-checks are not independent acceptance.",
+    "No remote publication performed in this author task.",
+    "No browser Jupyter UI tested."
+  ],
+  "notebook": {
+    "actual_code_cells": 12,
+    "actual_tamper_failures": 4,
+    "default_integrity_files": 4,
+    "full_report_matches_all_four_cli_modes": true,
+    "retained_recalculated_PNGs": 8,
+    "sequential_fresh_real_inprocess_kernel": true,
+    "two_clean_notebook_reruns_byte_identical": true
+  },
+  "original_figures": 9,
+  "pdf_pages": {
+    "answers": 6,
+    "lab": 5,
+    "lecture": 12
+  },
+  "prerequisites": [
+    "016",
+    "032",
+    "033"
+  ],
+  "source_count": 7,
+  "status": "author-complete; independent review pending",
+  "title": "约束与非光滑优化",
+  "unit": "037",
+  "visual": {
+    "all_23_pdf_pages_individually_viewed": true,
+    "all_8_actual_notebook_PNGs_individually_viewed": true,
+    "all_9_figures_checked_in_lecture": true,
+    "fixed": [
+      "Kept four-row data tables together instead of splitting the last row onto a new page.",
+      "Compressed source list spacing to remove a one-reference orphan final page.",
+      "Escaped a raw less-than comparison that Markdown had interpreted as an HTML tag.",
+      "Verified real Notebook display output as PNG, not just a Figure object representation."
+    ],
+    "pdf_pages": {
+      "answers": 6,
+      "lab": 5,
+      "lecture": 12
+    },
+    "status": "author individually inspected final renders"
+  }
+}

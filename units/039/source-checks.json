@@ -1,0 +1,72 @@
+{
+  "unit": "039",
+  "checked_date_utc": "2026-10-04",
+  "method": "All seven official/author URLs opened and relevant sections read through web retrieval. Library behavior separately executed at stated versions.",
+  "sources": [
+    {
+      "id": "numpy-broadcast",
+      "title": "NumPy 2.3 Broadcasting",
+      "url": "https://numpy.org/doc/2.3/user/basics.broadcasting.html",
+      "type": "official documentation",
+      "read_status": "accessed and read",
+      "supports": "Trailing dimensions align; equal or size-one axes broadcast. A (n,1) minus (n,) yields (n,n).",
+      "verification_and_limits": "Actual NumPy 2.3.5 residual shape and gradient checked in library_check.py."
+    },
+    {
+      "id": "scipy-check-grad",
+      "title": "SciPy 1.17.0 check_grad",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.optimize.check_grad.html",
+      "type": "official documentation",
+      "read_status": "accessed and read",
+      "supports": "Uses forward differences, configurable epsilon, and returns a Euclidean norm of analytic-versus-approximate gradient difference.",
+      "verification_and_limits": "Explicit epsilon=1e-6, direction=all; quadratic forward error independently predicted from diagonal Hessian. Not confused with central differences."
+    },
+    {
+      "id": "numpy-finfo",
+      "title": "NumPy 2.3 finfo",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.finfo.html",
+      "type": "official documentation",
+      "read_status": "accessed and read",
+      "supports": "eps is the spacing above one; smallest_normal differs from smallest_subnormal; finite dynamic range and reduced subnormal precision.",
+      "verification_and_limits": "Documentation read; numerical extreme-tail behavior independently checked with Decimal and actual libraries."
+    },
+    {
+      "id": "numpy-logaddexp",
+      "title": "NumPy 2.3 logaddexp",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.logaddexp.html",
+      "type": "official documentation",
+      "read_status": "accessed and read",
+      "supports": "Computes log(exp(x1)+exp(x2)); supports broadcasting.",
+      "verification_and_limits": "Actual NumPy 2.3.5 logaddexp(0,t), binary64, finite t in [-2000,2000], compared to authored formula and Decimal."
+    },
+    {
+      "id": "scipy-logsumexp",
+      "title": "SciPy 1.17.0 logsumexp",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.special.logsumexp.html",
+      "type": "official documentation",
+      "read_status": "accessed and read",
+      "supports": "axis selects reduction axes; axis=None reduces all; keepdims retains singleton reduced axes; weighted and signed cases have additional semantics.",
+      "verification_and_limits": "Actual SciPy 1.17.0 axis=1 and keepdims shapes checked, two-column softplus and three-term extreme rows. Weighted/nonfinite cases not claimed."
+    },
+    {
+      "id": "scipy-log-expit",
+      "title": "SciPy 1.17.0 log_expit",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.special.log_expit.html",
+      "type": "official documentation",
+      "read_status": "accessed and read",
+      "supports": "Computes log sigmoid while avoiding precision loss from log(expit(x)) at large positive or negative values.",
+      "verification_and_limits": "Actual SciPy 1.17.0 -log_expit(-t) and expit(t) compared to stable losses and local derivatives on the same rows."
+    },
+    {
+      "id": "higham-logsumexp",
+      "title": "Nicholas J. Higham, What Is the Log-Sum-Exp Function, 2021",
+      "url": "https://nhigham.com/2021/01/05/what-is-the-log-sum-exp-function/",
+      "type": "author numerical-analysis article",
+      "read_status": "accessed and read",
+      "supports": "Author discussion of log-sum-exp, numerical range and shifting by the maximum.",
+      "verification_and_limits": "Article read. The lesson derives the identity independently and tests its finite-input use; no third-party text or figure copied."
+    }
+  ],
+  "authorship": "Data, derivations, figures, examples and wording are original. No third-party full text is bundled.",
+  "scope": "No claim to test PyTorch, GPU, weighted BCE, soft-label BCE, nonfinite LSE, browser UI or Anaconda installation."
+}

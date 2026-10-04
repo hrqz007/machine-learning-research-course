@@ -1,0 +1,302 @@
+{
+  "unit": "038",
+  "status": "author/coordinator checks passed; independent reviewer pending",
+  "normal_audit": {
+    "status": "passed",
+    "checks": 4627,
+    "groups": {
+      "fraction_checks": 806,
+      "decimal_difference_checks": 352,
+      "bfgs_lbfgs_checks": 2401,
+      "trace_and_failure_checks": 978,
+      "precallback_guards": 26,
+      "file_guards": 64
+    },
+    "exact_main_states": [
+      {
+        "theta": [
+          "0",
+          "3/2"
+        ],
+        "F": "15/4",
+        "g": [
+          "-1",
+          "15"
+        ],
+        "H": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "46"
+          ]
+        ]
+      },
+      {
+        "theta": [
+          "1",
+          "27/23"
+        ],
+        "F": "919841/2238728",
+        "g": [
+          "0",
+          "43200/12167"
+        ],
+        "H": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "13264/529"
+          ]
+        ]
+      },
+      {
+        "theta": [
+          "1",
+          "19683/19067"
+        ],
+        "F": "141285388452139121/1057351664417112968",
+        "g": [
+          "0",
+          "3758665680000/6931817173763"
+        ],
+        "H": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "6389687824/363550489"
+          ]
+        ]
+      }
+    ],
+    "report_sha256": "62d232cb551f1967f5f938f5fc92349b45fa87b99a0678b7b24645ba5d8b4be2",
+    "limitations": [
+      "finite declared tests, not all possible inputs",
+      "high-precision path comparison is default Newton only",
+      "independent QA still required for publication"
+    ]
+  },
+  "optimized_audit": {
+    "status": "passed",
+    "checks": 4627,
+    "groups": {
+      "fraction_checks": 806,
+      "decimal_difference_checks": 352,
+      "bfgs_lbfgs_checks": 2401,
+      "trace_and_failure_checks": 978,
+      "precallback_guards": 26,
+      "file_guards": 64
+    },
+    "exact_main_states": [
+      {
+        "theta": [
+          "0",
+          "3/2"
+        ],
+        "F": "15/4",
+        "g": [
+          "-1",
+          "15"
+        ],
+        "H": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "46"
+          ]
+        ]
+      },
+      {
+        "theta": [
+          "1",
+          "27/23"
+        ],
+        "F": "919841/2238728",
+        "g": [
+          "0",
+          "43200/12167"
+        ],
+        "H": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "13264/529"
+          ]
+        ]
+      },
+      {
+        "theta": [
+          "1",
+          "19683/19067"
+        ],
+        "F": "141285388452139121/1057351664417112968",
+        "g": [
+          "0",
+          "3758665680000/6931817173763"
+        ],
+        "H": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "6389687824/363550489"
+          ]
+        ]
+      }
+    ],
+    "report_sha256": "62d232cb551f1967f5f938f5fc92349b45fa87b99a0678b7b24645ba5d8b4be2",
+    "limitations": [
+      "finite declared tests, not all possible inputs",
+      "high-precision path comparison is default Newton only",
+      "independent QA still required for publication"
+    ]
+  },
+  "core_report": {
+    "all_three_routes_identical": true,
+    "bytes": 6772586,
+    "sha256": "62d232cb551f1967f5f938f5fc92349b45fa87b99a0678b7b24645ba5d8b4be2",
+    "fresh_processes": 2,
+    "working_directories": "two unrelated directories"
+  },
+  "notebook": {
+    "code_cells": 15,
+    "actual_PNG_outputs": 6,
+    "sequential_real_kernel": "fresh Python process, InProcessKernel",
+    "first_cell_mutation_tests": [
+      {
+        "mutated": "data/regression.csv",
+        "fresh_real_kernel_first_cell": "rejected",
+        "error": "默认输入已改变，固定说明不适用：data/regression.csv",
+        "numeric_or_graphic_outputs": 0
+      },
+      {
+        "mutated": "data/model_spec.json",
+        "fresh_real_kernel_first_cell": "rejected",
+        "error": "默认输入已改变，固定说明不适用：data/model_spec.json",
+        "numeric_or_graphic_outputs": 0
+      }
+    ],
+    "library_comparison": "actual SciPy functions executed in notebook, not merely read from a record",
+    "benchmark_display": "recorded actual benchmark JSON read; six plots freshly rendered from numerical values"
+  },
+  "benchmark": {
+    "dimensions": [
+      8,
+      32,
+      64
+    ],
+    "repetitions_per_method_dimension": 5,
+    "timed_method_runs": 60,
+    "separate_python_memory_runs": 12,
+    "all_60_targets_met": true,
+    "BLAS_during_measurement": [
+      {
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "RSS_measured": false,
+    "BFGS_timing_caveat": "literal V C V.T and Cholesky verification contribute O(d^3) cost; not optimized rank-two BFGS performance"
+  },
+  "library": {
+    "scipy": "1.17.0",
+    "all_four_solver_status_success": true,
+    "all_four_common_two_norm_gradient_targets_met": true,
+    "BFGS_strategy_max_absolute_difference": 1.1102230246251565e-16,
+    "actual_Wolfe_step": {
+      "alpha": 0.26153846153846155,
+      "armijo": true,
+      "function_calls_reported": 3,
+      "gradient_calls_reported": 1,
+      "new_slope": 8.881784197001252e-16,
+      "old_slope": -17.0,
+      "strong_wolfe": true
+    }
+  },
+  "visual": {
+    "all_final_pages_individually_viewed": 22,
+    "pdf_pages": {
+      "lecture": 12,
+      "lab": 3,
+      "answers": 7
+    },
+    "actual_Notebook_PNGs_individually_viewed": 6,
+    "original_figures_viewed_in_final_lecture": 10,
+    "observed_final_defects": "none",
+    "repairs": [
+      "kept each four-row table together",
+      "converted raw theta-star/integral notation to TeX",
+      "corrected rounded indefinite example decimal",
+      "removed final one-paragraph orphan using answers-only paragraph rhythm",
+      "explicit BFGS dense multiplication/Cholesky cost disclosure before timing interpretation"
+    ],
+    "pdfs": {
+      "lecture": {
+        "bytes": 1631624,
+        "sha256": "e2798ba6a1d60d8c2ccf43bc41df30e6edfd9528e93b23b80a681a3669075de4",
+        "pages": 12
+      },
+      "lab": {
+        "bytes": 444645,
+        "sha256": "41929a2c588a8ff9e31f6b254030cefd3e163b32b24de4de637b525bd7778060",
+        "pages": 3
+      },
+      "answers": {
+        "bytes": 585845,
+        "sha256": "25c07242d39b31c46c5dce2bc021cd9aee0fb52313395eb45c16784c6e8d6c67",
+        "pages": 7
+      }
+    },
+    "notebook_pngs": {
+      "PNG1": {
+        "bytes": 74613,
+        "sha256": "75e9a93384108f4a84d4d0922612349aa8a4dc1db6fdeda47d8aa92afb5b3f0b"
+      },
+      "PNG2": {
+        "bytes": 44678,
+        "sha256": "76068727d4ecd0002aedd06ac50b6aeae7056693f6c0932d141828d451b23eaa"
+      },
+      "PNG3": {
+        "bytes": 37742,
+        "sha256": "ba6184492018c9eac14c98c00859891196f0b920b182e5de505c242caa76362a"
+      },
+      "PNG4": {
+        "bytes": 53865,
+        "sha256": "773038160b476fd36b0d270e1c1103717c766b8a4a84360c117ec67948db490d"
+      },
+      "PNG5": {
+        "bytes": 27478,
+        "sha256": "f9ffdf0efea18f20f0a852244793a7c493c50d84f8dccb99f58e14aadb9949a1"
+      },
+      "PNG6": {
+        "bytes": 71435,
+        "sha256": "b07a35de5d655ad3109e427f519da5fa211d7e07732958690f2b77a6e88b981f"
+      }
+    }
+  },
+  "limits": [
+    "finite synthetic tests, not an all-input or general convergence proof",
+    "strict quadratic benchmark is separate from four-row nonlinear pedagogy",
+    "wall-clock and traced-memory observations are nondeterministic and are not core-report equality targets",
+    "no browser Jupyter UI, socket transport, fresh Conda installation, native RSS, GPU, or real-world generalization experiment tested",
+    "source records explicitly describe failed retrievals and primary-source errors not adopted"
+  ]
+}

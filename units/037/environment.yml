@@ -1,0 +1,12 @@
+name: ml-unit037
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.3.5
+      - matplotlib==3.10.8
+      - nbformat==5.11.1
+      - ipykernel==7.4.0
+      - jupyterlab>=4,<5

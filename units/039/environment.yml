@@ -1,0 +1,13 @@
+name: ml-unit039
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.14
+  - pip
+  - pip:
+      - numpy==2.3.5
+      - scipy==1.17.0
+      - matplotlib==3.10.8
+      - ipython==9.17.1
+      - ipykernel==7.4.0
+      - nbformat==5.11.1

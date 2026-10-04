@@ -1,0 +1,754 @@
+{
+  "audit": {
+    "checks": {
+      "atomic_failure_preserves_old_report": true,
+      "costs": {
+        "broadcast": {
+          "attempted_steps": 30,
+          "committed_steps": 30,
+          "gradient_calls": 31,
+          "loss_elements": 496,
+          "objective_calls": 31,
+          "prediction_rows": 124
+        },
+        "large_step": {
+          "attempted_steps": 1,
+          "committed_steps": 0,
+          "gradient_calls": 2,
+          "loss_elements": 8,
+          "objective_calls": 2,
+          "prediction_rows": 8
+        },
+        "none": {
+          "attempted_steps": 25,
+          "committed_steps": 25,
+          "gradient_calls": 26,
+          "loss_elements": 104,
+          "objective_calls": 26,
+          "prediction_rows": 104
+        },
+        "sign": {
+          "attempted_steps": 1,
+          "committed_steps": 0,
+          "gradient_calls": 2,
+          "loss_elements": 8,
+          "objective_calls": 2,
+          "prediction_rows": 8
+        },
+        "tiny_step": {
+          "attempted_steps": 1,
+          "committed_steps": 1,
+          "gradient_calls": 2,
+          "loss_elements": 8,
+          "objective_calls": 2,
+          "prediction_rows": 8
+        }
+      },
+      "decimal_precision": 120,
+      "existing_result_inside_unit_can_be_replaced": true,
+      "extended_precision_nonzero_conversion_guard": true,
+      "failed_after_work_cost": {
+        "attempted_steps": 1,
+        "committed_steps": 0,
+        "gradient_calls": 2,
+        "loss_elements": 8,
+        "objective_calls": 2,
+        "prediction_rows": 8
+      },
+      "finite_difference_h1e5": {
+        "broadcast_self_error": 1.933188992107807e-12,
+        "broadcast_vs_intended_error": 0.4207031619105641,
+        "logistic_error": 3.3409713425218014e-12,
+        "paired_error": 2.0925144499236066e-12,
+        "sign_error": 1.9999999999992808
+      },
+      "fraction_states": [
+        {
+          "gradient": [
+            "-1/2",
+            "-3/4"
+          ],
+          "loss": "1/4",
+          "rows": [
+            {
+              "d_half_square_d_residual": "0",
+              "d_prediction_d_theta": [
+                "1",
+                "-1"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "0",
+              "mean_gradient_contribution": [
+                "0",
+                "0"
+              ],
+              "mean_loss_contribution": "0",
+              "prediction": "0",
+              "residual": "0"
+            },
+            {
+              "d_half_square_d_residual": "0",
+              "d_prediction_d_theta": [
+                "1",
+                "0"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "0",
+              "mean_gradient_contribution": [
+                "0",
+                "0"
+              ],
+              "mean_loss_contribution": "0",
+              "prediction": "0",
+              "residual": "0"
+            },
+            {
+              "d_half_square_d_residual": "-1",
+              "d_prediction_d_theta": [
+                "1",
+                "1"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "1/2",
+              "mean_gradient_contribution": [
+                "-1/4",
+                "-1/4"
+              ],
+              "mean_loss_contribution": "1/8",
+              "prediction": "0",
+              "residual": "-1"
+            },
+            {
+              "d_half_square_d_residual": "-1",
+              "d_prediction_d_theta": [
+                "1",
+                "2"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "1/2",
+              "mean_gradient_contribution": [
+                "-1/4",
+                "-1/2"
+              ],
+              "mean_loss_contribution": "1/8",
+              "prediction": "0",
+              "residual": "-1"
+            }
+          ],
+          "theta": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "gradient": [
+            "-1/16",
+            "-1/16"
+          ],
+          "loss": "7/256",
+          "rows": [
+            {
+              "d_half_square_d_residual": "-1/8",
+              "d_prediction_d_theta": [
+                "1",
+                "-1"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "1/128",
+              "mean_gradient_contribution": [
+                "-1/32",
+                "1/32"
+              ],
+              "mean_loss_contribution": "1/512",
+              "prediction": "-1/8",
+              "residual": "-1/8"
+            },
+            {
+              "d_half_square_d_residual": "1/4",
+              "d_prediction_d_theta": [
+                "1",
+                "0"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "1/32",
+              "mean_gradient_contribution": [
+                "1/16",
+                "0"
+              ],
+              "mean_loss_contribution": "1/128",
+              "prediction": "1/4",
+              "residual": "1/4"
+            },
+            {
+              "d_half_square_d_residual": "-3/8",
+              "d_prediction_d_theta": [
+                "1",
+                "1"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "9/128",
+              "mean_gradient_contribution": [
+                "-3/32",
+                "-3/32"
+              ],
+              "mean_loss_contribution": "9/512",
+              "prediction": "5/8",
+              "residual": "-3/8"
+            },
+            {
+              "d_half_square_d_residual": "0",
+              "d_prediction_d_theta": [
+                "1",
+                "2"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "0",
+              "mean_gradient_contribution": [
+                "0",
+                "0"
+              ],
+              "mean_loss_contribution": "0",
+              "prediction": "1",
+              "residual": "0"
+            }
+          ],
+          "theta": [
+            "1/4",
+            "3/8"
+          ]
+        },
+        {
+          "gradient": [
+            "-1/64",
+            "0"
+          ],
+          "loss": "103/4096",
+          "rows": [
+            {
+              "d_half_square_d_residual": "-1/8",
+              "d_prediction_d_theta": [
+                "1",
+                "-1"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "1/128",
+              "mean_gradient_contribution": [
+                "-1/32",
+                "1/32"
+              ],
+              "mean_loss_contribution": "1/512",
+              "prediction": "-1/8",
+              "residual": "-1/8"
+            },
+            {
+              "d_half_square_d_residual": "9/32",
+              "d_prediction_d_theta": [
+                "1",
+                "0"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "81/2048",
+              "mean_gradient_contribution": [
+                "9/128",
+                "0"
+              ],
+              "mean_loss_contribution": "81/8192",
+              "prediction": "9/32",
+              "residual": "9/32"
+            },
+            {
+              "d_half_square_d_residual": "-5/16",
+              "d_prediction_d_theta": [
+                "1",
+                "1"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "25/512",
+              "mean_gradient_contribution": [
+                "-5/64",
+                "-5/64"
+              ],
+              "mean_loss_contribution": "25/2048",
+              "prediction": "11/16",
+              "residual": "-5/16"
+            },
+            {
+              "d_half_square_d_residual": "3/32",
+              "d_prediction_d_theta": [
+                "1",
+                "2"
+              ],
+              "d_residual_d_prediction": "1",
+              "half_square": "9/2048",
+              "mean_gradient_contribution": [
+                "3/128",
+                "3/64"
+              ],
+              "mean_loss_contribution": "9/8192",
+              "prediction": "35/32",
+              "residual": "3/32"
+            }
+          ],
+          "theta": [
+            "9/32",
+            "13/32"
+          ]
+        }
+      ],
+      "fraction_two_round_scalars": 120,
+      "internal_state_beyond_initial_domain": true,
+      "last_field_cli_tests": [
+        {
+          "case": "csv-last-underflow",
+          "output_exists": false,
+          "returncode": 1,
+          "stdout_bytes": 0
+        },
+        {
+          "case": "csv-last-nonfinite",
+          "output_exists": false,
+          "returncode": 1,
+          "stdout_bytes": 0
+        },
+        {
+          "case": "csv-last-extra",
+          "output_exists": false,
+          "returncode": 1,
+          "stdout_bytes": 0
+        },
+        {
+          "case": "json-last-underflow",
+          "output_exists": false,
+          "returncode": 1,
+          "stdout_bytes": 0
+        },
+        {
+          "case": "json-last-bool",
+          "output_exists": false,
+          "returncode": 1,
+          "stdout_bytes": 0
+        },
+        {
+          "case": "json-duplicate",
+          "output_exists": false,
+          "returncode": 1,
+          "stdout_bytes": 0
+        }
+      ],
+      "logistic_truncation_ratio": 99.67273656508785,
+      "max_decimal_parameter_error": 1.1102230246251565e-16,
+      "no_nan_averaging": true,
+      "nonsmooth_demo": {
+        "central": 0.0,
+        "left": -1.0,
+        "right": 1.0,
+        "verdict": "not differentiable at zero"
+      },
+      "paired_optimum": {
+        "loss": "1/40",
+        "theta": [
+          "3/10",
+          "2/5"
+        ]
+      },
+      "pre_work_raw_input_rejections": 43,
+      "primitive_checked_scalars": 7168,
+      "quantized_actual_step_distinguished_from_proposal": true,
+      "random_dyadic_cases": 32,
+      "short_trace_cli_summary_cases": [
+        {
+          "case": "one_update",
+          "completed_updates": 1,
+          "optimized": false,
+          "returncode": 0,
+          "status": "budget_exhausted"
+        },
+        {
+          "case": "one_update",
+          "completed_updates": 1,
+          "optimized": true,
+          "returncode": 0,
+          "status": "budget_exhausted"
+        },
+        {
+          "case": "initial_stationary",
+          "completed_updates": 0,
+          "optimized": false,
+          "returncode": 0,
+          "status": "gradient_tolerance"
+        },
+        {
+          "case": "initial_stationary",
+          "completed_updates": 0,
+          "optimized": true,
+          "returncode": 0,
+          "status": "gradient_tolerance"
+        },
+        {
+          "case": "first_rejected",
+          "completed_updates": 0,
+          "optimized": false,
+          "returncode": 0,
+          "status": "loss_increase_rejected"
+        },
+        {
+          "case": "first_rejected",
+          "completed_updates": 0,
+          "optimized": true,
+          "returncode": 0,
+          "status": "loss_increase_rejected"
+        }
+      ],
+      "statuses": {
+        "broadcast": "gradient_tolerance",
+        "large_step": "loss_increase_rejected",
+        "none": "gradient_tolerance",
+        "sign": "loss_increase_rejected",
+        "tiny_step": "stagnation_gradient_large"
+      },
+      "strict_json_rejections": 6
+    },
+    "limits": [
+      "Finite tests do not prove all-input correctness.",
+      "No browser UI or Anaconda installation tested."
+    ],
+    "status": "author checks passed",
+    "unit": "039"
+  },
+  "date_utc": "2026-10-04",
+  "library_summary": {
+    "broadcast_gradient": [
+      -0.45,
+      -0.6
+    ],
+    "broadcast_shape": [
+      4,
+      4
+    ],
+    "check_grad_forward_difference_error": 9.013948216577002e-07,
+    "decimal_precision": 1100,
+    "dtype": "float64",
+    "float64_info": {
+      "eps": 2.220446049250313e-16,
+      "max": 1.7976931348623157e+308,
+      "smallest_normal": 2.2250738585072014e-308,
+      "smallest_subnormal": 5e-324
+    },
+    "keepdims_shape": [
+      9,
+      1
+    ],
+    "limits": [
+      "check_grad is forward difference; it is not our central checker.",
+      "Finite-input binary labels only; weighted BCE and nonfinite LSE are not claimed.",
+      "Library agreement is evidence for tested semantics, not proof for all inputs."
+    ],
+    "lse_matrix": [
+      [
+        1000.0,
+        1001.0,
+        999.0
+      ],
+      [
+        -1000.0,
+        -1001.0,
+        -999.0
+      ],
+      [
+        40.0,
+        0.0,
+        -40.0
+      ]
+    ],
+    "lse_result": [
+      1001.4076059644444,
+      -998.5923940355556,
+      40.0
+    ],
+    "max_softplus_error": 0.0,
+    "numpy": "2.3.5",
+    "numpy_logaddexp": [
+      0.0,
+      0.0,
+      4.248354255291589e-18,
+      0.1269280110429725,
+      0.6931471805599453,
+      2.1269280110429727,
+      40.0,
+      1000.0,
+      2000.0
+    ],
+    "quadratic_predicted_forward_error": 9.013878188659973e-07,
+    "scipy": "1.17.0",
+    "scipy_logsumexp_axis1": [
+      0.0,
+      0.0,
+      4.248354255291589e-18,
+      0.1269280110429725,
+      0.6931471805599453,
+      2.1269280110429727,
+      40.0,
+      1000.0,
+      2000.0
+    ],
+    "scipy_negative_log_expit": [
+      0.0,
+      0.0,
+      4.248354255291589e-18,
+      0.1269280110429725,
+      0.6931471805599453,
+      2.1269280110429727,
+      40.0,
+      1000.0,
+      2000.0
+    ],
+    "softplus_inputs": [
+      -2000.0,
+      -1000.0,
+      -40.0,
+      -2.0,
+      0.0,
+      2.0,
+      40.0,
+      1000.0,
+      2000.0
+    ],
+    "status": "passed",
+    "stress_same_data": [
+      {
+        "gradient": [
+          0.125,
+          -2.1241771276457944e-18
+        ],
+        "losses": [
+          4.248354255291589e-18,
+          0.6931471805599453,
+          4.248354255291589e-18,
+          1.8048513878454153e-35
+        ],
+        "theta": [
+          0.0,
+          40.0
+        ]
+      },
+      {
+        "gradient": [
+          0.125,
+          0.0
+        ],
+        "losses": [
+          0.0,
+          0.6931471805599453,
+          0.0,
+          0.0
+        ],
+        "theta": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "gradient": [
+          -0.125,
+          -1.0
+        ],
+        "losses": [
+          1000.0,
+          0.6931471805599453,
+          1000.0,
+          2000.0
+        ],
+        "theta": [
+          0.0,
+          -1000.0
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Finite deterministic synthetic tests do not prove all-input correctness or real-task generalization.",
+    "No browser Jupyter UI, socket transport, Windows, or Anaconda installation was tested.",
+    "Only finite-input binary-label logit loss is covered; no weighted/soft-label BCE, nonfinite LSE, PyTorch, GPU or optimizer-state parity claim."
+  ],
+  "notebook": {
+    "actual_code_cells": 11,
+    "actual_pngs": 8,
+    "actual_tamper_tests": [
+      {
+        "display_messages": 0,
+        "expected_error": {
+          "ename": "ValueError",
+          "evalue": "Default input/module bytes changed: data/observations.csv"
+        },
+        "file": "data/observations.csv",
+        "mutation": "append one newline byte",
+        "stdout_messages": 0,
+        "stopped_before_numerical_module_import": true
+      },
+      {
+        "display_messages": 0,
+        "expected_error": {
+          "ename": "ValueError",
+          "evalue": "Default input/module bytes changed: data/experiment_config.json"
+        },
+        "file": "data/experiment_config.json",
+        "mutation": "append one newline byte",
+        "stdout_messages": 0,
+        "stopped_before_numerical_module_import": true
+      },
+      {
+        "display_messages": 0,
+        "expected_error": {
+          "ename": "ValueError",
+          "evalue": "Default input/module bytes changed: experiment.py"
+        },
+        "file": "experiment.py",
+        "mutation": "append one newline byte",
+        "stdout_messages": 0,
+        "stopped_before_numerical_module_import": true
+      },
+      {
+        "display_messages": 0,
+        "expected_error": {
+          "ename": "ValueError",
+          "evalue": "Default input/module bytes changed: audit.py"
+        },
+        "file": "audit.py",
+        "mutation": "append one newline byte",
+        "stdout_messages": 0,
+        "stopped_before_numerical_module_import": true
+      },
+      {
+        "display_messages": 0,
+        "expected_error": {
+          "ename": "ValueError",
+          "evalue": "Default input/module bytes changed: library_check.py"
+        },
+        "file": "library_check.py",
+        "mutation": "append one newline byte",
+        "stdout_messages": 0,
+        "stopped_before_numerical_module_import": true
+      },
+      {
+        "display_messages": 0,
+        "expected_error": {
+          "ename": "ValueError",
+          "evalue": "Default input/module bytes changed: build_assets.py"
+        },
+        "file": "build_assets.py",
+        "mutation": "append one newline byte",
+        "stdout_messages": 0,
+        "stopped_before_numerical_module_import": true
+      }
+    ],
+    "browser_ui_tested": false,
+    "default_contract_files": {
+      "audit.py": "e0ac302b62635ebe62b6373f5a762e9eb1f8cfe9e1c674b482bb28b1cb6f3483",
+      "build_assets.py": "3e9a20f1b883dfcfd3d1054f02397e091f05df7a6e30dfce4884029d106979ca",
+      "data/experiment_config.json": "30e03ce3508734a5b4ddd872b80a77d3aa87d5c981eb7420702480fca40f0cb9",
+      "data/observations.csv": "94b9e81521b3d750c1ba88f1de7475b317eaf983fb7a80182fcf06f3d797f511",
+      "experiment.py": "ff94c8dde120eb02d4001a70e4162b3d57b6d2f76159f2753fc7a5a2b124e8ca",
+      "library_check.py": "a5d28ea1f0bf1d67ef44b28581b5e8b527c34b3acaaed799fcfa451263119b56"
+    },
+    "first_cell_full_byte_gate": true,
+    "full_report_matches_all_four_cli_modes": true,
+    "real_kernel": "ipykernel InProcessKernel, fresh process for each full run and each tamper case",
+    "sha256": "270390d7757b6c263557f2b127b72893d24509d5b605dd5730ed45bf1635821a",
+    "two_clean_runs_byte_identical": true
+  },
+  "process_runs": {
+    "audit_all_four_byte_identical": true,
+    "experiment_all_four_and_notebook_byte_identical": true,
+    "library_all_four_byte_identical": true,
+    "modes": [
+      {
+        "bytes": 10843,
+        "mode": "normal-root",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "b26df8ee64cd716ecb5800484e590bb873fe77361dd8f8ed67ad3ce57dd416f6"
+      },
+      {
+        "bytes": 371072,
+        "mode": "normal-root",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "596d45394bbec20cca98c1f7a3b2927dee1d6fd826e7509ff7994d5eb7769d3e"
+      },
+      {
+        "bytes": 22603,
+        "mode": "normal-root",
+        "returncode": 0,
+        "script": "library_check.py",
+        "sha256": "170b1437b17c83b5a607ce04b29feef0544be47830b74d6c9f99eb72d9b5ecc9"
+      },
+      {
+        "bytes": 10843,
+        "mode": "optimized-root",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "b26df8ee64cd716ecb5800484e590bb873fe77361dd8f8ed67ad3ce57dd416f6"
+      },
+      {
+        "bytes": 371072,
+        "mode": "optimized-root",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "596d45394bbec20cca98c1f7a3b2927dee1d6fd826e7509ff7994d5eb7769d3e"
+      },
+      {
+        "bytes": 22603,
+        "mode": "optimized-root",
+        "returncode": 0,
+        "script": "library_check.py",
+        "sha256": "170b1437b17c83b5a607ce04b29feef0544be47830b74d6c9f99eb72d9b5ecc9"
+      },
+      {
+        "bytes": 10843,
+        "mode": "normal-newcwd",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "b26df8ee64cd716ecb5800484e590bb873fe77361dd8f8ed67ad3ce57dd416f6"
+      },
+      {
+        "bytes": 371072,
+        "mode": "normal-newcwd",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "596d45394bbec20cca98c1f7a3b2927dee1d6fd826e7509ff7994d5eb7769d3e"
+      },
+      {
+        "bytes": 22603,
+        "mode": "normal-newcwd",
+        "returncode": 0,
+        "script": "library_check.py",
+        "sha256": "170b1437b17c83b5a607ce04b29feef0544be47830b74d6c9f99eb72d9b5ecc9"
+      },
+      {
+        "bytes": 10843,
+        "mode": "optimized-newcwd",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "b26df8ee64cd716ecb5800484e590bb873fe77361dd8f8ed67ad3ce57dd416f6"
+      },
+      {
+        "bytes": 371072,
+        "mode": "optimized-newcwd",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "596d45394bbec20cca98c1f7a3b2927dee1d6fd826e7509ff7994d5eb7769d3e"
+      },
+      {
+        "bytes": 22603,
+        "mode": "optimized-newcwd",
+        "returncode": 0,
+        "script": "library_check.py",
+        "sha256": "170b1437b17c83b5a607ce04b29feef0544be47830b74d6c9f99eb72d9b5ecc9"
+      }
+    ],
+    "newcwd": "fresh isolated temporary directory"
+  },
+  "revision": "CLI summary uses committed updates and actual final; unavailable second update is null. Raw extended-precision nonzero values cannot silently underflow during binary64 conversion; supported zero/NumPy scalars retained.",
+  "status": "coordinator revision2 checks passed; independent review pending",
+  "unit": "039"
+}
