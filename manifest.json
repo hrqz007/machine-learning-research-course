@@ -923,7 +923,7 @@
         "实验与验收": "自行实现lstsq路线，与scikit-learn比对预测和残差；报告条件数。",
         "常见误区": "只比系数不比预测；在秩亏时期待唯一系数；显式求逆。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {},
       "checks": {
         "scientific": "independent_passed",
@@ -931,10 +931,15 @@
         "script": "passed",
         "notebook": "passed_inprocess_fresh_kernel",
         "pdf_visual": "all_21_pages_passed",
-        "remote": "pending"
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "d826542c41dda95b23e7cb62b2f9f6a33798b387",
+        "remote_files_verified": 30,
+        "remote_hash_matched": true,
+        "repository_files_verified": 901
       }
     },
     {
@@ -947,7 +952,7 @@
         "实验与验收": "对两参数回归画损失曲面和梯度场；用已知闭式解定位最优点。",
         "常见误区": "把损失低等同泛化好；把优化器成功状态当模型正确。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/030/lecture.pdf",
         "lab": "units/030/lab.pdf",
@@ -962,10 +967,15 @@
         "script": "passed",
         "notebook": "passed_inprocess_fresh_kernel",
         "pdf_visual": "all_27_pages_passed",
-        "remote": "pending"
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "d826542c41dda95b23e7cb62b2f9f6a33798b387",
+        "remote_files_verified": 28,
+        "remote_hash_matched": true,
+        "repository_files_verified": 901
       }
     },
     {
@@ -978,7 +988,7 @@
         "实验与验收": "纸笔做多轮更新，再画三种学习率轨迹；与解析最优点比较。",
         "常见误区": "把负导数理解为直接跳到最小值；学习率越大越快。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/031/lecture.pdf",
         "lab": "units/031/lab.pdf",
@@ -993,10 +1003,15 @@
         "script": "passed",
         "notebook": "passed_inprocess_fresh_kernel",
         "pdf_visual": "all_22_pages_passed",
-        "remote": "pending"
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "d826542c41dda95b23e7cb62b2f9f6a33798b387",
+        "remote_files_verified": 30,
+        "remote_hash_matched": true,
+        "repository_files_verified": 901
       }
     },
     {
@@ -1009,7 +1024,7 @@
         "实验与验收": "从零实现批量GD；比较缩放前后轨迹、迭代数和闭式解误差。",
         "常见误区": "漏除样本数却沿用学习率；把特征标准化视作无条件的无害操作。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/032/lecture.pdf",
         "lab": "units/032/lab.pdf",
@@ -1023,10 +1038,16 @@
         "sources": "passed",
         "code": "independent_passed",
         "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
-        "visual": "all24pdfpages_and8notebookPNGs_independent_passed"
+        "visual": "all24pdfpages_and8notebookPNGs_independent_passed",
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "d826542c41dda95b23e7cb62b2f9f6a33798b387",
+        "remote_files_verified": 29,
+        "remote_hash_matched": true,
+        "repository_files_verified": 901
       }
     },
     {
@@ -1039,14 +1060,20 @@
         "实验与验收": "在满足和破坏假设的函数上检验界；比较函数值、梯度范数与参数距离。",
         "常见误区": "把凸情形保证推广到任意深网；把经验收敛曲线当定理证明。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/033/lecture.pdf",
+        "lab": "units/033/lab.pdf",
+        "answers": "units/033/answers.pdf",
+        "notebook": "units/033/experiment.ipynb",
+        "script": "units/033/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "owner_passed_independent_pending",
+        "sources": "owner_passed_independent_pending",
+        "code": "owner_passed_independent_pending",
+        "notebook": "owner_passed_independent_pending",
+        "visual": "owner_passed_independent_pending"
       },
       "publication": {
         "status": "not_uploaded"
@@ -1062,7 +1089,7 @@
         "实验与验收": "对同一任务比较full-batch、SGD、mini-batch，多种子画均值与波动。",
         "常见误区": "用迭代次数比较不同batch的效率；忽略数据顺序和梯度噪声。"
       },
-      "status": "in_review",
+      "status": "verified",
       "artifacts": {
         "lecture": "units/034/lecture.pdf",
         "lab": "units/034/lab.pdf",
@@ -1071,11 +1098,11 @@
         "script": "units/034/experiment.py"
       },
       "checks": {
-        "scientific": "owner_passed_independent_pending",
-        "sources": "owner_passed_independent_pending",
-        "code": "owner_passed_independent_pending",
-        "notebook": "owner_passed_independent_pending",
-        "visual": "owner_passed_independent_pending"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "all19pdfpages_and6notebookPNGs_independent_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -1091,7 +1118,7 @@
         "实验与验收": "从零实现两种动量；在狭长谷底比较轨迹和超调，核对库实现约定。",
         "常见误区": "把不同动量定义的超参数直接比较；把加速保证泛化到所有目标。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -1114,7 +1141,7 @@
         "实验与验收": "手算Adam前几步并实现；对比优化器状态、有效步长和参数更新。",
         "常见误区": "Adam永远优于SGD；把Adam中的L2惩罚与解耦权重衰减视为相同。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
