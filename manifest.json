@@ -152,7 +152,7 @@
         "实验与验收": "用循环与NumPy算同一批预测和误差；逐项比对并测试非方阵和单样本输入。",
         "常见误区": "误把广播后的结果当目标形状；混淆复制与视图。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/005/lecture.pdf",
         "lab": "units/005/lab.pdf",
@@ -168,7 +168,11 @@
         "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "6d3427dd094da17ac0685b979666dc7e5793d0b9",
+        "verified_file_count": 28,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/005"
       }
     },
     {
@@ -181,7 +185,7 @@
         "实验与验收": "完成一个小型公开数据或本地教学数据的探索报告；核验合并前后行数和分组统计。",
         "常见误区": "在全数据上确定预处理参数；把异常值一律删掉；忽略合并造成的一对多膨胀。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/006/lecture.pdf",
         "lab": "units/006/lab.pdf",
@@ -197,7 +201,11 @@
         "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "6d3427dd094da17ac0685b979666dc7e5793d0b9",
+        "verified_file_count": 32,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/006"
       }
     },
     {
@@ -242,7 +250,7 @@
         "实验与验收": "把同一个预测式写成文字、公式、表格和程序；验证对数恒等式的定义域。",
         "常见误区": "忽视定义域；把相关例子当证明；看不懂下标却继续套公式。"
       },
-      "status": "in_review",
+      "status": "published",
       "artifacts": {
         "lecture": "units/008/lecture.pdf",
         "lab": "units/008/lab.pdf",
@@ -251,14 +259,18 @@
         "script": "units/008/experiment.py"
       },
       "checks": {
-        "scientific": "author_passed_independent_pending",
+        "scientific": "independent_passed",
         "sources": "passed",
         "code": "passed",
         "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
-        "visual": "author_passed_independent_pending"
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "66bf10b2c5b1a19bf29dc54db4676205f9556411",
+        "verified_file_count": 25,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/008"
       }
     },
     {
@@ -271,14 +283,19 @@
         "实验与验收": "手算二维投影和距离，再用数组验证；改变单位观察距离排名。",
         "常见误区": "把向量仅当列表；混淆范数与平方范数；默认不同尺度可直接比较。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/009/lecture.pdf",
+        "lab": "units/009/lab.pdf",
+        "notebook": "units/009/experiment.ipynb",
+        "script": "units/009/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -294,14 +311,21 @@
         "实验与验收": "画二维变换网格；实现批量预测并核验每个轴的含义。",
         "常见误区": "把逐元素乘法当矩阵乘法；默认矩阵乘法可交换。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/010/lecture.pdf",
+        "lab": "units/010/lab.pdf",
+        "notebook": "units/010/experiment.ipynb",
+        "script": "units/010/experiment.py",
+        "answers": "units/010/answers.pdf",
+        "example_report": "units/010/example_report.pdf"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -317,14 +341,20 @@
         "实验与验收": "构造满秩、秩亏和近共线数据；比较solve/lstsq与显式求逆的误差。",
         "常见误区": "把可逆当总能稳定求解；把正规方程当唯一或最稳的实现。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/011/lecture.pdf",
+        "lab": "units/011/lab.pdf",
+        "answers": "units/011/answers.pdf",
+        "notebook": "units/011/experiment.ipynb",
+        "script": "units/011/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -340,14 +370,20 @@
         "实验与验收": "手算小型对称矩阵，再检验SVD重构、截断误差和符号不唯一。",
         "常见误区": "所有矩阵都套实对称特征分解；把方向符号变化当算法错误。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/012/lecture.pdf",
+        "lab": "units/012/lab.pdf",
+        "answers": "units/012/answers.pdf",
+        "notebook": "units/012/experiment.ipynb",
+        "script": "units/012/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -363,14 +399,20 @@
         "实验与验收": "手算并画函数、切线和差商；比较不同差分步长的误差。",
         "常见误区": "导数只会套表；忽略不可导点和数值消减。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/013/lecture.pdf",
+        "lab": "units/013/lab.pdf",
+        "answers": "units/013/answers.pdf",
+        "notebook": "units/013/experiment.ipynb",
+        "script": "units/013/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_passed_independent_pending",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "author_passed_independent_pending"
       },
       "publication": {
         "status": "not_uploaded"
@@ -386,7 +428,7 @@
         "实验与验收": "对两变量预测器分别手推、有限差分和程序核验梯度。",
         "常见误区": "把梯度当标量；遗漏复合路径；混淆Jacobian与梯度的形状。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
