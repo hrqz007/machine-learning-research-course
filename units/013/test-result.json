@@ -1,0 +1,103 @@
+{
+  "unit": "013",
+  "date": "2026-10-04",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8",
+    "core": "Python standard library only"
+  },
+  "script": {
+    "new_process_runs": 3,
+    "unrelated_cwd_runs": 2,
+    "same_environment_json_bytes_identical": true,
+    "python_O_checks_retained": true,
+    "result_sha256": "57a6fc7c3f7c5948d4c3befd5be53bbe54c53d16c6c7ae598f0bb82a92e98af7"
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 14,
+    "png_outputs": 2,
+    "kernel": "real ipykernel InProcessKernel in a fresh Python process",
+    "sequential": true,
+    "private_path_check": "passed"
+  },
+  "exact": {
+    "exact_checks_passed": 205,
+    "loss_at_3_over_2": "1/6",
+    "derivative_at_3_over_2": "-4/3",
+    "optimum": "23/14",
+    "minimum": "1/14",
+    "loss_at_151_over_100": "769/5000",
+    "cubic_forward_error_at_h_1_over_20": "61/400",
+    "cubic_central_error_at_h_1_over_20": "1/400"
+  },
+  "boundary": {
+    "checks_passed": 35,
+    "checks": [
+      "loss agrees with hand",
+      "derivative agrees with hand",
+      "zero derivative absolute tolerance",
+      "cubic center",
+      "abs right",
+      "abs left",
+      "abs symmetric false positive",
+      "relu symmetric false positive",
+      "constant",
+      "valid log domain",
+      "invalid scalar True",
+      "invalid scalar '1'",
+      "invalid scalar (1+0j)",
+      "invalid scalar inf",
+      "invalid scalar -inf",
+      "invalid scalar nan",
+      "invalid step 0",
+      "invalid step -0.1",
+      "invalid step True",
+      "invalid step nan",
+      "invalid step inf",
+      "unresolved scale",
+      "unresolved tiny step",
+      "central log outside domain",
+      "nonfinite function output",
+      "boolean function output",
+      "unknown method",
+      "overflowed central denominator",
+      "empty data",
+      "wrong pair length",
+      "boolean data",
+      "string in core data",
+      "overflowed loss",
+      "overflowed derivative",
+      "zero truth relative error omitted"
+    ],
+    "active_with_python_O": true,
+    "note": "Checks explicitly raise; no checks rely on the assert statement."
+  },
+  "step_scan": {
+    "functions": 2,
+    "methods_per_function": 2,
+    "steps": 17,
+    "attempts": 68,
+    "all_rejections_recorded": true,
+    "zero_error_not_fabricated_for_log_plots": true
+  },
+  "visual": {
+    "lecture_pages": 14,
+    "lab_pages": 3,
+    "answers_pages": 4,
+    "original_figures": 11,
+    "notebook_pngs": 2
+  },
+  "not_tested": [
+    "Jupyter browser UI",
+    "external-process socket kernel transport",
+    "learner Anaconda installation"
+  ],
+  "limits": [
+    "Finite checks do not prove differentiability.",
+    "Basic fixed-step formulas are not an adaptive production solver.",
+    "Nominal h is used in formulas; actual floating-point offsets are separately recorded.",
+    "Numeric curve details depend on floating-point implementation; no universal optimal step is claimed."
+  ]
+}

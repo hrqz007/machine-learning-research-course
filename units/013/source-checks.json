@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-04",
+  "status": "source_pages_read_science_and_code_checks_separate",
+  "sources": [
+    {
+      "title": "MIT OCW introduction to derivatives",
+      "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-1-introduction-to-derivatives/",
+      "checked": "Read official session overview and resource list; tangent slope and limit-of-secants focus. Original chapter derivations separately checked, not copied."
+    },
+    {
+      "title": "MIT OCW product rule",
+      "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-9-product-rule/",
+      "checked": "Read official overview and links. Independent algebraic proof supplied in chapter."
+    },
+    {
+      "title": "MIT OCW chain rule",
+      "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-11-chain-rule/",
+      "checked": "Read official composition overview and worked-example links. Independent remainder-based proof avoids division by zero inner increments."
+    },
+    {
+      "title": "Python floating-point tutorial",
+      "url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+      "checked": "Read official binary approximation and rounding explanation; runtime version must be recorded independently."
+    },
+    {
+      "title": "Python math reference",
+      "url": "https://docs.python.org/3/library/math.html",
+      "checked": "Official math reference retrieved; interface details to be tested against runtime."
+    },
+    {
+      "title": "SciPy differentiate.derivative",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.differentiate.derivative.html",
+      "checked": "Read official notes on absolute step, unresolved large-magnitude increments, subtractive cancellation, domain-side selection, error estimate and statuses. Tutorial does not invoke SciPy or claim equivalent adaptive implementation."
+    }
+  ]
+}

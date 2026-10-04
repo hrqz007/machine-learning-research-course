@@ -1,0 +1,160 @@
+{
+  "unit": "013",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 14,
+    "figures": 11
+  },
+  "lab": {
+    "pages": 3
+  },
+  "answers": {
+    "pages": 4
+  },
+  "visual_review": "All 21 final PDF pages inspected individually at rendered resolution; two retained notebook PNG outputs also inspected. Removed lecture and lab orphan tail pages.",
+  "code": {
+    "python": "3.12.14",
+    "status": "passed",
+    "exact_checks": 205,
+    "boundary_and_basic_checks": 35,
+    "unrelated_cwd_runs": 2,
+    "python_O": "checks retained and passed",
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 14,
+    "png_outputs": 2,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Finite checks do not prove differentiability.",
+    "Basic fixed-step formulas are not an adaptive production solver.",
+    "Nominal h is used in formulas; actual floating-point offsets are separately recorded.",
+    "Numeric curve details depend on floating-point implementation; no universal optimal step is claimed.",
+    "Jupyter browser UI",
+    "external-process socket kernel transport",
+    "learner Anaconda installation"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 28818,
+      "sha256": "5c21f8ddc44383a85ba569c803f95303c2eacbac850edbec6cd8d0b331316cc4"
+    },
+    "lecture.pdf": {
+      "bytes": 1893983,
+      "sha256": "c89d893bdab516440fbdd417ffdd72e7e16cde67f703aa8f4c15aac146944228"
+    },
+    "lab.md": {
+      "bytes": 7154,
+      "sha256": "cce58e6a9aa62e11dd4f8c45b2daaa6c31c9b9ce2ddfc8478e2c85f4651bfd41"
+    },
+    "lab.pdf": {
+      "bytes": 481132,
+      "sha256": "639f038244b93a845f3687f83221f982c8a9a5523220ef47fa679dc7e6a02686"
+    },
+    "answers.md": {
+      "bytes": 7564,
+      "sha256": "89beb289a2811262c9abbe26860b4f8105d63875228995ee53dd9d62b8a5fd3b"
+    },
+    "answers.pdf": {
+      "bytes": 496170,
+      "sha256": "f5e9fe2e8a4893258c51a895f22e7976b5687d87b180d156b69395dbd44ec822"
+    },
+    "experiment.py": {
+      "bytes": 12225,
+      "sha256": "172b9b955ceb7069a18c931b0140d1445505004831fb580be5700325406ff550"
+    },
+    "experiment.ipynb": {
+      "bytes": 140183,
+      "sha256": "d8c94242367f8a163250de9494369ca1edbe1d2db75caee1f393017ad2308d28"
+    },
+    "README.md": {
+      "bytes": 1675,
+      "sha256": "57718110ea4f13ff588edc68f8d858ad7b09d565fedbb70a917ba05ef08e5990"
+    },
+    "requirements.txt": {
+      "bytes": 19,
+      "sha256": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d"
+    },
+    "source-checks.json": {
+      "bytes": 2127,
+      "sha256": "f6cdc0c85260f86ce845f626a00e0c7c90ed1557d76487f4bd2caa4e030b5440"
+    },
+    "test-result.json": {
+      "bytes": 2980,
+      "sha256": "0663655820b1f537c5160588d4648baca6dc21a8f9ebc4ccb974c65e45bc3957"
+    },
+    "data/README.md": {
+      "bytes": 600,
+      "sha256": "adcbf9e1519e425850fd82f0e1d00703710e348483c8e4fc3c4bee5b90b34229"
+    },
+    "data/calibration.csv": {
+      "bytes": 38,
+      "sha256": "7cd35ec25c80c61affe0ce73c9ce17f5c32f6efe1ee72a1a6e743b8a148be945"
+    },
+    "figures/01_model_loss.png": {
+      "bytes": 116657,
+      "sha256": "0af3b7a0922c967dc2d3036bbcf0eefc78ef1274b5590eb646c200ce41a286d9"
+    },
+    "figures/02_secants_tangent.png": {
+      "bytes": 126628,
+      "sha256": "10be518b16eace1991f57d790326d9362318d70e391f231656a56c34ebeb6398"
+    },
+    "figures/03_local_remainder.png": {
+      "bytes": 108035,
+      "sha256": "134ee376b75d65c0fcb97784b74f7d476d551f7179b81b337886cc8fd0911bcf"
+    },
+    "figures/04_nondifferentiable.png": {
+      "bytes": 109120,
+      "sha256": "8b42d99ee4ba62ce8a8daab113620cec081af8d27f50c22e3839a336b92d30bc"
+    },
+    "figures/05_product_rule.png": {
+      "bytes": 42171,
+      "sha256": "14d9a4c14b8ea3f948eb0878ba9d155a2445ecdb97a64b400ff6b81bdb15670b"
+    },
+    "figures/06_chain_path.png": {
+      "bytes": 37352,
+      "sha256": "7da6a905962b7038de9bbbff7a1a5f18243d1980319d00b6429ad294cbb4ff56"
+    },
+    "figures/07_loss_derivative.png": {
+      "bytes": 46741,
+      "sha256": "dc1fbbab55caa523543bc40a4624dd0a985abd1c62cdb811caa8172d56fda92e"
+    },
+    "figures/08_local_not_global.png": {
+      "bytes": 113970,
+      "sha256": "e6e3151822fc134d9154313f18d3611b7ba91341bd7564e4db2a60bb06189800"
+    },
+    "figures/09_difference_orders.png": {
+      "bytes": 76878,
+      "sha256": "2204494bb717a277d41ff27dc962b53fd1cafed291ee910470c38735627f3c2e"
+    },
+    "figures/10_float_error.png": {
+      "bytes": 118629,
+      "sha256": "ec71195945a67147f153f3870ddc68aaa05331f8a10eec244a580d85e5429b1f"
+    },
+    "figures/11_failure_map.png": {
+      "bytes": 108840,
+      "sha256": "68e23581e76a7b3ca4ffb006524eacf44e2fc48a59553d05d5a31032644b92fb"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "25 payload hashes matched",
+      "all 21 PDF pages, 11 figures and 2 notebook plots visually inspected",
+      "14 code cells in fresh real in-process kernel",
+      "two unrelated-cwd script runs and python -O report bytes identical",
+      "original 205 exact checks and 35 boundary/basic checks rerun",
+      "200 extra Fraction loss and derivative cases",
+      "200 cases of three cubic difference formulas, 600 exact values",
+      "all 68 scan rows independently checked",
+      "16 additional failure cases",
+      "derivative definition, remainder-based chain proof, main hand calculations and global-square optimality checked"
+    ]
+  }
+}
