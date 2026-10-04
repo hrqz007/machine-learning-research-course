@@ -1,0 +1,9 @@
+observation_id,batch,success
+O01,first,0
+O02,first,0
+O03,first,1
+O04,first,0
+O05,second,1
+O06,second,0
+O07,second,1
+O08,second,0

@@ -1,0 +1,81 @@
+{
+  "unit": "024",
+  "status": "author_and_coordinator_checks_passed",
+  "date": "2026-10-04",
+  "core": {
+    "references": 1405,
+    "boundary": {
+      "expected_rejections": 55,
+      "accepted_groups": 17
+    }
+  },
+  "independent_audit": {
+    "status": "passed",
+    "independent_checks": {
+      "fraction_beta_integrals": 64,
+      "decimal_logbeta": 64,
+      "exact_predictive": 2240,
+      "exact_evidence": 3584,
+      "mode_and_coordinate": 8,
+      "pre_rng_guards": 12,
+      "invalid_csv_protection": 9,
+      "moment_constants_and_bad_tails": 80
+    },
+    "total": 6061,
+    "fresh_process_runs": 3,
+    "ordinary_optimized_byte_identical": true,
+    "working_directory_count": 2
+  },
+  "notebook": {
+    "code_cells": 12,
+    "retained_png": 6,
+    "errors": 0,
+    "method": "new Python process, real InProcessKernel, sequential execution",
+    "png_sha256": [
+      "b4b6c9a422e46dfabe2b2b58a7d34b52f055687126e56d903cc3c14f7556487a",
+      "211b6ae533e76fe14c114061ba729b63d4e49947f30c01d16c866c845d9a80d4",
+      "3f145768051063ad19bf4d2795d4299d15bdf8c46454e851840b025322ed205c",
+      "58251fa1eea01bd65bf8c50ffa91add7164b96a1bd3cb3cc002758226c0714f7",
+      "1fb0d6d87f1a7770ccf1b7cbd0fd52116938f561cda3301a740893eeffc3d20c",
+      "78080598073907de4de0203211a9fef25c282c7c982ab6638973e9908a8f5c6b"
+    ]
+  },
+  "visual": {
+    "lecture_pages": 13,
+    "lab_pages": 4,
+    "answer_pages": 4,
+    "all_final_pages_individually_viewed": true,
+    "all_notebook_pngs_individually_viewed": true,
+    "repairs": [
+      "Caption accurately counts all four sensitivity priors",
+      "Lab distinguishes density from log-density endpoint values",
+      "Weighted-mean equation protected from Markdown link parsing"
+    ]
+  },
+  "limits": [
+    "Synthetic finite CPU experiments only",
+    "General Gamma-Beta identity accepted, not proved here",
+    "Browser UI, standard socket transport, learner Anaconda installation and cross-version bitwise RNG compatibility untested"
+  ],
+  "review_regression": {
+    "status": "fixed_and_retested",
+    "reported_findings": [
+      "positive weighted likelihood silently underflowed",
+      "positive plugin PMF entries silently underflowed",
+      "nonconstant tiny spread returned zero variance",
+      "extended/exact scalar silently converted to zero"
+    ],
+    "changes": [
+      "float-facing real scalars restricted to ordinary <=64-bit types; non-exact integer casts rejected; Fraction retained in explicit exact APIs",
+      "discrete and plugin likelihoods computed in log space with every mathematically positive mass checked; true zero weight/endpoint events preserved",
+      "complete vector validation precedes constant branch; positive residual-square and variance contributions must remain normal and nonzero",
+      "Mean now uses compensated original-value summation before residuals, preserving small mixed-scale means; three tiny mixed-scale contributions reject and one moderate mixed-scale mean is retained"
+    ],
+    "new_boundary_groups": 17,
+    "lab_pages_changed_and_reviewed": [
+      3,
+      4
+    ],
+    "notebook_all_six_png_sha256_unchanged": true
+  }
+}

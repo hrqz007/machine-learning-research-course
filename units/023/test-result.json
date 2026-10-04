@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "independent_checks": {
+    "fraction_bernoulli": 1463,
+    "decimal_loglikelihood": 627,
+    "fraction_gaussian": 240,
+    "derivative_checks": 18,
+    "gaussian_degeneracy": 28,
+    "pre_callback_guards": 9,
+    "pre_rng_guards": 24,
+    "callback_output_rejections": 6,
+    "invalid_csv_protection": 11,
+    "extra_input_checks": 19
+  },
+  "total_independent_checks": 2445,
+  "fresh_process_runs": 3,
+  "working_directories": [
+    "/tmp",
+    "/"
+  ],
+  "python_optimized_run": true,
+  "same_stdout_and_output_bytes": true,
+  "output_sha256": {
+    "replicate_estimates.csv": "e54b76deb40621ea357ceda72d298bd3ac6e75f44e152531533d02063835d2ed",
+    "report.json": "1a7b05e19a959f81bf0aee6a359eddf627e10bbe7bd855f3ba2d0c5fef293524"
+  },
+  "core_checks": {
+    "reference": {
+      "passed": 474
+    },
+    "boundary": {
+      "rejected": 23,
+      "accepted_edge_cases": 4
+    }
+  },
+  "limitations": [
+    "No operating-system crash or full-disk atomic multi-file transaction test.",
+    "Numerical precision guards deliberately reject extended-precision input and very small positive fitted variance."
+  ]
+}

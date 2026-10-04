@@ -1,0 +1,230 @@
+{
+  "unit": "024",
+  "title": "Bayes估计与先验",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 13,
+    "figures": 12,
+    "sections": 19
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4,
+    "exercises": 18
+  },
+  "notebook": {
+    "code_cells": 12,
+    "retained_png": 6,
+    "errors": 0,
+    "method": "new Python process, real InProcessKernel, sequential execution",
+    "png_sha256": [
+      "b4b6c9a422e46dfabe2b2b58a7d34b52f055687126e56d903cc3c14f7556487a",
+      "211b6ae533e76fe14c114061ba729b63d4e49947f30c01d16c866c845d9a80d4",
+      "3f145768051063ad19bf4d2795d4299d15bdf8c46454e851840b025322ed205c",
+      "58251fa1eea01bd65bf8c50ffa91add7164b96a1bd3cb3cc002758226c0714f7",
+      "1fb0d6d87f1a7770ccf1b7cbd0fd52116938f561cda3301a740893eeffc3d20c",
+      "78080598073907de4de0203211a9fef25c282c7c982ab6638973e9908a8f5c6b"
+    ]
+  },
+  "code": {
+    "references": 1405,
+    "boundary": {
+      "expected_rejections": 55,
+      "accepted_groups": 17
+    }
+  },
+  "independent_arithmetic_audit": {
+    "status": "passed",
+    "independent_checks": {
+      "fraction_beta_integrals": 64,
+      "decimal_logbeta": 64,
+      "exact_predictive": 2240,
+      "exact_evidence": 3584,
+      "mode_and_coordinate": 8,
+      "pre_rng_guards": 12,
+      "invalid_csv_protection": 9,
+      "moment_constants_and_bad_tails": 80
+    },
+    "total": 6061,
+    "fresh_process_runs": 3,
+    "ordinary_optimized_byte_identical": true,
+    "working_directory_count": 2
+  },
+  "visual_review": {
+    "lecture_pages": 13,
+    "lab_pages": 4,
+    "answer_pages": 4,
+    "all_final_pages_individually_viewed": true,
+    "all_notebook_pngs_individually_viewed": true,
+    "repairs": [
+      "Caption accurately counts all four sensitivity priors",
+      "Lab distinguishes density from log-density endpoint values",
+      "Weighted-mean equation protected from Markdown link parsing"
+    ]
+  },
+  "limits": [
+    "Synthetic finite CPU experiments only",
+    "General Gamma-Beta identity accepted, not proved here",
+    "Browser UI, standard socket transport, learner Anaconda installation and cross-version bitwise RNG compatibility untested"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 6536,
+      "sha256": "9bc9c549e02fdef1f96a657c19bdbfcc049a307b7a4c47c899a7268ae06da49b"
+    },
+    "lecture.md": {
+      "bytes": 24216,
+      "sha256": "325395a72ed37315784a3a2e5bf8aa9cd6ec7d2e1a8f093aea7e074dcbc053ce"
+    },
+    "lecture.pdf": {
+      "bytes": 1928623,
+      "sha256": "3d5124c3785f51c11dff893cf0198542d0f98b34c5aaa317f2dce29d8f002991"
+    },
+    "lab.md": {
+      "bytes": 8925,
+      "sha256": "f3b957cf7cc73536a485bc08bc3c9505da9392548cbf133d3f23aa6abe192e0e"
+    },
+    "lab.pdf": {
+      "bytes": 454952,
+      "sha256": "ed91d0fcd60ce93fd2e2bdcf70a63def36bc27f783bcf62d2171a6dd160dced8"
+    },
+    "answers.md": {
+      "bytes": 9471,
+      "sha256": "11f8107524a0efdc1ed82082ff75f6ee79cbc0e17cc148a70f33c1712134386b"
+    },
+    "answers.pdf": {
+      "bytes": 457672,
+      "sha256": "c9c9c02707e967dd8c62e07dbd7231c6c3dd6aed628de0b6a316289a4e787011"
+    },
+    "experiment.py": {
+      "bytes": 18910,
+      "sha256": "699f7cfc87b4000d6ed2ea28fdb95aadfcbe8db92acfa36e97d5e169ef9af2a7"
+    },
+    "experiment.ipynb": {
+      "bytes": 549711,
+      "sha256": "26c2ddb0c3a189fea73827c8a6af44206ceb1635e01d95fe826610ad2104c2a5"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "9447d52248cdbeff4417cfb3930111f3f895ba5f8a2b697bd6d17a026f3acbb8"
+    },
+    "source-checks.json": {
+      "bytes": 2464,
+      "sha256": "5074e4d1a645b5dde30af94ff41f80eb51bc716d294d93a8d0975b4c8fd68d5b"
+    },
+    "test-result.json": {
+      "bytes": 3150,
+      "sha256": "34929a9a5ad8ff0c6395dfff4162a73e6b07c9218f9aa3c9b6cf317b02081372"
+    },
+    "data/README.md": {
+      "bytes": 776,
+      "sha256": "b8dd56ed8a5a4874ed4325ef85dbad0a2fbd2edc3024eb13d7b29b3027133854"
+    },
+    "data/observations.csv": {
+      "bytes": 129,
+      "sha256": "edad50a21496a488ed58b6ea351a229211022ca1bb1a86ddc0ccb0b6ee7e3cde"
+    },
+    "data/priors.csv": {
+      "bytes": 253,
+      "sha256": "7a610e4e6efec405a65a623ea11f664cf40197f6af26bd4f5e43e29b7b3acbe7"
+    },
+    "figures/01_three_objects.png": {
+      "bytes": 106328,
+      "sha256": "d12d93730cca9948b3cdf3142816c76b54b1e700fa0d4ba4218b98875340f598"
+    },
+    "figures/02_normalization.png": {
+      "bytes": 98180,
+      "sha256": "0afbc7efa33a9659059e5020a1d424540470fbba9bf706a2481efb47ca1c2dca"
+    },
+    "figures/03_beta_shapes.png": {
+      "bytes": 87488,
+      "sha256": "4f3ace8c976beafcc99b4dba5c9b3e04e6281f9db56fe4186470a7fe8d6fe6a6"
+    },
+    "figures/04_prior_strength.png": {
+      "bytes": 84194,
+      "sha256": "8c153112faaede3112237f6dee2a0e9d40a5610ffba31dc0ab951538319a6616"
+    },
+    "figures/05_conjugate_update.png": {
+      "bytes": 112815,
+      "sha256": "309d4fba70da6d2c9183a463dc1ac44853ffd7de74b0779522f03b8dcea5cd7d"
+    },
+    "figures/06_sequential.png": {
+      "bytes": 129136,
+      "sha256": "ba038d5b7f8a0b33982fd088d3c434b6fd105a7230f494fb2d6a61986646a1a8"
+    },
+    "figures/07_three_estimates.png": {
+      "bytes": 103137,
+      "sha256": "a173d5cc813be59dd6c72acac5eb3c09ae997c94dc5fedf9f08508271fb65664"
+    },
+    "figures/08_boundary_modes.png": {
+      "bytes": 119350,
+      "sha256": "6a55a7714ab55504b684793dda11ef1d87011210bfdc946f06ca082c27a26d37"
+    },
+    "figures/09_predictive_mass.png": {
+      "bytes": 44586,
+      "sha256": "93956355aea403012eda959645fb7ebefcab441e7746a37b7511db44323542b0"
+    },
+    "figures/10_shared_parameter.png": {
+      "bytes": 93953,
+      "sha256": "262180aad464e189f9af3832eb01ba91fbd22e5b076fb77462676096103c988a"
+    },
+    "figures/11_sensitivity.png": {
+      "bytes": 88312,
+      "sha256": "a31bab2293ff1db928f1a145e334c859a7a5fd6bd69b305f81ad564f3ed43b7d"
+    },
+    "figures/12_verification_routes.png": {
+      "bytes": 90483,
+      "sha256": "1615361174d302c75a02d270515146e5a326d3f120101c80f9cb814a76bf2f07"
+    }
+  },
+  "review_regression": {
+    "status": "fixed_and_retested",
+    "reported_findings": [
+      "positive weighted likelihood silently underflowed",
+      "positive plugin PMF entries silently underflowed",
+      "nonconstant tiny spread returned zero variance",
+      "extended/exact scalar silently converted to zero"
+    ],
+    "changes": [
+      "float-facing real scalars restricted to ordinary <=64-bit types; non-exact integer casts rejected; Fraction retained in explicit exact APIs",
+      "discrete and plugin likelihoods computed in log space with every mathematically positive mass checked; true zero weight/endpoint events preserved",
+      "complete vector validation precedes constant branch; positive residual-square and variance contributions must remain normal and nonzero",
+      "Mean now uses compensated original-value summation before residuals, preserving small mixed-scale means; three tiny mixed-scale contributions reject and one moderate mixed-scale mean is retained"
+    ],
+    "new_boundary_groups": 17,
+    "lab_pages_changed_and_reviewed": [
+      3,
+      4
+    ],
+    "notebook_all_six_png_sha256_unchanged": true
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "5491570e1d5a2a5fb3e9b92d7857702b0106f8f4dc4ef757199c8cd1abcb01b0",
+    "payload_files": 28,
+    "payload_bytes": 4624001,
+    "independent_integral_models": 350,
+    "high_precision_cases": 200,
+    "discrete_Bayes_cases": 200,
+    "simulation_batches_reconstructed": 20000,
+    "review_regression_rejections": 24,
+    "mathematical_zero_acceptances": 18,
+    "invalid_final_entries": 5,
+    "representable_small_mean_cases": 4,
+    "pdf_pages_reviewed": 21,
+    "original_figures": 12,
+    "notebook_code_cells": 12,
+    "fresh_kernel_pngs": 6,
+    "all_six_pngs_unchanged": true,
+    "ordinary_optimized_fresh_process_outputs_identical": true,
+    "outcome": "Four numerical boundary gaps and mixed-scale shift cancellation fixed and independently retested; no remaining blocker"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "checked_date": "2026-10-04",
+  "authorship": "本单元正文、手算、合成设计与代码独立撰写；未复制或随包分发参考文献正文。",
+  "sources": [
+    {"id":"nist-ci","title":"NIST/SEMATECH e-Handbook: Confidence Limits for the Mean","url":"https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm","type":"official statistical handbook","access":"opened and checked","used_for":"重复抽样覆盖的解释；未知方差均值区间的条件。已知方差证明在本单元独立给出。"},
+    {"id":"sh-bootstrap","title":"Cosma Shalizi, Simulation for Inference I — The Bootstrap, 2018","url":"https://stat.cmu.edu/~cshalizi/dst/18/lectures/18/lecture-18.html","type":"author lecture notes","access":"opened and checked, model-based and resampling sections","used_for":"参数Bootstrap与保持生成结构的重采样思想。"},
+    {"id":"scipy-bootstrap","title":"SciPy official reference: scipy.stats.bootstrap","url":"https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html","type":"official software documentation","access":"opened and checked; paired, methods, degeneracy warnings","used_for":"配对索引语义与percentile/basic的术语；本课没有调用此函数。"},
+    {"id":"numpy-quantile","title":"NumPy official reference: numpy.quantile","url":"https://numpy.org/doc/stable/reference/generated/numpy.quantile.html","type":"official software documentation","access":"opened and checked; inverted_cdf versus linear","used_for":"明确有限样本分位数约定；模拟调用inverted_cdf。"},
+    {"id":"scipy-beta","title":"SciPy official reference: scipy.stats.beta","url":"https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html","type":"official software documentation","access":"opened and checked; density, CDF, PPF and Boost implementation","used_for":"独立数值参考使用scipy.stats.beta.ppf；教学代码自行二分整数形状CDF。"},
+    {"id":"efron1979","title":"Bradley Efron, Bootstrap Methods: Another Look at the Jackknife, Annals of Statistics 7(1), 1–26, 1979","url":"https://doi.org/10.1214/aos/1176344552","type":"original research article","access":"publisher landing page returned iframe only; not used as inspected full-text evidence","used_for":"历史性原始论文书目，延伸阅读，不据此宣称已复现一般有效性定理。"}
+  ]
+}

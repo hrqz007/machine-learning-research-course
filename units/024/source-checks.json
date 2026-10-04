@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "status": "primary_sources_opened_and_relevant_sections_read",
+  "sources": [
+    {
+      "title": "MIT18.05 Reading13a",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class13-prep-a.pdf",
+      "checked": "Continuous prior, posterior normalization and evidence integral"
+    },
+    {
+      "title": "MIT18.05 Reading15",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class15-prep.pdf",
+      "checked": "Sections3–5: positive Beta shapes, integer normalizer, Beta-Binomial conjugacy and sequential updating"
+    },
+    {
+      "title": "MIT18.05 Reading12a",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class12-prep-a.pdf",
+      "checked": "Section3: prior/posterior prediction and law of total probability; hypotheses versus future outcomes"
+    },
+    {
+      "title": "MIT18.05 Reading16a",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class16-prep-a.pdf",
+      "checked": "Section3: strength and rigid zero prior support"
+    },
+    {
+      "title": "NIST DLMF5.12",
+      "url": "https://dlmf.nist.gov/5.12",
+      "checked": "Equations5.12.1–2 with positive real parameters; Beta integral,Gamma ratio,trigonometric substitution"
+    },
+    {
+      "title": "Berkeley Stat210A Bayes Estimation",
+      "url": "https://stat210a.berkeley.edu/fall-2025/reader/bayes-estimation.html",
+      "checked": "Sections2–3: posterior squared loss decomposition and conjugacy. First displayed Beta normalizer is reversed; later page code divides by Beta correctly. Course explicitly derives correct1/B and doesnot copy the typo."
+    },
+    {
+      "title": "NumPy2.3 Generator.beta",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.beta.html",
+      "checked": "Positive alpha/beta, integral normalization and sampling shape"
+    },
+    {
+      "title": "Python3.12 math",
+      "url": "https://docs.python.org/3.12/library/math.html",
+      "checked": "lgamma returns log absolute Gamma; real-domain/overflow behavior and log1p"
+    }
+  ],
+  "proof_scope": "Beta recurrence/moments/conjugacy/predictive/variance/MAP coordinate example derived independently; general Gamma-Beta identity accepted explicitly"
+}

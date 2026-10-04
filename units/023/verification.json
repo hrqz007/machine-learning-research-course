@@ -1,0 +1,247 @@
+{
+  "unit": "023",
+  "title": "似然与最大似然估计",
+  "date": "2026-10-04",
+  "status": "verified",
+  "page_counts": {
+    "lecture": 14,
+    "lab": 4,
+    "answers": 5
+  },
+  "lecture_sections": 22,
+  "original_color_figures": 12,
+  "exercise_solutions": 18,
+  "notebook": {
+    "code_cells": 13,
+    "retained_png": 6,
+    "sequential_execution": "fresh Python process, real IPython InProcessKernel",
+    "error_outputs": 0,
+    "png_sha256": [
+      "56c8c01dba78c31c49a03081a5d6b3ceb433d436188e053fbbe1148d23c552d8",
+      "f251208517839557e3723e00ab49f2fb199288a522b95232c303ecd6bb605189",
+      "f30e0ff773cbec46012c6a15e5e5ceebefc241228e8b4eb5559ca6f0787bd9fa",
+      "55d29aca13e6f94105b98cb32fe70f4ff9936e7afb5579fc717b1bd7998dcc5e",
+      "1bd03fec8e01d2f0097a3a8a9124134b1b8cb2b43afd573858306ab1127908a5",
+      "6b744385334fbb91ba23d1288271fc0977dd5f79e1f6101667db767cc85b4db1"
+    ]
+  },
+  "runtime": {
+    "Python": "3.12.14",
+    "NumPy": "2.3.5",
+    "Matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "core_checks": {
+    "reference_passed": 474,
+    "invalid_cases_rejected": 23,
+    "accepted_edge_cases": 4
+  },
+  "independent_checks": {
+    "fraction_bernoulli": 1463,
+    "decimal_loglikelihood": 627,
+    "fraction_gaussian": 240,
+    "derivative_checks": 18,
+    "gaussian_degeneracy": 28,
+    "pre_callback_guards": 9,
+    "pre_rng_guards": 24,
+    "callback_output_rejections": 6,
+    "invalid_csv_protection": 11,
+    "extra_input_checks": 19
+  },
+  "independent_total": 2445,
+  "reproducibility": {
+    "fresh_script_processes": 3,
+    "unrelated_working_directories": 2,
+    "python_optimized_mode_checked": true,
+    "stdout_json_csv_identical": true,
+    "full_author_audit_normal_and_optimized_identical": true
+  },
+  "visual_review": {
+    "all_pdf_pages_rendered_and_individually_viewed": true,
+    "pdf_pages_viewed": 23,
+    "all_notebook_png_individually_viewed": true,
+    "repairs_verified": [
+      "Explicit page breaks keep two derivation blocks away from page footers.",
+      "Dark colored contours replace low-contrast yellow.",
+      "Notebook objective axis label shortened to avoid clipping.",
+      "CJK font explicitly loaded for original figures."
+    ],
+    "remaining_visual_defects_observed": []
+  },
+  "science_checks": [
+    "Likelihood differs from parameter probability; density may exceed one and carries units.",
+    "Sequence/count constant valid only for fixed n and parameter p.",
+    "Independence stated before product.",
+    "Bernoulli strict log concavity, global optimum, closed boundaries and open/logit supremum distinguished.",
+    "Gaussian SSE decomposition and profile derivative establish unique global optimum only when SSE>0.",
+    "All-identical Gaussian data have unbounded likelihood for v>0; no illegal v=0 MLE returned.",
+    "Missing normalization factor changes optimization; outlier and repeated-sampling bias derived."
+  ],
+  "numerical_guardrails": [
+    "Full element validation precedes exact-constant shortcut.",
+    "Full simulation configuration precedes RNG creation.",
+    "Search configuration precedes any objective callback.",
+    "Mixed bool/text/complex/object/nonfinite and extended precision rejected before float64 coercion.",
+    "Bounded magnitudes, variance and allocation limits; intermediate overflow/underflow checks.",
+    "11 invalid CSV variants leave existing outputs byte-identical."
+  ],
+  "limitations": [
+    "Browser Jupyter UI and conventional socket kernel transport not tested.",
+    "Learner Anaconda installation and other operating systems not tested.",
+    "No cross-version bitwise random-stream promise.",
+    "Conservative numerical ranges exclude valid extreme mathematical inputs; rejection is not a mathematical nonexistence claim.",
+    "No multi-file atomic transaction guarantee for disk-full or crash events.",
+    "Finite synthetic simulations do not prove theorems or measure real-task performance.",
+    "Coordinator review and publication verification remain separate gates."
+  ],
+  "coordinator_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "pdf_pages_individually_viewed": 23,
+    "notebook_pngs_individually_viewed": 6,
+    "fresh_kernel_cells": 13,
+    "author_audit_reexecuted": 2445,
+    "all_author_candidate_hashes_matched": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5781,
+      "sha256": "857813337523a8099674400cb44df5a1103458045458f1204c0980924c72f323"
+    },
+    "answers.md": {
+      "bytes": 10971,
+      "sha256": "55b1e8443614ce6fffdbf853a2905a14cb1310be3fe3e65a5d05569232536d92"
+    },
+    "answers.pdf": {
+      "bytes": 628547,
+      "sha256": "ea54fdad0406a7aef1feb74535888babdec25eb5945d7a3949a54d07db7132a5"
+    },
+    "data/README.md": {
+      "bytes": 1959,
+      "sha256": "5f6d210617e59d09ed77150b06459578488e90a9263956e1a06561d3a093a1a1"
+    },
+    "data/bernoulli.csv": {
+      "bytes": 61,
+      "sha256": "6b3894afc2b288fe3daf4d1f54fd30f92e64770854637b39650e17e726083c79"
+    },
+    "data/gaussian.csv": {
+      "bytes": 41,
+      "sha256": "7ada488659ad0651645c42fc2f68d6a31ee6e7f48deb5e8f7b78945a8297c4ce"
+    },
+    "data/model_spec.json": {
+      "bytes": 125,
+      "sha256": "fc4cf1081484c97f47ebdf1fc36783b5eb834b1d87543b683f17f1d146cc9c48"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "f4be5871ee02c73d05da65f58c6e0eaad3b01456f126fdb6abedfc33627110ec"
+    },
+    "experiment.ipynb": {
+      "bytes": 577415,
+      "sha256": "53ea8eabd89fa0fba4823fb25b54b4967280485886cf4cd186c77ca947e0b8cb"
+    },
+    "experiment.py": {
+      "bytes": 17716,
+      "sha256": "9896f400fee3fbed7a9e391674d9c16a9fa18f64534605c8b9bf42077158d131"
+    },
+    "figures/01_two_directions.png": {
+      "bytes": 72848,
+      "sha256": "fbcbedb8a6f3e270def321b4713638cf7d95b06067d4cd56da1593caaafe96f2"
+    },
+    "figures/02_likelihood_log.png": {
+      "bytes": 102247,
+      "sha256": "0de55940327a758047d33ff8465886917e36fcf6aa3f9754d5b6b749bbe09ead"
+    },
+    "figures/03_sequence_count.png": {
+      "bytes": 106165,
+      "sha256": "41356bae8d9ac8de7ba032d56c34a2b8920a40db2f9e130ff6cf785ba5e6c1aa"
+    },
+    "figures/04_score_boundaries.png": {
+      "bytes": 100070,
+      "sha256": "3923a39c0df76a6ddbdf8ae7e5ca452624dcdd2d493465101ef0cec8ef48370f"
+    },
+    "figures/05_logit_supremum.png": {
+      "bytes": 84942,
+      "sha256": "99e881d3988f35044c6534af3e296674be301f008aeb800eb5a4323f12c31b3e"
+    },
+    "figures/06_density_units.png": {
+      "bytes": 133802,
+      "sha256": "bb875b157bbb6f1a83074a1b1a77f2efa799f2bf0f30106da07fa08ff5153bad"
+    },
+    "figures/07_mean_sse.png": {
+      "bytes": 70351,
+      "sha256": "8571797a98b2191461538e42a085f2c0bc057d3d67b19e95c994eb1bb73cc559"
+    },
+    "figures/08_profile_surface.png": {
+      "bytes": 136976,
+      "sha256": "7057b03bfb97c61b195fee2a09cf1639470eb7b137e6d5ca3d48b1ee064ebf97"
+    },
+    "figures/09_normalizer_degeneracy.png": {
+      "bytes": 110071,
+      "sha256": "c2a2c4131fa42e8bd4a823e9df8eb61661d876177fbf78e8ec0d10300e80f94e"
+    },
+    "figures/10_outlier_sensitivity.png": {
+      "bytes": 77124,
+      "sha256": "c082065f8927354c3e9cd15b146ad7e8694d2b05dde92cd57119f04a9e6bb866"
+    },
+    "figures/11_repeated_bias.png": {
+      "bytes": 89152,
+      "sha256": "2680b5c01e2d823944b1b8c73c8ab9d873650143d72be11dec8e4e6e5fffe6d2"
+    },
+    "figures/12_numerical_checks.png": {
+      "bytes": 101734,
+      "sha256": "2f4dd8243aca0053fbea92356c7ef63c2501ce10b2ae0418bbfc4357bd023369"
+    },
+    "lab.md": {
+      "bytes": 10361,
+      "sha256": "6dd52089c7918713a56a082cb53ddbf6b2a2236a63de8c31e96a6717cca18fdb"
+    },
+    "lab.pdf": {
+      "bytes": 531708,
+      "sha256": "9e57e750a9eb087f905827516e7f0434174751b82764d73cc3f29364b57084fd"
+    },
+    "lecture.md": {
+      "bytes": 29359,
+      "sha256": "ede6d12f55cca353871408c3931ff12b8492ee28f2d89fd84b542e4d41734f16"
+    },
+    "lecture.pdf": {
+      "bytes": 2089448,
+      "sha256": "d30f3b79b8030459b33d97e8488a03797d7bec4da41ad614f295330ad910d96f"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "source-checks.json": {
+      "bytes": 3114,
+      "sha256": "b5ddeed4358358eb2f0d33c43820d0ab52e057c04c54786125d94d8e725f2775"
+    },
+    "test-result.json": {
+      "bytes": 1138,
+      "sha256": "1a47a333977063ecd23d5b09e1ddbcf56a853ff9ca63b59afc9c22edb71b7318"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "91165015300d14d0577110f2bc236adf3f9f52ae01b7195bdc8abc1bee5a60f4",
+    "payload_files": 29,
+    "payload_bytes": 5093477,
+    "Bernoulli_exact_and_Decimal90_cases": 860,
+    "Gaussian_Fraction_Decimal90_global_cases": 400,
+    "constant_degeneracy_cases": 90,
+    "golden_search_and_nonconvergence_cases": 200,
+    "simulation_rows_reconstructed": 12000,
+    "invalid_CSV_new_old_output_guards": 18,
+    "pre_callback_rejections": 9,
+    "pre_rng_rejections": 15,
+    "notebook_default_guards": 3,
+    "pdf_pages_reviewed": 23,
+    "original_figures": 12,
+    "notebook_code_cells": 13,
+    "fresh_kernel_pngs": 6,
+    "ordinary_optimized_unrelated_cwd_outputs_identical": true,
+    "outcome": "No revision required; no remaining scientific, execution, source or visual blocker"
+  }
+}

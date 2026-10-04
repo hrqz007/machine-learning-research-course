@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "status": "primary_sources_opened_and_relevant_sections_read",
+  "sources": [
+    {
+      "title": "MIT 18.05 Reading 10b: Maximum Likelihood Estimates",
+      "authors": "Jeremy Orloff and Jonathan Bloom",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class10-prep-b.pdf",
+      "checked": "Sections 3, 3.1, 3.2 and 4; fixed data versus varying parameters, sequence/count distinction, log monotonicity, continuous density likelihood and Gaussian mean/variance formulas.",
+      "use_limit": "Original course prose, data, diagrams and exercises. Boundary and global-optimum proofs are supplied independently. No blanket parameter-probability or MLE asymptotic claim inferred from introductory shorthand."
+    },
+    {
+      "title": "NIST/SEMATECH Normal Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+      "checked": "Normal PDF, real support, location mu and positive scale sigma; translated into variance v=sigma^2 in this unit.",
+      "use_limit": "Only density and parameterization support. Generic CLT summaries are not used as unconditional theorems."
+    },
+    {
+      "title": "NumPy 2.3 numpy.var",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.var.html",
+      "checked": "axis, ddof, divisor N-ddof, default ddof=0 and unbiased variance correction ddof=1; precision cautions."
+    },
+    {
+      "title": "NumPy 2.3 numpy.log1p",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.log1p.html",
+      "checked": "Small-x accuracy even when floating-point 1+x rounds to 1; scalar counterpart math.log1p used for Bernoulli failures."
+    },
+    {
+      "title": "NumPy Random Generator",
+      "url": "https://numpy.org/doc/stable/reference/random/generator.html",
+      "checked": "Explicit Generator/PCG64 construction, size shape, seeding and lack of a universal cross-version compatibility guarantee.",
+      "use_limit": "The stable page was read at audit time; tested runtime versions are recorded separately rather than inferred from the documentation version."
+    }
+  ],
+  "additional_reading_not_used_for_broad_claims": [
+    {
+      "title": "NIST Maximum likelihood estimation",
+      "url": "https://www.itl.nist.gov/div898/handbook/apr/section4/apr412.htm",
+      "checked": "Likelihood definition, product and log derivative discussion read; censored-data and generalized asymptotic claims outside unit scope."
+    }
+  ],
+  "independent_derivations": [
+    "Bernoulli interior strict concavity and closed versus open parameter boundaries",
+    "Finite logit parameterization and unattained likelihood supremum",
+    "Gaussian SSE decomposition, profile derivative and global unique optimum when SSE>0",
+    "Unbounded positive-variance Gaussian likelihood for identical observations",
+    "Normalization term omission, outlier sensitivity and repeated-sampling variance bias"
+  ],
+  "retrieval_limitations": [
+    "Penn State page returned a 502 retrieval failure and is not cited or relied upon."
+  ]
+}

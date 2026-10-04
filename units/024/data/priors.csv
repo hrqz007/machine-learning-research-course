@@ -1,0 +1,6 @@
+prior_id,alpha,beta,purpose
+uniform,1,1,uniform_in_probability_coordinate
+main,2,2,moderate_symmetric_teaching_prior
+strong,20,20,strong_symmetric_sensitivity
+low_center,2,8,alternative_prior_center
+boundary,0.5,0.5,integrable_boundary_singular_example

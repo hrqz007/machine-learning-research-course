@@ -1,0 +1,186 @@
+{
+  "unit": "025",
+  "title": "区间估计与Bootstrap",
+  "validation_date": "2026-10-04",
+  "release_state": "verified_ready_for_publication",
+  "local_checks": {
+    "core_self_tests": 9,
+    "author_reference_and_adversarial_checks_per_run": 4753,
+    "author_audit_normal": "passed",
+    "author_audit_optimized": "passed",
+    "fresh_process_two_unrelated_working_directories": "passed; normal and python -O full reports byte-identical",
+    "full_report_sha256": "5aa769eb89db43e5b39986a364152cd04088e8f081dcb198a5e07000af8f4e09",
+    "notebook": "22 total cells, 10 code cells; fresh Python process, sequential real IPython InProcessKernel; outputs retained",
+    "retained_notebook_pngs": 7,
+    "pdf_pages": {
+      "lecture": 14,
+      "lab": 5,
+      "answers": 5
+    },
+    "visual_review": "All 24 final PDF pages and all 7 retained Notebook PNG outputs individually viewed. Caption, symbol reuse and obscuring plot legend corrected before final acceptance.",
+    "inputs_and_side_effects": "All input files and complete arrays validated before RNG/output mutation; invalid final/zero-weight/unselected entries rejected. Damaged CSV preserves existing output bytes. Constant arrays return exact zero SD after validation.",
+    "numeric_regressions": "Fraction and long-double nonzero/cast collapse rejected; mixed-scale mean uses original-value compensated sum; positive binomial factor/mass underflow rejected including unselected terms; true endpoint zero masses accepted; nonzero centered squared-deviation underflow rejected.",
+    "reference_routes": [
+      "Fraction exact enumeration and moments",
+      "Decimal 65-digit CDF reference",
+      "SciPy 1.17.0 Beta PPF",
+      "independent quadrature plus brentq",
+      "SciPy Normal CDF/PPF",
+      "NumPy inverted_cdf and exact-decimal rank checks"
+    ],
+    "json_original_token_guard": "Original decimal float tokens reject nonzero underflow/overflow and nonstandard NaN/Infinity; duplicate keys rejected even for same values; all before RNG/output; genuine zero tokens accepted."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Anaconda environment installation",
+    "browser Jupyter UI",
+    "socket/out-of-process kernel transport",
+    "arbitrary operating systems and package versions",
+    "real-world data performance",
+    "general bootstrap validity outside stated models"
+  ],
+  "scope": "Synthetic offline CPU teaching only. No paid API, private data or third-party copied text. No assertion that every nominal 95% method has finite-sample 95% coverage. External publication and independent release acceptance are separate gates.",
+  "status": "verified",
+  "coordinator_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "all_original_candidate_payload_hashes_matched": true,
+    "author_audit_reexecuted_checks": 4711,
+    "fresh_script_processes": 2,
+    "unrelated_working_directories": 2,
+    "ordinary_optimized_stdout_and_report_byte_identical": true,
+    "report_sha256": "5aa769eb89db43e5b39986a364152cd04088e8f081dcb198a5e07000af8f4e09",
+    "notebook_fresh_real_kernel_code_cells": 10,
+    "pdf_pages_individually_reviewed": 24,
+    "notebook_pngs_individually_reviewed": 7,
+    "json_revision": {
+      "normal_and_optimized_checks": 4753,
+      "extra_regression_checks": 42,
+      "lab_all_five_pages_rechecked": true,
+      "notebook_fresh_kernel_code_cells": 10
+    },
+    "notebook_pngs_unchanged_after_json_fix": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 9036,
+      "sha256": "70f20c1a332f88b8adc4d68f7c9afe2a62e218de06d90079d517cb65032d7e1c"
+    },
+    "answers.md": {
+      "bytes": 12882,
+      "sha256": "5ff3a206105a0309a951334bcda0216127986556c6421817d4fbd02b2ddb4740"
+    },
+    "answers.pdf": {
+      "bytes": 620881,
+      "sha256": "deece25c54bb8affec7d80ae2a374ea70368c3174cbd0a963a5ad394404b135c"
+    },
+    "data/README.md": {
+      "bytes": 1662,
+      "sha256": "588166aedd0bf3673afbd6e64a8e788bd24dcdb644b1b91d192a29ab393f0615"
+    },
+    "data/grouped.csv": {
+      "bytes": 58,
+      "sha256": "05f6dd0c7666172536c6389b94c63bbddcb2ca57db42b2d002c1113cdac99093"
+    },
+    "data/model_spec.json": {
+      "bytes": 162,
+      "sha256": "e43151df434563bb26a8de24ade7e4852dc159a8ac04fb6dd1d49b59276a489f"
+    },
+    "data/paired.csv": {
+      "bytes": 49,
+      "sha256": "425521e84da40312027f5ed9b48e5bd00597f0d562efdc5dc5a5a349f6f63c08"
+    },
+    "data/tiny_sample.csv": {
+      "bytes": 19,
+      "sha256": "9d540d13ab79c58dda55e5ca6642d3c0e4bb015c447191ad64c256a1026d26bf"
+    },
+    "environment.yml": {
+      "bytes": 181,
+      "sha256": "b2054cf370711f77c286e5f8646b196615830ebb5673db57fbdae5e48dfd3c91"
+    },
+    "experiment.ipynb": {
+      "bytes": 410738,
+      "sha256": "7eef6edd87ccd09bc7b033aa56bcd25b2ec072784ae60de1898be4e83a371292"
+    },
+    "experiment.py": {
+      "bytes": 19279,
+      "sha256": "a3b0169842c2018ac8f822828f67db6ec26c724807be2ffc1118a3e8e1157540"
+    },
+    "figures/01_three_layers.png": {
+      "bytes": 78546,
+      "sha256": "9d1c56055836d87611eba4c1c28d9fc45afec3bd03bb9d74343daa2768f07699"
+    },
+    "figures/02_hand_interval.png": {
+      "bytes": 69239,
+      "sha256": "cbec32e8c776fd09b7db1c0a82c825131c055fae5de651ae1a85ba11d0b33d3a"
+    },
+    "figures/03_coverage_intervals.png": {
+      "bytes": 55228,
+      "sha256": "b5d2eac9f2113652a09d8b03b0ec7691751db556960181b1e6dc9995ff9085ee"
+    },
+    "figures/04_credible_interval.png": {
+      "bytes": 69511,
+      "sha256": "2c3835e19d23b29398a58130ac86d6874d85af8e730c620d32ed64e86b785782"
+    },
+    "figures/05_wald_failure.png": {
+      "bytes": 92251,
+      "sha256": "bce79368356fe1920ab8303b1e3742c599688e9f4bdbe4c51ebd47dc4265679f"
+    },
+    "figures/06_resampling_paths.png": {
+      "bytes": 52532,
+      "sha256": "d7760a0d13a828583bbf171b667bad292239223d1395ed5b473a0a6e6c69fbf3"
+    },
+    "figures/07_exact_bootstrap.png": {
+      "bytes": 60657,
+      "sha256": "d7877075184cc10bbcfc467835a7ea5928894f317d0da0b503d5b65eeb406602"
+    },
+    "figures/08_paired.png": {
+      "bytes": 83064,
+      "sha256": "1a60af05c51dae40e579da00362decf3751dec770d453c1f01b00d329b2d5995"
+    },
+    "figures/09_group_units.png": {
+      "bytes": 72531,
+      "sha256": "0fa605aaece0bcc3603e4a911e01484fd9037525225c471129d91fda96bbf6d8"
+    },
+    "figures/10_coverage_results.png": {
+      "bytes": 65432,
+      "sha256": "2eb0fd52330a807f135375ccb42e611463c4aac04ba2d0f6d417d06eff0e5481"
+    },
+    "lab.md": {
+      "bytes": 10471,
+      "sha256": "1e4cecb101f2d51e63d74f709c034744f38c042ad5345c8f0213c0d36c5fc701"
+    },
+    "lab.pdf": {
+      "bytes": 517543,
+      "sha256": "19bea5453fe368a4dfd9a28b94a382cb9f543be0ac1671dc2a724cad4a207854"
+    },
+    "lecture.md": {
+      "bytes": 32068,
+      "sha256": "1d1e15bd39d796fd4ade75d9610625e0c39414227403683b5dc7c9162e1e637b"
+    },
+    "lecture.pdf": {
+      "bytes": 1682326,
+      "sha256": "270e40cc50d6866479954fbfed46ce667d7f13a359d395c5db14f691af4a02d9"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "source-checks.json": {
+      "bytes": 2398,
+      "sha256": "16e627bcf757bd251a8a6986defa26e9a95c35f062dfa54fc2913f8e46457e38"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "reviewed_candidate_verification_sha256": "7e55861e1dc1d584e5427698f15a719f0975e5de35930c8111365835b47bda3f",
+    "date": "2026-10-04",
+    "coverage": "27 payload hashes; 24 PDF pages and 7 Notebook PNGs; 10 fresh-kernel code cells; 250 exact Beta integrals,50 high-precision quantiles,240 exact Wald coverage cases,120 complete bootstrap distributions,240 resampling streams,11000 reconstructed intervals;34 JSON pre-RNG/output guards,4 genuine-zero accepts,18 bad CSV subprocess protections; normal/-O reports byte-identical"
+  }
+}
