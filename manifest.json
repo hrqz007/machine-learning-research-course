@@ -1130,17 +1130,35 @@
         "实验与验收": "从零实现两种动量；在狭长谷底比较轨迹和超调，核对库实现约定。",
         "常见误区": "把不同动量定义的超参数直接比较；把加速保证泛化到所有目标。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/035/lecture.pdf",
+        "lab": "units/035/lab.pdf",
+        "answers": "units/035/answers.pdf",
+        "notebook": "units/035/experiment.ipynb",
+        "script": "units/035/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_all_outputs_identical",
+        "visual": "all_27_pages_and_6_PNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "verified_uploaded",
+        "repository": "hrqz007/machine-learning-research-course",
+        "commit": "3687804c9fa6117b4dd867eadb9cb2b5799ce7ee",
+        "tree": "b0be6aa846eba957e35e8a3f3fdc438b2a393060",
+        "verified_repository_files": 1017,
+        "verified_local_links": 192,
+        "verified_unit_files": 31,
+        "receipt_source": "sole_publisher_verified_git_sha_and_main_ref",
+        "date_utc": "2026-10-04"
+      },
+      "independent_qa": {
+        "report_sha256": "468616bf175a808570f0c98ee2ef2f7e6267693b320fd30c6d5c0ee5e7fbcd91",
+        "release_allowlist_sha256": "158bb5d546cace9304fe15d0869de0c2a842480378ca8132f637d908c7d350b6"
       }
     },
     {
@@ -1153,17 +1171,35 @@
         "实验与验收": "手算Adam前几步并实现；对比优化器状态、有效步长和参数更新。",
         "常见误区": "Adam永远优于SGD；把Adam中的L2惩罚与解耦权重衰减视为相同。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/036/lecture.pdf",
+        "lab": "units/036/lab.pdf",
+        "answers": "units/036/answers.pdf",
+        "notebook": "units/036/experiment.ipynb",
+        "script": "units/036/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_passed",
+        "visual": "all_22_pages_and_6_PNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "verified_uploaded",
+        "repository": "hrqz007/machine-learning-research-course",
+        "commit": "3687804c9fa6117b4dd867eadb9cb2b5799ce7ee",
+        "tree": "b0be6aa846eba957e35e8a3f3fdc438b2a393060",
+        "verified_repository_files": 1017,
+        "verified_local_links": 192,
+        "verified_unit_files": 29,
+        "receipt_source": "sole_publisher_verified_git_sha_and_main_ref",
+        "date_utc": "2026-10-04"
+      },
+      "independent_qa": {
+        "report_sha256": "a2532add7762778a0032c1fbc020310efc1392fda1c4510ca9fb3442e9a8751a",
+        "release_allowlist_sha256": "39254caf2e2ad48f062aa1577bb4a416f48fb1feacd4070740b127e506adc10e"
       }
     },
     {
@@ -1176,17 +1212,27 @@
         "实验与验收": "实现稀疏回归的近端法，检查目标、零系数和最优性残差。",
         "常见误区": "在零点随意选择普通导数；认为加L1后沿用光滑算法保证。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/037/lecture.pdf",
+        "lab": "units/037/lab.pdf",
+        "answers": "units/037/answers.pdf",
+        "notebook": "units/037/experiment.ipynb",
+        "script": "units/037/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_passed",
+        "visual": "all_23_pages_and_8_PNGs_independent_passed"
       },
       "publication": {
         "status": "not_uploaded"
+      },
+      "independent_qa": {
+        "report_sha256": "5b730346fd6b9746bc3782fd989c61a62bacf70219c9294dc1c8f3f246c09613",
+        "release_allowlist_sha256": "1d276b36ff3cdd3b61bc1e4f006adfdeaaec70dd9117c1b666288c0953fd3d70"
       }
     },
     {
@@ -1199,14 +1245,20 @@
         "实验与验收": "比较GD与阻尼Newton的迭代、墙钟时间和内存；不显式求Hessian逆。",
         "常见误区": "只数迭代不计每步成本；Hessian非正定仍无条件用Newton步。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/038/lecture.pdf",
+        "lab": "units/038/lab.pdf",
+        "answers": "units/038/answers.pdf",
+        "notebook": "units/038/experiment.ipynb",
+        "script": "units/038/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "coordinator_passed_independent_pending",
+        "sources": "passed",
+        "code": "normal_O_passed",
+        "notebook": "fresh_real_kernel_full_core_match",
+        "visual": "all_22_pages_and_6_PNGs_individually_viewed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -1222,7 +1274,7 @@
         "实验与验收": "注入符号、广播和数值稳定性错误；输出梯度检查、更新尺度及故障报告。",
         "常见误区": "只调学习率不核验梯度；损失变NaN后继续平均结果。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -1245,7 +1297,7 @@
         "实验与验收": "在共线和稀疏数据上画系数路径；仅用训练/验证选择强度，再与库交叉核验。",
         "常见误区": "正则化强度直接跨不同损失归一化约定比较；用测试集选稀疏度。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
