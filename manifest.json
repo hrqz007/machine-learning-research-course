@@ -55,7 +55,7 @@
         "实验与验收": "为教学数据写数据字典、时间线和可用性清单；找出重复记录与未来信息。",
         "常见误区": "先选算法再定义任务；把便利样本当成目标总体。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/002/lecture.pdf",
         "lab": "units/002/lab.pdf",
@@ -71,7 +71,11 @@
         "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "cca3afe11baf04e493526de909d9eab726cfb4c5",
+        "verified_file_count": 24,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/002"
       }
     },
     {
@@ -84,7 +88,7 @@
         "实验与验收": "在Anaconda环境逐行重现第1讲；用已知答案和边界输入核验结果。",
         "常见误区": "把赋值当等式；认为小数计算永远精确；只看程序是否报错。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/003/lecture.pdf",
         "lab": "units/003/lab.pdf",
@@ -99,7 +103,11 @@
         "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "cca3afe11baf04e493526de909d9eab726cfb4c5",
+        "verified_file_count": 24,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/003"
       }
     },
     {
@@ -181,14 +189,19 @@
         "实验与验收": "交付基线、split文件、环境说明和命令行脚本；新进程重跑得到约定容差内结果。",
         "常见误区": "固定一个种子就宣称结果稳健；在最终测试上反复改方案。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/007/lecture.pdf",
+        "lab": "units/007/lab.pdf",
+        "notebook": "units/007/experiment.ipynb",
+        "script": "units/007/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_passed_independent_pending",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "author_passed_independent_pending"
       },
       "publication": {
         "status": "not_uploaded"
@@ -204,7 +217,7 @@
         "实验与验收": "把同一个预测式写成文字、公式、表格和程序；验证对数恒等式的定义域。",
         "常见误区": "忽视定义域；把相关例子当证明；看不懂下标却继续套公式。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
