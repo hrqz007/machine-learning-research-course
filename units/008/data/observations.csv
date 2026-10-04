@@ -1,0 +1,6 @@
+sample_id,x,observed_y,expected_prediction
+S01,0,1,1
+S02,1,2,3
+S03,2,6,5
+S04,3,6,7
+S05,4,9,9

@@ -1,0 +1,171 @@
+{
+  "unit": "008",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 19,
+    "figures": 11
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4
+  },
+  "visual_review": "All final pages rendered and inspected; mathematical formulas rendered as self-contained SVG with MathJax.",
+  "code": {
+    "python": "3.12.14",
+    "status": "passed",
+    "dependencies": "standard library only",
+    "log_grid_checks": 360,
+    "domain_boundary_checks": 22,
+    "exact_odd_sum_checks": 100,
+    "unrelated_cwd_run": "passed"
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 10,
+    "executed_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "all_outputs_retained": true,
+    "script_stepwise_agreement": true,
+    "kernel": "real ipykernel InProcessKernel in a fresh Python process, all code cells sequential",
+    "limitations": [
+      "Browser Jupyter UI not tested",
+      "Out-of-process socket transport not tested because sandbox prohibits sockets",
+      "Learner local Anaconda installation not tested"
+    ]
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "finite checks do not prove universal statements",
+    "complete construction of real exponentials not proved in this introductory unit",
+    "extreme floating-point ranges not guaranteed",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 42545,
+      "sha256": "7bd46ce6a5a0e63ce84824eff99ff5a4b2322107e8778d84bf01e5352ade527c"
+    },
+    "lecture.pdf": {
+      "bytes": 2107668,
+      "sha256": "af3c57aa2d797125fd7ed3aaabb33ddab53712ec0a23857979793d1ee9ee8211"
+    },
+    "lab.md": {
+      "bytes": 11784,
+      "sha256": "eaef6dce01578083f04e3839d08f5d22396b6eb77b1e9e722634d5bc228551b2"
+    },
+    "lab.pdf": {
+      "bytes": 502708,
+      "sha256": "a7286f51f546dc2145be3f091313c3ecf057bb405a2a9fa942f826c030dc0436"
+    },
+    "answers.md": {
+      "bytes": 9235,
+      "sha256": "00f7cb32a259ec1c2438ec564da12e9e14f7dba2fd8bb0107e375164711fa1ed"
+    },
+    "answers.pdf": {
+      "bytes": 506605,
+      "sha256": "dfee2957faba6df9c9474f172cd31641b4caebaa5077a12383cc513c48bc2bc8"
+    },
+    "experiment.py": {
+      "bytes": 12210,
+      "sha256": "aa9a296fdb57706395d5e236e23b3a22f91adc52be5090788520c001506461ce"
+    },
+    "experiment.ipynb": {
+      "bytes": 14882,
+      "sha256": "7cff8ddfc10047e1dd43d1a87e4507f1d760180f0ba8f8398aeb331c49ebda9a"
+    },
+    "README.md": {
+      "bytes": 2281,
+      "sha256": "d1acc3c227d70241cdd84bbce7a76062890900f564f2a69be146921956b6263d"
+    },
+    "source-checks.json": {
+      "bytes": 3040,
+      "sha256": "4dc9bb90c03955247e9e3a9b7de6168ec3d7660d686c230ef6b9e8d121fb681d"
+    },
+    "test-result.json": {
+      "bytes": 4613,
+      "sha256": "feaee27d6e83eb6c76ec56d5d3070ad843da283f2b17217ebc8e0f2affa0b759"
+    },
+    "data/observations.csv": {
+      "bytes": 99,
+      "sha256": "b0da58c133537f893db2c542a271bc4d69ddf1a215b78789c3ffcac14df0c262"
+    },
+    "data/README.md": {
+      "bytes": 673,
+      "sha256": "285e4e0714bb39eaeea78f4b16afdcfc0bfa47762a62de89b3bd8037296d9921"
+    },
+    "figures/01_representations.png": {
+      "bytes": 111576,
+      "sha256": "16538e38e4f7df68d9eb71da1dd684115a4309a1de800f54951f9a5150fb9c4c"
+    },
+    "figures/02_domain_range.png": {
+      "bytes": 127106,
+      "sha256": "aad1462a8f7370c50f64d3c46373a64d344bf71c80236e171ece61b40c6a668a"
+    },
+    "figures/03_model_observations.png": {
+      "bytes": 101356,
+      "sha256": "450bb2ffc5ca68ff6ca423f404f1df230abd5cc21cb31ecfb75c4b5c7f674d3f"
+    },
+    "figures/04_cancellation.png": {
+      "bytes": 88283,
+      "sha256": "daf61f556434999c803bdf3049fcbba20ccb6270675dcbc08cf431538a64cbbd"
+    },
+    "figures/05_composition.png": {
+      "bytes": 87445,
+      "sha256": "60992bce9d9509062049e8495c955b0f76c7af3640853349e6592d147e3857a6"
+    },
+    "figures/06_exp_log.png": {
+      "bytes": 117254,
+      "sha256": "8c48bba530c2c2082f48a872745d8fe3d9e5b0e9ff7908c51eba56495c748314"
+    },
+    "figures/07_log_rules.png": {
+      "bytes": 89466,
+      "sha256": "775d5a7051ab207abad9b70e94244d9e908cef0dd1aaba4fa4d012d88a5bcd30"
+    },
+    "figures/08_index_sum.png": {
+      "bytes": 121672,
+      "sha256": "005998abbd8ec0ede2d778876c5dffdfd6ce395785e3ff2c646fa75f2f69b400"
+    },
+    "figures/09_quantifiers.png": {
+      "bytes": 105958,
+      "sha256": "b58ee9bd4d69e19303cad0572649593b34254feb632886d46ca0977ba5412579"
+    },
+    "figures/10_finite_tests.png": {
+      "bytes": 135394,
+      "sha256": "bc38d005882ac807db31b4b1a426e67f9499d8dc06d8265d082d565db41352de"
+    },
+    "figures/11_induction.png": {
+      "bytes": 70646,
+      "sha256": "f9c61e5f10d4a54488ceaae1f57242e64232c0d6ed88f3763b7548d16189001f"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 27 PDF pages, 11 figures and MathJax formulas",
+      "mathematical logic and prerequisite explanations",
+      "two new-process byte-identical script results",
+      "10 notebook cells in fresh IPython kernel",
+      "Fraction grid/polynomial/range-witness checks",
+      "240 high-precision Decimal logarithm comparisons",
+      "8 additional domain failure checks and extended odd-sum verification",
+      "24 payload hashes matched"
+    ],
+    "maximum_decimal_log_absolute_difference": 3.55e-15
+  },
+  "final_metadata_check": "Passed: removed stale source-stage PDF note; numerical evidence, code and PDFs unchanged."
+}

@@ -1,0 +1,57 @@
+{
+  "unit": "008",
+  "check_date_utc": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "OpenStax Precalculus 2e Functions and Function Notation",
+      "url": "https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation",
+      "source_type": "Primary publisher textbook",
+      "checked": "2026-10-04",
+      "verification": "Read function definition, evaluation and representations; used for terminology, original example not copied."
+    },
+    {
+      "id": "S2",
+      "title": "OpenStax Precalculus 2e Logarithmic Properties",
+      "url": "https://openstax.org/books/precalculus-2e/pages/4-5-logarithmic-properties",
+      "source_type": "Primary publisher textbook",
+      "checked": "2026-10-04",
+      "verification": "Read product, quotient and power rules and derivations; used to check positive-argument conditions and algebra."
+    },
+    {
+      "id": "S3",
+      "title": "Mathematics for Computer Science Eric Lehman F Thomson Leighton Albert R Meyer 2015",
+      "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/mit6_042js15_textbook.pdf",
+      "source_type": "Author textbook hosted by official MIT course",
+      "checked": "2026-10-04",
+      "verification": "Read propositions, predicate quantifiers and ordinary induction principle; PDF printed pages 56–60 and 115–116."
+    },
+    {
+      "id": "S4",
+      "title": "Python math official documentation",
+      "url": "https://docs.python.org/3/library/math.html",
+      "source_type": "Official language documentation",
+      "checked": "2026-10-04",
+      "verification": "Read math.log, math.log2 and math.isclose definitions; use explicit relative/absolute tolerance."
+    },
+    {
+      "id": "S5",
+      "title": "Python fractions official documentation",
+      "url": "https://docs.python.org/3/library/fractions.html",
+      "source_type": "Official language documentation",
+      "checked": "2026-10-04",
+      "verification": "Read Fraction integer/string/float construction distinction; exact decimal string versus prior binary float."
+    },
+    {
+      "id": "S6",
+      "title": "Anaconda official Distribution download entry",
+      "url": "https://www.anaconda.com/download",
+      "source_type": "Official vendor source",
+      "checked": "2026-10-04",
+      "verification": "Opened official entry during course preparation on same date; confirms Distribution includes Python/Jupyter Notebook/JupyterLab; local UI not tested."
+    }
+  ],
+  "originality": "Synthetic device, 5 observation records, visual layouts, worked presentation, code, and exercise explanations created for this unit. No copied textbook figures or passages.",
+  "proof_scope": "Uses standard real-exponent properties after explaining them as background; does not prove construction/continuity of real exponentials. All positive-log conditions retained.",
+  "failed_lookup_recovered": "An older MIT host link failed; official MIT OCW 2015 textbook was opened successfully and used instead."
+}

@@ -1,0 +1,175 @@
+{
+  "unit": "008",
+  "date_utc": "2026-10-04",
+  "status": "passed",
+  "python": "3.12.14",
+  "script": {
+    "fresh_process_runs": 2,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "stdout_identical": true,
+    "json_bytes_identical": true,
+    "standard_library_only": true,
+    "offline": true,
+    "stdout": "合法输入范围：[0,4]；四种表达新增输入 3/2，预测 = 4\n预测： 1, 3, 5, 7, 9\n带方向差： 0, 1, -1, 1, 0\n平方差之和： 3 ；和的平方： 1\n精确平均平方差： 3/5\n复合顺序在 x=1： {'g_after_f': 9, 'f_after_g': 3}\n每个 x 有一个 b： True\n存在同一个 b 适合全部 x： False\n五点都相同，在 x=1/2 的精确差： 105/32\n合法对数有限数值核验： 360 项通过\n定义域与边界核验： 22 项通过\n奇数和精确核验 n=1 至 100：通过；一般证明仍见讲义归纳步骤\n脚本核验通过；不把有限测试当成普遍证明。\n"
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 10,
+    "executed_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "all_outputs_retained": true,
+    "script_stepwise_agreement": true,
+    "kernel": "real ipykernel InProcessKernel in a fresh Python process, all code cells sequential",
+    "limitations": [
+      "Browser Jupyter UI not tested",
+      "Out-of-process socket transport not tested because sandbox prohibits sockets",
+      "Learner local Anaconda installation not tested"
+    ]
+  },
+  "fixed_results": {
+    "predictions": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "residuals": [
+      "0",
+      "1",
+      "-1",
+      "1",
+      "0"
+    ],
+    "sum_of_squares": "3",
+    "mse_exact": "3/5",
+    "composition": {
+      "g_after_f": 9,
+      "f_after_g": 3
+    },
+    "counterexample": {
+      "grid_matches": true,
+      "x": "1/2",
+      "f": "2",
+      "alternative": "169/32",
+      "difference": "105/32"
+    },
+    "quantifiers": {
+      "forall_x_exists_b": true,
+      "exists_b_forall_x": false,
+      "witnesses": [
+        {
+          "x": 0,
+          "valid_b": [
+            0
+          ]
+        },
+        {
+          "x": 1,
+          "valid_b": [
+            -2
+          ]
+        },
+        {
+          "x": 2,
+          "valid_b": [
+            -4
+          ]
+        }
+      ],
+      "shared_b": []
+    }
+  },
+  "checks": {
+    "log_identities": {
+      "count": 360,
+      "all_passed": true,
+      "max_absolute_difference": 2.6645352591003757e-15,
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-12,
+      "bases": [
+        0.5,
+        2.0,
+        10.0,
+        2.718281828459045
+      ],
+      "finite_grid_only": true
+    },
+    "domain_boundary_count": 22,
+    "domain_boundary_cases": [
+      "f_outside_-1",
+      "f_outside_-1/1000",
+      "f_outside_4001/1000",
+      "f_outside_5",
+      "f_closed_endpoints_accepted",
+      "composition_order_distinct",
+      "reverse_composition_intermediate_invalid",
+      "reverse_composition_endpoints",
+      "cancelled_hole_preserved",
+      "cancellation_exact_on_original_domain",
+      "log_invalid_7_1",
+      "log_invalid_1_0",
+      "log_invalid_1_-2",
+      "log_invalid_0_2",
+      "log_invalid_-4_2",
+      "log_nonfinite",
+      "log_nonfinite",
+      "log_nonfinite",
+      "empty_mean_rejected",
+      "length_mismatch_rejected",
+      "base_between_zero_and_one_accepted",
+      "empty_sum_and_product_conventions"
+    ],
+    "odd_sum_integer_count": 100,
+    "odd_sum_n_range": [
+      1,
+      100
+    ]
+  },
+  "figures": {
+    "count": 11,
+    "all_manuscript_referenced": true,
+    "font_missing_glyph_warnings": 0,
+    "contact_sheet_visually_reviewed": true,
+    "latest_revision": "L-shaped induction border colors aligned to k plus k+1 count; final figure visually checked separately."
+  },
+  "manuscript_counts": {
+    "lecture.md": {
+      "characters": 19776,
+      "cjk_characters": 10112
+    },
+    "lab.md": {
+      "characters": 5142,
+      "cjk_characters": 2944
+    },
+    "answers.md": {
+      "characters": 4317,
+      "cjk_characters": 2178
+    },
+    "README.md": {
+      "characters": 1064,
+      "cjk_characters": 518
+    }
+  },
+  "limitations": [
+    "synthetic data only",
+    "no model training or deployment claim",
+    "logarithm checks use a finite moderate-value grid and explicit tolerances",
+    "real exponent construction not proved in this unit",
+    "small exact computations do not validate arbitrary numerical implementations",
+    "Final PDF rendering and page checks are documented in verification.json."
+  ]
+}
