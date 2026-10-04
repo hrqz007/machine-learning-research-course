@@ -448,7 +448,7 @@
         "实验与验收": "对两变量预测器分别手推、有限差分和程序核验梯度。",
         "常见误区": "把梯度当标量；遗漏复合路径；混淆Jacobian与梯度的形状。"
       },
-      "status": "in_review",
+      "status": "published",
       "artifacts": {
         "lecture": "units/014/lecture.pdf",
         "lab": "units/014/lab.pdf",
@@ -457,14 +457,18 @@
         "script": "units/014/experiment.py"
       },
       "checks": {
-        "scientific": "author_passed_independent_pending",
+        "scientific": "independent_passed",
         "sources": "passed",
         "code": "passed",
         "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
-        "visual": "author_passed_independent_pending"
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "efb5ec64010f935781250d6c7bd717f6ce7550fd",
+        "verified_file_count": 27,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/014"
       }
     },
     {
