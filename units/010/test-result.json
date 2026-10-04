@@ -1,0 +1,324 @@
+{
+  "status": "passed",
+  "unit": "010",
+  "checked_on": "2026-10-04",
+  "test_count": 68,
+  "tests": [
+    {
+      "name": "X axes n=4 d=3",
+      "passed": true
+    },
+    {
+      "name": "A axes k=2 d=3",
+      "passed": true
+    },
+    {
+      "name": "B axes d=3 k=2",
+      "passed": true
+    },
+    {
+      "name": "AB hand calculation",
+      "passed": true
+    },
+    {
+      "name": "BA hand calculation",
+      "passed": true
+    },
+    {
+      "name": "explicit loops equal rectangular AB",
+      "passed": true
+    },
+    {
+      "name": "explicit loops equal rectangular BA",
+      "passed": true
+    },
+    {
+      "name": "rectangular transpose product identity",
+      "passed": true
+    },
+    {
+      "name": "transpose twice",
+      "passed": true
+    },
+    {
+      "name": "left identity",
+      "passed": true
+    },
+    {
+      "name": "right identity",
+      "passed": true
+    },
+    {
+      "name": "batch mapping hand calculation",
+      "passed": true
+    },
+    {
+      "name": "batch loops",
+      "passed": true
+    },
+    {
+      "name": "sample S01 column action",
+      "passed": true
+    },
+    {
+      "name": "sample S02 column action",
+      "passed": true
+    },
+    {
+      "name": "sample S03 column action",
+      "passed": true
+    },
+    {
+      "name": "sample S04 column action",
+      "passed": true
+    },
+    {
+      "name": "batch scalar prediction",
+      "passed": true
+    },
+    {
+      "name": "batch affine prediction",
+      "passed": true
+    },
+    {
+      "name": "scalar prediction loops",
+      "passed": true
+    },
+    {
+      "name": "single sample mapping stays 2D",
+      "passed": true
+    },
+    {
+      "name": "single sample prediction stays length one",
+      "passed": true
+    },
+    {
+      "name": "single row does not equal vector shape",
+      "passed": true
+    },
+    {
+      "name": "1D transpose changes no shape",
+      "passed": true
+    },
+    {
+      "name": "explicit column shape",
+      "passed": true
+    },
+    {
+      "name": "elementwise distinct from product",
+      "passed": true
+    },
+    {
+      "name": "H then D matrix",
+      "passed": true
+    },
+    {
+      "name": "D then H matrix",
+      "passed": true
+    },
+    {
+      "name": "square product not commutative",
+      "passed": true
+    },
+    {
+      "name": "D then H applied to x",
+      "passed": true
+    },
+    {
+      "name": "H then D applied to x",
+      "passed": true
+    },
+    {
+      "name": "compatible associativity",
+      "passed": true
+    },
+    {
+      "name": "matrix action distributivity",
+      "passed": true
+    },
+    {
+      "name": "matrix action homogeneity",
+      "passed": true
+    },
+    {
+      "name": "matrix action sends zero to zero",
+      "passed": true
+    },
+    {
+      "name": "nonstandard basis coordinates",
+      "passed": true
+    },
+    {
+      "name": "basis reconstruction",
+      "passed": true
+    },
+    {
+      "name": "basis round trip [0, 0]",
+      "passed": true
+    },
+    {
+      "name": "basis round trip [-3, 2]",
+      "passed": true
+    },
+    {
+      "name": "basis round trip [0.5, -1.5]",
+      "passed": true
+    },
+    {
+      "name": "collapse distinct points coincide",
+      "passed": true
+    },
+    {
+      "name": "collapse hand output",
+      "passed": true
+    },
+    {
+      "name": "degree radian conversion",
+      "passed": true
+    },
+    {
+      "name": "45 degree rotation entries",
+      "passed": true
+    },
+    {
+      "name": "rotation RT R identity",
+      "passed": true
+    },
+    {
+      "name": "rotation preserves inner product",
+      "passed": true
+    },
+    {
+      "name": "rotation preserves squared length",
+      "passed": true
+    },
+    {
+      "name": "rotation preserves distance",
+      "passed": true
+    },
+    {
+      "name": "rotation reverse using transpose",
+      "passed": true
+    },
+    {
+      "name": "rotation orthogonality 0 degrees",
+      "passed": true
+    },
+    {
+      "name": "rotation orthogonality 30 degrees",
+      "passed": true
+    },
+    {
+      "name": "rotation orthogonality 90 degrees",
+      "passed": true
+    },
+    {
+      "name": "rotation orthogonality -45 degrees",
+      "passed": true
+    },
+    {
+      "name": "rotation orthogonality 180 degrees",
+      "passed": true
+    },
+    {
+      "name": "rotation orthogonality 360 degrees",
+      "passed": true
+    },
+    {
+      "name": "ordinary scaling changes norm",
+      "passed": true
+    },
+    {
+      "name": "affine origin is bias",
+      "passed": true
+    },
+    {
+      "name": "nonzero bias breaks additivity",
+      "passed": true
+    },
+    {
+      "name": "affine additivity discrepancy",
+      "passed": true
+    },
+    {
+      "name": "augmented coordinate prediction",
+      "passed": true
+    },
+    {
+      "name": "incompatible rectangular product",
+      "passed": true
+    },
+    {
+      "name": "wrong batch input axis",
+      "passed": true
+    },
+    {
+      "name": "single vector is not a batch",
+      "passed": true
+    },
+    {
+      "name": "column weight not silently accepted",
+      "passed": true
+    },
+    {
+      "name": "wrong weight length",
+      "passed": true
+    },
+    {
+      "name": "nonfinite coordinate rejected",
+      "passed": true
+    },
+    {
+      "name": "nonscalar bias rejected",
+      "passed": true
+    },
+    {
+      "name": "input data unchanged",
+      "passed": true
+    }
+  ],
+  "tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-12
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "scope": "Finite deterministic implementation checks; algebraic proofs are in lecture.md.",
+  "limitations": [
+    "Anaconda installation, browser UI and socket-based Jupyter transport not tested.",
+    "No fitted models or performance claims."
+  ],
+  "notebook": {
+    "status": "passed",
+    "code_cells": 23,
+    "total_cells": 49,
+    "error_outputs": 0,
+    "embedded_png_outputs": 2,
+    "execution": "Fresh Python process; real ipykernel InProcessKernel sequential execution",
+    "browser_ui_tested": false,
+    "anaconda_installation_tested": false,
+    "socket_transport_tested": false
+  },
+  "deterministic_rerun": {
+    "status": "passed",
+    "independent_script_processes": 2,
+    "byte_equal_files": {
+      "batch_results.csv": true,
+      "input_hashes.json": true,
+      "summary.json": true,
+      "test-result.json": true
+    }
+  },
+  "figures": {
+    "count": 12,
+    "full_size_review": "passed: all 12 final teaching PNGs and both notebook plots visually inspected; label overlaps corrected; no missing glyphs"
+  },
+  "lecture": {
+    "characters": 22668,
+    "cjk_characters": 12071,
+    "exercises": 16
+  },
+  "pdf": "PDF rendering and final page checks are recorded separately in verification.json."
+}

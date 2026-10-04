@@ -1,0 +1,160 @@
+{
+  "unit": "011",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 19,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4
+  },
+  "visual_review": "All 27 final PDF pages rendered and inspected, including revised four-page lab without an orphan tail page; formulas use self-contained MathJax SVG.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "test_groups_or_checks": 14,
+    "solver_routes": 7,
+    "unrelated_cwd_run": "passed",
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 12,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "small deterministic synthetic linear algebra examples only",
+    "finite numerical checks do not prove general algorithmic stability",
+    "floating-point results and threshold-boundary failures can vary with BLAS/LAPACK",
+    "general SVD theory is deferred to unit 012",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 38934,
+      "sha256": "9742ff501ceecccf8270d21664bb69b5d261693e1aa601e4ba06570a247f02e8"
+    },
+    "lecture.pdf": {
+      "bytes": 2439477,
+      "sha256": "4a45c219efa9c0b078e49ad31a94c200d715b498fb71b2beeef3db231211749d"
+    },
+    "lab.md": {
+      "bytes": 11928,
+      "sha256": "151f695bc414ecc6e48d96050952fc0f9cce5d5cd944d9e60bca44264876ee16"
+    },
+    "lab.pdf": {
+      "bytes": 511199,
+      "sha256": "f192ac4c3dd46a801ab868b6e1fc516b023ccfd3d995418dfe7d7bf5013b0317"
+    },
+    "answers.md": {
+      "bytes": 7971,
+      "sha256": "a12fbabea6829f74524b7d3ff7178a9d09f09e72519e097b37c0be05bd93e602"
+    },
+    "answers.pdf": {
+      "bytes": 497485,
+      "sha256": "42e66cf8e033156c6ba71e0d19a6f619380a2f3a41e1d22cab2abe0f2afc53b3"
+    },
+    "experiment.py": {
+      "bytes": 16270,
+      "sha256": "9e6cff0ec997c9798714c09d2d63241be3786d9a44eae2edb2326273c1b5c90a"
+    },
+    "experiment.ipynb": {
+      "bytes": 22295,
+      "sha256": "67a1245ea02cd21eff5a630d67069857451bf2d4c7e9b3705742c98e517e4763"
+    },
+    "README.md": {
+      "bytes": 1948,
+      "sha256": "10cbd718cf53d61811fa85b4b9f7aea5f1da000756d853a116a75f8fd1b6a32d"
+    },
+    "requirements.txt": {
+      "bytes": 13,
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    "source-checks.json": {
+      "bytes": 3624,
+      "sha256": "23b9c81cdf31935d09343e3a7a16f5dc7f839753aff480aa6962100e7f15489b"
+    },
+    "test-result.json": {
+      "bytes": 6579,
+      "sha256": "a29929d254dead12153286de0230e497d831886c19cf96d6f2014edc7ca96e5c"
+    },
+    "data/main.csv": {
+      "bytes": 38,
+      "sha256": "d4fa82deeb026fddd136da40cc0c32b8ec13cb6d3fbc940c795557a134084a90"
+    },
+    "data/README.md": {
+      "bytes": 750,
+      "sha256": "8fa6cba46b7e9321c8b2dec1e713474ad9a449f228c511a4baeb4dbcfa8352a4"
+    },
+    "figures/01_inconsistent_points.png": {
+      "bytes": 97835,
+      "sha256": "68735b1fd01fa02e0bf47832924ff8dbbc85878c7baf085ba0bde159dc4b066e"
+    },
+    "figures/02_elimination.png": {
+      "bytes": 104526,
+      "sha256": "4ce158cb1962580182972d850dd193400c050df8ac255a6fc7c27b75a9dd182c"
+    },
+    "figures/03_column_space.png": {
+      "bytes": 231945,
+      "sha256": "28f0a159ad5000f3d6be9e4958e98edcc8c5be5e6539a386d291446f9a77c9ab"
+    },
+    "figures/04_null_space.png": {
+      "bytes": 163637,
+      "sha256": "c264ad095af16c39a98bed73cdaf056a6c8b9759dc4af44c01d052a2bbf13880"
+    },
+    "figures/05_projection_proof.png": {
+      "bytes": 107136,
+      "sha256": "dafbd06401c3ef3e4b63fa7f1b097518a712600bab6692b40db49e5ffa53771d"
+    },
+    "figures/06_worked_solution.png": {
+      "bytes": 114697,
+      "sha256": "c4fdbaf31745884db5c92493578651c221370ac1d33853f8b24242b2cc107bee"
+    },
+    "figures/07_orthogonal_coordinates.png": {
+      "bytes": 123980,
+      "sha256": "b0957d3fbec05a70aa3c1e715bcbcfe87ad25fe9165a41193d65f1eb9445f77c"
+    },
+    "figures/08_gram_schmidt.png": {
+      "bytes": 121610,
+      "sha256": "f6b0bb2fce5c8ff31d47750c454e8459858b912f8a9f13e21d69a9334a7160c7"
+    },
+    "figures/09_row_scaling.png": {
+      "bytes": 144954,
+      "sha256": "83f01931d6cc98984a8eecf12f811bd89f8123837fff9bca343422d3d522d807"
+    },
+    "figures/10_condition_geometry.png": {
+      "bytes": 105125,
+      "sha256": "b15166d43f2e3b9c768676910f2c37cc03410db912762f0b25e13ee4d38e90a7"
+    },
+    "figures/11_perturbations.png": {
+      "bytes": 96464,
+      "sha256": "fa1c8ca7adc3d0050e30bee587820d14d9318824cebc9a2e1cf8337752fa4ff1"
+    },
+    "figures/12_solver_audit.png": {
+      "bytes": 166619,
+      "sha256": "3c9356ec8412de4d05f067f04f796736df16ef5584a9d7721f762813aefb67d5"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 27 PDF pages and 12 figures visually inspected",
+      "26 payload hashes matched",
+      "two independent scripts from unrelated working directories produced byte-identical outputs",
+      "12 notebook code cells executed sequentially in a fresh real in-process kernel",
+      "200 independent Fraction least-squares, residual-orthogonality and squared-distance decomposition checks",
+      "all six stored floating-point near-collinear matrices have nonzero exact rational minors",
+      "four additional non-finite-input rejection checks",
+      "main beta [7/6, 1/2], SSE 1/6, numerical ranks and rcond results independently confirmed"
+    ]
+  }
+}

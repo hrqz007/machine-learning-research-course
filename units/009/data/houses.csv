@@ -1,0 +1,4 @@
+sample_id,area_m2,age_years,role
+Q,50,5,query
+A,51,15,candidate
+B,56,6,candidate

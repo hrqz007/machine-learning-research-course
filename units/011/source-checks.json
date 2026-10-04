@@ -1,0 +1,72 @@
+{
+  "unit": "011",
+  "check_date_utc": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Stephen Boyd and Lieven Vandenberghe Introduction to Applied Linear Algebra",
+      "url": "https://web.stanford.edu/~boyd/vmls/vmls.pdf",
+      "source_type": "Author-hosted primary textbook",
+      "verification": "Actual PDF read: QR printed pp.189–190 and least-squares pp.225–233, including orthogonality, squared-distance proof and QR solve.",
+      "use": "lecture QR and orthogonal least-squares principles",
+      "checked": "2026-10-04"
+    },
+    {
+      "id": "S2",
+      "title": "NumPy 2.3 lstsq",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.lstsq.html",
+      "source_type": "Official API documentation",
+      "verification": "Actual page read: minimum residual, minimum norm choice, rcond cutoff, empty residuals semantics.",
+      "use": "rank-deficient/rectangular solution and result interpretation",
+      "checked": "2026-10-04"
+    },
+    {
+      "id": "S3",
+      "title": "NumPy 2.3 qr",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.qr.html",
+      "source_type": "Official API documentation",
+      "verification": "Actual page read: reduced shapes, orthonormal columns, triangular R, Householder reflector storage and LAPACK interface.",
+      "use": "library QR and teaching-MGS distinction",
+      "checked": "2026-10-04"
+    },
+    {
+      "id": "S4",
+      "title": "NumPy 2.3 inv",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.inv.html",
+      "source_type": "Official API documentation",
+      "verification": "Actual page read: square input, singular failure, ill-conditioned results may be inaccurate without error.",
+      "use": "explicit inverse comparison and warnings",
+      "checked": "2026-10-04"
+    },
+    {
+      "id": "S5",
+      "title": "NumPy 2.3 cond",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.cond.html",
+      "source_type": "Official API documentation",
+      "verification": "Actual page read: norm-based condition definition and default SVD calculation.",
+      "use": "diagnostic condition numbers; SVD theory explicitly deferred",
+      "checked": "2026-10-04"
+    },
+    {
+      "id": "S6",
+      "title": "NumPy 2.3 matrix_rank",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.matrix_rank.html",
+      "source_type": "Official API documentation",
+      "verification": "Actual page read: SVD threshold, default tolerance with shape and machine precision, relationship to measurement error.",
+      "use": "exact rank versus numerical rank",
+      "checked": "2026-10-04"
+    },
+    {
+      "id": "S7",
+      "title": "NumPy 2.3 solve",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.solve.html",
+      "source_type": "Official API documentation",
+      "verification": "Actual page read: square full-rank requirement and right-hand-side shape behavior.",
+      "use": "direct square solve route and shape failures",
+      "checked": "2026-10-04"
+    }
+  ],
+  "originality": "All teaching examples, figures, worked presentation, deterministic matrices, code and exercises created for this unit. No textbook passage or figure copied.",
+  "lookup_limit": "MML full PDF exceeded retrieval-size limit; verified Boyd/Vandenberghe author PDF was used instead. Failed MML download is not cited as verified.",
+  "theory_scope": "No calculus needed. SVD theory and the general spectral proof of squared condition number are explicitly deferred to unit 012; diagonal example proved directly."
+}

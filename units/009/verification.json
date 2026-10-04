@@ -1,0 +1,151 @@
+{
+  "unit": "009",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 18,
+    "figures": 11
+  },
+  "lab": {
+    "pages": 5
+  },
+  "visual_review": "All final PDF pages rendered and inspected; mathematical notation rendered as self-contained MathJax SVG.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "test_groups_or_checks": 17,
+    "unrelated_cwd_run": "passed",
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 19,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "small synthetic real-valued examples only",
+    "finite numerical checks do not prove general mathematical statements",
+    "floating-point range and rounding limitations apply",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 41828,
+      "sha256": "6d10dd8d94400a65abb1a59b05dea5dc2ebbb52dcb7af076d93fd81041c5666d"
+    },
+    "lecture.pdf": {
+      "bytes": 1849753,
+      "sha256": "c55ee290505a0769b85c64dbe4f5b13a0d2a22e6e66c3ce7e86fb78e9ca387d2"
+    },
+    "lab.md": {
+      "bytes": 12419,
+      "sha256": "5647c1fabf4b269e7824a3dd6abb750c2ce4ca29232baf7dc7b5fdbf224b3645"
+    },
+    "lab.pdf": {
+      "bytes": 474301,
+      "sha256": "3af5e78d232021355033b9918d7eeb74a0101379cda7bceed546cfbdb144925e"
+    },
+    "experiment.py": {
+      "bytes": 15741,
+      "sha256": "48fd76b017c6e85f7993660af7393cc2f1cdce0ee3cebe7f9d9d3cb629c818f4"
+    },
+    "experiment.ipynb": {
+      "bytes": 22986,
+      "sha256": "e91ef17943f74a81ea00847e92a0116027296f483d71756443f3f38a0d5e3a61"
+    },
+    "README.md": {
+      "bytes": 4038,
+      "sha256": "f0b243c1609ce3c07e47ec23d65a868aa901544fdec88bcbab0d78ed6dadcc01"
+    },
+    "requirements.txt": {
+      "bytes": 16,
+      "sha256": "1986590f068fa10c02086f967ba365ede5c96e3a9ae5c08ac026b34ee183df8f"
+    },
+    "build_figures.py": {
+      "bytes": 10624,
+      "sha256": "46f6178c0949bb96fe38602688a93f56e388776027172eb91c62dcdbd9b7e4a6"
+    },
+    "source-checks.json": {
+      "bytes": 5541,
+      "sha256": "1f2b6bec3ba7f654afe5b143773a1c9d488f82193fa4279946523015ffbf0fed"
+    },
+    "test-result.json": {
+      "bytes": 3600,
+      "sha256": "019f09d9256df6e709257ea47ba121f31fd1975adf4a21e85431ea93ccba08e9"
+    },
+    "data/README.md": {
+      "bytes": 952,
+      "sha256": "6f85bca0dc7ef897eb45857663b4b30cdb55cd1f866a1af5bba5c65a7205d538"
+    },
+    "data/houses.csv": {
+      "bytes": 81,
+      "sha256": "fe7d1be56d8fe5309bf30cd2fb3bc0def07c11438ec14663ae2eb3c8f6b68dbd"
+    },
+    "data/vectors.csv": {
+      "bytes": 173,
+      "sha256": "80b01063e471caf042d5e0b671ba1f1e5b543f26274f08b044f2dae1c87e6697"
+    },
+    "figures/01_coordinates.png": {
+      "bytes": 88742,
+      "sha256": "9b08b570142f3ce608f3d048be845d91d061e1f864a5a025b48d613e5f714628"
+    },
+    "figures/02_add_scale.png": {
+      "bytes": 131812,
+      "sha256": "42e69eaf319257f74975bb3550b5659492c579e49bbddff8c34e098510fba102"
+    },
+    "figures/03_dot.png": {
+      "bytes": 62814,
+      "sha256": "438c68c846aa44b91bab271ff6b03c21715c06be65f1a4659cf3bae808d7bd3b"
+    },
+    "figures/04_norms.png": {
+      "bytes": 59380,
+      "sha256": "b08d823a44adfc4cbaeb30fb4bc597edb236a251b8d2e405760aa70ded323656"
+    },
+    "figures/05_distance.png": {
+      "bytes": 63414,
+      "sha256": "b9887913415d6e1ad23b597168fe9691557af8f6d5bf2e04128fce01ba6cfbf4"
+    },
+    "figures/06_orthogonal.png": {
+      "bytes": 63793,
+      "sha256": "88803a9b50179a015984137a8e2b3e07b6001f51b8ad7b283cb9a36bb08de9dc"
+    },
+    "figures/07_projection.png": {
+      "bytes": 80843,
+      "sha256": "2e75490d14f413a88b68b162b89c410faf1ed2d0a04baca56a29573d927b9ae4"
+    },
+    "figures/08_cauchy.png": {
+      "bytes": 100372,
+      "sha256": "ff1aa7bb7c8ac54fd0cc96c5b138858cac2e91884a7456dea3b4a616be50a530"
+    },
+    "figures/09_angle.png": {
+      "bytes": 133515,
+      "sha256": "51b8ec3375ab97617c9c7dc4d83868c8f2eefb40fd5455d57ce2bf3f58737d09"
+    },
+    "figures/10_unit_balls.png": {
+      "bytes": 68977,
+      "sha256": "d54b4c55e6f6e6e4e9cb066e925e2784cfe30821c3c42b331a506a68dd3bc48d"
+    },
+    "figures/11_scale.png": {
+      "bytes": 135638,
+      "sha256": "008a47915337811abac4ac3125e2f571de6fcf6a46cd7aa1e1b0dc9d2801079d"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 23 PDF pages and 11 figures visually inspected",
+      "projection closest-point proof, Cauchy-Schwarz, both triangle inequalities, equality and zero-vector cases checked",
+      "19 notebook cells in fresh real IPython kernel",
+      "17 script check groups and two identical new-process outputs",
+      "240 independent Fraction projection, orthogonality, optimality and batch checks",
+      "extreme normalization, bounded clipping and mixed bool validation passed",
+      "25 payload hashes matched"
+    ],
+    "source_scope": "MML full-book web retrieval exceeded size limit during independent review; derivations independently checked and official NumPy arccos semantics checked. Author source evidence is retained."
+  }
+}

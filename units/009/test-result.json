@@ -1,0 +1,152 @@
+{
+  "unit": "009",
+  "status": "passed",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "checks": [
+    {
+      "name": "exact_fraction_projection_and_energy_identity",
+      "passed": true
+    },
+    {
+      "name": "vector_arithmetic_and_dot_properties",
+      "passed": true
+    },
+    {
+      "name": "norms_and_known_distances",
+      "passed": true
+    },
+    {
+      "name": "float_projection_residual_orthogonality_and_energy",
+      "passed": true
+    },
+    {
+      "name": "nearest_point_identity_on_six_coefficients",
+      "passed": true
+    },
+    {
+      "name": "direction_rescaling_and_zero_source_projection",
+      "passed": true
+    },
+    {
+      "name": "zero_direction_normalization_and_angle_rejected",
+      "passed": true
+    },
+    {
+      "name": "unit_directions_angles_and_guarded_roundoff_clipping",
+      "passed": true
+    },
+    {
+      "name": "non_square_batch_matches_loop_without_input_mutation",
+      "passed": true
+    },
+    {
+      "name": "single_sample_and_single_feature_shapes",
+      "passed": true
+    },
+    {
+      "name": "shape_empty_real_finite_and_scale_contracts",
+      "passed": true
+    },
+    {
+      "name": "raw_nearest_neighbor_flip_and_dimensionless_invariance",
+      "passed": true
+    },
+    {
+      "name": "l1_l2_choice_can_reverse_nearest_candidate",
+      "passed": true
+    },
+    {
+      "name": "120_finite_random_checks_of_bounds_and_distance_not_a_proof",
+      "passed": true
+    },
+    {
+      "name": "equality_cases_and_squared_distance_triangle_counterexample",
+      "passed": true
+    },
+    {
+      "name": "translation_preserves_distance_but_not_origin_based_cosine",
+      "passed": true
+    },
+    {
+      "name": "extreme_float_limits_are_reported_not_silently_clipped",
+      "passed": true
+    }
+  ],
+  "exact_fraction_results": {
+    "dot": "16",
+    "coefficient": "16/25",
+    "projection": [
+      "48/25",
+      "64/25"
+    ],
+    "residual": [
+      "52/25",
+      "-39/25"
+    ],
+    "squared_lengths": [
+      "17",
+      "256/25",
+      "169/25"
+    ]
+  },
+  "numeric_results": {
+    "dot": 16.0,
+    "norm_x": 4.123105625617661,
+    "norm_y": 5.0,
+    "projection_coefficient": 0.64,
+    "projection": [
+      1.92,
+      2.56
+    ],
+    "residual": [
+      2.08,
+      -1.56
+    ],
+    "projection_squared_norm": 10.24,
+    "residual_squared_norm": 6.760000000000001,
+    "cosine": 0.7761140001162654,
+    "angle_degrees": 39.09385888622951
+  },
+  "scale_experiment": {
+    "labels": [
+      "A",
+      "B"
+    ],
+    "raw_m2_year": [
+      10.04987562112089,
+      6.082762530298219
+    ],
+    "raw_dm2_year": [
+      100.4987562112089,
+      600.0008333327546
+    ],
+    "dimensionless": [
+      2.0024984394500787,
+      0.6324555320336759
+    ],
+    "dimensionless_after_conversion": [
+      2.0024984394500787,
+      0.6324555320336759
+    ]
+  },
+  "limits": [
+    "Real finite vectors only; no complex inner product implementation",
+    "Small CPU numerical checks support implementation testing, not universal mathematical proof",
+    "Direct projection formula rejects zero or numerically underflowed direction denominator",
+    "Browser Jupyter UI, socket transport and local Anaconda installation not tested"
+  ],
+  "notebook": {
+    "status": "passed",
+    "code_cells": 19,
+    "all_executed_in_order": true,
+    "outputs_retained": true,
+    "kernel": "real ipykernel InProcessKernel in a fresh Python process",
+    "browser_ui_tested": false,
+    "socket_transport_tested": false
+  },
+  "portability": {
+    "invoked_from_different_working_directory": true,
+    "status": "passed"
+  }
+}

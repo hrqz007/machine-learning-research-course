@@ -1,0 +1,6 @@
+vector_id,component_1,component_2,meaning
+x,4,1,source_vector
+y,3,4,projection_direction
+z,1,5,distance_example
+orthogonal_to_x,1,-4,orthogonal_example
+zero,0,0,zero_vector

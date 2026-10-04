@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–008 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–012 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -38,6 +38,11 @@
 - [第 008 讲：函数代数与数学表达](units/008/README.md)
   - [正文（19 页）](units/008/lecture.pdf) · [实验指南（4 页）](units/008/lab.pdf) · [详解（4 页）](units/008/answers.pdf)
   - [Notebook](units/008/experiment.ipynb) · [Python 脚本](units/008/experiment.py) · [验证记录](units/008/verification.json)
+
+- [第 009 讲：向量内积与距离](units/009/README.md)：[正文](units/009/lecture.pdf) · [实验指南](units/009/lab.pdf) · [Notebook](units/009/experiment.ipynb)
+- [第 010 讲：矩阵与线性变换](units/010/README.md)：[正文](units/010/lecture.pdf) · [实验指南](units/010/lab.pdf) · [Notebook](units/010/experiment.ipynb)
+- [第 011 讲：线性方程与最小二乘几何](units/011/README.md)：[正文](units/011/lecture.pdf) · [实验指南](units/011/lab.pdf) · [Notebook](units/011/experiment.ipynb)
+- [第 012 讲：特征值与奇异值分解](units/012/README.md)：[正文](units/012/lecture.pdf) · [实验指南](units/012/lab.pdf) · [Notebook](units/012/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)

@@ -1,0 +1,91 @@
+{
+  "unit": "010",
+  "checked_on": "2026-10-04",
+  "method": "Official documentation and first-party educational pages opened with web tools; all numerical examples independently constructed and run.",
+  "sources": [
+    {
+      "title": "OpenStax Precalculus 2e 9.5",
+      "url": "https://openstax.org/books/precalculus-2e/pages/9-5-matrices-and-matrix-operations",
+      "supports": "矩阵元素、形状、加法、数乘与乘法定义",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "MIT Matrices and Linear Transformations 16.1",
+      "url": "https://math.mit.edu/~djk/18_022/chapter16/section01.html",
+      "supports": "通过基向量的像按列构造线性变换矩阵",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "MIT 18.02 notes Fall 2021",
+      "url": "https://math.mit.edu/~poonen/02/notes.pdf",
+      "supports": "PDF索引12至14页：非方阵映射、单位方向的列表示和旋转矩阵；不借用后续行列式材料",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "OpenStax Precalculus 2e 5.1",
+      "url": "https://openstax.org/books/precalculus-2e/pages/5-1-angles",
+      "supports": "角度、弧度与转换",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "OpenStax Precalculus 2e 5.2",
+      "url": "https://openstax.org/books/precalculus-2e/pages/5-2-unit-circle-sine-and-cosine-functions",
+      "supports": "单位圆定义正弦、余弦与平方和关系",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "NumPy matmul 2.3",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.matmul.html",
+      "supports": "矩阵乘法、@、形状匹配和一维数组行为",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "NumPy transpose 2.3",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.transpose.html",
+      "supports": "二维转置与一维数组转置形状不变",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "NumPy deg2rad 2.3",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.deg2rad.html",
+      "supports": "度转弧度",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "NumPy sin 2.3",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.sin.html",
+      "supports": "正弦输入为弧度",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "NumPy cos 2.3",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.cos.html",
+      "supports": "余弦输入为弧度",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "NumPy allclose 2.3",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.allclose.html",
+      "supports": "浮点比较的相对与绝对容差",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "title": "Matplotlib Axes.set_aspect 3.10.8",
+      "url": "https://matplotlib.org/3.10.8/api/_as_gen/matplotlib.axes.Axes.set_aspect.html",
+      "supports": "equal几何显示比例",
+      "checked_on": "2026-10-04"
+    }
+  ],
+  "availability_notes": [
+    {
+      "url": "https://mml-book.github.io/",
+      "result": "Author homepage opened; the 17.6MB current book PDF exceeded web fetch size and printed-PDF fallback also failed. Concept verification used accessible MIT and OpenStax primary sources instead; no claim to have read this book PDF."
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "originality": "All examples, synthetic files, figures and exposition independently authored; no textbook illustrations or passages copied."
+}

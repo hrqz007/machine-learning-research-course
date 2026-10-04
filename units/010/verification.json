@@ -1,0 +1,181 @@
+{
+  "unit": "010",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 23,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "visual_review": "All final PDF pages rendered and inspected; mathematical notation rendered as self-contained MathJax SVG.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "test_groups_or_checks": 68,
+    "unrelated_cwd_run": "passed",
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 23,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "small synthetic real-valued examples only",
+    "finite numerical checks do not prove general mathematical statements",
+    "floating-point range and rounding limitations apply",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 49535,
+      "sha256": "cb81fecfc44f9c1af33aaae8ffafd253356568a5c0c92e228fa344527a2f0dfe"
+    },
+    "lecture.pdf": {
+      "bytes": 1778175,
+      "sha256": "a13d4c233c4fd35e6b290f1d4b2bd764fa78ec5498bd55a0bd4860634682e629"
+    },
+    "lab.md": {
+      "bytes": 9710,
+      "sha256": "fd90d06492e3b287b32adb74208b4c5f52282d3310f68b5c3f03e0ea6780f862"
+    },
+    "lab.pdf": {
+      "bytes": 460000,
+      "sha256": "80ec3dfde8fa2076b9c4c1c5bbf761dcb280881df27faa13c0f38e78c940660c"
+    },
+    "answers.md": {
+      "bytes": 7903,
+      "sha256": "888f0df4b8a0134f7eb44e9a57c9889fdbde5ccb14a609b3989444c9434233b4"
+    },
+    "answers.pdf": {
+      "bytes": 431084,
+      "sha256": "e6f7ae4bcef4f98bbc160f82431e1736e7623ff5aed3ae9073d062dc3961d755"
+    },
+    "example_report.md": {
+      "bytes": 2330,
+      "sha256": "0e00eb9d26d2bbe30cf9f071f99848ff2992a8bd441e857008cd8afc797a4c83"
+    },
+    "example_report.pdf": {
+      "bytes": 631675,
+      "sha256": "0cbee778ce9ffaf358764ca9f0163c5bba9b983aa2711ba6c772de22ddc5550d"
+    },
+    "experiment.py": {
+      "bytes": 11018,
+      "sha256": "6e60a7c54358cd55347850696c968861cad6eadbfd655e567e074871a2248f36"
+    },
+    "experiment.ipynb": {
+      "bytes": 168395,
+      "sha256": "67926cfde45f8c87802d724580a52fd34f9503b28444154d806df911cce9d2f2"
+    },
+    "README.md": {
+      "bytes": 3323,
+      "sha256": "4f1572b38d9e2d03f7dfff2ed9fe2bc32d2994f3c406b5e5f92c50171b187191"
+    },
+    "requirements.txt": {
+      "bytes": 37,
+      "sha256": "71c350ea40be7ae57a2d959278193d284d0d2ac1ab659ced310b2e52232f667c"
+    },
+    "environment.yml": {
+      "bytes": 255,
+      "sha256": "bdd6517449701ed9d7379ff32cdff1cf9e0948d78661cc4312d14765d01cdab1"
+    },
+    "make_figures.py": {
+      "bytes": 7910,
+      "sha256": "19a99b2ffdbc1af01072c2f36b88b668ac18db1272c63593e903bf20f6d63561"
+    },
+    "source-checks.json": {
+      "bytes": 3604,
+      "sha256": "b942607da6c34e2a63cd96e5f35e1b134ec4c2501b2b2bad61b5b3743a78ccf6"
+    },
+    "test-result.json": {
+      "bytes": 6760,
+      "sha256": "7b5a876a41fd011ce338c1fb93148d733da41c7cf47acbbcb68afaffe50be0a9"
+    },
+    "data/data_dictionary.md": {
+      "bytes": 2224,
+      "sha256": "eb60ea1c7f34bd4fe08d5420efab4a46d64ff2e9e58163f2ebcfdf1586fbc514"
+    },
+    "data/samples.csv": {
+      "bytes": 60,
+      "sha256": "d8b3b0d6bfae9fb5a17ca96717ceaa2125a861979d881ae192b67a03920a3338"
+    },
+    "data/matrices.json": {
+      "bytes": 308,
+      "sha256": "515bf49893cc2f73cb57457833de08141e1dcebae629021328ed4e9a91b4e7dd"
+    },
+    "figures/01_shapes_meanings.png": {
+      "bytes": 58116,
+      "sha256": "b1e1b42d5d67696e1bfeb3c4cf33e51c90e773a7b7945586da9285e7f04e634f"
+    },
+    "figures/02_row_column_product.png": {
+      "bytes": 39699,
+      "sha256": "e1e49b40cbd04c8d81392b14e270f8e3c6ac503c78e90721bd205143c511f6f5"
+    },
+    "figures/03_columns_as_images.png": {
+      "bytes": 67494,
+      "sha256": "e0275ff0d84a7978a7053987274d61fb792b10d4ee64c1ec86bcfef59417b596"
+    },
+    "figures/04_scale_shear_grid.png": {
+      "bytes": 94620,
+      "sha256": "4f8ba8c0fcb0e4037712d434a5689b0938f981ec88c7a4b343805bc79c8cec28"
+    },
+    "figures/05_rotate_collapse_grid.png": {
+      "bytes": 115302,
+      "sha256": "a752bcb244d3ec166f15a0aa1a3ddbb8feca192e4f075f527872d6ff05788423"
+    },
+    "figures/06_order_matters.png": {
+      "bytes": 44699,
+      "sha256": "782fb1b5c85b177d3bc16c4064956577141aae9fec24a5ae1940e00d236e343b"
+    },
+    "figures/07_transpose_product.png": {
+      "bytes": 50799,
+      "sha256": "72eb23483b20583fce8e9bfbd6eb57e09d14c18e3bc8ef8a134920ce0807cc3b"
+    },
+    "figures/08_basis_coordinates.png": {
+      "bytes": 55127,
+      "sha256": "62fea7b8ce3eebdfbfeeb765a5bdd503ceabff57a481a30d9904b518952efd68"
+    },
+    "figures/09_unit_circle.png": {
+      "bytes": 79144,
+      "sha256": "8482c905df175d089e20316a45c3373ae26947cef944bd480d4830dc36799c4a"
+    },
+    "figures/10_rotation_preserves_geometry.png": {
+      "bytes": 66964,
+      "sha256": "984460236f347df4651f381eaa89f006ecbae0d9c446983e3d1c0abad9ae7158"
+    },
+    "figures/11_affine_bias.png": {
+      "bytes": 52313,
+      "sha256": "9ff3ec6dd024ec26b1c2a943b3990da43c5b43a543049003a84be0b74090e80c"
+    },
+    "figures/12_batch_axes.png": {
+      "bytes": 56987,
+      "sha256": "acb10ea13f9a1c4a08dab700f55aa587958b90867db7c411f609f5fc755bd053"
+    }
+  },
+  "answers": {
+    "pages": 4
+  },
+  "example_report": {
+    "pages": 2
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 33 PDF pages, 12 figures and 2 notebook PNG outputs visually inspected",
+      "matrix entries, composition and transpose order, basis changes, radians and rotation, row-batch derivation and affine boundary checked",
+      "23 notebook cells in fresh real IPython kernel",
+      "68 script checks",
+      "200 independent Fraction rectangular-product, batch and column-reordering cases",
+      "97 rotation angles independently checked",
+      "raw inputs unchanged; two new-process outputs byte-identical",
+      "31 payload hashes and sizes matched"
+    ]
+  }
+}

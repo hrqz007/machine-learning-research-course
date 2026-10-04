@@ -1,0 +1,176 @@
+{
+  "unit": "012",
+  "checked_date": "2026-10-04",
+  "sources": [
+    {
+      "id": "R1",
+      "author": "Stephen Boyd",
+      "title": "EE263 Lecture 15 Symmetric matrices, quadratic forms, matrix norm, and SVD",
+      "url": "https://ee263.stanford.edu/archive/symm.pdf",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "slides 15-2 to 15-7: spectral decomposition and distinct-eigenvalue orthogonality",
+        "slides 15-10 to 15-14: quadratic forms and definiteness",
+        "slides 15-19 to 15-28: gain and SVD"
+      ],
+      "conditions_applied": [
+        "Real symmetric is required for orthogonal eigenbasis.",
+        "Repeated eigenvalues allow a choice of orthogonal basis; arbitrary eigenvectors need not be orthogonal.",
+        "Positive semidefinite means a quadratic-form condition, not nonnegative entries."
+      ],
+      "use": "Theorem conditions checked; examples, prose and figures independently created."
+    },
+    {
+      "id": "R2",
+      "author": "Stephen Boyd and Sanjay Lall",
+      "title": "Singular Value Decomposition EE263 Autumn 2015",
+      "url": "https://ee263.stanford.edu/lectures/svd-v2.pdf",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "pages 3-10: singular directions and reconstruction",
+        "pages 17-20: full SVD",
+        "pages 22-26: square invertible condition number and spectral low-rank proof"
+      ],
+      "conditions_applied": [
+        "Square invertible hypothesis retained for inverse-norm condition number proof.",
+        "Terminology thin/compact differs by source; explicit dimensions define this lesson.",
+        "Orthogonal transforms can include reflections; they are not all pure rotations.",
+        "No unqualified rectangular least-squares relative-error bound is imported."
+      ],
+      "use": "Construction and lower-bound argument checked; all teaching examples newly developed."
+    },
+    {
+      "id": "R3",
+      "author": "Sébastien Roch",
+      "title": "Mathematical Methods in Data Science 4.2 Background review of matrix rank and spectral decomposition",
+      "url": "https://mmids-textbook.github.io/chap04_svd/02_spectral/roch-mmids-svd-spectral.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Spectral theorem and repeated-eigenvalue subspaces",
+        "Quadratic forms and definiteness"
+      ],
+      "conditions_applied": [
+        "Eigenvectors exclude zero; an eigenspace includes zero.",
+        "A full spectral-theorem proof is not claimed without the needed existence argument."
+      ],
+      "use": "Cross-check of theorem statement and scope, not copied exposition."
+    },
+    {
+      "id": "R4",
+      "author": "Sébastien Roch",
+      "title": "Mathematical Methods in Data Science 4.6 Further applications of the SVD low-rank approximations and ridge regression",
+      "url": "https://mmids-textbook.github.io/chap04_svd/06_further/roch-mmids-svd-further.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Matrix Norms and Singular Values Truncation lemma",
+        "Low-Rank Approximation in the Induced Norm theorem"
+      ],
+      "conditions_applied": [
+        "Squared Frobenius error is the sum of omitted squared singular values.",
+        "Spectral error is the first omitted singular value.",
+        "Rank at most k and complete unweighted matrix loss are specified."
+      ],
+      "use": "Error formulas and theorem conditions cross-checked; original projection proof and examples supplied."
+    },
+    {
+      "id": "R5",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.linalg.eigh",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.eigh.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Parameters UPLO",
+        "Returns eigenvalues and eigenvectors",
+        "Notes"
+      ],
+      "conditions_applied": [
+        "Input must be real symmetric for this lesson.",
+        "Eigenvalues ascending; normalized eigenvectors in columns.",
+        "Selected triangular part is used; the wrapper explicitly rejects nonsymmetric input.",
+        "Course wrapper deliberately rejects boolean/string/object inputs before float conversion, beyond NumPy general coercion behavior."
+      ],
+      "use": "Interface contract verified against NumPy 2.3.5 execution."
+    },
+    {
+      "id": "R6",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.linalg.eig",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.eig.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Returns",
+        "Notes on complex values and rank of returned eigenvectors"
+      ],
+      "conditions_applied": [
+        "General real matrices may produce complex eigenvalues.",
+        "Eigenvalues not necessarily ordered.",
+        "Eigenvectors need not form a full-rank or orthogonal basis."
+      ],
+      "use": "Rotation and shear counterexamples matched to interface scope."
+    },
+    {
+      "id": "R7",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.linalg.svd",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.svd.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "full_matrices and return shapes",
+        "singular value ordering",
+        "Notes and reconstruction examples"
+      ],
+      "conditions_applied": [
+        "s is a vector; Vh is already transposed for real inputs.",
+        "Reduced dimensions use min(m,n), not estimated rank.",
+        "Nonnegative singular values descending."
+      ],
+      "use": "All real full/reduced reconstructions executed; no production implementation by eig(A.T@A) is recommended."
+    },
+    {
+      "id": "R8",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.linalg.cond",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.cond.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "p=None and p=2",
+        "Returns and Notes"
+      ],
+      "conditions_applied": [
+        "2-norm condition ratio checked by SVD.",
+        "Finite ratio on a full-row-rank wide matrix does not imply trivial input null space."
+      ],
+      "use": "Square condition identity and wide counterexample both executed."
+    }
+  ],
+  "additional_source_cautions": [
+    {
+      "url": "https://ee263.stanford.edu/archive/low_rank_approx.pdf",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "location": "page 1, low-rank approximation",
+      "caution": "The unqualified uniqueness sentence for the Frobenius minimizer is not adopted. Repeated singular values at the truncation boundary yield counterexamples. Lesson and Exercise 17 give the strict-gap condition and distinguish spectral-norm nonuniqueness."
+    }
+  ],
+  "unverified_attempts": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "checked_date": "2026-10-04",
+      "status": "full_document_open_failed",
+      "use": "Not counted as an inspected or cited source; official author-hosted Stanford and Roch materials used instead."
+    }
+  ],
+  "originality": {
+    "text": "Original Chinese teaching exposition and derivations; no copied textbook paragraphs.",
+    "figures": "12 original figures drawn from the lesson matrices and synthetic data.",
+    "data": "Original deterministic matrices and 32x32 orthogonal-stripe field; no external image download."
+  }
+}

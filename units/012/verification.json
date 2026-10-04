@@ -1,0 +1,166 @@
+{
+  "unit": "012",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 20,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 5
+  },
+  "answers": {
+    "pages": 5
+  },
+  "visual_review": "All 30 final PDF pages viewed individually at full rendered resolution, after integration correction and linked-reference layout cleanup.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "boundary_test_groups": 27,
+    "unrelated_cwd_run": "passed",
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 13,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "integration_science_check": "Clarified that U_p U_p^T projects onto the thin U column space, which may exceed C(A) for rank-deficient matrices; U_r U_r^T projects onto C(A). Independently confirmed on a rank-one 3x2 matrix.",
+  "limitations": [
+    "small deterministic synthetic real matrices only",
+    "finite checks do not prove general stability",
+    "full spectral-theorem existence accepted as a stated prerequisite rather than claimed fully proved",
+    "floating-point values can vary with BLAS/LAPACK",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 38840,
+      "sha256": "b5d265049b7996377fd951cc9a7da4009ad31c16bea13665d3a7fbc209c08889"
+    },
+    "lecture.pdf": {
+      "bytes": 2090925,
+      "sha256": "71d194ba42999703979d40d60772dbc556cbb9706bf794b23fb7210fdb42e414"
+    },
+    "lab.md": {
+      "bytes": 11480,
+      "sha256": "797b48ee9afa4e804dfdcf106239d4a9852cc820a67a7f4ca35c617927d642b7"
+    },
+    "lab.pdf": {
+      "bytes": 520366,
+      "sha256": "92bdd32b5087c37f3d933e7368d33ab6fe393ee21864abc8bf4caf36193217e5"
+    },
+    "answers.md": {
+      "bytes": 12698,
+      "sha256": "73da724483fb339cce90900503fa004427bf3db2c67935157c68c1ca66ba14d8"
+    },
+    "answers.pdf": {
+      "bytes": 630735,
+      "sha256": "a648c506e16b9d75b01d95fd18c2d841b045fa3702f774d419c26e3b99415893"
+    },
+    "experiment.py": {
+      "bytes": 17071,
+      "sha256": "6cb7a7e86e01e1b50d8a373f967630ad6a6970193d9f0c77482947a4cb83b630"
+    },
+    "experiment.ipynb": {
+      "bytes": 164373,
+      "sha256": "d6e86c5a149a641c5cb6c51f9a62a6babf7fe305632b705e034bb47b55d8a2c1"
+    },
+    "README.md": {
+      "bytes": 1493,
+      "sha256": "5fb7e760763d72779c55cbfd40bf8170cfe474483e517a87b2b7478f97e31fcb"
+    },
+    "requirements.txt": {
+      "bytes": 24,
+      "sha256": "eb712387fa3e4237362dd65e2ad8307eb7ad5b56a265ef01cc76328ebca08233"
+    },
+    "source-checks.json": {
+      "bytes": 7799,
+      "sha256": "77454b1812c1640638181eb8f3282e00231f2555a70c69fd1fe6267fcc8f77d3"
+    },
+    "test-result.json": {
+      "bytes": 12722,
+      "sha256": "11f7736634624fc4adf21ce4648a0270a55d46b33ac89cf74a142432ff534d70"
+    },
+    "data/README.md": {
+      "bytes": 1004,
+      "sha256": "9a5498b89387117f368575407f78341d95a5f593cd5da300406819217ac7684d"
+    },
+    "data/main_matrix.csv": {
+      "bytes": 43,
+      "sha256": "49f35c247cecb21d5a494eef8dbeec363ece42e25bb8d93f4fcf96e46cd38d61"
+    },
+    "data/synthetic_field.csv": {
+      "bytes": 11264,
+      "sha256": "afaf4da666d5ececf6d1ee7d4c5a0526c7e9439a3653c0d33eb0017b94dd1f16"
+    },
+    "figures/01_eigen_directions.png": {
+      "bytes": 61001,
+      "sha256": "f77f276486f73ceef26908f071b6966602be04fc6a556a5a02039c9beb3eb5f3"
+    },
+    "figures/02_hand_eigen.png": {
+      "bytes": 70064,
+      "sha256": "998d7410a026fb5b7d976188016b8527da9d2207c1709ba32408a1ff1dd6632a"
+    },
+    "figures/03_spectral_coordinates.png": {
+      "bytes": 55174,
+      "sha256": "2d5d0d8c8556726b0da092853ebbd0e0578945dc7fd3f097b88e608240af7661"
+    },
+    "figures/04_quadratic_forms.png": {
+      "bytes": 168278,
+      "sha256": "f26745bc4c5ddf48443d2463a589fcfa74f634aba0d9dc5d308a0335bc23491e"
+    },
+    "figures/05_nonsymmetric_limits.png": {
+      "bytes": 42715,
+      "sha256": "3e25a677e2818e03dbb398d6d2c0c2a58606b9e6521057c7b82d716d1626c66d"
+    },
+    "figures/06_svd_shapes.png": {
+      "bytes": 60456,
+      "sha256": "ac74f4396e3fd5bda81986c8da96f41f91baa3075b5cdf00b290bb06ab78da9f"
+    },
+    "figures/07_rectangular_geometry.png": {
+      "bytes": 160503,
+      "sha256": "99b500542feb31a38f7a89926aaefed49369597fe87e3cb97eb82c3dc302b937"
+    },
+    "figures/08_rank_one_layers.png": {
+      "bytes": 38074,
+      "sha256": "756249df2181035fccbda8059d861558d1a2f5baa0f522b6958ca11062ef1bf4"
+    },
+    "figures/09_nonuniqueness.png": {
+      "bytes": 82154,
+      "sha256": "67099c16087bf6ea9bb6fc34530d89a6ecbb161864fa8282367909b78f7feb4d"
+    },
+    "figures/10_field_reconstruction.png": {
+      "bytes": 71542,
+      "sha256": "f098c42bc20204a1ef74877f2d217a847d717a776c2bd6d183ef38a873f36a8e"
+    },
+    "figures/11_energy_error.png": {
+      "bytes": 122797,
+      "sha256": "bbd7194d9f06edffb4615da394f88bd446a4b37abe3b8f07c09edb56c0eb5244"
+    },
+    "figures/12_condition_numbers.png": {
+      "bytes": 113557,
+      "sha256": "e3c274748fe3ee42abb25f6100b885d0c43433e0226ec949bbb5e6881ce0232f"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 30 PDF pages, 12 figures and 2 notebook plots visually inspected",
+      "27 payload hashes matched",
+      "13 notebook code cells in fresh real in-process kernel",
+      "27 boundary groups and two byte-identical independent script runs",
+      "72 rational-orthogonal matrices with known spectra and 254 independent truncation checks",
+      "exact synthetic-field squared Frobenius total 5445/16 confirmed",
+      "thin versus compact rank-deficient projection counterexample confirmed",
+      "4 extra mixed-type rejection checks",
+      "full derivations and 17 exercises checked, including spectral-gap Frobenius uniqueness, spectral-norm nonuniqueness and weighted-loss counterexample",
+      "primary sources checked"
+    ]
+  }
+}

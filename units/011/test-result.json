@@ -1,0 +1,244 @@
+{
+  "unit": "011",
+  "check_date_utc": "2026-10-04",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "dtype": "float64",
+    "randomness": "none",
+    "offline": true
+  },
+  "script": {
+    "fresh_process_runs": 2,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "stdout_identical": true,
+    "report_bytes_identical": true,
+    "stdout": "NumPy 2.3.5 ；所有数据为确定性合成数据\n精确主例系数： ['7/6', '1/2']\n精确残差： ['-1/6', '1/3', '-1/6'] SSE = 1/6\n秩亏最小范数系数： [1.166666666666666, 0.2500000000000001, 0.2500000000000001]\n近共线实际结果：k / 数值秩 / lstsq参数误差 / normal_solve状态 / normal_inverse状态\n10 2 2.164e-13 ok ok\n20 2 4.026e-10 ok ok\n26 2 1.412e-08 ok ok\n30 2 2.259e-07 failed failed\n40 2 4.222e-04 failed failed\n50 1 7.071e-01 failed failed\n阈值实验返回秩： [2, 2, 1, 1]\n列空间内扰动的参数变化： 0.0013810679319661942\n同次预测变化： 2.9451007125503953e-09\n形状与边界检查通过： 14\n核验通过；未预设每个例子的求解器误差排名。\n"
+  },
+  "notebook": {
+    "code_cells": 12,
+    "all_sequential_counts": true,
+    "all_outputs_retained": true,
+    "stepwise_script_agreement": true,
+    "kernel": "real ipykernel InProcessKernel in a fresh Python process",
+    "limitations": [
+      "Browser Jupyter UI not tested",
+      "Out-of-process socket transport blocked by sandbox and not tested",
+      "Learner local Anaconda installation not tested"
+    ]
+  },
+  "exact_main": {
+    "gram": [
+      [
+        "3",
+        "3"
+      ],
+      [
+        "3",
+        "5"
+      ]
+    ],
+    "rhs": [
+      "5",
+      "6"
+    ],
+    "beta": [
+      "7/6",
+      "1/2"
+    ],
+    "prediction": [
+      "7/6",
+      "5/3",
+      "13/6"
+    ],
+    "residual": [
+      "-1/6",
+      "1/3",
+      "-1/6"
+    ],
+    "sse": "1/6",
+    "orthogonality": [
+      "0",
+      "0"
+    ]
+  },
+  "main_method_results": {
+    "lstsq": {
+      "status": "ok",
+      "coefficient_error": 8.95090418262362e-16,
+      "residual_norm": 0.4082482904638629,
+      "sse": 0.16666666666666657,
+      "error_type": null
+    },
+    "qr_library": {
+      "status": "ok",
+      "coefficient_error": 2.220446049250313e-16,
+      "residual_norm": 0.408248290463863,
+      "sse": 0.16666666666666669,
+      "error_type": null
+    },
+    "qr_teaching_mgs": {
+      "status": "ok",
+      "coefficient_error": 9.036560719766055e-16,
+      "residual_norm": 0.408248290463863,
+      "sse": 0.16666666666666666,
+      "error_type": null
+    },
+    "normal_solve": {
+      "status": "ok",
+      "coefficient_error": 0.0,
+      "residual_norm": 0.40824829046386313,
+      "sse": 0.16666666666666674,
+      "error_type": null
+    },
+    "normal_inverse": {
+      "status": "ok",
+      "coefficient_error": 4.440892098500626e-16,
+      "residual_norm": 0.4082482904638629,
+      "sse": 0.16666666666666657,
+      "error_type": null
+    },
+    "solve_A": {
+      "status": "failed",
+      "coefficient_error": null,
+      "residual_norm": null,
+      "sse": null,
+      "error_type": "LinAlgError"
+    },
+    "inverse_A": {
+      "status": "failed",
+      "coefficient_error": null,
+      "residual_norm": null,
+      "sse": null,
+      "error_type": "LinAlgError"
+    }
+  },
+  "boundary_groups": [
+    "one_dimensional_A_rejected",
+    "column_y_rejected",
+    "row_mismatch_rejected",
+    "empty_rows_rejected",
+    "empty_columns_rejected",
+    "nan_input_rejected",
+    "single_equation_single_parameter",
+    "single_column_mean",
+    "wide_minimum_norm",
+    "zero_design_nonzero_residual_despite_empty_return",
+    "qr_shapes_orthogonality_reconstruction_projection",
+    "exact_augmented_rank_detects_inconsistency",
+    "row_scaling_changes_least_squares",
+    "diagonal_condition_number_squared"
+  ],
+  "boundary_group_count": 14,
+  "near_collinear": {
+    "k_values": [
+      10,
+      20,
+      26,
+      30,
+      40,
+      50
+    ],
+    "declared_and_exact_stored_rank": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "default_numeric_rank": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "method_ranking_not_preasserted": true,
+    "singular_errors_recorded": true
+  },
+  "threshold_result_ranks": [
+    2,
+    2,
+    1,
+    1
+  ],
+  "perturbations": {
+    "epsilon": 9.5367431640625e-07,
+    "eta": 9.313225746154785e-10,
+    "exact_parallel_coefficient_change": [
+      -0.0009765625,
+      0.0009765625
+    ],
+    "orthogonal_dot_columns": [
+      0.0,
+      0.0
+    ],
+    "cases": {
+      "column_space": {
+        "data_change_norm": 2.9451005721170265e-09,
+        "coefficient_change_norm": 0.0013810679319661942,
+        "prediction_change_norm": 2.9451007125503953e-09,
+        "coefficients": [
+          0.999023437215336,
+          2.0009765627846625
+        ],
+        "new_residual_norm": 3.1086244689504383e-15
+      },
+      "orthogonal": {
+        "data_change_norm": 2.2812650937430355e-09,
+        "coefficient_change_norm": 1.9785657032707482e-14,
+        "prediction_change_norm": 9.930136612989092e-16,
+        "coefficients": [
+          0.9999999997153225,
+          2.000000000284676
+        ],
+        "new_residual_norm": 2.281265275044931e-09
+      }
+    }
+  },
+  "tolerances": {
+    "well_conditioned_atol": 1e-11,
+    "well_conditioned_rtol": 1e-11,
+    "parallel_perturbation_coefficient_atol": 2e-09,
+    "qr_diagonal_guard": "eps * max(shape) * norm(A,2)"
+  },
+  "figures": {
+    "count": 12,
+    "all_referenced": true,
+    "contact_sheet_visually_inspected": true,
+    "no_missing_glyph_warnings": true,
+    "revision": "Figure 09 weighted minimum marker corrected; figure 11 caption moved below plot to remove bar overlap."
+  },
+  "manuscripts": {
+    "lecture.md": {
+      "characters": 18880,
+      "cjk_characters": 9052
+    },
+    "lab.md": {
+      "characters": 5466,
+      "cjk_characters": 3094
+    },
+    "answers.md": {
+      "characters": 3815,
+      "cjk_characters": 1863
+    },
+    "README.md": {
+      "characters": 912,
+      "cjk_characters": 436
+    }
+  },
+  "limitations": [
+    "Synthetic deterministic cases; no empirical generalization claim.",
+    "Teaching MGS is not production QR and may lose orthogonality.",
+    "NumPy diagnostic/lstsq internals use decompositions including SVD; its theory is deferred to unit 012.",
+    "Last digits and precise failures can depend on BLAS/LAPACK.",
+    "Finite checks do not replace geometric proofs.",
+    "Final PDF rendering and page checks are documented in verification.json."
+  ]
+}

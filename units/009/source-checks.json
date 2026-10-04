@@ -1,0 +1,222 @@
+{
+  "unit": "009",
+  "title": "向量内积与距离",
+  "checked_on": "2026-10-04",
+  "scope": {
+    "prerequisites": [
+      "005",
+      "008"
+    ],
+    "vectors": "finite-dimensional real vectors",
+    "covered": [
+      "real vector space operations and closure",
+      "linear combinations",
+      "standard Euclidean inner product",
+      "L1 and L2 norms",
+      "distance and squared-distance distinction",
+      "orthogonal decomposition",
+      "projection nearest-point proof",
+      "Cauchy-Schwarz proof with zero/equality cases",
+      "L2 triangle inequality proof and equality cases",
+      "unit circle, radians, degrees and guarded cosine computation",
+      "feature units and dimensionless scales"
+    ],
+    "complex_inner_product": "boundary explained; complex inputs rejected; no complex implementation"
+  },
+  "sources": [
+    {
+      "title": "Mathematics for Machine Learning author PDF",
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "version": "2024-01-15 author draft",
+      "accessed_on": "2026-10-04",
+      "verification": "Downloaded official PDF; read relevant chapters and inspected formula pages",
+      "sections": [
+        "2.4.2",
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.8.1"
+      ],
+      "printed_pages": [
+        37,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        82,
+        83,
+        84
+      ],
+      "facts_checked": [
+        "vector space rules",
+        "norm requirements",
+        "real inner products",
+        "Cauchy-Schwarz conditions",
+        "distance and angles",
+        "zero vector orthogonality",
+        "line projection coefficient and nonzero direction"
+      ]
+    },
+    {
+      "title": "NumPy 2.3 dot",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.dot.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and read",
+      "facts_checked": [
+        "one-dimensional sum of products",
+        "no implicit complex conjugation",
+        "dimension-dependent behavior"
+      ]
+    },
+    {
+      "title": "NumPy 2.3 linalg.norm",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.norm.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and read",
+      "facts_checked": [
+        "ord and axis",
+        "vector versus matrix norm behavior"
+      ]
+    },
+    {
+      "title": "NumPy 2.3 arccos",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.arccos.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and read",
+      "facts_checked": [
+        "real domain [-1,1]",
+        "output angle in radians"
+      ]
+    }
+  ],
+  "original_material": {
+    "teaching_text": "original Chinese exposition, own worked examples and proof organization",
+    "figures": "11 original locally generated geometry diagrams; no copied textbook figures",
+    "data": "synthetic vectors and houses; no real private data",
+    "third_party_book_included": false
+  },
+  "counts": {
+    "README.md": {
+      "characters": 1980,
+      "cjk_characters": 943
+    },
+    "lab.md": {
+      "characters": 6245,
+      "cjk_characters": 2782
+    },
+    "lecture.md": {
+      "characters": 18422,
+      "cjk_characters": 10490
+    }
+  },
+  "validation": {
+    "figure_references": 11,
+    "figures_exist": true,
+    "figures_visually_reviewed": 11,
+    "figure_files": [
+      {
+        "file": "01_coordinates.png",
+        "pixels": [
+          1980,
+          1002
+        ]
+      },
+      {
+        "file": "02_add_scale.png",
+        "pixels": [
+          2160,
+          1108
+        ]
+      },
+      {
+        "file": "03_dot.png",
+        "pixels": [
+          1980,
+          861
+        ]
+      },
+      {
+        "file": "04_norms.png",
+        "pixels": [
+          1614,
+          1114
+        ]
+      },
+      {
+        "file": "05_distance.png",
+        "pixels": [
+          864,
+          1144
+        ]
+      },
+      {
+        "file": "06_orthogonal.png",
+        "pixels": [
+          956,
+          1179
+        ]
+      },
+      {
+        "file": "07_projection.png",
+        "pixels": [
+          1066,
+          1179
+        ]
+      },
+      {
+        "file": "08_cauchy.png",
+        "pixels": [
+          2159,
+          1021
+        ]
+      },
+      {
+        "file": "09_angle.png",
+        "pixels": [
+          2065,
+          1114
+        ]
+      },
+      {
+        "file": "10_unit_balls.png",
+        "pixels": [
+          831,
+          1004
+        ]
+      },
+      {
+        "file": "11_scale.png",
+        "pixels": [
+          2376,
+          1050
+        ]
+      }
+    ],
+    "exercises_with_detailed_solutions": 12,
+    "python_syntax_valid": true,
+    "notebook_cells_executed": 19,
+    "notebook_errors": 0,
+    "automatic_check_groups": 17,
+    "exact_fraction_checks_passed": true,
+    "finite_random_checks": 120,
+    "finite_checks_are_not_a_proof": true,
+    "mixed_bool_rejected_before_list_tuple_coercion": true,
+    "existing_numeric_array_history_not_recoverable": true,
+    "csv_values_match_experiment": true,
+    "no_internal_workspace_paths_in_teaching_text_or_notebook": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "limitations": [
+    "Real vectors only",
+    "Small CPU examples; finite checks do not replace proofs",
+    "Direct formulas have float64 range and rounding limits",
+    "Anaconda installation, browser Jupyter UI and socket transport not tested"
+  ]
+}
