@@ -1,0 +1,176 @@
+{
+  "unit": "018",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 14,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 6
+  },
+  "answers": {
+    "pages": 6,
+    "lecture_exercises": 12,
+    "lab_checkpoints": 12
+  },
+  "visual_review": "All26PDFpages individually inspected; all12originalfigures incontext and6retainedNotebookPNGs individually inspected Revision: only lab page6 changed and rechecked; six notebook PNGs byte-identical.",
+  "code": {
+    "status": "passed",
+    "boundary_groups": 58,
+    "internal_integer_tables": 80,
+    "independent_Fraction_tables": 624,
+    "extra_binary_cases": 80,
+    "extra_three_hypothesis_cases": 64,
+    "supplemental_rejections": 8,
+    "fresh_process": "Author3runs includingunrelatedcwd andpython-O matching3outputfiles; coordinatorfreshscriptrerunpassed",
+    "review_regression": "Sequential unit-likelihood update accepted; roundoff adjustment bounded and auditable; sums materially outside tolerance rejected"
+  },
+  "notebook": {
+    "code_cells": 14,
+    "png_outputs": 6,
+    "status": "passed",
+    "method": "FreshPythonprocess realipykernelInProcessKernel sequentialexecution;authorrepeat andcoordinatorrerun"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Synthetic examples only",
+    "Finite simulations are not confidence intervals or performance guarantees",
+    "JupyterbrowserUI andexternalsockettransport untested",
+    "LearnerAnaconda installation untested",
+    "Conservative underflow rejection; notageneralextremelikelihoodlibrary"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 4425,
+      "sha256": "e97ed2c428b83f1d4b37be8c2eeacb6f8cefd76844ccbbdfb1b001125be4f1c0"
+    },
+    "lecture.md": {
+      "bytes": 27161,
+      "sha256": "52ad74ec9eff04bce3af82a3e44f5e0e17cd4a12ba9ae8b914e64c60b08cd468"
+    },
+    "lab.md": {
+      "bytes": 12925,
+      "sha256": "aeb7cfa41abde76ca5da6aea025ecf9fc700ba988d50359403d006d7aa77a156"
+    },
+    "answers.md": {
+      "bytes": 12381,
+      "sha256": "ce1ad1223ce06994aa2fa7bbe19ed4f751c616be149499b8cddf0b9c2cc16ea0"
+    },
+    "experiment.py": {
+      "bytes": 22503,
+      "sha256": "c5d29271a24e831dbb1738cca21302f732352fc0dbec86899bdcd2d485ee741b"
+    },
+    "experiment.ipynb": {
+      "bytes": 335884,
+      "sha256": "ea8ab94129596980093dc2204cf746a56dfca5cae5b64ff7e9333ec40d333d47"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "c27ecbc48f552347c32ab42168fc81326d509bf4033eb7fb0dbc389cc0970ce9"
+    },
+    "requirements.txt": {
+      "bytes": 82,
+      "sha256": "41549cac0202a4fcee6045b3815ec9a9bea3397eb3556a657a151ae4f68bf4e2"
+    },
+    "source-checks.json": {
+      "bytes": 5302,
+      "sha256": "c44abf704ab21ef98c95534943e9fa12cebbab3f3e4f84055fd3227e3269dd6e"
+    },
+    "test-result.json": {
+      "bytes": 18743,
+      "sha256": "6b710950e31b14abc8ed134a0cb7278d6a800c9708626eb36b6d1dbeaf7148fe"
+    },
+    "data/README.md": {
+      "bytes": 1925,
+      "sha256": "84b5c9c46c851e57af1ff4c0b1d337a70e30578e13d827e5564b1ebe68c2d246"
+    },
+    "data/conditional_independence.csv": {
+      "bytes": 107,
+      "sha256": "91f0714f82eee7b5203123c328cbc0a928e39afc590d4168c5073ccd3a3aaf14"
+    },
+    "data/device_counts.csv": {
+      "bytes": 49,
+      "sha256": "e0e76bbf47260a113f52fe89e6b52c557bb2402243c6cfbcf8861c282838530d"
+    },
+    "data/uncorrelated.csv": {
+      "bytes": 29,
+      "sha256": "b0a411ab8dddd754f9eeba56a326691dca98fc282060e221946c9a152f852e3e"
+    },
+    "figures/01_conditioning_space.png": {
+      "bytes": 61591,
+      "sha256": "a593104517b372682f507fb0e49665deca92cfac4d75a434b731b1c69bc1d2a6"
+    },
+    "figures/02_device_table.png": {
+      "bytes": 58803,
+      "sha256": "3263b333f457b72291ca6204d694b684b74ebe8bcd3208db6c4b634d1bc406b2"
+    },
+    "figures/03_two_denominators.png": {
+      "bytes": 51605,
+      "sha256": "7f9072307667aac2e15323191ed15df9cb7baff19486e665c99ffd6537198f10"
+    },
+    "figures/04_probability_tree.png": {
+      "bytes": 88538,
+      "sha256": "adf7aa622e86eef4087bc42052564f252f2a02618a51f26b39e1966387da89c8"
+    },
+    "figures/05_bayes_normalize.png": {
+      "bytes": 56513,
+      "sha256": "3b534dbe6e448eefcb389a6fff60e20fe9dc6ad4aab295121f55f109da3e44a4"
+    },
+    "figures/06_base_rates.png": {
+      "bytes": 89944,
+      "sha256": "8706aabc1f737761369e3505ebd8c48189719aad15bfd0db10e1c699eaef7315"
+    },
+    "figures/07_repeated_evidence.png": {
+      "bytes": 54761,
+      "sha256": "94bf3b28c9a9295225eaa373ba948077573620bcba23f4ab129eebf2699da3f9"
+    },
+    "figures/08_independent_vs_disjoint.png": {
+      "bytes": 41287,
+      "sha256": "602f0c9033f0e3bec81c54a8a7b8f2396f8e8eba65b210c637a8a8cc73be6023"
+    },
+    "figures/09_conditional_independence.png": {
+      "bytes": 58562,
+      "sha256": "806629eb258f8439e3b3ea453152dca1d41aeb4c80ecb1b4af6f8f53c0ca7904"
+    },
+    "figures/10_selection_dependence.png": {
+      "bytes": 43754,
+      "sha256": "2c488739b5d6720e3cdc46c4738a4c42e8467b005d5edcb10d81e98542f80079"
+    },
+    "figures/11_uncorrelated_dependent.png": {
+      "bytes": 60152,
+      "sha256": "52bf31d3bbc0935e3f5cb72350867c8a9097bf67726d105f8f1a9b0e95bbb9f2"
+    },
+    "figures/12_finite_sample_spread.png": {
+      "bytes": 80902,
+      "sha256": "cab49daae160b921a997fab5b93bab5f33b62712134bb274441573bcc6c47bcd"
+    },
+    "lecture.pdf": {
+      "bytes": 1505643,
+      "sha256": "9aea47475a976cef3f0039a899faaaead7f0b56b8e6552e709e481691168c58c"
+    },
+    "lab.pdf": {
+      "bytes": 491560,
+      "sha256": "55aa1f9991122662ba38621ddf46dde6698015c82bc9174d31a3d41d7fa8dfe0"
+    },
+    "answers.pdf": {
+      "bytes": 606335,
+      "sha256": "44479829e6b5ed0802134c9b1590bb750fe6e2b3f86f9abd127d1f4bd400244a"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "payload_files_verified": 29,
+    "payload_bytes_verified": 3791634,
+    "rational_integer_tables": 1295,
+    "multi_hypothesis_sequential_cases": 360,
+    "simulation_csv_rows_recomputed": 1600,
+    "additional_rejections": 11,
+    "tolerance_endpoint_cases": 5,
+    "pdf_pages_reviewed": 26,
+    "notebook_code_cells": 14,
+    "notebook_pngs": 6,
+    "latest_revision": "Sequential all-one update and transparent bounded evidence adjustment passed; all remaining scientific/code/source/visual checks passed"
+  }
+}

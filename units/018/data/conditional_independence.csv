@@ -1,0 +1,9 @@
+regime,x,y,count
+high,1,1,64
+high,1,0,16
+high,0,1,16
+high,0,0,4
+low,1,1,4
+low,1,0,16
+low,0,1,16
+low,0,0,64

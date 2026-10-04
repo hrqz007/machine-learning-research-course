@@ -1,0 +1,615 @@
+{
+  "unit": "018",
+  "checked_date": "2026-10-04",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1"
+  },
+  "scientific": {
+    "fixed_table": {
+      "counts": [
+        [
+          80,
+          20
+        ],
+        [
+          495,
+          9405
+        ]
+      ],
+      "n": 10000,
+      "alarm_count": 575,
+      "p_defect": 0.01,
+      "p_alarm": 0.0575,
+      "p_alarm_given_defect": 0.8,
+      "p_alarm_given_clean": 0.05,
+      "p_defect_given_alarm": 0.1391304347826087,
+      "p_defect_given_no_alarm": 0.002122015915119363
+    },
+    "bayes": {
+      "posterior": [
+        0.1391304347826087,
+        0.8608695652173913
+      ],
+      "evidence": 0.0575,
+      "raw_evidence": 0.0575,
+      "evidence_roundoff_adjustment": 0.0,
+      "weights": [
+        0.008,
+        0.0495
+      ]
+    },
+    "exact_checks": {
+      "prior": "1/100",
+      "evidence": "23/400",
+      "posterior_alarm": "16/115",
+      "posterior_no_alarm": "4/1885",
+      "odds_prior": "1/99",
+      "likelihood_ratio": "16",
+      "odds_posterior": "16/99",
+      "enumerated_integer_tables": 80,
+      "group_high": {
+        "counts": [
+          [
+            64,
+            16
+          ],
+          [
+            16,
+            4
+          ]
+        ],
+        "joint": "16/25",
+        "product_marginals": "16/25",
+        "joint_minus_product": "0",
+        "integer_cross_product_difference": 0,
+        "exact_independence": true
+      },
+      "group_low": {
+        "counts": [
+          [
+            4,
+            16
+          ],
+          [
+            16,
+            64
+          ]
+        ],
+        "joint": "1/25",
+        "product_marginals": "1/25",
+        "joint_minus_product": "0",
+        "integer_cross_product_difference": 0,
+        "exact_independence": true
+      },
+      "pooled": {
+        "counts": [
+          [
+            68,
+            32
+          ],
+          [
+            32,
+            68
+          ]
+        ],
+        "joint": "17/50",
+        "product_marginals": "1/4",
+        "joint_minus_product": "9/100",
+        "integer_cross_product_difference": 3600,
+        "exact_independence": false
+      },
+      "zero_covariance_example": {
+        "mean_x": "0",
+        "mean_y": "2/3",
+        "covariance": "0",
+        "intersection": "1/3",
+        "marginal_product": "1/9"
+      },
+      "selection_example": {
+        "unconditional_joint": "1/4",
+        "unconditional_product": "1/4",
+        "conditional_joint": "1/2",
+        "conditional_product": "1/4"
+      }
+    },
+    "independent_rational_audit": {
+      "integer_tables": 624,
+      "tables_with_Bayes_check": 560,
+      "binary_parameter_cases": 80,
+      "impossible_evidence_cases": 11,
+      "three_hypothesis_cases": 64,
+      "selection_enumeration": "passed",
+      "covariance_exact": "0",
+      "variance_x": "2/3",
+      "variance_y": "2/9",
+      "additional_boundary_rejections": 8
+    },
+    "finite_sample_uncertainty": {
+      "single_simulation": {
+        "counts": [
+          [
+            775,
+            201
+          ],
+          [
+            4942,
+            94082
+          ]
+        ],
+        "n": 100000,
+        "alarm_count": 5717,
+        "p_defect": 0.00976,
+        "p_alarm": 0.05717,
+        "p_alarm_given_defect": 0.7940573770491803,
+        "p_alarm_given_clean": 0.04990709322992406,
+        "p_defect_given_alarm": 0.13556060871086234,
+        "p_defect_given_no_alarm": 0.0021318795541083757
+      },
+      "repeated_summaries": [
+        {
+          "n": 200,
+          "repeats": 400,
+          "seed": 20261005,
+          "valid_runs": 400,
+          "zero_alarm_runs": 0,
+          "alarm_count_min": 2,
+          "alarm_count_median": 12.0,
+          "alarm_count_max": 23,
+          "mean_available": 0.14293452077313884,
+          "q025_available": 0.0,
+          "q50_available": 0.125,
+          "q975_available": 0.4,
+          "interpretation": "empirical spread across independent runs with positive alarm count; not a confidence interval"
+        },
+        {
+          "n": 2000,
+          "repeats": 400,
+          "seed": 20261006,
+          "valid_runs": 400,
+          "zero_alarm_runs": 0,
+          "alarm_count_min": 82,
+          "alarm_count_median": 113.0,
+          "alarm_count_max": 155,
+          "mean_available": 0.1380540318250917,
+          "q025_available": 0.07563025210084033,
+          "q50_available": 0.13636363636363635,
+          "q975_available": 0.2018348623853211,
+          "interpretation": "empirical spread across independent runs with positive alarm count; not a confidence interval"
+        },
+        {
+          "n": 20000,
+          "repeats": 400,
+          "seed": 20261007,
+          "valid_runs": 400,
+          "zero_alarm_runs": 0,
+          "alarm_count_min": 1061,
+          "alarm_count_median": 1149.0,
+          "alarm_count_max": 1238,
+          "mean_available": 0.13938367323078624,
+          "q025_available": 0.12138728323699421,
+          "q50_available": 0.13963210702341136,
+          "q975_available": 0.15753424657534246,
+          "interpretation": "empirical spread across independent runs with positive alarm count; not a confidence interval"
+        }
+      ],
+      "rare_evidence_summary": {
+        "n": 5,
+        "repeats": 400,
+        "seed": 20261014,
+        "valid_runs": 104,
+        "zero_alarm_runs": 296,
+        "alarm_count_min": 0,
+        "alarm_count_median": 0.0,
+        "alarm_count_max": 2,
+        "mean_available": 0.10576923076923077,
+        "q025_available": 0.0,
+        "q50_available": 0.0,
+        "q975_available": 1.0,
+        "interpretation": "empirical spread across independent runs with positive alarm count; not a confidence interval"
+      }
+    },
+    "distinctions": [
+      "Fixed exact finite population versus empirical sample proportions",
+      "P(alarm|defect) versus P(defect|alarm)",
+      "Independence versus disjointness versus conditional independence versus zero covariance",
+      "Empirical repetition percentiles versus parameter confidence intervals",
+      "Conditioning versus intervention"
+    ]
+  },
+  "script": {
+    "status": "passed",
+    "fresh_processes": [
+      {
+        "name": "unit",
+        "optimized": false,
+        "exit_code": 0,
+        "identical_stdout_and_output_hashes": true
+      },
+      {
+        "name": "other_cwd",
+        "optimized": false,
+        "exit_code": 0,
+        "identical_stdout_and_output_hashes": true
+      },
+      {
+        "name": "optimized_other_cwd",
+        "optimized": true,
+        "exit_code": 0,
+        "identical_stdout_and_output_hashes": true
+      }
+    ],
+    "output_hashes": {
+      "base-rate-sweep.csv": "ca39af394b37a1a05840b47ec9f5de554e0387289605aee16462c47a5f3623dd",
+      "experiment-report.json": "4f0d69ca8b95741b1aeadab0ee616e6ee411ab942bc5404505c3e0844956267b",
+      "repeated-simulations.csv": "e16153f40e87193f3649f19c2fc9f62f846b1aaf500e0b2b997497026b95056c"
+    },
+    "checks_survive_python_optimized_mode": true,
+    "user_numeric_callbacks": "No user-provided numerical callbacks in this unit",
+    "numerical_contract": [
+      "Boolean/string/object/nonfinite values rejected before coercion",
+      "Nonnegative integer count contract with explicit count limits",
+      "Model and observed zero denominators have distinct explicit behavior",
+      "Positive value coercion underflow, product underflow and subnormal products rejected",
+      "Finite intermediate evidence mass and all posterior output probabilities validated"
+    ]
+  },
+  "boundary_case_count": 58,
+  "boundary_cases": [
+    {
+      "case": "probability_bad_0",
+      "status": "rejected_as_expected",
+      "message": "probability 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "probability_bad_1",
+      "status": "rejected_as_expected",
+      "message": "probability 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "probability_bad_2",
+      "status": "rejected_as_expected",
+      "message": "probability 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "probability_bad_3",
+      "status": "rejected_as_expected",
+      "message": "probability 必须有限"
+    },
+    {
+      "case": "probability_bad_4",
+      "status": "rejected_as_expected",
+      "message": "probability 必须有限"
+    },
+    {
+      "case": "probability_bad_5",
+      "status": "rejected_as_expected",
+      "message": "probability 必须在 [0,1]"
+    },
+    {
+      "case": "probability_bad_6",
+      "status": "rejected_as_expected",
+      "message": "probability 必须在 [0,1]"
+    },
+    {
+      "case": "probability_bad_7",
+      "status": "rejected_as_expected",
+      "message": "probability 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "vector_bad_0",
+      "status": "rejected_as_expected",
+      "message": "probabilities 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "vector_bad_1",
+      "status": "rejected_as_expected",
+      "message": "probabilities 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "vector_bad_2",
+      "status": "rejected_as_expected",
+      "message": "probabilities 禁止布尔、字符串、复数或 object 数组"
+    },
+    {
+      "case": "vector_bad_3",
+      "status": "rejected_as_expected",
+      "message": "probabilities 必须有限"
+    },
+    {
+      "case": "vector_bad_4",
+      "status": "rejected_as_expected",
+      "message": "probabilities 必须是非空一维数组"
+    },
+    {
+      "case": "vector_bad_5",
+      "status": "rejected_as_expected",
+      "message": "probabilities 必须是非空一维数组"
+    },
+    {
+      "case": "vector_bad_6",
+      "status": "rejected_as_expected",
+      "message": "probabilities 总和必须为1；不自动归一化"
+    },
+    {
+      "case": "vector_bad_7",
+      "status": "rejected_as_expected",
+      "message": "probabilities 每项必须在 [0,1]"
+    },
+    {
+      "case": "table_bad_0",
+      "status": "rejected_as_expected",
+      "message": "counts 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "table_bad_1",
+      "status": "rejected_as_expected",
+      "message": "counts 必须使用整数类型"
+    },
+    {
+      "case": "table_bad_2",
+      "status": "rejected_as_expected",
+      "message": "counts 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "table_bad_3",
+      "status": "rejected_as_expected",
+      "message": "counts 禁止布尔、字符串、复数或 object 数组"
+    },
+    {
+      "case": "table_bad_4",
+      "status": "rejected_as_expected",
+      "message": "count 超出允许范围 [0, 1000000000000]"
+    },
+    {
+      "case": "table_bad_5",
+      "status": "rejected_as_expected",
+      "message": "总计数必须为正且不超过10^12"
+    },
+    {
+      "case": "table_bad_6",
+      "status": "rejected_as_expected",
+      "message": "counts 必须是 (2,2)，行=缺陷/合格，列=报警/不报警"
+    },
+    {
+      "case": "table_bad_7",
+      "status": "rejected_as_expected",
+      "message": "counts 不能转换为规则的有限数值数组"
+    },
+    {
+      "case": "table_bad_8",
+      "status": "rejected_as_expected",
+      "message": "counts 必须有限"
+    },
+    {
+      "case": "table_bad_9",
+      "status": "rejected_as_expected",
+      "message": "总计数必须为正且不超过10^12"
+    },
+    {
+      "case": "ratio_bad_0",
+      "status": "rejected_as_expected",
+      "message": "条件计数为0，经验条件概率未定义，不能填成0"
+    },
+    {
+      "case": "ratio_bad_1",
+      "status": "rejected_as_expected",
+      "message": "交集计数不能超过条件计数"
+    },
+    {
+      "case": "ratio_bad_2",
+      "status": "rejected_as_expected",
+      "message": "intersection 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "ratio_bad_3",
+      "status": "rejected_as_expected",
+      "message": "intersection 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "ratio_bad_4",
+      "status": "rejected_as_expected",
+      "message": "condition 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "ratio_bad_5",
+      "status": "rejected_as_expected",
+      "message": "intersection 超出允许范围 [0, 1000000000000]"
+    },
+    {
+      "case": "bayes_zero_evidence",
+      "status": "rejected_as_expected",
+      "message": "模型中的证据概率为0，当前离散条件概率未定义"
+    },
+    {
+      "case": "bayes_shape",
+      "status": "rejected_as_expected",
+      "message": "likelihoods 必须与 priors 同形的一维数组"
+    },
+    {
+      "case": "bayes_bool_likelihood",
+      "status": "rejected_as_expected",
+      "message": "likelihoods 必须是实数标量，不接受布尔、字符串、复数或对象"
+    },
+    {
+      "case": "bayes_object_likelihood",
+      "status": "rejected_as_expected",
+      "message": "likelihoods 禁止布尔、字符串、复数或 object 数组"
+    },
+    {
+      "case": "bayes_nonfinite_likelihood",
+      "status": "rejected_as_expected",
+      "message": "likelihoods 必须有限"
+    },
+    {
+      "case": "bayes_likelihood_gt_one",
+      "status": "rejected_as_expected",
+      "message": "likelihoods 每项必须在 [0,1]"
+    },
+    {
+      "case": "bayes_positive_product_underflow",
+      "status": "rejected_as_expected",
+      "message": "正概率乘积下溢为0；请改用精确分数或对数实现"
+    },
+    {
+      "case": "bayes_subnormal_product",
+      "status": "rejected_as_expected",
+      "message": "正概率乘积进入次正规范围；本教学实现保守拒绝"
+    },
+    {
+      "case": "simulate_bad_0",
+      "status": "rejected_as_expected",
+      "message": "n 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "simulate_bad_1",
+      "status": "rejected_as_expected",
+      "message": "n 超出允许范围 [1, 1000000]"
+    },
+    {
+      "case": "simulate_bad_2",
+      "status": "rejected_as_expected",
+      "message": "n 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "simulate_bad_3",
+      "status": "rejected_as_expected",
+      "message": "seed 超出允许范围 [0, 18446744073709551615]"
+    },
+    {
+      "case": "simulate_bad_4",
+      "status": "rejected_as_expected",
+      "message": "seed 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "simulate_bad_5",
+      "status": "rejected_as_expected",
+      "message": "n 超出允许范围 [1, 1000000]"
+    },
+    {
+      "case": "repeat_zero",
+      "status": "rejected_as_expected",
+      "message": "repeats 超出允许范围 [1, 10000]"
+    },
+    {
+      "case": "repeat_bool",
+      "status": "rejected_as_expected",
+      "message": "repeats 必须是整数类型，不接受布尔、字符串或浮点计数"
+    },
+    {
+      "case": "detector_underflow",
+      "status": "rejected_as_expected",
+      "message": "正概率乘积下溢为0；请改用精确分数或对数实现"
+    },
+    {
+      "case": "ratio_endpoints",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "zero_prior",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "no_observed_alarm_returns_none",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "all_zero_alarm_repeats",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "deterministic_endpoint_model",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "probability_zero_event_independent",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "sequential_unit_likelihood_roundoff",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "bounded_evidence_roundoff_adjustment",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "prior_sum_beyond_tolerance",
+      "status": "rejected_as_expected"
+    }
+  ],
+  "notebook": {
+    "code_cells": 14,
+    "png_outputs": 6,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "error_outputs": 0,
+    "nbformat": "valid",
+    "repeat_outputs_identical": true,
+    "method": "fresh Python process, real ipykernel InProcessKernel, sequential execution",
+    "limitations": [
+      "No Jupyter browser UI test",
+      "No out-of-process socket transport test",
+      "No learner Anaconda installation test"
+    ],
+    "status": "passed",
+    "png_visual_review": "All six actual decoded notebook PNG outputs inspected individually; no clipped axes, labels or legend text"
+  },
+  "figures": {
+    "original_lecture_figures": 12,
+    "all_referenced_in_lecture": true,
+    "visual_review": "All twelve current full-resolution PNG figures individually inspected; no missing glyphs, clipped axes, overlapping text or unreadable tables"
+  },
+  "sources": {
+    "status": "listed relevant primary-source sections actually read",
+    "details": "source-checks.json"
+  },
+  "pdf": {
+    "status": "all_pages_visually_passed",
+    "lecture_pages": 14,
+    "lab_pages": 6,
+    "answers_pages": 6
+  },
+  "privacy": {
+    "synthetic_only": true,
+    "network_calls_in_learner_experiment": false,
+    "paid_api": false,
+    "student_or_personal_records": false,
+    "third_party_source_pdfs_redistributed": false,
+    "source_copyright_license_invented": false
+  },
+  "coordinator_checks": {
+    "pdf_pages": {
+      "lecture": 14,
+      "lab": 6,
+      "answers": 6
+    },
+    "visual": "All26 PDF pages and6 retainedNotebookPNGs individually inspected",
+    "script": "Freshprocessrerun passed",
+    "notebook": "FreshrealInProcessKernel14sequentialcodecells passed; PNGoutputs inspected"
+  },
+  "review_revision": {
+    "finding": "A legal rounded posterior could be rejected by a sequential all-one likelihood update because evidence exceeded one by one ulp",
+    "fix": "Same absolute1e-12 sum tolerance; reported evidence alone clips upper roundoff excess; raw_evidence and evidence_roundoff_adjustment retained; normalization always uses raw weight sum",
+    "regression_groups_added": 3,
+    "total_boundary_groups": 58,
+    "visual_changes": "Only lab page6 changed; reviewed. All six final notebook PNGs byte-identical."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "unit": "018",
+  "checked_date": "2026-10-04",
+  "status": "relevant_primary_source_sections_actually_read",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "John Tsitsiklis, MIT 6.041SC Lecture 1 Probability Models and Axioms",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/resources/mit6_041scf13_l01/",
+      "direct_pdf": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/ff296575da32c406c2e56131e1e38997_MIT6_041SCF13_L01.pdf",
+      "checked": "Opened official resource and actual 4-page PDF; read pages1-3: sample space completeness/exclusivity, events as subsets, nonnegative normalized probabilities, finite and countable additivity, counting only under equal likelihood. Course uses finite spaces throughout and does not claim a general measure-theory construction."
+    },
+    {
+      "id": "R2",
+      "title": "John Tsitsiklis, MIT 6.041SC Lecture 2 Conditioning and Bayes' Rule",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/resources/mit6_041scf13_l02/",
+      "direct_pdf": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/a1462fa23de9d08c0dfd233a57278fed_MIT6_041SCF13_L02.pdf",
+      "checked": "Read actual PDF pages1-2: conditional sample space, positive conditioning denominator, multiplication chain, partition-weighted total probability and Bayes normalization. Text extraction damaged one not-equal symbol; positive-denominator condition is independently explicit in Lecture3 page1 and in the definition. Original device table and calculations were developed independently."
+    },
+    {
+      "id": "R3",
+      "title": "John Tsitsiklis, MIT 6.041SC Lecture 3 Independence",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/resources/mit6_041scf13_l03/",
+      "direct_pdf": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/a2015627268f4846eb3b1368623ce46f_MIT6_041SCF13_L03.pdf",
+      "checked": "Read actual PDF pages1-2: symmetric event-independence product definition, zero-probability cases, independence under a conditional law, conditioning can change independence, and pairwise versus joint independence. Course's exact synthetic regime tables and all original figure implementations were checked with integer/Fraction arithmetic."
+    },
+    {
+      "id": "R4",
+      "title": "NumPy 2.3 Generator.multinomial official reference",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.multinomial.html",
+      "checked": "Read official parameters and returns: n nonnegative trial count, p-dimensional category probabilities, size + (p,) output, last category residual implementation detail. Actual runtime NumPy2.3.5 output shape (400,4), nonnegative integer counts and row sums n tested. The course validates the entire probability vector and does not rely on silently filling an invalid last entry."
+    },
+    {
+      "id": "R5",
+      "title": "Pearl, Glymour and Jewell, Causal Inference in Statistics A Primer, author-hosted chapter3 preview",
+      "url": "https://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf",
+      "checked": "Read Section3.1, printed pages54-55 (PDF pages2-3): conditioning filters naturally observed cases; intervention modifies a mechanism; observational and intervention distributions need not coincide. Course includes only an original device-light explanation and does not teach identification or estimate an intervention effect. The preview itself is not redistributed."
+    }
+  ],
+  "mathematical_conditions_checked": [
+    "Finite weighted sample space versus equal-probability counting",
+    "Conditional denominator strictly positive; finite observed zero is not model probability zero",
+    "Total probability requires a disjoint exhaustive partition and target-population weights",
+    "Bayes normalization requires positive evidence mass; likelihood vector need not sum to one",
+    "Repeated likelihood multiplication needs conditional independence within each hypothesis",
+    "Event independence distinct from mutual exclusivity; degenerate events allowed by product definition",
+    "Conditional independence and unconditional independence imply neither another in general",
+    "Pairwise independence does not guarantee joint independence",
+    "Zero covariance is weaker than independence except for the special pair of binary indicators",
+    "Finite repeated-experiment percentile range is not a parameter confidence interval",
+    "Conditioning is not intervention"
+  ],
+  "retrieval_limits": [
+    "Read the listed relevant lecture sections, not the full textbooks or videos.",
+    "An older author-hosted chapter extract had garbled text and was not used; the readable Primer chapter3 preview was used instead."
+  ],
+  "independent_authorship": "Original Chinese exposition, device example, finite counts, figures, lab, solutions and code. Sources verify definitions and assumptions; source PDFs, figures and copyrighted prose are not copied into the payload. No license is asserted for third-party sources."
+}
