@@ -15,6 +15,10 @@
   - [教学数据及说明](units/001/data/README.md)
   - [执行与检查记录](units/001/verification.json)
 
+- [完整单元导航（JSON）](catalog/curriculum.json)
+- [逐单元制作与发布状态](manifest.json)
+- [运行环境说明](shared/README.md)
+
 ## 怎样学习
 
 先阅读正文并完成手算，再运行实验，对照输出与预期，最后完成练习并检查失败条件。按具体问题补齐先修，不必把全部目录读完才开始一个有边界的研究练习。
