@@ -120,7 +120,7 @@
         "实验与验收": "把预测、损失、读数据分成函数；故意制造并定位索引、类型和路径错误。",
         "常见误区": "隐藏全局状态；捕获异常后无声忽略；只在自己的机器上能跑。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/004/lecture.pdf",
         "lab": "units/004/lab.pdf",
@@ -135,7 +135,11 @@
         "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "3a222e064b963d76a21428d79a9c8d69e9867ce6",
+        "verified_file_count": 28,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/004"
       }
     },
     {
@@ -148,14 +152,20 @@
         "实验与验收": "用循环与NumPy算同一批预测和误差；逐项比对并测试非方阵和单样本输入。",
         "常见误区": "误把广播后的结果当目标形状；混淆复制与视图。"
       },
-      "status": "in_review",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/005/lecture.pdf",
+        "lab": "units/005/lab.pdf",
+        "answers": "units/005/answers.pdf",
+        "notebook": "units/005/experiment.ipynb",
+        "script": "units/005/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -172,13 +182,19 @@
         "常见误区": "在全数据上确定预处理参数；把异常值一律删掉；忽略合并造成的一对多膨胀。"
       },
       "status": "in_review",
-      "artifacts": {},
+      "artifacts": {
+        "lecture": "units/006/lecture.pdf",
+        "lab": "units/006/lab.pdf",
+        "answers": "units/006/answers.pdf",
+        "notebook": "units/006/experiment.ipynb",
+        "script": "units/006/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_passed_independent_pending",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "author_passed_independent_pending"
       },
       "publication": {
         "status": "not_uploaded"
@@ -194,7 +210,7 @@
         "实验与验收": "交付基线、split文件、环境说明和命令行脚本；新进程重跑得到约定容差内结果。",
         "常见误区": "固定一个种子就宣称结果稳健；在最终测试上反复改方案。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/007/lecture.pdf",
         "lab": "units/007/lab.pdf",
@@ -209,7 +225,11 @@
         "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "3a222e064b963d76a21428d79a9c8d69e9867ce6",
+        "verified_file_count": 28,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/007"
       }
     },
     {
@@ -291,7 +311,7 @@
         "实验与验收": "构造满秩、秩亏和近共线数据；比较solve/lstsq与显式求逆的误差。",
         "常见误区": "把可逆当总能稳定求解；把正规方程当唯一或最稳的实现。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
