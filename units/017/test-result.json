@@ -1,0 +1,103 @@
+{
+  "unit": "017",
+  "status": "passed",
+  "date": "2026-10-04",
+  "python": "3.12.14",
+  "core_dependencies": "Python standard library only",
+  "script": {
+    "fresh_processes": 3,
+    "unrelated_working_directories": 2,
+    "stdout_identical": true,
+    "report_bytes_identical": true,
+    "python_optimized_mode": "passed, explicit checks retained",
+    "report_sha256": "87c85b17da37590e9267f8293be9f443d444bc3e6f93ad96b336f6aef7497fdb"
+  },
+  "core_cross_checks": {
+    "passed": 497,
+    "exact_rational_checks": 377,
+    "floating_comparisons": 120,
+    "main_normalizer": "4",
+    "main_interval_mass": "1/2",
+    "polynomial_n": [
+      1,
+      64
+    ],
+    "nonuniform_grids": 40,
+    "triangle_n": [
+      1,
+      40
+    ]
+  },
+  "boundary_checks": {
+    "passed": 46,
+    "cases": [
+      "boolean bound",
+      "text bound",
+      "nan bound",
+      "infinite bound",
+      "complex bound",
+      "boolean n",
+      "float n",
+      "zero n",
+      "negative n",
+      "resource bound",
+      "reversed bounds",
+      "equal bounds",
+      "overflow width",
+      "collapsed grid",
+      "unrepresentable midpoint",
+      "unknown rule",
+      "noncallable",
+      "callback nan",
+      "callback bool",
+      "callback text",
+      "callback domain",
+      "callback overflow",
+      "contribution overflow",
+      "summation overflow",
+      "empty samples",
+      "one sample",
+      "length mismatch",
+      "unsorted x",
+      "duplicate x",
+      "mixed bool",
+      "mixed text",
+      "nested shape",
+      "nonfinite y",
+      "negative density",
+      "zero normalizer",
+      "underflow normalizer",
+      "negative cutoff",
+      "zero cutoff",
+      "triangle too large",
+      "nonboolean boundary",
+      "reversed probability interval",
+      "invalid grid rejected before callback",
+      "known trapezoid 11/32",
+      "known midpoint 21/64",
+      "support clipping and zero probability interval",
+      "expm1 avoids demonstrable subtraction loss"
+    ]
+  },
+  "supplemental_independent_checks": {
+    "Fraction_vs_float_quadrature": 256,
+    "max_absolute_error": 1.1102230246251565e-16,
+    "Decimal_precision": 60,
+    "Decimal_exponential_cases": 16,
+    "max_decimal_quadrature_absolute_error": 1.1102230246251565e-16
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 12,
+    "png_outputs": 3,
+    "execution": "fresh Python process; sequential real ipykernel InProcessKernel",
+    "format": "nbformat.validate passed"
+  },
+  "limitations": [
+    "Jupyter browser UI not tested",
+    "External socket transport not tested",
+    "Learner Anaconda installation not tested",
+    "Finite tests cannot establish arbitrary-integrand accuracy",
+    "Valid finite results may still lose relative accuracy or underflow"
+  ]
+}

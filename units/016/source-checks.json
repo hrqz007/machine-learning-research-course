@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-04",
+  "status": "primary_source_sections_checked_and_executable_interfaces_verified",
+  "sources": [
+    {
+      "title": "Boyd and Vandenberghe Convex Optimization slides",
+      "url": "https://web.stanford.edu/~boyd/cvxbook/bv_cvxslides.pdf",
+      "checked": "Actual PDF text read: pages22–27 sets and combinations, page45 convex functions, pages52–54 first/second-order tests, page57 Jensen. Treat differentiability shorthand using full differentiability as explicitly defined in this course; mere coordinate partials are not sufficient."
+    },
+    {
+      "title": "Bertsekas Convex Analysis and Optimization slides",
+      "url": "https://web.mit.edu/course/6/6.253/www/Convex_Slides.pdf",
+      "checked": "Actual PDF pages40–42 read: local/global optimality, nonempty closed convex projection existence/uniqueness, variational inequality and nonexpansiveness; full proof outline read."
+    },
+    {
+      "title": "NumPy 2.3 clip",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.clip.html",
+      "checked": "Official NumPy 2.3 page re-read 2026-10-04: clipping behavior, broadcasted bounds, and absent bound-order validation. Executed direct np.clip reversed-bound example and verified wrapper rejects it."
+    },
+    {
+      "title": "NumPy 2.3 lstsq",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.lstsq.html",
+      "checked": "Official NumPy 2.3 page re-read 2026-10-04: multiple minimizers return smallest 2-norm solution; rcond controls numerical rank; underdetermined systems can return empty residual arrays. Directly observed an empty residual array for the 2x3 example and independently checked A@p-b."
+    }
+  ],
+  "retrieval_limits": [
+    "Full Boyd textbook and full Bertsekas textbook could not be opened reliably; no claim of full-book reading. Author-hosted lecture PDFs were successfully retrieved and relevant sections read."
+  ],
+  "independent_authorship": "Original lecture reasoning, Chinese exposition, synthetic data, 12 figures, lab, answers, and code. Author-hosted source material is used to check theorem assumptions, not copied as a book.",
+  "mathematical_conditions_checked": [
+    "Convex domain and full differentiability for the first-order criterion",
+    "C2 and Hessian PSD throughout an open convex domain for the second-order criterion",
+    "Finite Jensen induction covers zero and unit weights; no expectation-form claim",
+    "Strict convexity gives at most one minimizer, not existence",
+    "Finite-dimensional compactness and continuous minimum theorem explicitly used for projection existence",
+    "Projection theorem requires nonempty closed convex set",
+    "Single sequential projections are not asserted to equal intersection projection",
+    "KKT and duality deferred to unit065"
+  ]
+}

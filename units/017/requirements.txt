@@ -1,0 +1,6 @@
+# Core experiment.py uses the Python standard library only.
+matplotlib==3.10.8
+ipython>=8
+ipykernel>=6
+nbformat>=5.10
+jupyterlab>=4

@@ -1,0 +1,170 @@
+{
+  "unit": "017",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 13,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4,
+    "exercises": 14
+  },
+  "visual_review": "All21 final PDF pages individually inspected; all12 original figures checked in context; all3 retained notebook PNGs individually inspected. Answer heading spacing adjusted from8mm to6mm without font-size reduction to avoid an orphan paragraph.",
+  "code": {
+    "status": "passed",
+    "core_dependencies": "Python standard library only",
+    "cross_checks": 497,
+    "exact_rational_checks": 377,
+    "floating_comparisons": 120,
+    "boundary_groups": 46,
+    "supplemental_Fraction_quadrature": 256,
+    "supplemental_Decimal60_exponential_cases": 16,
+    "unrelated_cwd_repeat": "Two fresh runs byte-identical; third python -O run retained all explicit checks"
+  },
+  "notebook": {
+    "code_cells": 12,
+    "png_outputs": 3,
+    "status": "passed",
+    "method": "fresh Python process; sequential real ipykernel InProcessKernel"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Small synthetic examples only",
+    "General C2 error constants referenced with assumptions rather than proved",
+    "Grid consistency is not an accuracy proof",
+    "Jupyter browser UI and external socket transport not tested",
+    "Learner Anaconda installation not tested",
+    "Finite float outputs may still suffer underflow or loss of significance"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 4055,
+      "sha256": "72d3486ea588c8833f34434cee92f4de58319275a3b4c57091fa5084a005f7d0"
+    },
+    "lecture.md": {
+      "bytes": 25164,
+      "sha256": "35ea52167ab71761d57c3528334a367df586b3cae93d06f77ddf6525d773d50b"
+    },
+    "lecture.pdf": {
+      "bytes": 1792105,
+      "sha256": "73d07ef7d8660f04401fd4e1afffbef65de87de777227f8ba5b44712940503a6"
+    },
+    "lab.md": {
+      "bytes": 8660,
+      "sha256": "777a0a20bd76b039f5b1f2aee839e2d612621ace78644ebdbd7f5e9c9be6ba81"
+    },
+    "lab.pdf": {
+      "bytes": 457594,
+      "sha256": "53b5bb9e837dac0a5e52f87bb2388e425b587590c02f61d53d7150b9676e8430"
+    },
+    "answers.md": {
+      "bytes": 9955,
+      "sha256": "1cb27ddc9724cd5009b5a9707758062dae079ef5609c47d062f8405c369753a5"
+    },
+    "answers.pdf": {
+      "bytes": 499852,
+      "sha256": "7da51145b290da0c145eefecf32ca16c75cc09d6a9bb3e1a8106242f8ea52590"
+    },
+    "experiment.py": {
+      "bytes": 15446,
+      "sha256": "d6505030d9dfac2d1bf818538c58fd2e34ea54a0b1726a22c0b024a119d67918"
+    },
+    "experiment.ipynb": {
+      "bytes": 216983,
+      "sha256": "89f87db0f22e821aa564b0c81b7e80d592020ee87030880a87bc030dc5f42a7b"
+    },
+    "requirements.txt": {
+      "bytes": 132,
+      "sha256": "868ba666bed53b6b6fc812cbb5715fb7b2af5441dc04debb64c969788b09b50c"
+    },
+    "environment.yml": {
+      "bytes": 152,
+      "sha256": "0685d2d77efccff544d55e5234fd151617f08ac1f1e45687a7c9e7673697674a"
+    },
+    "source-checks.json": {
+      "bytes": 4202,
+      "sha256": "ac4d124e003f638e06c20bafb4fe4fec87c84990843b96b68fa4418ddee433c8"
+    },
+    "test-result.json": {
+      "bytes": 2772,
+      "sha256": "38f718fa499889a89cf4c264d86647c74b9c75087312a30052952b4bc1d5f9ee"
+    },
+    "data/README.md": {
+      "bytes": 621,
+      "sha256": "15f2ddefebad7a629028bc375936b62b1e302455bfceb999413f6599132c2968"
+    },
+    "data/density_samples.csv": {
+      "bytes": 72,
+      "sha256": "094fec8623aad6bf7a451700670a383a08e0d633b3be5bf46aac2ef6633e1d8a"
+    },
+    "figures/01_rectangles.png": {
+      "bytes": 55582,
+      "sha256": "65c1e879b41bb9add8fccf4dcb9a31683e5257adb6fc557b68211f61a96f0f2f"
+    },
+    "figures/02_signed_error.png": {
+      "bytes": 83589,
+      "sha256": "56f66c0dcc097d36ddd56ef571bd3390e216f2adc68c9e297b3ef5dd10886d57"
+    },
+    "figures/03_cumulative.png": {
+      "bytes": 73215,
+      "sha256": "e972ab2ef211d1e498da4e311a26a5733239590cb7abbf14a42a40bb8b101e5a"
+    },
+    "figures/04_normalization.png": {
+      "bytes": 61341,
+      "sha256": "e5c6a667fc574b1456465ee5054b2b06b0f0abe728620daf34a1b35e5f60fda0"
+    },
+    "figures/05_density_units.png": {
+      "bytes": 74611,
+      "sha256": "c5e1561a19f6822726147a32b3c8132579f3a9263ae61960f7802a77dd23f22e"
+    },
+    "figures/06_substitution.png": {
+      "bytes": 88884,
+      "sha256": "1a10e585fbe41aa80b48e860662f425d9bb3c7b8700e3c36ef04b8263723b231"
+    },
+    "figures/07_convergence.png": {
+      "bytes": 121755,
+      "sha256": "665adf3ffb92494d82b52a4ab8842fe2ae8ca9719c848599836c0148e10bd6a6"
+    },
+    "figures/08_error_grid.png": {
+      "bytes": 78773,
+      "sha256": "c91289fb868fb801b1a3a78b7e68169a448f0be500e2085ab2397574165aeac5"
+    },
+    "figures/09_cancellation.png": {
+      "bytes": 101827,
+      "sha256": "49c1edfd8997c19f89c5f912cce53b570aad2ecf7db39ea1678cab3871e01c21"
+    },
+    "figures/10_triangle_region.png": {
+      "bytes": 42644,
+      "sha256": "12595d410a13e77276bd0057d6a638c9c574baad8bd0ce241003ed66e27be33f"
+    },
+    "figures/11_boundary_grid.png": {
+      "bytes": 49964,
+      "sha256": "126a88619dba1def1b470d562342d11d1b0676bd3be2948317666440c760792c"
+    },
+    "figures/12_missed_structure.png": {
+      "bytes": 128072,
+      "sha256": "ee7633f9d59402ef10cfb84d4ba15eb039f86d5c794c8523f2b52b070f96fe7c"
+    }
+  },
+  "scientific_revision": "Mean value theorem stated explicitly as an accepted theorem in this unit; removed incorrect attribution to unit013.",
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "checks": [
+      "All27payload hashes matched before final verification metadata update",
+      "All21PDFpages 12figures and3NotebookPNGs inspected",
+      "12cells fresh real InProcessKernel;497crosschecks and46boundary groups;python-O passed",
+      "300Fraction polynomial integrands across4quadrature rules",
+      "200nonuniform normalizations",
+      "12080digitDecimal geometric-series exponential references",
+      "200triangle counts and200interval masses",
+      "Coarse-grid counterexamples and3invalid-grid callback sentinels",
+      "Invalid CSV cannot replace existing report",
+      "MVT explicitly accepted and stated here; incorrect unit013 prerequisite attribution removed;finallecturepages4–9 visually rechecked"
+    ]
+  }
+}

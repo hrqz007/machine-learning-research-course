@@ -1,0 +1,171 @@
+{
+  "unit": "016",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 15,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 6
+  },
+  "answers": {
+    "pages": 7,
+    "exercises": 12
+  },
+  "visual_review": "All 28 final PDF pages and 6 retained Notebook PNGs individually inspected. Redundant final exercise-summary moved to README to remove an orphan eighth answer page without dropping any solution. Only lab page5 changed for three additional rejection groups; all6 Notebook PNGs unchanged after fresh rerun.",
+  "code": {
+    "status": "passed",
+    "projection_cases": 16,
+    "boundary_groups": 71,
+    "independent_fraction_cases": 135,
+    "unrelated_cwd_repeat": "Two new-process repeats, stdout and four report files byte-identical",
+    "numeric_regression_revision": "Three radial scaling / projected norm / center-addition failures reject; python -O retains explicit checks"
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 16,
+    "png_outputs": 6,
+    "method": "fresh Python process; sequential real ipykernel InProcessKernel"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Finite deterministic examples only",
+    "Projection existence invokes finite-dimensional compact-continuous-minimum theorem",
+    "Numerical rank and tolerance do not prove exact mathematical assumptions",
+    "Consistent redundant affine rows excluded by teaching interface, not declared mathematically infeasible",
+    "Jupyter browser UI and external socket transport not tested",
+    "Learner Anaconda installation not tested"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 4718,
+      "sha256": "57ddce1d3bc2f66068b158cde54243df336220ee64413b1eb16e9290e6f37e95"
+    },
+    "lecture.md": {
+      "bytes": 26444,
+      "sha256": "de97c06281d9bee84673ce97a99a9c78c00e7aee891e91f4ec7beb0a84862141"
+    },
+    "lab.md": {
+      "bytes": 13877,
+      "sha256": "263d5dd001110e93542c6a91c97250e6da3e1ba5745f4e1b71743c2a16339073"
+    },
+    "answers.md": {
+      "bytes": 14422,
+      "sha256": "cb88f5fa1a608197053c96fdea86fcdcb2a6aa4f12958252ba4daae906bc6c1f"
+    },
+    "experiment.py": {
+      "bytes": 28085,
+      "sha256": "c6339150c2d1b73c5527d21e7ea2807d9da0718228db879778c580e9585ce420"
+    },
+    "experiment.ipynb": {
+      "bytes": 359975,
+      "sha256": "44dc6b22794117c78ee1c06f19f2897fc885700a9410c3d12476cc13835c0d6b"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "1397d9ef1a3d28411efddb55a8865bd237efeb4c51ef3335029dcfa6a11cdf80"
+    },
+    "requirements.txt": {
+      "bytes": 82,
+      "sha256": "41549cac0202a4fcee6045b3815ec9a9bea3397eb3556a657a151ae4f68bf4e2"
+    },
+    "source-checks.json": {
+      "bytes": 2824,
+      "sha256": "72928b01755a839d723433e6d4af706d70dc2669c68dfa7ef3d41b8e44e2b87a"
+    },
+    "test-result.json": {
+      "bytes": 18946,
+      "sha256": "6006f03e0923b756f819adda2f75c38e527f8448c4f17722def79f36585f9536"
+    },
+    "data/README.md": {
+      "bytes": 2211,
+      "sha256": "4352b978c933cdeb49e3a214a539d5a6b3798710ead68079d8ff186c09f5b012"
+    },
+    "data/affine_system.csv": {
+      "bytes": 42,
+      "sha256": "5081269abf20010a39a08b597ec821bd4cae903406f11cb44aff20e2736c47f5"
+    },
+    "data/points2d.csv": {
+      "bytes": 64,
+      "sha256": "f38ecee44507b94f651c8ce7713218b5651a2b7bd6af65be98c9c1e426d86cd3"
+    },
+    "figures/01_constraint_targets.png": {
+      "bytes": 78180,
+      "sha256": "183c838a982dc93eae43f361685997bc9f804657cc2c42fca43dd4438d1b4687"
+    },
+    "figures/02_convex_sets.png": {
+      "bytes": 94460,
+      "sha256": "39fbd417919c2a75a08bcd9b3b3994d754d4051ff74c50767539d211a5c15ce6"
+    },
+    "figures/03_convex_combinations.png": {
+      "bytes": 59330,
+      "sha256": "2e297a1c67d7fe495eaf3456e8434a8234f7b7f4ebd6157e5b705b0a6963d282"
+    },
+    "figures/04_convex_chords.png": {
+      "bytes": 113961,
+      "sha256": "3fa1400b48e0d502bfe876f4ab8c4e8e0a0b2b2fca098ce56db3de3437fbb436"
+    },
+    "figures/05_tangent_bound.png": {
+      "bytes": 156043,
+      "sha256": "98fbe797239b82ead319566bb7992f1190734a3765a6a1e6587f37e47afc565e"
+    },
+    "figures/06_jensen.png": {
+      "bytes": 97901,
+      "sha256": "45dbb0aa4e703046339776cdc81987bd86ea476042b30cb591fbc91351a384db"
+    },
+    "figures/07_feasible_directions.png": {
+      "bytes": 101503,
+      "sha256": "f119dc2962105b30db0c73532594cdb049a13a1aec943b75624fa7a51c089b6b"
+    },
+    "figures/08_projection_certificate.png": {
+      "bytes": 103589,
+      "sha256": "4feb6410d9ae60fdb33e929e4fe1a4040c5a99a01470e9f3ae601a5144e42e71"
+    },
+    "figures/09_box_projection.png": {
+      "bytes": 102975,
+      "sha256": "17578c2fd0cbfdd63039b0a1fa5cbd62d37055277fd2d071dd6736bdd7567614"
+    },
+    "figures/10_ball_projection.png": {
+      "bytes": 88717,
+      "sha256": "677116b45ae7e26fda6e939f1ddb7e8237b843a0e2fd2c42253deeedd9652fba"
+    },
+    "figures/11_affine_projection.png": {
+      "bytes": 149602,
+      "sha256": "4555e3bafa5ec60328b0ed9d57121518f49fc40aebd6160446371062e6d582c1"
+    },
+    "figures/12_intersection_trap.png": {
+      "bytes": 136228,
+      "sha256": "b701e60f68a80b73745246eff2e33d8ebf2f344f7e5bd7030b4c9653096e2ce7"
+    },
+    "lecture.pdf": {
+      "bytes": 2088512,
+      "sha256": "0cac0cbcd1bc0b5301e2eb1d28bd1795bbfa7c3788a691cf71b932420cf83ad3"
+    },
+    "lab.pdf": {
+      "bytes": 840580,
+      "sha256": "f749d1492403d85b1758c74ac193ae62782195ad8dff4236f07a7bf757e971bf"
+    },
+    "answers.pdf": {
+      "bytes": 661996,
+      "sha256": "f8074bc21c2f7f474095ca57f5855a814640d74b989ba621067fc8b708ffaf4a"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "checks": [
+      "28 payload hashes matched before final verification metadata update",
+      "All28PDFpages 12figures and6NotebookPNGs inspected",
+      "16cells rerun in fresh independent real InProcessKernel",
+      "240 Fraction box line halfspace cases",
+      "180 exact Gaussian-elimination affine projections",
+      "200 Jensen variance identities",
+      "200 Decimal ball projections",
+      "800 nonexpansiveness comparisons",
+      "Modified CSV rejected in new process without changing prior outputs",
+      "Three underflow or lost-displacement fixes plus signed variants rejected",
+      "All26 assert conditions preserved by explicit require; python -O failure check remains active"
+    ]
+  }
+}

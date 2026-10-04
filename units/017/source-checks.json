@@ -1,0 +1,104 @@
+{
+  "unit": "017",
+  "date": "2026-10-04",
+  "status": "primary_sources_opened_and_relevant_sections_read",
+  "sources": [
+    {
+      "id": "R1",
+      "author": "OpenStax",
+      "title": "Calculus Volume 1 5.2 The Definite Integral",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Riemann sums, maximum partition width, continuous-function integrability",
+        "Signed area, interval additivity, comparison and finite discontinuities"
+      ]
+    },
+    {
+      "id": "R2",
+      "author": "OpenStax",
+      "title": "Calculus Volume 1 5.3 The Fundamental Theorem of Calculus",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Continuity for accumulated-integral derivative",
+        "Antiderivative endpoint difference; course proof uses local average bounds and the mean value theorem"
+      ]
+    },
+    {
+      "id": "R3",
+      "author": "OpenStax",
+      "title": "Calculus Volume 1 5.5 Substitution",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-5-substitution",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Continuous differentiable substitution and transformed endpoints",
+        "Signed substitution factor distinguished from absolute inverse factor for density transformation"
+      ]
+    },
+    {
+      "id": "R4",
+      "author": "OpenStax",
+      "title": "Calculus Volume 2 3.6 Numerical Integration",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-6-numerical-integration",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Composite midpoint and trapezoid formulas",
+        "Bounded second derivative; constants 1/24 and 1/12; general bounds cited, not claimed newly proved"
+      ]
+    },
+    {
+      "id": "R5",
+      "author": "OpenStax",
+      "title": "Calculus Volume 3 5.2 Double Integrals over General Regions",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/5-2-double-integrals-over-general-regions",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Type I and Type II slicing of a simple bounded region",
+        "Continuity conditions in Fubini theorem; no unconditional improper-integral order swap"
+      ]
+    },
+    {
+      "id": "R6",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.trapezoid",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.trapezoid.html",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Given x coordinates are used in order and are not sorted",
+        "Descending x can encode signed reverse integration; our teaching wrapper instead rejects it"
+      ]
+    },
+    {
+      "id": "R7",
+      "author": "Python Software Foundation",
+      "title": "Python 3.12 math",
+      "url": "https://docs.python.org/3.12/library/math.html",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "fsum and finite-value checks",
+        "expm1 reduces cancellation in exp(x)-1 for small x"
+      ]
+    }
+  ],
+  "authorship": {
+    "text": "Original Chinese exposition and 14 complete solutions; no copied source paragraphs",
+    "figures": "12 original mathematically generated PNGs",
+    "data": "Original deterministic dimensionless grid and synthetic functions"
+  },
+  "proof_scope": [
+    "Riemann sum formulas and quadratic finite errors derived explicitly",
+    "FTC explained with continuity and short-interval average bound",
+    "Substitution derived from chain rule and endpoint formula",
+    "General second-derivative numerical error constants cited with assumptions, not proved",
+    "Finite triangle counts and boundary bias derived independently",
+    "Exponential truncation decomposition derived explicitly"
+  ],
+  "claims_not_made": [
+    "Arbitrary-integrand accuracy from finite grids",
+    "Probability height bounded by one",
+    "Grid refinement removes truncated tails",
+    "General multi-dimensional integration theory proved",
+    "NumPy used by core script"
+  ]
+}

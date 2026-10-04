@@ -1,0 +1,645 @@
+{
+  "unit": "016",
+  "status": "passed",
+  "checked_date": "2026-10-04",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1"
+  },
+  "script": {
+    "status": "passed",
+    "method": "fresh Python process, then fresh process from data/ as alternate working directory",
+    "repeat_output_hashes_identical": true,
+    "deterministic_outputs": [
+      "experiment-report.json",
+      "projection-results.csv",
+      "intersection-comparison.csv",
+      "grid-diagnostics.csv"
+    ],
+    "coordinator_repeat": "After final underflow fixes: two unrelated-cwd fresh processes have byte-identical stdout and four report files; python -O stdout identical and all 26 former assert checks retained by explicit require"
+  },
+  "notebook": {
+    "code_cells": 16,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "error_outputs": 0,
+    "png_outputs": 6,
+    "nbformat": "valid",
+    "status": "passed",
+    "method": "Fresh Python process; sequential execution in a real ipykernel InProcessKernel",
+    "limitations": [
+      "No Jupyter browser UI test",
+      "No out-of-process socket transport test",
+      "No learner local Anaconda installation test"
+    ],
+    "runtime_warnings": [
+      "Frozen-module debugger warning",
+      "Local interface discovery permission warning; no socket transport needed"
+    ]
+  },
+  "projection_case_count": 16,
+  "interval_case_count": 5,
+  "independent_fraction_cases": {
+    "box": 36,
+    "line": 36,
+    "halfspace": 36,
+    "affine": 27,
+    "extreme_cancellation_rejected": 1,
+    "clip_contract_checked": 1
+  },
+  "fraction_checks": {
+    "box": [
+      "2",
+      "1"
+    ],
+    "line": [
+      "1",
+      "0"
+    ],
+    "affine": [
+      "4/3",
+      "-1/3",
+      "1/3"
+    ],
+    "affine_squared_distance": "26/3",
+    "affine_residual_dot_null_direction": "0",
+    "jensen_mean": "2",
+    "jensen_left": "4",
+    "jensen_right": "11/2",
+    "jensen_gap": "3/2"
+  },
+  "boundary_case_count": 71,
+  "boundary_cases": [
+    {
+      "case": "invalid_box_input_0",
+      "status": "rejected_as_expected",
+      "message": "values 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "invalid_box_input_1",
+      "status": "rejected_as_expected",
+      "message": "values 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "invalid_box_input_2",
+      "status": "rejected_as_expected",
+      "message": "values 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "invalid_box_input_3",
+      "status": "rejected_as_expected",
+      "message": "values 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "invalid_box_input_4",
+      "status": "rejected_as_expected",
+      "message": "values 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "invalid_box_input_5",
+      "status": "rejected_as_expected",
+      "message": "values 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "invalid_box_input_6",
+      "status": "rejected_as_expected",
+      "message": "values 拒绝布尔、字符串、复数和 object 数组"
+    },
+    {
+      "case": "invalid_box_input_7",
+      "status": "rejected_as_expected",
+      "message": "values 必须有限"
+    },
+    {
+      "case": "invalid_box_input_8",
+      "status": "rejected_as_expected",
+      "message": "values 必须有限"
+    },
+    {
+      "case": "invalid_box_input_9",
+      "status": "rejected_as_expected",
+      "message": "lower 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "box_broadcast_lower",
+      "status": "rejected_as_expected",
+      "message": "lower 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "box_reversed_bounds",
+      "status": "rejected_as_expected",
+      "message": "每个坐标的下界都不能大于上界"
+    },
+    {
+      "case": "interval_bool",
+      "status": "rejected_as_expected",
+      "message": "value 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "interval_reversed",
+      "status": "rejected_as_expected",
+      "message": "区间下界不能大于上界"
+    },
+    {
+      "case": "interval_nonfinite",
+      "status": "rejected_as_expected",
+      "message": "value 必须有限"
+    },
+    {
+      "case": "invalid_radius_-1",
+      "status": "rejected_as_expected",
+      "message": "radius 必须非负"
+    },
+    {
+      "case": "invalid_radius_True",
+      "status": "rejected_as_expected",
+      "message": "radius 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "invalid_radius_inf",
+      "status": "rejected_as_expected",
+      "message": "radius 必须有限"
+    },
+    {
+      "case": "invalid_radius_2",
+      "status": "rejected_as_expected",
+      "message": "radius 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "ball_wrong_center_shape",
+      "status": "rejected_as_expected",
+      "message": "center 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "ball_displacement_overflow",
+      "status": "rejected_as_expected",
+      "message": "project_ball 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "ball_norm_overflow",
+      "status": "rejected_as_expected",
+      "message": "project_ball 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "ball_norm_underflow",
+      "status": "rejected_as_expected",
+      "message": "球距离下溢，无法可靠判定内外"
+    },
+    {
+      "case": "ball_scale_underflow",
+      "status": "rejected_as_expected",
+      "message": "球径向缩放系数下溢，不能返回球心充当投影"
+    },
+    {
+      "case": "ball_projected_norm_underflow",
+      "status": "rejected_as_expected",
+      "message": "投影后球范数下溢，无法可靠核对边界"
+    },
+    {
+      "case": "ball_center_addition_loss",
+      "status": "rejected_as_expected",
+      "message": "球心相加吞掉非零投影位移，请缩放问题"
+    },
+    {
+      "case": "distance_overflow",
+      "status": "rejected_as_expected",
+      "message": "squared_distance 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "hyperplane_zero_normal",
+      "status": "rejected_as_expected",
+      "message": "法向量为零或其长度在 float64 中无法解析"
+    },
+    {
+      "case": "halfspace_zero_normal",
+      "status": "rejected_as_expected",
+      "message": "法向量为零或其长度在 float64 中无法解析"
+    },
+    {
+      "case": "normal_wrong_shape",
+      "status": "rejected_as_expected",
+      "message": "normal 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "normal_mixed_bool",
+      "status": "rejected_as_expected",
+      "message": "normal 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "normal_squared_overflow",
+      "status": "rejected_as_expected",
+      "message": "project_hyperplane 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "normal_squared_underflow",
+      "status": "rejected_as_expected",
+      "message": "法向量为零或其长度在 float64 中无法解析"
+    },
+    {
+      "case": "linear_residual_overflow",
+      "status": "rejected_as_expected",
+      "message": "project_hyperplane 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "rhs_bool",
+      "status": "rejected_as_expected",
+      "message": "rhs 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "affine_wrong_matrix_shape",
+      "status": "rejected_as_expected",
+      "message": "matrix 必须形状(m,n)，n 等于向量长度"
+    },
+    {
+      "case": "affine_wrong_rhs_shape",
+      "status": "rejected_as_expected",
+      "message": "rhs 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "affine_empty_equations",
+      "status": "rejected_as_expected",
+      "message": "本接口要求 1<=m<=n 的独立等式"
+    },
+    {
+      "case": "affine_too_many_equations",
+      "status": "rejected_as_expected",
+      "message": "本接口要求 1<=m<=n 的独立等式"
+    },
+    {
+      "case": "affine_redundant_rows",
+      "status": "rejected_as_expected",
+      "message": "matrix 不是数值满行秩；本接口拒绝冗余或矛盾等式"
+    },
+    {
+      "case": "affine_inconsistent_rows",
+      "status": "rejected_as_expected",
+      "message": "matrix 不是数值满行秩；本接口拒绝冗余或矛盾等式"
+    },
+    {
+      "case": "affine_nonfinite_matrix",
+      "status": "rejected_as_expected",
+      "message": "matrix 必须有限"
+    },
+    {
+      "case": "affine_object_matrix",
+      "status": "rejected_as_expected",
+      "message": "matrix 拒绝布尔、字符串、复数和 object 数组"
+    },
+    {
+      "case": "affine_intermediate_overflow",
+      "status": "rejected_as_expected",
+      "message": "project_affine 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "weights_negative",
+      "status": "rejected_as_expected",
+      "message": "凸组合权重不能为负"
+    },
+    {
+      "case": "weights_zero_total",
+      "status": "rejected_as_expected",
+      "message": "权重总和必须在绝对容差1e-12内等于1，不自动归一化"
+    },
+    {
+      "case": "weights_wrong_total",
+      "status": "rejected_as_expected",
+      "message": "权重总和必须在绝对容差1e-12内等于1，不自动归一化"
+    },
+    {
+      "case": "weights_outside_tolerance",
+      "status": "rejected_as_expected",
+      "message": "权重总和必须在绝对容差1e-12内等于1，不自动归一化"
+    },
+    {
+      "case": "weights_wrong_shape",
+      "status": "rejected_as_expected",
+      "message": "weights 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "weights_bool",
+      "status": "rejected_as_expected",
+      "message": "weights 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "empty_points",
+      "status": "rejected_as_expected",
+      "message": "points 必须是非空(m,n)数组；标量点也写成(m,1)"
+    },
+    {
+      "case": "scalar_points_need_column",
+      "status": "rejected_as_expected",
+      "message": "points 必须是非空(m,n)数组；标量点也写成(m,1)"
+    },
+    {
+      "case": "jensen_nonfinite_return",
+      "status": "rejected_as_expected",
+      "message": "function at average 必须有限"
+    },
+    {
+      "case": "jensen_nonscalar_return",
+      "status": "rejected_as_expected",
+      "message": "function at average 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "jensen_bool_return",
+      "status": "rejected_as_expected",
+      "message": "function at average 必须是实数标量，不接受布尔、字符串或复数"
+    },
+    {
+      "case": "line_nonfinite_return",
+      "status": "rejected_as_expected",
+      "message": "callback return 必须有限"
+    },
+    {
+      "case": "line_bad_step_shape",
+      "status": "rejected_as_expected",
+      "message": "steps 必须是指定长度的非空一维数组，禁止广播"
+    },
+    {
+      "case": "certificate_wrong_shape",
+      "status": "rejected_as_expected",
+      "message": "feasible_points 必须为非空(k,n)数组"
+    },
+    {
+      "case": "certificate_overflow",
+      "status": "rejected_as_expected",
+      "message": "certificate_values 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "line_nonfinite_samples_before_callback",
+      "status": "rejected_as_expected",
+      "message": "line_samples 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "jensen_nonfinite_mean_before_callback",
+      "status": "rejected_as_expected",
+      "message": "convex_combination 超出本教学实现的有限数值范围"
+    },
+    {
+      "case": "interval_singleton",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "box_singleton_coordinate",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "ball_inside",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "ball_center",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "ball_zero_radius",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "halfspace_inside",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "halfspace_boundary",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "one_weight",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "zero_weight",
+      "status": "accepted_as_expected"
+    },
+    {
+      "case": "zero_direction",
+      "status": "accepted_as_expected"
+    }
+  ],
+  "tolerances": {
+    "geometry_absolute": 1e-10,
+    "weight_sum_absolute": 1e-12,
+    "weights_normalized": false,
+    "interpretation": "权重容差仅处理浮点输入；定理仍要求精确和为1"
+  },
+  "main_projections": [
+    {
+      "point_id": "main",
+      "set": "box",
+      "v1": 3.0,
+      "v2": 2.0,
+      "p1": 2.0,
+      "p2": 1.0,
+      "squared_distance": 2.0,
+      "objective_half_squared_distance": 1.0,
+      "feasibility_violation": 0.0
+    },
+    {
+      "point_id": "main",
+      "set": "ball",
+      "v1": 3.0,
+      "v2": 2.0,
+      "p1": 1.6641005886756874,
+      "p2": 1.1094003924504583,
+      "squared_distance": 2.5777948981440426,
+      "objective_half_squared_distance": 1.2888974490720213,
+      "feasibility_violation": 0.0
+    },
+    {
+      "point_id": "main",
+      "set": "hyperplane",
+      "v1": 3.0,
+      "v2": 2.0,
+      "p1": 1.0,
+      "p2": 0.0,
+      "squared_distance": 8.0,
+      "objective_half_squared_distance": 4.0,
+      "feasibility_violation": 0.0
+    },
+    {
+      "point_id": "main",
+      "set": "halfspace",
+      "v1": 3.0,
+      "v2": 2.0,
+      "p1": 1.0,
+      "p2": 0.0,
+      "squared_distance": 8.0,
+      "objective_half_squared_distance": 4.0,
+      "feasibility_violation": 0.0
+    }
+  ],
+  "affine": {
+    "projection": [
+      1.333333333333333,
+      -0.3333333333333348,
+      0.3333333333333328
+    ],
+    "residual": [
+      -1.7763568394002505e-15,
+      -1.9984014443252818e-15
+    ],
+    "squared_distance": 8.666666666666675,
+    "residual_dot_null": -6.661338147750939e-16,
+    "line_squared_distances": [
+      20.66666666666667,
+      11.666666666666675,
+      8.666666666666675,
+      11.666666666666677,
+      20.66666666666668
+    ]
+  },
+  "jensen": {
+    "average": [
+      2.0
+    ],
+    "left": 4.0,
+    "right": 5.5,
+    "gap": 1.5,
+    "holds_within_tolerance": true,
+    "weight_sum": 1.0
+  },
+  "nonconvex_counterexample": {
+    "average": [
+      0.0
+    ],
+    "left": 0.0,
+    "right": -0.24999999999999997,
+    "gap": -0.24999999999999997,
+    "holds_within_tolerance": false,
+    "weight_sum": 1.0
+  },
+  "intersection": [
+    {
+      "candidate": "true_intersection",
+      "p1": 1.7320508075688772,
+      "p2": 1.0,
+      "squared_distance": 2.6076951545867364,
+      "certificate_at_true_projection": 0.0
+    },
+    {
+      "candidate": "box_then_ball",
+      "p1": 1.7888543819998317,
+      "p2": 0.8944271909999159,
+      "squared_distance": 2.6891649440013463,
+      "certificate_at_true_projection": 0.04792102674145544
+    },
+    {
+      "candidate": "ball_then_box",
+      "p1": 1.6641005886756874,
+      "p2": 1.0,
+      "squared_distance": 2.784627237176645,
+      "certificate_at_true_projection": 0.09077465741877037
+    }
+  ],
+  "finite_grid_diagnostics": [
+    {
+      "set": "box",
+      "candidate_count": 10201,
+      "max_certificate_inner_product": 0.0,
+      "grid_best_minus_analytic_d2": 0.0
+    },
+    {
+      "set": "ball",
+      "candidate_count": 2541,
+      "max_certificate_inner_product": -0.00023289322025256604,
+      "grid_best_minus_analytic_d2": 0.001046006390652554
+    },
+    {
+      "set": "hyperplane",
+      "candidate_count": 121,
+      "max_certificate_inner_product": 0.0,
+      "grid_best_minus_analytic_d2": 0.0
+    },
+    {
+      "set": "halfspace",
+      "candidate_count": 1331,
+      "max_certificate_inner_product": 0.0,
+      "grid_best_minus_analytic_d2": 0.0
+    },
+    {
+      "set": "intersection",
+      "candidate_count": 9705,
+      "max_certificate_inner_product": -0.009920827876478272,
+      "grid_best_minus_analytic_d2": 0.020304845413263717
+    }
+  ],
+  "nonexpansive_diagnostics": [
+    {
+      "set": "box",
+      "ordered_pairs": 16,
+      "max_projected_minus_original_squared_distance": 0.0
+    },
+    {
+      "set": "ball",
+      "ordered_pairs": 16,
+      "max_projected_minus_original_squared_distance": 0.0
+    },
+    {
+      "set": "hyperplane",
+      "ordered_pairs": 16,
+      "max_projected_minus_original_squared_distance": 0.0
+    },
+    {
+      "set": "halfspace",
+      "ordered_pairs": 16,
+      "max_projected_minus_original_squared_distance": 0.0
+    }
+  ],
+  "official_interface_checks": {
+    "clip_reversed_bounds_not_automatically_checked": true,
+    "lstsq_empty_residual_array_explicitly_observed": true
+  },
+  "figures": {
+    "count": 12,
+    "all_referenced_in_lecture": true,
+    "missing_glyph_warnings": 0,
+    "visual_review": "All 12 figures inspected in final PDFs; all 6 actual Notebook PNG outputs individually inspected; no clipping or overlap"
+  },
+  "documents": {
+    "lecture_characters": 11993,
+    "lab_characters": 5962,
+    "answers_characters": 7369,
+    "exercise_count": 12,
+    "pdf_rendering": "All 28 final pages individually visually inspected: lecture15, lab6, answers7"
+  },
+  "interpretation_limits": [
+    "Finite candidate tests are not global convexity or optimality proofs",
+    "Weight-sum tolerance does not replace exact theorem hypotheses; no silent normalization",
+    "Numerical full row rank is not an exact algebraic rank proof",
+    "Consistent redundant equations are excluded by interface scope, not declared mathematically infeasible",
+    "Extreme floating-point scales are rejected; no arbitrary-scale stable solver claim",
+    "No real-world optimization or prediction performance claim"
+  ],
+  "not_tested": [
+    "Arbitrary inputs beyond documented teaching scope",
+    "Jupyter browser UI and external socket transport",
+    "Learner local Anaconda installation"
+  ],
+  "numeric_regression_revision": {
+    "new_rejections": [
+      "ball_scale_underflow",
+      "ball_projected_norm_underflow",
+      "ball_center_addition_loss"
+    ],
+    "status": "passed",
+    "notebook": "All16cells fresh-kernel rerun; all6 PNGs byte-identical to inspected prior outputs"
+  }
+}

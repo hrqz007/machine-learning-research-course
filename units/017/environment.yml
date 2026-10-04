@@ -1,0 +1,10 @@
+name: ml-course-017
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - matplotlib=3.10.8
+  - ipython
+  - ipykernel
+  - nbformat
+  - jupyterlab
