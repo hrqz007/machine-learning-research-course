@@ -1,0 +1,206 @@
+{
+  "unit": "034",
+  "title": "随机与小批量梯度下降",
+  "status": "complete owner checks; final independent review pending",
+  "date_utc": "2026-10-04",
+  "pdf_pages": {
+    "lecture": 11,
+    "lab": 3,
+    "answers": 5
+  },
+  "lecture_sections": 18,
+  "full_solutions": 18,
+  "original_figures": 9,
+  "notebook": {
+    "fresh_real_kernel": "ipykernel InProcessKernel in new Python process",
+    "code_cells": 12,
+    "computed_pngs": 6,
+    "sequential_execution": "passed",
+    "all_default_input_hashes_checked_before_first_numeric_output": true,
+    "actual_first_cell_guard_mutations_checked": 2,
+    "report_sha256": "f50c0a95f9d9682be90cc0c20cb82c78fcb395501c9516a6f641195395a5dacb"
+  },
+  "execution": {
+    "status": "passed",
+    "checks": 9822,
+    "complete_exact_paths": 9830,
+    "permutations": 24,
+    "random_dyadic_cases": 150,
+    "actual_rounded_states": 2400,
+    "Decimal_precision": 100,
+    "Decimal_references": 150,
+    "invalid_pre_rng_cases": 37,
+    "bad_cli_output_protections": 26,
+    "report_sha256": "f50c0a95f9d9682be90cc0c20cb82c78fcb395501c9516a6f641195395a5dacb"
+  },
+  "scientific_anchors": {
+    "labels": [
+      -2,
+      0,
+      1,
+      5
+    ],
+    "objective": "F(w)=13/4+(w-1)^2/2",
+    "single_sample_gradient_noise_variance": "13/2",
+    "hand_parameters": [
+      "0",
+      "5/4",
+      "7/16"
+    ],
+    "hand_full_losses": [
+      "15/4",
+      "105/32",
+      "1745/512"
+    ],
+    "batch_variances": {
+      "replace_B1": "13/2",
+      "replace_B2": "13/4",
+      "replace_B4": "13/8",
+      "fresh_subset_B2": "13/6",
+      "full": "0"
+    },
+    "fixed_step_noise_floor_MSE": "eta*V/(2-eta)",
+    "decay_MSE_default": "(9+T*V)/(T+3)^2",
+    "order_endpoints": [
+      "157/128",
+      "43/256"
+    ],
+    "complete_forward_chain": "All rows before and after each of two same-data updates; selected local derivatives, gradient and update explicit. Actual per-method first-run traces include batch contributions and new full forward.",
+    "cost": "160 training sample-gradient evaluations per run; complete batches only, diagnostic full losses separately counted",
+    "random_sampling": "Fresh replacement and fresh-subset theory separated from reshuffling; constant/decay deliberately paired; no Monte Carlo equality assertion"
+  },
+  "visual": {
+    "all_final_19_pdf_pages_individually_viewed": true,
+    "all_6_notebook_pngs_individually_viewed": true,
+    "all_9_figure_panels_checked_in_final_lecture": true,
+    "issues_fixed": [
+      "Lab orphan final paragraph removed",
+      "Raw textual subscripts and detailed geometric-series derivation typeset",
+      "Figure8 caption matched actual mean/band/histogram",
+      "Figure9 adjacent text separated",
+      "Notebook simulation/theory same-method colors matched"
+    ],
+    "observed_final_defects": "none"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "limitations": [
+    "Synthetic scalar mean-regression mechanism only; no real-world prediction or hardware-throughput conclusion.",
+    "The fixed-data Notebook rejects altered input bytes before first numeric result.",
+    "Ordinary Python/NumPy binary64 arithmetic is bounded, not an arbitrary-precision solver; exact references are separate.",
+    "Actual Anaconda install, browser Jupyter UI and external-process socket kernel transport not tested.",
+    "Quantile bands describe run distributions; standard errors/z diagnostics are pointwise, not simultaneous confidence guarantees."
+  ],
+  "source_count": 5,
+  "files": {
+    "README.md": {
+      "bytes": 5505,
+      "sha256": "06a360c0a2dfb05fc734c44329321ef764e57756e41e5368fe788d0bee40ae19"
+    },
+    "answers.md": {
+      "bytes": 9830,
+      "sha256": "c03b34ee546f5fe165a707eff97a43bfeee14d50432c9af93af70b4ee917fe78"
+    },
+    "answers.pdf": {
+      "bytes": 658803,
+      "sha256": "25e3e6ea601eeaa7c002619b9c6093fa5e1d69c1df06838735a67c0437feea7d"
+    },
+    "author_audit.py": {
+      "bytes": 7865,
+      "sha256": "4083c1139a096edee5002b171bd068e4b6f85ffdc3958641a92dddbf87dec0e1"
+    },
+    "data/README.md": {
+      "bytes": 869,
+      "sha256": "b02d878333b86f9c982499a28e8578c60f37040e8412286094f3aea625c2d8a7"
+    },
+    "data/labels.csv": {
+      "bytes": 26,
+      "sha256": "96816e82f86790a22399460c6e19ca3612cb4c9bf12868aabef97478dc660149"
+    },
+    "data/model_spec.json": {
+      "bytes": 328,
+      "sha256": "f10668340fcec2093cd275aed1676f98a267b688428be898f784bf9e095b3d59"
+    },
+    "environment.yml": {
+      "bytes": 216,
+      "sha256": "3468d33f513c01194ea7bf76e6388a99fe5d069c6bd92cd639392c1e8f330bf9"
+    },
+    "experiment.ipynb": {
+      "bytes": 659425,
+      "sha256": "62b9b6b5182f98b98de8829565baab8f2e447870a5f26cbfc1b44d13be288787"
+    },
+    "experiment.py": {
+      "bytes": 14542,
+      "sha256": "ef9de3581793d529b51fd380ee96cb21b207b29969a4ea86df863ce7b5134a1b"
+    },
+    "figures/01_same_objective.png": {
+      "bytes": 63707,
+      "sha256": "1f19603d3333831a6ace03396285f9df71dc30f2ba9f0778ecd94d4078581996"
+    },
+    "figures/02_conditional_unbiasedness.png": {
+      "bytes": 63489,
+      "sha256": "9e814a0e47cb0c496f11dd53f389d95feaa80c7d10f30a02b7f42bdabc475211"
+    },
+    "figures/03_four_gradients.png": {
+      "bytes": 33476,
+      "sha256": "8912db8d0307f328a706daac7d61ce038623c865c4f77be44433efa3193bf9cc"
+    },
+    "figures/04_batch_variance.png": {
+      "bytes": 75232,
+      "sha256": "5e3d96c1d3a70a23dfa3ed7154e85acd3aebdd49a9dedb96815870f0119ec920"
+    },
+    "figures/05_expected_descent.png": {
+      "bytes": 80624,
+      "sha256": "7c89e2438162ad845cfe4a2e76523898f60e73e629bb733d522fa0838bc28fd6"
+    },
+    "figures/06_noise_floor.png": {
+      "bytes": 119083,
+      "sha256": "a55dd475fdd064147084791a0b1ee6b93e3b7a9295125c6397680f82124a2aab"
+    },
+    "figures/07_order_effects.png": {
+      "bytes": 84088,
+      "sha256": "ecd688a71ec78e9ae8c6de6af014ecffa361516cd77e4e0b2c76eabaa3c74f0c"
+    },
+    "figures/08_multiseed_summary.png": {
+      "bytes": 114609,
+      "sha256": "d874fcd49d771bdcec808f213f7d38359a17af8d77d1e6d61d04135dc70966f0"
+    },
+    "figures/09_validation_chain.png": {
+      "bytes": 64763,
+      "sha256": "7d1f2550c82768d2af2d99cb6117e704ce925f31c050e609997c43b088d86196"
+    },
+    "lab.md": {
+      "bytes": 7679,
+      "sha256": "1d86dd9c21a341e3d13b6921e6e9b20afcbe80dbdead6ca11d865f83d661ff97"
+    },
+    "lab.pdf": {
+      "bytes": 503243,
+      "sha256": "a1e32a8726cd8d9ebca614a1df16c740630d497fc7a4c47008a354f80646fcd1"
+    },
+    "lecture.md": {
+      "bytes": 20828,
+      "sha256": "f4940b2572afc9f42b4bddb3ed1fa72e185f6344ca43a49924364ce60aa48787"
+    },
+    "lecture.pdf": {
+      "bytes": 1343585,
+      "sha256": "bb4067a93f545ce4e60e125122fcc1a308d834dae610e4d43e26e85f09ae2c1c"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "source-checks.json": {
+      "bytes": 2016,
+      "sha256": "71633c7c66fb37cf879dbd9bfb3422c2e9c42f99ed843e4d88579529c3377fdc"
+    },
+    "test-result.json": {
+      "bytes": 1164,
+      "sha256": "449ae8a3837df250faede74eca02b1cb6e3d0792b3824af7df5d5d8270d4daee"
+    }
+  }
+}

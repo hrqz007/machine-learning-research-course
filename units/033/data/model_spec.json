@@ -1,0 +1,13 @@
+{
+  "kind": "synthetic_smoothness_certificate_demo",
+  "steps": 40,
+  "claimed_L_values": [4.0, 8.0, 1.0],
+  "claimed_mu_values": [1.0, 0.5, 2.0],
+  "quadratic_rate": 0.25,
+  "convex_initial": 4.0,
+  "convex_rate": 1.0,
+  "nonconvex_initials": [0.0, 1.0],
+  "nonconvex_rate": 1.0,
+  "boundary_rates": [0.5, 0.75],
+  "target_gap": 0.000001
+}

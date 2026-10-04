@@ -1,0 +1,33 @@
+{
+  "unit": "034",
+  "normal": {
+    "status": "passed",
+    "checks": 9822,
+    "complete_exact_paths": 9830,
+    "permutations": 24,
+    "random_dyadic_cases": 150,
+    "actual_rounded_states": 2400,
+    "Decimal_precision": 100,
+    "Decimal_references": 150,
+    "invalid_pre_rng_cases": 37,
+    "bad_cli_output_protections": 26,
+    "report_sha256": "f50c0a95f9d9682be90cc0c20cb82c78fcb395501c9516a6f641195395a5dacb"
+  },
+  "optimized": {
+    "status": "passed",
+    "checks": 9822,
+    "complete_exact_paths": 9830,
+    "permutations": 24,
+    "random_dyadic_cases": 150,
+    "actual_rounded_states": 2400,
+    "Decimal_precision": 100,
+    "Decimal_references": 150,
+    "invalid_pre_rng_cases": 37,
+    "bad_cli_output_protections": 26,
+    "report_sha256": "f50c0a95f9d9682be90cc0c20cb82c78fcb395501c9516a6f641195395a5dacb"
+  },
+  "notebook_full_report_byte_identical_to_cli": true,
+  "notebook_input_first_cell_mutation_checks": 2,
+  "actual_computed_png_count": 6,
+  "scientific_reference_note": "Independent exact full path enumeration and raw floating-operation checks; finite Monte Carlo results are diagnostic, not asserted to equal expectation."
+}

@@ -1,0 +1,177 @@
+{
+  "unit": "033",
+  "title": "下降条件与收敛分析",
+  "status": "in_review",
+  "release_state": "author_frozen_pending_independent_review",
+  "validation_date": "2026-10-04",
+  "local_checks": {
+    "author_checks_each_normal_and_O": 74841,
+    "fraction_full_trajectory_designs": 70,
+    "decimal_precision_convex": 500,
+    "decimal_precision_trig": 160,
+    "complete_forward_local_derivatives_two_updates": true,
+    "preiteration_all_fields": true,
+    "strict_original_builtin_types": true,
+    "raw_json_duplicates_and_nonzero_underflow_rejected": true,
+    "raw_invalid_cli_cases_each_mode": 11,
+    "protected_output_cli_targets_each_mode": 9,
+    "fresh_cli_processes_per_audit": 4,
+    "fresh_cli_cwd": [
+      "unrelated temporary directory",
+      "filesystem root"
+    ],
+    "report_sha256": "8365b4e5e58d7ee80333de1d1bfbceb865bc3a0c58caa822e8e7c976290ec82c",
+    "report_byte_identical_normal_O_and_notebook": true,
+    "real_first_cell_valid_numeric_mutations_rejected_before_output": 3,
+    "notebook": {
+      "total_cells": 29,
+      "code_cells": 14,
+      "actual_computed_pngs": 8,
+      "fresh_real_kernel": "ipykernel InProcessKernel, fresh Python process; sequential execution",
+      "complete_2_input_hashes_before_first_numeric_output": true,
+      "fresh_qa_copy_images_byteidentical": true
+    },
+    "pdf_pages": {
+      "lecture": 11,
+      "lab": 6,
+      "answers": 6
+    },
+    "all_final_pdf_pages_individually_viewed": 23,
+    "all_actual_notebook_pngs_individually_viewed": 8,
+    "all_source_figures_individually_viewed": 11,
+    "original_figures": 11,
+    "full_solutions": 18,
+    "primary_sources_actually_checked": 6,
+    "lab_output_protection_snippet_executed": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Actual Anaconda environment creation",
+    "Browser Jupyter UI",
+    "Socket or out-of-process kernel transport",
+    "Cross-platform bitwise identity",
+    "Large or real-world learning tasks",
+    "Adversarial concurrent replacement of filesystem paths"
+  ],
+  "scientific_scope": "Global L-smooth descent proof; finite-lower-bound nonconvex min-gradient squared rate; convex attained-minimum distance-potential rate; strong-convexity PL and geometric rate; complete hand path; valid and false certificates; stable numerical diagnostics and explicit stopping states.",
+  "files": {
+    "README.md": {
+      "bytes": 8985,
+      "sha256": "80f78b95a07feb53a3ce919eedb7ca7fd1e3982d78b913c93b6fa64ca3a3561c"
+    },
+    "answers.md": {
+      "bytes": 14154,
+      "sha256": "6ee981c3d79946c3741cecc85d0152590d1227cdc9a48f74c4d0ae069be0d602"
+    },
+    "answers.pdf": {
+      "bytes": 693825,
+      "sha256": "a3949aa219c275ee46b8063b560edbca1a6d553519ed3ee5eb01cd87941f7ea1"
+    },
+    "data/README.md": {
+      "bytes": 1036,
+      "sha256": "222542ee18985b40b8d0d67caa544ea4d92b70f87d2d365be68cfb6e8526d547"
+    },
+    "data/model_spec.json": {
+      "bytes": 341,
+      "sha256": "05345827fc68bd7b6621b502c49579fd3f02ed3b5f00571e724cd6e1f432ae9f"
+    },
+    "data/quadratic.csv": {
+      "bytes": 41,
+      "sha256": "a4b039de0bb648a052077f88b8595d4fd132908598c21964c043e30bd2894fff"
+    },
+    "environment.yml": {
+      "bytes": 215,
+      "sha256": "84084e6f47e005e95f413d22fbc39eda98ffc94b50108d3f4cf82fad7ffe85c0"
+    },
+    "experiment.ipynb": {
+      "bytes": 565284,
+      "sha256": "44edf0fc7f93fa78a968d0080bb1c72d9ec9e2f38062e1c591418cab01091586"
+    },
+    "experiment.py": {
+      "bytes": 19904,
+      "sha256": "5733d1918f26f24b76c201601d77f326f94f68dd1545c0213ea6e1f5806ad2a5"
+    },
+    "figures/01_assumption_ladder.png": {
+      "bytes": 74558,
+      "sha256": "c5a5643a88459ce8140cea65640287547a15f43f71d84950ad29fa8d60531514"
+    },
+    "figures/02_smoothness.png": {
+      "bytes": 100421,
+      "sha256": "4c743834b9ec75019d154d06721332e95501aed2f192a0f008968d7508a86d0a"
+    },
+    "figures/03_descent_proof.png": {
+      "bytes": 60344,
+      "sha256": "67916b8f20dde7b60e58f3ed1aa7a4606322501e55f0c528a237af75f27f296c"
+    },
+    "figures/04_hand_updates.png": {
+      "bytes": 69491,
+      "sha256": "ede2386eab7f0305683bf2665146b62f21b84adc639562ef8e45ba89af2d0dc0"
+    },
+    "figures/05_stationary_not_optimal.png": {
+      "bytes": 101275,
+      "sha256": "084746bc2cbfb747eae688e094c9937076077acfa9d98171cd29fa89e725b1b5"
+    },
+    "figures/06_two_envelopes.png": {
+      "bytes": 74769,
+      "sha256": "ffcbffaeabe4cfaa7c8b0b8ec591fbc3098e370c6acc2f9567a060e824f4b070"
+    },
+    "figures/07_convex_rate.png": {
+      "bytes": 103660,
+      "sha256": "d58dae5be0fe0c5bcdf6de844966d4d8b44fc4bd5bd386261243dbd093c6b189"
+    },
+    "figures/08_strong_rate.png": {
+      "bytes": 118969,
+      "sha256": "3596bd1569fd6d175a858ab6706112ce90ae1854abe40a53e2f9ccfd3eb6a472"
+    },
+    "figures/09_failed_assumptions.png": {
+      "bytes": 102293,
+      "sha256": "fbfe16e27790c454a0ef8ff233b11fede6967952cb00c1d5ecb4942fc1766960"
+    },
+    "figures/10_evidence_contract.png": {
+      "bytes": 84845,
+      "sha256": "504a7e889f63c821ad8b4326b34e3132468a816e81a77613284e34ebbed153f6"
+    },
+    "figures/11_numerical_limits.png": {
+      "bytes": 110419,
+      "sha256": "f93b87a248e2ef8ecd761ce068c1db49aa50985b1f1722cef1cd957aa39899e6"
+    },
+    "lab.md": {
+      "bytes": 12032,
+      "sha256": "c2f34d6f393036475fdac5274e842d4c0a59525b6cb1185f0d346a55f523b410"
+    },
+    "lab.pdf": {
+      "bytes": 698282,
+      "sha256": "ab7b2c911d1b9289ec72abec88afb71cd7a1b353f88f5d5d08f7a2ce36f07efe"
+    },
+    "lecture.md": {
+      "bytes": 20551,
+      "sha256": "0fd20c0aaa217cfb123c54afc87819fb9654bc81ce7606ae1cb7c2217bf0bb1e"
+    },
+    "lecture.pdf": {
+      "bytes": 1802525,
+      "sha256": "7948372592b2bb38c08097476d0c6a7e99fb249bfba7a6d776356274d39e1cc5"
+    },
+    "outputs/report.json": {
+      "bytes": 168045,
+      "sha256": "8365b4e5e58d7ee80333de1d1bfbceb865bc3a0c58caa822e8e7c976290ec82c"
+    },
+    "requirements.txt": {
+      "bytes": 85,
+      "sha256": "533b9aaddc957ca5b2333759cc410bada66e9baa0b5cc2ee8d67f786a32dc860"
+    },
+    "source-checks.json": {
+      "bytes": 2454,
+      "sha256": "8794ee573c8000e89637f1c46951839b09e51d5ca007fbf275f0853350c02aa1"
+    },
+    "test-result.json": {
+      "bytes": 2999,
+      "sha256": "8d4c0650ce245f6a3c8bde56aab67d412298c272940d311c6e1de5133ad4f98d"
+    }
+  }
+}

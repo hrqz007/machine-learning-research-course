@@ -1,0 +1,6561 @@
+{
+  "unit": "033",
+  "scope": "deterministic synthetic finite mathematical experiments",
+  "configuration": {
+    "kind": "synthetic_smoothness_certificate_demo",
+    "steps": 40,
+    "claimed_L_values": [
+      4.0,
+      8.0,
+      1.0
+    ],
+    "claimed_mu_values": [
+      1.0,
+      0.5,
+      2.0
+    ],
+    "quadratic_rate": 0.25,
+    "convex_rate": 1.0,
+    "nonconvex_rate": 1.0,
+    "convex_initial": 4.0,
+    "nonconvex_initials": [
+      0.0,
+      1.0
+    ],
+    "boundary_rates": [
+      0.5,
+      0.75
+    ],
+    "target_gap": 1e-06
+  },
+  "data": {
+    "coordinates": [
+      "u",
+      "v"
+    ],
+    "curvature": [
+      1.0,
+      4.0
+    ],
+    "initial": [
+      2.0,
+      1.0
+    ]
+  },
+  "quadratic": {
+    "status": "budget_completed",
+    "requested_updates": 40,
+    "updates_completed": 40,
+    "L": 4.0,
+    "mu": 1.0,
+    "eta": 0.25,
+    "safe_rate_for_stated_bounds": true,
+    "descent_strict_when_gradient_nonzero": true,
+    "history": [
+      {
+        "iteration": 0,
+        "w": [
+          2.0,
+          1.0
+        ],
+        "squares": [
+          4.0,
+          1.0
+        ],
+        "loss_contributions": [
+          2.0,
+          2.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            4.0,
+            2.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 4.0,
+        "gradient": [
+          2.0,
+          4.0
+        ],
+        "gradient_squared": 20.0,
+        "gradient_norm": 4.47213595499958,
+        "distance_squared": 5.0,
+        "distance": 2.23606797749979,
+        "update": [
+          -0.5,
+          -1.0
+        ],
+        "descent_upper": 1.5,
+        "descent_slack": 0.375,
+        "potential_upper": 5.5,
+        "convex_bound": null,
+        "strong_bound": 4.0,
+        "minimum_gradient_squared_before_T": null,
+        "nonconvex_gradient_bound": null
+      },
+      {
+        "iteration": 1,
+        "w": [
+          1.5,
+          0.0
+        ],
+        "squares": [
+          2.25,
+          0.0
+        ],
+        "loss_contributions": [
+          1.125,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            3.0,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 1.125,
+        "gradient": [
+          1.5,
+          0.0
+        ],
+        "gradient_squared": 2.25,
+        "gradient_norm": 1.5,
+        "distance_squared": 2.25,
+        "distance": 1.5,
+        "update": [
+          -0.375,
+          -0.0
+        ],
+        "descent_upper": 0.84375,
+        "descent_slack": 0.2109375,
+        "potential_upper": 1.96875,
+        "convex_bound": 10.0,
+        "strong_bound": 3.0,
+        "minimum_gradient_squared_before_T": 20.0,
+        "nonconvex_gradient_bound": 32.0
+      },
+      {
+        "iteration": 2,
+        "w": [
+          1.125,
+          0.0
+        ],
+        "squares": [
+          1.265625,
+          0.0
+        ],
+        "loss_contributions": [
+          0.6328125,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            2.25,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.6328125,
+        "gradient": [
+          1.125,
+          0.0
+        ],
+        "gradient_squared": 1.265625,
+        "gradient_norm": 1.125,
+        "distance_squared": 1.265625,
+        "distance": 1.125,
+        "update": [
+          -0.28125,
+          -0.0
+        ],
+        "descent_upper": 0.474609375,
+        "descent_slack": 0.11865234375,
+        "potential_upper": 1.107421875,
+        "convex_bound": 5.0,
+        "strong_bound": 2.25,
+        "minimum_gradient_squared_before_T": 2.25,
+        "nonconvex_gradient_bound": 16.0
+      },
+      {
+        "iteration": 3,
+        "w": [
+          0.84375,
+          0.0
+        ],
+        "squares": [
+          0.7119140625,
+          0.0
+        ],
+        "loss_contributions": [
+          0.35595703125,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            1.6875,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.35595703125,
+        "gradient": [
+          0.84375,
+          0.0
+        ],
+        "gradient_squared": 0.7119140625,
+        "gradient_norm": 0.84375,
+        "distance_squared": 0.7119140625,
+        "distance": 0.84375,
+        "update": [
+          -0.2109375,
+          -0.0
+        ],
+        "descent_upper": 0.2669677734375,
+        "descent_slack": 0.066741943359375,
+        "potential_upper": 0.6229248046875,
+        "convex_bound": 3.3333333333333335,
+        "strong_bound": 1.6875,
+        "minimum_gradient_squared_before_T": 1.265625,
+        "nonconvex_gradient_bound": 10.666666666666666
+      },
+      {
+        "iteration": 4,
+        "w": [
+          0.6328125,
+          0.0
+        ],
+        "squares": [
+          0.40045166015625,
+          0.0
+        ],
+        "loss_contributions": [
+          0.200225830078125,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            1.265625,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.200225830078125,
+        "gradient": [
+          0.6328125,
+          0.0
+        ],
+        "gradient_squared": 0.40045166015625,
+        "gradient_norm": 0.6328125,
+        "distance_squared": 0.40045166015625,
+        "distance": 0.6328125,
+        "update": [
+          -0.158203125,
+          -0.0
+        ],
+        "descent_upper": 0.15016937255859375,
+        "descent_slack": 0.03754234313964844,
+        "potential_upper": 0.35039520263671875,
+        "convex_bound": 2.5,
+        "strong_bound": 1.265625,
+        "minimum_gradient_squared_before_T": 0.7119140625,
+        "nonconvex_gradient_bound": 8.0
+      },
+      {
+        "iteration": 5,
+        "w": [
+          0.474609375,
+          0.0
+        ],
+        "squares": [
+          0.22525405883789062,
+          0.0
+        ],
+        "loss_contributions": [
+          0.11262702941894531,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.94921875,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.11262702941894531,
+        "gradient": [
+          0.474609375,
+          0.0
+        ],
+        "gradient_squared": 0.22525405883789062,
+        "gradient_norm": 0.474609375,
+        "distance_squared": 0.22525405883789062,
+        "distance": 0.474609375,
+        "update": [
+          -0.11865234375,
+          -0.0
+        ],
+        "descent_upper": 0.08447027206420898,
+        "descent_slack": 0.021117568016052246,
+        "potential_upper": 0.1970973014831543,
+        "convex_bound": 2.0,
+        "strong_bound": 0.94921875,
+        "minimum_gradient_squared_before_T": 0.40045166015625,
+        "nonconvex_gradient_bound": 6.4
+      },
+      {
+        "iteration": 6,
+        "w": [
+          0.35595703125,
+          0.0
+        ],
+        "squares": [
+          0.12670540809631348,
+          0.0
+        ],
+        "loss_contributions": [
+          0.06335270404815674,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.7119140625,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.06335270404815674,
+        "gradient": [
+          0.35595703125,
+          0.0
+        ],
+        "gradient_squared": 0.12670540809631348,
+        "gradient_norm": 0.35595703125,
+        "distance_squared": 0.12670540809631348,
+        "distance": 0.35595703125,
+        "update": [
+          -0.0889892578125,
+          -0.0
+        ],
+        "descent_upper": 0.047514528036117554,
+        "descent_slack": 0.011878632009029388,
+        "potential_upper": 0.11086723208427429,
+        "convex_bound": 1.6666666666666667,
+        "strong_bound": 0.7119140625,
+        "minimum_gradient_squared_before_T": 0.22525405883789062,
+        "nonconvex_gradient_bound": 5.333333333333333
+      },
+      {
+        "iteration": 7,
+        "w": [
+          0.2669677734375,
+          0.0
+        ],
+        "squares": [
+          0.07127179205417633,
+          0.0
+        ],
+        "loss_contributions": [
+          0.035635896027088165,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.533935546875,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.035635896027088165,
+        "gradient": [
+          0.2669677734375,
+          0.0
+        ],
+        "gradient_squared": 0.07127179205417633,
+        "gradient_norm": 0.2669677734375,
+        "distance_squared": 0.07127179205417633,
+        "distance": 0.2669677734375,
+        "update": [
+          -0.066741943359375,
+          -0.0
+        ],
+        "descent_upper": 0.026726922020316124,
+        "descent_slack": 0.006681730505079031,
+        "potential_upper": 0.06236281804740429,
+        "convex_bound": 1.4285714285714286,
+        "strong_bound": 0.533935546875,
+        "minimum_gradient_squared_before_T": 0.12670540809631348,
+        "nonconvex_gradient_bound": 4.571428571428571
+      },
+      {
+        "iteration": 8,
+        "w": [
+          0.200225830078125,
+          0.0
+        ],
+        "squares": [
+          0.040090383030474186,
+          0.0
+        ],
+        "loss_contributions": [
+          0.020045191515237093,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.40045166015625,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.020045191515237093,
+        "gradient": [
+          0.200225830078125,
+          0.0
+        ],
+        "gradient_squared": 0.040090383030474186,
+        "gradient_norm": 0.200225830078125,
+        "distance_squared": 0.040090383030474186,
+        "distance": 0.200225830078125,
+        "update": [
+          -0.05005645751953125,
+          -0.0
+        ],
+        "descent_upper": 0.01503389363642782,
+        "descent_slack": 0.003758473409106955,
+        "potential_upper": 0.03507908515166491,
+        "convex_bound": 1.25,
+        "strong_bound": 0.40045166015625,
+        "minimum_gradient_squared_before_T": 0.07127179205417633,
+        "nonconvex_gradient_bound": 4.0
+      },
+      {
+        "iteration": 9,
+        "w": [
+          0.15016937255859375,
+          0.0
+        ],
+        "squares": [
+          0.02255084045464173,
+          0.0
+        ],
+        "loss_contributions": [
+          0.011275420227320865,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.3003387451171875,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.011275420227320865,
+        "gradient": [
+          0.15016937255859375,
+          0.0
+        ],
+        "gradient_squared": 0.02255084045464173,
+        "gradient_norm": 0.15016937255859375,
+        "distance_squared": 0.02255084045464173,
+        "distance": 0.15016937255859375,
+        "update": [
+          -0.03754234313964844,
+          -0.0
+        ],
+        "descent_upper": 0.008456565170490649,
+        "descent_slack": 0.002114141292622662,
+        "potential_upper": 0.019731985397811513,
+        "convex_bound": 1.1111111111111112,
+        "strong_bound": 0.3003387451171875,
+        "minimum_gradient_squared_before_T": 0.040090383030474186,
+        "nonconvex_gradient_bound": 3.5555555555555554
+      },
+      {
+        "iteration": 10,
+        "w": [
+          0.11262702941894531,
+          0.0
+        ],
+        "squares": [
+          0.012684847755735973,
+          0.0
+        ],
+        "loss_contributions": [
+          0.0063424238778679864,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.22525405883789062,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.0063424238778679864,
+        "gradient": [
+          0.11262702941894531,
+          0.0
+        ],
+        "gradient_squared": 0.012684847755735973,
+        "gradient_norm": 0.11262702941894531,
+        "distance_squared": 0.012684847755735973,
+        "distance": 0.11262702941894531,
+        "update": [
+          -0.028156757354736328,
+          -0.0
+        ],
+        "descent_upper": 0.00475681790840099,
+        "descent_slack": 0.0011892044771002475,
+        "potential_upper": 0.011099241786268976,
+        "convex_bound": 1.0,
+        "strong_bound": 0.22525405883789062,
+        "minimum_gradient_squared_before_T": 0.02255084045464173,
+        "nonconvex_gradient_bound": 3.2
+      },
+      {
+        "iteration": 11,
+        "w": [
+          0.08447027206420898,
+          0.0
+        ],
+        "squares": [
+          0.007135226862601485,
+          0.0
+        ],
+        "loss_contributions": [
+          0.0035676134313007424,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.16894054412841797,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.0035676134313007424,
+        "gradient": [
+          0.08447027206420898,
+          0.0
+        ],
+        "gradient_squared": 0.007135226862601485,
+        "gradient_norm": 0.08447027206420898,
+        "distance_squared": 0.007135226862601485,
+        "distance": 0.08447027206420898,
+        "update": [
+          -0.021117568016052246,
+          -0.0
+        ],
+        "descent_upper": 0.0026757100734755568,
+        "descent_slack": 0.0006689275183688892,
+        "potential_upper": 0.006243323504776299,
+        "convex_bound": 0.9090909090909091,
+        "strong_bound": 0.16894054412841797,
+        "minimum_gradient_squared_before_T": 0.012684847755735973,
+        "nonconvex_gradient_bound": 2.909090909090909
+      },
+      {
+        "iteration": 12,
+        "w": [
+          0.06335270404815674,
+          0.0
+        ],
+        "squares": [
+          0.004013565110213335,
+          0.0
+        ],
+        "loss_contributions": [
+          0.0020067825551066676,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.12670540809631348,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.0020067825551066676,
+        "gradient": [
+          0.06335270404815674,
+          0.0
+        ],
+        "gradient_squared": 0.004013565110213335,
+        "gradient_norm": 0.06335270404815674,
+        "distance_squared": 0.004013565110213335,
+        "distance": 0.06335270404815674,
+        "update": [
+          -0.015838176012039185,
+          -0.0
+        ],
+        "descent_upper": 0.0015050869163300007,
+        "descent_slack": 0.00037627172908250017,
+        "potential_upper": 0.0035118694714366683,
+        "convex_bound": 0.8333333333333334,
+        "strong_bound": 0.12670540809631348,
+        "minimum_gradient_squared_before_T": 0.007135226862601485,
+        "nonconvex_gradient_bound": 2.6666666666666665
+      },
+      {
+        "iteration": 13,
+        "w": [
+          0.047514528036117554,
+          0.0
+        ],
+        "squares": [
+          0.002257630374495001,
+          0.0
+        ],
+        "loss_contributions": [
+          0.0011288151872475005,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.09502905607223511,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.0011288151872475005,
+        "gradient": [
+          0.047514528036117554,
+          0.0
+        ],
+        "gradient_squared": 0.002257630374495001,
+        "gradient_norm": 0.047514528036117554,
+        "distance_squared": 0.002257630374495001,
+        "distance": 0.047514528036117554,
+        "update": [
+          -0.011878632009029388,
+          -0.0
+        ],
+        "descent_upper": 0.0008466113904356254,
+        "descent_slack": 0.00021165284760890635,
+        "potential_upper": 0.001975426577683126,
+        "convex_bound": 0.7692307692307693,
+        "strong_bound": 0.09502905607223511,
+        "minimum_gradient_squared_before_T": 0.004013565110213335,
+        "nonconvex_gradient_bound": 2.4615384615384617
+      },
+      {
+        "iteration": 14,
+        "w": [
+          0.035635896027088165,
+          0.0
+        ],
+        "squares": [
+          0.001269917085653438,
+          0.0
+        ],
+        "loss_contributions": [
+          0.000634958542826719,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.07127179205417633,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.000634958542826719,
+        "gradient": [
+          0.035635896027088165,
+          0.0
+        ],
+        "gradient_squared": 0.001269917085653438,
+        "gradient_norm": 0.035635896027088165,
+        "distance_squared": 0.001269917085653438,
+        "distance": 0.035635896027088165,
+        "update": [
+          -0.008908974006772041,
+          -0.0
+        ],
+        "descent_upper": 0.0004762189071200393,
+        "descent_slack": 0.00011905472678000982,
+        "potential_upper": 0.0011111774499467583,
+        "convex_bound": 0.7142857142857143,
+        "strong_bound": 0.07127179205417633,
+        "minimum_gradient_squared_before_T": 0.002257630374495001,
+        "nonconvex_gradient_bound": 2.2857142857142856
+      },
+      {
+        "iteration": 15,
+        "w": [
+          0.026726922020316124,
+          0.0
+        ],
+        "squares": [
+          0.0007143283606800589,
+          0.0
+        ],
+        "loss_contributions": [
+          0.00035716418034002946,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.05345384404063225,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.00035716418034002946,
+        "gradient": [
+          0.026726922020316124,
+          0.0
+        ],
+        "gradient_squared": 0.0007143283606800589,
+        "gradient_norm": 0.026726922020316124,
+        "distance_squared": 0.0007143283606800589,
+        "distance": 0.026726922020316124,
+        "update": [
+          -0.006681730505079031,
+          -0.0
+        ],
+        "descent_upper": 0.0002678731352550221,
+        "descent_slack": 6.696828381375552e-05,
+        "potential_upper": 0.0006250373155950516,
+        "convex_bound": 0.6666666666666666,
+        "strong_bound": 0.05345384404063225,
+        "minimum_gradient_squared_before_T": 0.001269917085653438,
+        "nonconvex_gradient_bound": 2.1333333333333333
+      },
+      {
+        "iteration": 16,
+        "w": [
+          0.020045191515237093,
+          0.0
+        ],
+        "squares": [
+          0.00040180970288253314,
+          0.0
+        ],
+        "loss_contributions": [
+          0.00020090485144126657,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.040090383030474186,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.00020090485144126657,
+        "gradient": [
+          0.020045191515237093,
+          0.0
+        ],
+        "gradient_squared": 0.00040180970288253314,
+        "gradient_norm": 0.020045191515237093,
+        "distance_squared": 0.00040180970288253314,
+        "distance": 0.020045191515237093,
+        "update": [
+          -0.005011297878809273,
+          -0.0
+        ],
+        "descent_upper": 0.00015067863858094993,
+        "descent_slack": 3.766965964523749e-05,
+        "potential_upper": 0.00035158349002221653,
+        "convex_bound": 0.625,
+        "strong_bound": 0.040090383030474186,
+        "minimum_gradient_squared_before_T": 0.0007143283606800589,
+        "nonconvex_gradient_bound": 2.0
+      },
+      {
+        "iteration": 17,
+        "w": [
+          0.01503389363642782,
+          0.0
+        ],
+        "squares": [
+          0.00022601795787142488,
+          0.0
+        ],
+        "loss_contributions": [
+          0.00011300897893571244,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.03006778727285564,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 0.00011300897893571244,
+        "gradient": [
+          0.01503389363642782,
+          0.0
+        ],
+        "gradient_squared": 0.00022601795787142488,
+        "gradient_norm": 0.01503389363642782,
+        "distance_squared": 0.00022601795787142488,
+        "distance": 0.01503389363642782,
+        "update": [
+          -0.003758473409106955,
+          -0.0
+        ],
+        "descent_upper": 8.475673420178433e-05,
+        "descent_slack": 2.1189183550446072e-05,
+        "potential_upper": 0.00019776571313749673,
+        "convex_bound": 0.5882352941176471,
+        "strong_bound": 0.03006778727285564,
+        "minimum_gradient_squared_before_T": 0.00040180970288253314,
+        "nonconvex_gradient_bound": 1.8823529411764706
+      },
+      {
+        "iteration": 18,
+        "w": [
+          0.011275420227320865,
+          0.0
+        ],
+        "squares": [
+          0.00012713510130267652,
+          0.0
+        ],
+        "loss_contributions": [
+          6.356755065133826e-05,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.02255084045464173,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 6.356755065133826e-05,
+        "gradient": [
+          0.011275420227320865,
+          0.0
+        ],
+        "gradient_squared": 0.00012713510130267652,
+        "gradient_norm": 0.011275420227320865,
+        "distance_squared": 0.00012713510130267652,
+        "distance": 0.011275420227320865,
+        "update": [
+          -0.002818855056830216,
+          -0.0
+        ],
+        "descent_upper": 4.767566298850369e-05,
+        "descent_slack": 1.1918915747125926e-05,
+        "potential_upper": 0.00011124321363984197,
+        "convex_bound": 0.5555555555555556,
+        "strong_bound": 0.02255084045464173,
+        "minimum_gradient_squared_before_T": 0.00022601795787142488,
+        "nonconvex_gradient_bound": 1.7777777777777777
+      },
+      {
+        "iteration": 19,
+        "w": [
+          0.008456565170490649,
+          0.0
+        ],
+        "squares": [
+          7.151349448275553e-05,
+          0.0
+        ],
+        "loss_contributions": [
+          3.5756747241377764e-05,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.016913130340981297,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 3.5756747241377764e-05,
+        "gradient": [
+          0.008456565170490649,
+          0.0
+        ],
+        "gradient_squared": 7.151349448275553e-05,
+        "gradient_norm": 0.008456565170490649,
+        "distance_squared": 7.151349448275553e-05,
+        "distance": 0.008456565170490649,
+        "update": [
+          -0.002114141292622662,
+          -0.0
+        ],
+        "descent_upper": 2.6817560431033325e-05,
+        "descent_slack": 6.704390107758331e-06,
+        "potential_upper": 6.257430767241108e-05,
+        "convex_bound": 0.5263157894736842,
+        "strong_bound": 0.016913130340981297,
+        "minimum_gradient_squared_before_T": 0.00012713510130267652,
+        "nonconvex_gradient_bound": 1.6842105263157894
+      },
+      {
+        "iteration": 20,
+        "w": [
+          0.0063424238778679864,
+          0.0
+        ],
+        "squares": [
+          4.022634064654999e-05,
+          0.0
+        ],
+        "loss_contributions": [
+          2.0113170323274993e-05,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.012684847755735973,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 2.0113170323274993e-05,
+        "gradient": [
+          0.0063424238778679864,
+          0.0
+        ],
+        "gradient_squared": 4.022634064654999e-05,
+        "gradient_norm": 0.0063424238778679864,
+        "distance_squared": 4.022634064654999e-05,
+        "distance": 0.0063424238778679864,
+        "update": [
+          -0.0015856059694669966,
+          -0.0
+        ],
+        "descent_upper": 1.5084877742456246e-05,
+        "descent_slack": 3.7712194356140615e-06,
+        "potential_upper": 3.5198048065731236e-05,
+        "convex_bound": 0.5,
+        "strong_bound": 0.012684847755735973,
+        "minimum_gradient_squared_before_T": 7.151349448275553e-05,
+        "nonconvex_gradient_bound": 1.6
+      },
+      {
+        "iteration": 21,
+        "w": [
+          0.00475681790840099,
+          0.0
+        ],
+        "squares": [
+          2.262731661368437e-05,
+          0.0
+        ],
+        "loss_contributions": [
+          1.1313658306842184e-05,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.00951363581680198,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 1.1313658306842184e-05,
+        "gradient": [
+          0.00475681790840099,
+          0.0
+        ],
+        "gradient_squared": 2.262731661368437e-05,
+        "gradient_norm": 0.00475681790840099,
+        "distance_squared": 2.262731661368437e-05,
+        "distance": 0.00475681790840099,
+        "update": [
+          -0.0011892044771002475,
+          -0.0
+        ],
+        "descent_upper": 8.485243730131639e-06,
+        "descent_slack": 2.1213109325329105e-06,
+        "potential_upper": 1.9798902036973825e-05,
+        "convex_bound": 0.47619047619047616,
+        "strong_bound": 0.00951363581680198,
+        "minimum_gradient_squared_before_T": 4.022634064654999e-05,
+        "nonconvex_gradient_bound": 1.5238095238095237
+      },
+      {
+        "iteration": 22,
+        "w": [
+          0.0035676134313007424,
+          0.0
+        ],
+        "squares": [
+          1.2727865595197456e-05,
+          0.0
+        ],
+        "loss_contributions": [
+          6.363932797598728e-06,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.007135226862601485,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 6.363932797598728e-06,
+        "gradient": [
+          0.0035676134313007424,
+          0.0
+        ],
+        "gradient_squared": 1.2727865595197456e-05,
+        "gradient_norm": 0.0035676134313007424,
+        "distance_squared": 1.2727865595197456e-05,
+        "distance": 0.0035676134313007424,
+        "update": [
+          -0.0008919033578251856,
+          -0.0
+        ],
+        "descent_upper": 4.772949598199046e-06,
+        "descent_slack": 1.1932373995497613e-06,
+        "potential_upper": 1.1136882395797774e-05,
+        "convex_bound": 0.45454545454545453,
+        "strong_bound": 0.007135226862601485,
+        "minimum_gradient_squared_before_T": 2.262731661368437e-05,
+        "nonconvex_gradient_bound": 1.4545454545454546
+      },
+      {
+        "iteration": 23,
+        "w": [
+          0.0026757100734755568,
+          0.0
+        ],
+        "squares": [
+          7.15942439729857e-06,
+          0.0
+        ],
+        "loss_contributions": [
+          3.579712198649285e-06,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0053514201469511136,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 3.579712198649285e-06,
+        "gradient": [
+          0.0026757100734755568,
+          0.0
+        ],
+        "gradient_squared": 7.15942439729857e-06,
+        "gradient_norm": 0.0026757100734755568,
+        "distance_squared": 7.15942439729857e-06,
+        "distance": 0.0026757100734755568,
+        "update": [
+          -0.0006689275183688892,
+          -0.0
+        ],
+        "descent_upper": 2.6847841489869634e-06,
+        "descent_slack": 6.711960372467406e-07,
+        "potential_upper": 6.264496347636248e-06,
+        "convex_bound": 0.43478260869565216,
+        "strong_bound": 0.0053514201469511136,
+        "minimum_gradient_squared_before_T": 1.2727865595197456e-05,
+        "nonconvex_gradient_bound": 1.391304347826087
+      },
+      {
+        "iteration": 24,
+        "w": [
+          0.0020067825551066676,
+          0.0
+        ],
+        "squares": [
+          4.0271762234804456e-06,
+          0.0
+        ],
+        "loss_contributions": [
+          2.0135881117402228e-06,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.004013565110213335,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 2.0135881117402228e-06,
+        "gradient": [
+          0.0020067825551066676,
+          0.0
+        ],
+        "gradient_squared": 4.0271762234804456e-06,
+        "gradient_norm": 0.0020067825551066676,
+        "distance_squared": 4.0271762234804456e-06,
+        "distance": 0.0020067825551066676,
+        "update": [
+          -0.0005016956387766669,
+          -0.0
+        ],
+        "descent_upper": 1.510191083805167e-06,
+        "descent_slack": 3.7754777095129174e-07,
+        "potential_upper": 3.52377919554539e-06,
+        "convex_bound": 0.4166666666666667,
+        "strong_bound": 0.004013565110213335,
+        "minimum_gradient_squared_before_T": 7.15942439729857e-06,
+        "nonconvex_gradient_bound": 1.3333333333333333
+      },
+      {
+        "iteration": 25,
+        "w": [
+          0.0015050869163300007,
+          0.0
+        ],
+        "squares": [
+          2.2652866257077505e-06,
+          0.0
+        ],
+        "loss_contributions": [
+          1.1326433128538752e-06,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0030101738326600014,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 1.1326433128538752e-06,
+        "gradient": [
+          0.0015050869163300007,
+          0.0
+        ],
+        "gradient_squared": 2.2652866257077505e-06,
+        "gradient_norm": 0.0015050869163300007,
+        "distance_squared": 2.2652866257077505e-06,
+        "distance": 0.0015050869163300007,
+        "update": [
+          -0.00037627172908250017,
+          -0.0
+        ],
+        "descent_upper": 8.494824846404064e-07,
+        "descent_slack": 2.1237062116010163e-07,
+        "potential_upper": 1.9821257974942818e-06,
+        "convex_bound": 0.4,
+        "strong_bound": 0.0030101738326600014,
+        "minimum_gradient_squared_before_T": 4.0271762234804456e-06,
+        "nonconvex_gradient_bound": 1.28
+      },
+      {
+        "iteration": 26,
+        "w": [
+          0.0011288151872475005,
+          0.0
+        ],
+        "squares": [
+          1.2742237269606096e-06,
+          0.0
+        ],
+        "loss_contributions": [
+          6.371118634803048e-07,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.002257630374495001,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 6.371118634803048e-07,
+        "gradient": [
+          0.0011288151872475005,
+          0.0
+        ],
+        "gradient_squared": 1.2742237269606096e-06,
+        "gradient_norm": 0.0011288151872475005,
+        "distance_squared": 1.2742237269606096e-06,
+        "distance": 0.0011288151872475005,
+        "update": [
+          -0.00028220379681187513,
+          -0.0
+        ],
+        "descent_upper": 4.778338976102286e-07,
+        "descent_slack": 1.1945847440255713e-07,
+        "potential_upper": 1.1149457610905332e-06,
+        "convex_bound": 0.38461538461538464,
+        "strong_bound": 0.002257630374495001,
+        "minimum_gradient_squared_before_T": 2.2652866257077505e-06,
+        "nonconvex_gradient_bound": 1.2307692307692308
+      },
+      {
+        "iteration": 27,
+        "w": [
+          0.0008466113904356254,
+          0.0
+        ],
+        "squares": [
+          7.16750846415343e-07,
+          0.0
+        ],
+        "loss_contributions": [
+          3.583754232076715e-07,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0016932227808712508,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 3.583754232076715e-07,
+        "gradient": [
+          0.0008466113904356254,
+          0.0
+        ],
+        "gradient_squared": 7.16750846415343e-07,
+        "gradient_norm": 0.0008466113904356254,
+        "distance_squared": 7.16750846415343e-07,
+        "distance": 0.0008466113904356254,
+        "update": [
+          -0.00021165284760890635,
+          -0.0
+        ],
+        "descent_upper": 2.6878156740575363e-07,
+        "descent_slack": 6.719539185143842e-08,
+        "potential_upper": 6.271569906134251e-07,
+        "convex_bound": 0.37037037037037035,
+        "strong_bound": 0.0016932227808712508,
+        "minimum_gradient_squared_before_T": 1.2742237269606096e-06,
+        "nonconvex_gradient_bound": 1.1851851851851851
+      },
+      {
+        "iteration": 28,
+        "w": [
+          0.000634958542826719,
+          0.0
+        ],
+        "squares": [
+          4.031723511086304e-07,
+          0.0
+        ],
+        "loss_contributions": [
+          2.015861755543152e-07,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.001269917085653438,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 2.015861755543152e-07,
+        "gradient": [
+          0.000634958542826719,
+          0.0
+        ],
+        "gradient_squared": 4.031723511086304e-07,
+        "gradient_norm": 0.000634958542826719,
+        "distance_squared": 4.031723511086304e-07,
+        "distance": 0.000634958542826719,
+        "update": [
+          -0.00015873963570667976,
+          -0.0
+        ],
+        "descent_upper": 1.511896316657364e-07,
+        "descent_slack": 3.77974079164341e-08,
+        "potential_upper": 3.5277580722005164e-07,
+        "convex_bound": 0.35714285714285715,
+        "strong_bound": 0.001269917085653438,
+        "minimum_gradient_squared_before_T": 7.16750846415343e-07,
+        "nonconvex_gradient_bound": 1.1428571428571428
+      },
+      {
+        "iteration": 29,
+        "w": [
+          0.0004762189071200393,
+          0.0
+        ],
+        "squares": [
+          2.267844474986046e-07,
+          0.0
+        ],
+        "loss_contributions": [
+          1.133922237493023e-07,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0009524378142400786,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 1.133922237493023e-07,
+        "gradient": [
+          0.0004762189071200393,
+          0.0
+        ],
+        "gradient_squared": 2.267844474986046e-07,
+        "gradient_norm": 0.0004762189071200393,
+        "distance_squared": 2.267844474986046e-07,
+        "distance": 0.0004762189071200393,
+        "update": [
+          -0.00011905472678000982,
+          -0.0
+        ],
+        "descent_upper": 8.504416781197673e-08,
+        "descent_slack": 2.1261041952994186e-08,
+        "potential_upper": 1.9843639156127903e-07,
+        "convex_bound": 0.3448275862068966,
+        "strong_bound": 0.0009524378142400786,
+        "minimum_gradient_squared_before_T": 4.031723511086304e-07,
+        "nonconvex_gradient_bound": 1.103448275862069
+      },
+      {
+        "iteration": 30,
+        "w": [
+          0.00035716418034002946,
+          0.0
+        ],
+        "squares": [
+          1.275662517179651e-07,
+          0.0
+        ],
+        "loss_contributions": [
+          6.378312585898254e-08,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0007143283606800589,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 6.378312585898254e-08,
+        "gradient": [
+          0.00035716418034002946,
+          0.0
+        ],
+        "gradient_squared": 1.275662517179651e-07,
+        "gradient_norm": 0.00035716418034002946,
+        "distance_squared": 1.275662517179651e-07,
+        "distance": 0.00035716418034002946,
+        "update": [
+          -8.929104508500737e-05,
+          -0.0
+        ],
+        "descent_upper": 4.783734439423691e-08,
+        "descent_slack": 1.1959336098559228e-08,
+        "potential_upper": 1.1162047025321944e-07,
+        "convex_bound": 0.3333333333333333,
+        "strong_bound": 0.0007143283606800589,
+        "minimum_gradient_squared_before_T": 2.267844474986046e-07,
+        "nonconvex_gradient_bound": 1.0666666666666667
+      },
+      {
+        "iteration": 31,
+        "w": [
+          0.0002678731352550221,
+          0.0
+        ],
+        "squares": [
+          7.175601659135537e-08,
+          0.0
+        ],
+        "loss_contributions": [
+          3.587800829567768e-08,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0005357462705100442,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 3.587800829567768e-08,
+        "gradient": [
+          0.0002678731352550221,
+          0.0
+        ],
+        "gradient_squared": 7.175601659135537e-08,
+        "gradient_norm": 0.0002678731352550221,
+        "distance_squared": 7.175601659135537e-08,
+        "distance": 0.0002678731352550221,
+        "update": [
+          -6.696828381375552e-05,
+          -0.0
+        ],
+        "descent_upper": 2.6908506221758262e-08,
+        "descent_slack": 6.727126555439567e-09,
+        "potential_upper": 6.278651451743595e-08,
+        "convex_bound": 0.3225806451612903,
+        "strong_bound": 0.0005357462705100442,
+        "minimum_gradient_squared_before_T": 1.275662517179651e-07,
+        "nonconvex_gradient_bound": 1.032258064516129
+      },
+      {
+        "iteration": 32,
+        "w": [
+          0.00020090485144126657,
+          0.0
+        ],
+        "squares": [
+          4.036275933263739e-08,
+          0.0
+        ],
+        "loss_contributions": [
+          2.0181379666318695e-08,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.00040180970288253314,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 2.0181379666318695e-08,
+        "gradient": [
+          0.00020090485144126657,
+          0.0
+        ],
+        "gradient_squared": 4.036275933263739e-08,
+        "gradient_norm": 0.00020090485144126657,
+        "distance_squared": 4.036275933263739e-08,
+        "distance": 0.00020090485144126657,
+        "update": [
+          -5.022621286031664e-05,
+          -0.0
+        ],
+        "descent_upper": 1.5136034749739022e-08,
+        "descent_slack": 3.784008687434756e-09,
+        "potential_upper": 3.531741441605772e-08,
+        "convex_bound": 0.3125,
+        "strong_bound": 0.00040180970288253314,
+        "minimum_gradient_squared_before_T": 7.175601659135537e-08,
+        "nonconvex_gradient_bound": 1.0
+      },
+      {
+        "iteration": 33,
+        "w": [
+          0.00015067863858094993,
+          0.0
+        ],
+        "squares": [
+          2.270405212460853e-08,
+          0.0
+        ],
+        "loss_contributions": [
+          1.1352026062304266e-08,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.00030135727716189986,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 1.1352026062304266e-08,
+        "gradient": [
+          0.00015067863858094993,
+          0.0
+        ],
+        "gradient_squared": 2.270405212460853e-08,
+        "gradient_norm": 0.00015067863858094993,
+        "distance_squared": 2.270405212460853e-08,
+        "distance": 0.00015067863858094993,
+        "update": [
+          -3.766965964523748e-05,
+          -0.0
+        ],
+        "descent_upper": 8.5140195467282e-09,
+        "descent_slack": 2.1285048866820503e-09,
+        "potential_upper": 1.9866045609032467e-08,
+        "convex_bound": 0.30303030303030304,
+        "strong_bound": 0.00030135727716189986,
+        "minimum_gradient_squared_before_T": 4.036275933263739e-08,
+        "nonconvex_gradient_bound": 0.9696969696969697
+      },
+      {
+        "iteration": 34,
+        "w": [
+          0.00011300897893571244,
+          0.0
+        ],
+        "squares": [
+          1.2771029320092298e-08,
+          0.0
+        ],
+        "loss_contributions": [
+          6.385514660046149e-09,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.00022601795787142488,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 6.385514660046149e-09,
+        "gradient": [
+          0.00011300897893571244,
+          0.0
+        ],
+        "gradient_squared": 1.2771029320092298e-08,
+        "gradient_norm": 0.00011300897893571244,
+        "distance_squared": 1.2771029320092298e-08,
+        "distance": 0.00011300897893571244,
+        "update": [
+          -2.825224473392811e-05,
+          -0.0
+        ],
+        "descent_upper": 4.789135995034612e-09,
+        "descent_slack": 1.1972839987586532e-09,
+        "potential_upper": 1.1174650655080761e-08,
+        "convex_bound": 0.29411764705882354,
+        "strong_bound": 0.00022601795787142488,
+        "minimum_gradient_squared_before_T": 2.270405212460853e-08,
+        "nonconvex_gradient_bound": 0.9411764705882353
+      },
+      {
+        "iteration": 35,
+        "w": [
+          8.475673420178433e-05,
+          0.0
+        ],
+        "squares": [
+          7.183703992551918e-09,
+          0.0
+        ],
+        "loss_contributions": [
+          3.591851996275959e-09,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.00016951346840356866,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 3.591851996275959e-09,
+        "gradient": [
+          8.475673420178433e-05,
+          0.0
+        ],
+        "gradient_squared": 7.183703992551918e-09,
+        "gradient_norm": 8.475673420178433e-05,
+        "distance_squared": 7.183703992551918e-09,
+        "distance": 8.475673420178433e-05,
+        "update": [
+          -2.1189183550446082e-05,
+          -0.0
+        ],
+        "descent_upper": 2.693888997206969e-09,
+        "descent_slack": 6.734722493017426e-10,
+        "potential_upper": 6.2857409934829295e-09,
+        "convex_bound": 0.2857142857142857,
+        "strong_bound": 0.00016951346840356866,
+        "minimum_gradient_squared_before_T": 1.2771029320092298e-08,
+        "nonconvex_gradient_bound": 0.9142857142857143
+      },
+      {
+        "iteration": 36,
+        "w": [
+          6.356755065133824e-05,
+          0.0
+        ],
+        "squares": [
+          4.040833495810453e-09,
+          0.0
+        ],
+        "loss_contributions": [
+          2.0204167479052265e-09,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            0.0001271351013026765,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 2.0204167479052265e-09,
+        "gradient": [
+          6.356755065133824e-05,
+          0.0
+        ],
+        "gradient_squared": 4.040833495810453e-09,
+        "gradient_norm": 6.356755065133824e-05,
+        "distance_squared": 4.040833495810453e-09,
+        "distance": 6.356755065133824e-05,
+        "update": [
+          -1.589188766283456e-05,
+          -0.0
+        ],
+        "descent_upper": 1.5153125609289197e-09,
+        "descent_slack": 3.7882814023222973e-10,
+        "potential_upper": 3.5357293088341458e-09,
+        "convex_bound": 0.2777777777777778,
+        "strong_bound": 0.00012713510130267652,
+        "minimum_gradient_squared_before_T": 7.183703992551918e-09,
+        "nonconvex_gradient_bound": 0.8888888888888888
+      },
+      {
+        "iteration": 37,
+        "w": [
+          4.767566298850368e-05,
+          0.0
+        ],
+        "squares": [
+          2.27296884139338e-09,
+          0.0
+        ],
+        "loss_contributions": [
+          1.13648442069669e-09,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            9.535132597700737e-05,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 1.13648442069669e-09,
+        "gradient": [
+          4.767566298850368e-05,
+          0.0
+        ],
+        "gradient_squared": 2.27296884139338e-09,
+        "gradient_norm": 4.767566298850368e-05,
+        "distance_squared": 2.27296884139338e-09,
+        "distance": 4.767566298850368e-05,
+        "update": [
+          -1.191891574712592e-05,
+          -0.0
+        ],
+        "descent_upper": 8.523633155225175e-10,
+        "descent_slack": 2.1309082888062932e-10,
+        "potential_upper": 1.9888477362192073e-09,
+        "convex_bound": 0.2702702702702703,
+        "strong_bound": 9.535132597700738e-05,
+        "minimum_gradient_squared_before_T": 4.040833495810453e-09,
+        "nonconvex_gradient_bound": 0.8648648648648649
+      },
+      {
+        "iteration": 38,
+        "w": [
+          3.5756747241377764e-05,
+          0.0
+        ],
+        "squares": [
+          1.2785449732837764e-09,
+          0.0
+        ],
+        "loss_contributions": [
+          6.392724866418882e-10,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            7.151349448275553e-05,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 6.392724866418882e-10,
+        "gradient": [
+          3.5756747241377764e-05,
+          0.0
+        ],
+        "gradient_squared": 1.2785449732837764e-09,
+        "gradient_norm": 3.5756747241377764e-05,
+        "distance_squared": 1.2785449732837764e-09,
+        "distance": 3.5756747241377764e-05,
+        "update": [
+          -8.939186810344441e-06,
+          -0.0
+        ],
+        "descent_upper": 4.794543649814161e-10,
+        "descent_slack": 1.1986359124535397e-10,
+        "potential_upper": 1.1187268516233043e-09,
+        "convex_bound": 0.2631578947368421,
+        "strong_bound": 7.151349448275553e-05,
+        "minimum_gradient_squared_before_T": 2.27296884139338e-09,
+        "nonconvex_gradient_bound": 0.8421052631578947
+      },
+      {
+        "iteration": 39,
+        "w": [
+          2.6817560431033325e-05,
+          0.0
+        ],
+        "squares": [
+          7.191815474721242e-10,
+          0.0
+        ],
+        "loss_contributions": [
+          3.595907737360621e-10,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            5.363512086206665e-05,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 3.595907737360621e-10,
+        "gradient": [
+          2.6817560431033325e-05,
+          0.0
+        ],
+        "gradient_squared": 7.191815474721242e-10,
+        "gradient_norm": 2.6817560431033325e-05,
+        "distance_squared": 7.191815474721242e-10,
+        "distance": 2.6817560431033325e-05,
+        "update": [
+          -6.704390107758331e-06,
+          -0.0
+        ],
+        "descent_upper": 2.696930803020466e-10,
+        "descent_slack": 6.742327007551164e-11,
+        "potential_upper": 6.292838540381086e-10,
+        "convex_bound": 0.2564102564102564,
+        "strong_bound": 5.363512086206665e-05,
+        "minimum_gradient_squared_before_T": 1.2785449732837764e-09,
+        "nonconvex_gradient_bound": 0.8205128205128205
+      },
+      {
+        "iteration": 40,
+        "w": [
+          2.0113170323274993e-05,
+          0.0
+        ],
+        "squares": [
+          4.045396204530699e-10,
+          0.0
+        ],
+        "loss_contributions": [
+          2.0226981022653496e-10,
+          0.0
+        ],
+        "local_derivatives": {
+          "square_wrt_coordinate": [
+            4.022634064654999e-05,
+            0.0
+          ],
+          "contribution_wrt_square": [
+            0.5,
+            2.0
+          ],
+          "sum_wrt_contribution": [
+            1.0,
+            1.0
+          ]
+        },
+        "value": 2.0226981022653496e-10,
+        "gradient": [
+          2.0113170323274993e-05,
+          0.0
+        ],
+        "gradient_squared": 4.045396204530699e-10,
+        "gradient_norm": 2.0113170323274993e-05,
+        "distance_squared": 4.045396204530699e-10,
+        "distance": 2.0113170323274993e-05,
+        "convex_bound": 0.25,
+        "strong_bound": 4.022634064654999e-05,
+        "minimum_gradient_squared_before_T": 7.191815474721242e-10,
+        "nonconvex_gradient_bound": 0.8
+      }
+    ]
+  },
+  "convex": {
+    "kind": "convex",
+    "status": "numeric_range_limit",
+    "status_detail": "stable convex update overflow or nonzero underflow; proposed state not appended and no zero value invented.",
+    "requested_updates": 40,
+    "updates_completed": 9,
+    "L": 1,
+    "mu": null,
+    "eta": 1.0,
+    "global_convex": true,
+    "global_strong_convex": false,
+    "analytic_stationary_extension": null,
+    "history": [
+      {
+        "iteration": 0,
+        "w": 4.0,
+        "square": 16.0,
+        "root": 4.123105625617661,
+        "value": 3.1231056256176606,
+        "gradient": 0.9701425001453319,
+        "gradient_squared": 0.9411764705882353,
+        "gradient_norm": 0.9701425001453319,
+        "distance": 4.0,
+        "distance_squared": 16.0,
+        "update": -0.9701425001453319,
+        "descent_upper": 2.652517390323543,
+        "descent_upper_naive_diagnostic": 2.652517390323543,
+        "descent_slack": 0.46190044850404854,
+        "convex_bound": null,
+        "minimum_gradient_squared_before_T": null,
+        "nonconvex_gradient_bound": null
+      },
+      {
+        "iteration": 1,
+        "w": 3.029857499854668,
+        "square": 9.18003646942558,
+        "root": 3.190616941819494,
+        "value": 2.1906169418194943,
+        "gradient": 0.9496149350121765,
+        "gradient_squared": 0.9017685247981803,
+        "gradient_norm": 0.9496149350121765,
+        "distance": 3.029857499854668,
+        "distance_squared": 9.18003646942558,
+        "update": -0.9496149350121765,
+        "descent_upper": 1.7397326794204042,
+        "descent_upper_naive_diagnostic": 1.7397326794204042,
+        "descent_slack": 0.4316145869947876,
+        "convex_bound": 8.0,
+        "minimum_gradient_squared_before_T": 0.9411764705882353,
+        "nonconvex_gradient_bound": 6.246211251235321
+      },
+      {
+        "iteration": 2,
+        "w": 2.0802425648424916,
+        "square": 4.327409128582468,
+        "root": 2.308118092425617,
+        "value": 1.3081180924256166,
+        "gradient": 0.9012721539981304,
+        "gradient_squared": 0.8122914955724297,
+        "gradient_norm": 0.9012721539981304,
+        "distance": 2.0802425648424916,
+        "distance_squared": 4.327409128582468,
+        "update": -0.9012721539981305,
+        "descent_upper": 0.9019723446394017,
+        "descent_upper_naive_diagnostic": 0.9019723446394017,
+        "descent_slack": 0.35601916629067776,
+        "convex_bound": 4.0,
+        "minimum_gradient_squared_before_T": 0.9017685247981803,
+        "nonconvex_gradient_bound": 3.1231056256176606
+      },
+      {
+        "iteration": 3,
+        "w": 1.178970410844361,
+        "square": 1.3899712296465214,
+        "root": 1.545953178348724,
+        "value": 0.5459531783487239,
+        "gradient": 0.7626171525476939,
+        "gradient_squared": 0.5815849213599527,
+        "gradient_norm": 0.7626171525476939,
+        "distance": 1.178970410844361,
+        "distance_squared": 1.3899712296465214,
+        "update": -0.7626171525476939,
+        "descent_upper": 0.2551607176687476,
+        "descent_upper_naive_diagnostic": 0.2551607176687476,
+        "descent_slack": 0.17194788738365022,
+        "convex_bound": 2.6666666666666665,
+        "minimum_gradient_squared_before_T": 0.8122914955724297,
+        "nonconvex_gradient_bound": 2.0820704170784405
+      },
+      {
+        "iteration": 4,
+        "w": 0.4163532582966671,
+        "square": 0.17335003569425117,
+        "root": 1.0832128302850974,
+        "value": 0.08321283028509738,
+        "gradient": 0.38436883930472326,
+        "gradient_squared": 0.14773940462846016,
+        "gradient_norm": 0.38436883930472326,
+        "distance": 0.4163532582966671,
+        "distance_squared": 0.17335003569425117,
+        "update": -0.38436883930472326,
+        "descent_upper": 0.009343127970867287,
+        "descent_upper_naive_diagnostic": 0.009343127970867296,
+        "descent_slack": 0.008831757191778034,
+        "convex_bound": 2.0,
+        "minimum_gradient_squared_before_T": 0.5815849213599527,
+        "nonconvex_gradient_bound": 1.5615528128088303
+      },
+      {
+        "iteration": 5,
+        "w": 0.031984418991943805,
+        "square": 0.0010230030582522155,
+        "root": 1.0005113707790894,
+        "value": 0.0005113707790892545,
+        "gradient": 0.031968071454338214,
+        "gradient_squared": 0.0010219575925096737,
+        "gradient_norm": 0.031968071454338214,
+        "distance": 0.031984418991943805,
+        "distance_squared": 0.0010230030582522155,
+        "update": -0.03196807145433822,
+        "descent_upper": 3.919828344175581e-07,
+        "descent_upper_naive_diagnostic": 3.9198283441766856e-07,
+        "descent_slack": 3.9184921342468396e-07,
+        "convex_bound": 1.6,
+        "minimum_gradient_squared_before_T": 0.14773940462846016,
+        "nonconvex_gradient_bound": 1.2492422502470641
+      },
+      {
+        "iteration": 6,
+        "w": 1.6347537605585894e-05,
+        "square": 2.67241985766045e-10,
+        "root": 1.000000000133621,
+        "value": 1.336209928740952e-10,
+        "gradient": 1.634753760340152e-05,
+        "gradient_squared": 2.672419856946268e-10,
+        "gradient_norm": 1.634753760340152e-05,
+        "distance": 1.6347537605585894e-05,
+        "distance_squared": 2.67241985766045e-10,
+        "update": -1.634753760340152e-05,
+        "descent_upper": 2.6781854600217015e-20,
+        "descent_upper_naive_diagnostic": 2.6781807638388373e-20,
+        "descent_slack": 2.678185459783127e-20,
+        "convex_bound": 1.3333333333333333,
+        "minimum_gradient_squared_before_T": 0.0010219575925096737,
+        "nonconvex_gradient_bound": 1.0410352085392203
+      },
+      {
+        "iteration": 7,
+        "w": 2.1843742056131177e-15,
+        "square": 4.7714906701479395e-30,
+        "root": 1.0,
+        "value": 2.3857453350739698e-30,
+        "gradient": 2.1843742056131177e-15,
+        "gradient_squared": 4.7714906701479395e-30,
+        "gradient_norm": 2.1843742056131177e-15,
+        "distance": 2.1843742056131177e-15,
+        "distance_squared": 4.7714906701479395e-30,
+        "update": -2.1843742056131177e-15,
+        "descent_upper": 8.537671205740814e-60,
+        "descent_upper_naive_diagnostic": 0.0,
+        "descent_slack": 8.537671205740814e-60,
+        "convex_bound": 1.1428571428571428,
+        "minimum_gradient_squared_before_T": 2.672419856946268e-10,
+        "nonconvex_gradient_bound": 0.8923158930336174
+      },
+      {
+        "iteration": 8,
+        "w": 5.211360571097404e-45,
+        "square": 2.715827900198866e-89,
+        "root": 1.0,
+        "value": 1.357913950099433e-89,
+        "gradient": 5.211360571097404e-45,
+        "gradient_squared": 2.715827900198866e-89,
+        "gradient_norm": 5.211360571097404e-45,
+        "distance": 5.211360571097404e-45,
+        "distance_squared": 2.715827900198866e-89,
+        "update": -5.211360571097404e-45,
+        "descent_upper": 2.7658954438119683e-178,
+        "descent_upper_naive_diagnostic": 0.0,
+        "descent_slack": 2.7658954438119683e-178,
+        "convex_bound": 1.0,
+        "minimum_gradient_squared_before_T": 4.7714906701479395e-30,
+        "nonconvex_gradient_bound": 0.7807764064044151
+      },
+      {
+        "iteration": 9,
+        "w": 7.076579218491313e-134,
+        "square": 5.007797343558312e-267,
+        "root": 1.0,
+        "value": 2.503898671779156e-267,
+        "gradient": 7.076579218491313e-134,
+        "gradient_squared": 5.007797343558312e-267,
+        "gradient_norm": 7.076579218491313e-134,
+        "distance": 7.076579218491313e-134,
+        "distance_squared": 5.007797343558312e-267,
+        "convex_bound": 0.8888888888888888,
+        "minimum_gradient_squared_before_T": 2.715827900198866e-89,
+        "nonconvex_gradient_bound": 0.6940234723594801
+      }
+    ]
+  },
+  "nonconvex": [
+    {
+      "kind": "nonconvex",
+      "status": "exact_stationary_in_implemented_model",
+      "status_detail": "Zero gradient; for cosine at zero this is the maximum, not an optimum.",
+      "requested_updates": 40,
+      "updates_completed": 0,
+      "L": 1,
+      "mu": null,
+      "eta": 1.0,
+      "global_convex": false,
+      "global_strong_convex": false,
+      "analytic_stationary_extension": {
+        "T": 40,
+        "minimum_gradient_squared": 0.0,
+        "bound": 0.1,
+        "note": "Analytic repeated zero-gradient path, not additional executed updates"
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "w": 0.0,
+          "half_cosine": 1.0,
+          "value": 2.0,
+          "gradient": -0.0,
+          "gradient_squared": 0.0,
+          "gradient_norm": 0.0,
+          "distance_to_nearest_stored_odd_pi": 3.141592653589793,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": null,
+          "nonconvex_gradient_bound": null
+        }
+      ]
+    },
+    {
+      "kind": "nonconvex",
+      "status": "floating_stagnation",
+      "status_detail": "Rounded update equals old value although gradient is nonzero; not exact stationarity.",
+      "requested_updates": 40,
+      "updates_completed": 5,
+      "L": 1,
+      "mu": null,
+      "eta": 1.0,
+      "global_convex": false,
+      "global_strong_convex": false,
+      "analytic_stationary_extension": null,
+      "history": [
+        {
+          "iteration": 0,
+          "w": 1.0,
+          "half_cosine": 0.8775825618903728,
+          "value": 1.5403023058681398,
+          "gradient": -0.8414709848078965,
+          "gradient_squared": 0.7080734182735712,
+          "gradient_norm": 0.8414709848078965,
+          "distance_to_nearest_stored_odd_pi": 2.141592653589793,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "update": 0.8414709848078965,
+          "descent_upper": 1.1862655967313542,
+          "descent_upper_naive_diagnostic": 1.1862655967313542,
+          "descent_slack": 0.4536471884255927,
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": null,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 1,
+          "w": 1.8414709848078965,
+          "half_cosine": 0.6052348338891944,
+          "value": 0.7326184083057615,
+          "gradient": -0.9635907245418334,
+          "gradient_squared": 0.9285070844230554,
+          "gradient_norm": 0.9635907245418334,
+          "distance_to_nearest_stored_odd_pi": 1.3001216687818966,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "update": 0.9635907245418334,
+          "descent_upper": 0.2683648660942338,
+          "descent_upper_naive_diagnostic": 0.2683648660942338,
+          "descent_slack": 0.2122707419069342,
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": 0.7080734182735712,
+          "nonconvex_gradient_bound": 3.0806046117362795
+        },
+        {
+          "iteration": 2,
+          "w": 2.80506170934973,
+          "half_cosine": 0.16747257116808653,
+          "value": 0.056094124187299615,
+          "gradient": -0.33021462354998615,
+          "gradient_squared": 0.10904169760625906,
+          "gradient_norm": 0.33021462354998615,
+          "distance_to_nearest_stored_odd_pi": 0.33653094424006325,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "update": 0.3302146235499861,
+          "descent_upper": 0.0015732753841700836,
+          "descent_upper_naive_diagnostic": 0.0015732753841700836,
+          "descent_slack": 0.001553327496960188,
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": 0.7080734182735712,
+          "nonconvex_gradient_bound": 1.5403023058681398
+        },
+        {
+          "iteration": 3,
+          "w": 3.135276332899716,
+          "half_cosine": 0.00315815509513827,
+          "value": 1.994788720989563e-05,
+          "gradient": -0.006316278690937182,
+          "gradient_squared": 3.9895376501587126e-05,
+          "gradient_norm": 0.006316278690937182,
+          "distance_to_nearest_stored_odd_pi": 0.0063163206900771485,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "update": 0.006316278690936983,
+          "descent_upper": 1.989591020655089e-10,
+          "descent_upper_naive_diagnostic": 1.989591020655089e-10,
+          "descent_slack": 1.9895822010161643e-10,
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": 0.10904169760625906,
+          "nonconvex_gradient_bound": 1.026868203912093
+        },
+        {
+          "iteration": 4,
+          "w": 3.141592611590653,
+          "half_cosine": 2.0999570144068156e-08,
+          "value": 8.819638924712773e-16,
+          "gradient": -4.19991402881363e-08,
+          "gradient_squared": 1.7639277849425536e-15,
+          "gradient_norm": 4.19991402881363e-08,
+          "distance_to_nearest_stored_odd_pi": 4.1999140165671633e-08,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "update": 4.1999140165671633e-08,
+          "descent_upper": 4.930380657631324e-31,
+          "descent_upper_naive_diagnostic": 4.930380657631324e-31,
+          "descent_slack": 4.855392668498231e-31,
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": 3.9895376501587126e-05,
+          "nonconvex_gradient_bound": 0.7701511529340699
+        },
+        {
+          "iteration": 5,
+          "w": 3.141592653589793,
+          "half_cosine": 6.123233995736766e-17,
+          "value": 7.498798913309288e-33,
+          "gradient": -1.2246467991473532e-16,
+          "gradient_squared": 1.4997597826618576e-32,
+          "gradient_norm": 1.2246467991473532e-16,
+          "distance_to_nearest_stored_odd_pi": 0.0,
+          "distance_note": "distance to a binary64 approximation, not exact mathematical pi",
+          "convex_bound": null,
+          "minimum_gradient_squared_before_T": 1.7639277849425536e-15,
+          "nonconvex_gradient_bound": 0.6161209223472559
+        }
+      ]
+    }
+  ],
+  "boundary": [
+    {
+      "status": "budget_completed",
+      "requested_updates": 40,
+      "updates_completed": 40,
+      "L": 4.0,
+      "mu": 1.0,
+      "eta": 0.5,
+      "safe_rate_for_stated_bounds": false,
+      "descent_strict_when_gradient_nonzero": false,
+      "history": [
+        {
+          "iteration": 0,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": null,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 1,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 2,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 3,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 4,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 5,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 6,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 7,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 8,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 9,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 10,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 11,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 12,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 13,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 14,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 15,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 16,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 17,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 18,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 19,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 20,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 21,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 22,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 23,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 24,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 25,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 26,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 27,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 28,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 29,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 30,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 31,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 32,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 33,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 34,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 35,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 36,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 37,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 38,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 39,
+          "w": [
+            0.0,
+            -1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            -4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            2.0
+          ],
+          "descent_upper": 2.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 40,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        }
+      ]
+    },
+    {
+      "status": "budget_completed",
+      "requested_updates": 40,
+      "updates_completed": 40,
+      "L": 4.0,
+      "mu": 1.0,
+      "eta": 0.75,
+      "safe_rate_for_stated_bounds": false,
+      "descent_strict_when_gradient_nonzero": false,
+      "history": [
+        {
+          "iteration": 0,
+          "w": [
+            0.0,
+            1.0
+          ],
+          "squares": [
+            0.0,
+            1.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.0,
+          "gradient": [
+            0.0,
+            4.0
+          ],
+          "gradient_squared": 16.0,
+          "gradient_norm": 4.0,
+          "distance_squared": 1.0,
+          "distance": 1.0,
+          "update": [
+            -0.0,
+            -3.0
+          ],
+          "descent_upper": 8.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": null,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 1,
+          "w": [
+            0.0,
+            -2.0
+          ],
+          "squares": [
+            0.0,
+            4.0
+          ],
+          "loss_contributions": [
+            0.0,
+            8.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -4.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 8.0,
+          "gradient": [
+            0.0,
+            -8.0
+          ],
+          "gradient_squared": 64.0,
+          "gradient_norm": 8.0,
+          "distance_squared": 4.0,
+          "distance": 2.0,
+          "update": [
+            -0.0,
+            6.0
+          ],
+          "descent_upper": 32.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 2,
+          "w": [
+            0.0,
+            4.0
+          ],
+          "squares": [
+            0.0,
+            16.0
+          ],
+          "loss_contributions": [
+            0.0,
+            32.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              8.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 32.0,
+          "gradient": [
+            0.0,
+            16.0
+          ],
+          "gradient_squared": 256.0,
+          "gradient_norm": 16.0,
+          "distance_squared": 16.0,
+          "distance": 4.0,
+          "update": [
+            -0.0,
+            -12.0
+          ],
+          "descent_upper": 128.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 3,
+          "w": [
+            0.0,
+            -8.0
+          ],
+          "squares": [
+            0.0,
+            64.0
+          ],
+          "loss_contributions": [
+            0.0,
+            128.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -16.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 128.0,
+          "gradient": [
+            0.0,
+            -32.0
+          ],
+          "gradient_squared": 1024.0,
+          "gradient_norm": 32.0,
+          "distance_squared": 64.0,
+          "distance": 8.0,
+          "update": [
+            -0.0,
+            24.0
+          ],
+          "descent_upper": 512.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 4,
+          "w": [
+            0.0,
+            16.0
+          ],
+          "squares": [
+            0.0,
+            256.0
+          ],
+          "loss_contributions": [
+            0.0,
+            512.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              32.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 512.0,
+          "gradient": [
+            0.0,
+            64.0
+          ],
+          "gradient_squared": 4096.0,
+          "gradient_norm": 64.0,
+          "distance_squared": 256.0,
+          "distance": 16.0,
+          "update": [
+            -0.0,
+            -48.0
+          ],
+          "descent_upper": 2048.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 5,
+          "w": [
+            0.0,
+            -32.0
+          ],
+          "squares": [
+            0.0,
+            1024.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2048.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -64.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2048.0,
+          "gradient": [
+            0.0,
+            -128.0
+          ],
+          "gradient_squared": 16384.0,
+          "gradient_norm": 128.0,
+          "distance_squared": 1024.0,
+          "distance": 32.0,
+          "update": [
+            -0.0,
+            96.0
+          ],
+          "descent_upper": 8192.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 6,
+          "w": [
+            0.0,
+            64.0
+          ],
+          "squares": [
+            0.0,
+            4096.0
+          ],
+          "loss_contributions": [
+            0.0,
+            8192.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              128.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 8192.0,
+          "gradient": [
+            0.0,
+            256.0
+          ],
+          "gradient_squared": 65536.0,
+          "gradient_norm": 256.0,
+          "distance_squared": 4096.0,
+          "distance": 64.0,
+          "update": [
+            -0.0,
+            -192.0
+          ],
+          "descent_upper": 32768.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 7,
+          "w": [
+            0.0,
+            -128.0
+          ],
+          "squares": [
+            0.0,
+            16384.0
+          ],
+          "loss_contributions": [
+            0.0,
+            32768.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -256.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 32768.0,
+          "gradient": [
+            0.0,
+            -512.0
+          ],
+          "gradient_squared": 262144.0,
+          "gradient_norm": 512.0,
+          "distance_squared": 16384.0,
+          "distance": 128.0,
+          "update": [
+            -0.0,
+            384.0
+          ],
+          "descent_upper": 131072.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 8,
+          "w": [
+            0.0,
+            256.0
+          ],
+          "squares": [
+            0.0,
+            65536.0
+          ],
+          "loss_contributions": [
+            0.0,
+            131072.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              512.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 131072.0,
+          "gradient": [
+            0.0,
+            1024.0
+          ],
+          "gradient_squared": 1048576.0,
+          "gradient_norm": 1024.0,
+          "distance_squared": 65536.0,
+          "distance": 256.0,
+          "update": [
+            -0.0,
+            -768.0
+          ],
+          "descent_upper": 524288.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 9,
+          "w": [
+            0.0,
+            -512.0
+          ],
+          "squares": [
+            0.0,
+            262144.0
+          ],
+          "loss_contributions": [
+            0.0,
+            524288.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -1024.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 524288.0,
+          "gradient": [
+            0.0,
+            -2048.0
+          ],
+          "gradient_squared": 4194304.0,
+          "gradient_norm": 2048.0,
+          "distance_squared": 262144.0,
+          "distance": 512.0,
+          "update": [
+            -0.0,
+            1536.0
+          ],
+          "descent_upper": 2097152.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 10,
+          "w": [
+            0.0,
+            1024.0
+          ],
+          "squares": [
+            0.0,
+            1048576.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2097152.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2048.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2097152.0,
+          "gradient": [
+            0.0,
+            4096.0
+          ],
+          "gradient_squared": 16777216.0,
+          "gradient_norm": 4096.0,
+          "distance_squared": 1048576.0,
+          "distance": 1024.0,
+          "update": [
+            -0.0,
+            -3072.0
+          ],
+          "descent_upper": 8388608.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 11,
+          "w": [
+            0.0,
+            -2048.0
+          ],
+          "squares": [
+            0.0,
+            4194304.0
+          ],
+          "loss_contributions": [
+            0.0,
+            8388608.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -4096.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 8388608.0,
+          "gradient": [
+            0.0,
+            -8192.0
+          ],
+          "gradient_squared": 67108864.0,
+          "gradient_norm": 8192.0,
+          "distance_squared": 4194304.0,
+          "distance": 2048.0,
+          "update": [
+            -0.0,
+            6144.0
+          ],
+          "descent_upper": 33554432.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 12,
+          "w": [
+            0.0,
+            4096.0
+          ],
+          "squares": [
+            0.0,
+            16777216.0
+          ],
+          "loss_contributions": [
+            0.0,
+            33554432.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              8192.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 33554432.0,
+          "gradient": [
+            0.0,
+            16384.0
+          ],
+          "gradient_squared": 268435456.0,
+          "gradient_norm": 16384.0,
+          "distance_squared": 16777216.0,
+          "distance": 4096.0,
+          "update": [
+            -0.0,
+            -12288.0
+          ],
+          "descent_upper": 134217728.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 13,
+          "w": [
+            0.0,
+            -8192.0
+          ],
+          "squares": [
+            0.0,
+            67108864.0
+          ],
+          "loss_contributions": [
+            0.0,
+            134217728.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -16384.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 134217728.0,
+          "gradient": [
+            0.0,
+            -32768.0
+          ],
+          "gradient_squared": 1073741824.0,
+          "gradient_norm": 32768.0,
+          "distance_squared": 67108864.0,
+          "distance": 8192.0,
+          "update": [
+            -0.0,
+            24576.0
+          ],
+          "descent_upper": 536870912.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 14,
+          "w": [
+            0.0,
+            16384.0
+          ],
+          "squares": [
+            0.0,
+            268435456.0
+          ],
+          "loss_contributions": [
+            0.0,
+            536870912.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              32768.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 536870912.0,
+          "gradient": [
+            0.0,
+            65536.0
+          ],
+          "gradient_squared": 4294967296.0,
+          "gradient_norm": 65536.0,
+          "distance_squared": 268435456.0,
+          "distance": 16384.0,
+          "update": [
+            -0.0,
+            -49152.0
+          ],
+          "descent_upper": 2147483648.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 15,
+          "w": [
+            0.0,
+            -32768.0
+          ],
+          "squares": [
+            0.0,
+            1073741824.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2147483648.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -65536.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2147483648.0,
+          "gradient": [
+            0.0,
+            -131072.0
+          ],
+          "gradient_squared": 17179869184.0,
+          "gradient_norm": 131072.0,
+          "distance_squared": 1073741824.0,
+          "distance": 32768.0,
+          "update": [
+            -0.0,
+            98304.0
+          ],
+          "descent_upper": 8589934592.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 16,
+          "w": [
+            0.0,
+            65536.0
+          ],
+          "squares": [
+            0.0,
+            4294967296.0
+          ],
+          "loss_contributions": [
+            0.0,
+            8589934592.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              131072.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 8589934592.0,
+          "gradient": [
+            0.0,
+            262144.0
+          ],
+          "gradient_squared": 68719476736.0,
+          "gradient_norm": 262144.0,
+          "distance_squared": 4294967296.0,
+          "distance": 65536.0,
+          "update": [
+            -0.0,
+            -196608.0
+          ],
+          "descent_upper": 34359738368.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 17,
+          "w": [
+            0.0,
+            -131072.0
+          ],
+          "squares": [
+            0.0,
+            17179869184.0
+          ],
+          "loss_contributions": [
+            0.0,
+            34359738368.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -262144.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 34359738368.0,
+          "gradient": [
+            0.0,
+            -524288.0
+          ],
+          "gradient_squared": 274877906944.0,
+          "gradient_norm": 524288.0,
+          "distance_squared": 17179869184.0,
+          "distance": 131072.0,
+          "update": [
+            -0.0,
+            393216.0
+          ],
+          "descent_upper": 137438953472.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 18,
+          "w": [
+            0.0,
+            262144.0
+          ],
+          "squares": [
+            0.0,
+            68719476736.0
+          ],
+          "loss_contributions": [
+            0.0,
+            137438953472.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              524288.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 137438953472.0,
+          "gradient": [
+            0.0,
+            1048576.0
+          ],
+          "gradient_squared": 1099511627776.0,
+          "gradient_norm": 1048576.0,
+          "distance_squared": 68719476736.0,
+          "distance": 262144.0,
+          "update": [
+            -0.0,
+            -786432.0
+          ],
+          "descent_upper": 549755813888.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 19,
+          "w": [
+            0.0,
+            -524288.0
+          ],
+          "squares": [
+            0.0,
+            274877906944.0
+          ],
+          "loss_contributions": [
+            0.0,
+            549755813888.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -1048576.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 549755813888.0,
+          "gradient": [
+            0.0,
+            -2097152.0
+          ],
+          "gradient_squared": 4398046511104.0,
+          "gradient_norm": 2097152.0,
+          "distance_squared": 274877906944.0,
+          "distance": 524288.0,
+          "update": [
+            -0.0,
+            1572864.0
+          ],
+          "descent_upper": 2199023255552.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 20,
+          "w": [
+            0.0,
+            1048576.0
+          ],
+          "squares": [
+            0.0,
+            1099511627776.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2199023255552.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2097152.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2199023255552.0,
+          "gradient": [
+            0.0,
+            4194304.0
+          ],
+          "gradient_squared": 17592186044416.0,
+          "gradient_norm": 4194304.0,
+          "distance_squared": 1099511627776.0,
+          "distance": 1048576.0,
+          "update": [
+            -0.0,
+            -3145728.0
+          ],
+          "descent_upper": 8796093022208.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 21,
+          "w": [
+            0.0,
+            -2097152.0
+          ],
+          "squares": [
+            0.0,
+            4398046511104.0
+          ],
+          "loss_contributions": [
+            0.0,
+            8796093022208.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -4194304.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 8796093022208.0,
+          "gradient": [
+            0.0,
+            -8388608.0
+          ],
+          "gradient_squared": 70368744177664.0,
+          "gradient_norm": 8388608.0,
+          "distance_squared": 4398046511104.0,
+          "distance": 2097152.0,
+          "update": [
+            -0.0,
+            6291456.0
+          ],
+          "descent_upper": 35184372088832.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 22,
+          "w": [
+            0.0,
+            4194304.0
+          ],
+          "squares": [
+            0.0,
+            17592186044416.0
+          ],
+          "loss_contributions": [
+            0.0,
+            35184372088832.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              8388608.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 35184372088832.0,
+          "gradient": [
+            0.0,
+            16777216.0
+          ],
+          "gradient_squared": 281474976710656.0,
+          "gradient_norm": 16777216.0,
+          "distance_squared": 17592186044416.0,
+          "distance": 4194304.0,
+          "update": [
+            -0.0,
+            -12582912.0
+          ],
+          "descent_upper": 140737488355328.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 23,
+          "w": [
+            0.0,
+            -8388608.0
+          ],
+          "squares": [
+            0.0,
+            70368744177664.0
+          ],
+          "loss_contributions": [
+            0.0,
+            140737488355328.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -16777216.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 140737488355328.0,
+          "gradient": [
+            0.0,
+            -33554432.0
+          ],
+          "gradient_squared": 1125899906842624.0,
+          "gradient_norm": 33554432.0,
+          "distance_squared": 70368744177664.0,
+          "distance": 8388608.0,
+          "update": [
+            -0.0,
+            25165824.0
+          ],
+          "descent_upper": 562949953421312.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 24,
+          "w": [
+            0.0,
+            16777216.0
+          ],
+          "squares": [
+            0.0,
+            281474976710656.0
+          ],
+          "loss_contributions": [
+            0.0,
+            562949953421312.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              33554432.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 562949953421312.0,
+          "gradient": [
+            0.0,
+            67108864.0
+          ],
+          "gradient_squared": 4503599627370496.0,
+          "gradient_norm": 67108864.0,
+          "distance_squared": 281474976710656.0,
+          "distance": 16777216.0,
+          "update": [
+            -0.0,
+            -50331648.0
+          ],
+          "descent_upper": 2251799813685248.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 25,
+          "w": [
+            0.0,
+            -33554432.0
+          ],
+          "squares": [
+            0.0,
+            1125899906842624.0
+          ],
+          "loss_contributions": [
+            0.0,
+            2251799813685248.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -67108864.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2251799813685248.0,
+          "gradient": [
+            0.0,
+            -134217728.0
+          ],
+          "gradient_squared": 1.8014398509481984e+16,
+          "gradient_norm": 134217728.0,
+          "distance_squared": 1125899906842624.0,
+          "distance": 33554432.0,
+          "update": [
+            -0.0,
+            100663296.0
+          ],
+          "descent_upper": 9007199254740992.0,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 26,
+          "w": [
+            0.0,
+            67108864.0
+          ],
+          "squares": [
+            0.0,
+            4503599627370496.0
+          ],
+          "loss_contributions": [
+            0.0,
+            9007199254740992.0
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              134217728.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 9007199254740992.0,
+          "gradient": [
+            0.0,
+            268435456.0
+          ],
+          "gradient_squared": 7.205759403792794e+16,
+          "gradient_norm": 268435456.0,
+          "distance_squared": 4503599627370496.0,
+          "distance": 67108864.0,
+          "update": [
+            -0.0,
+            -201326592.0
+          ],
+          "descent_upper": 3.602879701896397e+16,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 27,
+          "w": [
+            0.0,
+            -134217728.0
+          ],
+          "squares": [
+            0.0,
+            1.8014398509481984e+16
+          ],
+          "loss_contributions": [
+            0.0,
+            3.602879701896397e+16
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -268435456.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 3.602879701896397e+16,
+          "gradient": [
+            0.0,
+            -536870912.0
+          ],
+          "gradient_squared": 2.8823037615171174e+17,
+          "gradient_norm": 536870912.0,
+          "distance_squared": 1.8014398509481984e+16,
+          "distance": 134217728.0,
+          "update": [
+            -0.0,
+            402653184.0
+          ],
+          "descent_upper": 1.4411518807585587e+17,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 28,
+          "w": [
+            0.0,
+            268435456.0
+          ],
+          "squares": [
+            0.0,
+            7.205759403792794e+16
+          ],
+          "loss_contributions": [
+            0.0,
+            1.4411518807585587e+17
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              536870912.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 1.4411518807585587e+17,
+          "gradient": [
+            0.0,
+            1073741824.0
+          ],
+          "gradient_squared": 1.152921504606847e+18,
+          "gradient_norm": 1073741824.0,
+          "distance_squared": 7.205759403792794e+16,
+          "distance": 268435456.0,
+          "update": [
+            -0.0,
+            -805306368.0
+          ],
+          "descent_upper": 5.764607523034235e+17,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 29,
+          "w": [
+            0.0,
+            -536870912.0
+          ],
+          "squares": [
+            0.0,
+            2.8823037615171174e+17
+          ],
+          "loss_contributions": [
+            0.0,
+            5.764607523034235e+17
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -1073741824.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 5.764607523034235e+17,
+          "gradient": [
+            0.0,
+            -2147483648.0
+          ],
+          "gradient_squared": 4.611686018427388e+18,
+          "gradient_norm": 2147483648.0,
+          "distance_squared": 2.8823037615171174e+17,
+          "distance": 536870912.0,
+          "update": [
+            -0.0,
+            1610612736.0
+          ],
+          "descent_upper": 2.305843009213694e+18,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 30,
+          "w": [
+            0.0,
+            1073741824.0
+          ],
+          "squares": [
+            0.0,
+            1.152921504606847e+18
+          ],
+          "loss_contributions": [
+            0.0,
+            2.305843009213694e+18
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2147483648.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.305843009213694e+18,
+          "gradient": [
+            0.0,
+            4294967296.0
+          ],
+          "gradient_squared": 1.8446744073709552e+19,
+          "gradient_norm": 4294967296.0,
+          "distance_squared": 1.152921504606847e+18,
+          "distance": 1073741824.0,
+          "update": [
+            -0.0,
+            -3221225472.0
+          ],
+          "descent_upper": 9.223372036854776e+18,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 31,
+          "w": [
+            0.0,
+            -2147483648.0
+          ],
+          "squares": [
+            0.0,
+            4.611686018427388e+18
+          ],
+          "loss_contributions": [
+            0.0,
+            9.223372036854776e+18
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -4294967296.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 9.223372036854776e+18,
+          "gradient": [
+            0.0,
+            -8589934592.0
+          ],
+          "gradient_squared": 7.378697629483821e+19,
+          "gradient_norm": 8589934592.0,
+          "distance_squared": 4.611686018427388e+18,
+          "distance": 2147483648.0,
+          "update": [
+            -0.0,
+            6442450944.0
+          ],
+          "descent_upper": 3.6893488147419103e+19,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 32,
+          "w": [
+            0.0,
+            4294967296.0
+          ],
+          "squares": [
+            0.0,
+            1.8446744073709552e+19
+          ],
+          "loss_contributions": [
+            0.0,
+            3.6893488147419103e+19
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              8589934592.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 3.6893488147419103e+19,
+          "gradient": [
+            0.0,
+            17179869184.0
+          ],
+          "gradient_squared": 2.9514790517935283e+20,
+          "gradient_norm": 17179869184.0,
+          "distance_squared": 1.8446744073709552e+19,
+          "distance": 4294967296.0,
+          "update": [
+            -0.0,
+            -12884901888.0
+          ],
+          "descent_upper": 1.4757395258967641e+20,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 33,
+          "w": [
+            0.0,
+            -8589934592.0
+          ],
+          "squares": [
+            0.0,
+            7.378697629483821e+19
+          ],
+          "loss_contributions": [
+            0.0,
+            1.4757395258967641e+20
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -17179869184.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 1.4757395258967641e+20,
+          "gradient": [
+            0.0,
+            -34359738368.0
+          ],
+          "gradient_squared": 1.1805916207174113e+21,
+          "gradient_norm": 34359738368.0,
+          "distance_squared": 7.378697629483821e+19,
+          "distance": 8589934592.0,
+          "update": [
+            -0.0,
+            25769803776.0
+          ],
+          "descent_upper": 5.902958103587057e+20,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 34,
+          "w": [
+            0.0,
+            17179869184.0
+          ],
+          "squares": [
+            0.0,
+            2.9514790517935283e+20
+          ],
+          "loss_contributions": [
+            0.0,
+            5.902958103587057e+20
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              34359738368.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 5.902958103587057e+20,
+          "gradient": [
+            0.0,
+            68719476736.0
+          ],
+          "gradient_squared": 4.722366482869645e+21,
+          "gradient_norm": 68719476736.0,
+          "distance_squared": 2.9514790517935283e+20,
+          "distance": 17179869184.0,
+          "update": [
+            -0.0,
+            -51539607552.0
+          ],
+          "descent_upper": 2.3611832414348226e+21,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 35,
+          "w": [
+            0.0,
+            -34359738368.0
+          ],
+          "squares": [
+            0.0,
+            1.1805916207174113e+21
+          ],
+          "loss_contributions": [
+            0.0,
+            2.3611832414348226e+21
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -68719476736.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.3611832414348226e+21,
+          "gradient": [
+            0.0,
+            -137438953472.0
+          ],
+          "gradient_squared": 1.888946593147858e+22,
+          "gradient_norm": 137438953472.0,
+          "distance_squared": 1.1805916207174113e+21,
+          "distance": 34359738368.0,
+          "update": [
+            -0.0,
+            103079215104.0
+          ],
+          "descent_upper": 9.44473296573929e+21,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 36,
+          "w": [
+            0.0,
+            68719476736.0
+          ],
+          "squares": [
+            0.0,
+            4.722366482869645e+21
+          ],
+          "loss_contributions": [
+            0.0,
+            9.44473296573929e+21
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              137438953472.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 9.44473296573929e+21,
+          "gradient": [
+            0.0,
+            274877906944.0
+          ],
+          "gradient_squared": 7.555786372591432e+22,
+          "gradient_norm": 274877906944.0,
+          "distance_squared": 4.722366482869645e+21,
+          "distance": 68719476736.0,
+          "update": [
+            -0.0,
+            -206158430208.0
+          ],
+          "descent_upper": 3.777893186295716e+22,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 37,
+          "w": [
+            0.0,
+            -137438953472.0
+          ],
+          "squares": [
+            0.0,
+            1.888946593147858e+22
+          ],
+          "loss_contributions": [
+            0.0,
+            3.777893186295716e+22
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -274877906944.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 3.777893186295716e+22,
+          "gradient": [
+            0.0,
+            -549755813888.0
+          ],
+          "gradient_squared": 3.022314549036573e+23,
+          "gradient_norm": 549755813888.0,
+          "distance_squared": 1.888946593147858e+22,
+          "distance": 137438953472.0,
+          "update": [
+            -0.0,
+            412316860416.0
+          ],
+          "descent_upper": 1.5111572745182865e+23,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 38,
+          "w": [
+            0.0,
+            274877906944.0
+          ],
+          "squares": [
+            0.0,
+            7.555786372591432e+22
+          ],
+          "loss_contributions": [
+            0.0,
+            1.5111572745182865e+23
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              549755813888.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 1.5111572745182865e+23,
+          "gradient": [
+            0.0,
+            1099511627776.0
+          ],
+          "gradient_squared": 1.2089258196146292e+24,
+          "gradient_norm": 1099511627776.0,
+          "distance_squared": 7.555786372591432e+22,
+          "distance": 274877906944.0,
+          "update": [
+            -0.0,
+            -824633720832.0
+          ],
+          "descent_upper": 6.044629098073146e+23,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 39,
+          "w": [
+            0.0,
+            -549755813888.0
+          ],
+          "squares": [
+            0.0,
+            3.022314549036573e+23
+          ],
+          "loss_contributions": [
+            0.0,
+            6.044629098073146e+23
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              -1099511627776.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 6.044629098073146e+23,
+          "gradient": [
+            0.0,
+            -2199023255552.0
+          ],
+          "gradient_squared": 4.835703278458517e+24,
+          "gradient_norm": 2199023255552.0,
+          "distance_squared": 3.022314549036573e+23,
+          "distance": 549755813888.0,
+          "update": [
+            -0.0,
+            1649267441664.0
+          ],
+          "descent_upper": 2.4178516392292583e+24,
+          "descent_slack": 0.0,
+          "potential_upper": null,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        },
+        {
+          "iteration": 40,
+          "w": [
+            0.0,
+            1099511627776.0
+          ],
+          "squares": [
+            0.0,
+            1.2089258196146292e+24
+          ],
+          "loss_contributions": [
+            0.0,
+            2.4178516392292583e+24
+          ],
+          "local_derivatives": {
+            "square_wrt_coordinate": [
+              0.0,
+              2199023255552.0
+            ],
+            "contribution_wrt_square": [
+              0.5,
+              2.0
+            ],
+            "sum_wrt_contribution": [
+              1.0,
+              1.0
+            ]
+          },
+          "value": 2.4178516392292583e+24,
+          "gradient": [
+            0.0,
+            4398046511104.0
+          ],
+          "gradient_squared": 1.9342813113834067e+25,
+          "gradient_norm": 4398046511104.0,
+          "distance_squared": 1.2089258196146292e+24,
+          "distance": 1099511627776.0,
+          "convex_bound": null,
+          "strong_bound": null,
+          "minimum_gradient_squared_before_T": 16.0,
+          "nonconvex_gradient_bound": null
+        }
+      ]
+    }
+  ],
+  "certificates": {
+    "L": [
+      {
+        "claim": 4.0,
+        "assumptions_satisfied": true,
+        "label": "valid_global_hessian_certificate",
+        "x": [
+          0.0,
+          0.0
+        ],
+        "y": [
+          0.0,
+          1.0
+        ],
+        "actual_value": 2.0,
+        "proposed_upper": 2.0
+      },
+      {
+        "claim": 8.0,
+        "assumptions_satisfied": true,
+        "label": "valid_global_hessian_certificate",
+        "x": [
+          0.0,
+          0.0
+        ],
+        "y": [
+          0.0,
+          1.0
+        ],
+        "actual_value": 2.0,
+        "proposed_upper": 4.0
+      },
+      {
+        "claim": 1.0,
+        "assumptions_satisfied": false,
+        "label": "assumptions_false_counterexample",
+        "x": [
+          0.0,
+          0.0
+        ],
+        "y": [
+          0.0,
+          1.0
+        ],
+        "actual_value": 2.0,
+        "proposed_upper": 0.5
+      }
+    ],
+    "mu": [
+      {
+        "claim": 1.0,
+        "assumptions_satisfied": true,
+        "label": "valid_global_hessian_certificate",
+        "x": [
+          0.0,
+          0.0
+        ],
+        "y": [
+          1.0,
+          0.0
+        ],
+        "actual_value": 0.5,
+        "proposed_lower": 0.5
+      },
+      {
+        "claim": 0.5,
+        "assumptions_satisfied": true,
+        "label": "valid_global_hessian_certificate",
+        "x": [
+          0.0,
+          0.0
+        ],
+        "y": [
+          1.0,
+          0.0
+        ],
+        "actual_value": 0.5,
+        "proposed_lower": 0.25
+      },
+      {
+        "claim": 2.0,
+        "assumptions_satisfied": false,
+        "label": "assumptions_false_counterexample",
+        "x": [
+          0.0,
+          0.0
+        ],
+        "y": [
+          1.0,
+          0.0
+        ],
+        "actual_value": 0.5,
+        "proposed_lower": 1.0
+      }
+    ]
+  },
+  "budget": {
+    "geometric_sufficient": 53,
+    "exponential_sufficient": 61,
+    "factor": 0.75
+  },
+  "first_observed_target_update": 26,
+  "quartic_counterexample": {
+    "initial": 1,
+    "gradient": 4,
+    "eta": 1,
+    "new_w": -3,
+    "old_value": 1,
+    "new_value": 81,
+    "label": "assumptions_false_no_global_L"
+  },
+  "nondifferentiable_counterexample": {
+    "function": "abs(w)",
+    "point": 0,
+    "label": "assumptions_false_not_differentiable"
+  }
+}

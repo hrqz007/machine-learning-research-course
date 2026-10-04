@@ -1,0 +1,47 @@
+{
+  "unit": "033",
+  "checked_utc": "2026-10-04",
+  "sources": [
+    {
+      "title": "Boyd Vandenberghe unconstrained optimization",
+      "url": "https://web.stanford.edu/class/ee364a/lectures/unconstrained.pdf",
+      "status": "read",
+      "scope": "Opened the official 41-page PDF; checked strong convexity, gradient bounds, steps, and exact assumptions. Course examples and proofs are independent, with no copied plots."
+    },
+    {
+      "title": "Cornell CS4787 Lecture5",
+      "url": "https://www.cs.cornell.edu/courses/cs4787/2025fa/lectures/lecture5.html",
+      "status": "read",
+      "scope": "Opened full official HTML; checked smoothness, integral descent, telescoping and strong-convexity gradient inequality. Independently corrected scope/indices: convex alone does not imply unique or attained optimum; gradient-norm square and norm rates distinct."
+    },
+    {
+      "title": "MIT6.390 Gradient Descent",
+      "url": "https://introml.mit.edu/_static/spring24/LectureNotes/chapter_Gradient_Descent.pdf",
+      "status": "read",
+      "scope": "Opened the official 6-page PDF; checked update and stopping terminology. Not used as a blanket convergence proof."
+    },
+    {
+      "title": "Python3.12 math",
+      "url": "https://docs.python.org/3.12/library/math.html",
+      "status": "read",
+      "scope": "Opened the official documentation; checked finite tests and sqrt/cos/sin/hypot/ulp semantics. Retrieved patch documentation was 3.12.15; actual execution version is recorded separately."
+    },
+    {
+      "title": "Python3.12 fractions",
+      "url": "https://docs.python.org/3.12/library/fractions.html",
+      "status": "read",
+      "scope": "Opened officialdocs; Fraction.from_float preserves actual stored value."
+    },
+    {
+      "title": "Python3.12 decimal",
+      "url": "https://docs.python.org/3.12/library/decimal.html",
+      "status": "read",
+      "scope": "Opened officialdocs; context precision, sqrt and exact Decimal.from_float conversion."
+    }
+  ],
+  "limits": [
+    "Attempted CMU gradient_descent PDF and Boyd subgradient PDF returned retrieval errors; neither used or claimed checked.",
+    "Cornell Lecture6 was inspected for broader continuity but not relied on: its displayed loss recurrence misses a factor 1/2. All course quadratic losses retain independently derived1/2."
+  ],
+  "original_work": "Lecture derivations, numerical examples, data and diagrams are independently authored."
+}

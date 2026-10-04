@@ -1,0 +1,40 @@
+{
+  "unit": "034",
+  "date_utc": "2026-10-04",
+  "sources": [
+    {
+      "title": "Bottou Curtis Nocedal 2018",
+      "url": "https://leon.bottou.org/publications/pdf/sirev-2018.pdf",
+      "status": "read",
+      "scope": "Opened author89pagePDF; checked sections3.2,4.1 conditional first/second moments, fixed-step neighborhood and sampling scope/without-replacement caveat. Numerical examples independently derived."
+    },
+    {
+      "title": "Cornell CS4787 Lecture6",
+      "url": "https://www.cs.cornell.edu/courses/cs4787/2025fa/lectures/lecture6.html",
+      "status": "read",
+      "scope": "Opened officialHTML; checked scalar stochastic error recurrence and minibatch variance scaling. Displayed deterministic quadratic loss expansion drops1/2; course keeps independent normalization throughout."
+    },
+    {
+      "title": "NumPy2.3 Generator.choice",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.choice.html",
+      "status": "read",
+      "scope": "Opened officialdocs; replace/p/size validation; explicit uniform p may choose different algorithm from omitted p."
+    },
+    {
+      "title": "NumPy2.3 Generator.permutation",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.permutation.html",
+      "status": "read",
+      "scope": "Opened officialdocs; returns permutation with axis semantics."
+    },
+    {
+      "title": "NumPy2.3 Parallel random generation",
+      "url": "https://numpy.org/doc/2.3/reference/random/parallel.html",
+      "status": "read",
+      "scope": "Opened officialdocs; SeedSequence spawning or deterministic integer-sequence identifiers. Pseudorandom independence is high-probability design, not a proof from seed alone."
+    }
+  ],
+  "limitations": [
+    "Direct SeedSequence generated-reference page retrieval failed; official parallel-random documentation successfully read instead.",
+    "All formulas in examples checked independently; source examples/images not copied."
+  ]
+}

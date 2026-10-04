@@ -1,0 +1,73 @@
+{
+  "unit": "033",
+  "status": "local_tests_passed",
+  "checked_utc": "2026-10-04T11:26:31.021260Z",
+  "normal_run": {
+    "unit": "033",
+    "status": "passed",
+    "optimized": false,
+    "checks": 74841,
+    "fraction_full_trajectory_designs": 70,
+    "decimal_precision_convex": 500,
+    "decimal_precision_trig": 160,
+    "fresh_cli_processes": 4,
+    "raw_invalid_cli_cases": 11,
+    "protected_output_cli_targets": 9,
+    "preiteration_tail_and_unselected_fields": 6,
+    "report_sha256": "8365b4e5e58d7ee80333de1d1bfbceb865bc3a0c58caa822e8e7c976290ec82c",
+    "lab_output_protection_snippet": "passed",
+    "python": "3.12.14"
+  },
+  "optimized_run": {
+    "unit": "033",
+    "status": "passed",
+    "optimized": true,
+    "checks": 74841,
+    "fraction_full_trajectory_designs": 70,
+    "decimal_precision_convex": 500,
+    "decimal_precision_trig": 160,
+    "fresh_cli_processes": 4,
+    "raw_invalid_cli_cases": 11,
+    "protected_output_cli_targets": 9,
+    "preiteration_tail_and_unselected_fields": 6,
+    "report_sha256": "8365b4e5e58d7ee80333de1d1bfbceb865bc3a0c58caa822e8e7c976290ec82c",
+    "lab_output_protection_snippet": "passed",
+    "python": "3.12.14"
+  },
+  "notebook": {
+    "code_cells": 14,
+    "computed_pngs": 8,
+    "kernel": "ipykernel InProcessKernel, fresh Python process; sequential execution",
+    "fresh_copy_images_byte_identical": true,
+    "valid_input_mutations_rejected_in_real_first_cell_before_output": 3,
+    "complete_report_bytes_match": true,
+    "report_sha256": "8365b4e5e58d7ee80333de1d1bfbceb865bc3a0c58caa822e8e7c976290ec82c"
+  },
+  "manual_scientific_checks": [
+    "Integral remainder and descent coefficient eta*(1-L*eta/2).",
+    "Nonconvex min-gradient squared bound uses a finite lower bound and indices 0 to T-1.",
+    "Convex attained-minimum distance-potential proof gives the last objective gap.",
+    "Strong convexity square completion, PL inequality, opposite smoothness bound, and geometric recurrence.",
+    "Two simultaneous updates and three complete forward/local-derivative states.",
+    "L=1 and mu=2 labeled as false assumptions rather than valid certificates.",
+    "Root function forward, update, and descent upper use stable identities; no invented zero at range limit.",
+    "Nonconvex zero initialization is a maximum; stored pi has a nonzero objective and gradient.",
+    "Rounded eta*mu is not allowed to invent a zero geometric factor."
+  ],
+  "visual_checks": {
+    "pdf_pages": {
+      "lecture": 11,
+      "lab": 6,
+      "answers": 6
+    },
+    "all_pdf_pages_individually_viewed": 23,
+    "all_notebook_pngs_individually_viewed": 8,
+    "all_source_figures_individually_viewed": 11
+  },
+  "limits": [
+    "Finite teaching tests are not a proof over all inputs or all real numbers.",
+    "Anaconda environment creation, browser Jupyter UI, and socket or out-of-process kernel transport were not tested.",
+    "No cross-platform bitwise identity claim.",
+    "No large-scale or real-task performance claim."
+  ]
+}
