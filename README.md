@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–034 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–036 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -75,6 +75,9 @@
 
 - [第033讲 下降条件与收敛分析](units/033/README.md)：[正文](units/033/lecture.pdf) · [实验指南](units/033/lab.pdf) · [Notebook](units/033/experiment.ipynb)
 - [034 随机与小批量梯度下降](units/034/README.md)：[正文](units/034/lecture.pdf) · [实验指南](units/034/lab.pdf) · [Notebook](units/034/experiment.ipynb)
+
+- [第035讲 动量与加速方法](units/035/README.md)：[正文](units/035/lecture.pdf) · [实验指南](units/035/lab.pdf) · [Notebook](units/035/experiment.ipynb)
+- [036 自适应优化与权重衰减](units/036/README.md)：[正文](units/036/lecture.pdf) · [实验指南](units/036/lab.pdf) · [Notebook](units/036/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)

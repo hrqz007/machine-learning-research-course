@@ -1,0 +1,389 @@
+{
+  "unit": "035",
+  "title": "动量与加速方法",
+  "date_utc": "2026-10-04",
+  "status": "author checks complete; ready for independent review",
+  "pdf_pages": {
+    "lecture": 16,
+    "lab": 5,
+    "answers": 6
+  },
+  "lecture_sections": 22,
+  "full_solutions": 20,
+  "original_figures": 12,
+  "scientific_anchors": {
+    "data_rows": [
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        1,
+        -4,
+        1
+      ],
+      [
+        -1,
+        4,
+        -1
+      ],
+      [
+        -1,
+        -4,
+        -1
+      ]
+    ],
+    "model": "prediction=x1*a+x2*b, no intercept",
+    "residual": "prediction minus label",
+    "objective": "sum(r_i^2)/8 = (a-1)^2/2 + 8b^2",
+    "minimum": 0,
+    "optimum": [
+      1,
+      0
+    ],
+    "hessian": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        16
+      ]
+    ],
+    "initial": [
+      0,
+      1
+    ],
+    "initial_velocity": [
+      0,
+      0
+    ],
+    "hand_rate": "1/16",
+    "hand_momentum": "1/2",
+    "hb_hand_theta": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1/16",
+        "0"
+      ],
+      [
+        "39/256",
+        "-1/2"
+      ]
+    ],
+    "hb_hand_losses": [
+      "17/2",
+      "225/512",
+      "309233/131072"
+    ],
+    "nag_second_lookahead": [
+      "3/32",
+      "-1/2"
+    ],
+    "nag_second_evaluation_gradient": [
+      "-29/32",
+      "-8"
+    ],
+    "nag_hand_theta": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1/16",
+        "0"
+      ],
+      [
+        "77/512",
+        "0"
+      ]
+    ],
+    "nag_hand_losses": [
+      "17/2",
+      "225/512",
+      "189225/524288"
+    ],
+    "stability_scope": "fixed positive quadratic mode lambda, constant eta, 0<=beta<1, all initial states",
+    "hb_strict_stability": "0 < eta*lambda < 2*(1+beta)",
+    "nag_strict_stability": "0 < eta*lambda < 2*(1+beta)/(1+2*beta)",
+    "training_budget": "80 full-gradient updates = at most 320 training sample gradients per method; diagnostic forwards counted separately",
+    "first_target_updates": {
+      "gd_safe": null,
+      "gd_balanced": 64,
+      "hb_hand": 42,
+      "nag_hand": 47,
+      "hb_quadratic_tuned": 23,
+      "nag_strongconvex": 31
+    },
+    "torch_nag_mapping": "Constant lr/beta, zero dampening, matched zero buffer: d=-eta*v, z=theta+beta*d; reconstruct theta=z+eta*beta*v.",
+    "loss_diagnostics": "Actual row-forward loss and stable geometric_gap at stored parameters are both retained; solver gradients remain row-computed."
+  },
+  "execution": {
+    "unit": "035",
+    "status": "passed author tests; independent reviewer pending",
+    "normal_audit": {
+      "status": "passed",
+      "checks": 42348,
+      "independent_Fraction_paths": 120,
+      "independent_Fraction_states": 1440,
+      "rounded_primitive_states": 1440,
+      "Decimal_precision": 100,
+      "Decimal_full_states": 320,
+      "spectral_cases": 87,
+      "pre_arithmetic_bad_input_cases": 34,
+      "bad_CLI_output_preservation_cases": 76,
+      "protected_output_targets": 5,
+      "report_sha256": "ae016ae31c0db91aca84911e4f68208428eb05c81664729d3e1eec81c9c37eb6"
+    },
+    "optimized_audit": {
+      "status": "passed",
+      "checks": 42348,
+      "independent_Fraction_paths": 120,
+      "independent_Fraction_states": 1440,
+      "rounded_primitive_states": 1440,
+      "Decimal_precision": 100,
+      "Decimal_full_states": 320,
+      "spectral_cases": 87,
+      "pre_arithmetic_bad_input_cases": 34,
+      "bad_CLI_output_preservation_cases": 76,
+      "protected_output_targets": 5,
+      "report_sha256": "ae016ae31c0db91aca84911e4f68208428eb05c81664729d3e1eec81c9c37eb6"
+    },
+    "normal_optimized_notebook_core_json_bytes_identical": true,
+    "core_report_sha256": "ae016ae31c0db91aca84911e4f68208428eb05c81664729d3e1eec81c9c37eb6",
+    "normal_optimized_notebook_library_json_bytes_identical": true,
+    "library_report_sha256": "47bfeb2a6f9d5a0596d675efbdcf39e4dc51a1199eca88c0896e06a0966db8ea",
+    "library_execution": {
+      "status": "passed",
+      "python": "3.12.14",
+      "torch": "2.7.1+cpu",
+      "dtype": "float64",
+      "device": "cpu",
+      "threads": 1,
+      "foreach": false,
+      "fused": false,
+      "weight_decay": 0,
+      "max_absolute_comparison_error": 1.1102230246251565e-16,
+      "tolerance": "5e-12 * max(1,max(abs(reference)))",
+      "normalized_ema_rate": 0.125,
+      "nesterov_nonzero_dampening_rejected": true,
+      "scope": "Constant lr, constant beta, zero initial buffer. Raw torch Nesterov parameter is paper lookahead, not paper theta."
+    },
+    "notebook": {
+      "code_cells": 14,
+      "png_outputs": 6,
+      "sequential_real_kernel": "fresh Python process, ipykernel InProcessKernel",
+      "first_cell_guard_cases": [
+        {
+          "case": "csv_byte_change",
+          "status": "passed",
+          "error": "完整默认输入已改变，固定说明不再适用：data/regression.csv",
+          "numeric_or_graphic_outputs": 0
+        },
+        {
+          "case": "json_last_field_change",
+          "status": "passed",
+          "error": "完整默认输入已改变，固定说明不再适用：data/model_spec.json",
+          "numeric_or_graphic_outputs": 0
+        }
+      ]
+    },
+    "notes": [
+      "Core checks explicitly reject invalid raw types and complete final fields before any solver update.",
+      "Actual installed torch source inspected separately from the official docs.",
+      "Diagnostic forwards also compute per-row gradients; counts are not hardware-throughput measurements.",
+      "Independent Decimal pressure-path comparisons scale to the whole forward magnitude because low-coordinate accuracy is lost through large-number cancellation.",
+      "No Jupyter browser UI, external-process socket transport, fresh Conda install or GPU was tested.",
+      "Revision 2 counts actual gradient forwards and training sample gradients even when evaluation is discarded at numerical stop; 5 independently wrapped forward-call regressions and cancellation control passed."
+    ],
+    "library_failure_protection": {
+      "status": "passed",
+      "pre_torch_import_semantic_checks": 4,
+      "torch_imports_during_invalid_checks": 0,
+      "normal_and_optimized_bad_CLI_preservation_cases": 20
+    },
+    "revision2": {
+      "notebook_all_outputs_identical": true,
+      "changed_lab_pages_individually_viewed": 5,
+      "unchanged_lecture_answers_figures": "byte-identical to originally individually reviewed assets"
+    },
+    "revision3": {
+      "lab_pages": 5,
+      "all_five_lab_pages_individually_viewed": true,
+      "audit_count_mentions_updated": 42348
+    }
+  },
+  "visual": {
+    "all_final_pdf_pages_individually_viewed": 27,
+    "all_actual_notebook_pngs_individually_viewed": 6,
+    "all_original_figures_checked_in_final_lecture": 12,
+    "fixed_issues": [
+      "Moved state-spectrum legends outside axes so NAG double-zero root is visible.",
+      "Typeset the distinct-root solution as MathJax rather than compact Unicode.",
+      "Removed redundant trailing paragraphs and tightened redundant lab descriptions to avoid orphan final pages.",
+      "Protected inline Python loss expression against Markdown emphasis parsing."
+    ],
+    "observed_final_defects": "none",
+    "revision3_lab_pages_individually_viewed": 5
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "torch": "2.7.1+cpu",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "torch_device": "cpu",
+    "torch_dtype": "float64",
+    "torch_threads": 1,
+    "torch_foreach": false,
+    "torch_fused": false
+  },
+  "limits": [
+    "Original finite synthetic full-gradient mechanism, not a real-world prediction or hardware-speed comparison.",
+    "Fixed quadratic stability derivation is not a guarantee for arbitrary nonlinear, nonconvex or stochastic objectives.",
+    "Notebook verifies all default input bytes before numbers/figures; custom inputs require separately interpreted CLI experiments.",
+    "Floating stagnation, forward cancellation and numerical range limits are explicit states, not automatic convergence claims.",
+    "No new Conda installation, macOS compatibility, Jupyter browser UI, external-process socket transport or GPU was tested.",
+    "Output alias checks are not an operating-system proof against active concurrent path replacement."
+  ],
+  "public_file_count_including_this_file": 31,
+  "hash_scope": "All listed public files except this self-describing verification.json.",
+  "excluded_from_public_package": [
+    "build_assets.py",
+    "__pycache__/",
+    "results/",
+    "notebook_results/",
+    "build/",
+    "qa/",
+    "cache/"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 6198,
+      "sha256": "b74f47de5fcca93f552892731c946410a5279e8be8b3eb6a0bfb394b6485b408"
+    },
+    "answers.md": {
+      "bytes": 15220,
+      "sha256": "f6b8d84cb0a145d9210aee3750354612043e5468fe1b52ebbc61501a23aca00c"
+    },
+    "answers.pdf": {
+      "bytes": 535174,
+      "sha256": "c7c2415272c5e8d0fa14810bd7f7b3cf72250b525e2ec041cecd592d5249a769"
+    },
+    "author_audit.py": {
+      "bytes": 13246,
+      "sha256": "f0c36b1b89078607955277811304a483791ddfc456d40d919f636d6709dc01fb"
+    },
+    "data/README.md": {
+      "bytes": 1616,
+      "sha256": "bde131d35c2c125650b9964d16892693e04efae822f15e03ff510b37a4aa989b"
+    },
+    "data/model_spec.json": {
+      "bytes": 330,
+      "sha256": "8cef37e4c97280dd15772b8fbf89834dd15e7c39b61c1b3bafafb7df742e6721"
+    },
+    "data/regression.csv": {
+      "bytes": 53,
+      "sha256": "06678c8c19868fa6f4dad9fba345f31947cd05f224d38f77d00a98fdfe6199de"
+    },
+    "environment.yml": {
+      "bytes": 303,
+      "sha256": "f40ff58a9ea0d77e0217a1501e74add6d6eb75a0c1c8bbd378c2a7276a280e7f"
+    },
+    "experiment.ipynb": {
+      "bytes": 506509,
+      "sha256": "1c31d7eb7d704f7a3349935d52ce5be618d89e0366b4a932801862842877a36a"
+    },
+    "experiment.py": {
+      "bytes": 14213,
+      "sha256": "6461b75c49648e86846b27bc917988cbac64b190d063d331f22ff840f37896d8"
+    },
+    "figures/01_data_and_valley.png": {
+      "bytes": 68216,
+      "sha256": "6d9f467277490af1e340ff3be868a806d9e48276f5d6a32243117b9e76462c86"
+    },
+    "figures/02_history_filter.png": {
+      "bytes": 102575,
+      "sha256": "01a098190e47e8f2838ac55a133b4b546b03c3b885f283abd168ec92a5887e87"
+    },
+    "figures/03_second_step_geometry.png": {
+      "bytes": 48885,
+      "sha256": "973956a2655387ded8d3e9c01b02ab25968d2e1926ecfbfa20d142c659a3165d"
+    },
+    "figures/04_overshoot_same_settings.png": {
+      "bytes": 77169,
+      "sha256": "7f288f26602795e4230bb5b2046be718ef19624b7409dc0b0a06335787697004"
+    },
+    "figures/05_state_spectrum.png": {
+      "bytes": 64325,
+      "sha256": "01ec0a5054f656b5a5146e1680a623cff2ea51ce9f482ee849ef5bc4fd36a809"
+    },
+    "figures/06_stability_regions.png": {
+      "bytes": 65682,
+      "sha256": "a484fe82463e3f0a868d434d7e687c113c2daf18657ae4a99a040eb2890efbc4"
+    },
+    "figures/07_discriminant_and_radius.png": {
+      "bytes": 67121,
+      "sha256": "b6190c872f833238e185892c2138787eda21949dfa7246a59f90d0b1d3dec4b9"
+    },
+    "figures/08_initial_velocity.png": {
+      "bytes": 66601,
+      "sha256": "0d0d8c3ade522475e44207b805430280724329e3fb9c896ed6b366ed27d726c4"
+    },
+    "figures/09_tuned_comparison.png": {
+      "bytes": 141577,
+      "sha256": "1af9e7c0749504d7f179fec0c60749777e78901072739beccc11a7113c6134ee"
+    },
+    "figures/10_stress_pair.png": {
+      "bytes": 84659,
+      "sha256": "b0ba56dab02beb14c0907c7210e1f7f71212aeb831e60b9fd2138f7c06dd6271"
+    },
+    "figures/11_library_conventions.png": {
+      "bytes": 72906,
+      "sha256": "6dff390683225c0b79f1e7cc880900199b8ec819f85b1973ebefa43b070a2e71"
+    },
+    "figures/12_float_state.png": {
+      "bytes": 50930,
+      "sha256": "e96b36c5d08df40895caec184bdf823940f60600a3ddfe670efa6ca1c1b48eb3"
+    },
+    "lab.md": {
+      "bytes": 11455,
+      "sha256": "091de96e8d2ea3dd21374b8b5cdee9bbedc225c239e9505dad2278b1b3c105b5"
+    },
+    "lab.pdf": {
+      "bytes": 481939,
+      "sha256": "5d1692f981f8b0fe68872c4bb7a6fa7b483c3c106ff45662e60a1f067ea4f421"
+    },
+    "lecture.md": {
+      "bytes": 32056,
+      "sha256": "246a4fc41d801ea372bf8ae6c5a1101b97eb703f0702ceb84595e856153f7e16"
+    },
+    "lecture.pdf": {
+      "bytes": 1803163,
+      "sha256": "677befc1341b6f82fe1bc586bfb034623a14b1636690158dcc060ecad64b0d1b"
+    },
+    "library_check.py": {
+      "bytes": 7226,
+      "sha256": "395743c107d89a72599c003a9e4803a8d45baf71db5e4ba50a433f56b1bae3ea"
+    },
+    "requirements.txt": {
+      "bytes": 228,
+      "sha256": "1a590aac4e9e163538b9ea10c9e509fdd40ed598e1ac048539b7cc8ee38f063b"
+    },
+    "source-checks.json": {
+      "bytes": 2953,
+      "sha256": "85d80184a7128db94842fc72fc0c780436b5c489f0ad527a9dfcdf97a51c4ad8"
+    },
+    "test-result.json": {
+      "bytes": 3922,
+      "sha256": "da58722c441be83ca9f905c20c1361faa7d543e091e75c159b5b27786c314876"
+    }
+  },
+  "revision": "3: revision2 code unchanged; five-page lab all viewed; all audit counts synchronized"
+}

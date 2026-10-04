@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checks": 28843,
+  "decimal120_state_values": 5400,
+  "random_dyadic_state_values": 17280,
+  "random_datasets": 30,
+  "prestep_bad_input_cases": 43,
+  "prestep_bad_states": 12,
+  "CLI_failure_protections": 18,
+  "report_sha256": "15c8e5460ca7c03b20a5e0c1be6067a9f05e1d6af330463a749323e0461befce",
+  "near_optimum_old_gap": 4.999999999177334e-13,
+  "near_optimum_new_gap": 0.030634004019731334,
+  "limits": "Finite tests, not a theorem; Decimal paths compare real arithmetic on stored inputs to binary64 within stated tolerance.",
+  "notebook": {
+    "actual_code_cells": 13,
+    "retained_recalculated_PNGs": 6,
+    "first_cell_mutation_cases": 2,
+    "full_report_matches_script": true,
+    "fresh_real_inprocess_kernel": true
+  },
+  "final_execution_modes": [
+    "normal fresh process",
+    "python -O fresh process",
+    "unrelated working directories",
+    "sequential fresh real Notebook kernel"
+  ],
+  "legal_custom_restart_regressions": {
+    "high_rate_internal_theta_exceeds_user_initial_bound": "passed",
+    "range_stop_before_split": "not_run with exact reached step",
+    "range_stop_after_split": "complete actual suffix equality"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "synthetic_adaptive_linear_regression",
+  "initial_parameters": [0.0, 0.0],
+  "steps": 100,
+  "learning_rate": 0.25,
+  "beta1": 0.5,
+  "beta2": 0.75,
+  "rmsprop_alpha": 0.75,
+  "epsilon": 1.0,
+  "weight_decay": 0.1,
+  "decay_mask": [0, 1],
+  "decay_initial_parameters": [0.5, -0.5],
+  "rate_grid": [0.01, 0.05, 0.25, 1.0],
+  "epsilon_grid": [1.0, 0.00000001],
+  "objective_scale": 100.0,
+  "resume_split": 7
+}

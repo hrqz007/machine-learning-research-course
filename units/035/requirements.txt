@@ -1,0 +1,8 @@
+# Linux/Windows CPU reference environment; official PyTorch CPU index.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.3.5
+matplotlib==3.10.8
+nbformat==5.11.1
+ipykernel==7.4.0
+torch==2.7.1+cpu
+jupyterlab>=4.2,<5

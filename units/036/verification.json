@@ -1,0 +1,230 @@
+{
+  "unit": "036",
+  "title": "自适应优化与权重衰减",
+  "status": "complete owner checks; final independent review pending",
+  "date_utc": "2026-10-04",
+  "pdf_pages": {
+    "lecture": 11,
+    "lab": 3,
+    "answers": 8
+  },
+  "lecture_sections": 20,
+  "full_solutions": 20,
+  "original_figures": 9,
+  "notebook": {
+    "actual_code_cells": 13,
+    "retained_recalculated_PNGs": 6,
+    "first_cell_mutation_cases": 2,
+    "full_report_matches_script": true,
+    "fresh_real_inprocess_kernel": true
+  },
+  "execution": {
+    "status": "passed",
+    "checks": 28843,
+    "decimal120_state_values": 5400,
+    "random_dyadic_state_values": 17280,
+    "random_datasets": 30,
+    "prestep_bad_input_cases": 43,
+    "prestep_bad_states": 12,
+    "CLI_failure_protections": 18,
+    "report_sha256": "15c8e5460ca7c03b20a5e0c1be6067a9f05e1d6af330463a749323e0461befce",
+    "near_optimum_old_gap": 4.999999999177334e-13,
+    "near_optimum_new_gap": 0.030634004019731334,
+    "limits": "Finite tests, not a theorem; Decimal paths compare real arithmetic on stored inputs to binary64 within stated tolerance.",
+    "notebook": {
+      "actual_code_cells": 13,
+      "retained_recalculated_PNGs": 6,
+      "first_cell_mutation_cases": 2,
+      "full_report_matches_script": true,
+      "fresh_real_inprocess_kernel": true
+    },
+    "final_execution_modes": [
+      "normal fresh process",
+      "python -O fresh process",
+      "unrelated working directories",
+      "sequential fresh real Notebook kernel"
+    ],
+    "legal_custom_restart_regressions": {
+      "high_rate_internal_theta_exceeds_user_initial_bound": "passed",
+      "range_stop_before_split": "not_run with exact reached step",
+      "range_stop_after_split": "complete actual suffix equality"
+    }
+  },
+  "library_parity": {
+    "runtime": "2.7.1+cpu",
+    "device": "CPU",
+    "dtype": "float64",
+    "checks": 4141,
+    "cases": 15,
+    "updates_per_case": 30,
+    "maximum_absolute_difference": 5.684341886080802e-14,
+    "tolerance": {
+      "rtol": 2e-11,
+      "atol": 2e-12
+    },
+    "actual_zero_vs_None_and_history_probes": true
+  },
+  "visual": {
+    "all_final_22_pdf_pages_individually_viewed": true,
+    "all_6_actual_notebook_PNGs_individually_viewed": true,
+    "all_9_figures_checked_in_lecture": true,
+    "issues_fixed": [
+      "Raw mathematical subscripts typeset with MathJax",
+      "Wide state table split into scalar-coordinate rows without clipping",
+      "Missing blank line fixed between full row tables",
+      "Complete-state vs parameter-only restore difference magnified",
+      "Floating near-optimum slope rounding explicitly distinguished from symbolic zero"
+    ],
+    "final_defects_observed": "none"
+  },
+  "scientific_anchors": {
+    "objective": "F=1/8+(a-1)^2/2+2(b-1)^2",
+    "first_theta": [
+      "1/8",
+      "1/5"
+    ],
+    "first_F": "5721/3200",
+    "second_m": [
+      "-11/16",
+      "-13/5"
+    ],
+    "second_v": [
+      "97/256",
+      "139/25"
+    ],
+    "second_theta_decimal": [
+      0.2437004841250088,
+      0.3898541226435905
+    ],
+    "second_F_decimal": 1.1555504621664183,
+    "full_trace": "Each old row forward, local derivatives, gradient contributions, simultaneous state/parameter update, and new row forward retained for every main update. Both hand steps and two nonzero-init decay steps expanded in answers and executed Notebook.",
+    "decay": "Old-parameter eta*lambda convention; mask explicit; coupled moments vs data-only moments separate.",
+    "limits": "Synthetic finite CPU evidence; no universal optimizer ranking or unconditional convergence guarantee."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "optional_torch": "2.7.1+cpu",
+    "not_tested": [
+      "local Anaconda installation",
+      "Jupyter browser UI",
+      "external socket kernel transport"
+    ]
+  },
+  "files": {
+    "README.md": {
+      "bytes": 6241,
+      "sha256": "b7bb72a9001cf364f5b84f3aabec76ffa10845805a2fe5d994b953f791c7b080"
+    },
+    "answers.md": {
+      "bytes": 17286,
+      "sha256": "56ca43e775c3beba9079d888a91bf91663c5252142d57452132dedd56acea1bb"
+    },
+    "answers.pdf": {
+      "bytes": 605152,
+      "sha256": "1aff61f6ae19f6a879b778b7e72ed5f841268437ba90ba47004fe8845a84b27b"
+    },
+    "data/README.md": {
+      "bytes": 1287,
+      "sha256": "a24321cd81b3bb806b9e0ded622e036168574f99cf44488f8193ee9c9353164c"
+    },
+    "data/model_spec.json": {
+      "bytes": 422,
+      "sha256": "a8a82c874efdb9a587310f9bd631832b438bf5725b50ed64d894aa1da6b92607"
+    },
+    "data/regression.csv": {
+      "bytes": 47,
+      "sha256": "0bd28e7888af84c067bf6e4cec62e6d44e1e53f663f257d078dd104aaabb9105"
+    },
+    "environment.yml": {
+      "bytes": 163,
+      "sha256": "a89d51c18094a67ea6501ffdec75af6142fb08e2ef378e9aa500d3bbc2958486"
+    },
+    "experiment.ipynb": {
+      "bytes": 535335,
+      "sha256": "58a82aa00713547a7eb9e4e60405fc9b81ddceae626370e78c932ad835a65b3b"
+    },
+    "experiment.py": {
+      "bytes": 20135,
+      "sha256": "ea0d3c1923c7467613ef4e7b70cc1a48904f59369dfa339a621f6a10b7189bb1"
+    },
+    "figures/01_optimizer_state.png": {
+      "bytes": 71094,
+      "sha256": "51df0c25bd8e243279431f8b31b7b7971cf093545a5971312a673f6bd0285471"
+    },
+    "figures/02_squared_history.png": {
+      "bytes": 70912,
+      "sha256": "e23b84a7f984869d352d8eb2eff9afb1fd3c2d547c33ce6156dacb9ea2d3d260"
+    },
+    "figures/03_adam_step_graph.png": {
+      "bytes": 66196,
+      "sha256": "1c6519406e92a4de9507288d8c88ed03a0bb39f1ea7bf17540e771f715ce3836"
+    },
+    "figures/04_hand_forward_chain.png": {
+      "bytes": 65479,
+      "sha256": "351be86fcc315d5d073e0aeaa0630455433f50e64fefb2cf606079e56821ad5f"
+    },
+    "figures/05_effective_scale.png": {
+      "bytes": 39498,
+      "sha256": "bc6555e1ef3274de2f868fa80a1ba482c9b90febbbe5e92abb2ef920ed738d83"
+    },
+    "figures/06_optimizer_comparison.png": {
+      "bytes": 102436,
+      "sha256": "a4162df4977678ac4f4061b53ec8a7bee8f8aa18c2a9b48be17294c3a8a65f77"
+    },
+    "figures/07_coupled_vs_decoupled.png": {
+      "bytes": 68135,
+      "sha256": "9888e4d431cab75de299da387205eb276440eb6dc5ffcb651e7e6e97ea2685aa"
+    },
+    "figures/08_resume_states.png": {
+      "bytes": 88435,
+      "sha256": "6f817556028f3042d11899f734f83d2c92a73ceda21c6f6a70396795eefe77cf"
+    },
+    "figures/09_validation_layers.png": {
+      "bytes": 76959,
+      "sha256": "2f194912fd73f73b32852357352d8f0309432b19c83cbbceef4b46440cb0514b"
+    },
+    "lab.md": {
+      "bytes": 8263,
+      "sha256": "3c08e85076adf2a3ad9169f3fb2871cd61605e8e531077f9b9b6ac321999e712"
+    },
+    "lab.pdf": {
+      "bytes": 507110,
+      "sha256": "a3b16566135806b241d8acf4cd518c991a3fdafe1a1e567731db22121528c56b"
+    },
+    "lecture.md": {
+      "bytes": 21777,
+      "sha256": "b9a80ec1f9d53516207fb1f8cb76bed095ee5bbb62f3397bf5a07fe5077756d3"
+    },
+    "lecture.pdf": {
+      "bytes": 1329610,
+      "sha256": "d1a64bbd044f6ba231ad01ede70a82b6f38e86b6dc6d7923eddc93639efa0522"
+    },
+    "library-result.json": {
+      "bytes": 4103,
+      "sha256": "d455d4479d6f82af1a5c7993f4f45669656ae784f764cece942603ec3c99692e"
+    },
+    "library_check.py": {
+      "bytes": 5015,
+      "sha256": "de3eb4d53556355ec62b3c5ed07fa59eddb03c1f89e2ca8f96841fa872bdf2bd"
+    },
+    "requirements-library.txt": {
+      "bytes": 66,
+      "sha256": "fa19ee0359d808010da1a51f3a3b8b631c9c8998c3f92045c285cec107d8c273"
+    },
+    "requirements.txt": {
+      "bytes": 49,
+      "sha256": "540362e762ec5371fe189483a605805b43960aaa50d9b4054842963aed0478cc"
+    },
+    "source-checks.json": {
+      "bytes": 3211,
+      "sha256": "e100d78aa22c547c98dedefb629743e6456b3d7edd2a9c887ad698c9d18c880d"
+    },
+    "test-result.json": {
+      "bytes": 1178,
+      "sha256": "e57748aa8710b9130164708e03845157b135ed58b621578184c2ce984bf7a1b1"
+    }
+  },
+  "review_revision": "Correct legal internal parameter-only restart and explicitly skip unreachable requested split; final full gates rerun."
+}

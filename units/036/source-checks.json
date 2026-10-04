@@ -1,0 +1,63 @@
+{
+  "unit": "036",
+  "date_utc": "2026-10-04",
+  "sources": [
+    {
+      "title": "Duchi Hazan Singer AdaGrad",
+      "url": "https://jmlr.org/papers/volume12/duchi11a/duchi11a.pdf",
+      "status": "read",
+      "scope": "Read original 39-page paper, diagonal Algorithm1 and history-dependent geometry; course uses an explicitly stated unconstrained special case."
+    },
+    {
+      "title": "Tieleman Hinton RMSProp lecture",
+      "url": "https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf",
+      "status": "read",
+      "scope": "Read slide29 of31, exponential average of squared gradients and square-root scaling; no source images reused."
+    },
+    {
+      "title": "Kingma Ba Adam",
+      "url": "https://arxiv.org/pdf/1412.6980",
+      "status": "read",
+      "scope": "Read Algorithm1 and initialization-bias discussion. Checked time index, raw second moment, correction and epsilon outside root; broad original convergence claims not assumed."
+    },
+    {
+      "title": "Loshchilov Hutter AdamW",
+      "url": "https://arxiv.org/html/1711.05101v3",
+      "status": "read",
+      "scope": "Read section2 Algorithms1/2 and equivalence/non-equivalence statements. Explicitly distinguish paper per-step decay notation from the eta-times-lambda convention used here."
+    },
+    {
+      "title": "Reddi Kale Kumar convergence limits",
+      "url": "https://arxiv.org/pdf/1904.09237",
+      "status": "read",
+      "scope": "Read abstract/introduction of23-page original paper for convex-counterexample and earlier-analysis limitations. No implemented AMSGrad or broad guarantee claimed."
+    },
+    {
+      "title": "PyTorch2.7 Adam",
+      "url": "https://docs.pytorch.org/docs/2.7/generated/torch.optim.Adam.html",
+      "status": "read",
+      "scope": "Read fixed-version API, update, decoupled flag and state semantics; actual2.7.1 CPU signature and single-tensor source also inspected."
+    },
+    {
+      "title": "PyTorch2.7 AdamW",
+      "url": "https://docs.pytorch.org/docs/2.7/generated/torch.optim.AdamW.html",
+      "status": "read",
+      "scope": "Read fixed-version update order, explicit weight decay and differing default. Actual2.7.1 CPU float64 state parity and zero-vs-None experiments executed; see library-result.json."
+    }
+  ],
+  "implementation_inspection": {
+    "runtime": "PyTorch2.7.1+cpu",
+    "official_installed_modules_inspected": [
+      "torch.optim.adagrad",
+      "torch.optim.rmsprop",
+      "torch.optim.adam"
+    ],
+    "scope": "Confirmed square-root then epsilon, initial accumulators, EMA update order, and decoupled old-parameter shrink. Actual pinned CPU float64 execution compared full parameters and optimizer states in 15 thirty-step cases; see library-result.json."
+  },
+  "limitations": [
+    "Direct fixed2.7 RMSProp/Adagrad web retrieval failed; actual installed official module source was inspected instead.",
+    "OpenReview returned a browser verification challenge; original arXiv PDF of Reddi paper was successfully read instead.",
+    "Current stable docs redirected to another version; not used to infer the installed version behavior.",
+    "All teaching examples and diagrams are independently constructed."
+  ]
+}

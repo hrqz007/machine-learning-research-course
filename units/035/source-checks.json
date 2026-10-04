@@ -1,0 +1,38 @@
+{
+  "unit": "035",
+  "date_utc": "2026-10-04",
+  "sources": [
+    {
+      "title": "Sutskever, Martens, Dahl, Hinton (2013). On the importance of initialization and momentum in deep learning. PMLR 28(3):1139-1147.",
+      "url": "https://proceedings.mlr.press/v28/sutskever13.pdf",
+      "status": "read",
+      "scope": "Section 2, equations (1)-(4): displacement HB and Nesterov gradient evaluated at theta+beta*d. No deep-network experimental claim is attributed to the four-row teaching example."
+    },
+    {
+      "title": "Bubeck (2015). Convex Optimization: Algorithms and Complexity. Foundations and Trends in Machine Learning 8(3-4):231-358.",
+      "url": "https://arxiv.org/pdf/1405.4980",
+      "status": "read",
+      "scope": "Section 3.7, theorem 3.18 and estimate-sequence argument; standard strongly-convex constant coefficients and function-gap bound. Original x/y sequences mapped to teaching z/theta, indexing shifted to t=0. Convex-only O(1/t^2) requires its appropriate changing-coefficient algorithm."
+    },
+    {
+      "title": "Lessard, Recht, Packard (2016). Analysis and Design of Optimization Algorithms via Integral Quadratic Constraints. SIAM Journal on Optimization 26(1):57-95, author corrected version 2017.",
+      "url": "https://laurentlessard.com/public/siopt16_iqcopt.pdf",
+      "status": "read",
+      "scope": "Section 2 state realization, proposition 1 and Appendix A eigenmode reduction and quadratic tuning, section 4.6 and Appendix B strongly-convex nonquadratic heavy-ball counterexample. Course two-step stability/Jury proof and all four-row examples independently derived. Standard strong-convex NAG setting distinguished from quadratic-optimal NAG tuning."
+    },
+    {
+      "title": "PyTorch 2.7 official documentation: torch.optim.SGD; installed PyTorch 2.7.1+cpu source.",
+      "url": "https://docs.pytorch.org/docs/2.7/generated/torch.optim.SGD.html",
+      "status": "read and actually executed",
+      "scope": "First momentum buffer copies gradient without dampening; subsequent buffer beta*v+(1-tau)*g; lr outside buffer; Nesterov uses g+beta*v and requires positive momentum with zero dampening; foreach/fused explicitly disabled. Installed _single_tensor_sgd source inspected and actual float64 CPU comparisons executed.",
+      "installed_version": "2.7.1+cpu",
+      "installed_sgd_module_source_sha256": "16e3cd6022bb9408e13b25d2f431ebc1c40b59f7a308a3e4c5ed1f93a8427a1a"
+    }
+  ],
+  "limits": [
+    "No source illustration or long source passage copied. Data, derivations, exact hand tables and figures are original.",
+    "Official 2.7 documentation link points at the 2.7 series; the actual patch-version behavior was checked in installed 2.7.1 source and execution.",
+    "Only finite synthetic full-gradient experiments; no claimed real-task, GPU, stochastic or universally nonconvex acceleration.",
+    "Copyright of source documents is separate from the authored tutorial."
+  ]
+}

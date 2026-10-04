@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "torch": "2.7.1+cpu",
+  "numpy": "2.3.5",
+  "device": "CPU",
+  "dtype": "float64",
+  "threads": 1,
+  "foreach": false,
+  "fused": "False where supported; RMSProp has no fused argument",
+  "checks": 4141,
+  "maximum_absolute_difference": 5.684341886080802e-14,
+  "tolerance": {
+    "rtol": 2e-11,
+    "atol": 2e-12
+  },
+  "cases": [
+    {
+      "method": "AdaGrad",
+      "setting": 0,
+      "steps": 30,
+      "mask": [
+        0,
+        1
+      ],
+      "final_parameters": [
+        0.9226091612274934,
+        0.9828579286296195
+      ]
+    },
+    {
+      "method": "AdaGrad",
+      "setting": 1,
+      "steps": 30,
+      "mask": [
+        1,
+        1
+      ],
+      "final_parameters": [
+        0.4289412667989168,
+        0.42894126811506306
+      ]
+    },
+    {
+      "method": "AdaGrad",
+      "setting": 2,
+      "steps": 30,
+      "mask": [
+        1,
+        0
+      ],
+      "final_parameters": [
+        0.0903167450793358,
+        0.09307176440351103
+      ]
+    },
+    {
+      "method": "RMSProp",
+      "setting": 0,
+      "steps": 30,
+      "mask": [
+        0,
+        1
+      ],
+      "final_parameters": [
+        0.9989306078329044,
+        1.0
+      ]
+    },
+    {
+      "method": "RMSProp",
+      "setting": 1,
+      "steps": 30,
+      "mask": [
+        1,
+        1
+      ],
+      "final_parameters": [
+        0.9941561785604534,
+        0.994156179931161
+      ]
+    },
+    {
+      "method": "RMSProp",
+      "setting": 2,
+      "steps": 30,
+      "mask": [
+        1,
+        0
+      ],
+      "final_parameters": [
+        0.26885022516860396,
+        0.291436822074584
+      ]
+    },
+    {
+      "method": "Adam",
+      "setting": 0,
+      "steps": 30,
+      "mask": [
+        0,
+        1
+      ],
+      "final_parameters": [
+        1.0001276611040275,
+        1.0000305266103307
+      ]
+    },
+    {
+      "method": "Adam",
+      "setting": 1,
+      "steps": 30,
+      "mask": [
+        1,
+        1
+      ],
+      "final_parameters": [
+        1.1109465098617655,
+        1.1109465152839526
+      ]
+    },
+    {
+      "method": "Adam",
+      "setting": 2,
+      "steps": 30,
+      "mask": [
+        1,
+        0
+      ],
+      "final_parameters": [
+        0.26885022516860396,
+        0.291436822074584
+      ]
+    },
+    {
+      "method": "AdamL2",
+      "setting": 0,
+      "steps": 30,
+      "mask": [
+        0,
+        1
+      ],
+      "final_parameters": [
+        0.9999923452584945,
+        0.9755987834179918
+      ]
+    },
+    {
+      "method": "AdamL2",
+      "setting": 1,
+      "steps": 30,
+      "mask": [
+        1,
+        1
+      ],
+      "final_parameters": [
+        0.8673678061647372,
+        0.7950642353610037
+      ]
+    },
+    {
+      "method": "AdamL2",
+      "setting": 2,
+      "steps": 30,
+      "mask": [
+        1,
+        0
+      ],
+      "final_parameters": [
+        0.7272891042188239,
+        -0.2054454570208717
+      ]
+    },
+    {
+      "method": "AdamW",
+      "setting": 0,
+      "steps": 30,
+      "mask": [
+        0,
+        1
+      ],
+      "final_parameters": [
+        0.9999923452584945,
+        0.9720920437972589
+      ]
+    },
+    {
+      "method": "AdamW",
+      "setting": 1,
+      "steps": 30,
+      "mask": [
+        1,
+        1
+      ],
+      "final_parameters": [
+        0.9973661188794312,
+        0.7732400521809343
+      ]
+    },
+    {
+      "method": "AdamW",
+      "setting": 2,
+      "steps": 30,
+      "mask": [
+        1,
+        0
+      ],
+      "final_parameters": [
+        0.7195760124302352,
+        -0.2054454570208717
+      ]
+    }
+  ],
+  "zero_vs_none": {
+    "zero": {
+      "parameter": -0.4875,
+      "step": 1.0,
+      "state_created": true
+    },
+    "none": {
+      "parameter": -0.5,
+      "step": null,
+      "state_created": false
+    }
+  },
+  "zero_current_gradient_with_history": {
+    "before_zero_gradient": 0.33333333333333337,
+    "after_zero_gradient": 0.2611616203362774,
+    "m": 0.5,
+    "v": 0.75,
+    "step": 2.0
+  },
+  "scope": "Finite deterministic cases; equivalent arithmetic order may differ by ulps. Not a universal optimizer guarantee."
+}

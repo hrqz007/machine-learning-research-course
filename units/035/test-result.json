@@ -1,0 +1,95 @@
+{
+  "unit": "035",
+  "status": "passed author tests; independent reviewer pending",
+  "normal_audit": {
+    "status": "passed",
+    "checks": 42348,
+    "independent_Fraction_paths": 120,
+    "independent_Fraction_states": 1440,
+    "rounded_primitive_states": 1440,
+    "Decimal_precision": 100,
+    "Decimal_full_states": 320,
+    "spectral_cases": 87,
+    "pre_arithmetic_bad_input_cases": 34,
+    "bad_CLI_output_preservation_cases": 76,
+    "protected_output_targets": 5,
+    "report_sha256": "ae016ae31c0db91aca84911e4f68208428eb05c81664729d3e1eec81c9c37eb6"
+  },
+  "optimized_audit": {
+    "status": "passed",
+    "checks": 42348,
+    "independent_Fraction_paths": 120,
+    "independent_Fraction_states": 1440,
+    "rounded_primitive_states": 1440,
+    "Decimal_precision": 100,
+    "Decimal_full_states": 320,
+    "spectral_cases": 87,
+    "pre_arithmetic_bad_input_cases": 34,
+    "bad_CLI_output_preservation_cases": 76,
+    "protected_output_targets": 5,
+    "report_sha256": "ae016ae31c0db91aca84911e4f68208428eb05c81664729d3e1eec81c9c37eb6"
+  },
+  "normal_optimized_notebook_core_json_bytes_identical": true,
+  "core_report_sha256": "ae016ae31c0db91aca84911e4f68208428eb05c81664729d3e1eec81c9c37eb6",
+  "normal_optimized_notebook_library_json_bytes_identical": true,
+  "library_report_sha256": "47bfeb2a6f9d5a0596d675efbdcf39e4dc51a1199eca88c0896e06a0966db8ea",
+  "library_execution": {
+    "status": "passed",
+    "python": "3.12.14",
+    "torch": "2.7.1+cpu",
+    "dtype": "float64",
+    "device": "cpu",
+    "threads": 1,
+    "foreach": false,
+    "fused": false,
+    "weight_decay": 0,
+    "max_absolute_comparison_error": 1.1102230246251565e-16,
+    "tolerance": "5e-12 * max(1,max(abs(reference)))",
+    "normalized_ema_rate": 0.125,
+    "nesterov_nonzero_dampening_rejected": true,
+    "scope": "Constant lr, constant beta, zero initial buffer. Raw torch Nesterov parameter is paper lookahead, not paper theta."
+  },
+  "notebook": {
+    "code_cells": 14,
+    "png_outputs": 6,
+    "sequential_real_kernel": "fresh Python process, ipykernel InProcessKernel",
+    "first_cell_guard_cases": [
+      {
+        "case": "csv_byte_change",
+        "status": "passed",
+        "error": "完整默认输入已改变，固定说明不再适用：data/regression.csv",
+        "numeric_or_graphic_outputs": 0
+      },
+      {
+        "case": "json_last_field_change",
+        "status": "passed",
+        "error": "完整默认输入已改变，固定说明不再适用：data/model_spec.json",
+        "numeric_or_graphic_outputs": 0
+      }
+    ]
+  },
+  "notes": [
+    "Core checks explicitly reject invalid raw types and complete final fields before any solver update.",
+    "Actual installed torch source inspected separately from the official docs.",
+    "Diagnostic forwards also compute per-row gradients; counts are not hardware-throughput measurements.",
+    "Independent Decimal pressure-path comparisons scale to the whole forward magnitude because low-coordinate accuracy is lost through large-number cancellation.",
+    "No Jupyter browser UI, external-process socket transport, fresh Conda install or GPU was tested.",
+    "Revision 2 counts actual gradient forwards and training sample gradients even when evaluation is discarded at numerical stop; 5 independently wrapped forward-call regressions and cancellation control passed."
+  ],
+  "library_failure_protection": {
+    "status": "passed",
+    "pre_torch_import_semantic_checks": 4,
+    "torch_imports_during_invalid_checks": 0,
+    "normal_and_optimized_bad_CLI_preservation_cases": 20
+  },
+  "revision2": {
+    "notebook_all_outputs_identical": true,
+    "changed_lab_pages_individually_viewed": 5,
+    "unchanged_lecture_answers_figures": "byte-identical to originally individually reviewed assets"
+  },
+  "revision3": {
+    "lab_pages": 5,
+    "all_five_lab_pages_individually_viewed": true,
+    "audit_count_mentions_updated": 42348
+  }
+}

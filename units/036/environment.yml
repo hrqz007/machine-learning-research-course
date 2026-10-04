@@ -1,0 +1,10 @@
+name: ml-unit036
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.3.5
+      - matplotlib==3.10.8
+      - jupyterlab>=4,<5
