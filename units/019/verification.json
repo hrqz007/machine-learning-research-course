@@ -1,0 +1,173 @@
+{
+  "unit": "019",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 12,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4,
+    "exercises": 14
+  },
+  "visual_review": "All20 finalPDF pages individually inspected; all12original figures checked incontext; all4 retainedNotebook PNGs individually inspected. Figure5 bracket clipping repaired, figure7 plotting values kept at exact locations. Review revision: only lab pages3–4 changed and rechecked; all4Notebook PNGs byte-identical.",
+  "code": {
+    "status": "passed",
+    "core": "Python standard library only",
+    "internal_crosschecks": 1120,
+    "boundary_rejections": 49,
+    "accepted_and_sentinels": 7,
+    "independent_rational_comparisons": 1440,
+    "Fraction_quadrature_cases": 192,
+    "Decimal80_inverse_CDF_cases": 99,
+    "exact_empirical_tower_cases": 100,
+    "unrelated_cwd_repeat": "Three fresh runs including python -O: stdout and report bytes identical; corrupted CSV protected old output",
+    "review_regression": "Full six-state and group validation before RNG creation, four invalid-model cases and RNG sentinel passed"
+  },
+  "notebook": {
+    "code_cells": 13,
+    "png_outputs": 4,
+    "status": "passed",
+    "method": "Fresh Python process; sequential real ipykernel InProcessKernel"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Synthetic finite examples only",
+    "Not a LLN proof or confidence interval construction",
+    "Conservative subnormal rejection and finite float range",
+    "Callback internal information loss may remain undetectable",
+    "Jupyter browserUI, external socket transport and learner Anaconda installation not tested"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 4930,
+      "sha256": "167d9b8a002fdc05868f50922d1c9368cc740dec0db9dc60204bf4ce45e9e823"
+    },
+    "lecture.md": {
+      "bytes": 23260,
+      "sha256": "255cb117c7216a9a4d09fb970ff2b79a284222e3a45a5e4542b67e64842d0e55"
+    },
+    "lecture.pdf": {
+      "bytes": 1538033,
+      "sha256": "298846b257a5885bc3610b0a65a6ba5938a61ffc9128a3af7c0d9bf90942dd6a"
+    },
+    "lab.md": {
+      "bytes": 10439,
+      "sha256": "c30b2266f06963181388590816a6f30e82b6a7df8c067184c34ab2734c047ad7"
+    },
+    "lab.pdf": {
+      "bytes": 544578,
+      "sha256": "f5d502c68888e44bf160bc9f987659b2046f8a46ff27eee91ea66b2933b486a7"
+    },
+    "answers.md": {
+      "bytes": 8488,
+      "sha256": "c11f3d1b1d9bec560c34586e58ff440facdfc21083d8b9e3d5808fd72ab7d180"
+    },
+    "answers.pdf": {
+      "bytes": 512749,
+      "sha256": "893eeb3689b4ba2b829919f29121e240482edfc9abc46d65b7fd9dd45c0cb927"
+    },
+    "experiment.py": {
+      "bytes": 19377,
+      "sha256": "492283932650ce8cd2eb24f5c6ba901a14afb822e17072512090dbada02a7a73"
+    },
+    "experiment.ipynb": {
+      "bytes": 271542,
+      "sha256": "c75b4104b546bf93f7b1e6b46f6639804358150b774ae02d45d257d9aa545ea5"
+    },
+    "requirements.txt": {
+      "bytes": 113,
+      "sha256": "24e3a1c7c05b22aab141d79c79877740737152b4391939a5ad12b901a847e88c"
+    },
+    "environment.yml": {
+      "bytes": 152,
+      "sha256": "2e096950f58e96b9a70062b4fdf6bc6e8ba5729a597f2cf0a1ca5f607884896b"
+    },
+    "source-checks.json": {
+      "bytes": 4879,
+      "sha256": "16ec97948ed10f3b0bc7fcfd39d9c3533c6878b3c8c317d10c85036a6a7fe947"
+    },
+    "test-result.json": {
+      "bytes": 3027,
+      "sha256": "48217c866bcab70922cac60df7262486143e7601465680d794e98948e24d5e57"
+    },
+    "data/README.md": {
+      "bytes": 673,
+      "sha256": "bd1bac22dc5c979de2154cae697377c9ad899dc7e56207ab916e13315431965a"
+    },
+    "data/scenarios.csv": {
+      "bytes": 163,
+      "sha256": "a329a36a94186c6f379751bd9e73b9764666d32e12b4f2f9881b4a21d2e50a7e"
+    },
+    "figures/01_outcome_mapping.png": {
+      "bytes": 62724,
+      "sha256": "3993cb8351e603ae623e67f62e82878eeca99133bab938d1d5759bbb3c1b0ca3"
+    },
+    "figures/02_pmf_cdf.png": {
+      "bytes": 58887,
+      "sha256": "c4de9540d7eed4bb5b9aadfff09d9788b9127551fe7c513f676c88990e260ec1"
+    },
+    "figures/03_mean_contributions.png": {
+      "bytes": 50977,
+      "sha256": "57e560dc4ef47d63f563743c26f7ef71115cc0f6fd8642c5ec17fa5617f39be7"
+    },
+    "figures/04_tail_moment.png": {
+      "bytes": 73575,
+      "sha256": "679b7d174ce913cc18b7e29ff1de5b96f5c1b06b13c19c73ba01f5ecbef9c8f2"
+    },
+    "figures/05_transform_order.png": {
+      "bytes": 49064,
+      "sha256": "d4fd2a83b5aec553693a02c41f455420fb229aeb34a5a1994dfce5198d735a1b"
+    },
+    "figures/06_variance_contributions.png": {
+      "bytes": 52504,
+      "sha256": "49ca95dd355ff8d7b361db8b0692823d45999d278aef3119970ba4954bcd4a1c"
+    },
+    "figures/07_same_mean_spread.png": {
+      "bytes": 58923,
+      "sha256": "4165e3673cebeaf99d7a7580eaef37540f9ebd4b938ff1325760b76649dcae46"
+    },
+    "figures/08_square_risk.png": {
+      "bytes": 78950,
+      "sha256": "6009d801caddcb8a71c4e5b51e00f9b101384c2062c6562670ff57d41fc80c5f"
+    },
+    "figures/09_continuous_moments.png": {
+      "bytes": 72147,
+      "sha256": "8cc990ab15c33efcd4ffabb848e13e4f671fea5631046667855cfb6ddd9a96f5"
+    },
+    "figures/10_mixed_cdf.png": {
+      "bytes": 76310,
+      "sha256": "1451b7bcdcafbf35cea719dda31e132bc0dd990a4cb6826310d81ed4390d650a"
+    },
+    "figures/11_conditioning_tower.png": {
+      "bytes": 60888,
+      "sha256": "61c7aec489058313965d64871e1389132f306f0cf09014e53400255bd08f8aa4"
+    },
+    "figures/12_simulation_audit.png": {
+      "bytes": 90839,
+      "sha256": "ecdd1543ad0320fcfddd3168097b18961823ff3ba04fc1ceab155359dc7355bf"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "payload_files_verified": 27,
+    "payload_bytes_verified": 3728191,
+    "Fraction_models": 400,
+    "conditional_cases": 367,
+    "exact_quadratures": 240,
+    "high_precision_inverse_CDF_cases": 306,
+    "independently_recounted_simulations": 96,
+    "empirical_tower_cases": 160,
+    "additional_rejections": 8,
+    "extra_pre_RNG_invalid_cases": 10,
+    "pdf_pages_reviewed": 20,
+    "notebook_code_cells": 13,
+    "notebook_pngs": 4,
+    "fresh_process": "Ordinary, -O and -S reports identical; fresh real Notebook kernel passed",
+    "latest_revision": "All model states and group labels validated before RNG; no remaining blocker"
+  }
+}

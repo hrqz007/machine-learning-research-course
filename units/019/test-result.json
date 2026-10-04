@@ -1,0 +1,101 @@
+{
+  "unit": "019",
+  "status": "passed",
+  "date": "2026-10-04",
+  "environment": {
+    "python": "3.12.14",
+    "core": "standard library",
+    "notebook_plotting": "Matplotlib3.10.8"
+  },
+  "model_answers": {
+    "mean": "4/3",
+    "second_moment": "11/3",
+    "variance": "17/9",
+    "group_masses": [
+      "1/3",
+      "2/3"
+    ],
+    "group_means": [
+      0,
+      2
+    ],
+    "constant_risk": "17/9",
+    "conditional_risk": "1",
+    "continuous_mean": "7/6",
+    "continuous_variance": "11/36"
+  },
+  "script_crosschecks": 1120,
+  "boundary_checks": {
+    "expected_rejections": 49,
+    "accepted_or_sentinel_checks": 7
+  },
+  "independent_numerical_audit": {
+    "rational_model_comparisons": 1440,
+    "Fraction_quadrature_cases": 192,
+    "Decimal80_inverse_CDF_cases": 99,
+    "inverse_max_abs_error": 2.220446049250313e-16,
+    "exact_sample_tower_cases": 100,
+    "fresh_script_runs": 3,
+    "optimized_run_retains_checks": true,
+    "stdout_and_report_bytes_identical": true,
+    "report_sha256": "b0891f1cbb84e0e72016fe04dd5a421212f1a16dae2905f26ebf4f1daebedcc5",
+    "corrupted_csv_protected_existing_output": true
+  },
+  "simulations": {
+    "n": [
+      30,
+      300,
+      3000,
+      30000
+    ],
+    "repetitions": 24,
+    "seed_rule": "190000 + 100*n + repetition, repetition=0..23",
+    "small_n": 2,
+    "small_repetitions": 64,
+    "small_seed_range": [
+      199000,
+      199063
+    ],
+    "absent_active": 6,
+    "interpretation": "Actual finite experiments, not confidence intervals or LLN proof"
+  },
+  "continuous_sample": {
+    "n": 30000,
+    "seed": 190777,
+    "mean": 1.1691337475914578,
+    "variance_n": 0.3054184069058165
+  },
+  "cancellation": {
+    "offset": 1000000000000.0,
+    "naive_second_moment_difference": -134217728.0,
+    "reference_shifted_variance": 1.888888888888889,
+    "exact_variance": "17/9",
+    "huge_offset": 1e+18,
+    "huge_distinct_values": 1
+  },
+  "notebook": {
+    "code_cells": 13,
+    "png_outputs": 4,
+    "status": "passed",
+    "method": "Fresh Python process and sequential real ipykernel InProcessKernel"
+  },
+  "pdf": {
+    "lecture_pages": 12,
+    "lab_pages": 4,
+    "answers_pages": 4,
+    "review": "Every final page visually inspected; all four notebook PNGs inspected"
+  },
+  "limitations": [
+    "Browser Jupyter UI and external socket transport untested",
+    "Learner Anaconda installation untested",
+    "Finite float range and conservative subnormal rejection",
+    "A callback can silently lose information internally before returning a finite value",
+    "Synthetic models do not establish real-world performance"
+  ],
+  "review_revision": {
+    "finding": "A positive-probability invalid state could escape validation if not sampled",
+    "fix": "Validate all six state values and every group label before constructing RNG",
+    "regressions": "Four invalid last-state/group cases plus an RNG-construction sentinel group",
+    "visual_changes": "Only lab pages3–4 changed and were reviewed; all4NotebookPNGs byte-identical"
+  }
+}

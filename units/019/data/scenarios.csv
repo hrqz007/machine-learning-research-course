@@ -1,0 +1,7 @@
+scenario_id,probability_numerator,probability_denominator,loss_units,group
+A,1,6,0,quiet
+B,1,6,0,quiet
+C,1,6,1,active
+D,1,6,1,active
+E,1,6,2,active
+F,1,6,4,active

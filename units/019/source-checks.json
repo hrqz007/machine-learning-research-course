@@ -1,0 +1,90 @@
+{
+  "unit": "019",
+  "date": "2026-10-04",
+  "status": "source_sections_checked_and_executable_verification_passed",
+  "sources": [
+    {
+      "id": "R1",
+      "author": "Jeremy Orloff and Jonathan Bloom",
+      "title": "Discrete Random Variables",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class04-prep-a.pdf",
+      "status": "PDF_opened_and_relevant_text_read",
+      "sections_checked": "Sections2.2–2.8: mapping, merged PMF, CDF includes endpoint, discrete-step interpretation"
+    },
+    {
+      "id": "R2",
+      "author": "Jeremy Orloff and Jonathan Bloom",
+      "title": "Expected Value of Discrete Random Variables",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class04-prep-b.pdf",
+      "status": "PDF_opened_and_relevant_text_read",
+      "sections_checked": "Sections2–2.1 and expectation properties: probability weighting, expectation need not be a possible value"
+    },
+    {
+      "id": "R3",
+      "author": "Jeremy Orloff and Jonathan Bloom",
+      "title": "Variance of Discrete Random Variables",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class05-prep-a.pdf",
+      "status": "PDF_opened_and_relevant_text_read",
+      "sections_checked": "Sections3–3.5: centered second moment, units, scale/shift, second-moment identity and independence warning"
+    },
+    {
+      "id": "R4",
+      "author": "Jeremy Orloff and Jonathan Bloom",
+      "title": "Continuous Random Variables",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class05-prep-b.pdf",
+      "status": "PDF_opened_and_relevant_text_read",
+      "sections_checked": "Section4: density normalization, interval probabilities, density heights need not be at most1"
+    },
+    {
+      "id": "R5",
+      "author": "Jeremy Orloff and Jonathan Bloom",
+      "title": "Expectation Variance and Standard Deviation for Continuous Random Variables",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class06-prep-a.pdf",
+      "status": "PDF_opened_and_relevant_text_read",
+      "sections_checked": "Section3 and expectation properties: density-weighted moments, support, mean and variance"
+    },
+    {
+      "id": "R6",
+      "author": "MIT 6.041 teaching team",
+      "title": "Fall2010 complete lecture slides, Lecture12",
+      "url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/60eede37f87fd886d4ba574e1cf26617_MIT6_041F10_lec_slides.pdf#page=24",
+      "status": "PDF_opened_and_page24_text_read",
+      "sections_checked": "Conditional mean given a value versus conditional expectation as a random variable; iterated expectation. General total variance deferred to unit021."
+    },
+    {
+      "id": "R7",
+      "author": "Python Software Foundation",
+      "title": "Python3.12 random",
+      "url": "https://docs.python.org/3.12/library/random.html",
+      "status": "opened_and_read",
+      "sections_checked": "Pseudo-random generator, seed and reproducibility limitations across Python versions"
+    },
+    {
+      "id": "R8",
+      "author": "Python Software Foundation",
+      "title": "Python3.12 statistics",
+      "url": "https://docs.python.org/3.12/library/statistics.html",
+      "status": "opened_and_read",
+      "sections_checked": "pvariance versus variance; denominators n and n−1 answer distinct tasks"
+    }
+  ],
+  "retrieval_limits": [
+    "Spring2006 lecture13 PDF opened but its text extraction was incomplete; screenshot retrieval partly failed. It is not the cited conditional-expectation source; Fall2010 page24 text was successfully read instead."
+  ],
+  "authorship": "Original Chinese explanation, six-state synthetic model, hand derivations, twelve figures and complete experiment materials; no source examples or pictures copied.",
+  "proof_scope": [
+    "Finite PMF aggregation, CDF endpoint cases, expectation by states and by values",
+    "Finite variance and square-loss risk expansion",
+    "Continuous p(t)=(1+t)/4 moment integrals independently derived",
+    "Finite conditional expectation and tower identity proven by partitioning",
+    "Mixed distribution and divergent nonnegative first moment independently computed",
+    "Inverse-CDF derivation for the stated continuous model"
+  ],
+  "completed_checks": [
+    "ExactFraction finite-model moments and tower identity",
+    "Independent continuous polynomial quadrature",
+    "Actual finite Monte Carlo with all seeds and n reported",
+    "Stable-centered variance versus cancellation demonstration",
+    "Zero model-probability group distinguished from zero observed group count"
+  ]
+}
