@@ -580,17 +580,27 @@
         "实验与验收": "用列联表手算诊断式例子并模拟；区分P(A给定B)和P(B给定A)。",
         "常见误区": "颠倒条件概率；忽略基准率；把不相关当独立。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/018/lecture.pdf",
+        "lab": "units/018/lab.pdf",
+        "answers": "units/018/answers.pdf",
+        "notebook": "units/018/experiment.ipynb",
+        "script": "units/018/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "all26pdfpages_and6notebookPNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "9ad05191333a0969d188e0bb0fd8f678ac053060",
+        "remote_files_verified": 30,
+        "remote_hash_matched": true
       }
     },
     {
@@ -603,14 +613,20 @@
         "实验与验收": "推简单分布的均值方差并蒙特卡洛核验；检查密度积分为1。",
         "常见误区": "连续点概率与密度混淆；默认函数的期望等于期望的函数。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/019/lecture.pdf",
+        "lab": "units/019/lab.pdf",
+        "answers": "units/019/answers.pdf",
+        "notebook": "units/019/experiment.ipynb",
+        "script": "units/019/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_and_coordinator_passed_independent_pending",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "all20pages_and4notebookPNGs_coordinator_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -649,7 +665,7 @@
         "实验与验收": "生成相关数据并验证协方差；构造零相关但不独立的反例。",
         "常见误区": "相关系数为零就认定独立；协方差矩阵不检查半正定。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
