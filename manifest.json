@@ -481,17 +481,27 @@
         "实验与验收": "画椭圆与鞍形曲面；用Hessian特征值判断局部形状并核验近似误差。",
         "常见误区": "梯度为零就当极小值；把局部近似当全局结论。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/015/lecture.pdf",
+        "lab": "units/015/lab.pdf",
+        "answers": "units/015/answers.pdf",
+        "notebook": "units/015/experiment.ipynb",
+        "script": "units/015/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "all_24_pdf_pages_and_6_notebook_pngs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "93f15603eba91b23b8e3a53131e2c43bf413b420",
+        "remote_files_verified": 28,
+        "remote_hash_matched": true
       }
     },
     {
@@ -504,17 +514,27 @@
         "实验与验收": "手解投影到区间、球和简单线性集合的问题，数值核验可行性与距离最小性。",
         "常见误区": "把局部几何直觉当全局凸性证明；不检查可行集合。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/016/lecture.pdf",
+        "lab": "units/016/lab.pdf",
+        "answers": "units/016/answers.pdf",
+        "notebook": "units/016/experiment.ipynb",
+        "script": "units/016/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "all_28_pdf_pages_and_6_notebook_pngs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "6af7514f4cf0219a55f9c94fd163a15c532b1cc7",
+        "remote_files_verified": 29,
+        "remote_hash_matched": true
       }
     },
     {
@@ -527,17 +547,27 @@
         "实验与验收": "手算简单密度面积，用网格积分核验；比较分辨率和截断范围造成的误差。",
         "常见误区": "把密度高度当概率；遗漏积分区间或换元因子。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/017/lecture.pdf",
+        "lab": "units/017/lab.pdf",
+        "answers": "units/017/answers.pdf",
+        "notebook": "units/017/experiment.ipynb",
+        "script": "units/017/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "all_21_pdf_pages_and_3_notebook_pngs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "6af7514f4cf0219a55f9c94fd163a15c532b1cc7",
+        "remote_files_verified": 28,
+        "remote_hash_matched": true
       }
     },
     {
@@ -550,7 +580,7 @@
         "实验与验收": "用列联表手算诊断式例子并模拟；区分P(A给定B)和P(B给定A)。",
         "常见误区": "颠倒条件概率；忽略基准率；把不相关当独立。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -573,7 +603,7 @@
         "实验与验收": "推简单分布的均值方差并蒙特卡洛核验；检查密度积分为1。",
         "常见误区": "连续点概率与密度混淆；默认函数的期望等于期望的函数。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
