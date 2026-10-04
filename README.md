@@ -1,2 +1,41 @@
-# machine-learning-research-course
-机器学习研究型自学课程：从数学基础、经典模型到深度学习与论文复现。课程制作中，持续补全。
+# 面向研究的机器学习课程
+
+从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
+
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲与第 1 讲教学包；其余单元尚未发布。规划目录不代表正文或实验已经完成。
+
+## 从这里开始
+
+- [课程大纲（PDF，48 页）](catalog/curriculum.pdf)：课程范围、先修关系、学习路线、逐讲目标与验收任务
+- [第 001 讲：机器学习到底在学什么](units/001/README.md)
+  - [正文 PDF（24 页）](units/001/lecture.pdf)
+  - [独立实验指南 PDF（9 页）](units/001/lab.pdf)
+  - [可运行 Notebook](units/001/experiment.ipynb)
+  - [Python 实验脚本](units/001/experiment.py)
+  - [教学数据及说明](units/001/data/README.md)
+  - [执行与检查记录](units/001/verification.json)
+
+## 怎样学习
+
+先阅读正文并完成手算，再运行实验，对照输出与预期，最后完成练习并检查失败条件。按具体问题补齐先修，不必把全部目录读完才开始一个有边界的研究练习。
+
+第 1 讲实验只需 Python 3.10 或更新版本，核心脚本只使用标准库。进入 units/001 后运行：
+
+```bash
+python experiment.py --phase train
+python experiment.py --phase predict
+python experiment.py --phase evaluate
+python experiment.py --self-test
+```
+
+Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执行；Jupyter 浏览器界面、外进程内核通信及真实 Anaconda 安装尚未测试。图源重建所需的可选依赖见该讲说明。
+
+## 内容与验收
+
+每讲按问题、图解、数学推导、手算、实现、诊断、练习与详解展开。完成的教学包包含正文 PDF、独立实验指南、Notebook、Python 脚本、教学数据或合法下载说明、来源及验证记录。
+
+玩具数据只用于对应机制的教学，不构成现实性能或新的研究贡献证据。来源记录链接原始资料，不包含受版权保护教材的整章复制。
+
+## 使用说明
+
+仓库公开，方便在线学习与交流。目前未附加开源许可证；公开可读不代表授予未明确约定的再许可权。

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "The Jupyter Notebook",
+    "url": "https://jupyter-notebook.readthedocs.io/en/stable/notebook.html",
+    "checked": "2026-10-04",
+    "role": "内核与顺序执行行为",
+    "status": "read_primary_documentation"
+  },
+  {
+    "id": 2,
+    "title": "Python Tutorial An Informal Introduction to Python",
+    "url": "https://docs.python.org/3/tutorial/introduction.html",
+    "checked": "2026-10-04",
+    "role": "算术表达式语义",
+    "status": "read_primary_documentation"
+  },
+  {
+    "id": 3,
+    "title": "scikit-learn Common pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "checked": "2026-10-04",
+    "role": "数据泄漏与拟合范围",
+    "status": "read_primary_documentation"
+  },
+  {
+    "id": 4,
+    "title": "Python Built-in Functions zip",
+    "url": "https://docs.python.org/3/library/functions.html#zip",
+    "checked": "2026-10-04",
+    "role": "默认 zip 在最短输入处停止",
+    "status": "read_primary_documentation"
+  }
+]

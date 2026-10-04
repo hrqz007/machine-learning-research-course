@@ -1,0 +1,133 @@
+{
+  "unit": "001",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 24,
+    "unchanged_original_sha256": "6c8c98b9a4216c4e1014c912249f01bc8abf5c237a1d6353152dedda9b512c0c",
+    "original_reference": "accepted first lecture",
+    "visual_review": "all 24 rendered pages inspected on 2026-10-04; preserved original layout; no clipping or missing glyphs observed"
+  },
+  "lab": {
+    "pages": 9,
+    "figures": 6,
+    "visual_review": "all 9 rendered pages inspected; dense coherent paragraphs; no clipping or missing glyphs observed"
+  },
+  "script": {
+    "python": "3.12.14",
+    "runtime": "CPU Linux",
+    "commands": [
+      "python experiment.py --phase all",
+      "python experiment.py --self-test"
+    ],
+    "expected_training_mae": {
+      "A": 10,
+      "B": 0,
+      "C": 7.5
+    },
+    "expected_test_mae": 5,
+    "expected_baseline_test_mae": 15,
+    "fault_checks": {
+      "missing_frozen_rejected": true,
+      "missing_prediction_rejected": true,
+      "tampered_prediction_rejected": true,
+      "changed_training_rejected": true
+    }
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 8,
+    "execution": "fresh Python process, ipykernel InProcessKernel, sequential order, outputs saved",
+    "limitation": "Jupyter socket transport unsupported in build sandbox; browser UI and external-process transport not tested"
+  },
+  "source_checks": "source-checks.json",
+  "files": {
+    "README.md": {
+      "bytes": 2261,
+      "sha256": "3da9065a9e034298c8ae9026ce567a0216d5642d40393f81e407272fe68567c5"
+    },
+    "lecture.pdf": {
+      "bytes": 4718956,
+      "sha256": "6c8c98b9a4216c4e1014c912249f01bc8abf5c237a1d6353152dedda9b512c0c"
+    },
+    "make_figures.py": {
+      "bytes": 4264,
+      "sha256": "b940f63c0dd0b7d5073570e781cc8fd14ec508c3db52deeb9025635ef0c81aee"
+    },
+    "lab.pdf": {
+      "bytes": 867014,
+      "sha256": "12fce8f53044bda54b6b72451279768a3c34288542716f95d3b7468bb93d1d95"
+    },
+    "lab.md": {
+      "bytes": 21480,
+      "sha256": "3b97a22d35be1ad573768c3d5719ca6d445b1e9766b3d97c8198866a1b8509be"
+    },
+    "source-checks.json": {
+      "bytes": 1027,
+      "sha256": "62055eb2e388f1ac9549460133f8a95a1037346568a16396225773bf578bd90c"
+    },
+    "experiment.py": {
+      "bytes": 7416,
+      "sha256": "970da8506dfbaff1b3c32f7ed3602076ca76bf9edcaf17618477717602ffd6d5"
+    },
+    "experiment.ipynb": {
+      "bytes": 8662,
+      "sha256": "f2da01d665495a7a9e1711dad37382d23f008061f2eb21348268106a5c7505d1"
+    },
+    "data/README.md": {
+      "bytes": 901,
+      "sha256": "d7d3226d433c2588f0a143322a3bd1b88f6ee82292f6fd0f167a11707da7e6ef"
+    },
+    "data/test_inputs.csv": {
+      "bytes": 23,
+      "sha256": "0a908727130ecea849de0af51ff004827da1e3665fee17ea29f94387cb1fb41a"
+    },
+    "data/train.csv": {
+      "bytes": 61,
+      "sha256": "2dff3f62e1ef5229b9c49930c1a73853704b3b3918562fb89fb9beab027929c7"
+    },
+    "data/test_labels.csv": {
+      "bytes": 27,
+      "sha256": "8b6bd0f4ce9922633f3ddb8e98f03934f4a5bbed78f5d5a3ff1afb95bc668be9"
+    },
+    "figures/02_table.png": {
+      "bytes": 44506,
+      "sha256": "ae8c9e4e4727a258dcbc82b65600ce7d0697e0bfff120cb41238f2642dd1809c"
+    },
+    "figures/01_files.png": {
+      "bytes": 47180,
+      "sha256": "f524b796577b77135605e571c7a7af5c9343e19e4d9de9ab9466bdf25a1e2a31"
+    },
+    "figures/03_errors.png": {
+      "bytes": 29861,
+      "sha256": "ad16b710719b9a64f759e310fe7d672610259464671afb82c0c9bb93b6a05d42"
+    },
+    "figures/04_freeze.png": {
+      "bytes": 44748,
+      "sha256": "e90de2f8ef38e2601fd63721afd437fa96313da0bb456d728b1fbb4318af97c8"
+    },
+    "figures/05_results.png": {
+      "bytes": 46500,
+      "sha256": "e546ce4ccfc78fe258e84f961dfeb4a05feb191a91988414215ee3ac3f8c72d7"
+    },
+    "figures/06_counterexample.png": {
+      "bytes": 46083,
+      "sha256": "2dc3a9b9623e881bbe72530002516460920cea5455809ccd4c9d1496d0d0ef5f"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 9 final lab pages",
+      "scientific coherence and prerequisites",
+      "18 isolated code and failure checks",
+      "8 notebook cells in a fresh IPython kernel",
+      "18 file hashes matched"
+    ],
+    "limitations": [
+      "socket/Jupyter browser UI not tested",
+      "actual Anaconda installation not tested"
+    ]
+  }
+}
