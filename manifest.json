@@ -1212,7 +1212,7 @@
         "实验与验收": "实现稀疏回归的近端法，检查目标、零系数和最优性残差。",
         "常见误区": "在零点随意选择普通导数；认为加L1后沿用光滑算法保证。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/037/lecture.pdf",
         "lab": "units/037/lab.pdf",
@@ -1228,7 +1228,15 @@
         "visual": "all_23_pages_and_8_PNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "verified_uploaded",
+        "repository": "hrqz007/machine-learning-research-course",
+        "commit": "fd8e98c7df691d133bd19844b9d51884d47e35f2",
+        "tree": "29808cbb8426e9b5d09d3c529d97e06b4ac25716",
+        "verified_repository_files": 1110,
+        "verified_local_links": 217,
+        "verified_unit_files": 31,
+        "receipt_source": "sole_publisher_verified_git_sha_and_main_ref",
+        "date_utc": "2026-10-04"
       },
       "independent_qa": {
         "report_sha256": "5b730346fd6b9746bc3782fd989c61a62bacf70219c9294dc1c8f3f246c09613",
@@ -1245,7 +1253,7 @@
         "实验与验收": "比较GD与阻尼Newton的迭代、墙钟时间和内存；不显式求Hessian逆。",
         "常见误区": "只数迭代不计每步成本；Hessian非正定仍无条件用Newton步。"
       },
-      "status": "in_review",
+      "status": "published",
       "artifacts": {
         "lecture": "units/038/lecture.pdf",
         "lab": "units/038/lab.pdf",
@@ -1254,14 +1262,26 @@
         "script": "units/038/experiment.py"
       },
       "checks": {
-        "scientific": "coordinator_passed_independent_pending",
+        "scientific": "independent_passed",
         "sources": "passed",
-        "code": "normal_O_passed",
-        "notebook": "fresh_real_kernel_full_core_match",
-        "visual": "all_22_pages_and_6_PNGs_individually_viewed"
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_independent_passed",
+        "visual": "all_22_pages_and_6_PNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "verified_uploaded",
+        "repository": "hrqz007/machine-learning-research-course",
+        "commit": "fd8e98c7df691d133bd19844b9d51884d47e35f2",
+        "tree": "29808cbb8426e9b5d09d3c529d97e06b4ac25716",
+        "verified_repository_files": 1110,
+        "verified_local_links": 217,
+        "verified_unit_files": 32,
+        "receipt_source": "sole_publisher_verified_git_sha_and_main_ref",
+        "date_utc": "2026-10-04"
+      },
+      "independent_qa": {
+        "report_sha256": "e182dbb6d2957f81887b48df0139473e20d4b0501e898dac010b63bcd7a07d1e",
+        "release_allowlist_sha256": "4a7c83305b4515376581cb082ed0d8c72337775d88721b8fc327bd903b1baad0"
       }
     },
     {
@@ -1274,17 +1294,35 @@
         "实验与验收": "注入符号、广播和数值稳定性错误；输出梯度检查、更新尺度及故障报告。",
         "常见误区": "只调学习率不核验梯度；损失变NaN后继续平均结果。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/039/lecture.pdf",
+        "lab": "units/039/lab.pdf",
+        "answers": "units/039/answers.pdf",
+        "notebook": "units/039/experiment.ipynb",
+        "script": "units/039/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_independent_passed",
+        "visual": "all_23_pages_and_8_PNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "verified_uploaded",
+        "repository": "hrqz007/machine-learning-research-course",
+        "commit": "fd8e98c7df691d133bd19844b9d51884d47e35f2",
+        "tree": "29808cbb8426e9b5d09d3c529d97e06b4ac25716",
+        "verified_repository_files": 1110,
+        "verified_local_links": 217,
+        "verified_unit_files": 30,
+        "receipt_source": "sole_publisher_verified_git_sha_and_main_ref",
+        "date_utc": "2026-10-04"
+      },
+      "independent_qa": {
+        "report_sha256": "06952116435849a9ebbe1172ca0ad3fd9b9cfce34fc0458c8321d5e7d788b132",
+        "release_allowlist_sha256": "cdb0a9895cb98f6d0a37803ccc422fd1cac789ba465b241f37a3b24a6300f312"
       }
     },
     {
@@ -1297,14 +1335,20 @@
         "实验与验收": "在共线和稀疏数据上画系数路径；仅用训练/验证选择强度，再与库交叉核验。",
         "常见误区": "正则化强度直接跨不同损失归一化约定比较；用测试集选稀疏度。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/040/lecture.pdf",
+        "lab": "units/040/lab.pdf",
+        "answers": "units/040/answers.pdf",
+        "notebook": "units/040/experiment.ipynb",
+        "script": "units/040/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "coordinator_passed_independent_pending",
+        "sources": "passed",
+        "code": "768_checks_normal_O_two_cwd_passed",
+        "notebook": "two_fresh_real_kernels_whole_core_equal_15_cells_7_PNG",
+        "visual": "all_20_final_PDF_pages_and_7_true_PNG_individually_viewed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -1320,7 +1364,7 @@
         "实验与验收": "交付可重跑的回归比较包；含手算样例、梯度测试、至少一个失败案例和解释。",
         "常见误区": "只交一条漂亮训练曲线；不报告未收敛运行与停止条件。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -1343,7 +1387,7 @@
         "实验与验收": "手推并从零实现逻辑回归；使用稳定损失，与库结果及数值梯度比对。",
         "常见误区": "把概率阈值固定为永远0.5；把线性概率输出与逻辑回归混淆。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
