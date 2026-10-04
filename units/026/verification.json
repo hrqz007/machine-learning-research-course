@@ -1,0 +1,178 @@
+{
+  "unit": "026",
+  "title": "假设检验与效应大小",
+  "validation_date": "2026-10-04",
+  "release_state": "independent_passed_ready_for_publication",
+  "local_checks": {
+    "core_self_tests": 15,
+    "author_reference_and_adversarial_checks_per_run": 688,
+    "author_audit_normal": "passed",
+    "author_audit_optimized": "passed",
+    "fresh_process_two_unrelated_working_directories": "passed; normal and python -O full reports byte-identical",
+    "full_report_sha256": "7a774f0d81cecc737a3623e432dd035dd99c261386887c912d84cd20406d5db2",
+    "notebook": "22 total cells, 10 code cells; fresh Python process, sequential real IPython InProcessKernel; outputs retained",
+    "retained_notebook_pngs": 8,
+    "pdf_pages": {
+      "lecture": 12,
+      "lab": 5,
+      "answers": 6
+    },
+    "visual_review": "All 23 final PDF pages and all 8 retained Notebook PNGs individually viewed. CJK figure fonts and bibliography pagination corrected before final author acceptance.",
+    "input_validation": "Full paired arrays, complete configuration grids, integer conditions, numerical ranges, original JSON float tokens and duplicate keys checked before RNG/output mutation. Unsupported Fraction/Decimal/extended/object casts rejected. True zero tokens remain valid.",
+    "output_protection": "7 damaged CSV and 5 damaged JSON cases rejected in new optimized Python processes without changing existing report bytes or leaving temporary output files.",
+    "numerical_regressions": "Original-value compensated mean preserves [-1,1,1e-100] residual. Two-pass variance/covariance correct a rounded center. Positive tails and nonconstant variances cannot silently become zero/subnormal. Exact sign-flip keeps all 256 labels including zero multiplicity. Power left/right tails preserve signed alternatives; positive type-II probability is retained separately when power rounds to 1.",
+    "reference_routes": [
+      "Fraction exact moments/covariance and family probabilities",
+      "independent integer-mask sign-flip enumeration",
+      "75-digit normal/Student density quadrature and critical-value root finding",
+      "75-digit erfc power and signed-tail calculations",
+      "SciPy 1.17.0 ttest_rel(B,A) cross-check in Notebook"
+    ],
+    "source_records_checked": 11
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Anaconda environment installation",
+    "browser Jupyter UI",
+    "socket/out-of-process kernel transport",
+    "arbitrary operating systems and package versions",
+    "cross-version bitwise random-stream identity",
+    "real-world product or population performance"
+  ],
+  "scope": "Synthetic offline CPU teaching. Original Gaussian z/CI/power derivations, covariance and Bonferroni proof, finite absolute-tail sign-flip count; exact Student null theorem explicitly accepted, not proved. Three p values use different reference models and are not selected by minimum. Independent review and remote publication remain separate gates.",
+  "status": "verified",
+  "coordinator_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "original_frozen_hashes_verified": 28,
+    "audit_reexecuted_checks": 688,
+    "all_pdf_pages_individually_viewed": 23,
+    "all_notebook_pngs_individually_viewed": 8,
+    "fresh_real_kernel_cells": 10,
+    "notebook_pngs_byte_identical": true,
+    "fresh_script_normal_and_optimized_two_cwd": "byte-identical report,7a774f0d81cecc737a3623e432dd035dd99c261386887c912d84cd20406d5db2"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 10403,
+      "sha256": "04a7bb4266b0e641b481dbc65aa461bee3687ca6695c7098a88b763c69c8c513"
+    },
+    "answers.md": {
+      "bytes": 14628,
+      "sha256": "f190a2fd3a9bc3a5d3a27e17a40e4d76ff8379bfb98eef794d3827db2b8c4704"
+    },
+    "answers.pdf": {
+      "bytes": 625918,
+      "sha256": "8a5ab4ae04c59a3247f03b1156a1b2d8d9f31177ebc0731ccf24e1036e09b707"
+    },
+    "data/README.md": {
+      "bytes": 2132,
+      "sha256": "f368e2bd2f9ba48ab10ac06e592c41888a22902a93aa4d87a48174bb23b46fe9"
+    },
+    "data/model_spec.json": {
+      "bytes": 281,
+      "sha256": "21416edf44ddc05e585c4afd6a2be0e7df5f8b77fc20cf048bcfa0c93c6ecb3f"
+    },
+    "data/paired_scores.csv": {
+      "bytes": 102,
+      "sha256": "9ebc5529ac9ab7da86de9ac57828517cc8602d0e4a02a3e3fb4de27a39548dd3"
+    },
+    "environment.yml": {
+      "bytes": 192,
+      "sha256": "730ea23d0172129f77341789b2ed718e795ef28c1170e5e95811af74db60da9d"
+    },
+    "experiment.ipynb": {
+      "bytes": 695193,
+      "sha256": "d70d595e2ed7770abf8226f7e7b554fe9270646cf447f535a9c8e606245c3aa3"
+    },
+    "experiment.py": {
+      "bytes": 19949,
+      "sha256": "5dfbd73d030d949579597bec2fb644b5746c9e59863e66a2ddfc61a446cb6632"
+    },
+    "figures/01_question.png": {
+      "bytes": 84313,
+      "sha256": "1638ab83cd5d387d193b1b2794b96e67246ff8d5d36065814b4a873cd4c76084"
+    },
+    "figures/02_errors.png": {
+      "bytes": 98093,
+      "sha256": "9334ed3daf0548dddb6ca00987eb95c5bb90c942b2012bfd5019f2ddd0710bd7"
+    },
+    "figures/03_pvalue.png": {
+      "bytes": 80939,
+      "sha256": "83c137f7fec76f6b96ff7e1b5492d9cdedf7cf0246b15a412e4d6d847aa9cd64"
+    },
+    "figures/04_intervals.png": {
+      "bytes": 54097,
+      "sha256": "06e396b556e9e32f3f12dcda13bcf8a7d3ac2ccbe8c08b0b13fd8a3579836f8a"
+    },
+    "figures/05_pairing.png": {
+      "bytes": 87897,
+      "sha256": "0cab7d12d2a13cc55f229c2b033796d5bd3217ba25e3e266317856bca02d0f49"
+    },
+    "figures/06_signflip.png": {
+      "bytes": 74520,
+      "sha256": "693efae796ff931cc0cc5eed6f2c8defc0b512041a9476bccf67c03c03117137"
+    },
+    "figures/07_effect_size.png": {
+      "bytes": 65930,
+      "sha256": "bab3f68455e5e83eca74dbe0020df648140650534a17465e11fb168274cda536"
+    },
+    "figures/08_power.png": {
+      "bytes": 105798,
+      "sha256": "f9d36061ae790add52a47b263d62eed2907a1eefa998fe43ad0543f371d8806c"
+    },
+    "figures/09_multiplicity.png": {
+      "bytes": 82504,
+      "sha256": "3892896ebd7fe2fc0cc4e28393b1de9eb8477c671fb73d7ce23aafdfd4073b9f"
+    },
+    "figures/10_optional_looks.png": {
+      "bytes": 173655,
+      "sha256": "05bbccdf78f98326c553307b6d10737931bf3c7ca6230fddbebeb1df3519ccfa"
+    },
+    "figures/11_simulation_uncertainty.png": {
+      "bytes": 85751,
+      "sha256": "95472f9fb83434950c8ed7e22491ee65c79e9c3269eddf3cec3761ec8887397b"
+    },
+    "figures/12_reporting.png": {
+      "bytes": 86063,
+      "sha256": "832e22f20f3b39625b31637553f175cf07d097d525b4ea67fbb58df5c8afa2a4"
+    },
+    "lab.md": {
+      "bytes": 11262,
+      "sha256": "90655593558c2abd7f1273952f4e58900f6e12a216445128c1db4f1090a45618"
+    },
+    "lab.pdf": {
+      "bytes": 464800,
+      "sha256": "930da88c3cb5eabe61b8abdfe3bfa6d880fa9015a1f8987b23399615a1435df6"
+    },
+    "lecture.md": {
+      "bytes": 25538,
+      "sha256": "14ea0d38e12436a89e33baeccda6f1fad6315886d3ddf58b33710df091d36184"
+    },
+    "lecture.pdf": {
+      "bytes": 1796380,
+      "sha256": "f5a449e65d73750a3ab3bb20547e4d5b65e6fea14d3257b5b91ddc696c3d543d"
+    },
+    "requirements.txt": {
+      "bytes": 97,
+      "sha256": "c8f5bdef4f4d34d3a841a79a79ae071bbe02a8737cc29718790ed9462b66d5c4"
+    },
+    "source-checks.json": {
+      "bytes": 3900,
+      "sha256": "f00b1ed221f2d52cf79363cfc5bed4411c2effa9a4514fc7458a5df9b3449f31"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "reviewed_candidate_verification_sha256": "30d4e90d54cc8c6ca1845faadcdce72fb2a899f0d814b5ffa8d758cb8aaa3d78",
+    "date": "2026-10-04",
+    "coverage": "27 payload hashes;23 PDF pages,12 original figures,8 Notebook PNGs;10 fresh-kernel code cells;350 Fraction paired moments,150 z and150 t high-precision cases,320 sign-flip distributions/conservative p-ranks,220 power cases,28 exact family probabilities,all simulation streams/21 summaries,26 damaged-file protections and10 pre-RNG rejections;normal/-O reports identical;no revision required"
+  }
+}

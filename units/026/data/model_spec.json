@@ -1,0 +1,12 @@
+{
+  "kind": "synthetic_paired_hypothesis_demo",
+  "seed": 26026,
+  "repetitions": 10000,
+  "known_sigma": 2.0,
+  "alpha": 0.05,
+  "null_delta": 0.0,
+  "power_deltas": [0.0, 0.5, 1.0, 2.0],
+  "power_sizes": [8, 32, 128],
+  "family_sizes": [1, 5, 20],
+  "practical_threshold": 1.5
+}

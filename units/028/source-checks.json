@@ -1,0 +1,144 @@
+{
+  "unit": "028",
+  "checked_on_utc": "2026-10-04",
+  "method": "Opened and read official pages or original institution-hosted PDF sections; compared formulas and conditions with independent scalar derivations.",
+  "originality": "Chinese exposition, proofs, hand example, exercises, synthetic data, figures and notebook are original. No external prose, screenshots, datasets or paid materials are redistributed.",
+  "sources": [
+    {
+      "id": "nist-linear",
+      "title": "NIST/SEMATECH e-Handbook 4.1.4.1 Linear Least Squares Regression",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd141.htm",
+      "primary_status": "official NIST authored handbook",
+      "checked_sections": [
+        "Definition of a Linear Least Squares Model",
+        "Why Least Squares",
+        "Disadvantages of Linear Least Squares"
+      ],
+      "supports": [
+        "linear in parameters",
+        "sum of squared response deviations",
+        "outlier and extrapolation cautions"
+      ],
+      "use_limit": "General terminology and cautions; all scalar proofs, example values and figures are independently derived."
+    },
+    {
+      "id": "nist-residuals",
+      "title": "NIST/SEMATECH e-Handbook 4.4.4 Model Validation",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd44.htm",
+      "primary_status": "official NIST authored handbook",
+      "checked_sections": [
+        "R squared Is Not Enough",
+        "Main Tool Graphical Residual Analysis",
+        "Residuals",
+        "Why Use Residuals"
+      ],
+      "supports": [
+        "residual equals observed minus fitted response",
+        "high R squared alone does not validate model structure"
+      ],
+      "use_limit": "The source empirical example is not reproduced; this unit uses original deterministic synthetic cases."
+    },
+    {
+      "id": "stanford-gaussian",
+      "title": "Andrew Ng CS229 Lecture Notes Supervised Learning",
+      "url": "https://cs229.stanford.edu/notes_archive/cs229-notes1.pdf",
+      "primary_status": "original author course notes hosted by Stanford",
+      "checked_sections": [
+        "Section 3 Probabilistic interpretation, printed pages 11-13"
+      ],
+      "supports": [
+        "iid zero-mean Gaussian errors",
+        "conditional likelihood as product of densities",
+        "log-likelihood gives the least-squares objective for fixed positive sigma"
+      ],
+      "use_limit": "This unit explicitly adds the fixed-design/full-rank and positive-variance boundary qualifications; it does not reproduce source prose, examples, diagrams or the matrix exposition."
+    },
+    {
+      "id": "mit-gaussian",
+      "title": "MIT 18.655 Mathematical Statistics Lecture 19 Gaussian Linear Models",
+      "url": "https://ocw.mit.edu/courses/18-655-mathematical-statistics-spring-2016/b36cbb44af02cddb9dc42d92b767c462_MIT18_655S16_LecNote19.pdf",
+      "primary_status": "original MIT OpenCourseWare lecture material",
+      "checked_sections": [
+        "slides 13-19 normal model and coefficient distribution",
+        "slide 25 full-rank regression theorem and n-p residual degrees of freedom",
+        "slides 31-32 maximum likelihood"
+      ],
+      "supports": [
+        "fixed X normal linear model",
+        "residual degrees of freedom",
+        "variance MLE SSE/n versus degrees-of-freedom correction"
+      ],
+      "use_limit": "No slides copied. The perfect-fit nonattainment case and one-variable proofs are independently developed rather than inferred from the source formula without its domain."
+    },
+    {
+      "id": "nist-leverage",
+      "title": "NIST Dataplot Partial Leverage Plot",
+      "url": "https://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/partleve.htm",
+      "primary_status": "official NIST software/statistical documentation",
+      "checked_sections": [
+        "Description"
+      ],
+      "supports": [
+        "high leverage is input-space extremeness",
+        "influence involves changing fitted parameters when removing a point",
+        "high leverage is not sufficient for influence"
+      ],
+      "use_limit": "The unit derives scalar leverage and perturbation formulas directly; no partial-regression algorithm is taught."
+    },
+    {
+      "id": "python-fsum",
+      "title": "Python math.fsum official documentation",
+      "url": "https://docs.python.org/3/library/math.html#math.fsum",
+      "primary_status": "official Python documentation",
+      "checked_sections": [
+        "math.fsum and accuracy caveat"
+      ],
+      "supports": [
+        "accurate summation using multiple partial sums",
+        "possible rounding limitations"
+      ],
+      "use_limit": "No universal exactness claim. Numeric results are actually tested on Python 3.12.14, independently of the current documentation release."
+    },
+    {
+      "id": "python-json",
+      "title": "Python JSON decoder official documentation",
+      "url": "https://docs.python.org/3/library/json.html#json.load",
+      "primary_status": "official Python documentation",
+      "checked_sections": [
+        "JSONDecoder object_pairs_hook",
+        "parse_float string argument",
+        "parse_int string argument",
+        "parse_constant and nonstandard NaN/Infinity"
+      ],
+      "supports": [
+        "raw-token float validation",
+        "duplicate-key detection from pairs",
+        "explicit rejection of nonstandard constants"
+      ],
+      "use_limit": "Implementation additionally imposes its documented conservative value/type/schema bounds; standard decoding alone does not enforce them."
+    },
+    {
+      "id": "numpy-lstsq",
+      "title": "NumPy numpy.linalg.lstsq official documentation",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+      "primary_status": "official NumPy documentation",
+      "checked_sections": [
+        "Returns",
+        "rcond",
+        "residuals empty-array conditions"
+      ],
+      "supports": [
+        "least-squares solution and minimum norm for nonunique solutions",
+        "numerical rank threshold",
+        "empty residuals array does not mean actual zero residual"
+      ],
+      "use_limit": "Used only for the well-scaled independent notebook comparison; not a claim of exact algebraic rank for all numeric scales."
+    },
+    {
+      "title": "Python3.12 fractions: exact binary-value conversion",
+      "url": "https://docs.python.org/3.12/library/fractions.html",
+      "checked": "Read exact Fraction(float) preservation and distinction from decimal rational intent; used internally for stored-value centering remainder and collinearity, not silent external type conversion.",
+      "status": "opened_and_relevant_sections_read"
+    }
+  ]
+}

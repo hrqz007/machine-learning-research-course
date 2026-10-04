@@ -1,0 +1,198 @@
+{
+  "unit": "028",
+  "title": "一元线性回归的完整推导",
+  "status": "verified",
+  "release_state": "independent_passed_ready_for_publication",
+  "validation_date": "2026-10-04",
+  "local_checks": {
+    "independent_author_checks_per_run": 3693,
+    "fraction_designs": 240,
+    "normal_and_optimized_audits": "passed",
+    "high_precision_checks": "Independent Fraction and Decimal means/coefficient checks plus56 adjacent-float layouts, all leverage/R2/query diagnostics and preserved mixed-scale fsum means.",
+    "two_fresh_scripts_unrelated_cwd": "passed; normal and -O produce byte-identical report",
+    "report_sha256": "696f6d98e688dc52c7090c625de0672c8f97e9691c71f9342092cc1829133ca7",
+    "notebook": {
+      "sequential_code_cells": 19,
+      "retained_pngs": 8,
+      "errors": 0,
+      "kernel": "Fresh Python process and real ipykernel InProcessKernel"
+    },
+    "pdf_pages": {
+      "lecture": 15,
+      "lab": 5,
+      "answers": 6
+    },
+    "all_pdf_pages_individually_viewed": 26,
+    "all_retained_notebook_pngs_individually_viewed": 8,
+    "figures": 12,
+    "full_exercise_solutions": 12,
+    "source_records": 9,
+    "input_guards": "Original scalars validated before float casts; bool/text/complex/nonfinite/unsupported exact/extended types rejected. Nonzero product/square/spread/MSE underflow guarded. True constants and exact stored-value collinearity distinguished. Mean rounding remainder and centered differences consistently propagated; fixed teaching Notebook checks both default input hashes before first output.",
+    "file_guards": "Original decimal tokens checked before float conversion; genuine zero tokens accepted; duplicate JSON keys and NaN/Infinity rejected. All fields and final/unselected CSV rows validated before RNG or report replacement. Prior output bytes preserved after failures.",
+    "privacy_scan": "No private absolute paths, user data or secret markers found in allowed textual artifacts or PDF text/links; all datasets are original synthetic data."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Actual Anaconda installation",
+    "Browser Jupyter UI",
+    "Socket/out-of-process kernel transport",
+    "Universal cross-platform random-stream bitwise identity",
+    "Arbitrary-scale or arbitrary-precision numerical correctness",
+    "Real-world prediction performance or causal effects"
+  ],
+  "scientific_anchors": {
+    "hand": {
+      "intercept": "3/5",
+      "slope": "6/5",
+      "Sxx": "10",
+      "Sxy": "12",
+      "Syy": "16",
+      "SSE": "8/5",
+      "MSE": "8/25",
+      "R_squared": "9/10"
+    },
+    "constant_x": "a+2b=7/3; minimum SSE=14/3; parameters nonunique",
+    "curved": "best line 3+x; SSE=21; residual orthogonality does not remove U-shaped structure",
+    "influential": "a=173/56; b=-33/280; far-point leverage=163/168; residual=-41/56",
+    "perfect_fit": "Positive-variance Gaussian likelihood has no finite maximum when exact minimum SSE=0",
+    "affine_units": "xprime=60x+10, yprime=1000y+100 implies aprime=500, bprime=20, SSEprime=1000000*SSE",
+    "scope": "OLS algebra needs no Gaussian assumption; Gaussian MLE interpretation requires the stated conditional independent homoskedastic model; association is not causation; extrapolation model bias is distinct from conditional sampling uncertainty"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 11362,
+      "sha256": "58f84856a6a38a369eb1271dcca70647903e41b1be1b5a227a13980b52e3c0e2"
+    },
+    "lecture.md": {
+      "bytes": 33208,
+      "sha256": "f4e1f251e1c00090d3c3409b87799866539c80fc3052792600c1d98d4108ca93"
+    },
+    "lecture.pdf": {
+      "bytes": 1962540,
+      "sha256": "24a32c4b405cc83e34ff8895fa3afa6e68f52190e29f26e0b807dc0b82d59351"
+    },
+    "lab.md": {
+      "bytes": 10610,
+      "sha256": "3a3dd5c1a683a59e895bc49f88d7160e59b466a17a254f804e51a3bb84cd0a65"
+    },
+    "lab.pdf": {
+      "bytes": 744315,
+      "sha256": "56916e61e84e7341d285d0b86580b2845d4054fce70613a493e7f7b5de2065bc"
+    },
+    "answers.md": {
+      "bytes": 12467,
+      "sha256": "d957f17ec27325c0e5b05c8cee7b2bcaaf0d783dee8d0608608d6adefc903818"
+    },
+    "answers.pdf": {
+      "bytes": 681628,
+      "sha256": "a25f8d7fa64b94cc891e7ca3aac4e771b0626af52157a2362c015437c45ba0b7"
+    },
+    "experiment.py": {
+      "bytes": 16773,
+      "sha256": "e281e5e3595482f9ddd121a7d60ceaaf7914d741e13d5c15133c2c7c0b3f6454"
+    },
+    "experiment.ipynb": {
+      "bytes": 433948,
+      "sha256": "b1100cc407b83318504bb51bf6ec880f888a8e74e2c60abeedafe10d1e8e3a54"
+    },
+    "environment.yml": {
+      "bytes": 175,
+      "sha256": "9965f8de4d5331ae6a9142afd07834116cddee512d35ac48e0d4e6a31416d227"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "source-checks.json": {
+      "bytes": 6725,
+      "sha256": "a16efcf2d7f75c7ef62cdaec925ef45787bbc5c856813b86c1e1392c19ff7003"
+    },
+    "data/README.md": {
+      "bytes": 2146,
+      "sha256": "bb434e75d0a1cfdb8d140e383e6be5e28d507d0fce926ff7232c40126d56f2ab"
+    },
+    "data/cases.csv": {
+      "bytes": 467,
+      "sha256": "96a1b9f704756b4981931e45948e1b730f5849dba9e7f7d919c55ba9c2eae92d"
+    },
+    "data/model_spec.json": {
+      "bytes": 307,
+      "sha256": "9f87bb2bccf08762b86eb302d75d0e5aa01f5ca26eb648e50378624b01865693"
+    },
+    "figures/01_residuals.png": {
+      "bytes": 67677,
+      "sha256": "cf129c5f973d104655b2dc438f95f562f27fb7920926a35ae14f1692188aa79c"
+    },
+    "figures/02_complete_squares.png": {
+      "bytes": 81078,
+      "sha256": "93c5906c40d83fe7d04fa7f44feb9635a8fb1cf31e8ad61c8c9f02af3ee60012"
+    },
+    "figures/03_constant_x.png": {
+      "bytes": 79386,
+      "sha256": "3ac3feb12e65536cb4856de9311124e5658fe7a724b6ab7f06c04f595574cb91"
+    },
+    "figures/04_decomposition.png": {
+      "bytes": 49891,
+      "sha256": "252b0bdf046159a4742c40e51c5c72435044031e749879595263b2800ffa1a11"
+    },
+    "figures/05_sampling.png": {
+      "bytes": 101344,
+      "sha256": "d87d240ee647ce63cdf30d92c0f2c57f5f9417187cac6207377f8c1a5c2de295"
+    },
+    "figures/06_likelihood.png": {
+      "bytes": 85827,
+      "sha256": "8810107b613f7bcd86832d858243237dd73c2e83ed8fb226e0792baf0c9fccdf"
+    },
+    "figures/07_variance_boundary.png": {
+      "bytes": 98424,
+      "sha256": "17c08cc623658950a762f7680619a7297c37aa4b95d6a63b2f680db815b2293d"
+    },
+    "figures/08_units.png": {
+      "bytes": 65256,
+      "sha256": "08bbbe6e3b58287a6760e8d4ec187d029b85f639afe0d20a604d286f580bd28d"
+    },
+    "figures/09_curvature.png": {
+      "bytes": 84964,
+      "sha256": "147c064bb5c360f33de92bd7798eb54fb624483048e20a76a87a7e7e34c2c660"
+    },
+    "figures/10_influence.png": {
+      "bytes": 80023,
+      "sha256": "c0a3e057701100376179af54566eda5287993fda4367d78296b420941e1a2510"
+    },
+    "figures/11_extrapolation.png": {
+      "bytes": 117502,
+      "sha256": "fb751bf74894fdcfdf5a3b49de0450020637038bdcdf6d5b4512f07d805b6eb0"
+    },
+    "figures/12_numerics.png": {
+      "bytes": 70003,
+      "sha256": "1772ccd34e6f7cc66edf869a05f9ae886833c56d4017005875ed007feded1e62"
+    }
+  },
+  "hash_note": "Hashes cover the 27 other public artifacts; this verification file is hashed by the external release allowlist to avoid self-reference.",
+  "coordinator_integration": {
+    "date": "2026-10-04",
+    "script": "fresh normal/-O from/tmp and/;byte-identical report",
+    "report_sha256": "696f6d98e688dc52c7090c625de0672c8f97e9691c71f9342092cc1829133ca7",
+    "audit": "3693checks in normal and-O each passed",
+    "notebook": "19 fresh real-kernel code cells,8 retained PNGs all byte-identical after revision",
+    "visual": "26final pages individually covered; changedlecture14–15,lab1,answers6 individuallyrechecked after final render; allother page text unchanged",
+    "payload": "current hashes listed below supersede original author candidate"
+  },
+  "review_revisions": {
+    "centering": "Stored binary Fraction means/differences preserve actual original-value fsum mean plus separate remainder; same centered values feed residuals, explained SS,leverage,prediction diagnostics and simulation. Two-point nextafter example now exact SSE0,R2=1,hat[1,1],meanSE[1,1].",
+    "notebook": "Firstcodecell validatesexactdefaultCSV/config bytes before print/plot; validcustomsigma/repeats/nonintegerdata acceptedbygeneric script but rejectedbyfixedteachingNotebook. Removed int-truncation fromFractioncell.",
+    "scope": "External exact/extended scalar types still rejected; internal exact arithmetic bounded to stored-value small-data centering/collinearity; conservative underflow checks remain."
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "fe557eb82f3b8212d8a9922c5c59f951bb8109ce1ae15f5669a51f7f8c52e61b",
+    "coverage": "All27payloadhashes and26finalPDFpages/8retainedPNG;19freshreal-kernelcells;normal/-O/Notebookfullreports byteidentical;500Fraction fit/globalidentity/leverage/prediction/affine cases,240label-influence cases,200Decimal90GaussianNLL cases,80constant-output cases,all600simulation draws,21preRNGguards,42badfileprocessprotections;revisions add144adjacent-float exactdiagnostics at6scales,n2..13,perfect/nonlinear plus4mixed-scale/constantmean cases;2validcustomscripts accepted while Notebook real firstcell rejectedbeforeprint. AllfourchangedPDFpages rechecked;other22pixelidentical."
+  }
+}

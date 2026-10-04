@@ -1,0 +1,73 @@
+{
+  "unit": "026",
+  "checked_on": "2026-10-04",
+  "sources": [
+    {
+      "title": "MIT18.05 Class17–18",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_statistics.pdf",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Read PDF pp79,85,91–98: TypeI/II, composite null size, power, known/unknown sigma, explicitly accepted Student theorem"
+    },
+    {
+      "title": "NIST known sigma correspondence",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc15.htm",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Known sigma from external process; interval/test algebra; continuous equality convention stated independently"
+    },
+    {
+      "title": "NIST mean interval",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Student critical value, n-1, repeated sampling interval interpretation"
+    },
+    {
+      "title": "NIST Bonferroni",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section4/prc463.htm",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Finite preselected family and probability union bound; original proof for tests"
+    },
+    {
+      "title": "Berkeley paired comparisons",
+      "url": "https://www.stat.berkeley.edu/~stark/Teach/S240/Notes/ch6.htm",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Paired independent random swaps, conditional fair signs, ties. Only relevant randomization/continuous symmetry sections used; the source CDF shorthand without left limits is not reused for atoms."
+    },
+    {
+      "title": "SciPy1.17ttest_rel",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.stats.ttest_rel.html",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "First minus second sign, aligned shapes, df, nan policy, confidence intervals"
+    },
+    {
+      "title": "SciPy1.17Studentt",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.stats.t.html",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Density, sf/logsf, ppf and positive degrees of freedom; runtime1.17.0 observed"
+    },
+    {
+      "title": "SciPy permutation_test",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "samples preserves pairing; complete2^n swaps; two-sided default is twice smaller tail and not universal; random plus-one convention. Only documentation checked, not claimed runtime."
+    },
+    {
+      "title": "ASA2016statement announcement",
+      "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Read six interpretation principles; publisher DOI page failed, official ASA PDF succeeded"
+    },
+    {
+      "title": "NumPy2.3normal",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.normal.html",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "Scale is standard deviation, size shape"
+    },
+    {
+      "title": "Python3.12statistics",
+      "url": "https://docs.python.org/3.12/library/statistics.html",
+      "status": "opened_and_relevant_sections_read",
+      "checked": "NormalDist/mean APIs read; explicit wrapper validation needed rather than silent type mixing or missing-value removal"
+    }
+  ],
+  "proof_scope": "Original Gaussian z/CI/power derivations, finite sign-flip count and conservative rank argument, covariance and Bonferroni proof; exact Student null law accepted with explicit Gaussian independence conditions. All numerical data and figures independently constructed."
+}

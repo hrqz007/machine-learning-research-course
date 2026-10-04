@@ -1,0 +1,13 @@
+{
+  "known_sigma": 1.0,
+  "seed": 20261004,
+  "simulation_repeats": 600,
+  "prediction_x": [2.5, 6.0],
+  "candidate_lines": [
+    {"intercept": 0.6, "slope": 1.2},
+    {"intercept": 1.0, "slope": 1.0},
+    {"intercept": 3.0, "slope": 0.0},
+    {"intercept": 0.0, "slope": 1.2}
+  ],
+  "focus_case": "hand"
+}

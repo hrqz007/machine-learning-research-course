@@ -1,0 +1,43 @@
+{
+  "unit": "027",
+  "checked_on": "2026-10-04",
+  "sources": [
+    {
+      "title": "MIT18.650 parametric inference",
+      "url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/335fd85c0a2ecffc49c781502b3d9b95_MIT18_650F16_Parametric_Inf.pdf",
+      "checked": "Estimator/bias/quadratic-risk definitions",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "Berkeley estimation",
+      "url": "https://www.stat.berkeley.edu/~stark/SticiGui/Text/estimation.htm",
+      "checked": "Bias versus realized error, SE and MSE, sampling-design scope; no reuse of finite-population formulas",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "MIT18.655 lecture13",
+      "url": "https://ocw.mit.edu/courses/18-655-mathematical-statistics-spring-2016/9e3152248b9f79ea4d5cfaae9f31c21b_MIT18_655S16_LecNote13.pdf",
+      "checked": "PDF pages5–11 regular support and interchange conditions, score moments, covariance identity and scalar Cauchy-Schwarz information bound",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NIST biweight location",
+      "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/biwloc.htm",
+      "checked": "Distinction of resistance and efficiency; no biweight implementation or copied example",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NumPy2.3median",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.median.html",
+      "checked": "Axis handling and odd/even sample convention",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NumPy2.3normal",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.normal.html",
+      "checked": "scale standard deviation and size shape",
+      "status": "opened_and_relevant_sections_read"
+    }
+  ],
+  "proof_scope": "Original finite n3 enumeration, fixed-c and vanishing shrinkage risks, consistency counterexamples, finite empirical identity and prediction decomposition; scalar information inequality proved conditional on declared differentiability/interchange/finite-moment assumptions."
+}

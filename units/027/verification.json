@@ -1,0 +1,163 @@
+{
+  "unit": "027",
+  "title": "估计误差与偏差方差",
+  "status": "verified",
+  "release_state": "independent_passed_ready_for_publication",
+  "validation_date": "2026-10-04",
+  "local_checks": {
+    "core_self_tests": 8,
+    "independent_author_checks_per_run": 7028,
+    "normal_and_optimized_audits": "passed",
+    "two_fresh_scripts_unrelated_cwd": "byte-identical",
+    "report_sha256": "79ebadf22c6f614a9e3a9778e92a39ccd08870c0feba97832c7ccaeaabc6cf88",
+    "notebook": "26 cells,12 sequential fresh real InProcessKernel code cells,6 retained PNGs",
+    "pdf_pages": {
+      "lecture": 11,
+      "lab": 4,
+      "answers": 4
+    },
+    "all_pdf_pages_individually_viewed": 19,
+    "all_retained_notebook_pngs_individually_viewed": 6,
+    "figures": 12,
+    "solutions": 18,
+    "json_and_output_guards": "Original numeric tokens, duplicate keys, final and unselected values validated before RNG/output; damaged input protects old and new output destinations",
+    "constant_regressions": "True constants and equal squared-loss arrays return exact zero variation; Fraction/Decimal/extended float rejected on float APIs; original-value fsum preserves small mean",
+    "source_records": 6
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Anaconda installation",
+    "browser Jupyter UI",
+    "socket/out-of-process kernel transport",
+    "arbitrary platform/version random-stream bitwise identity",
+    "real-world predictive performance"
+  ],
+  "scientific_scope": "Original exact n3 enumerations, shrinkage risks, consistency counterexamples, conditional scalar Cramer-Rao proof, independent prediction decomposition and finite empirical identity. Median population nonuniqueness explicitly separated from continuous symmetric contamination.",
+  "files": {
+    "README.md": {
+      "bytes": 8409,
+      "sha256": "0fe5dacfc0dd1cc9981c56b6c157b2dfef5669844cd84290d915d8677cd16dc2"
+    },
+    "lecture.md": {
+      "bytes": 21052,
+      "sha256": "6ef9b111c0011bf06a4d08f83b3452cdb8ea5fa3c3464fd30f5aec5007dad97c"
+    },
+    "lecture.pdf": {
+      "bytes": 1541078,
+      "sha256": "d629003988286df5f81bb50b414129d58f95d3123ab21e52eb9e7a112870249e"
+    },
+    "lab.md": {
+      "bytes": 9586,
+      "sha256": "4bc71eb4cd276310f9d3ddb44412d302a0d5b6c24e713e9e6c7663a7621402e8"
+    },
+    "lab.pdf": {
+      "bytes": 459990,
+      "sha256": "fabcf88cdff41a7080b3539a9f1b0f377f946f45ea25c99a9eec37af12ac481c"
+    },
+    "answers.md": {
+      "bytes": 9010,
+      "sha256": "53c5be1dd2430fc7cfdfe43a4c7c6c9ee2b2554d06adc3490e33737084dcc2b1"
+    },
+    "answers.pdf": {
+      "bytes": 609297,
+      "sha256": "275e1e0f868c414a6cd1b0910b3c3285ad9013708f66cd08531faaf9c7525a3a"
+    },
+    "experiment.py": {
+      "bytes": 14279,
+      "sha256": "47b640b72e9f63069e74714424eeb508999898cbc989c1fa2e0037b187006e43"
+    },
+    "experiment.ipynb": {
+      "bytes": 370557,
+      "sha256": "368089717daaa1a32651e2180f7311cb62a5025446f854bda1632bf8b44290c2"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "environment.yml": {
+      "bytes": 181,
+      "sha256": "5c6ffe303295e658bf2287391dd9d29823f8135f138ccf62883dae4735748c56"
+    },
+    "source-checks.json": {
+      "bytes": 2221,
+      "sha256": "7f2cdb4aba6d6ba5a934dced1467009df906ce862b3f3fd17eb37b5a4ca3daea"
+    },
+    "test-result.json": {
+      "bytes": 1588,
+      "sha256": "e27079253469d91102f6bbf9595f60980592e2a0ec4c91ebf31ef2e8c839f40f"
+    },
+    "figures/01_two_layers.png": {
+      "bytes": 49263,
+      "sha256": "c9a4a2a33e3e265d37b5a767a933a004b5c06d2ce698230356321a372a2be65e"
+    },
+    "figures/02_bias_variance.png": {
+      "bytes": 68633,
+      "sha256": "9ad13ce02b9493237f345d4f1e47b5bbe2331d3fdda3eec18de6f35830c01838"
+    },
+    "figures/03_enumeration.png": {
+      "bytes": 52532,
+      "sha256": "d7fc658ee4fa3ca1f21024e64795fafdbcddb1e26d74459298b726144304c0d7"
+    },
+    "figures/04_risk_components.png": {
+      "bytes": 39906,
+      "sha256": "c8ddb56dc483854e6c71bf21493b386f3cf0e71f6260debd7e8f5911a03da3bd"
+    },
+    "figures/05_risk_curves.png": {
+      "bytes": 79967,
+      "sha256": "cf4b81996af19269c0fba39d52d52928ac0bd5264e5fcb748e7f961be6923786"
+    },
+    "figures/06_consistency.png": {
+      "bytes": 110200,
+      "sha256": "0df2f21bc69a00c423365d6211338fed531fdfc5c0d2494449f66dccb0ae2416"
+    },
+    "figures/07_robustness.png": {
+      "bytes": 98921,
+      "sha256": "5ecf3257645b0f08f871d366ffb0ebff7c3b0aa756ee8260343cce85f38fb7cb"
+    },
+    "figures/08_efficiency.png": {
+      "bytes": 72273,
+      "sha256": "fff48f3afdb5c650a422b9496dcb59b2f012d8d77e70e06b06cd778964d079f1"
+    },
+    "figures/09_prediction.png": {
+      "bytes": 77973,
+      "sha256": "8a23c454a200268a3109aed98b6eeed0f00505089a70ea3581ac7e05ae7facd7"
+    },
+    "figures/10_empirical_identity.png": {
+      "bytes": 58946,
+      "sha256": "1e8f0b655dbb1688b560700854c7b74c6a6022313dc5356aac089bf3809c8d3b"
+    },
+    "figures/11_simulation_design.png": {
+      "bytes": 132255,
+      "sha256": "f1a7422f5a5499dcb112be6ff0c94dc32439aace68de244a48edec6a2db35319"
+    },
+    "figures/12_verification.png": {
+      "bytes": 60714,
+      "sha256": "fdfd2ff59febfc1aea5070bc11516f220e8ccafe3121db9765372ddbe1b3a0d2"
+    },
+    "data/README.md": {
+      "bytes": 1548,
+      "sha256": "c232750179283b2f386f43ad360bb63907efdbaaceeae7206c6a8969d0d93dfa"
+    },
+    "data/model_spec.json": {
+      "bytes": 340,
+      "sha256": "49d0dc49c63741a4556e62ba1f36759f52461f4d98221ea863d435e6769c31f7"
+    },
+    "data/two_point_model.csv": {
+      "bytes": 125,
+      "sha256": "acac9b416da73a81fca48e06f9017e8cb34bfd368713b980afd9e9f784ce078c"
+    }
+  },
+  "revision_note": "Definition of consistency now explicitly says probability tends to zero as n tends to infinity; no code or numerical change.",
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "bcd98aab18e5ed1392c4e007c1ec81bfd887bbd8ed1a069d20052f86482cb078",
+    "coverage": "19 final PDF pages,6 retained Notebook PNGs,12 fresh real-kernel code cells;180 exact distributions,500 shrinkage/oracle cases,500 empirical moment checks,64 constant/equal-loss cases;all60000 batches/240000 estimates rebuilt with Decimal65;26 failing subprocess protections and12 pre-RNG rejections;normal/-O reports identical. Consistency definition explicitly corrected to n tends to infinity and changed page5 reviewed."
+  }
+}
