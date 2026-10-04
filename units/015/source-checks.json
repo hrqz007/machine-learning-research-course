@@ -1,0 +1,109 @@
+{
+  "unit": "015",
+  "checked_date": "2026-10-04",
+  "status": "primary_sources_opened_and_read",
+  "sources": [
+    {
+      "id": "R1",
+      "author": "Brian Conrad",
+      "title": "Math 396 Higher derivatives and Taylor’s formula via multilinear maps",
+      "url": "https://math.stanford.edu/~conrad/diffgeomPage/handouts/higherderiv.pdf",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Section 3: continuous iterated partials, symmetry and Hessian; Theorem 3.6",
+        "Section 5 Theorem 5.1: C^p Taylor remainder and uniform smallness; formula (9) with factorials"
+      ],
+      "conditions_applied": [
+        "Open neighborhood and C2 assumptions explicit",
+        "The lesson independently proves scalar second-order Peano remainder along segments using Rolle twice",
+        "The general spectral theorem is a stated prerequisite; no unintroduced integral remainder proof is presumed",
+        "C2 alone is not described as guaranteeing a cubic bound"
+      ]
+    },
+    {
+      "id": "R2",
+      "author": "OpenStax",
+      "title": "Calculus Volume 2 6.3 Taylor and Maclaurin Series",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Taylor theorem with remainder; intermediate-point dependence; differentiability hypotheses"
+      ],
+      "conditions_applied": [
+        "Finite-order Taylor polynomials are separate from convergence of an infinite Taylor series",
+        "Rolle argument for existence of intermediate second derivative is explicitly written",
+        "The remainder point is not assigned an arbitrary value"
+      ]
+    },
+    {
+      "id": "R3",
+      "author": "OpenStax",
+      "title": "Calculus Volume 3 4.7 Maxima Minima Problems",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-7-maxima-minima-problems",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Local versus global extrema definitions",
+        "Theorem 4.16 interior critical point condition",
+        "Theorem 4.17 second derivative test and inconclusive degeneracy"
+      ],
+      "conditions_applied": [
+        "Stationarity and neighborhood C2 required before extrema classification",
+        "A nonstationary point with indefinite Hessian is not called a stationary saddle",
+        "Boundary example shows why interior assumptions matter"
+      ]
+    },
+    {
+      "id": "R4",
+      "author": "Bjorn Poonen",
+      "title": "MIT 18.02 Lecture Notes Fall 2021",
+      "url": "https://math.mit.edu/~poonen/02/notes.pdf",
+      "status": "opened_and_read_text",
+      "sections_checked": [
+        "Section 9.9.1-9.9.3 quadratic forms, completed square and determinant test",
+        "Constraint and degenerate-Hessian warnings"
+      ],
+      "conditions_applied": [
+        "Two-dimensional determinant rule is explained by the eigenvalue framework",
+        "Zero eigenvalues leave higher-order possibilities",
+        "Constrained/boundary optimization is not silently handled by unconstrained rules"
+      ],
+      "inspection_limit": "PDF text inspected; a later screenshot request returned cache-miss. No claim of visual inspection of this external PDF."
+    },
+    {
+      "id": "R5",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.linalg.eigh",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.eigh.html",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Symmetric/Hermitian input requirement",
+        "UPLO triangular choice",
+        "Ascending eigenvalues and normalized eigenvectors in columns"
+      ],
+      "conditions_applied": [
+        "Independent symmetry check precedes eigh",
+        "Eigenvector signs are not hard-coded",
+        "Eigenpair and orthogonality residuals checked",
+        "Near-zero eigenvalues produce numerical uncertainty rather than an exact theorem claim"
+      ]
+    }
+  ],
+  "originality": {
+    "text": "Original coherent Chinese lesson, lab, and 12 detailed exercises; no copied source paragraphs or examples",
+    "figures": "12 original program-generated instructional PNGs",
+    "data": "Same three original deterministic synthetic records as unit014; no external data or images"
+  },
+  "proof_scope": [
+    "Primary-model Hessian derived from residual differentiation and independently expanded polynomial",
+    "General C2 second-order remainder derived using two applications of Rolle and Hessian continuity",
+    "Positive-definite and indefinite stationary classifications proved with uniform remainder control",
+    "Semidefinite and zero-Hessian counterexamples; C2 noncubic remainder example",
+    "Global minimum established by completed squares, independent of local Hessian",
+    "Quadratic update stability derived mode by mode, not generalized to arbitrary nonlinear losses"
+  ],
+  "claims_not_made": [
+    "Global optimization guarantee from one local Hessian",
+    "Generalization performance or real task benefit",
+    "Complete numerical robustness from finite tests"
+  ]
+}

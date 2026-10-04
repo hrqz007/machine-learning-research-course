@@ -1,0 +1,399 @@
+{
+  "unit": "015",
+  "status": "passed",
+  "checked_date": "2026-10-04",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1"
+  },
+  "script": {
+    "status": "passed",
+    "method": "Fresh Python processes, including unrelated working directory",
+    "command": "python experiment.py",
+    "new_process_repeat_stdout_identical": true,
+    "new_process_repeat_report_bytes_identical": true,
+    "report_sha256": "b7176af032569cc0fee9680108c403e9f88a179448a9380483bd32f038ba7c5c"
+  },
+  "notebook": {
+    "status": "passed",
+    "method": "Real ipykernel InProcessKernel in a fresh Python process, sequential code cells",
+    "code_cells": 12,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "error_outputs": 0,
+    "image_png_outputs": 6,
+    "format_validation": "nbformat.validate passed",
+    "limitations": [
+      "No Jupyter browser UI test",
+      "No out-of-process socket transport test",
+      "No learner local Anaconda installation test"
+    ],
+    "runtime_warnings": [
+      "Frozen module debugger warning; does not invalidate executed cell results",
+      "Network interface discovery denied; in-process kernel did not require network transport"
+    ],
+    "visual_revision": "Saddle loss-axis label placed beyond tick labels with sufficient canvas; all 12 cells reexecuted and the final PNG independently visually verified."
+  },
+  "fraction_checks": {
+    "loss": "19/48",
+    "gradient": [
+      "-1/6",
+      "-5/6"
+    ],
+    "Hessian": [
+      [
+        "10/3",
+        "2"
+      ],
+      [
+        "2",
+        "1/3"
+      ]
+    ],
+    "direction_coefficients_orders_1_to_4": [
+      "-23/30",
+      "5/3",
+      "224/125",
+      "256/625"
+    ]
+  },
+  "analytic_fd_points": 25,
+  "max_hessian_difference_error": 4.517204388321261e-10,
+  "boundary_case_count": 36,
+  "boundary_cases": [
+    {
+      "case": "invalid_theta_0",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_1",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_2",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_3",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_4",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_5",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_6",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_7",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_8",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_theta_9",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_data_0",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_data_1",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_data_2",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_data_3",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_data_4",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_0",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_-1",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_nan",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_inf",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_True",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_1e-20",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_difference_step_1e+308",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "overflow_loss",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "overflow_hessian",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "overflow_remainder",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "asymmetric_H",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "nonsquare_H",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "nonfinite_H",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "negative_gradient_tolerance",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "negative_eigen_tolerance",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "overflow_eigen_tolerance",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_order",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "bool_order",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "negative_descent_step",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "invalid_iteration_count",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "zero_increment_and_single_sample",
+      "status": "accepted_as_expected"
+    }
+  ],
+  "classifications": {
+    "base_nonstationary": {
+      "gradient_within_tolerance": false,
+      "curvature": "indefinite",
+      "conclusion": "nonstationary",
+      "eigenvalues": [
+        -0.6666666666666665,
+        4.333333333333334
+      ],
+      "eigenvectors_columns": [
+        [
+          0.4472135954999579,
+          -0.8944271909999159
+        ],
+        [
+          -0.8944271909999159,
+          -0.4472135954999579
+        ]
+      ],
+      "eigenvalue_threshold": 4.333333333333334e-10,
+      "warning": "数值候选；不能证明梯度精确为零或邻域满足C2条件"
+    },
+    "stationary_saddle": {
+      "gradient_within_tolerance": true,
+      "curvature": "indefinite",
+      "conclusion": "saddle_candidate",
+      "eigenvalues": [
+        -1.866666666666667,
+        3.3333333333333335
+      ],
+      "eigenvectors_columns": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "eigenvalue_threshold": 3.3333333333333337e-10,
+      "warning": "数值候选；不能证明梯度精确为零或邻域满足C2条件",
+      "point": [
+        1.2,
+        0
+      ],
+      "loss": 0.6
+    },
+    "minimum_positive_b": {
+      "gradient_within_tolerance": true,
+      "curvature": "positive_definite",
+      "conclusion": "strict_local_minimum_candidate",
+      "eigenvalues": [
+        1.073422053980167,
+        11.593244612686505
+      ],
+      "eigenvectors_columns": [
+        [
+          -0.8861015250726155,
+          0.46349119437588554
+        ],
+        [
+          0.46349119437588554,
+          0.8861015250726155
+        ]
+      ],
+      "eigenvalue_threshold": 1.1593244612686505e-09,
+      "warning": "数值候选；不能证明梯度精确为零或邻域满足C2条件",
+      "point": [
+        0.5,
+        1.0801234497346435
+      ],
+      "loss": 0.05555555555555555
+    },
+    "minimum_negative_b": {
+      "gradient_within_tolerance": true,
+      "curvature": "positive_definite",
+      "conclusion": "strict_local_minimum_candidate",
+      "eigenvalues": [
+        1.073422053980167,
+        11.593244612686505
+      ],
+      "eigenvectors_columns": [
+        [
+          -0.8861015250726155,
+          -0.46349119437588554
+        ],
+        [
+          -0.46349119437588554,
+          0.8861015250726155
+        ]
+      ],
+      "eigenvalue_threshold": 1.1593244612686505e-09,
+      "warning": "数值候选；不能证明梯度精确为零或邻域满足C2条件",
+      "point": [
+        0.5,
+        -1.0801234497346435
+      ],
+      "loss": 0.05555555555555555
+    }
+  },
+  "quadratic_descent": {
+    "eigenvalues": [
+      1,
+      16
+    ],
+    "stable_step": 0.1,
+    "stable_final_loss": 0.007390452164712935,
+    "unstable_step": 0.15,
+    "unstable_final_loss": 5600301.573479728
+  },
+  "figures": {
+    "count": 12,
+    "all_referenced_in_lecture": true,
+    "missing_glyph_warnings": 0,
+    "visual_review": "All twelve inspected in contact sheet; full-size inspection of figures 04,05,06,07; corrected overlapping 3D tick labels in figure06 and rerendered. Further PDF-scale review is pending.",
+    "build_log": "figures-build.log"
+  },
+  "documents": {
+    "lecture_characters": 14610,
+    "lab_characters": 4691,
+    "answers_characters": 6458,
+    "exercise_count": 12,
+    "pdf_rendering": "passed",
+    "lecture_pages": 15,
+    "lab_pages": 4,
+    "answers_pages": 5,
+    "visual_review": "All24 final PDF pages individually inspected at rendered resolution; all6 notebook PNG outputs inspected"
+  },
+  "validation_scope": [
+    "25 fixed points: residual and expanded Hessians, expanded loss, central differences, exact remainder identity and global certificate",
+    "Exact Fraction loss, gradient, Hessian and four directional coefficients",
+    "Hessian eigenpair and orthogonality residuals",
+    "Nonstationary indefinite, stationary indefinite, positive-definite, negative-definite and degenerate candidates",
+    "Ordinary and cubic-cancellation directional remainder sweeps",
+    "Finite step and roundoff failures",
+    "Wrong type, shape, data broadcasting, nonfinite values, overflow, asymmetric matrix and unresolvable displacement rejection",
+    "Zero increment and single-sample valid boundaries",
+    "Rotated quadratic eigenvalues and stable/unstable update modes"
+  ],
+  "not_tested": [
+    "Arbitrary inputs beyond documented finite float64 cases",
+    "Real-world optimization or prediction performance",
+    "Jupyter browser UI",
+    "external-process socket transport",
+    "learner local Anaconda installation"
+  ],
+  "interpretation_limits": [
+    "Numerical near-zero gradient is a candidate, not exact stationarity proof",
+    "C2 gives Peano second-order remainder; cubic bounds need stronger control",
+    "Special directions may cancel the leading remainder term",
+    "A local quadratic model is not a global certificate",
+    "Step stability derived only for the exact fixed quadratic"
+  ],
+  "supplemental_finite_audit": [
+    {
+      "case": "finite_step_sample_overflow",
+      "status": "rejected_as_expected",
+      "message": "finite_hessian 的计算超出有限可处理范围"
+    },
+    {
+      "case": "gradient_overflow",
+      "status": "rejected_as_expected",
+      "message": "gradient 的计算超出有限可处理范围"
+    },
+    {
+      "case": "taylor_quadratic_overflow",
+      "status": "rejected_as_expected",
+      "message": "quadratic_form 的计算超出有限可处理范围"
+    },
+    {
+      "case": "descent_update_overflow",
+      "status": "rejected_as_expected",
+      "message": "quadratic_descent 的计算超出有限可处理范围"
+    }
+  ]
+}

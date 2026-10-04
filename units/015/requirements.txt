@@ -1,0 +1,9 @@
+# Core experiment
+numpy==2.3.5
+# Notebook plots
+matplotlib==3.10.8
+# Notebook runtime (use a compatible current installation)
+ipython>=8
+ipykernel>=6
+nbformat>=5.10
+jupyterlab>=4

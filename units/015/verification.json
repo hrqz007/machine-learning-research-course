@@ -1,0 +1,168 @@
+{
+  "unit": "015",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 15,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 5
+  },
+  "visual_review": "All 24 final PDF pages, 12 figures and 6 retained notebook PNGs individually inspected; final saddle Loss L label is fully visible without overlap.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "deterministic_hessian_points": 25,
+    "boundary_groups": 36,
+    "supplemental_finite_audit": 4,
+    "unrelated_cwd_repeat": "passed, stdout and report byte-identical",
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 12,
+    "png_outputs": 6,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "small deterministic synthetic examples only",
+    "finite numerical checks do not prove general Taylor or stability theorems",
+    "Rolle theorem accepted explicitly as foundational one-variable result",
+    "C2 Peano remainder is distinguished from stronger cubic error bounds",
+    "eigenvalue and stationarity tolerance results are candidates rather than exact proofs",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 28226,
+      "sha256": "f7e8713aed3819fa14a3177f681b1df0232364afa00fb04e064d63df17f6932f"
+    },
+    "lecture.pdf": {
+      "bytes": 3329640,
+      "sha256": "502a0d06a39d244d242e96859d296302fbe6dda639cb7a8aac82c9e129aa7982"
+    },
+    "lab.md": {
+      "bytes": 10149,
+      "sha256": "b1d2b2918cbb3261d8c9d70637050284c28e603239cdbfc19fa04f6655bc5cbf"
+    },
+    "lab.pdf": {
+      "bytes": 583116,
+      "sha256": "f38623b9b5ba498a6e39408d2e7ed096a7acc8eaa43d112736a160ac44070e2d"
+    },
+    "answers.md": {
+      "bytes": 12059,
+      "sha256": "5b0f9d3a704a2e79d759cdff92a84899ab95ae3164bee9d808e5400555612793"
+    },
+    "answers.pdf": {
+      "bytes": 647576,
+      "sha256": "cd96d7fec92e67005793b70ff2893f319ce838ed49fce5891304a8f278c79bff"
+    },
+    "experiment.py": {
+      "bytes": 18586,
+      "sha256": "faba0c9d657e15ea2f22996f1db82f210ad0f74c0b0d0de5d04a9b0c67c17d01"
+    },
+    "experiment.ipynb": {
+      "bytes": 769905,
+      "sha256": "9fc315e4b6916fecef1f839890a535cbea22cacd354a674b2e37266791a8f02b"
+    },
+    "README.md": {
+      "bytes": 3358,
+      "sha256": "f2c8c83fca7c5f79a8dee19ac4ba4b430d0cdf952b59290c0fbf285581d0cb04"
+    },
+    "requirements.txt": {
+      "bytes": 179,
+      "sha256": "9caf4d927ded7e688e24e92f93c628072730961c582b9bc3b6c6085691fd74a1"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "c826d11475c4bc826c71f9802099d76453c4116d900b109ebc7231409a2f4ba1"
+    },
+    "source-checks.json": {
+      "bytes": 5113,
+      "sha256": "ce3266843ca6b6f3ae632968f9f29ecc9da169b4cc2d882f4a8e75ff0e058205"
+    },
+    "test-result.json": {
+      "bytes": 10824,
+      "sha256": "71a2c4a65647bfe13eb5552dc7a97b639bc13c0e87f894000cd1e42c260d46b2"
+    },
+    "data/README.md": {
+      "bytes": 1965,
+      "sha256": "e09cdca6bcc939fcd2b85bb6892f8e7b4e31e36a60eb7a8b49c9e54be57ea3ce"
+    },
+    "data/observations.csv": {
+      "bytes": 32,
+      "sha256": "cd3d231d949e3dfeadc4bb12b1d30c72d4280a5d5920dfa0130c4cfc776efb79"
+    },
+    "figures/01_same_slope.png": {
+      "bytes": 99279,
+      "sha256": "f11d1111a540ee3bde64e6e90bb986f443a7591e0f619b24833bb41bbd0d82de"
+    },
+    "figures/02_taylor_scales.png": {
+      "bytes": 117022,
+      "sha256": "06dee53a81e573b5a3aeee4d14f6c57fb6d2b2db9bf25313501f9f4b9f07d05c"
+    },
+    "figures/03_hessian_directions.png": {
+      "bytes": 93257,
+      "sha256": "e22e1945a40730417a5bf0ceaa6518f474f204c28d18c223147889f8ca0701e9"
+    },
+    "figures/04_rotated_ellipse.png": {
+      "bytes": 338460,
+      "sha256": "8f21ba74f010cf5b286c93605223d162c733825a8d97b3674445b6af2f4672a3"
+    },
+    "figures/05_model_landscape.png": {
+      "bytes": 417874,
+      "sha256": "60d1620752f5e0df14f95fc00c32ff6b925d61abc4ca734611fbba9963b5a780"
+    },
+    "figures/06_stationary_shapes.png": {
+      "bytes": 562179,
+      "sha256": "8568d47d917d6fb344e30a21638a6cca3d46ccce2d989d8677943ce3a1fe7662"
+    },
+    "figures/07_semidefinite_unknown.png": {
+      "bytes": 149176,
+      "sha256": "9e866a581a459a4bcccae418d2ed76c59b4b9f559ecfca61d8e5eab609869d3f"
+    },
+    "figures/08_tangent_removed.png": {
+      "bytes": 131768,
+      "sha256": "743d97d86fdf1d1edb036efcc58a64eba61e30d6b0224c4a84bf64a3a10f2054"
+    },
+    "figures/09_local_not_global.png": {
+      "bytes": 129451,
+      "sha256": "2a29729a3de3a2c2bd0ca2ac3887bcd7e3067aa8230d27db45d9ebc939b09e0c"
+    },
+    "figures/10_approximation_errors.png": {
+      "bytes": 145594,
+      "sha256": "a335cd0912d3bbd52d85831456f14db64fead7276c42a1d698377288230bdc3e"
+    },
+    "figures/11_anisotropic_steps.png": {
+      "bytes": 205720,
+      "sha256": "9636f426df3707f2746ebb54b2409b233cb06ac2d8e6933c830074f5a1af0224"
+    },
+    "figures/12_numerical_audit.png": {
+      "bytes": 118555,
+      "sha256": "e45b9ab257da66e614e4508cf3e2b2c7ce9a605fa56cd4da249c7bbecf2bfd0c"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "checks": [
+      "27 payload hashes matched before verification metadata update",
+      "All 24 PDF pages and all 12 original figures inspected",
+      "12 code cells rerun in a fresh independent InProcessKernel copy; 6 PNG outputs byte-identical",
+      "240 independent Fraction polynomial Hessian Taylor and remainder checks",
+      "240 exact global-minimum certificates",
+      "10 known-spectrum classifications",
+      "42 exact iteration coordinates",
+      "7 additional input rejections",
+      "Final notebook saddle axis label spot-checked after correction"
+    ]
+  }
+}
