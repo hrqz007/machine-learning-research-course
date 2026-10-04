@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–018 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–022 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -54,6 +54,11 @@
 - [第 017 讲：积分与连续量](units/017/README.md)：[正文](units/017/lecture.pdf) · [实验指南](units/017/lab.pdf) · [Notebook](units/017/experiment.ipynb)
 
 - [第 018 讲：概率事件与条件信息](units/018/README.md)：[正文](units/018/lecture.pdf) · [实验指南](units/018/lab.pdf) · [Notebook](units/018/experiment.ipynb)
+
+- [第019讲 随机变量与期望](units/019/README.md)：[正文](units/019/lecture.pdf) · [实验指南](units/019/lab.pdf) · [Notebook](units/019/experiment.ipynb)
+- [第020讲 常见分布与建模假设](units/020/README.md)：[正文](units/020/lecture.pdf) · [实验指南](units/020/lab.pdf) · [Notebook](units/020/experiment.ipynb)
+- [第021讲 联合分布与相关结构](units/021/README.md)：[正文](units/021/lecture.pdf) · [实验指南](units/021/lab.pdf) · [Notebook](units/021/experiment.ipynb)
+- [第022讲 抽样与极限定理](units/022/README.md)：[正文](units/022/lecture.pdf) · [实验指南](units/022/lab.pdf) · [Notebook](units/022/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)

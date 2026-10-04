@@ -1,0 +1,7 @@
+scenario_id,probability_numerator,probability_denominator,x,z
+A,1,6,0,0
+B,1,6,0,0
+C,1,6,1,1
+D,1,6,1,1
+E,1,6,2,1
+F,1,6,4,1

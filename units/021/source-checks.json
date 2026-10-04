@@ -1,0 +1,87 @@
+{
+  "unit": "021",
+  "date": "2026-10-04",
+  "status": "primary_source_sections_read_and_author_executable_checks_passed",
+  "sources": [
+    {
+      "id": "R1-R3",
+      "title": "MIT RES6.012 Introduction to Probability selected textbook summary",
+      "url": "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/d973b10c2587781f86ca4f2aff49098f_MITRES_6_012S18_Textbook.pdf",
+      "status": "opened and relevant extracted text read",
+      "sections": "2.5–2.7 joint/marginal/conditional PMFs and independence;3.4–3.5 joint and conditional PDFs;4.2 covariance/correlation;4.3 total variance"
+    },
+    {
+      "id": "R4",
+      "title": "MIT6.436J Fall2018 Lecture14 Multivariate Normal Distributions",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/ceb423b6a703abd60429367b733f45bf_MIT6_436JF18_lec14.pdf",
+      "status": "full nine-page PDF opened, sections1–4 extracted text read",
+      "sections": "PSD/PD; constructive and density definitions; covariance matrix shapes; linear transformations; joint-normal independence; Gaussian conditional residual derivation"
+    },
+    {
+      "id": "R5",
+      "title": "NumPy2.3 cov",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.cov.html",
+      "status": "opened and parameters/notes read",
+      "sections": "rowvar default True; ddof default normalization N-1 versus explicit0; analytic and frequency weights"
+    },
+    {
+      "id": "R6",
+      "title": "MIT6.436J Fall2018 Lecture15 Multivariate Normal Distributions Continued",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/87422049e8f05459ee857eb475f3a667_MIT6_436JF18_lec15.pdf",
+      "status": "PDF opened; definitions and singular-case section read",
+      "sections": "Nondegenerate density definition versus constructive Gaussian allowing singular covariance; full equivalence proof uses transforms beyond this unit"
+    },
+    {
+      "id": "R7",
+      "title": "MIT6.041 Fall2010 complete lecture slides, Lecture12",
+      "url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/60eede37f87fd886d4ba574e1cf26617_MIT6_041F10_lec_slides.pdf#page=24",
+      "status": "opened and page24–25 text read",
+      "sections": "Conditional variance as a random variable; total variance identity and proof; within/between interpretation"
+    },
+    {
+      "id": "R8a",
+      "title": "NumPy2.3 eigh",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.eigh.html",
+      "status": "opened and interface read",
+      "sections": "UPLO selects a triangle; eigenvectors are columns; eigenvalues sorted; symmetry must be validated separately"
+    },
+    {
+      "id": "R8b",
+      "title": "NumPy2.3 cholesky",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.cholesky.html",
+      "status": "opened and interface read",
+      "sections": "Requires Hermitian/symmetric positive-definite; no full Hermitian validation; only selected triangle used"
+    },
+    {
+      "id": "R8c",
+      "title": "NumPy2.3 Generator.multivariate_normal",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.multivariate_normal.html",
+      "status": "opened and parameters/notes read",
+      "sections": "Symmetric PSD covariance; output sample shape; check_valid/tol and svd/eigh/cholesky methods; invalid covariance unsupported"
+    }
+  ],
+  "authorship": "Original Chinese lecture, standalone lab, 18 fully worked exercises, 12 original mechanism figures, six executable Notebook plots, and entirely synthetic data. No source figures or worked examples copied.",
+  "proof_scope": [
+    "Finite joint/marginal/conditional table and covariance computed independently",
+    "PSD directional variance identity and covariance transform proof",
+    "Correlation bounds from nonnegative squares",
+    "Sample covariance rank bound",
+    "Two-dimensional Gaussian conditional formula derived by completing square",
+    "General Gaussian residual argument stated with joint-normal independence condition",
+    "Total variance from centered residual; exact six-state and triangle examples"
+  ],
+  "accepted_theorems": [
+    "Orthogonal transformations preserve volume; linear axis scaling multiplies volume by scale product",
+    "General singular Gaussian equivalence/independence theorem not reproved using transforms",
+    "Standard univariate normal normalization from020"
+  ],
+  "author_recheck": {
+    "date": "2026-10-04",
+    "sources": [
+      "R4",
+      "R5",
+      "R8b"
+    ],
+    "scope": "Reopened official MIT Lecture14 sections1-4 and NumPy2.3 cov/Cholesky parameter and symmetry notes; independently verified original lesson formulas through Fraction/Decimal checks."
+  }
+}

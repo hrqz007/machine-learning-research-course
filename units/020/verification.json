@@ -1,0 +1,174 @@
+{
+  "unit": "020",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 14,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4,
+    "exercises": 16
+  },
+  "visual_review": "All22 final PDF pages individually inspected; all12figures reviewed incontext; all4retainedNotebookPNGs inspected; factorial-counting supplement added inlecture3 and sources grouped on14",
+  "code": {
+    "status": "passed",
+    "core": "NumPy and Python standard library",
+    "reference_checks": 1533,
+    "boundary_groups": 74,
+    "expected_rejections": 62,
+    "accepted_groups": 12,
+    "independent_Fraction_Decimal_checks": 813,
+    "fresh_process": "Two unrelated cwd processes and python-O had identical JSON and CSV; coordinator independent fresh script passed"
+  },
+  "notebook": {
+    "code_cells": 12,
+    "png_outputs": 4,
+    "status": "passed",
+    "method": "Fresh Python process; sequential real ipykernel InProcessKernel"
+  },
+  "source_checks": "source-checks.json",
+  "source_caveat": "Fithian source Gaussian expansion/natural-parameter restatement and a Binomial symbol have local inconsistencies; this unit uses independently checked expansion rather than copying those errors",
+  "limitations": [
+    "Synthetic model demonstration only",
+    "Finite Monte Carlo is not a proof or confidence interval",
+    "Gaussian normalization integral and interchange theorem clearly stated as accepted results",
+    "Jupyter browserUI, external socket transport and learnerAnaconda installation untested",
+    "Conservative floating point numerical range; subnormal and underflow rejection"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 3417,
+      "sha256": "a834c05cc0c88cca09440b6107cbbe27e86bb6bb754a553fa1dd5cac6325e8e9"
+    },
+    "lecture.md": {
+      "bytes": 28446,
+      "sha256": "70e922c115968ba992d6459db526ef8034882f92839f067e4ec76236204e7b77"
+    },
+    "lecture.pdf": {
+      "bytes": 1836056,
+      "sha256": "f0f9ad0d559683f9544464f8b93d41b618e0b901340f3c3e43bd8458112ebefc"
+    },
+    "lab.md": {
+      "bytes": 9861,
+      "sha256": "5142efb094676c4907e481346233cc9b17dcbe6d3bb9354addc95b3ac727023e"
+    },
+    "lab.pdf": {
+      "bytes": 470816,
+      "sha256": "ae3189d76c0e85703b1824af0488b3ffac35e96ef8c98dff76b2e48d7a9f5d2b"
+    },
+    "answers.md": {
+      "bytes": 9342,
+      "sha256": "a111124571c4505c8d069acc5c1be2cab7739bdf48e6f006a41f07b52fb95d99"
+    },
+    "answers.pdf": {
+      "bytes": 458853,
+      "sha256": "246cbd2f75ce7bff8b6d1b69a7443d91d53dc6806db366e4d6ddd529664ed09d"
+    },
+    "experiment.py": {
+      "bytes": 19670,
+      "sha256": "99427df99532b633f6e1000dab9bda8079c79626a8c6bde535acda80bfb68e83"
+    },
+    "experiment.ipynb": {
+      "bytes": 298532,
+      "sha256": "f3352ba4547698d781e4268f0d3b2911117d268f2882ba7e992d87f711e8b0b0"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "025da434ff1b2c98319427e15ade88d18ab07e42a3ca5362308b7715683ee128"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "source-checks.json": {
+      "bytes": 4418,
+      "sha256": "f4542685be63d48219caf64e22ddbaeb65962538b6f938959b81696ef185973e"
+    },
+    "test-result.json": {
+      "bytes": 26742,
+      "sha256": "74ef7cfd95793824160418748f77bcea6899f94746d500410a7320257928e981"
+    },
+    "data/README.md": {
+      "bytes": 1822,
+      "sha256": "ef19c64f12466389539416b6e75ec5b3ea4557dbeba594c4e47e9b5a278920ae"
+    },
+    "data/model_spec.json": {
+      "bytes": 967,
+      "sha256": "2db72911e2149eec67b98e4b4f70667ce7ea60912728a3c248447b6a7c7e6d0e"
+    },
+    "data/synthetic_preview.csv": {
+      "bytes": 729,
+      "sha256": "7c1772dde8d036cecb5dbc79f8638a0181d2d4ad15e0d3df7bf6e7d4a68302ce"
+    },
+    "figures/01_support_map.png": {
+      "bytes": 88792,
+      "sha256": "93b9ad663090f0b542c7878470fe17e82aa9bc86da7687c124fd2308224701be"
+    },
+    "figures/02_bernoulli.png": {
+      "bytes": 71111,
+      "sha256": "cd51229c15f6a18436b4f55fff17f7b14756aecca129453cecc7363a661fd250"
+    },
+    "figures/03_binomial_paths.png": {
+      "bytes": 66171,
+      "sha256": "e59b02b589495219e320fa1e5af5ac3b4846788c643e39f195409c583178f01d"
+    },
+    "figures/04_categorical.png": {
+      "bytes": 70441,
+      "sha256": "bb9ea28bbbbc7f9669ba51b977d716b0aff043e6d43bbc286c417dde88ca503d"
+    },
+    "figures/05_poisson.png": {
+      "bytes": 111356,
+      "sha256": "369f30015b3b24bc3d966b25c8462e2db96ad862a0a9211e9f95ebd99b7448b3"
+    },
+    "figures/06_overdispersion.png": {
+      "bytes": 91417,
+      "sha256": "73829e9b1ef9b58781eed2c66575293f3261ba4902230199e310b8f7d4d48dc4"
+    },
+    "figures/07_gaussian.png": {
+      "bytes": 118957,
+      "sha256": "b4e1438e2cc6580794f31f11f2ecd7e14b28953a0202eebfac101293969aa1b4"
+    },
+    "figures/08_support_and_conditioning.png": {
+      "bytes": 121678,
+      "sha256": "e43a4cea92938a42f5e6816c631c589ea931af4676aeaf76191b25e8644ea4b9"
+    },
+    "figures/09_equal_moments.png": {
+      "bytes": 64861,
+      "sha256": "d76e83ff27e0bb5140ffd9c06dd1cf7268d3bb817a9ba1dd70137467e8c618cb"
+    },
+    "figures/10_natural_parameters.png": {
+      "bytes": 73064,
+      "sha256": "da83ebd7101ee4f2c6cd04c85196e79b9c91a6f03879cd6bffd96b3787fed957"
+    },
+    "figures/11_gaussian_parameter_space.png": {
+      "bytes": 74786,
+      "sha256": "bda6691dfa535ff0a6240a87cb94a7278aa416afbcb7ec47bd5c3cfebe290b7c"
+    },
+    "figures/12_empirical_audit.png": {
+      "bytes": 100608,
+      "sha256": "016914d47c7e58606f0275647d061e6ad5f63e5d233e44544f4a81ae75caa14b"
+    }
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "payload_files_verified": 28,
+    "payload_bytes_verified": 4223164,
+    "pdf_pages_reviewed": 22,
+    "notebook_code_cells": 12,
+    "notebook_pngs": 4,
+    "binomial_convolution_masses": 3366,
+    "Decimal_Poisson_cases": 726,
+    "Decimal_Gaussian_cases": 300,
+    "finite_expfamily_cases": 200,
+    "Fraction_sample_moments": 180,
+    "categorical_threshold_streams": 20,
+    "extra_rejections_and_sentinels": 12,
+    "fresh_process": "ordinary and optimized script reports/CSVs identical; fresh actualNotebookkernel passed",
+    "latest_revision": "factorial andcombination-counting prerequisites added andall changed pages rechecked; no remaining blocker"
+  }
+}

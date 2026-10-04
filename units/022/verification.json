@@ -1,0 +1,183 @@
+{
+  "unit": "022",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 14,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 4,
+    "exercises": 16
+  },
+  "visual_review": "All22 PDF pages and6retained NotebookPNG individually inspected",
+  "code": {
+    "reference_checks": 268,
+    "boundary": {
+      "expected_rejections": 55,
+      "accepted_groups": 14,
+      "groups": 69
+    }
+  },
+  "additional_audit": {
+    "fraction_moments": 204,
+    "exact_covariance_sums": 348,
+    "exact_finite_population": 35,
+    "decimal_references": 1125,
+    "pre_rng_guards": 39,
+    "invalid_csv_protection": 6
+  },
+  "fresh_process": "two unrelatedcwd andordinary/-O three runs had identicalstdout/report/CSV; sixinvalidCSVprotectedoldoutputs",
+  "notebook": {
+    "code_cells": 13,
+    "png_outputs": 6,
+    "status": "passed",
+    "method": "freshprocess realInProcessKernel sequentialexecution"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "Syntheticfiniteexperiments only",
+    "GeneralCLT andintegrableLLN accepted notprovedhere",
+    "BrowserUI sockettransport learnerAnaconda andcross-version bitwisestream compatibility untested"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 3836,
+      "sha256": "1c49fa5de7e08f001867b47a2c8d12ea3f6da4bfb3ec67743f26b8df164db66b"
+    },
+    "lecture.md": {
+      "bytes": 28159,
+      "sha256": "40536ea12e8c6b1e99c658e2d40a6561b1b23c547d0d16a59cf168c5ee0142b8"
+    },
+    "lecture.pdf": {
+      "bytes": 1750319,
+      "sha256": "d74358ef947ae8c6663ab464d3ae5b567fa85c54bf2fc1a006990cb16cdff256"
+    },
+    "lab.md": {
+      "bytes": 9347,
+      "sha256": "d6ed90befe74d2b957e0396557d108b5cfd1e2b7f6a131878c53114b6fd80b48"
+    },
+    "lab.pdf": {
+      "bytes": 514541,
+      "sha256": "7dca2165a83ad69a4645ca5dfb33d68e55e5125db37d0ea03024599baddf078b"
+    },
+    "answers.md": {
+      "bytes": 8894,
+      "sha256": "92783f387565c654c3b63430c64eac35ae072fc69f4b77ef4f5c8f8edc5563df"
+    },
+    "answers.pdf": {
+      "bytes": 579392,
+      "sha256": "f991a49aa8ddfb801085794e002679a23a518724fc61b25f947e5e7014337ab3"
+    },
+    "experiment.py": {
+      "bytes": 20480,
+      "sha256": "057ae775396c7d5335c4dc57033731a21a25f2e55f9b8db757b6f506c1a9a995"
+    },
+    "experiment.ipynb": {
+      "bytes": 395372,
+      "sha256": "f4d170665cd51ec61cc62b8bedebecf6ae7a3c1d6e83a01e3f754ad7cbe2cd3d"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "ae932ed2be8d74e255e47319eb55894933a7c1b2021dd3141b1b484a981bc580"
+    },
+    "source-checks.json": {
+      "bytes": 2898,
+      "sha256": "2206f13cdcee44d101846af4a1a66362c5edec01524deaf68e644229c21fe220"
+    },
+    "test-result.json": {
+      "bytes": 2470,
+      "sha256": "c49810a1c0ec2032bfdfa6eb9e3b2fe92227868b68567260e826240d65aa49df"
+    },
+    "data/model_spec.json": {
+      "bytes": 151,
+      "sha256": "decbe18e9cddfafc96fb5487cb0db0fdbfdbd9d2e2730959c9b03ccb299c9d70"
+    },
+    "data/finite_population.csv": {
+      "bytes": 30,
+      "sha256": "115220ba0215a2b172eb31d672b5ae6e7d92bdb92d88a4f92e26b1f465119fc6"
+    },
+    "data/README.md": {
+      "bytes": 1306,
+      "sha256": "ccd6dc77f4735fe8214e944f4ba3f8b80b7749c17f47b81a0043402842f4af39"
+    },
+    "figures/01_two_levels.png": {
+      "bytes": 59629,
+      "sha256": "64c211e55369a72c32557ac208cf02548caf98b4992233f7ce2b5e1b696f919f"
+    },
+    "figures/02_sd_se.png": {
+      "bytes": 72887,
+      "sha256": "fa7a4ecfc581500243dabc0295d812d15926fe5ce8a7101fb92ab885fa5a3f80"
+    },
+    "figures/03_sample_sd.png": {
+      "bytes": 54633,
+      "sha256": "560c320c71bdf702980f0eff6a7b483112c7b88c606c5b16921e96cddd975cc3"
+    },
+    "figures/04_chebyshev.png": {
+      "bytes": 74710,
+      "sha256": "3b163783459c5a438e7c42a43f41ce0678da4373c868ff86a025a19d3dd9a8bc"
+    },
+    "figures/05_standardization.png": {
+      "bytes": 124288,
+      "sha256": "61fb21cb30e21ca3101446571ab1187d0c691c1a9875eb57b653beb045cc8b43"
+    },
+    "figures/06_cdf_jumps.png": {
+      "bytes": 47735,
+      "sha256": "af17384abced6c617bcbfb699e6474780fc6f154f723cdbdd8755e5e89b3a820"
+    },
+    "figures/07_rare_events.png": {
+      "bytes": 62477,
+      "sha256": "1df9846e187b6a1a0e86393d5ef2f37c4c69a477c9c256414410b2e82f4642e6"
+    },
+    "figures/08_clusters.png": {
+      "bytes": 55349,
+      "sha256": "5d298475b97fcc67ba5f4f8af5d4ccd94bd77cdd0a23cee6cfe10ec80d787ca9"
+    },
+    "figures/09_correlation_floor.png": {
+      "bytes": 63649,
+      "sha256": "6f09d8eec464fb4c31c3a496f06a86f64e2f8b8ff4b5dbb3687e8b69fe975fd4"
+    },
+    "figures/10_heavy_tail.png": {
+      "bytes": 85402,
+      "sha256": "fe6853bf240c8f272c655ec4e5999acd2f32594b90e599586b467b6406ff04ab"
+    },
+    "figures/11_bias_vs_variance.png": {
+      "bytes": 91038,
+      "sha256": "586f949d94aa2e7e3d91d982657774ded8531f47a95028d3127f3c86683770a5"
+    },
+    "figures/12_assumptions.png": {
+      "bytes": 66214,
+      "sha256": "a3f0a65bc95f403be02d707cc895646d2a81885c90cb27f7a65b4fab716df1bc"
+    }
+  },
+  "review_regression": "Complete vector validation before exact constant branch; four constant scale/decimal cases return exact zero spread and four invalid final entries still reject",
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "4c31a1c629688d508c95274d70e37a6c9edcd8a9960b7e588969b5a5940ee944",
+    "payload_files_verified": 28,
+    "payload_bytes_verified": 4175457,
+    "Fraction_sample_moments": 240,
+    "exact_binomial_coefficients_and_Decimal_CDF_jump_checks": 7070,
+    "ordered_finite_populations": 65,
+    "covariance_matrix_sums": 198,
+    "simulated_means_audited": 64000,
+    "simulation_summaries_audited": 16,
+    "bad_CSV_output_protection": 14,
+    "pre_RNG_invalid_cases": 14,
+    "constant_sample_regression_cases": 360,
+    "invalid_final_entries_rejected": 8,
+    "pdf_pages_reviewed": 22,
+    "notebook_code_cells": 13,
+    "notebook_pngs": 6,
+    "fresh_execution": "ordinary and optimized script output bytes equal; fresh real Notebook kernel passed; all6PNG byte-identical",
+    "latest_revision": "all inputs validated before exact constant branch; historical pending status removed from author record; no remaining blocker"
+  }
+}

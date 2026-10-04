@@ -1,0 +1,70 @@
+{
+  "unit": "022",
+  "status": "author_and_coordinator_checks_passed",
+  "date": "2026-10-04",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "script_checks": {
+    "reference_checks": 268,
+    "boundary": {
+      "expected_rejections": 55,
+      "accepted_groups": 14,
+      "groups": 69
+    }
+  },
+  "independent_arithmetic_and_failure_audit": {
+    "status": "passed",
+    "independent_checks": {
+      "fraction_moments": 204,
+      "exact_covariance_sums": 348,
+      "exact_finite_population": 35,
+      "decimal_references": 1125,
+      "pre_rng_guards": 39,
+      "invalid_csv_protection": 6
+    },
+    "total": 1757,
+    "clean_process_repeats": "three fresh processes, two unrelated cwd, ordinary and-O stdout/JSON/CSV identical",
+    "output_sha256": {
+      "sample_means.csv": "3772d2be0d552fd46e0d2a1d42a4e922fa73f71acff44ae9c6ac2c1589c37a66",
+      "report.json": "a34f49bcf4727c788d6a51e5a2eab4ed60dbdfd61eb63f0881422e0749130734"
+    },
+    "script_checks": {
+      "reference_checks": 268,
+      "boundary": {
+        "expected_rejections": 55,
+        "accepted_groups": 14,
+        "groups": 69
+      }
+    }
+  },
+  "pdf_pages": {
+    "lecture": 14,
+    "lab": 4,
+    "answers": 4
+  },
+  "visual": "All22final PDF pages individually inspected;12 original figures checked incontext;6 Notebook PNGs individually inspected",
+  "notebook": {
+    "code_cells": 13,
+    "png_outputs": 6,
+    "method": "FreshPython process, realipykernel InProcessKernel, sequentialexecution",
+    "png_sha256": [
+      "b7f0b46167eb4631d6a9f6d382f008325622532eb480c425e7a064f6f6e9699b",
+      "23c710fccd0f9d3ad4e00117d4f98f8b6ea768feed379697cd33bdc22cc3ab29",
+      "4188eb6d9e5166d75c001f3ea874bce6831d3d4ff6f63953f922f7159bba5afa",
+      "6b3d843fec8c9efc36ff0779ed7f134de088ae2e4cce4f49f27045c6bb9b1026",
+      "7fb7215a89925d39ab40270138fcc6edfd9b1997ab8df77a1ad613d922772677",
+      "ec86f000f9e9823594ba4afbad81e83e65d45e948467fb6cff1a1faa2abbf11b"
+    ]
+  },
+  "limits": [
+    "Syntheticfiniteexperiments only",
+    "GeneralCLT andintegrableLLN accepted notprovedhere",
+    "BrowserUI sockettransport learnerAnaconda andcross-version bitwisestream compatibility untested"
+  ],
+  "review_regression": "Complete vector validation before exact constant branch; four constant scale/decimal cases return exact zero spread and four invalid final entries still reject"
+}

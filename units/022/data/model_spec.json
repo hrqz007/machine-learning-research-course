@@ -1,0 +1,8 @@
+{
+  "kind": "synthetic_sampling_demo",
+  "seed": 22022,
+  "repetitions": 4000,
+  "sizes": [4, 16, 64, 256],
+  "p_numerator": 1,
+  "p_denominator": 4
+}

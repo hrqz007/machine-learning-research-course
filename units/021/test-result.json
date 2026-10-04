@@ -1,0 +1,198 @@
+{
+  "unit": "021",
+  "checked_on": "2026-10-04",
+  "status": "author_checks_passed",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "public_commands": [
+    "python experiment.py",
+    "python test_experiment.py",
+    "python -O experiment.py",
+    "python -O test_experiment.py"
+  ],
+  "numeric_and_boundary_checks": {
+    "status": "passed",
+    "numeric_checks": 1358,
+    "rejection_checks": 115,
+    "pre_rng_checks": 65,
+    "references": "Fraction finite-model raw moments and direct projections; rational 2D/block conditionals; Decimal center density; explicit componentwise sampler",
+    "quadrature": {
+      "domain": "mu+L[-6,6]^2",
+      "steps_per_axis": [
+        60,
+        120
+      ],
+      "estimates": [
+        0.9999999955779859,
+        0.9999999959327955
+      ],
+      "analytic_retained_mass": 0.9999999960536494,
+      "omitted_tail_mass": 3.946350579653313e-09,
+      "absolute_grid_errors": [
+        4.756635085811922e-10,
+        1.2085388245708373e-10
+      ]
+    },
+    "no_assert_statements": true,
+    "python_optimized_mode_supported": true
+  },
+  "fresh_process_checks": {
+    "two_unrelated_working_directories": true,
+    "optimized_mode": true,
+    "all_nine_output_files_byte_identical": true,
+    "runtime_output_sha256": {
+      "conditional_x5_samples.csv": "6cece5751820efcb988c7bb1df46153ed1ce63c1362bb46b6e2f33faadd3a912",
+      "experiment_report.json": "0558d74524218ca6d897b4d63ff3dfa029db655bf4a39d58b4325187188fb1bd",
+      "finite_samples.csv": "0b5d4a73d0933646e699ae0d249272a50d7c13efa25f7567a1d2cf23bf9a3b41",
+      "gaussian_samples.csv": "cbb82ac87e0cf4bcb1d9a4ab05a0993eea26ca30746783f54e25c0bfd12d8c9d",
+      "independent_normal_samples.csv": "edb51a13faf09ae1c562c31bd5ce6c639d8fb9826cbe4999e1363fa23b19a196",
+      "nonlinear_samples.csv": "d8a03c3a4af39a0a4464084514e2bedb8c13b8a31658d3a997ee91e7ee6492cf",
+      "normal_marginals_samples.csv": "e5fb721af57060485fc72ce145efdc329be4baf052fb266e2e130762e8a7d03f",
+      "singular_samples.csv": "37786fdf605944838fab37b1439c49f06ea397918b5b2cdb5cbb712d0e67e2cf",
+      "triangle_samples.csv": "15fd59c3140beeb30e110ce243f9ff8dc99e95e05b0d2430546c610d2bafa007"
+    }
+  },
+  "invalid_csv_checks": [
+    {
+      "case": "state_nan",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "state_extra",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "state_rational_sum",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "state_duplicate_label",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "state_last_bool",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "gaussian_asymmetric",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "gaussian_singular",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "gaussian_inf",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    },
+    {
+      "case": "gaussian_changed_valid",
+      "nonzero_exit": true,
+      "all_old_output_hashes_preserved": true
+    }
+  ],
+  "invalid_csv_created_no_new_directory": true,
+  "source_code_checks": {
+    "no_removable_assert_statements": true,
+    "all_inputs_validated_before_rng": true,
+    "explicit_full_matrix_symmetry_check": true,
+    "no_psd_projection_or_jitter": true
+  },
+  "notebook": {
+    "notebook": "experiment.ipynb",
+    "status": "passed",
+    "seconds": 2.198,
+    "code_cells": 16,
+    "kernel": "ipykernel InProcessKernel, fresh Python process; sequential execution",
+    "transport_note": "socket transport unavailable in build sandbox; Jupyter browser UI not tested",
+    "python": "3.12.14",
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "retained_png_count": 6,
+    "all_six_pngs_visually_reviewed": true,
+    "png_sha256": [
+      "f92a933946da852d99770d44fb331d34e91cfc9d46345fbed80bfa76c8414b92",
+      "d6eb7e6f7135d1e76eec4b86d1ef8ba8e025238c4f7b14b3a7a40224b2dd3758",
+      "fe07e1e8bf7ba4b07069a2724475e8977b81254b162972154bec2a9533c64f0a",
+      "3f5f6ea89991059abde941fde4d7b16098794c548db791bb67de83478ae1a5c7",
+      "ca9f65da47975cd30f67478c4bb8f0dd037c7ce6a8e55d75e2c98d7da0c50376",
+      "ee76b6849a8daeb6ba98aab71d73e98830dfa55e2454d02c9e8ec85dfb3818dd"
+    ]
+  },
+  "pdf": {
+    "lecture": {
+      "pages": 13,
+      "all_pages_rendered_and_visually_reviewed": true
+    },
+    "lab": {
+      "pages": 5,
+      "all_pages_rendered_and_visually_reviewed": true
+    },
+    "answers": {
+      "pages": 6,
+      "all_pages_rendered_and_visually_reviewed": true
+    },
+    "render_resolution_dpi": 105,
+    "layout_findings": "No clipped or overlapping text/formulas, missing figure glyphs, broken tables or mismatched captions found in final author review."
+  },
+  "figures": {
+    "original_lecture_figures": 12,
+    "figure_references_resolve": true,
+    "mechanism_figures_and_numeric_labels_checked": true
+  },
+  "content": {
+    "lecture_sections": 20,
+    "worked_exercises": 18,
+    "all_data_synthetic": true,
+    "independent_finite_fraction_oracles": true,
+    "independent_gaussian_rational_and_decimal_oracles": true,
+    "explicit_gram_cholesky_and_eigen_reconstruction_checks": true,
+    "density_grid_error_separated_from_truncation": true
+  },
+  "limitations": [
+    "Jupyter browser UI not tested",
+    "Socket kernel transport not tested; real InProcessKernel used in a fresh Python process",
+    "Learner Anaconda installation not tested",
+    "Cross-version or cross-platform bitwise RNG reproducibility not claimed",
+    "Float64 teaching interfaces conservatively reject some mathematically legal scales, near-singular matrices and computed negative eigenvalues without repairing them",
+    "Synthetic finite simulations are not real-world performance evidence, independence tests or convergence proofs",
+    "Per-file output replacement is atomic; an OS/storage failure during several replacements is not an all-files transaction"
+  ],
+  "publication_note": "These are author-side checks of the supplied files, not evidence of remote publication.",
+  "coordinator_checks": {
+    "script": "freshprocess script andpublictests passed",
+    "notebook": "freshprocess realInProcessKernel16cells passed; all6PNG byteidentical toauthorfreeze",
+    "visual": "All24PDFpages individually inspected;12lecturefigures and6NotebookPNGs checked",
+    "payload_hashes": "all30originalauthorfiles matched beforeadding thisverification evidence",
+    "latest_revision": "Complete input/weight/ddof validation precedes exact constant-coordinate centering. Mixed varying columns and conditional known columns checked; zero-weight/excluded invalid final states still reject. Only lab page5 changed and was rechecked; all6Notebook PNGs byte-identical."
+  }
+}

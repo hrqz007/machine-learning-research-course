@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-04",
+  "status": "primary_sources_opened_and_relevant_sections_read",
+  "sources": [
+    {
+      "title": "MIT 18.05 Reading6b",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class06-prep-b.pdf",
+      "checked": "Sections3,5; sampling means, standardization andCDF convergence; own lecture distinguishes strict/inclusive endpoints carefully"
+    },
+    {
+      "title": "MIT6.436J Lecture17",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf",
+      "checked": "Sections1,3,4; Markov/Chebyshev, integrable iid WLLN, finite positive varianceCLT; characteristic-function proof not claimed as a prerequisite-level proof"
+    },
+    {
+      "title": "MIT6.436J Lecture18",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/10625dc0942f47c4ddc004b3dbba11d5_MIT6_436JF18_lec18.pdf",
+      "checked": "Section1 theorem1; integrable iid strongLLN; accepted statement, not reproduced advancedproof"
+    },
+    {
+      "title": "NumPy std",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.std.html",
+      "checked": "axis,ddof,N-ddof denominator; unbiased variance does not imply unbiased SD"
+    },
+    {
+      "title": "NumPy pareto",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.pareto.html",
+      "checked": "Generator returns ParetoII/Lomax, support0+, add1 for ParetoI usedhere"
+    },
+    {
+      "title": "NIST Cauchy",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3663.htm",
+      "checked": "PDF,CDF,median andundefined mean/SD; divergent first-moment integrals independently derived"
+    },
+    {
+      "title": "NumPy standard_cauchy",
+      "url": "https://numpy.org/doc/2.3/reference/random/generated/numpy.random.Generator.standard_cauchy.html",
+      "checked": "Standard Cauchy distribution andsize parameter; example truncation not copied into our statistics"
+    },
+    {
+      "title": "NumPy compatibility",
+      "url": "https://numpy.org/doc/2.3/reference/random/compatibility.html",
+      "checked": "same seed,BitGenerator,callsequence,arguments,build/environment needed for strongest streamreproducibility; no universal cross-version claim"
+    }
+  ],
+  "independent_derivations": [
+    "finite-population covariance correction",
+    "cluster variance andequicorrelation",
+    "selectionbias MSE",
+    "Pareto moments andCauchy absolute integrability failure"
+  ],
+  "limitations": [
+    "GeneralCLT andintegrableLLN proofs accepted ratherthan falsely claimed from finitevariance proof",
+    "PennState finitepopulation page retrieval failed; not used as a cited source",
+    "MIT lecture15 inspected duringresearch but noCauchy stability theorem used orclaimed"
+  ]
+}

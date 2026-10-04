@@ -1,0 +1,203 @@
+{
+  "unit": "021",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 13,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 5
+  },
+  "answers": {
+    "pages": 6,
+    "exercises": 18
+  },
+  "visual_review": "All24PDF pages,12originalfigures and6NotebookPNGs individually inspected",
+  "code": {
+    "status": "passed",
+    "numeric_checks": 1358,
+    "rejection_checks": 115,
+    "pre_rng_checks": 65,
+    "references": "Fraction finite-model raw moments and direct projections; rational 2D/block conditionals; Decimal center density; explicit componentwise sampler",
+    "quadrature": {
+      "domain": "mu+L[-6,6]^2",
+      "steps_per_axis": [
+        60,
+        120
+      ],
+      "estimates": [
+        0.9999999955779859,
+        0.9999999959327955
+      ],
+      "analytic_retained_mass": 0.9999999960536494,
+      "omitted_tail_mass": 3.946350579653313e-09,
+      "absolute_grid_errors": [
+        4.756635085811922e-10,
+        1.2085388245708373e-10
+      ]
+    },
+    "no_assert_statements": true,
+    "python_optimized_mode_supported": true
+  },
+  "fresh_process": "two unrelatedcwd plus-O identicalJSONandeightCSV;9invalidCSVcasesprotectedoldoutputs; coordinatorfreshscriptrunpassed",
+  "notebook": {
+    "code_cells": 16,
+    "png_outputs": 6,
+    "status": "passed",
+    "method": "freshprocess realInProcessKernel sequentialexecution"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "syntheticfiniteexperiments only",
+    "JupyterbrowserUI,sockettransport,learnerAnacondainstallationandcross-versionbitwisereproduction untested",
+    "strictPD/conditionnumberdensity/conditionalinterfaces;singularGaussianexplicitfactoronly",
+    "conservativefloatrange"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 4234,
+      "sha256": "d6134f75a8efbfe6f643e36881b33bcbe2f4f84a94e058beacb4f69aea2a851d"
+    },
+    "lecture.md": {
+      "bytes": 24386,
+      "sha256": "b9ecc321ddbfd8f1dbf6578ec01c92ea806a441aa1668c5ba2b5ed39753cd1a4"
+    },
+    "lecture.pdf": {
+      "bytes": 2088166,
+      "sha256": "41e6277ad6031b3012dde4df04be4ee97e1729df1f2215e2413a33c7ad412f61"
+    },
+    "lab.md": {
+      "bytes": 13449,
+      "sha256": "53a209b0585e444bea29806a795cedb6e5fe9e833e5083472b839ad7188e3893"
+    },
+    "lab.pdf": {
+      "bytes": 492501,
+      "sha256": "ce30aa67f761bb195f538b088f16b7aae0fe323c8c75c9ef1f668344d7ab1a86"
+    },
+    "answers.md": {
+      "bytes": 14342,
+      "sha256": "4b4016ba1cb72cf654548a077aa8271e2864706a982c3e8877369838707ff4f7"
+    },
+    "answers.pdf": {
+      "bytes": 486280,
+      "sha256": "869ff708b97b75ef6778125eb14d8d6325be7a90f5775986474599ec95b0f499"
+    },
+    "experiment.py": {
+      "bytes": 30860,
+      "sha256": "f513bf163bc696ee875d28e8c3a7b2c864a256746a86a9849e35095b47722b34"
+    },
+    "test_experiment.py": {
+      "bytes": 20524,
+      "sha256": "15778adbb5104e7c0b768a893fe55469c7fccdfa0e937dd63ffd3ed002be1f82"
+    },
+    "experiment.ipynb": {
+      "bytes": 525104,
+      "sha256": "65f4777de282a93db9952bd5ef94eea157d1443bc8a59c4650762df85b82cb05"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "environment.yml": {
+      "bytes": 168,
+      "sha256": "ffe85156828c73e39677408f673e2c79dcc2ca7c4835beb1a305f87b11199f4a"
+    },
+    "source-checks.json": {
+      "bytes": 4842,
+      "sha256": "bcad5324b1ae1d27193f6c93a81a927ea1924687604731d2791fed40c9adc0c7"
+    },
+    "test-result.json": {
+      "bytes": 7218,
+      "sha256": "b1fcb0854c7202302e5afe710c9ea42df91fbf50652fc8fe9621468525292db4"
+    },
+    "data/README.md": {
+      "bytes": 1180,
+      "sha256": "b9a93deb51dccb71aba17a5fecf96a97a0c1dbdd172061b26d3e84020b5e851c"
+    },
+    "data/gaussian_model.csv": {
+      "bytes": 59,
+      "sha256": "04fdb4dedbc2644e4207137e1ff6489cd1c26f7d0a52b015b35b9ae274ec4c53"
+    },
+    "data/gaussian_sample_preview.csv": {
+      "bytes": 785,
+      "sha256": "d13a4ffd8c86e1bc9c82fd62404ddccfadfa57f3588ff334608963d5da463fd5"
+    },
+    "data/joint_states.csv": {
+      "bytes": 122,
+      "sha256": "b6155ccbfffe8cb181eecf3904ea2e5546814c7ec0769deb7406421fb3bfd297"
+    },
+    "figures/01_joint_table.png": {
+      "bytes": 73988,
+      "sha256": "acd601bf671c1c73f6a4333638f53a03a75871fe8f8850dcfc80e5e05f73be71"
+    },
+    "figures/02_same_marginals.png": {
+      "bytes": 36505,
+      "sha256": "180292afe36236623fe42a32bccc52288405c6c15186c45b8634d0778d88946f"
+    },
+    "figures/03_conditionals.png": {
+      "bytes": 51079,
+      "sha256": "baeef7bb698d523df6a9bc797a1b0de2b22d5655a2be0bf71a3dcb79eea7c21e"
+    },
+    "figures/04_triangle_slices.png": {
+      "bytes": 127452,
+      "sha256": "d0562c4138ccd5c7645cfd372a1dab41f00a0c16106408505d0e8561561e2e74"
+    },
+    "figures/05_covariance_products.png": {
+      "bytes": 68998,
+      "sha256": "fdd30b70d33605d90195e440abc3feec26b236b127bed1652db4558a5d7918ea"
+    },
+    "figures/06_zero_correlation.png": {
+      "bytes": 67606,
+      "sha256": "817851ad710528a7935251c21ac2a5988113428330694b59db86436f0d652684"
+    },
+    "figures/07_psd_directions.png": {
+      "bytes": 126699,
+      "sha256": "ec6e7db90cc9abcdba10b3560ed4315164870fc8d85d0bdb4ae80fd95d13eb81"
+    },
+    "figures/08_covariance_shapes.png": {
+      "bytes": 100620,
+      "sha256": "6c0d2de24b680585ea25fcf7b498e298e8fdf198f01379e527f7b170e2a63c94"
+    },
+    "figures/09_gaussian_transform.png": {
+      "bytes": 212089,
+      "sha256": "b00e0f29b418cc9bbf4fd1f3da0cfcf235a69852e2d5cd1753ea515e7fe3aec8"
+    },
+    "figures/10_normal_marginal_trap.png": {
+      "bytes": 176546,
+      "sha256": "93c47e303ba554eae528c0ba59db2cb368b80dda253ecb5019cfbcbfee0cf098"
+    },
+    "figures/11_gaussian_conditionals.png": {
+      "bytes": 295841,
+      "sha256": "4ab24b55b856d6ac9f09145098eabde7de5643b8616e0763ea1fa20a94c53536"
+    },
+    "figures/12_total_variance.png": {
+      "bytes": 95786,
+      "sha256": "1eee3bce8910a0addd9dccd139e65a30db7e16e50e7652a21fa0fdaaad930f7f"
+    }
+  },
+  "review_regression": "Complete input/weight/ddof validation precedes exact constant-coordinate centering. Mixed varying columns and conditional known columns checked; zero-weight/excluded invalid final states still reject. Only lab page5 changed and was rechecked; all6Notebook PNGs byte-identical.",
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "0eca4bae02a2b3e472f86f6f7d7fe619c807950b9769ceb1c2b8555db05ede3f",
+    "payload_files_verified": 30,
+    "payload_bytes_verified": 5147512,
+    "Fraction_joint_conditional_total_variance_transform_models": 160,
+    "exact_precision_matrix_conditionals": 120,
+    "Decimal85_logpdf_cases": 480,
+    "simulation_rows_audited": 96000,
+    "simulation_summaries_audited": 8,
+    "constant_coordinate_cases": 224,
+    "invalid_full_input_cases": 18,
+    "bad_CSV_output_protection_cases": 18,
+    "numeric_checks": 1358,
+    "rejection_checks": 115,
+    "pre_RNG_checks": 65,
+    "pdf_pages_reviewed": 24,
+    "notebook_code_cells": 16,
+    "notebook_pngs": 6,
+    "fresh_execution": "ordinary and optimized script nine output files byte-identical; fresh real Notebook kernel passed",
+    "latest_revision": "full state/weight/sample validation before exact constant-coordinate centering; revised lab5 visually rechecked; no remaining blocker"
+  }
+}

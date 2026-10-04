@@ -1,0 +1,65 @@
+{
+  "synthetic": true,
+  "size": 12000,
+  "engine": "Generator(PCG64)",
+  "seeds": {
+    "bernoulli": 20001,
+    "binomial": 20002,
+    "categorical": 20003,
+    "poisson": 20004,
+    "gaussian": 20005,
+    "mixture": 20006
+  },
+  "mixture_component_seeds": [
+    20106,
+    20206
+  ],
+  "families": {
+    "bernoulli": {
+      "p": 0.25
+    },
+    "binomial": {
+      "n": 8,
+      "p": 0.25
+    },
+    "categorical": {
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "poisson": {
+      "lambda": 4
+    },
+    "gaussian": {
+      "mu": 1,
+      "variance": 4
+    },
+    "mixture": {
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "lambdas": [
+        1,
+        7
+      ]
+    }
+  },
+  "repeats": {
+    "family": "Poisson(4)",
+    "sizes": [
+      40,
+      400,
+      4000
+    ],
+    "repeats_per_size": 40,
+    "seed_rule": "202000+100*size+repeat"
+  }
+}

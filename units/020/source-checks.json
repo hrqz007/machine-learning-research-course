@@ -1,0 +1,90 @@
+{
+  "unit": "020",
+  "checked_on": "2026-10-04",
+  "method": "Primary pages opened and their mathematical or API sections read; no secondary summaries used as evidence.",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "NIST/SEMATECH e-Handbook: Binomial Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+      "read_scope": "PMF, support, fixed p, mean and standard deviation",
+      "use_and_limit": "本讲另外从独立试验排列与二阶展开推导，不复制来源例图。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R2",
+      "title": "NIST/SEMATECH e-Handbook: Poisson Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366j.htm",
+      "read_scope": "PMF, integer support and mean/variance",
+      "use_and_limit": "λ=0本讲单独定义；理论推导不依靠截断数值和。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R3",
+      "title": "NIST/SEMATECH e-Handbook: Normal Distribution",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+      "read_scope": "PDF, location, scale and real-line support",
+      "use_and_limit": "只核对密度与尺度；不照搬页面无条件CLT概述。标准高斯归一化积分在本讲明确作为接受定理。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4",
+      "title": "Will Fithian: Exponential Families",
+      "url": "https://www.stat.berkeley.edu/~wfithian/courses/stat210a/exponential-families.html",
+      "read_scope": "Exponential family structure, Differential identities, Other parameterizations",
+      "use_and_limit": "页面可见Gaussian展开常数与η1重述、Binomial重写中存在排版/代数不一致；本讲独立展开并数值交叉核验：η1=μ/v，η2=-1/(2v)，Gaussian常数含μ²，Binomial A=n log(1+exp η)。没有沿用这些不一致处。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R5",
+      "title": "NumPy Generator.binomial",
+      "url": "https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.binomial.html",
+      "read_scope": "n type handling, p limits and returned support",
+      "use_and_limit": "官方接口会截断浮点n；本讲显式整数校验避免静默截断。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R6",
+      "title": "NumPy Generator.poisson",
+      "url": "https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.poisson.html",
+      "read_scope": "lambda parameter, output type and int64 range warning",
+      "use_and_limit": "本讲采用更保守的有限实现范围λ≤1e6，不声称支持完整数学参数域。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R7",
+      "title": "NumPy Generator.choice",
+      "url": "https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.choice.html",
+      "read_scope": "probability vector and shape requirements",
+      "use_and_limit": "仅核对接口；本讲实际分类抽样为显式累计概率加searchsorted，不按文档建议静默归一化。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R8",
+      "title": "NumPy Generator.normal",
+      "url": "https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html",
+      "read_scope": "loc/scale parameters and density",
+      "use_and_limit": "scale为标准差。实际实验使用standard_normal再缩放，每个乘法和加法结果都检查。",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R9",
+      "title": "NumPy random compatibility policy",
+      "url": "https://numpy.org/doc/stable/reference/random/compatibility.html",
+      "read_scope": "stream compatibility restrictions",
+      "use_and_limit": "固定种子与固定依赖用于复现，不承诺未来版本逐位一致。",
+      "status": "opened_and_read"
+    }
+  ],
+  "unavailable_candidates": [
+    {
+      "url": "https://www.stat.berkeley.edu/~mjwain/stat241b/exponential.pdf",
+      "status": "retrieval failed; not cited as read"
+    },
+    {
+      "url": "https://web.stanford.edu/~fithian/expfam.pdf",
+      "status": "retrieval failed; replaced by author Berkeley HTML page"
+    }
+  ],
+  "original_work": "All narrative, derivations, examples, figures and code were independently composed; no source figures copied."
+}
