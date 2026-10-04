@@ -1,0 +1,171 @@
+{
+  "course_scope": 166,
+  "date_utc": "2026-10-04",
+  "execution": {
+    "actual_bad_tail_cases_normal_O": 4,
+    "actual_edge_CLI_cases_normal_O": 3,
+    "actual_first_cell_tamper_cases": 9,
+    "core_bytes": 406793,
+    "core_sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042",
+    "normal_O_two_cwd_complete_core_and_audit_equal": true,
+    "notebook_sha256": "30058195a0708d11f0dce14805ee6b5001115338642830ac861431c36a187c51",
+    "real_notebook_PNGs": 9,
+    "real_notebook_code_cells": 16,
+    "two_fresh_notebooks_byte_identical": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5761,
+      "sha256": "c2e6fbb20c1752196c048dded4bba464a81d4622c19ebe6e0b7eda62988da856"
+    },
+    "answers.md": {
+      "bytes": 12945,
+      "sha256": "15d204e1f73bebde8756a8083f6d87b52e7073567ce5fa0d9ffae35d8dbff347"
+    },
+    "answers.pdf": {
+      "bytes": 546401,
+      "sha256": "42579dde3e957c4cfd7cf971141a51efe248dee6e7b750b9160b1a6cac8b7702"
+    },
+    "audit.py": {
+      "bytes": 11569,
+      "sha256": "056521cd74094770b57c733113057f2f1ddb9687c9b5b1bed02f5b71b207f862"
+    },
+    "data/README.md": {
+      "bytes": 816,
+      "sha256": "fd3e3f4b8f2b5ed409ac01798ab65ee7b4db95df3c6fc5521d25ebc86f50c59a"
+    },
+    "data/model_spec.json": {
+      "bytes": 611,
+      "sha256": "ffca7b1787ed6163b9f142403bc2ef17b70dbf6fb6eafb00a5188018261c6d52"
+    },
+    "data/observations.csv": {
+      "bytes": 37,
+      "sha256": "35883db0ff9fc950e5db316a02064addf6bbe28bddef70a23ee001c74c119681"
+    },
+    "data/separable.csv": {
+      "bytes": 37,
+      "sha256": "c64e413f86880a4ca5b07333f9e0260987e586d728c2b0f90fbb01bf20a63ab5"
+    },
+    "data_integrity.json": {
+      "bytes": 865,
+      "sha256": "7302317874abad532e93aa944e52941cec9359511d6081700b9b97c8d8249e3c"
+    },
+    "environment.yml": {
+      "bytes": 228,
+      "sha256": "906696751275ab026c9651179625c86ae803ca844389028c9432dc1a20a698f7"
+    },
+    "experiment.ipynb": {
+      "bytes": 1347323,
+      "sha256": "30058195a0708d11f0dce14805ee6b5001115338642830ac861431c36a187c51"
+    },
+    "experiment.py": {
+      "bytes": 18681,
+      "sha256": "aea567ab318a2cf5397d52e16eab5c8d9e00bdb89851502253a306070bf823ab"
+    },
+    "figures/01_sigmoid_logodds.png": {
+      "bytes": 102898,
+      "sha256": "32a48b9cea928e4ddf4b32674d9012549fe98eded41b25272828d79da34ba86e"
+    },
+    "figures/02_stable_likelihood_chain.png": {
+      "bytes": 110710,
+      "sha256": "cfa8d641db2ce64ff24f16ca966985848619ca4b356163e566fed598d4eefd0d"
+    },
+    "figures/03_two_round_ledger.png": {
+      "bytes": 112696,
+      "sha256": "bb09d7f2635b9f60fb9818cf66d0a2862b5aeac732c4e0f237fe082422004383"
+    },
+    "figures/04_logistic_curvature.png": {
+      "bytes": 81512,
+      "sha256": "9968a6bf3378cd01b3794a27af9ee357fb9e4bc30cc221829d2061f74eb9a941"
+    },
+    "figures/05_logistic_optimization.png": {
+      "bytes": 133388,
+      "sha256": "545b73c5725d888c9cc3f5c4c4acf22343b3b0753f02b6f23c5a94a0122bc2a0"
+    },
+    "figures/06_complete_separation.png": {
+      "bytes": 112714,
+      "sha256": "19c19c50fd025b4cbf3f1b4e7e7f475efb738362d39c28f3b27863d36ab3cefc"
+    },
+    "figures/07_probability_and_decision.png": {
+      "bytes": 80819,
+      "sha256": "981278423dc8cdf79cec5d3f91b47f78645de04bf6339e4ad3d51d6fe1140248"
+    },
+    "figures/08_linear_probability_contrast.png": {
+      "bytes": 96513,
+      "sha256": "3d84f8a4889754e7e678ddacecc4ce6b7d638ed737ff6816e2c1b0afec30e5e7"
+    },
+    "figures/09_numerical_diagnostics.png": {
+      "bytes": 154910,
+      "sha256": "0299afbe14ad5a6d987e4740c94c977ef5f78755c29b1476989a79d7f19c9bba"
+    },
+    "lab.md": {
+      "bytes": 7645,
+      "sha256": "75e1947e05f2e54a76032bd48d88f8a9180136cda2e3da61945a34ab32262a2f"
+    },
+    "lab.pdf": {
+      "bytes": 771828,
+      "sha256": "05a4e2e25aa2ed017ca7928775c05f57d442e323308e557b81aa1be0c7c8983e"
+    },
+    "lecture.md": {
+      "bytes": 19353,
+      "sha256": "7cd6db882d3f3f9d254c3ea9eb7da70b64d783660229e3685ffd2d063dc90050"
+    },
+    "lecture.pdf": {
+      "bytes": 1623682,
+      "sha256": "577f307c0a582cb507410eec8ebf7c0edccc46156d28fc6b69146a05b402aebe"
+    },
+    "plots.py": {
+      "bytes": 11901,
+      "sha256": "2bbd904224a1e257c9a32075a80ebedf4210318096ad5cbc963cd0d9afc08e78"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "9e91f804d22f2028e35dced18587b0fbbb734cd3f7f2df7b57b1360b2213b833"
+    },
+    "source-checks.json": {
+      "bytes": 2591,
+      "sha256": "0e8b8ba969cdbe712cb4471b0e71b78148a3635d61fffcf31971030f4040070d"
+    },
+    "test-result.json": {
+      "bytes": 7705,
+      "sha256": "18b6c7566909a761abc156c140b26f2e23e6a91aaf91228a2f5f00a5149af464"
+    }
+  },
+  "full_exercise_solutions": 20,
+  "lecture_sections": 20,
+  "limitations": [
+    "Four synthetic rows do not estimate real generalization, calibration or causality.",
+    "Known separated ray only; no general/quasi-separation detector.",
+    "Numerical gradient stopping is not an existence certificate.",
+    "State/sample attempts are charged as attempts, not completed FLOPs; no wall-clock speed claim.",
+    "Actual InProcessKernel execution; no browser Jupyter/socket/Windows/Anaconda installation claim.",
+    "Raw input teaching ranges are finite; extreme unrepresentable positive tails may round to zero."
+  ],
+  "original_figures": 9,
+  "pdf_pages": {
+    "answers": 6,
+    "lab": 4,
+    "lecture": 11
+  },
+  "scientific_checks": {
+    "Decimal_extreme_precision": 1100,
+    "Decimal_main_precision": 110,
+    "Fraction_initial_chain": true,
+    "actual_SciPy_stability_checked": true,
+    "actual_sklearn_target_and_duplication_checked": true,
+    "all69_default_GD_states_and_rows_checked": true,
+    "author_checks": 3804,
+    "independent_cubic_finite_MLE": true,
+    "known_separation_ray_not_general_detector": true,
+    "random_dyadic_designs": 80
+  },
+  "source_count": 6,
+  "status": "frozen complete candidate; independent review pending",
+  "title": "二分类与逻辑回归",
+  "unit": "042",
+  "visual": {
+    "all_actual_notebook_pngs_individually_viewed": 9,
+    "all_final_pdf_pages_individually_viewed": 21,
+    "final_page_counts_read_from_PDFs": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "experiment.py": "243b2caa8d2eedc4ee72845f975516e34cf48aeec76daa79f069577ad0d303f4",
+    "data/regression.csv": "25ae92b74c0a000ce7cf7bd1ca50b0b8a84fc83a3292d6f90291820298b80280",
+    "data/model_spec.json": "79691dbe4c6aea8f0ab8cf361b9b336dc314920230aac7ed41379958b2ddfefd",
+    "data/selection.csv": "778529894871f789fcbdeac135b0703133f256ca87643befe260d188ced87a5b",
+    "data/synthetic_truth.json": "8c3230e26f8492c42275d4a2f65d6200159550fb464034b07c4559fc61acf2b8"
+  }
+}

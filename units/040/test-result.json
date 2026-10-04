@@ -1,0 +1,568 @@
+{
+  "audit": {
+    "checks": 768,
+    "exact_three_states": [
+      {
+        "F": "69/32",
+        "J": "69/32",
+        "beta": [
+          "0",
+          "0"
+        ],
+        "k": 0,
+        "penalty": "0",
+        "rows": [
+          {
+            "gradient_contribution": [
+              "-7/16",
+              "-7/16"
+            ],
+            "loss_contribution": "49/128",
+            "prediction": "0",
+            "residual": "7/4"
+          },
+          {
+            "gradient_contribution": [
+              "-9/16",
+              "-27/64"
+            ],
+            "loss_contribution": "81/128",
+            "prediction": "0",
+            "residual": "9/4"
+          },
+          {
+            "gradient_contribution": [
+              "-5/16",
+              "-15/64"
+            ],
+            "loss_contribution": "25/128",
+            "prediction": "0",
+            "residual": "-5/4"
+          },
+          {
+            "gradient_contribution": [
+              "-11/16",
+              "-11/16"
+            ],
+            "loss_contribution": "121/128",
+            "prediction": "0",
+            "residual": "-11/4"
+          }
+        ],
+        "total_gradient": [
+          "-2",
+          "-57/32"
+        ]
+      },
+      {
+        "F": "41673/262144",
+        "J": "100433/262144",
+        "beta": [
+          "1",
+          "57/64"
+        ],
+        "k": 1,
+        "penalty": "7345/32768",
+        "rows": [
+          {
+            "gradient_contribution": [
+              "9/256",
+              "9/256"
+            ],
+            "loss_contribution": "81/32768",
+            "prediction": "-121/64",
+            "residual": "-9/64"
+          },
+          {
+            "gradient_contribution": [
+              "-149/1024",
+              "-447/4096"
+            ],
+            "loss_contribution": "22201/524288",
+            "prediction": "-427/256",
+            "residual": "149/256"
+          },
+          {
+            "gradient_contribution": [
+              "107/1024",
+              "321/4096"
+            ],
+            "loss_contribution": "11449/524288",
+            "prediction": "427/256",
+            "residual": "107/256"
+          },
+          {
+            "gradient_contribution": [
+              "-55/256",
+              "-55/256"
+            ],
+            "loss_contribution": "3025/32768",
+            "prediction": "121/64",
+            "residual": "-55/64"
+          }
+        ],
+        "total_gradient": [
+          "15/512",
+          "25/2048"
+        ]
+      },
+      {
+        "F": "175757993/1073741824",
+        "J": "411081393/1073741824",
+        "beta": [
+          "1009/1024",
+          "3623/4096"
+        ],
+        "k": 2,
+        "penalty": "29415425/134217728",
+        "rows": [
+          {
+            "gradient_contribution": [
+              "491/16384",
+              "491/16384"
+            ],
+            "loss_contribution": "241081/134217728",
+            "prediction": "-7659/4096",
+            "residual": "-491/4096"
+          },
+          {
+            "gradient_contribution": [
+              "-9851/65536",
+              "-29553/262144"
+            ],
+            "loss_contribution": "97042201/2147483648",
+            "prediction": "-27013/16384",
+            "residual": "9851/16384"
+          },
+          {
+            "gradient_contribution": [
+              "6533/65536",
+              "19599/262144"
+            ],
+            "loss_contribution": "42680089/2147483648",
+            "prediction": "27013/16384",
+            "residual": "6533/16384"
+          },
+          {
+            "gradient_contribution": [
+              "-3605/16384",
+              "-3605/16384"
+            ],
+            "loss_contribution": "12996025/134217728",
+            "prediction": "7659/4096",
+            "residual": "-3605/4096"
+          }
+        ],
+        "total_gradient": [
+          "185/32768",
+          "-905/131072"
+        ]
+      }
+    ],
+    "groups": {
+      "MC_identity": 21,
+      "MC_independent_fit": 7,
+      "all_path_branches": 66,
+      "constant_column": 2,
+      "coordinate_backtransform": 40,
+      "csv_guards": 4,
+      "decimal_condition": 15,
+      "endpoints": 5,
+      "exact_solutions": 2,
+      "file_guards": 13,
+      "fixture_guards": 6,
+      "fraction_rows": 60,
+      "fraction_states": 7,
+      "json_guards": 4,
+      "library_failure": 2,
+      "library_reference": 6,
+      "precompute_guards": 42,
+      "random_fraction": 240,
+      "rank_deficient": 6,
+      "regeneration": 7,
+      "sample_duplication": 6,
+      "selection_failures": 1,
+      "smooth_finite_difference": 80,
+      "spectral_reference": 80,
+      "test_isolation": 2,
+      "tie_rule": 1,
+      "train_scaler": 43
+    },
+    "leakage": {
+      "choice_fit_sha256": "1c500b794b850b97a352e949156f219c799f1d63e09703c57c3543a455fa28f7",
+      "selected": {
+        "family": "lasso",
+        "l1_ratio": 1.0,
+        "lambda": 0.03,
+        "validation_mse": 0.8075416194067659
+      },
+      "test_mutated_mse": 10017.813787528972,
+      "test_original_mse": 0.9373574730192129
+    },
+    "library_cases": {
+      "duplicate_elastic": {
+        "beta": [
+          0.7777777779045267,
+          0.7777777776763788
+        ],
+        "data_loss": 0.2550154320874988,
+        "dual_gap": 4.436262468487939e-11,
+        "family": "elastic",
+        "kkt_acceptance": 1e-07,
+        "kkt_components": [
+          5.7037208289756336e-11,
+          2.220446049250313e-16
+        ],
+        "kkt_inf": 5.7037208289756336e-11,
+        "l1_penalty": 0.3888888888952264,
+        "l1_ratio": 0.5,
+        "l2_penalty": 0.15123456790616374,
+        "lambda": 0.5,
+        "library_alpha": 0.5,
+        "n_iter": 51,
+        "objective": 0.7951388888888888,
+        "solver": "sklearn.ElasticNet(cyclic)",
+        "status": "converged",
+        "stored_exact_zeros": 0,
+        "warnings": []
+      },
+      "duplicate_lasso": {
+        "beta": [
+          1.5,
+          0.0
+        ],
+        "data_loss": 0.28125,
+        "dual_gap": 0.0,
+        "family": "lasso",
+        "kkt_acceptance": 1e-07,
+        "kkt_components": [
+          0.0,
+          0.0
+        ],
+        "kkt_inf": 0.0,
+        "l1_penalty": 0.75,
+        "l1_ratio": 1.0,
+        "l2_penalty": 0.0,
+        "lambda": 0.5,
+        "library_alpha": 0.5,
+        "n_iter": 2,
+        "objective": 1.03125,
+        "solver": "sklearn.Lasso(cyclic)",
+        "status": "converged",
+        "stored_exact_zeros": 1,
+        "warnings": []
+      },
+      "main": {
+        "elastic": {
+          "beta": [
+            0.8880597015880654,
+            0.7313432835010353
+          ],
+          "data_loss": 0.2489731844408725,
+          "dual_gap": 4.305977796548177e-11,
+          "family": "elastic",
+          "kkt_acceptance": 1e-07,
+          "kkt_components": [
+            4.848749179942047e-11,
+            2.220446049250313e-16
+          ],
+          "kkt_inf": 4.848749179942047e-11,
+          "l1_penalty": 0.40485074627227513,
+          "l1_ratio": 0.5,
+          "l2_penalty": 0.16543912898834492,
+          "lambda": 0.5,
+          "library_alpha": 0.5,
+          "n_iter": 44,
+          "objective": 0.8192630597014925,
+          "solver": "sklearn.ElasticNet(cyclic)",
+          "status": "converged",
+          "stored_exact_zeros": 0,
+          "warnings": []
+        },
+        "lasso": {
+          "beta": [
+            1.5,
+            0.0
+          ],
+          "data_loss": 0.28125,
+          "dual_gap": 0.0,
+          "family": "lasso",
+          "kkt_acceptance": 1e-07,
+          "kkt_components": [
+            0.0,
+            0.0
+          ],
+          "kkt_inf": 0.0,
+          "l1_penalty": 0.75,
+          "l1_ratio": 1.0,
+          "l2_penalty": 0.0,
+          "lambda": 0.5,
+          "library_alpha": 0.5,
+          "n_iter": 2,
+          "objective": 1.03125,
+          "solver": "sklearn.Lasso(cyclic)",
+          "status": "converged",
+          "stored_exact_zeros": 1,
+          "warnings": []
+        },
+        "ridge": {
+          "beta": [
+            0.9626865671641793,
+            0.91044776119403
+          ],
+          "data_loss": 0.16323582646469137,
+          "dual_gap": null,
+          "family": "ridge",
+          "kkt_acceptance": 1e-07,
+          "kkt_components": [
+            4.440892098500626e-16,
+            3.885780586188048e-16
+          ],
+          "kkt_inf": 4.440892098500626e-16,
+          "l1_penalty": 0.0,
+          "l1_ratio": 0.0,
+          "l2_penalty": 0.2194600690576967,
+          "lambda": 0.25,
+          "library_alpha": 1.0,
+          "n_iter": null,
+          "objective": 0.38269589552238803,
+          "solver": "sklearn.Ridge(svd); tol ignored",
+          "status": "converged",
+          "stored_exact_zeros": 0,
+          "warnings": []
+        }
+      },
+      "nonconverged": {
+        "beta": [
+          1.9985007496251876,
+          0.041012912156009995
+        ],
+        "data_loss": 0.15557272210765977,
+        "dual_gap": 0.15419698055945805,
+        "family": "elastic",
+        "kkt_acceptance": 1e-07,
+        "kkt_components": [
+          0.035886298136509134,
+          1.3118846287074604e-16
+        ],
+        "kkt_inf": 0.035886298136509134,
+        "l1_penalty": 0.0010197568308905989,
+        "l1_ratio": 0.5,
+        "l2_penalty": 0.0009989218263039884,
+        "lambda": 0.001,
+        "library_alpha": 0.001,
+        "n_iter": 1,
+        "objective": 0.15759140076485434,
+        "solver": "sklearn.ElasticNet(cyclic)",
+        "status": "not_converged",
+        "stored_exact_zeros": 0,
+        "warnings": [
+          {
+            "category": "ConvergenceWarning",
+            "message": "Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.168e-01, tolerance: 1.725e-09"
+          }
+        ]
+      },
+      "solver_error": {
+        "beta": null,
+        "dual_gap": null,
+        "error": "controlled solver failure",
+        "error_type": "ValueError",
+        "family": "elastic",
+        "kkt_inf": null,
+        "l1_ratio": 0.5,
+        "lambda": 0.5,
+        "library_alpha": 0.5,
+        "n_iter": null,
+        "status": "solver_error",
+        "warnings": []
+      }
+    },
+    "monte_carlo": {
+      "max_absolute_mean_deviation": 0.012722598703599042,
+      "note": "finite Monte Carlo discrepancy is reported, not required to be exactly zero"
+    },
+    "status": "passed"
+  },
+  "complete_core": {
+    "bytes": 937488,
+    "sha256": "bb33e78f8da173e89395c97f6f38acdc57648d3965a9728e541e35dca7c13b2f"
+  },
+  "date_utc": "2026-10-04",
+  "default_selection": {
+    "family": "lasso",
+    "kkt_inf": 1.505802843526638e-10,
+    "l1_ratio": 1.0,
+    "lambda": 0.03,
+    "stored_exact_zeros": 5,
+    "train_mse": 0.7513076741771976,
+    "validation_mse": 0.8075416194067659
+  },
+  "execution": {
+    "actual_pngs": [
+      {
+        "bytes": 118283,
+        "sha256": "29ca7b1c8f936f8582317f0ba04cd48997133fa25297aff4d5611c0e77d2b655"
+      },
+      {
+        "bytes": 114863,
+        "sha256": "b15af1bf2f81945bb8aaf623b83209052dad1486b92588b4117aee1da4af821c"
+      },
+      {
+        "bytes": 132091,
+        "sha256": "f70cd4d4ec70515fbf67b4f8d88d344b82a79e08f334f1f8414fc873f71495b5"
+      },
+      {
+        "bytes": 83916,
+        "sha256": "18a767773bebf0a4012530d979dceee9202629ca91a74ba278d751c25b36f727"
+      },
+      {
+        "bytes": 128403,
+        "sha256": "4d9da85b88e6b7944dc25a8d9edd61e7f50c721ba73fc05e23fcace7389f0b94"
+      },
+      {
+        "bytes": 191952,
+        "sha256": "2f828f9b2b1219ad81f287c7c2ec9a5176febd8d744e6da4aa66ebb9ae71d108"
+      },
+      {
+        "bytes": 67626,
+        "sha256": "5cbda2182a6a43487f7b96282fab813987bd7229f39f7f8541df7fd5e18a91bf"
+      }
+    ],
+    "all_modes_byte_identical": true,
+    "complete_notebook_core_matches_all_script_modes": true,
+    "modes": [
+      {
+        "bytes": 937488,
+        "mode": "normal-root",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "bb33e78f8da173e89395c97f6f38acdc57648d3965a9728e541e35dca7c13b2f"
+      },
+      {
+        "bytes": 9689,
+        "mode": "normal-root",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "914d448c27768b187fabbcb41f6f5e0b5f4aa9de9a19fd32ca98f797c3613370"
+      },
+      {
+        "bytes": 937488,
+        "mode": "optimized-root",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "bb33e78f8da173e89395c97f6f38acdc57648d3965a9728e541e35dca7c13b2f"
+      },
+      {
+        "bytes": 9689,
+        "mode": "optimized-root",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "914d448c27768b187fabbcb41f6f5e0b5f4aa9de9a19fd32ca98f797c3613370"
+      },
+      {
+        "bytes": 937488,
+        "mode": "normal-newcwd",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "bb33e78f8da173e89395c97f6f38acdc57648d3965a9728e541e35dca7c13b2f"
+      },
+      {
+        "bytes": 9689,
+        "mode": "normal-newcwd",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "914d448c27768b187fabbcb41f6f5e0b5f4aa9de9a19fd32ca98f797c3613370"
+      },
+      {
+        "bytes": 937488,
+        "mode": "optimized-newcwd",
+        "returncode": 0,
+        "script": "experiment.py",
+        "sha256": "bb33e78f8da173e89395c97f6f38acdc57648d3965a9728e541e35dca7c13b2f"
+      },
+      {
+        "bytes": 9689,
+        "mode": "optimized-newcwd",
+        "returncode": 0,
+        "script": "audit.py",
+        "sha256": "914d448c27768b187fabbcb41f6f5e0b5f4aa9de9a19fd32ca98f797c3613370"
+      }
+    ],
+    "notebook_sha256": "d9c45ca07e1a9b24c232451fe25cacbd0480a5bb6b0c331db478922ae9886f59",
+    "two_real_notebooks_byte_identical": true
+  },
+  "final_test_mse": 0.9373574730192129,
+  "limits": [
+    "Original synthetic finite mechanisms are not real-task generalization or support-recovery guarantees.",
+    "No browser Jupyter UI, socket transport, Windows or Anaconda installer was tested.",
+    "Absolute KKT gate 1e-7 is predeclared for this teaching experiment; not an arbitrary-scale guarantee.",
+    "No timing or memory benchmark claim; svd n_iter null is not zero cost.",
+    "Monte Carlo is finite and separate from model selection.",
+    "Raw teaching bounds do not guarantee accuracy for every condition number."
+  ],
+  "notebook_tamper": {
+    "cases": [
+      {
+        "error": {
+          "ename": "ValueError",
+          "evalue": "teaching fixture changed: experiment.py"
+        },
+        "images": 0,
+        "stdout": 0,
+        "stopped_before_numerical_import": true,
+        "target": "experiment.py"
+      },
+      {
+        "error": {
+          "ename": "ValueError",
+          "evalue": "teaching fixture changed: data/regression.csv"
+        },
+        "images": 0,
+        "stdout": 0,
+        "stopped_before_numerical_import": true,
+        "target": "data/regression.csv"
+      },
+      {
+        "error": {
+          "ename": "ValueError",
+          "evalue": "teaching fixture changed: data/model_spec.json"
+        },
+        "images": 0,
+        "stdout": 0,
+        "stopped_before_numerical_import": true,
+        "target": "data/model_spec.json"
+      },
+      {
+        "error": {
+          "ename": "ValueError",
+          "evalue": "teaching fixture changed: data/selection.csv"
+        },
+        "images": 0,
+        "stdout": 0,
+        "stopped_before_numerical_import": true,
+        "target": "data/selection.csv"
+      },
+      {
+        "error": {
+          "ename": "ValueError",
+          "evalue": "teaching fixture changed: data/synthetic_truth.json"
+        },
+        "images": 0,
+        "stdout": 0,
+        "stopped_before_numerical_import": true,
+        "target": "data/synthetic_truth.json"
+      }
+    ],
+    "fresh_real_kernel_each_case": true
+  },
+  "predeclared_ols_test_mse": 1.075616108681604,
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scikit_learn": "1.8.0",
+    "scipy": "1.17.0"
+  },
+  "status": "coordinator author verification passed; independent review pending",
+  "unit": "040"
+}

@@ -1,0 +1,54 @@
+{
+  "unit": "040",
+  "checked_utc": "2026-10-04",
+  "sources": [
+    {
+      "title": "Ridge objective/solver",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.Ridge.html",
+      "status": "read",
+      "scope": "Read SSE+alpha norm objective, alpha=0 caveat, fit_intercept, svd tol ignored and n_iter None semantics."
+    },
+    {
+      "title": "Lasso objective/stopping",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.Lasso.html",
+      "status": "read",
+      "scope": "Read mean half-SSE + alpha L1, dual-gap and coordinate-update stopping, lambda=0 caveat."
+    },
+    {
+      "title": "ElasticNet objective",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.ElasticNet.html",
+      "status": "read",
+      "scope": "Read alpha/l1_ratio objective and separate-penalty mapping, endpoints and small-ratio limitations."
+    },
+    {
+      "title": "StandardScaler",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.StandardScaler.html",
+      "status": "read",
+      "scope": "Read train fit/transform, population ddof=0 and zero-variance scale, NaN behavior not adopted by course validation."
+    },
+    {
+      "title": "Common pitfalls",
+      "url": "https://scikit-learn.org/1.8/common_pitfalls.html",
+      "status": "read",
+      "scope": "Read preprocessing consistency and data-leakage section lines72-137; test never used to choose model, fit only training, Pipeline recommendation."
+    },
+    {
+      "title": "Tibshirani1996 Lasso",
+      "url": "https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1996.tb02080.x",
+      "status": "read",
+      "scope": "Read original publisher abstract/bibliography only; PDF URL redirected to abstract, no full-text claim."
+    },
+    {
+      "title": "Zou Hastie author manuscript",
+      "url": "https://web.stanford.edu/~hastie/Papers/elasticnet.pdf",
+      "status": "read",
+      "scope": "Actually opened29page author manuscript and read sections2.1,2.4,3.1-3.2,3.3 and notation/normalization. Original rescaled estimator is distinguished from modern sklearn combined-penalty target. No figures/code copied. Rechecked original pages4 and10: column squared norm1, unaveraged RSS penalties, equation12 (1+lambda2_paper) rescaling. This is not an extra step in the modern sklearn target."
+    }
+  ],
+  "limitations": [
+    "Publisher issue-form EN PDF retrieval failed; author manuscript successful.",
+    "Original Lasso full PDF not retrieved; only original abstract and bibliographic facts used.",
+    "Actual fixed-version CPU execution verified; no browser Jupyter UI, external socket transport or Anaconda installer test."
+  ],
+  "original_work": "Original exposition, full proofs and same-row two-update chain; nine original numerically computed figures and explicitly synthetic datasets. No source images or third-party data reproduced."
+}

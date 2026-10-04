@@ -1,0 +1,286 @@
+{
+  "course_scope": 166,
+  "date_utc": "2026-10-04",
+  "execution_modes": {
+    "different_working_directories": true,
+    "full_audit_json_normal_optimized_identical": true,
+    "full_scientific_json_byte_identical": true,
+    "normal_and_optimized": true,
+    "single_epoch_and_stationary_hand_cli_checked_in_both_modes": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5032,
+      "sha256": "a1c6e8efcdf4a072a0262454f1be46c5dee7c3e87f05b641b1be82fcdc9eaa0e"
+    },
+    "answers.md": {
+      "bytes": 14587,
+      "sha256": "60f8b6d84be4d1741259a00b8d8df9cd17d033d5c1607dbb87c9ff4afb7e64ec"
+    },
+    "answers.pdf": {
+      "bytes": 657082,
+      "sha256": "df94314e5b44196c76b966a38ff8eb69b3b15631f400cd5663a698bf47e76c2d"
+    },
+    "audit.py": {
+      "bytes": 14730,
+      "sha256": "36ee17a66aa1ec44493d62dfe44ce7fbe99480d2c36b69cd2e8619ba1f91cbe5"
+    },
+    "benchmark-result.json": {
+      "bytes": 80091,
+      "sha256": "73e9964e181c88ad959acbad07a736948edbcfefc5dcf593b5da19132dd1293a"
+    },
+    "benchmark.py": {
+      "bytes": 2976,
+      "sha256": "6141774b841297bd44ac443f3a91fab82322ec7c79e8a4a7dde17cb2f69301d1"
+    },
+    "build_assets.py": {
+      "bytes": 12886,
+      "sha256": "0a3c97d8a80b61c1bdb735657e346c023398ba5fbd3c11361e9096f77a38d898"
+    },
+    "data/README.md": {
+      "bytes": 3060,
+      "sha256": "c1d38687579957931103ee752a27be5593f1effca62f1d2dfde5890aaa39fa06"
+    },
+    "data/benchmark.csv": {
+      "bytes": 54119,
+      "sha256": "3f2e84b952d58e983bfdcdbc880d27235f502630d603a18025481ee6b3fe2595"
+    },
+    "data/config.json": {
+      "bytes": 398,
+      "sha256": "f3f6187e20c0f67bd2c59e97c488334440af59017982c3264850951c3155eae1"
+    },
+    "data/generation.json": {
+      "bytes": 1040,
+      "sha256": "e58af5ba14207f7f42cd9399e49aebff6876f59bc860d4f2e371af17ca1a260f"
+    },
+    "data/hand.csv": {
+      "bytes": 53,
+      "sha256": "2c2c01bf91aabcf7d1c3b40f1fac38b2227e770dce39bc2981ae6749369cf897"
+    },
+    "data/selection.csv": {
+      "bytes": 34860,
+      "sha256": "41b6bdc0dfeefba9803c2a97b995f3a257e836a8011b46f91853553037be802f"
+    },
+    "environment.yml": {
+      "bytes": 291,
+      "sha256": "61ad7ebba3d16ca8d1c19c3234a8a3fb073c99cddbcfaf17eb4d1a7c02711483"
+    },
+    "experiment-result.json": {
+      "bytes": 4566155,
+      "sha256": "30b365978b47847c59f362d21fa9856e4086b23e312a2d5b89a540fa1eab03a7"
+    },
+    "experiment.ipynb": {
+      "bytes": 1485752,
+      "sha256": "420bc283b72a14614fcc4df2205525447ea55bdc8106d6eb3860b261cdfee4d6"
+    },
+    "experiment.py": {
+      "bytes": 21371,
+      "sha256": "f02a7484f0ded7ef3c66e9e2408caa55989422b50a132555bc574d7e9ed65647"
+    },
+    "figures/01_evidence_chain.png": {
+      "bytes": 58623,
+      "sha256": "753f2366c7786ae8e8a510fa366a7b9432d665b38c0c9c676b3c6e26b83f9620"
+    },
+    "figures/02_hand_chain.png": {
+      "bytes": 81324,
+      "sha256": "a74f2a163c06192130da1cf3b747e34535c816e41c01bcb5b59a06d992834b90"
+    },
+    "figures/03_exact_and_iterative.png": {
+      "bytes": 169847,
+      "sha256": "1d9c428847a839288574a8eab3f384619a4553eb13d691d7ec632aae2098aa27"
+    },
+    "figures/04_gradient_and_error.png": {
+      "bytes": 105080,
+      "sha256": "094117734726048c475ed86d928bfeb26e1b7d4d47772b8dae5c7407bf72146b"
+    },
+    "figures/05_gradient_checks.png": {
+      "bytes": 83253,
+      "sha256": "f715fd9be0c52b684fb8c7773a596b88eccd4fd0d5e903663c4aa06e468190e1"
+    },
+    "figures/06_cost_convergence.png": {
+      "bytes": 182303,
+      "sha256": "4d369e4096441d540796dd17367bb371f0873ce1f41dedcbf741c6e995927633"
+    },
+    "figures/07_measured_cost.png": {
+      "bytes": 49791,
+      "sha256": "8d945944690f0118b3c59d2ecc1289ee38a41f402a14ea14005adfead4595001"
+    },
+    "figures/08_selection_lock.png": {
+      "bytes": 72099,
+      "sha256": "0bd373f5652361e84de5d3e07ed428ca2cd1b2fc7a5fa2e29cad6fc0b9849200"
+    },
+    "figures/09_interval_objects.png": {
+      "bytes": 51331,
+      "sha256": "93644fadd89fe453ed41e9b216aed1b252b7682c359f9cc60e1b1a616765031a"
+    },
+    "figures/10_coverage_failure.png": {
+      "bytes": 94558,
+      "sha256": "71ff3531e729abecc28bfde1b048e26221dab6df5587a24d551a128b05d34204"
+    },
+    "figures/11_preconditioner.png": {
+      "bytes": 87443,
+      "sha256": "8eaf433262b537451b3d9af13313088a68ca06294e4b48246afbea2c6ca0f894"
+    },
+    "figures/12_failed_attempt.png": {
+      "bytes": 58029,
+      "sha256": "5355ccae91b1c281cb3044ecb282a264d7249549e23acf5082a991389546e38e"
+    },
+    "lab.md": {
+      "bytes": 11442,
+      "sha256": "2760f7ee0ec34d103ab195e094bf80edc10a2066957f58d10b5d730adc3712a3"
+    },
+    "lab.pdf": {
+      "bytes": 546497,
+      "sha256": "a67798995eef8fa0be410b9ea14acde5f3b3fc4b375b98c2d1ccd533b78a722d"
+    },
+    "lecture.md": {
+      "bytes": 30839,
+      "sha256": "0c2ab543b7ddc5e94506640d6288c3d470888004b3436cf2e180fdb0f9fdb23c"
+    },
+    "lecture.pdf": {
+      "bytes": 2006301,
+      "sha256": "56979bb6ff4e528025e5b7bcb402dde0cdda55e5f4155d099f615c8313ec8b66"
+    },
+    "requirements.txt": {
+      "bytes": 137,
+      "sha256": "53c2669b8df3804d23448a2397f8a97e0c03a72b20418df9dc0da0c5d77a4e64"
+    },
+    "source-checks.json": {
+      "bytes": 3422,
+      "sha256": "c15d7d827cafc47a766b0efbd8f46845726df5b70608f1f476a3c421a5eb3a56"
+    },
+    "test-result.json": {
+      "bytes": 9034,
+      "sha256": "ef4162a50f3b81cc821be7eab4b4893fe9a5b72ccc0dbbcbe366866f2d3ece40"
+    }
+  },
+  "full_exercise_solutions": 16,
+  "input_and_output_checks": {
+    "atomic_replace_failure_preserves_bytes": true,
+    "extended_precision_original_nonzero_guard": true,
+    "optimized_last_field_cases": 3,
+    "output_protection_test_count": 10,
+    "raw_precompute_rejections": 50,
+    "strict_json_rejections": 7,
+    "symlink_hardlink_parent_and_asset_protection": true,
+    "temporary_cleanup": true
+  },
+  "limits": [
+    "Finite synthetic experiments do not prove all-input correctness, generalization or causal identification.",
+    "No browser Jupyter UI, kernel network transport, Windows or Anaconda installation was tested.",
+    "No post-selection Ridge interval, large-scale performance or universal optimizer ranking is claimed.",
+    "Atomic output protection targets a single-user local workflow, not hostile concurrent filesystem races.",
+    "Author checks do not replace independent acceptance. No remote publishing was performed."
+  ],
+  "notebook": {
+    "actual_code_cells": 13,
+    "actual_pngs": 12,
+    "actual_tamper_rejections": 9,
+    "browser_ui_tested": false,
+    "eleven_deterministic_pngs_byte_identical": true,
+    "first_cell_contract_files": 9,
+    "real_kernel": "ipykernel InProcessKernel; fresh Python process, sequential empty-state execution",
+    "two_clean_kernels_same_complete_scientific_json": true,
+    "variable_png": 7,
+    "variable_reason": "Figure 7 uses each run's actual wall-clock measurements; timing is not claimed deterministic."
+  },
+  "numerical_checks": {
+    "adam_first_step": true,
+    "all_failure_computation_counted": true,
+    "fraction_two_complete_updates_three_forward_states": true,
+    "gap_identity_and_spectral_bounds": true,
+    "independent_2x2_elimination": true,
+    "injected_rejected_candidate_retained": true,
+    "max_random_gradient_error": 1.2015100026019354e-10,
+    "random_gradient_cases": 32,
+    "rank_deficiency_and_preconditioning": true,
+    "sklearn_svd_ridge_and_sample_replication": true,
+    "standard_optimizer_runs": 30,
+    "standard_runs_budget_exhausted": 12,
+    "test_label_and_feature_isolation": true
+  },
+  "original_figures": 12,
+  "pdf_pages": {
+    "answers": 6,
+    "lab": 5,
+    "lecture": 15
+  },
+  "prerequisites": [
+    "007",
+    "025",
+    "029",
+    "032",
+    "034",
+    "036",
+    "039",
+    "040"
+  ],
+  "public_allowlist": [
+    "README.md",
+    "answers.md",
+    "answers.pdf",
+    "audit.py",
+    "benchmark-result.json",
+    "benchmark.py",
+    "build_assets.py",
+    "data/README.md",
+    "data/benchmark.csv",
+    "data/config.json",
+    "data/generation.json",
+    "data/hand.csv",
+    "data/selection.csv",
+    "environment.yml",
+    "experiment-result.json",
+    "experiment.ipynb",
+    "experiment.py",
+    "figures/01_evidence_chain.png",
+    "figures/02_hand_chain.png",
+    "figures/03_exact_and_iterative.png",
+    "figures/04_gradient_and_error.png",
+    "figures/05_gradient_checks.png",
+    "figures/06_cost_convergence.png",
+    "figures/07_measured_cost.png",
+    "figures/08_selection_lock.png",
+    "figures/09_interval_objects.png",
+    "figures/10_coverage_failure.png",
+    "figures/11_preconditioner.png",
+    "figures/12_failed_attempt.png",
+    "lab.md",
+    "lab.pdf",
+    "lecture.md",
+    "lecture.pdf",
+    "requirements.txt",
+    "source-checks.json",
+    "test-result.json",
+    "verification.json"
+  ],
+  "runtime_versions": {
+    "ipykernel": "7.4.0",
+    "ipython": "9.17.1",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_count": 8,
+  "status": "author complete; independent review pending",
+  "timing": {
+    "all_failure_times_retained": true,
+    "blas_threads": 1,
+    "clock": "time.perf_counter_ns",
+    "configurations": 31,
+    "measured_repeats_each": 3,
+    "scope": "Full diagnostic solver call; excludes input loading/centering, selection, coverage, plotting, JSON I/O and interpreter startup.",
+    "warmups_each": 1
+  },
+  "title": "回归与优化阶段项目",
+  "unit": "041",
+  "visual": {
+    "all_actual_notebook_pngs_individually_viewed": 12,
+    "all_counts_read_from_final_artifacts": true,
+    "all_pdf_pages_individually_viewed": 26
+  }
+}

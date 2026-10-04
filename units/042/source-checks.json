@@ -1,0 +1,48 @@
+{
+  "unit": "042",
+  "checked_utc": "2026-10-04",
+  "status": "six primary sources checked; complete candidate executed",
+  "sources": [
+    {
+      "title": "Stanford CS229 chapter2",
+      "url": "https://cs229.stanford.edu/notes2022fall/main_notes.pdf",
+      "scope": "Actually read printed20-25: sigmoid, Bernoulli conditional independent likelihood, local chain and Newton background. Original four-row/cubic/separation derivations authored independently.",
+      "status": "read"
+    },
+    {
+      "title": "sklearn1.8 LogisticRegression API",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.LogisticRegression.html",
+      "scope": "Read C=np.inf, l1_ratio, penalty deprecated since1.8, classes_ probability ordering and liblinear synthetic intercept caveat; actual sklearn1.8 API inspected and two fits executed.",
+      "status": "read"
+    },
+    {
+      "title": "sklearn1.8 binary objective",
+      "url": "https://scikit-learn.org/1.8/modules/linear_model.html#logistic-regression",
+      "scope": "Read equation1 weighted mean likelihood+r(w)/(S*C), S=sum weights; unweighted C=1/(n*lambda), r=norm(w)^2/2.",
+      "status": "read"
+    },
+    {
+      "title": "SciPy1.17 expit",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.special.expit.html",
+      "scope": "Read sigmoid formula and same-shape output. No alternate backend/GPU claim.",
+      "status": "read"
+    },
+    {
+      "title": "SciPy1.17 log_expit",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.special.log_expit.html",
+      "scope": "Read stable log-sigmoid and explicit large positive/negative examples; direct log(expit) loses tails.",
+      "status": "read"
+    },
+    {
+      "title": "statsmodels pitfalls",
+      "url": "https://www.statsmodels.org/stable/pitfalls.html",
+      "scope": "Read separation/finiteMLE/nonuniqueness and false convergence caveat; no statsmodels execution claim.",
+      "status": "read"
+    }
+  ],
+  "execution_scope": "From-scratch stable objective, GD and protected Newton, actual sklearn1.8 unregularized/L2/duplicated fits and controlled zero-score boundary; actual SciPy1.17 expit/log_expit, Decimal110 full69-state path+80 dyadic designs and Decimal1100 extremes; complete real Notebook and all21 PDF pages reviewed. No statsmodels execution.",
+  "limitations": [
+    "ESL website retrieval failed and is not used as a source.",
+    "Actual C=np.inf precheck emitted implementation warning about ignored C/l1_ratio; warning retained, not silently suppressed."
+  ]
+}

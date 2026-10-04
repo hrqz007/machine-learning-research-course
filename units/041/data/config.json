@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "hand_lambda": 0.5,
+  "hand_step": 0.25,
+  "initial": [
+    0.0,
+    0.0
+  ],
+  "lambdas": [
+    0.0,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "max_epochs": 400,
+  "batch_size": 16,
+  "gradient_tolerance": 1e-06,
+  "adam_step": 0.04,
+  "seed": 4107,
+  "fd_steps": [
+    0.01,
+    0.0001,
+    1e-06,
+    1e-08,
+    1e-10
+  ],
+  "coverage_repetitions": 600
+}

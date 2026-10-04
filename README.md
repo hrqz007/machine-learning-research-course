@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–039 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–042 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -82,6 +82,10 @@
 - [第037讲 约束与非光滑优化](units/037/README.md)：[正文](units/037/lecture.pdf) · [实验指南](units/037/lab.pdf) · [完整答案](units/037/answers.pdf) · [Notebook](units/037/experiment.ipynb)
 - [第038讲 Newton与拟Newton方法](units/038/README.md)：[正文](units/038/lecture.pdf) · [实验指南](units/038/lab.pdf) · [完整答案](units/038/answers.pdf) · [Notebook](units/038/experiment.ipynb)
 - [第039讲 优化实现与故障诊断](units/039/README.md)：[正文](units/039/lecture.pdf) · [实验指南](units/039/lab.pdf) · [完整答案](units/039/answers.pdf) · [Notebook](units/039/experiment.ipynb)
+
+- [第040讲 正则化与收缩估计](units/040/README.md)：[正文](units/040/lecture.pdf) · [实验指南](units/040/lab.pdf) · [完整答案](units/040/answers.pdf) · [Notebook](units/040/experiment.ipynb)
+- [第041讲 回归与优化阶段项目](units/041/README.md)：[正文](units/041/lecture.pdf) · [实验指南](units/041/lab.pdf) · [完整答案](units/041/answers.pdf) · [Notebook](units/041/experiment.ipynb)
+- [第042讲 二分类与逻辑回归](units/042/README.md)：[正文](units/042/lecture.pdf) · [实验指南](units/042/lab.pdf) · [完整答案](units/042/answers.pdf) · [Notebook](units/042/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)

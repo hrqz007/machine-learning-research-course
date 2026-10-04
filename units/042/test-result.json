@@ -1,0 +1,264 @@
+{
+  "audit": {
+    "checks": 3804,
+    "core_sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042",
+    "input_gates": {
+      "config_fields": 12,
+      "postcompute_failure": {
+        "cholesky_attempts": 0,
+        "sample_forward_attempts": 8,
+        "sample_gradient_attempts": 8,
+        "sample_hessian_attempts": 8,
+        "solve_attempts": 0,
+        "state_attempts": 2,
+        "state_successes": 1
+      },
+      "raw_adversarial_cases": 54,
+      "rejected_step": {
+        "cholesky_attempts": 0,
+        "sample_forward_attempts": 8,
+        "sample_gradient_attempts": 8,
+        "sample_hessian_attempts": 8,
+        "solve_attempts": 0,
+        "state_attempts": 2,
+        "state_successes": 2
+      },
+      "strict_json_cases": 6
+    },
+    "output_gates": {
+      "new_directory_cleanup": true,
+      "replace_failure_preserves": true,
+      "serialization_preserves": true,
+      "symlink_hardlink_protected": true
+    },
+    "science": {
+      "cubic": {
+        "cubic_residual": "6E-109",
+        "interval_width": "1E-109",
+        "precision": 110,
+        "scope": "only the declared symmetric four-row main example; strict convexity plus full two-dimensional stationary point proves unique finite MLE",
+        "t": "1.5213797068045675696040808322544385144283898284279039090904980154281564034305882160491637926967338770567943892",
+        "w": "0.41961762499109789953431064679925369045116365171158147620925542817344218945606553028105286705931848782679149765"
+      },
+      "default_gd_states": 69,
+      "exact_initial_gradient": [
+        "0",
+        "-1/4"
+      ],
+      "precision_extreme": 1100,
+      "precision_main": 110,
+      "random_dyadic_designs": 80,
+      "scipy_checked": true
+    },
+    "unit": "042"
+  },
+  "fresh_processes": {
+    "actual_bad_tail_cases_both_modes": [
+      "tail_config",
+      "tail_y",
+      "duplicate_id",
+      "tiny_literal"
+    ],
+    "actual_edge_cli": [
+      {
+        "case": "one_update",
+        "final": [
+          0.0,
+          0.125
+        ],
+        "second_update": null,
+        "sha256": "5bb6500389d2bfbe902247ff2d9c7c60497ae3dc6520771042d6b9e38896e558",
+        "status": "max_updates",
+        "updates": 1
+      },
+      {
+        "case": "stationary",
+        "final": [
+          0.0,
+          0.4196176249910979
+        ],
+        "second_update": null,
+        "sha256": "2ac3ec058b5b7c948cd88f53134c2a9a01390e287220ae8100b3df610d9c3b2b",
+        "status": "gradient_tolerance",
+        "updates": 0
+      },
+      {
+        "case": "first_rejected",
+        "final": [
+          0.0,
+          0.0
+        ],
+        "second_update": null,
+        "sha256": "16e0b2d52793bea6c19bd30bfbc9955c6c1ba0320df19d974cafa66759b76c77",
+        "status": "step_rejected",
+        "updates": 0
+      }
+    ],
+    "normal_O_two_cwd_whole_bytes_equal": true,
+    "notebook_full_core_equal": true,
+    "processes": [
+      {
+        "bytes": 406793,
+        "kind": "core",
+        "mode": "normal-root",
+        "sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042"
+      },
+      {
+        "bytes": 1662,
+        "kind": "audit",
+        "mode": "normal-root",
+        "sha256": "f40ee15bad18019013cad5db48702b4f036a95d1da3e09cecd6abe59057da872"
+      },
+      {
+        "bytes": 406793,
+        "kind": "core",
+        "mode": "optimized-root",
+        "sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042"
+      },
+      {
+        "bytes": 1662,
+        "kind": "audit",
+        "mode": "optimized-root",
+        "sha256": "f40ee15bad18019013cad5db48702b4f036a95d1da3e09cecd6abe59057da872"
+      },
+      {
+        "bytes": 406793,
+        "kind": "core",
+        "mode": "normal-newcwd",
+        "sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042"
+      },
+      {
+        "bytes": 1662,
+        "kind": "audit",
+        "mode": "normal-newcwd",
+        "sha256": "f40ee15bad18019013cad5db48702b4f036a95d1da3e09cecd6abe59057da872"
+      },
+      {
+        "bytes": 406793,
+        "kind": "core",
+        "mode": "optimized-newcwd",
+        "sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042"
+      },
+      {
+        "bytes": 1662,
+        "kind": "audit",
+        "mode": "optimized-newcwd",
+        "sha256": "f40ee15bad18019013cad5db48702b4f036a95d1da3e09cecd6abe59057da872"
+      }
+    ]
+  },
+  "plot_writer": {
+    "all9_regenerated_png_byte_equal": true,
+    "cases": [
+      "units/042/figures",
+      "units/042/data",
+      "units/042",
+      "symlink",
+      "last-target hardlink before figures"
+    ]
+  },
+  "real_notebook": {
+    "code_cells": 16,
+    "first_cell_tamper": {
+      "cases": [
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: data/observations.csv"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "data/observations.csv"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: data/separable.csv"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "data/separable.csv"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: data/model_spec.json"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "data/model_spec.json"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: experiment.py"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "experiment.py"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: plots.py"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "plots.py"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: audit.py"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "audit.py"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: requirements.txt"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "requirements.txt"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: environment.yml"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "environment.yml"
+        },
+        {
+          "error": {
+            "ename": "ValueError",
+            "evalue": "teaching fixture changed: data_integrity.json"
+          },
+          "images": 0,
+          "stdout": 0,
+          "stopped_before_numerical_import": true,
+          "target": "data_integrity.json"
+        }
+      ],
+      "fresh_real_kernel_each_case": true
+    },
+    "notebook_sha256": "30058195a0708d11f0dce14805ee6b5001115338642830ac861431c36a187c51",
+    "pngs": 9,
+    "two_complete_notebooks_byte_identical": true,
+    "whole_core_bytes": 406793,
+    "whole_core_sha256": "9284db963da967d44921b16bb2090e9991bcf4863fbd21d85f320e9a6751b042"
+  },
+  "unit": "042"
+}

@@ -1,0 +1,66 @@
+{
+  "kind": "regularization_shrinkage_v1",
+  "hand_ridge_lambda": 0.25,
+  "hand_learning_rate": 0.5,
+  "hand_steps": 2,
+  "hand_initial": [
+    0.0,
+    0.0
+  ],
+  "hand_lasso_lambda": 0.5,
+  "hand_elastic_lambda": 0.5,
+  "hand_elastic_l1_ratio": 0.5,
+  "path_lambdas": [
+    0.0,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "selection_lambdas": [
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0,
+    3.0
+  ],
+  "selection_l1_ratios": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "selection_seed": 4017,
+  "train_rows": 80,
+  "validation_rows": 60,
+  "test_rows": 200,
+  "features": 20,
+  "correlation": 0.95,
+  "noise_std": 1.0,
+  "solver_tolerance": 1e-10,
+  "solver_max_iter": 20000,
+  "monte_carlo_seed": 4018,
+  "monte_carlo_repetitions": 1000,
+  "monte_carlo_noise_std": 0.5,
+  "monte_carlo_truth": [
+    1.0,
+    1.0
+  ],
+  "monte_carlo_lambdas": [
+    0.0,
+    0.01,
+    0.03,
+    0.1,
+    0.25,
+    1.0,
+    4.0
+  ]
+}

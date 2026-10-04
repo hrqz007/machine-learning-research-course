@@ -1,0 +1,66 @@
+{
+  "checked_on": "2026-10-04",
+  "method": "Opened official pages and author paper using web retrieval; checked cited passages; independently authored explanations and figures.",
+  "sources": [
+    {
+      "id": "numpy-lstsq",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.lstsq.html",
+      "title": "NumPy 2.3 official reference",
+      "checked": "Minimum-norm minimizer, rcond rank threshold, returned rank and singular values; checked main API text.",
+      "scope": "OLS reference semantics only, not statistical inference."
+    },
+    {
+      "id": "sklearn-ridge",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.Ridge.html",
+      "title": "scikit-learn 1.8 official reference",
+      "checked": "Objective SSE + alpha * squared coefficient norm; alpha=n*lambda mapping; svd ignores tol.",
+      "scope": "Actual independent SVD solver comparison performed; no inferred iteration count."
+    },
+    {
+      "id": "sklearn-pitfalls",
+      "url": "https://scikit-learn.org/1.8/common_pitfalls.html",
+      "title": "scikit-learn 1.8 official guidance",
+      "checked": "Training-only fitting of preprocessing and consistent transforms for new data.",
+      "scope": "Our label/feature alteration tests independently check this implementation."
+    },
+    {
+      "id": "adam",
+      "url": "https://arxiv.org/pdf/1412.6980",
+      "title": "Kingma and Ba, Adam: A Method for Stochastic Optimization, arXiv 1412.6980v9 / ICLR 2015",
+      "checked": "Read Algorithm 1 on PDF page 2 and surrounding state/bias-correction description.",
+      "scope": "Only algorithm semantics used, not a universal convergence guarantee or reproduced paper benchmark."
+    },
+    {
+      "id": "python-timing",
+      "url": "https://docs.python.org/3.12/library/time.html#time.perf_counter_ns",
+      "title": "Python 3.12 official time documentation",
+      "checked": "perf_counter and perf_counter_ns clock semantics; nanosecond integer representation.",
+      "scope": "Current doc maintenance patch displayed 3.12.15; runtime is 3.12.14."
+    },
+    {
+      "id": "nist-estimation",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd131.htm",
+      "title": "NIST/SEMATECH handbook Estimation",
+      "checked": "Mean response uncertainty distinguished from future measurement noise.",
+      "scope": "The full fixed-design t derivation is independently written in this unit."
+    },
+    {
+      "id": "nist-prediction",
+      "url": "https://itl.nist.gov/div898/handbook/pmd/section1/pmd132.htm",
+      "title": "NIST/SEMATECH handbook Prediction",
+      "checked": "Future observation interval includes estimation and measurement uncertainty.",
+      "scope": "No unqualified extrapolation or post-selection coverage guarantee used."
+    },
+    {
+      "id": "scipy-t",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.stats.t.html",
+      "title": "SciPy 1.17.0 official statistics reference",
+      "checked": "t distribution df>0, ppf inverse CDF and distribution interval semantics.",
+      "scope": "t.ppf(.975,30) numerically used; interval() not substituted for regression construction."
+    }
+  ],
+  "not_used": [
+    "NIST section4/pmd462 request failed; no claim depends on it."
+  ],
+  "copyright": "Links and original summaries only. No copied third-party full text or figures in public package."
+}

@@ -1,0 +1,2539 @@
+{
+  "input_hashes": {
+    "data/benchmark.csv": "3f2e84b952d58e983bfdcdbc880d27235f502630d603a18025481ee6b3fe2595",
+    "data/config.json": "f3f6187e20c0f67bd2c59e97c488334440af59017982c3264850951c3155eae1",
+    "experiment.py": "f02a7484f0ded7ef3c66e9e2408caa55989422b50a132555bc574d7e9ed65647"
+  },
+  "measurement": "perf_counter_ns; diagnostic solver call includes Gram, eigenspectra, reference solve, all monitoring, trace construction, and unsuccessful attempts; excludes input loading/centering, selection, coverage, plotting, JSON I/O and interpreter startup",
+  "protocol": "fixed task order; one recorded warmup per task; repeats execute sequentially; BLAS threads limited to one; no universal speed claim",
+  "records": [
+    {
+      "case": "regular",
+      "lambda": 0.0,
+      "max_ns": 1160577,
+      "median_ns": 560070.0,
+      "method": "gd",
+      "min_ns": 475696,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 16,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 16,
+            "diagnostic_prediction_rows": 2040,
+            "full_gradient_calls": 18,
+            "full_gradient_rows": 2160,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 18,
+            "objective_rows": 2160,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 5.480602659122039e-07,
+          "nanoseconds": 560070,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 16,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 16,
+            "diagnostic_prediction_rows": 2040,
+            "full_gradient_calls": 18,
+            "full_gradient_rows": 2160,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 18,
+            "objective_rows": 2160,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 5.480602659122039e-07,
+          "nanoseconds": 475696,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 16,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 16,
+            "diagnostic_prediction_rows": 2040,
+            "full_gradient_calls": 18,
+            "full_gradient_rows": 2160,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 18,
+            "objective_rows": 2160,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 5.480602659122039e-07,
+          "nanoseconds": 1160577,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 1305045,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.0,
+      "max_ns": 687702,
+      "median_ns": 473410.0,
+      "method": "diagonal_gd",
+      "min_ns": 440276,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 15,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 15,
+            "diagnostic_prediction_rows": 1920,
+            "full_gradient_calls": 17,
+            "full_gradient_rows": 2040,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 17,
+            "objective_rows": 2040,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 4.0578275089388265e-07,
+          "nanoseconds": 687702,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 15,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 15,
+            "diagnostic_prediction_rows": 1920,
+            "full_gradient_calls": 17,
+            "full_gradient_rows": 2040,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 17,
+            "objective_rows": 2040,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 4.0578275089388265e-07,
+          "nanoseconds": 473410,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 15,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 15,
+            "diagnostic_prediction_rows": 1920,
+            "full_gradient_calls": 17,
+            "full_gradient_rows": 2040,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 17,
+            "objective_rows": 2040,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 4.0578275089388265e-07,
+          "nanoseconds": 440276,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 1125253,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.0,
+      "max_ns": 93869143,
+      "median_ns": 85943194.0,
+      "method": "minibatch",
+      "min_ns": 68422277,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.017518984472611503,
+          "nanoseconds": 68422277,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.017518984472611503,
+          "nanoseconds": 85943194,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.017518984472611503,
+          "nanoseconds": 93869143,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 73892275,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.0,
+      "max_ns": 9840158,
+      "median_ns": 8536080.0,
+      "method": "adam",
+      "min_ns": 8270932,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 263,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 263,
+            "diagnostic_prediction_rows": 31680,
+            "full_gradient_calls": 265,
+            "full_gradient_rows": 31800,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 265,
+            "objective_rows": 31800,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.445968706976389e-07,
+          "nanoseconds": 9840158,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 263,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 263,
+            "diagnostic_prediction_rows": 31680,
+            "full_gradient_calls": 265,
+            "full_gradient_rows": 31800,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 265,
+            "objective_rows": 31800,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.445968706976389e-07,
+          "nanoseconds": 8270932,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 263,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 263,
+            "diagnostic_prediction_rows": 31680,
+            "full_gradient_calls": 265,
+            "full_gradient_rows": 31800,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 265,
+            "objective_rows": 31800,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.445968706976389e-07,
+          "nanoseconds": 8536080,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 10113316,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.0,
+      "max_ns": 866951,
+      "median_ns": 359922.0,
+      "method": "newton",
+      "min_ns": 171418,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.1707929989055128e-15,
+          "nanoseconds": 866951,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.1707929989055128e-15,
+          "nanoseconds": 359922,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.1707929989055128e-15,
+          "nanoseconds": 171418,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 385223,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.1,
+      "max_ns": 724774,
+      "median_ns": 496003.0,
+      "method": "gd",
+      "min_ns": 484749,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 14,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 14,
+            "diagnostic_prediction_rows": 1800,
+            "full_gradient_calls": 16,
+            "full_gradient_rows": 1920,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 16,
+            "objective_rows": 1920,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.281118725532816e-07,
+          "nanoseconds": 724774,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 14,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 14,
+            "diagnostic_prediction_rows": 1800,
+            "full_gradient_calls": 16,
+            "full_gradient_rows": 1920,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 16,
+            "objective_rows": 1920,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.281118725532816e-07,
+          "nanoseconds": 484749,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 14,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 14,
+            "diagnostic_prediction_rows": 1800,
+            "full_gradient_calls": 16,
+            "full_gradient_rows": 1920,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 16,
+            "objective_rows": 1920,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.281118725532816e-07,
+          "nanoseconds": 496003,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 1013603,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.1,
+      "max_ns": 986334,
+      "median_ns": 615089.0,
+      "method": "diagonal_gd",
+      "min_ns": 454830,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 13,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 13,
+            "diagnostic_prediction_rows": 1680,
+            "full_gradient_calls": 15,
+            "full_gradient_rows": 1800,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 15,
+            "objective_rows": 1800,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.404022666372293e-07,
+          "nanoseconds": 615089,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 13,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 13,
+            "diagnostic_prediction_rows": 1680,
+            "full_gradient_calls": 15,
+            "full_gradient_rows": 1800,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 15,
+            "objective_rows": 1800,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.404022666372293e-07,
+          "nanoseconds": 986334,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 13,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 13,
+            "diagnostic_prediction_rows": 1680,
+            "full_gradient_calls": 15,
+            "full_gradient_rows": 1800,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 15,
+            "objective_rows": 1800,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.404022666372293e-07,
+          "nanoseconds": 454830,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 464558,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.1,
+      "max_ns": 110922868,
+      "median_ns": 82415497.0,
+      "method": "minibatch",
+      "min_ns": 79557647,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.018084085719481793,
+          "nanoseconds": 110922868,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.018084085719481793,
+          "nanoseconds": 82415497,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.018084085719481793,
+          "nanoseconds": 79557647,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 79171677,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.1,
+      "max_ns": 14544920,
+      "median_ns": 10456359.0,
+      "method": "adam",
+      "min_ns": 9278600,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 249,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 249,
+            "diagnostic_prediction_rows": 30000,
+            "full_gradient_calls": 251,
+            "full_gradient_rows": 30120,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 251,
+            "objective_rows": 30120,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.475793336188975e-07,
+          "nanoseconds": 14544920,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 249,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 249,
+            "diagnostic_prediction_rows": 30000,
+            "full_gradient_calls": 251,
+            "full_gradient_rows": 30120,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 251,
+            "objective_rows": 30120,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.475793336188975e-07,
+          "nanoseconds": 10456359,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 249,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 249,
+            "diagnostic_prediction_rows": 30000,
+            "full_gradient_calls": 251,
+            "full_gradient_rows": 30120,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 251,
+            "objective_rows": 30120,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.475793336188975e-07,
+          "nanoseconds": 9278600,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 8160602,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "regular",
+      "lambda": 0.1,
+      "max_ns": 556999,
+      "median_ns": 318153.0,
+      "method": "newton",
+      "min_ns": 171567,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.0362444690375615e-15,
+          "nanoseconds": 556999,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.0362444690375615e-15,
+          "nanoseconds": 318153,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.0362444690375615e-15,
+          "nanoseconds": 171567,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 562768,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.0,
+      "max_ns": 10886507,
+      "median_ns": 10616078.0,
+      "method": "gd",
+      "min_ns": 10335824,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070712608712314e-05,
+          "nanoseconds": 10616078,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070712608712314e-05,
+          "nanoseconds": 10335824,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070712608712314e-05,
+          "nanoseconds": 10886507,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 10554715,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.0,
+      "max_ns": 10635269,
+      "median_ns": 10040497.0,
+      "method": "diagonal_gd",
+      "min_ns": 9358088,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070713889136497e-05,
+          "nanoseconds": 10040497,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070713889136497e-05,
+          "nanoseconds": 9358088,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070713889136497e-05,
+          "nanoseconds": 10635269,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 9471496,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.0,
+      "max_ns": 70626536,
+      "median_ns": 69763821.0,
+      "method": "minibatch",
+      "min_ns": 68058102,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.015646998828250606,
+          "nanoseconds": 68058102,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.015646998828250606,
+          "nanoseconds": 70626536,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.015646998828250606,
+          "nanoseconds": 69763821,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 73447489,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.0,
+      "max_ns": 14107251,
+      "median_ns": 14098580.0,
+      "method": "adam",
+      "min_ns": 12730726,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070674842736331e-05,
+          "nanoseconds": 12730726,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070674842736331e-05,
+          "nanoseconds": 14098580,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.070674842736331e-05,
+          "nanoseconds": 14107251,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 12925375,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.0,
+      "max_ns": 485474,
+      "median_ns": 305102.0,
+      "method": "newton",
+      "min_ns": 151233,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 3.0013720272785704e-15,
+          "nanoseconds": 305102,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 3.0013720272785704e-15,
+          "nanoseconds": 485474,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 3.0013720272785704e-15,
+          "nanoseconds": 151233,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 410450,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.1,
+      "max_ns": 1639685,
+      "median_ns": 1520739.0,
+      "method": "gd",
+      "min_ns": 1430764,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 59,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 59,
+            "diagnostic_prediction_rows": 7200,
+            "full_gradient_calls": 61,
+            "full_gradient_rows": 7320,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 61,
+            "objective_rows": 7320,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.971287402550967e-07,
+          "nanoseconds": 1520739,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 59,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 59,
+            "diagnostic_prediction_rows": 7200,
+            "full_gradient_calls": 61,
+            "full_gradient_rows": 7320,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 61,
+            "objective_rows": 7320,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.971287402550967e-07,
+          "nanoseconds": 1430764,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 59,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 59,
+            "diagnostic_prediction_rows": 7200,
+            "full_gradient_calls": 61,
+            "full_gradient_rows": 7320,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 61,
+            "objective_rows": 7320,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.971287402550967e-07,
+          "nanoseconds": 1639685,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 1652522,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.1,
+      "max_ns": 1959141,
+      "median_ns": 1594008.0,
+      "method": "diagonal_gd",
+      "min_ns": 1429376,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 58,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 58,
+            "diagnostic_prediction_rows": 7080,
+            "full_gradient_calls": 60,
+            "full_gradient_rows": 7200,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 60,
+            "objective_rows": 7200,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.936161499017866e-07,
+          "nanoseconds": 1959141,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 58,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 58,
+            "diagnostic_prediction_rows": 7080,
+            "full_gradient_calls": 60,
+            "full_gradient_rows": 7200,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 60,
+            "objective_rows": 7200,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.936161499017866e-07,
+          "nanoseconds": 1594008,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 58,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 58,
+            "diagnostic_prediction_rows": 7080,
+            "full_gradient_calls": 60,
+            "full_gradient_rows": 7200,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 60,
+            "objective_rows": 7200,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 9.936161499017866e-07,
+          "nanoseconds": 1429376,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 1759158,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.1,
+      "max_ns": 70260244,
+      "median_ns": 69295011.0,
+      "method": "minibatch",
+      "min_ns": 66874103,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.015543591798906502,
+          "nanoseconds": 66874103,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.015543591798906502,
+          "nanoseconds": 69295011,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.015543591798906502,
+          "nanoseconds": 70260244,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 70932399,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.1,
+      "max_ns": 9066608,
+      "median_ns": 9001106.0,
+      "method": "adam",
+      "min_ns": 8789895,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 253,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 253,
+            "diagnostic_prediction_rows": 30480,
+            "full_gradient_calls": 255,
+            "full_gradient_rows": 30600,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 255,
+            "objective_rows": 30600,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.152321672502594e-07,
+          "nanoseconds": 8789895,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 253,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 253,
+            "diagnostic_prediction_rows": 30480,
+            "full_gradient_calls": 255,
+            "full_gradient_rows": 30600,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 255,
+            "objective_rows": 30600,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.152321672502594e-07,
+          "nanoseconds": 9066608,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 253,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 253,
+            "diagnostic_prediction_rows": 30480,
+            "full_gradient_calls": 255,
+            "full_gradient_rows": 30600,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 255,
+            "objective_rows": 30600,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.152321672502594e-07,
+          "nanoseconds": 9001106,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 9364255,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "collinear",
+      "lambda": 0.1,
+      "max_ns": 250844,
+      "median_ns": 188501.0,
+      "method": "newton",
+      "min_ns": 165126,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 4.4348686481940075e-16,
+          "nanoseconds": 250844,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 4.4348686481940075e-16,
+          "nanoseconds": 188501,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 4.4348686481940075e-16,
+          "nanoseconds": 165126,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 387223,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.0,
+      "max_ns": 10503719,
+      "median_ns": 9694801.0,
+      "method": "gd",
+      "min_ns": 9250426,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.026810435454328093,
+          "nanoseconds": 10503719,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.026810435454328093,
+          "nanoseconds": 9694801,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.026810435454328093,
+          "nanoseconds": 9250426,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 9692121,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.0,
+      "max_ns": 418725,
+      "median_ns": 377896.0,
+      "method": "diagonal_gd",
+      "min_ns": 338759,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 11,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 11,
+            "diagnostic_prediction_rows": 1440,
+            "full_gradient_calls": 13,
+            "full_gradient_rows": 1560,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 13,
+            "objective_rows": 1560,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.535237287889827e-07,
+          "nanoseconds": 418725,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 11,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 11,
+            "diagnostic_prediction_rows": 1440,
+            "full_gradient_calls": 13,
+            "full_gradient_rows": 1560,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 13,
+            "objective_rows": 1560,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.535237287889827e-07,
+          "nanoseconds": 377896,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 11,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 11,
+            "diagnostic_prediction_rows": 1440,
+            "full_gradient_calls": 13,
+            "full_gradient_rows": 1560,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 13,
+            "objective_rows": 1560,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 8.535237287889827e-07,
+          "nanoseconds": 338759,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 503884,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.0,
+      "max_ns": 70491972,
+      "median_ns": 69332001.0,
+      "method": "minibatch",
+      "min_ns": 66868749,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.06757975405651784,
+          "nanoseconds": 70491972,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.06757975405651784,
+          "nanoseconds": 69332001,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.06757975405651784,
+          "nanoseconds": 66868749,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 66738447,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.0,
+      "max_ns": 16293834,
+      "median_ns": 12789585.0,
+      "method": "adam",
+      "min_ns": 12454266,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.0001217971068709676,
+          "nanoseconds": 12789585,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.0001217971068709676,
+          "nanoseconds": 12454266,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.0001217971068709676,
+          "nanoseconds": 16293834,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 11658551,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.0,
+      "max_ns": 302591,
+      "median_ns": 147723.0,
+      "method": "newton",
+      "min_ns": 131425,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 2.564623748601435e-14,
+          "nanoseconds": 302591,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 2.564623748601435e-14,
+          "nanoseconds": 147723,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 120,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 2.564623748601435e-14,
+          "nanoseconds": 131425,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 389979,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.1,
+      "max_ns": 11659757,
+      "median_ns": 10886305.0,
+      "method": "gd",
+      "min_ns": 10577428,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.026325521049486343,
+          "nanoseconds": 10577428,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.026325521049486343,
+          "nanoseconds": 10886305,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 400,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 400,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.026325521049486343,
+          "nanoseconds": 11659757,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 10829878,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.1,
+      "max_ns": 571427,
+      "median_ns": 364983.0,
+      "method": "diagonal_gd",
+      "min_ns": 309055,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 8,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 8,
+            "diagnostic_prediction_rows": 1080,
+            "full_gradient_calls": 10,
+            "full_gradient_rows": 1200,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 10,
+            "objective_rows": 1200,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.17825088635639e-07,
+          "nanoseconds": 571427,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 8,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 8,
+            "diagnostic_prediction_rows": 1080,
+            "full_gradient_calls": 10,
+            "full_gradient_rows": 1200,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 10,
+            "objective_rows": 1200,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.17825088635639e-07,
+          "nanoseconds": 364983,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 8,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 8,
+            "diagnostic_prediction_rows": 1080,
+            "full_gradient_calls": 10,
+            "full_gradient_rows": 1200,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 10,
+            "objective_rows": 1200,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.17825088635639e-07,
+          "nanoseconds": 309055,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 1005193,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.1,
+      "max_ns": 72654700,
+      "median_ns": 70017389.0,
+      "method": "minibatch",
+      "min_ns": 69847074,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.06751740094883808,
+          "nanoseconds": 72654700,
+          "repeat": 1,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.06751740094883808,
+          "nanoseconds": 69847074,
+          "repeat": 2,
+          "status": "budget_exhausted"
+        },
+        {
+          "cost": {
+            "attempted_updates": 3200,
+            "batch_gradient_calls": 3200,
+            "batch_gradient_rows": 51200,
+            "committed_updates": 3200,
+            "diagnostic_prediction_rows": 48120,
+            "full_gradient_calls": 402,
+            "full_gradient_rows": 48240,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 402,
+            "objective_rows": 48240,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 0.06751740094883808,
+          "nanoseconds": 70017389,
+          "repeat": 3,
+          "status": "budget_exhausted"
+        }
+      ],
+      "warmup_ns": 68879008,
+      "warmup_status": "budget_exhausted"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.1,
+      "max_ns": 8512624,
+      "median_ns": 7873933.0,
+      "method": "adam",
+      "min_ns": 7746848,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 229,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 229,
+            "diagnostic_prediction_rows": 27600,
+            "full_gradient_calls": 231,
+            "full_gradient_rows": 27720,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 231,
+            "objective_rows": 27720,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.125202606688468e-07,
+          "nanoseconds": 8512624,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 229,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 229,
+            "diagnostic_prediction_rows": 27600,
+            "full_gradient_calls": 231,
+            "full_gradient_rows": 27720,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 231,
+            "objective_rows": 27720,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.125202606688468e-07,
+          "nanoseconds": 7873933,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 229,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 229,
+            "diagnostic_prediction_rows": 27600,
+            "full_gradient_calls": 231,
+            "full_gradient_rows": 27720,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 231,
+            "objective_rows": 27720,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 7.125202606688468e-07,
+          "nanoseconds": 7746848,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 8312434,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.1,
+      "max_ns": 242035,
+      "median_ns": 232225.0,
+      "method": "newton",
+      "min_ns": 167276,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.7405675345483015e-15,
+          "nanoseconds": 232225,
+          "repeat": 1,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.7405675345483015e-15,
+          "nanoseconds": 167276,
+          "repeat": 2,
+          "status": "gradient_tolerance"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 1,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 1,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.7405675345483015e-15,
+          "nanoseconds": 242035,
+          "repeat": 3,
+          "status": "gradient_tolerance"
+        }
+      ],
+      "warmup_ns": 395172,
+      "warmup_status": "gradient_tolerance"
+    },
+    {
+      "case": "scaled",
+      "lambda": 0.1,
+      "max_ns": 228803,
+      "median_ns": 166246.0,
+      "method": "gd_unsafe",
+      "min_ns": 139094,
+      "samples": [
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 0,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.0,
+          "nanoseconds": 228803,
+          "repeat": 1,
+          "status": "objective_increase_rejected"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 0,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.0,
+          "nanoseconds": 166246,
+          "repeat": 2,
+          "status": "objective_increase_rejected"
+        },
+        {
+          "cost": {
+            "attempted_updates": 1,
+            "batch_gradient_calls": 0,
+            "batch_gradient_rows": 0,
+            "committed_updates": 0,
+            "diagnostic_prediction_rows": 240,
+            "full_gradient_calls": 3,
+            "full_gradient_rows": 360,
+            "gram_formations": 1,
+            "gram_rows": 120,
+            "linear_solves": 0,
+            "objective_calls": 3,
+            "objective_rows": 360,
+            "reference_lstsq": 1,
+            "reference_rows": 126,
+            "spectrum_solves": 2
+          },
+          "final_relative_gradient": 1.0,
+          "nanoseconds": 139094,
+          "repeat": 3,
+          "status": "objective_increase_rejected"
+        }
+      ],
+      "warmup_ns": 202308,
+      "warmup_status": "objective_increase_rejected"
+    }
+  ],
+  "repeats": 3,
+  "runtime": {
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "system": "Linux",
+    "threadpools": [
+      {
+        "architecture": "SkylakeX",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ]
+  },
+  "unit": "041"
+}

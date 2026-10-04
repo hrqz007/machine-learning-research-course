@@ -1,0 +1,14 @@
+{
+  "unit": "042",
+  "scope": "default teaching inputs and executable code; custom copies require explicit CLI paths",
+  "sha256": {
+    "data/observations.csv": "35883db0ff9fc950e5db316a02064addf6bbe28bddef70a23ee001c74c119681",
+    "data/separable.csv": "c64e413f86880a4ca5b07333f9e0260987e586d728c2b0f90fbb01bf20a63ab5",
+    "data/model_spec.json": "ffca7b1787ed6163b9f142403bc2ef17b70dbf6fb6eafb00a5188018261c6d52",
+    "experiment.py": "aea567ab318a2cf5397d52e16eab5c8d9e00bdb89851502253a306070bf823ab",
+    "plots.py": "2bbd904224a1e257c9a32075a80ebedf4210318096ad5cbc963cd0d9afc08e78",
+    "audit.py": "056521cd74094770b57c733113057f2f1ddb9687c9b5b1bed02f5b71b207f862",
+    "requirements.txt": "9e91f804d22f2028e35dced18587b0fbbb734cd3f7f2df7b57b1360b2213b833",
+    "environment.yml": "906696751275ab026c9651179625c86ae803ca844389028c9432dc1a20a698f7"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "correction": "Revision2 corrected opening prerequisite reference. Revision3 distinguishes early schema/integrity/range validation of test inputs from post-selection use of test labels for final MSE; numerical artifacts unchanged.",
+  "date_utc": "2026-10-04",
+  "execution": {
+    "actual_first_cell_tamper_tests": 5,
+    "all_core_bytes_equal": true,
+    "audit_checks": 768,
+    "eight_normal_O_two_cwd_processes": true,
+    "groups": {
+      "MC_identity": 21,
+      "MC_independent_fit": 7,
+      "all_path_branches": 66,
+      "constant_column": 2,
+      "coordinate_backtransform": 40,
+      "csv_guards": 4,
+      "decimal_condition": 15,
+      "endpoints": 5,
+      "exact_solutions": 2,
+      "file_guards": 13,
+      "fixture_guards": 6,
+      "fraction_rows": 60,
+      "fraction_states": 7,
+      "json_guards": 4,
+      "library_failure": 2,
+      "library_reference": 6,
+      "precompute_guards": 42,
+      "random_fraction": 240,
+      "rank_deficient": 6,
+      "regeneration": 7,
+      "sample_duplication": 6,
+      "selection_failures": 1,
+      "smooth_finite_difference": 80,
+      "spectral_reference": 80,
+      "test_isolation": 2,
+      "tie_rule": 1,
+      "train_scaler": 43
+    },
+    "notebook_actual_pngs": 7,
+    "notebook_code_cells": 15,
+    "notebook_sha256": "d9c45ca07e1a9b24c232451fe25cacbd0480a5bb6b0c331db478922ae9886f59",
+    "two_fresh_real_notebooks_byte_identical": true,
+    "whole_core_bytes": 937488,
+    "whole_core_sha256": "bb33e78f8da173e89395c97f6f38acdc57648d3965a9728e541e35dca7c13b2f"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 4924,
+      "sha256": "b589842de6f882857f5ea976aa3d89f51a57151909b8d80a3fd83f3f52fcab09"
+    },
+    "answers.md": {
+      "bytes": 12873,
+      "sha256": "6566d0e80997e9369c128355f6db6e55e738f3b7b25c3df406566dde2936a0d8"
+    },
+    "answers.pdf": {
+      "bytes": 541276,
+      "sha256": "02d07741308aedb5dfcd05bf0c3f7dc7564a0159678714e2f2e18009ae044ede"
+    },
+    "audit.py": {
+      "bytes": 16573,
+      "sha256": "6ae44c60bbedaf2dd637b77f0519ab6e53180830c24f13a5f177d9c924f35514"
+    },
+    "data/README.md": {
+      "bytes": 1760,
+      "sha256": "ae8e7ad5a57bfd1d5aafe13085b2333c1aaaaae90ee6340eb1fa0295054a0d4f"
+    },
+    "data/model_spec.json": {
+      "bytes": 996,
+      "sha256": "79691dbe4c6aea8f0ab8cf361b9b336dc314920230aac7ed41379958b2ddfefd"
+    },
+    "data/regression.csv": {
+      "bytes": 71,
+      "sha256": "25ae92b74c0a000ce7cf7bd1ca50b0b8a84fc83a3292d6f90291820298b80280"
+    },
+    "data/selection.csv": {
+      "bytes": 143208,
+      "sha256": "778529894871f789fcbdeac135b0703133f256ca87643befe260d188ced87a5b"
+    },
+    "data/synthetic_truth.json": {
+      "bytes": 1288,
+      "sha256": "8c3230e26f8492c42275d4a2f65d6200159550fb464034b07c4559fc61acf2b8"
+    },
+    "data_integrity.json": {
+      "bytes": 496,
+      "sha256": "601bf2f76fd61e581a5e1ee2f274c45ab67d9bf440975a611e7f998448d119e5"
+    },
+    "environment.yml": {
+      "bytes": 223,
+      "sha256": "b903e459b2c666754572e96a07f3325599cceff711ea7630ebfd99bc4c576157"
+    },
+    "experiment.ipynb": {
+      "bytes": 1138500,
+      "sha256": "d9c45ca07e1a9b24c232451fe25cacbd0480a5bb6b0c331db478922ae9886f59"
+    },
+    "experiment.py": {
+      "bytes": 20832,
+      "sha256": "243b2caa8d2eedc4ee72845f975516e34cf48aeec76daa79f069577ad0d303f4"
+    },
+    "figures/01_regularization_workflow.png": {
+      "bytes": 60726,
+      "sha256": "fc40e64f0c59fd8fdb0c467a39fb7b28426d536dc2b870c00a5690a4493e272c"
+    },
+    "figures/02_collinearity_geometry.png": {
+      "bytes": 158839,
+      "sha256": "c4e8d2095be35112623c62aa22278e5803eb52103b3b8461682c27d30d98d25d"
+    },
+    "figures/03_ridge_spectral_shrinkage.png": {
+      "bytes": 114850,
+      "sha256": "af7b341e4491ae1f067ad8c3a4910b5f7f6394d92c3a2a30ce5cde9881314600"
+    },
+    "figures/04_regularized_forward_chain.png": {
+      "bytes": 118270,
+      "sha256": "215d35192e62105c9555ad5a76b6338f96cadefd8caf9ad9e2b6dd008b26dee1"
+    },
+    "figures/05_bias_variance.png": {
+      "bytes": 128390,
+      "sha256": "7434092c338a1bad37068ab18addd627dd3a090c600f1f5e2387a3279232698d"
+    },
+    "figures/06_lasso_geometry.png": {
+      "bytes": 132078,
+      "sha256": "e044abb0764dbc4d3c7ac8bc30afe1b7abaf35bd89b4fe6f2ea7367f4508d8c4"
+    },
+    "figures/07_elastic_grouping.png": {
+      "bytes": 83903,
+      "sha256": "ea7d19a4dc216577836163c13268242e1862c4321cfab1c0ff4a1b57b58e24c2"
+    },
+    "figures/08_scaling_and_leakage.png": {
+      "bytes": 67613,
+      "sha256": "ccf3044e99c47f407bcf29200265f3392bca43635ae0719fc8fb2e0791e4e83a"
+    },
+    "figures/09_paths_and_selection.png": {
+      "bytes": 191939,
+      "sha256": "2cf47985a7b7bba6460ffde3d01073f851d3ff37e17c17bf00c51eb39b163124"
+    },
+    "lab.md": {
+      "bytes": 7742,
+      "sha256": "ad701d9e0fc84cf06e8bf32dbbd1a2b205a0ccb2addc6de55994f087e6eebeec"
+    },
+    "lab.pdf": {
+      "bytes": 452704,
+      "sha256": "d926ca97252e999e112671b338e740ce0ae65c925f3bfad7ec3e149b65aad601"
+    },
+    "lecture.md": {
+      "bytes": 20959,
+      "sha256": "b4172aff5ae556d5e6dd9a901a6b5a27bb00cc95a184a7aa0e4f90fc386709a6"
+    },
+    "lecture.pdf": {
+      "bytes": 1697005,
+      "sha256": "dc5b0c23d728ad08975c7c0f0fe4fc029b25cbc4fae851158040af02f0bdaa56"
+    },
+    "plots.py": {
+      "bytes": 11226,
+      "sha256": "1dd7aee9aa3c0fca66f8907ba4d4fc6b00d730ca4537923f0bd573a868e6daa3"
+    },
+    "requirements.txt": {
+      "bytes": 66,
+      "sha256": "e41761634c8ff5c8e256ab6df77ee9e5b3114019d74f6638a8ea40515af9b6b4"
+    },
+    "source-checks.json": {
+      "bytes": 2953,
+      "sha256": "5e9098e99421a150ed1e0e77dedfcd71a7f635e7887d29760c5c1ee8d2c80096"
+    },
+    "test-result.json": {
+      "bytes": 16135,
+      "sha256": "e33ceb675e28b9f9577070434b945baa0703f36180c86d8d751d6d67fc826f7f"
+    }
+  },
+  "full_exercise_solutions": 20,
+  "lecture_sections": 20,
+  "limits": [
+    "Original synthetic finite mechanisms are not real-task generalization or support-recovery guarantees.",
+    "No browser Jupyter UI, socket transport, Windows or Anaconda installer was tested.",
+    "Absolute KKT gate 1e-7 is predeclared for this teaching experiment; not an arbitrary-scale guarantee.",
+    "No timing or memory benchmark claim; svd n_iter null is not zero cost.",
+    "Monte Carlo is finite and separate from model selection.",
+    "Raw teaching bounds do not guarantee accuracy for every condition number."
+  ],
+  "original_figures": 9,
+  "pdf_pages": {
+    "answers": 6,
+    "lab": 3,
+    "lecture": 11
+  },
+  "scientific_checks": {
+    "Decimal_collinearity_cases": 15,
+    "Decimal_precision": 110,
+    "actual_dataset_byte_regeneration": true,
+    "all_main_2D_sign_paths_checked": true,
+    "finite_MC_noise_and_all_coefficients_in_generated_core": true,
+    "random_dyadic_ridge_designs": 120,
+    "raw_standardized_prediction_parity": true,
+    "sample_duplication_alpha_test": true,
+    "smooth_directional_difference_cases": 80,
+    "test_label_counterfactual": true,
+    "three_full_Fraction_states": true,
+    "train_only_scaler_counterfactual": true
+  },
+  "source_count": 7,
+  "status": "frozen complete revision3 candidate; independent review pending",
+  "title": "正则化与收缩估计",
+  "unit": "040",
+  "visual": {
+    "all_actual_notebook_pngs_individually_viewed": 7,
+    "all_final_pdf_pages_individually_viewed": 20,
+    "all_page_counts_read_from_final_PDFs": true
+  }
+}
