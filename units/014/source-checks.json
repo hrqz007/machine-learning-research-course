@@ -1,0 +1,139 @@
+{
+  "unit": "014",
+  "checked_date": "2026-10-04",
+  "sources": [
+    {
+      "id": "R1",
+      "author": "OpenStax",
+      "title": "Calculus Volume 3 4.3 Partial Derivatives",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Definition of partial derivative with other independent variables fixed",
+        "Coordinate slices and multiple inputs"
+      ],
+      "conditions_applied": [
+        "Fixed data are separate from differentiable parameters.",
+        "A partial derivative at a point is a scalar, not the full multivariable gradient."
+      ]
+    },
+    {
+      "id": "R2",
+      "author": "OpenStax",
+      "title": "Calculus Volume 3 4.4 Tangent Planes and Linear Approximations",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-4-tangent-planes-and-linear-approximations",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Differentiability defined by remainder divided by displacement norm",
+        "Theorem 4.7 continuous partials as sufficient condition"
+      ],
+      "conditions_applied": [
+        "Partial derivatives existing at a point alone are insufficient.",
+        "Neighborhood existence and continuity hypotheses are retained.",
+        "The original model is independently proved differentiable by a uniform remainder bound."
+      ]
+    },
+    {
+      "id": "R3",
+      "author": "OpenStax",
+      "title": "Calculus Volume 3 4.5 The Chain Rule",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-5-the-chain-rule",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "One-independent-variable chain rule and proof",
+        "Two-independent-variable and generalized chain rules"
+      ],
+      "conditions_applied": [
+        "Inner and outer differentiability and local composability are explicit.",
+        "All paths contribute through a sum of local derivative products.",
+        "The proof handles zero intermediate increments without division by zero."
+      ]
+    },
+    {
+      "id": "R4",
+      "author": "OpenStax",
+      "title": "Calculus Volume 3 4.6 Directional Derivatives and the Gradient",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Directional derivative using a unit vector",
+        "Differentiability condition for the gradient-dot-direction formula",
+        "Maximum and minimum directional rates"
+      ],
+      "conditions_applied": [
+        "Unit direction is required for per-unit-distance comparisons.",
+        "Nonunit path speed is a distinct rate, not silently normalized.",
+        "Steepest change uses a specified Euclidean coordinate scale."
+      ]
+    },
+    {
+      "id": "R5",
+      "author": "Bjorn Poonen",
+      "title": "MIT 18.02 Lecture Notes Fall 2021",
+      "url": "https://math.mit.edu/~poonen/02/notes.pdf",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Sections 8.4 and 8.5; PDF pages 41-43: total derivative shape and linear approximation",
+        "Section 10.2; PDF pages 56-57: multivariable chain order"
+      ],
+      "conditions_applied": [
+        "Rows correspond to outputs, columns to input coordinates.",
+        "A scalar derivative is a row linear map; the lesson chooses a column gradient, its transpose.",
+        "The outer Jacobian is evaluated at the inner output."
+      ]
+    },
+    {
+      "id": "R6",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.matmul",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.matmul.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Notes on 1D promotion and 2D matrix products",
+        "@ operator semantics"
+      ],
+      "conditions_applied": [
+        "One-dimensional arrays do not gain a column axis from .T.",
+        "Explicit column tests distinguish (2,) and (2,1).",
+        "Contract rejects mismatched target shapes before broadcasting."
+      ]
+    },
+    {
+      "id": "R7",
+      "author": "NumPy Developers",
+      "title": "NumPy 2.3 numpy.allclose",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.allclose.html",
+      "checked_date": "2026-10-04",
+      "status": "opened_and_read",
+      "sections_checked": [
+        "Elementwise tolerance equation",
+        "Warning about near-zero absolute tolerance",
+        "Broadcasting and asymmetric reference value"
+      ],
+      "conditions_applied": [
+        "Explicit absolute and relative tolerances replace default assumptions.",
+        "Shape checks precede tolerance checks.",
+        "Passing allclose does not by itself verify shape or differentiability."
+      ]
+    }
+  ],
+  "originality": {
+    "text": "Original connected Chinese exposition and derivations; no textbook examples or paragraphs copied.",
+    "figures": "12 original program-generated teaching figures tied to the same two-parameter model.",
+    "data": "Three original deterministic dimensionless observations; no external dataset or image."
+  },
+  "proof_scope": [
+    "Direct partial-derivative derivations and a uniform multivariable remainder bound for the main model",
+    "General chain rule proved using linear maps and small remainder estimates",
+    "Continuous-partial sufficient condition stated with its hypotheses",
+    "Counterexample proves partial and even all directional derivative existence does not imply total differentiability",
+    "Finite deterministic tests validate implementation, not universal claims"
+  ],
+  "interface_policy": "Numerical wrappers deliberately reject boolean/string/complex/object inputs before float conversion, require finite nonempty fixed shapes, and reject invalid or unresolvable differences. CSV parsing is an explicit text-to-number boundary."
+}

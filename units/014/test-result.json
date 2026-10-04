@@ -1,0 +1,944 @@
+{
+  "unit": "014",
+  "checked_date": "2026-10-04",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "dtype": "float64",
+    "execution": "CPU, offline, deterministic; no random sampling and no automatic-differentiation framework"
+  },
+  "script": {
+    "file": "experiment.py",
+    "fresh_process_runs": 2,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "stdout_identical": true,
+    "report_byte_identical": true,
+    "report_sha256": "77d5589cc86c835c640cc500bc722f16e6556e753f45c53106230f7c8b18ffaf",
+    "syntax_compile": "passed",
+    "post_review_rerun": {
+      "new_processes": 2,
+      "unrelated_cwd_run": true,
+      "stdout_bytes_identical": true,
+      "report_bytes_identical": true
+    }
+  },
+  "notebook": {
+    "file": "experiment.ipynb",
+    "status": "passed",
+    "code_cells": 14,
+    "execution_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "outputs_saved": true,
+    "error_outputs": 0,
+    "kernel": "ipykernel InProcessKernel in a fresh Python process, sequential execution",
+    "absolute_internal_paths_in_outputs": false,
+    "post_review_rerun": "14 cells sequentially passed in fresh real in-process kernel; outputs saved"
+  },
+  "exact_hand": {
+    "theta": [
+      "1",
+      "1/2"
+    ],
+    "prediction": [
+      "1/4",
+      "5/4",
+      "9/4"
+    ],
+    "residual_prediction_minus_target": [
+      "-3/4",
+      "-3/4",
+      "1/4"
+    ],
+    "loss": "19/48",
+    "gradient": [
+      "-1/6",
+      "-5/6"
+    ],
+    "unit_direction": [
+      "3/5",
+      "4/5"
+    ],
+    "directional_derivative": "-23/30",
+    "directional_central_error": "(224/125)*h^2",
+    "branched_value": "3",
+    "branched_gradient": [
+      "5",
+      "2"
+    ]
+  },
+  "main": {
+    "theta": [
+      1.0,
+      0.5
+    ],
+    "loss": 0.3958333333333333,
+    "prediction": [
+      0.25,
+      1.25,
+      2.25
+    ],
+    "jacobian_shape": [
+      3,
+      2
+    ],
+    "jacobian": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0
+      ]
+    ],
+    "gradient_array_shape": [
+      2
+    ],
+    "column_gradient_shape": [
+      2,
+      1
+    ],
+    "gradient": [
+      -0.16666666666666669,
+      -0.8333333333333334
+    ],
+    "directional_analytic": -0.7666666666666667,
+    "directional_fd": -0.7666666664962739
+  },
+  "deterministic_grid": {
+    "points": 25,
+    "max_gradient_fd_abs_error": 4.0841530157820216e-10,
+    "max_prediction_jacobian_fd_abs_error": 3.78578279836006e-11,
+    "analytic_routes": [
+      "residual sum",
+      "independent expanded polynomial",
+      "Jacobian transpose times output gradient"
+    ],
+    "finite_difference_step": 1e-05
+  },
+  "branch": {
+    "value": 3.0,
+    "gradient": [
+      5.0,
+      2.0
+    ],
+    "finite_difference": [
+      5.000000000032756,
+      2.0000000000131024
+    ],
+    "paths_a": [
+      3.0,
+      0.5,
+      1.5
+    ],
+    "paths_b": [
+      3.0,
+      0.5,
+      -1.5
+    ]
+  },
+  "counterexample": {
+    "coordinate_partials": [
+      1.0,
+      0.0
+    ],
+    "diagonal_direction_fd": 0.35355339059327373,
+    "true_diagonal_direction": 0.35355339059327373,
+    "invalid_gradient_dot_prediction": 0.7071067811865475
+  },
+  "stationary": {
+    "theta": [
+      1.2,
+      0.0
+    ],
+    "loss": 0.6,
+    "loss_after_b_0_1": 0.5907666666666666,
+    "loss_after_a_0_1": 0.6166666666666667
+  },
+  "log_domain": {
+    "theta": [
+      2.0,
+      0.5
+    ],
+    "gradient": [
+      0.5714285714285714,
+      -0.5714285714285714
+    ],
+    "finite_difference": [
+      0.5714285714386591,
+      -0.5714285714719658
+    ]
+  },
+  "boundary": {
+    "passed_count": 34,
+    "names": [
+      "theta_column",
+      "theta_row",
+      "theta_length",
+      "theta_bool",
+      "theta_string",
+      "theta_complex",
+      "theta_object",
+      "theta_nan",
+      "theta_inf",
+      "x_empty",
+      "y_column",
+      "y_length",
+      "x_mixed_bool",
+      "object_leaf",
+      "zero_step",
+      "negative_step",
+      "bool_step",
+      "string_step",
+      "infinite_step",
+      "unresolved_step",
+      "overflow_denominator",
+      "directional_denominator_overflow",
+      "directional_sample_overflow",
+      "branched_gradient_sum_overflow",
+      "branched_gradient_difference_overflow",
+      "counterexample_overflow",
+      "counterexample_underflow_division",
+      "bad_method",
+      "zero_direction",
+      "nonunit_direction",
+      "domain_point",
+      "domain_crossing",
+      "changing_output_shape",
+      "single_sample_shapes"
+    ]
+  },
+  "tolerances": {
+    "fd_atol": 1e-07,
+    "fd_rtol": 1e-07,
+    "algebra_atol": 1e-12,
+    "algebra_rtol": 1e-12
+  },
+  "step_sweep": [
+    {
+      "h": 0.1,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          0.0,
+          -0.7956666666666662
+        ],
+        "max_abs_error": 0.16666666666666669,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 0.10000000000000009,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 0.09999999999999998,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666666666669,
+          -0.8133333333333326
+        ],
+        "max_abs_error": 0.020000000000000795,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 0.10000000000000009,
+            "minus_delta": 0.09999999999999998
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 0.09999999999999998,
+            "minus_delta": 0.09999999999999998
+          }
+        ]
+      }
+    },
+    {
+      "h": 0.01,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.14999999999999458,
+          -0.8314656666666642
+        ],
+        "max_abs_error": 0.016666666666672103,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 0.010000000000000009,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 0.010000000000000009,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666666666622,
+          -0.8331333333333357
+        ],
+        "max_abs_error": 0.0001999999999976465,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 0.010000000000000009,
+            "minus_delta": 0.010000000000000009
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 0.010000000000000009,
+            "minus_delta": 0.010000000000000009
+          }
+        ]
+      }
+    },
+    {
+      "h": 0.001,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16499999999997073,
+          -0.8331646656667413
+        ],
+        "max_abs_error": 0.0016666666666959595,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 0.0009999999999998899,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 0.0010000000000000009,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16666666666662056,
+          -0.8333313333333536
+        ],
+        "max_abs_error": 1.99999997974043e-06,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 0.0009999999999998899,
+            "minus_delta": 0.0010000000000000009
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 0.0010000000000000009,
+            "minus_delta": 0.0010000000000000009
+          }
+        ]
+      }
+    },
+    {
+      "h": 0.0001,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16649999999951426,
+          -0.8333166466645281
+        ],
+        "max_abs_error": 0.0001666666671524264,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.999999999998899e-05,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999999999998899e-05,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666666666483,
+          -0.8333333133334064
+        ],
+        "max_abs_error": 1.9999926936797863e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.999999999998899e-05,
+            "minus_delta": 9.999999999998899e-05
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999999999998899e-05,
+            "minus_delta": 9.999999999998899e-05
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-05,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16664999999971286,
+          -0.8333316664721478
+        ],
+        "max_abs_error": 1.6666666953824016e-05,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.0000000000065512e-05,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.99999999995449e-06,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16666666666775853,
+          -0.8333333331389524
+        ],
+        "max_abs_error": 1.9438095577584136e-10,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.0000000000065512e-05,
+            "minus_delta": 9.99999999995449e-06
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.99999999995449e-06,
+            "minus_delta": 1.0000000000010001e-05
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-06,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16666500002315843,
+          -0.8333331665832944
+        ],
+        "max_abs_error": 1.666643508257959e-06,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.999999999177334e-07,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.0000000000287557e-06,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.166666666689963,
+          -0.8333333332832815
+        ],
+        "max_abs_error": 5.0051851552268545e-11,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.999999999177334e-07,
+            "minus_delta": 1.0000000000287557e-06
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.0000000000287557e-06,
+            "minus_delta": 9.999999999732445e-07
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-07,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.1666665006005985,
+          -0.8333333162413581
+        ],
+        "max_abs_error": 1.6606606817459735e-07,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.0000000005838672e-07,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999999994736442e-08,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16666666685649645,
+          -0.833333333449815
+        ],
+        "max_abs_error": 1.8982976301984422e-10,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.0000000005838672e-07,
+            "minus_delta": 9.999999994736442e-08
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999999994736442e-08,
+            "minus_delta": 1.0000000000287557e-07
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-08,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16666664715003776,
+          -0.8333333412213761
+        ],
+        "max_abs_error": 1.9516628924076684e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.99999993922529e-09,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.0000000050247593e-08,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16666666380338313,
+          -0.8333333384458186
+        ],
+        "max_abs_error": 5.112485212954709e-09,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.99999993922529e-09,
+            "minus_delta": 1.0000000050247593e-08
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.0000000050247593e-08,
+            "minus_delta": 9.999999994736442e-09
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-09,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666804567285,
+          -0.83333329126134
+        ],
+        "max_abs_error": 4.2071993333614444e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000000082740371e-09,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999999717180685e-10,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666804567285,
+          -0.8333333467724913
+        ],
+        "max_abs_error": 1.3790061814678012e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000000082740371e-09,
+            "minus_delta": 9.999999717180685e-10
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999999717180685e-10,
+            "minus_delta": 1.0000000272292198e-09
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-10,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666804567285,
+          -0.8333334022836425
+        ],
+        "max_abs_error": 6.895030912890121e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000000082740371e-10,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.000000082740371e-10,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666804567285,
+          -0.8333334022836425
+        ],
+        "max_abs_error": 6.895030912890121e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000000082740371e-10,
+            "minus_delta": 1.000000082740371e-10
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.000000082740371e-10,
+            "minus_delta": 1.000000082740371e-10
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-11,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666804567285,
+          -0.8333334022836425
+        ],
+        "max_abs_error": 6.895030912890121e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000000082740371e-11,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.000000082740371e-11,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.1666666804567285,
+          -0.8333334022836425
+        ],
+        "max_abs_error": 6.895030912890121e-08,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000000082740371e-11,
+            "minus_delta": 1.000000082740371e-11
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.000000082740371e-11,
+            "minus_delta": 1.000000082740371e-11
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-12,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.166644475996236,
+          -0.8333334022836425
+        ],
+        "max_abs_error": 2.2190670430688453e-05,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000088900582341e-12,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999778782798785e-13,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16667223157185163,
+          -0.8333889134348738
+        ],
+        "max_abs_error": 5.558010154038673e-05,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.000088900582341e-12,
+            "minus_delta": 9.999778782798785e-13
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.999778782798785e-13,
+            "minus_delta": 9.999778782798785e-13
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-13,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16653345369377348,
+          -0.8326672684688674
+        ],
+        "max_abs_error": 0.000666064864465965,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.992007221626409e-14,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.000310945187266e-13,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16653345369377348,
+          -0.8326672684688674
+        ],
+        "max_abs_error": 0.000666064864465965,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.992007221626409e-14,
+            "minus_delta": 1.000310945187266e-13
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 1.000310945187266e-13,
+            "minus_delta": 9.997558336749535e-14
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-14,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.16653345369377348,
+          -0.8326672684688674
+        ],
+        "max_abs_error": 0.000666064864465965,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.992007221626409e-15,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.992007221626409e-15,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.16930901125533637,
+          -0.8354428260304303
+        ],
+        "max_abs_error": 0.0026423445886696872,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 9.992007221626409e-15,
+            "minus_delta": 9.992007221626409e-15
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.992007221626409e-15,
+            "minus_delta": 9.992007221626409e-15
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-15,
+      "forward": {
+        "status": "ok",
+        "gradient": [
+          -0.22204460492503128,
+          -0.7216449660063516
+        ],
+        "max_abs_error": 0.11168836732698173,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.1102230246251565e-15,
+            "minus_delta": null
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.992007221626409e-16,
+            "minus_delta": null
+          }
+        ]
+      },
+      "central": {
+        "status": "ok",
+        "gradient": [
+          -0.19428902930940237,
+          -0.7771561172376095
+        ],
+        "max_abs_error": 0.0561772160957239,
+        "actual_steps": [
+          {
+            "coordinate": 0,
+            "plus_delta": 1.1102230246251565e-15,
+            "minus_delta": 9.992007221626409e-16
+          },
+          {
+            "coordinate": 1,
+            "plus_delta": 9.992007221626409e-16,
+            "minus_delta": 9.992007221626409e-16
+          }
+        ]
+      }
+    },
+    {
+      "h": 1e-16,
+      "forward": {
+        "status": "rejected",
+        "reason": "步长在当前参数尺度下不可分辨"
+      },
+      "central": {
+        "status": "rejected",
+        "reason": "步长在当前参数尺度下不可分辨"
+      }
+    },
+    {
+      "h": 1e-20,
+      "forward": {
+        "status": "rejected",
+        "reason": "步长在当前参数尺度下不可分辨"
+      },
+      "central": {
+        "status": "rejected",
+        "reason": "步长在当前参数尺度下不可分辨"
+      }
+    }
+  ],
+  "figures": {
+    "count": 12,
+    "all_referenced_in_lecture": true,
+    "visual_review": "All twelve rendered figures reviewed; detailed full-size inspections of model, tangent-plane, shape-chain and branched-path figures.",
+    "missing_glyph_warnings": 0
+  },
+  "validation_scope": [
+    "Fraction exact loss, gradient and directional derivative",
+    "Prediction Jacobian dimensions and each entry",
+    "Output-gradient to parameter-gradient multiplication in 1D-storage and explicit-column forms",
+    "25-point independent analytic and finite-difference agreement",
+    "Local linear remainder and unit-direction checks",
+    "Shared-node path contributions including negative path",
+    "Continuous counterexample with partials and all directional derivatives but no total derivative",
+    "Stationary point that is not a local minimum",
+    "Log-domain valid and invalid sampling",
+    "Type, shape, step, nonfinite denominator, unresolvable sampling and single-sample boundaries"
+  ],
+  "not_tested": [
+    "Jupyter browser user interface",
+    "Out-of-process kernel socket transport",
+    "Learner local Anaconda installation and other operating systems",
+    "Arbitrary-scale production robustness beyond the documented small finite float64 examples"
+  ],
+  "interpretation_limits": [
+    "Finite-difference agreement does not prove differentiability.",
+    "A single directional check may miss an error orthogonal to the chosen direction.",
+    "Local steepest direction does not guarantee a finite large step decreases loss.",
+    "Coordinate scaling changes Euclidean steepest-direction comparisons."
+  ],
+  "post_review_regressions": {
+    "directional_nonfinite_samples": "rejected before callback is invoked",
+    "branched_gradient_overflow": "sum and difference overflow rejected",
+    "counterexample_nonfinite": "large overflow and tiny 0/0 rejected",
+    "new_boundary_count": 34
+  }
+}

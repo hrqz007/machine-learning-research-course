@@ -1,0 +1,163 @@
+{
+  "unit": "014",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 18,
+    "figures": 12
+  },
+  "lab": {
+    "pages": 4
+  },
+  "answers": {
+    "pages": 5
+  },
+  "visual_review": "All 27 final PDF pages inspected individually at rendered resolution after descriptive-reference formatting; two retained notebook PNG outputs inspected. Lab final page with revised count34 rerendered and inspected.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "boundary_groups": 34,
+    "deterministic_gradient_points": 25,
+    "unrelated_cwd_run": "passed",
+    "details": "test-result.json",
+    "review_fix": "Reject nonfinite directional sampling before callback, branch gradient overflow, and nonfinite counterexample outputs; five new regression cases."
+  },
+  "notebook": {
+    "code_cells": 14,
+    "png_outputs": 2,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved",
+    "private_path_check": "passed"
+  },
+  "source_checks": "source-checks.json",
+  "limitations": [
+    "small deterministic synthetic examples only",
+    "finite differences do not prove differentiability",
+    "column-gradient convention is mathematical; one-dimensional NumPy arrays are explicitly distinguished",
+    "floating-point threshold and rounding values can vary by platform",
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "files": {
+    "lecture.md": {
+      "bytes": 33642,
+      "sha256": "2a8e4214d3f1794527a3507c6f42f2442ff5f39bd52aadb345c4e5b30442042c"
+    },
+    "lecture.pdf": {
+      "bytes": 2315953,
+      "sha256": "a1476b03ad1ae0b9efe5b7b43eb38ea1ea7fcd6b0edaad5d52a53a453f04ec91"
+    },
+    "lab.md": {
+      "bytes": 8951,
+      "sha256": "859e8e832f42ca2a24af37dd69add54324960dd615336362fb964967c366d8c5"
+    },
+    "lab.pdf": {
+      "bytes": 516174,
+      "sha256": "8f2e62afa52d0b0e140ff7f4ea012aefd639c1649905ca0cacccca025c6e4f5c"
+    },
+    "answers.md": {
+      "bytes": 11316,
+      "sha256": "b515502a98b238381bb0236e96d410496662be896fb1cbad03801a9ca50a1d8c"
+    },
+    "answers.pdf": {
+      "bytes": 617122,
+      "sha256": "cb88bf103566dd269f93b2538bb30a13fe249d805d2fe7acd9632b9a09c2fc90"
+    },
+    "experiment.py": {
+      "bytes": 18871,
+      "sha256": "3cd3a65c97d32dd8f40dda299a384f4133b1edc56eae57914de91c3f09a1c978"
+    },
+    "experiment.ipynb": {
+      "bytes": 130680,
+      "sha256": "8505ba1565725ad0fce8bd1c912693d7a6efaaed09ce4205f1e67d130916b5f6"
+    },
+    "README.md": {
+      "bytes": 1176,
+      "sha256": "c0b2d1afca050031437b767f0d225865517f35ee65d016de2e816ca5a5cdc1a5"
+    },
+    "requirements.txt": {
+      "bytes": 24,
+      "sha256": "eb712387fa3e4237362dd65e2ad8307eb7ad5b56a265ef01cc76328ebca08233"
+    },
+    "source-checks.json": {
+      "bytes": 6151,
+      "sha256": "ea6c035f29636b255f0380e9fe0704dfc481bb64dd54ed0603d58e12017cc7c9"
+    },
+    "test-result.json": {
+      "bytes": 23165,
+      "sha256": "48e05f30113ccdd46a16dd58e6f1be6f3b0295f2417c220a6644d832d9ad2b15"
+    },
+    "data/README.md": {
+      "bytes": 715,
+      "sha256": "d2bd678546262612c697f9c7973021b79a0c32da07567c777d8203fc54309c09"
+    },
+    "data/observations.csv": {
+      "bytes": 38,
+      "sha256": "d08bd3d566437b5b6648ead5054c7c1bd580cf8b35c98d767a8ccb7af9d07e6d"
+    },
+    "figures/01_prediction_loss.png": {
+      "bytes": 194336,
+      "sha256": "1cee13684a6ecac559ae039b2a21eca3588bd22db45d90f0bea47270780fc270"
+    },
+    "figures/02_partial_slices.png": {
+      "bytes": 96344,
+      "sha256": "f3a27b6166c5454fe683bce0fda73a54c56adc474748d84271127f36c81dec49"
+    },
+    "figures/03_tangent_remainder.png": {
+      "bytes": 200777,
+      "sha256": "e4d7f65517e6a518e18be323143bed89a82515104942d4e31df25e1fdd77b638"
+    },
+    "figures/04_partial_counterexample.png": {
+      "bytes": 147008,
+      "sha256": "33cd6ddcb81eb2ffd1d02901345e54e91d87f4e73574ea7e3617f5d0a1f7165e"
+    },
+    "figures/05_gradient_directions.png": {
+      "bytes": 111878,
+      "sha256": "eba58ec90915c19899605075ad4870f80b935d83d3592fea678d145bf0da6808"
+    },
+    "figures/06_jacobian_entries.png": {
+      "bytes": 65659,
+      "sha256": "38b656765eed41480a31185c3baacf8d2d12605bf4eeb1fbccf0762b1f935f54"
+    },
+    "figures/07_jacobian_action.png": {
+      "bytes": 66170,
+      "sha256": "1ddc596a148aefb0fb925bdd64fba2405194ffe950dd1d324da97a3baba63bd5"
+    },
+    "figures/08_chain_shapes.png": {
+      "bytes": 96044,
+      "sha256": "c73a2d6bb20f0a34d36d5b307f71ed35ef4487a7455e66fb10347c34b677ebb4"
+    },
+    "figures/09_gradient_contributions.png": {
+      "bytes": 55831,
+      "sha256": "7d06b6c46e3164c73a93f5746a920718ac4c2e2565eed10d4b8d8d908d2f8d8e"
+    },
+    "figures/10_branched_paths.png": {
+      "bytes": 90806,
+      "sha256": "fe86c60e388573553557b4d019288fdf6e120d7d2d59905dc6450710448c8a4e"
+    },
+    "figures/11_difference_steps.png": {
+      "bytes": 115192,
+      "sha256": "15d1c2290c2ed9eb6aa32845d58a1403ee3e19bc4fbda068334c5d03b6209e13"
+    },
+    "figures/12_shape_audit.png": {
+      "bytes": 58767,
+      "sha256": "2d24c3469131c53ae02b16680ddebd8dee10696afd5e59d7a5a3e22ba6ae26eb"
+    }
+  },
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed_after_boundary_revision",
+    "checks": [
+      "26 final payload hashes matched",
+      "all 27 PDF pages, 12 figures and 2 notebook plots inspected; revised lab page4 rechecked",
+      "34 boundary groups and 25 deterministic points",
+      "14 notebook cells in fresh real in-process kernel; two unrelated-cwd script runs matched",
+      "220 additional Fraction loss, gradient, Jacobian and directional-difference cases",
+      "100 counterexample directions and 300 scale samples",
+      "main directional quartic coefficients independently checked by polynomial convolution",
+      "7 overflow/underflow regressions reject; invalid directional samples never reached callback",
+      "full-differentiability conditions, matrix chain order and sources checked"
+    ]
+  }
+}

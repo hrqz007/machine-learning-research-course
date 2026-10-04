@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–013 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–014 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -45,6 +45,8 @@
 - [第 012 讲：特征值与奇异值分解](units/012/README.md)：[正文](units/012/lecture.pdf) · [实验指南](units/012/lab.pdf) · [Notebook](units/012/experiment.ipynb)
 
 - [第 013 讲：一元导数与局部变化](units/013/README.md)：[正文](units/013/lecture.pdf) · [实验指南](units/013/lab.pdf) · [Notebook](units/013/experiment.ipynb)
+
+- [第 014 讲：多元导数与链式法则](units/014/README.md)：[正文](units/014/lecture.pdf) · [实验指南](units/014/lab.pdf) · [Notebook](units/014/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
