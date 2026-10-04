@@ -1,0 +1,391 @@
+{
+  "unit": "030",
+  "title": "损失曲面与优化问题",
+  "verification_date_utc": "2026-10-04",
+  "status": "author checks complete; independent review and publication handled separately",
+  "catalog": {
+    "core_question": "求参数为什么是一个几何和计算问题？",
+    "direct_prerequisites": "14至15、28"
+  },
+  "pdf_pages": {
+    "lecture": 14,
+    "lab": 6,
+    "answers": 7
+  },
+  "lecture_sections": 18,
+  "exercises_with_full_solutions": 16,
+  "original_figures": 12,
+  "notebook": {
+    "status": "passed",
+    "code_cells": 13,
+    "retained_png_outputs": 8,
+    "kernel": "Fresh Python process; real ipykernel InProcessKernel; cells executed sequentially",
+    "baseline_guard": "Complete SHA256 checks for both original data and configuration files, before any print or plot; actual Notebook guard executed against four mutations",
+    "browser_jupyter_tested": false,
+    "anaconda_install_tested": false,
+    "out_of_process_transport_tested": false
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "script_tests": {
+    "normal_mode_checks": 3441,
+    "optimized_mode_checks": 3441,
+    "independent_exact_data_families": 180,
+    "high_precision_decimal_digits": 350,
+    "fresh_process_runs_per_mode": 2,
+    "distinct_cwd_per_mode": 2,
+    "two_cwd_output_byte_identical": true,
+    "report_sha256": "86f554bc6d7eeaf4c4c16f070d630b94642498fbac4ae4f0b1bb962bb299cd82",
+    "coverage": [
+      "independent raw-sum Fraction closed forms versus centered exact reference",
+      "candidate losses, gradients and global quadratic identity",
+      "350-digit Decimal mixed-scale checks with strict small-value relative comparisons",
+      "two paper updates, Hessian eigenvalues, finite differences, constraint oracle and zero-budget statuses",
+      "all original scalar types, shapes and final/unselected fields validated before solver",
+      "raw JSON numeric tokens and duplicate keys; raw CSV token underflow; true zero accepted",
+      "nonfinite/underflow and tiny residual squares; false rounded-zero loss recovered from exact residuals or explicitly rejected on underflow",
+      "bad CSV/JSON preserve old output bytes and do not create new output directory",
+      "no assert-based input gates; tests rerun under python -O"
+    ]
+  },
+  "exact_anchors": {
+    "hand_theta": [
+      "3/5",
+      "6/5"
+    ],
+    "hand_minimum_J": "4/25",
+    "hand_hessian": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    "constant_optimal_set": "a+2b=7/3",
+    "constant_minimum_J": "7/9",
+    "changed_sample_theta": [
+      "4/5",
+      "13/10"
+    ],
+    "changed_sample_minimum_J": "3/100",
+    "constraint_b_le_1_theta": [
+      "1",
+      "1"
+    ],
+    "constraint_minimum_J": "1/5"
+  },
+  "actual_default_paths": [
+    {
+      "name": "moderate",
+      "status": "gradient_tolerance_met",
+      "updates_completed": 251,
+      "final_loss": 0.16000000000000017,
+      "final_gradient_norm": 9.862246098317051e-09
+    },
+    {
+      "name": "short_budget",
+      "status": "budget_exhausted",
+      "updates_completed": 20,
+      "final_loss": 0.16233535470050037,
+      "final_gradient_norm": 0.03741800457153318
+    },
+    {
+      "name": "too_large",
+      "status": "growth_limit_reached",
+      "updates_completed": 45,
+      "final_loss": 2367913580906.085,
+      "final_gradient_norm": 5633599.196640333
+    }
+  ],
+  "visual_review": {
+    "pdf_pages_individually_inspected": 26,
+    "standalone_pngs_individually_inspected": 12,
+    "notebook_pngs_individually_inspected": 8,
+    "status": "passed; all final layouts/PNGs inspected, modified pages rechecked",
+    "pdf_pages_total": 27
+  },
+  "privacy": {
+    "public_text_metadata_and_decoded_notebook_stream_scan": "passed",
+    "private_absolute_paths": false,
+    "credentials_or_paid_apis": false,
+    "private_data": false
+  },
+  "limitations": [
+    "Finite tests are not a formal proof for arbitrary inputs.",
+    "Bounded binary64 teaching implementation with explicit range and underflow failures; not a general optimization library.",
+    "Exact reference concerns stored binary values, not original measurements before rounding.",
+    "Finite-grid minima are not global-optimality proofs; optimizer success is not model truth or generalization.",
+    "No random simulation or real-world benchmark; observed iteration counts are not CPU performance claims.",
+    "Matplotlib stable quiver source displayed version 3.11.2; used parameters executed with installed 3.10.8.",
+    "Anaconda installation, browser Jupyter interface and out-of-process kernel transport were not tested."
+  ],
+  "files_excluding_this_record": [
+    {
+      "path": "README.md",
+      "bytes": 8721,
+      "sha256": "6e3f16266262190a05fa647f273aa6e0b3a4476b0e127b94eb183046fe5bc517"
+    },
+    {
+      "path": "answers.md",
+      "bytes": 15860,
+      "sha256": "e05e6024dc3a32e4a728a0c7596142c3e3dc1e4bc6efdc40ef049beadf968fb2"
+    },
+    {
+      "path": "answers.pdf",
+      "bytes": 699203,
+      "sha256": "df1a269695c04c45ef668d1811755a17bfe58f6a70c323485ddc6fd31e484c29"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 2100,
+      "sha256": "cf5df2b207acdc54f599ad8a74e198bdb0147483c272b8dc73d52c9a5b073151"
+    },
+    {
+      "path": "data/cases.csv",
+      "bytes": 243,
+      "sha256": "4609bae2ecc4274331a508e5134082b8f4498e8a4b2a9f13129baf191d2e01f6"
+    },
+    {
+      "path": "data/model_spec.json",
+      "bytes": 529,
+      "sha256": "a8dfc0f2702252f3a539d7dfc305b67acf99b1607e6e1d4b3c6d5399c95c6e9b"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 218,
+      "sha256": "3f6ab3ede1e7f69b0f804eca4d669f24a333496711bccae5fa76ef1472998c42"
+    },
+    {
+      "path": "experiment.ipynb",
+      "bytes": 1348700,
+      "sha256": "17b2057fa90c882149035559347e04cf56e7278d890b28505de551e214d88e5f"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 16648,
+      "sha256": "78039bf6bd3babc68290c1637079e8e51dd6bc7b1f35f8349fb5e60122788fd3"
+    },
+    {
+      "path": "figures/01_three_spaces.png",
+      "bytes": 169502,
+      "sha256": "a8cbaf43463b0eaf68931562910e64306e281ea38019a4783dde169bdf7a39a3"
+    },
+    {
+      "path": "figures/02_surface_contours.png",
+      "bytes": 295130,
+      "sha256": "8e032d4d9c1266680880880c843c49b9f01a6293be526ef21a9f2464da942751"
+    },
+    {
+      "path": "figures/03_sublevel_predictions.png",
+      "bytes": 102653,
+      "sha256": "cb923cf24d786418d8edd6e2d725f128e15a5e2ab8c909c1edc072b923a056ea"
+    },
+    {
+      "path": "figures/04_gradient_field.png",
+      "bytes": 222573,
+      "sha256": "5ff6167b4d4d24a769ec97e4595c8b0d1d250f90c4f8b845929657eeb5659040"
+    },
+    {
+      "path": "figures/05_curvature_slices.png",
+      "bytes": 185362,
+      "sha256": "6e3dedb28cf47aa2276c55a85f0d2b92dea42ea1c081edadece62ce2db411310"
+    },
+    {
+      "path": "figures/06_coordinates.png",
+      "bytes": 214418,
+      "sha256": "0d10b2231d202fefc4517c9548c1658208df5ba31352a949cae0925c08f5b6b0"
+    },
+    {
+      "path": "figures/07_flat_valley.png",
+      "bytes": 199944,
+      "sha256": "dc49b6e8c8ccc968e8568f5f19261e4708f03d0e202ededf629e4d0ff78fd746"
+    },
+    {
+      "path": "figures/08_stationary_examples.png",
+      "bytes": 85519,
+      "sha256": "c80644dc2b0490c836503f4866a6768be961d4f87926e17fd9418e05f655951d"
+    },
+    {
+      "path": "figures/09_paths.png",
+      "bytes": 180967,
+      "sha256": "01c0f33b6bd0d970c0538e778ebf256a50ec3f6e09a7f7a5fcf87abf78c68c7d"
+    },
+    {
+      "path": "figures/10_grid_resolution.png",
+      "bytes": 198221,
+      "sha256": "ad11f2cf17f6b3100aa11a6c9e56c0afb5e57ba0026cf90890378c7547476a57"
+    },
+    {
+      "path": "figures/11_constraint.png",
+      "bytes": 158488,
+      "sha256": "ea40daad3064576854e0dd7868968d05f16014c07248c2193c1a4a85e5b591e6"
+    },
+    {
+      "path": "figures/12_two_objectives.png",
+      "bytes": 255670,
+      "sha256": "9c6d47670d77d27e7b7dd1dc8520e2d55f90bc61eb1c97f37f6222490d230ff6"
+    },
+    {
+      "path": "lab.md",
+      "bytes": 12107,
+      "sha256": "0e43ff7fe84fb4776175a8b1f1e02cd0a58ce5d0ee0994ebf40ccfdc9eeeb3f9"
+    },
+    {
+      "path": "lab.pdf",
+      "bytes": 1049962,
+      "sha256": "2a2c7927c3e47baa3b4d6b647ec69ce08f07f78736f285542e792daa79bef2b1"
+    },
+    {
+      "path": "lecture.md",
+      "bytes": 31877,
+      "sha256": "2a33d0d0d76a2d71d9d3cdea617c7effbe7976ff25b5c24140291f7aa96dc0b2"
+    },
+    {
+      "path": "lecture.pdf",
+      "bytes": 3035880,
+      "sha256": "985f25077f3c3f7c52e6bf47d8d3e4ecd809162d8cfcfe7ec03e2f769053d6ff"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 85,
+      "sha256": "533b9aaddc957ca5b2333759cc410bada66e9baa0b5cc2ee8d67f786a32dc860"
+    },
+    {
+      "path": "source-checks.json",
+      "bytes": 3991,
+      "sha256": "327cbf197125eace07c7824f7ecd913e2658ef36dd725dc7b28e595763567276"
+    }
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 8721,
+      "sha256": "6e3f16266262190a05fa647f273aa6e0b3a4476b0e127b94eb183046fe5bc517"
+    },
+    "answers.md": {
+      "bytes": 15860,
+      "sha256": "e05e6024dc3a32e4a728a0c7596142c3e3dc1e4bc6efdc40ef049beadf968fb2"
+    },
+    "answers.pdf": {
+      "bytes": 699203,
+      "sha256": "df1a269695c04c45ef668d1811755a17bfe58f6a70c323485ddc6fd31e484c29"
+    },
+    "data/README.md": {
+      "bytes": 2100,
+      "sha256": "cf5df2b207acdc54f599ad8a74e198bdb0147483c272b8dc73d52c9a5b073151"
+    },
+    "data/cases.csv": {
+      "bytes": 243,
+      "sha256": "4609bae2ecc4274331a508e5134082b8f4498e8a4b2a9f13129baf191d2e01f6"
+    },
+    "data/model_spec.json": {
+      "bytes": 529,
+      "sha256": "a8dfc0f2702252f3a539d7dfc305b67acf99b1607e6e1d4b3c6d5399c95c6e9b"
+    },
+    "environment.yml": {
+      "bytes": 218,
+      "sha256": "3f6ab3ede1e7f69b0f804eca4d669f24a333496711bccae5fa76ef1472998c42"
+    },
+    "experiment.ipynb": {
+      "bytes": 1348700,
+      "sha256": "17b2057fa90c882149035559347e04cf56e7278d890b28505de551e214d88e5f"
+    },
+    "experiment.py": {
+      "bytes": 16648,
+      "sha256": "78039bf6bd3babc68290c1637079e8e51dd6bc7b1f35f8349fb5e60122788fd3"
+    },
+    "figures/01_three_spaces.png": {
+      "bytes": 169502,
+      "sha256": "a8cbaf43463b0eaf68931562910e64306e281ea38019a4783dde169bdf7a39a3"
+    },
+    "figures/02_surface_contours.png": {
+      "bytes": 295130,
+      "sha256": "8e032d4d9c1266680880880c843c49b9f01a6293be526ef21a9f2464da942751"
+    },
+    "figures/03_sublevel_predictions.png": {
+      "bytes": 102653,
+      "sha256": "cb923cf24d786418d8edd6e2d725f128e15a5e2ab8c909c1edc072b923a056ea"
+    },
+    "figures/04_gradient_field.png": {
+      "bytes": 222573,
+      "sha256": "5ff6167b4d4d24a769ec97e4595c8b0d1d250f90c4f8b845929657eeb5659040"
+    },
+    "figures/05_curvature_slices.png": {
+      "bytes": 185362,
+      "sha256": "6e3dedb28cf47aa2276c55a85f0d2b92dea42ea1c081edadece62ce2db411310"
+    },
+    "figures/06_coordinates.png": {
+      "bytes": 214418,
+      "sha256": "0d10b2231d202fefc4517c9548c1658208df5ba31352a949cae0925c08f5b6b0"
+    },
+    "figures/07_flat_valley.png": {
+      "bytes": 199944,
+      "sha256": "dc49b6e8c8ccc968e8568f5f19261e4708f03d0e202ededf629e4d0ff78fd746"
+    },
+    "figures/08_stationary_examples.png": {
+      "bytes": 85519,
+      "sha256": "c80644dc2b0490c836503f4866a6768be961d4f87926e17fd9418e05f655951d"
+    },
+    "figures/09_paths.png": {
+      "bytes": 180967,
+      "sha256": "01c0f33b6bd0d970c0538e778ebf256a50ec3f6e09a7f7a5fcf87abf78c68c7d"
+    },
+    "figures/10_grid_resolution.png": {
+      "bytes": 198221,
+      "sha256": "ad11f2cf17f6b3100aa11a6c9e56c0afb5e57ba0026cf90890378c7547476a57"
+    },
+    "figures/11_constraint.png": {
+      "bytes": 158488,
+      "sha256": "ea40daad3064576854e0dd7868968d05f16014c07248c2193c1a4a85e5b591e6"
+    },
+    "figures/12_two_objectives.png": {
+      "bytes": 255670,
+      "sha256": "9c6d47670d77d27e7b7dd1dc8520e2d55f90bc61eb1c97f37f6222490d230ff6"
+    },
+    "lab.md": {
+      "bytes": 12107,
+      "sha256": "0e43ff7fe84fb4776175a8b1f1e02cd0a58ce5d0ee0994ebf40ccfdc9eeeb3f9"
+    },
+    "lab.pdf": {
+      "bytes": 1049962,
+      "sha256": "2a2c7927c3e47baa3b4d6b647ec69ce08f07f78736f285542e792daa79bef2b1"
+    },
+    "lecture.md": {
+      "bytes": 31877,
+      "sha256": "2a33d0d0d76a2d71d9d3cdea617c7effbe7976ff25b5c24140291f7aa96dc0b2"
+    },
+    "lecture.pdf": {
+      "bytes": 3035880,
+      "sha256": "985f25077f3c3f7c52e6bf47d8d3e4ecd809162d8cfcfe7ec03e2f769053d6ff"
+    },
+    "requirements.txt": {
+      "bytes": 85,
+      "sha256": "533b9aaddc957ca5b2333759cc410bada66e9baa0b5cc2ee8d67f786a32dc860"
+    },
+    "source-checks.json": {
+      "bytes": 3991,
+      "sha256": "327cbf197125eace07c7824f7ecd913e2658ef36dd725dc7b28e595763567276"
+    }
+  },
+  "coordinator_checks": {
+    "status": "passed",
+    "frozen_payload_hashes_checked": 28,
+    "fresh_normal_and_optimized_audit_checks_each": 3441,
+    "fresh_notebook_code_cells": 13,
+    "all_notebook_outputs_byte_identical": false,
+    "all_pdf_pages_individually_viewed": 27,
+    "notebook_pngs_individually_viewed": 8,
+    "content_changes": "Added complete row-wise forward, residual, loss, local derivative, shared-gradient and update chain at t=0,1,2 to answers 11, lecture 13 and actual notebook. No experiment.py changes.",
+    "independent_review": "pending",
+    "all_8_notebook_png_outputs_byte_identical": true,
+    "original_first_8_lecture_pages_pixel_identical": true,
+    "revised_pages_reviewed": "lecture9-14 and all7answers pages; unchanged6labpages and earlier first8lecturepages retained"
+  }
+}

@@ -836,7 +836,7 @@
         "实验与验收": "对预先设定的比较做配对检验与区间；模拟反复试验如何增加假阳性。",
         "常见误区": "p值当假设为真的概率；只报显著不报效应；筛选有利实验。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {},
       "checks": {
         "scientific": "independent_passed",
@@ -844,10 +844,15 @@
         "script": "passed",
         "notebook": "passed_inprocess_fresh_kernel",
         "pdf_visual": "all_23_pages_passed",
-        "remote": "pending"
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "71949c025700864dbb828170fca620ee4867308a",
+        "remote_files_verified": 28,
+        "remote_hash_matched": true,
+        "repository_files_verified": 784
       }
     },
     {
@@ -860,7 +865,7 @@
         "实验与验收": "重复抽样比较均值、稳健估计和收缩估计；分开记录偏差与方差。",
         "常见误区": "把一次数据集上的误差当期望；认为无偏必然最好。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {},
       "checks": {
         "scientific": "independent_passed",
@@ -868,10 +873,15 @@
         "script": "passed",
         "notebook": "passed_inprocess_fresh_kernel",
         "pdf_visual": "all_19_pages_passed",
-        "remote": "pending"
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "71949c025700864dbb828170fca620ee4867308a",
+        "remote_files_verified": 29,
+        "remote_hash_matched": true,
+        "repository_files_verified": 784
       }
     },
     {
@@ -884,7 +894,7 @@
         "实验与验收": "手算小数据最优直线，再核验代码与残差图；讨论单位与外推。",
         "常见误区": "把线性关系当因果关系；训练范围外预测不说明风险。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {},
       "checks": {
         "scientific": "independent_passed",
@@ -892,10 +902,15 @@
         "script": "passed",
         "notebook": "passed_inprocess_fresh_kernel",
         "pdf_visual": "all_26_pages_passed",
-        "remote": "pending"
+        "remote": "all_repository_Git_SHA_verified_at_content_commit"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "https://github.com/hrqz007/machine-learning-research-course",
+        "content_commit": "71949c025700864dbb828170fca620ee4867308a",
+        "remote_files_verified": 28,
+        "remote_hash_matched": true,
+        "repository_files_verified": 784
       }
     },
     {

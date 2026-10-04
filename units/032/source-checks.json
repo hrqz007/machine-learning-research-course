@@ -1,0 +1,50 @@
+{
+  "unit": "032",
+  "checked_date_utc": "2026-10-04",
+  "method": "Actually opened official/author pages through web tool and inspected relevant returned passages",
+  "sources": [
+    {
+      "title": "Boyd and Vandenberghe unconstrained optimization slides",
+      "url": "https://web.stanford.edu/class/ee364a/lectures/unconstrained.pdf",
+      "checked": true,
+      "scope": "41-page author slides; viewed quadratic example, gradient descent, metric and coordinate change; independent data, proof and images in this unit."
+    },
+    {
+      "title": "NumPy 2.3 eigvalsh",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.eigvalsh.html",
+      "checked": true,
+      "scope": "Read real-symmetric eigenvalues, ascending order, multiplicities; numerical spectrum is not exact rank."
+    },
+    {
+      "title": "NumPy 2.3 lstsq",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.lstsq.html",
+      "checked": true,
+      "scope": "Read shape, rcond, minimum norm and empty residual output semantics; notebook recomputes SSE."
+    },
+    {
+      "title": "scikit-learn StandardScaler",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html",
+      "checked": true,
+      "scope": "Read training-only mean/scale, zero-variance scale1, ddof0; stable page observed 1.9.1, no sklearn runtime dependency."
+    },
+    {
+      "title": "scikit-learn common pitfalls",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "checked": true,
+      "scope": "Read split first, train fit, validation/test transform and pipeline leakage guidance."
+    },
+    {
+      "title": "Python 3.12 Fraction",
+      "url": "https://docs.python.org/3.12/library/fractions.html",
+      "checked": true,
+      "scope": "Read exact rational construction from stored float and numerator/denominator semantics."
+    },
+    {
+      "title": "Python 3.12 JSON",
+      "url": "https://docs.python.org/3.12/library/json.html",
+      "checked": true,
+      "scope": "Read parse_float, parse_int, parse_constant, object_pairs_hook; used to reject duplicate keys and unsafe raw numeric tokens."
+    }
+  ],
+  "originality": "All exposition, synthetic data, numerical examples, diagrams and code independently authored. No source examples or artwork copied."
+}

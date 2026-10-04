@@ -1,0 +1,65 @@
+{
+  "unit": "030",
+  "checked_on_utc": "2026-10-04",
+  "method": "Actual read-only retrieval of primary author or official documentation pages; claims checked against retrieved sections.",
+  "originality": "All learning prose, worked data, figures and exercises independently authored. No textbook figure or solution reproduction.",
+  "sources": [
+    {
+      "id": "boyd_home",
+      "title": "Convex Optimization author-maintained book page",
+      "author": "Stephen Boyd and Lieven Vandenberghe",
+      "url": "https://web.stanford.edu/~boyd/cvxbook/",
+      "checked": "Author/title and freely readable book/slides links; copyright remains with publisher.",
+      "use_and_limits": "Bibliographic and copyright context only; full book fetch timed out and was not used as an inspected source."
+    },
+    {
+      "id": "boyd_unconstrained",
+      "title": "Unconstrained minimization lecture slides",
+      "author": "Stephen Boyd, Lieven Vandenberghe; revised with Parth Nobel",
+      "url": "https://web.stanford.edu/class/ee364a/lectures/unconstrained.pdf",
+      "checked": "PDF pp. 4–8 and 10–13: convex quadratic objective, stationary equation, iterative methods, strong-convexity gap bound and gradient stopping criterion.",
+      "use_and_limits": "Mathematical cross-check; original course derivations and figures were written independently."
+    },
+    {
+      "id": "numpy_eigvalsh",
+      "title": "numpy.linalg.eigvalsh — NumPy 2.3",
+      "author": "NumPy Developers",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.eigvalsh.html",
+      "checked": "Real symmetric / complex Hermitian eigenvalues, ascending order, UPLO convention and possible nonconvergence exception.",
+      "use_and_limits": "Used only with real symmetric 2×2 Hessian; numerical positive eigenvalue is not sole mathematical uniqueness criterion."
+    },
+    {
+      "id": "numpy_meshgrid",
+      "title": "numpy.meshgrid — NumPy 2.3",
+      "author": "NumPy Developers",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.meshgrid.html",
+      "checked": "xy versus ij index conventions and (N,M) output shape for two coordinate lengths (M,N).",
+      "use_and_limits": "Grid row/column orientation independently checked at a corner."
+    },
+    {
+      "id": "mpl_contour",
+      "title": "matplotlib.axes.Axes.contour — Matplotlib 3.10.8",
+      "author": "Matplotlib Developers",
+      "url": "https://matplotlib.org/3.10.8/api/_as_gen/matplotlib.axes.Axes.contour.html",
+      "checked": "Coordinate array sizes, monotone coordinate requirement, height matrix shape and increasing explicit contour levels.",
+      "use_and_limits": "Version matches execution environment."
+    },
+    {
+      "id": "mpl_quiver",
+      "title": "matplotlib.axes.Axes.quiver — stable documentation",
+      "author": "Matplotlib Developers",
+      "url": "https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.quiver.html",
+      "checked": "angles=xy uses data coordinates; default uv uses display coordinates; scale and scale_units control arrow length.",
+      "use_and_limits": "Stable page identified itself as 3.11.2; exact 3.10.8 page retrieval failed, so this version difference is disclosed. Core used parameters executed on 3.10.8."
+    },
+    {
+      "id": "bottou_review",
+      "title": "Optimization Methods for Large-Scale Machine Learning",
+      "author": "Léon Bottou, Frank E. Curtis and Jorge Nocedal",
+      "url": "https://arxiv.org/abs/1606.04838",
+      "checked": "Title, author list, v3 dated 2018-02-08; introduction and sections 2.3/3.1 distinguishing expected and empirical risk; section 4.4 passage on optimization, estimation and approximation errors.",
+      "use_and_limits": "Further-reading context and risk/optimization distinction only. This unit does not copy paper figures or transfer large-scale performance results to the toy experiment.",
+      "full_text_url": "https://arxiv.org/html/1606.04838v3"
+    }
+  ]
+}

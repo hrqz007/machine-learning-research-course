@@ -1,0 +1,55 @@
+{
+  "unit": "029",
+  "date": "2026-10-04",
+  "core_self_test_groups": 8,
+  "independent_author_audit": {
+    "status": "passed",
+    "checks": 4220,
+    "fraction_random_datasets": 240,
+    "dyadic_cases": 7,
+    "high_precision_digits": 100,
+    "cli_bad_inputs": 18,
+    "pre_solver_bad_configs": 12
+  },
+  "normal_and_optimized": "same4220checks passed",
+  "fresh_script_runs": "normal and-O from two unrelated cwd produced byte-identical reports",
+  "report_sha256": "ebe0b73fb15bbacd05dc46eb50a58056f3800e560efb4589e22db94bcff8e270",
+  "notebook": {
+    "code_cells": 12,
+    "total_cells": 26,
+    "retained_pngs": 7,
+    "errors": 0,
+    "kernel": "fresh real InProcessKernel"
+  },
+  "observed_default_numeric_ranks": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+  ],
+  "exact_stored_ranks": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "exact_hand_beta": [
+    "1/2",
+    "3",
+    "0"
+  ],
+  "exact_hand_sse": "1",
+  "exact_family_beta": [
+    "1",
+    "2",
+    "1"
+  ],
+  "exact_family_sse": "3/64",
+  "scope": "Original bounded deterministic synthetic CPU experiments, not general-purpose solver or real prediction performance benchmark."
+}

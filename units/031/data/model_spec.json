@@ -1,0 +1,12 @@
+{
+  "kind": "synthetic_scalar_gradient_descent_demo",
+  "initial_slope": 0.0,
+  "trajectory_steps": 20,
+  "max_steps": 250,
+  "gradient_tolerance": 0.0000000001,
+  "parameter_error_tolerance": 0.000001,
+  "objective_multiplier": 10.0,
+  "parameter_scale": 100.0,
+  "counterexample_initial": 1.0,
+  "counterexample_rate": 1.0
+}

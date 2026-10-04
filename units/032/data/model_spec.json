@@ -1,0 +1,15 @@
+{
+  "objective": "SSE/(2n)",
+  "initial": [0, 0, 0],
+  "gradient_tolerance": 1e-8,
+  "max_steps": 4000,
+  "parameter_limit": 1000000,
+  "paths": [
+    {"name": "raw_dyadic", "coordinates": "raw", "learning_rate": 0.015625},
+    {"name": "raw_minimax", "coordinates": "raw", "learning_rate": 0.019801980198019802},
+    {"name": "scaled_same_rate", "coordinates": "scaled", "learning_rate": 0.015625},
+    {"name": "scaled_half", "coordinates": "scaled", "learning_rate": 0.5},
+    {"name": "scaled_one", "coordinates": "scaled", "learning_rate": 1},
+    {"name": "raw_unstable", "coordinates": "raw", "learning_rate": 0.03125}
+  ]
+}

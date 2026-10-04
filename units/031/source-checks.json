@@ -1,0 +1,43 @@
+{
+  "unit": "031",
+  "checked_on": "2026-10-04",
+  "sources": [
+    {
+      "title": "MIT6.390 scalar gradient descent",
+      "url": "https://introml.mit.edu/_static/spring24/LectureNotes/chapter_Gradient_Descent.pdf",
+      "checked": "Actually read PDF pages1–3: update, fixed coefficient versus actual displacement, stopping criteria, existence/smoothness caveats. Examples/text/figures not copied.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "Boyd Vandenberghe unconstrained minimization slides",
+      "url": "https://web.stanford.edu/class/ee364a/lectures/unconstrained.pdf",
+      "checked": "Actually read PDF pages4–13: convex assumptions, iterative methods, descent direction/line search, gradient stopping. Large all-slides PDF timed out; this official41page chapter was read successfully.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "Cornell CS4787 lecture5",
+      "url": "https://www.cs.cornell.edu/courses/cs4787/2025fa/lectures/lecture5.html",
+      "checked": "Actually read descent-lemma assumptions, stationary-point limitation and scalar quadratic step example. The course independently derives its own formulas and does not reproduce examples or illustrations.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "Python3.12 math",
+      "url": "https://docs.python.org/3.12/library/math.html",
+      "checked": "Read nextafter,ulp,isfinite,isclose; documentation patch3.12.15 versus actual runtime3.12.14, APIs used available inboth.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "Python3.12 Fraction",
+      "url": "https://docs.python.org/3.12/library/fractions.html",
+      "checked": "Read exact float conversion distinction versus rational numerator/denominator.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "Python3.12 floating-point tutorial",
+      "url": "https://docs.python.org/3.12/tutorial/floatingpoint.html",
+      "checked": "Read binary representation,as_integer_ratio,rounding display and summation limitations. Course uses its own examples.",
+      "status": "opened_and_relevant_sections_read"
+    }
+  ],
+  "proof_scope": "Original scalar positive-quadratic error recurrence and exact interval classification, regression-derived profile, endpoint/initial-condition exceptions, stopping/scaling and independent finite-precision counterexamples. General smooth/convex convergence not asserted without later hypotheses."
+}

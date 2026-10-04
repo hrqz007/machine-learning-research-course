@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "normal_mode": {
+    "status": "passed",
+    "checks": 11591,
+    "mode": "normal",
+    "Fraction_profiles": 240,
+    "dyadic_whole_traces": 200,
+    "Decimal_digits": 180,
+    "fresh_process_report_sha256": "3e6be74e829b7168b8625f17041b2cb5c4dd0087ca5ea07828d80026506e2786"
+  },
+  "optimized_mode": {
+    "status": "passed",
+    "checks": 11591,
+    "mode": "optimized",
+    "Fraction_profiles": 240,
+    "dyadic_whole_traces": 200,
+    "Decimal_digits": 180,
+    "fresh_process_report_sha256": "3e6be74e829b7168b8625f17041b2cb5c4dd0087ca5ea07828d80026506e2786"
+  },
+  "notebook_code_cells": 12,
+  "notebook_computed_png_outputs": 7,
+  "report_sha256": "3e6be74e829b7168b8625f17041b2cb5c4dd0087ca5ea07828d80026506e2786",
+  "notebook_report_matches_script": true,
+  "notebook_full_input_baseline_mutations_checked": 3,
+  "visual_final_pdf_pages": 22,
+  "limits": "Finite teaching checks; not formal proof or a test of Anaconda installation, browser Jupyter UI or external-process kernel transport."
+}

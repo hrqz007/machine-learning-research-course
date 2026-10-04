@@ -1,0 +1,174 @@
+{
+  "unit": "032",
+  "title": "多维梯度下降与尺度",
+  "status": "in_review",
+  "release_state": "author_frozen_pending_independent_review",
+  "validation_date": "2026-10-04",
+  "local_checks": {
+    "author_checks_each_normal_and_O": 11281,
+    "fraction_full_rank_cramer_designs": 180,
+    "all_default_path_states_compared_to_exact_stored_step_spectral_oracle": true,
+    "decimal_precision": 350,
+    "all_config_and_unselected_case_validated_before_numeric_work": true,
+    "bad_file_cli_cases": 10,
+    "bad_cli_output_targets_each_mode": 20,
+    "fresh_cli_processes_per_audit": 4,
+    "fresh_cli_cwd": [
+      "unrelated temporary directory",
+      "filesystem root"
+    ],
+    "report_sha256": "74064bf8a1b7080937683b96269341cdb7825787295c1d98446740ec6070e800",
+    "report_byte_identical_normal_O_and_notebook": true,
+    "real_first_cell_valid_numeric_mutations_rejected_before_output": 3,
+    "notebook": {
+      "total_cells": 28,
+      "code_cells": 13,
+      "actual_computed_pngs": 8,
+      "fresh_real_kernel": "ipykernel InProcessKernel in new Python process, sequential execution",
+      "complete_3_input_hashes_before_first_numeric_output": true,
+      "fresh_qa_copy_images_byteidentical": true
+    },
+    "pdf_pages": {
+      "lecture": 13,
+      "lab": 5,
+      "answers": 6
+    },
+    "all_final_pdf_pages_individually_viewed": 24,
+    "all_actual_notebook_pngs_individually_viewed": 8,
+    "all_source_figures_individually_viewed": 12,
+    "original_figures": 12,
+    "full_solutions": 18,
+    "primary_sources_actually_checked": 7,
+    "answer_output_protection_snippet_executed": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Actual Anaconda environment creation",
+    "Browser Jupyter UI",
+    "Socket or out-of-process kernel transport",
+    "Cross-platform bitwise identity",
+    "Large or sparse data solver performance",
+    "Real-world predictive accuracy"
+  ],
+  "scientific_scope": "Full-batch mean squared loss with intercept; complete per-sample two-update trace; vector and Hessian spectrum derivation; condition-number minimax fixed step; training-only standardization and affine coefficient map; cross-coordinate stopping caution; correlation and rank-deficient counterexamples; coordinate-dependent L2 penalty. Exact arithmetic is for bounded teaching inputs only.",
+  "files": {
+    "README.md": {
+      "bytes": 8487,
+      "sha256": "95516adcd1b1777c908746027d1513fb4917f2898d4506412bdf6d72d03ab104"
+    },
+    "answers.md": {
+      "bytes": 14764,
+      "sha256": "c48bf22026aabd45dc9ce718e79f102972e18173f8bd86ed0ee37d45e37932c9"
+    },
+    "answers.pdf": {
+      "bytes": 653573,
+      "sha256": "f84f253a6527fbec1ad946b907b28d86988fee157e1662d603eeafbc5609b7a9"
+    },
+    "data/README.md": {
+      "bytes": 1451,
+      "sha256": "0258d437a77dc323ba03c30ddc8a275bbd6a33f64a22d479f3110b48dec2a157"
+    },
+    "data/cases.csv": {
+      "bytes": 242,
+      "sha256": "de64df1dfab241112053173f095370f4d37619e4c0a20725a483779f300218e6"
+    },
+    "data/model_spec.json": {
+      "bytes": 632,
+      "sha256": "a449e68e1f4f21414934053e3612c1c7f8caf6865e630fef3ef4c9aa36cf81e4"
+    },
+    "data/query.csv": {
+      "bytes": 17,
+      "sha256": "88e9395811cd148a0fb1c37fc3927f508ec273935b64975c954739e068bf2dbe"
+    },
+    "environment.yml": {
+      "bytes": 218,
+      "sha256": "c90b20cf48943c401aadcf5e3794ca62dd57216b719fc3e24f792147f8aa0cab"
+    },
+    "experiment.ipynb": {
+      "bytes": 994485,
+      "sha256": "e2ff56107200113edcd2b3e8147adb761b5119c0c05f543fbce74b2c074edbc4"
+    },
+    "experiment.py": {
+      "bytes": 20513,
+      "sha256": "cc070b4df9836e708d178bb11b1045c2865ebc8e47a93ac3c718a10d2bffa3e0"
+    },
+    "figures/01_valley.png": {
+      "bytes": 120519,
+      "sha256": "a3bd59c9238c1f783b38a8098cce8315250fbed274d3093079e5d1ebae783991"
+    },
+    "figures/02_shapes.png": {
+      "bytes": 74034,
+      "sha256": "860f50bf8f4e81f12cb52e9ab84dd852825a8731ab95623ba62783580bd68289"
+    },
+    "figures/03_data_scaling.png": {
+      "bytes": 44484,
+      "sha256": "c34f6840d1fc589bd9d0320460103490fd423a814e23ecb3cb0beef95c4f8809"
+    },
+    "figures/04_first_update.png": {
+      "bytes": 141620,
+      "sha256": "31de9919b2947ed4ea8470c1d359717f75c35d72f61b0731d9650120e24ee3ea"
+    },
+    "figures/05_eigendirections.png": {
+      "bytes": 155269,
+      "sha256": "3eb7a799d4b8930ef2aba7960d53e1dd477db487de3626be654d32162a1c8f02"
+    },
+    "figures/06_condition_number.png": {
+      "bytes": 106902,
+      "sha256": "aae301143449f216515a52e71d489fc889192da653cc1c53919c523cc6358780"
+    },
+    "figures/07_coordinate_map.png": {
+      "bytes": 70532,
+      "sha256": "a7adf15c01369dca76ffbb9d54b5cbec78404ed9beaf5f54c988af1b95b6aaf3"
+    },
+    "figures/08_paths.png": {
+      "bytes": 148620,
+      "sha256": "718118b0da4f993db8ac7c26807292cb3c14370e8feb90a9897f07e2888e6e46"
+    },
+    "figures/09_stopping.png": {
+      "bytes": 107438,
+      "sha256": "2a33d1c0a150ad8b68eeb9c062cd215b144009b7d02b804a6af3fc640441f637"
+    },
+    "figures/10_correlation.png": {
+      "bytes": 153872,
+      "sha256": "4dc7006644ce3280b6db695324124fb4dd283cc15fffe49e44656e9e9db42459"
+    },
+    "figures/11_preprocessing.png": {
+      "bytes": 80603,
+      "sha256": "c9b14a6222198b56b907623a33f97d90496b1301c9882d386663f9b722e64e78"
+    },
+    "figures/12_regularization.png": {
+      "bytes": 105051,
+      "sha256": "f29d385df277e1b8c31363b1b45ed1bd1b9f36a75cd79021357c69b37c9fd8e3"
+    },
+    "lab.md": {
+      "bytes": 12185,
+      "sha256": "e07fa8ff1ab6f93ac08a1fa4e47f63edc9cdc19eb09ba04aa7f97f64d8b8d10e"
+    },
+    "lab.pdf": {
+      "bytes": 648974,
+      "sha256": "de20093d752bc053576f7f4ee03ab9f3b7e5b13a7dab00951efe6f014f297513"
+    },
+    "lecture.md": {
+      "bytes": 26843,
+      "sha256": "55bef924ac21024feadc2e73325673bd3027f916898e791f96efb80257e4c75e"
+    },
+    "lecture.pdf": {
+      "bytes": 2237933,
+      "sha256": "057914642be24f2292d43f1282fb2cb1e548e8fdb793f60859468f45c8064f5a"
+    },
+    "requirements.txt": {
+      "bytes": 85,
+      "sha256": "533b9aaddc957ca5b2333759cc410bada66e9baa0b5cc2ee8d67f786a32dc860"
+    },
+    "source-checks.json": {
+      "bytes": 2347,
+      "sha256": "d5b1552e00c5ca35acda687683108ae41cd088781513588ae4fa60535ba96a04"
+    }
+  }
+}

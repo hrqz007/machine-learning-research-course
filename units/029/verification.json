@@ -1,0 +1,179 @@
+{
+  "unit": "029",
+  "title": "多元线性回归与数值求解",
+  "status": "verified",
+  "release_state": "independent_passed_ready_for_publication",
+  "validation_date": "2026-10-04",
+  "local_checks": {
+    "core_self_test_groups": 8,
+    "independent_checks_each_normal_and_O": 4220,
+    "fraction_random_designs": 240,
+    "decimal_precision": 100,
+    "dyadic_family_exact_and_perturbed_cases": 14,
+    "bad_cli_inputs": 18,
+    "protected_output_cli_processes": 36,
+    "bad_pre_solver_configs": 12,
+    "fresh_scripts_two_cwd": "byte-identical",
+    "report_sha256": "ebe0b73fb15bbacd05dc46eb50a58056f3800e560efb4589e22db94bcff8e270",
+    "notebook": "26 cells;12 sequential code cells;7 actual retained PNGs;fresh real InProcessKernel",
+    "pdf_pages": {
+      "lecture": 12,
+      "lab": 4,
+      "answers": 5
+    },
+    "all_final_pdf_pages_individually_viewed": 21,
+    "all_notebook_pngs_individually_viewed": 7,
+    "figures": 12,
+    "full_solutions": 18,
+    "primary_source_records": 7,
+    "visual_corrections": "Replaced unsupported figure glyphs, corrected conditioning figure caption, added standalone worked interpretation in lab, and fixed Notebook panel spacing before final all-page/PNG inspection"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "not_tested": [
+    "Anaconda installation",
+    "browser Jupyter UI",
+    "socket/out-of-process kernel transport",
+    "cross-platform bitwise identity",
+    "large sparse/distributed solver performance",
+    "real-world prediction or causal effect"
+  ],
+  "scientific_scope": "Original exact fullrank handplane; global optimality and coefficient/training-prediction uniqueness proofs; QR/SVD; unit-dependent minimum norm; exact stored dyadic near-collinearity with independent Fraction and Decimal100 references; fixed-response sensitivity separated from numerical solver errors; threshold/intercept/version-aligned comparisons.",
+  "files": {
+    "README.md": {
+      "bytes": 7030,
+      "sha256": "0bd9983a0c64c0e944e406c4a0192d280da0f6bd12de0cc4f42bc60f8c381c6c"
+    },
+    "answers.md": {
+      "bytes": 10584,
+      "sha256": "a201a26d06367ea5e5303a61aa2ef247d2cf0686c6466befc052ae713a627ff5"
+    },
+    "answers.pdf": {
+      "bytes": 634470,
+      "sha256": "c0243128dceb39949985fd7a7bddf45b5aae3695997b97c9ff0a703172db4220"
+    },
+    "data/README.md": {
+      "bytes": 1239,
+      "sha256": "584869b0fc514d84a241b1657a1d6cd0abafde0ea6e6ab2422ad8c6de5b98564"
+    },
+    "data/hand_regression.csv": {
+      "bytes": 47,
+      "sha256": "b1966ea68557c68c8fc70776b13d0ee32cdf91c139590e4aaa1959eda3e4e9df"
+    },
+    "data/model_spec.json": {
+      "bytes": 277,
+      "sha256": "6c2ed6561bf16692cdf6515eb8c57963a4efc8b034bc44f9be17416345547cb1"
+    },
+    "data/orthogonal_vectors.csv": {
+      "bytes": 79,
+      "sha256": "910860c3667b072b3076ae05ee71a2d69c1fe0d29d6b200e128023c58f57d539"
+    },
+    "environment.yml": {
+      "bytes": 119,
+      "sha256": "96d1aeda6094ea06ff3633caf60530f32e3fc64c3d07a5c64ea1a51505e0fb9e"
+    },
+    "experiment.ipynb": {
+      "bytes": 454668,
+      "sha256": "368ed6ef17852bffa01bf1faaae502d30fd2d38ebcf76fa456f0a0d3eed7ea2e"
+    },
+    "experiment.py": {
+      "bytes": 19110,
+      "sha256": "36bc9b5861484a11d1a31da12add5aed4a7aef3812472929f6ec08948e20b095"
+    },
+    "figures/01_three_outputs.png": {
+      "bytes": 54933,
+      "sha256": "36b41c0e9f9ec66e0445587ee400040e51311df01161970bf4c69e3c27e71cb8"
+    },
+    "figures/02_shapes.png": {
+      "bytes": 50047,
+      "sha256": "599f82f75075b137ee3bd60958827ed6727dbe678e0f2b59e1026c5ac1ca8be7"
+    },
+    "figures/03_gradient.png": {
+      "bytes": 41783,
+      "sha256": "b42349a26ddcc5dbf392d4f58aad95e1cc8214fb99143cf46dc424b0bb6ea6a1"
+    },
+    "figures/04_hand_fit.png": {
+      "bytes": 51461,
+      "sha256": "8622afbe0392cbb589ae3d26d154cdbb81257fc46cad9d500f4b7ce47d3faa2b"
+    },
+    "figures/05_qr_geometry.png": {
+      "bytes": 36847,
+      "sha256": "12d1ef83e7608564de96714845aa7cdc93bae7191a434d83328711cdc8994e88"
+    },
+    "figures/06_rank_deficiency.png": {
+      "bytes": 43105,
+      "sha256": "63326c3002728f0a2e3ec0ea2e71fee0caa42e7a995d79af8c12563da9301570"
+    },
+    "figures/07_sensitivity.png": {
+      "bytes": 68981,
+      "sha256": "446ce4789b467305911c973e502630c11125c7d68a6eb9115bfaf3fb1e93f690"
+    },
+    "figures/08_conditioning.png": {
+      "bytes": 108433,
+      "sha256": "8ffe964f6730f7fbf6349bcbea72b67bc5d5a1dac214fbb6b6db59fde9f7cbf4"
+    },
+    "figures/09_rank_threshold.png": {
+      "bytes": 71172,
+      "sha256": "6d72b805e82ca27bab0a8a623ea71d2a297fd6b526e2f808368f1258334b4b04"
+    },
+    "figures/10_solver_report.png": {
+      "bytes": 53931,
+      "sha256": "59f0677f368ca7e19b3decc57a4c852852eb19f9e6b54657c75095f053deffe2"
+    },
+    "figures/11_validation_plan.png": {
+      "bytes": 59852,
+      "sha256": "a1c631e1b1a1c2b920ccb25de3c901dc024fd09296437a1ad31e54fb60ee53c2"
+    },
+    "figures/12_error_layers.png": {
+      "bytes": 58256,
+      "sha256": "b8f8d84da3f147625f686338b09c8ff04c6859d8b3534990c7b45e7f50094250"
+    },
+    "lab.md": {
+      "bytes": 9771,
+      "sha256": "a744f72fa04890c0d73d2c05e8762e8e9c789685b95733edc271588b6839109d"
+    },
+    "lab.pdf": {
+      "bytes": 678378,
+      "sha256": "2326be17a18eb8cb177068555472d57b9bfbd542b966c6ca31671ec4c3415d91"
+    },
+    "lecture.md": {
+      "bytes": 22689,
+      "sha256": "12f8e1e64f1cb0cf0076dd86ef1fcab22b87900d721b400ded0daba0389ffb2f"
+    },
+    "lecture.pdf": {
+      "bytes": 1368043,
+      "sha256": "81eb27e0ac18d7e0ff75ec69e135cac91184567d98d20eb2fe85db864a824339"
+    },
+    "requirements.txt": {
+      "bytes": 117,
+      "sha256": "a05b37a1734d6c0e6f9b927ad9e65ac44672a103906ef75e740143a500c92f9d"
+    },
+    "source-checks.json": {
+      "bytes": 2384,
+      "sha256": "b72730c38171f85e52a9db4070d5215729ff6960461951759078a289e15f24f4"
+    },
+    "test-result.json": {
+      "bytes": 1168,
+      "sha256": "86f9f6c6c0b332a4144d8332f936c84862707d5cb7160be556ecf492f1c6bdd4"
+    }
+  },
+  "review_revisions": {
+    "zero_based_design_columns": "Lecture4 andanswer3 nowexplicitA_i0=1,j=0..d,k=0..d consistentwithbeta0intercept",
+    "minimum_norm_prerequisite": "Answer11 now eliminates beta1 and minimizes a scalarquadratic instead of using unintroduced Lagrange multipliers",
+    "computed_range": "README1e100 bound limited to components actually checked by square-norm diagnostics;finite large coefficients may be returned",
+    "visual": "All4changedlecturepages2–5 andall5answerpages individuallyviewed;no code or numerical outputchanged"
+  },
+  "independent_review": {
+    "status": "passed",
+    "date": "2026-10-04",
+    "reviewed_candidate_verification_sha256": "991f9d6db3abd388721e72a402414667436daa0185403d5615279b524efa069a",
+    "coverage": "All29payloadhashes;21finalPDFpages and7retainedNotebookPNGs;12freshreal-kernelcells plusQA-onlyreportexport matchednormal/-O fullJSON byte-for-byte;300independent Cramer/Fraction four-route models andglobal identities,200rank1minimum-norm cases,all49dyadic powers plusperturbations(98exactmodels),31highprecision errorchecks,300finite-difference coordinates,7presolverguards,36badfileprotections,3Notebookbaselineguards. Index,prerequisite andrange-wording corrections rechecked."
+  }
+}

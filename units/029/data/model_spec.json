@@ -1,0 +1,8 @@
+{
+  "kind": "synthetic_multivariate_least_squares_demo",
+  "near_collinear_powers": [0, 8, 16, 24, 32, 40, 48],
+  "noise_scale": 0.0625,
+  "response_perturbation": 0.00000095367431640625,
+  "rcond_values": [0.000000000000001, 0.00000001, 0.001],
+  "feature_rescaling": 100.0
+}

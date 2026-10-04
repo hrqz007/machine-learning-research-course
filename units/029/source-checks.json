@@ -1,0 +1,49 @@
+{
+  "unit": "029",
+  "checked_on": "2026-10-04",
+  "sources": [
+    {
+      "title": "Boyd and Vandenberghe VMLS ch12",
+      "url": "https://web.stanford.edu/~boyd/vmls/vmls.pdf",
+      "checked": "Actual PDF pages238–241 inspected in text: full-column-rank assumptions, residual orthogonality and QR route; original examples not reused.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NumPy2.3 lstsq",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.lstsq.html",
+      "checked": "Minimum norm, default rcond=machine precision*max(M,N), empty residuals if rank<N or M<=N.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NumPy2.3 qr",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.qr.html",
+      "checked": "Reduced shapes and Householder LAPACK API; do not follow explicit inv example.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NumPy2.3 svd",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.svd.html",
+      "checked": "Reduced U/s/Vh shapes, descending singular values and reconstruction orientation.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "NumPy2.3 cond",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.linalg.cond.html",
+      "checked": "Default2norm/SVD interpretation.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "scikit-learn1.8 LinearRegression",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.LinearRegression.html",
+      "checked": "fit_intercept, dense rank_/singular_ and tol only sparse lsqr in thisversion; localruntime1.8.0 confirmed.",
+      "status": "opened_and_relevant_sections_read"
+    },
+    {
+      "title": "SciPy1.17 lstsq",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.linalg.lstsq.html",
+      "checked": "Effective rank, drivers, check_finite and residual-return caveats.",
+      "status": "opened_and_relevant_sections_read"
+    }
+  ],
+  "proof_scope": "Original hand data and dyadic orthogonal near-collinear family; vector differentiation, global optimality, uniqueness/minimum-norm, QR decomposition, SVD parameter sensitivity and nested training loss proofs. No copied figures/text."
+}

@@ -1,0 +1,14 @@
+case,id,x,y
+hand,H01,0,1
+hand,H02,1,2
+hand,H03,2,2
+hand,H04,3,4
+hand,H05,4,6
+constant,C01,2,1
+constant,C02,2,2
+constant,C03,2,4
+changed_sample,S01,0,1
+changed_sample,S02,1,2
+changed_sample,S03,2,3
+changed_sample,S04,3,5
+changed_sample,S05,4,6

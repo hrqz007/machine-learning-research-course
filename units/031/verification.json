@@ -1,0 +1,211 @@
+{
+  "unit": "031",
+  "title": "一维梯度下降与学习率",
+  "status": "complete owner checks; final independent review pending",
+  "date_utc": "2026-10-04",
+  "pdf_pages": {
+    "lecture": 12,
+    "lab": 5,
+    "answers": 5
+  },
+  "lecture_sections": 20,
+  "full_solutions": 18,
+  "original_figures": 12,
+  "notebook": {
+    "fresh_real_kernel": "ipykernel InProcessKernel in new Python process",
+    "code_cells": 12,
+    "computed_pngs": 7,
+    "sequential_execution": "passed",
+    "all_3_full_input_hashes_checked_before_first_numeric_output": true,
+    "actual_first_cell_guard_mutations_checked": 3,
+    "report_sha256": "3e6be74e829b7168b8625f17041b2cb5c4dd0087ca5ea07828d80026506e2786"
+  },
+  "execution": {
+    "normal_checks": 11591,
+    "optimized_checks": 11591,
+    "fresh_cli_cwd": [
+      "unrelated temporary directory",
+      "filesystem root"
+    ],
+    "fresh_report_byte_identical": true,
+    "notebook_full_report_matches_cli": true,
+    "independent_Fraction_profiles": 240,
+    "independent_dyadic_full_traces": 200,
+    "Decimal_oracle_precision": 180,
+    "reference_separation": [
+      "original rational theory",
+      "exact arithmetic on stored binary64 coefficients",
+      "actual multiply/subtract iterative trace"
+    ],
+    "bad_inputs_preserve_old_output_and_do_not_create_new_directory": true
+  },
+  "scientific_anchors": {
+    "profile": [
+      "q=2",
+      "center=6/5",
+      "constant=4/25",
+      "a(b)=3-2b"
+    ],
+    "complete_forward_chain": "Per-sample prediction, residual, squared loss, local derivative, shared-gradient accumulation, two updates and new forward, with independent Fraction notebook calculation",
+    "first_threshold_updates": {
+      "parameter_1e-6": 21,
+      "gradient_1e-10": 35
+    },
+    "matched_objective_multiplier10_eta": "1/40",
+    "matched_coordinate_scale100_eta": 2500,
+    "finite_statuses": [
+      "exact_stored_optimum",
+      "gradient_tolerance",
+      "stagnation",
+      "two_cycle",
+      "growth_guard",
+      "max_steps",
+      "fixed_budget_completed"
+    ]
+  },
+  "visual": {
+    "all_final_22_pdf_pages_individually_viewed": true,
+    "all_7_notebook_pngs_individually_viewed": true,
+    "all_12_figure_panels_checked_in_final_lecture": true,
+    "issues_fixed": [
+      "Three initial figure filename mismatches and corresponding captions corrected",
+      "Objective-scaling figure changed to parameter error log axis to keep matched paths visible",
+      "Actual notebook PNGs emitted explicitly before final visual review"
+    ],
+    "observed_final_defects": "none"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "jupyterlab": "optional >=4,<5; browser UI not tested",
+    "anaconda_install_tested": false,
+    "out_of_process_kernel_transport_tested": false
+  },
+  "privacy": {
+    "original_synthetic_inputs": true,
+    "no_private_user_data": true,
+    "no_internal_absolute_paths_in_public_payload": true,
+    "no_copied_textbook_figures_or_passages": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 6788,
+      "sha256": "a9eab540eced67064c02e18fe04b6588ea49b55e5b5df4a6f438ddfd7175dc67"
+    },
+    "lecture.md": {
+      "bytes": 22995,
+      "sha256": "1f26ff060322f9c828d1b8183ee01534b8435211c5a4ef6c76d233dcec95d3fe"
+    },
+    "lecture.pdf": {
+      "bytes": 1828189,
+      "sha256": "7d25ccff8e3225dbd84ef2a13614555ecc360b89c9485053c33abcf837897627"
+    },
+    "lab.md": {
+      "bytes": 10646,
+      "sha256": "d45bc91eab3704184642d7c10edac7b3453e1cda2273992eec31d297950a37d2"
+    },
+    "lab.pdf": {
+      "bytes": 680927,
+      "sha256": "e2cc9fab958ced22ad54cb823a34f78a8e8d7fd8d1a2e0f1b3d20d57981f8b02"
+    },
+    "answers.md": {
+      "bytes": 10561,
+      "sha256": "0b26b73f4d44ea0518a61d4462f5203f5c896f8330e624b01708469db92dbee2"
+    },
+    "answers.pdf": {
+      "bytes": 637901,
+      "sha256": "cf9211bf4da5ad2a8b4ac2d48d0510577ed3d119ca195f7eb1052d2c4d82d7ca"
+    },
+    "experiment.py": {
+      "bytes": 15549,
+      "sha256": "8fd78c5004140ef7c346624b51b02ee3362fc2f23d5d2c54824f8682437423f6"
+    },
+    "experiment.ipynb": {
+      "bytes": 670602,
+      "sha256": "b6f846f07d05704017e3b08b7ee3333fc974d600f32efca5e2ab865347230198"
+    },
+    "requirements.txt": {
+      "bytes": 83,
+      "sha256": "7dbe58dd1c204dd32e5cd6547b78caafb41cc0b9f379613a0549adbfe1f6d486"
+    },
+    "environment.yml": {
+      "bytes": 216,
+      "sha256": "b266ad0041b6e99008fb39a332bd82268426765ef108acfa6099edf06e69e97e"
+    },
+    "source-checks.json": {
+      "bytes": 2546,
+      "sha256": "30eabd58c37df4f008f34ae3ee825d672593b83bbb3ef08455af9a6a7caab49b"
+    },
+    "test-result.json": {
+      "bytes": 1027,
+      "sha256": "99de3602684c3b4515ced75b2835f7d7608666eb8db49274b39562cedbe81916"
+    },
+    "data/README.md": {
+      "bytes": 1088,
+      "sha256": "50ea0af4c6e85d2221caa275e19ac13ebc4338869c87a97e766597baafb72f22"
+    },
+    "data/learning_rates.csv": {
+      "bytes": 113,
+      "sha256": "9654c726de8fd505e554bd097ac436345e0531ac52d78cb7835d90222b5d87a4"
+    },
+    "data/model_spec.json": {
+      "bytes": 327,
+      "sha256": "ad15b76616b42d5b0aef170fbf3aa4b56f72097b92987f71300b78a273575a48"
+    },
+    "data/regression.csv": {
+      "bytes": 42,
+      "sha256": "fd25e5f2ff0267b59206ca3949fefcfa0a549d2e014c68c287c0eb70048f508b"
+    },
+    "figures/01_three_questions.png": {
+      "bytes": 49871,
+      "sha256": "d7516d1b0e84010b831abe0542804aaa216571e6f4f8ad40e2379b0b2efa08fc"
+    },
+    "figures/02_local_linearization.png": {
+      "bytes": 65341,
+      "sha256": "85f5b39e47e2aa81450c9fd475a078371787c4fc623453ce5ad9e788a76a70d8"
+    },
+    "figures/03_regression_profile.png": {
+      "bytes": 152164,
+      "sha256": "ab826c2556574b4f22058b944d67c924093edf4fa9dd3235b7112d631aee6117"
+    },
+    "figures/04_monotone_path.png": {
+      "bytes": 95669,
+      "sha256": "934b58ec3809a109079e77309e24801bc5f5a91318b318316aa26f06a1983a9a"
+    },
+    "figures/05_oscillation_equal_loss.png": {
+      "bytes": 100461,
+      "sha256": "dc48a57c7b721a79a59a4d57f5fe05b3f3d1b883a254c497deb7f36b3d5f57fa"
+    },
+    "figures/06_boundaries.png": {
+      "bytes": 89744,
+      "sha256": "171de37525aba77a2a1673a39b2ff3fed3e9fc864c233e8b43e411be5b494c2e"
+    },
+    "figures/07_rate_map.png": {
+      "bytes": 86307,
+      "sha256": "8899d06d251e8cfd168809cf501dd7f0f0777e6e5bb6d8e06db391942142ce08"
+    },
+    "figures/08_objective_scaling.png": {
+      "bytes": 112640,
+      "sha256": "56338c72e2835876388ee14c3631cb77bf82cd7c1e3530c63099b22c091969ab"
+    },
+    "figures/09_stopping_traps.png": {
+      "bytes": 76490,
+      "sha256": "5370cc62e5a7464a975c68fe6936865eb39ca16a6e05488324b23abf01901f86"
+    },
+    "figures/10_outside_quadratics.png": {
+      "bytes": 78147,
+      "sha256": "43dbc97f6b3cf00f79f658abb38fb2e5828dc194c943b25b52a21492ddf3e8d2"
+    },
+    "figures/11_validation_chain.png": {
+      "bytes": 68116,
+      "sha256": "18b26cfe5e738c5e1a031221430d80769656a438d2d8086a982bd5bf3c2cf68e"
+    },
+    "figures/12_error_layers.png": {
+      "bytes": 64388,
+      "sha256": "70fd627c975d9507c74171344f0a88b0c4c57e3e835f10ea2a0639dadd63bd97"
+    }
+  }
+}
