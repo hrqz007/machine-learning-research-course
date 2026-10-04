@@ -1060,7 +1060,7 @@
         "实验与验收": "在满足和破坏假设的函数上检验界；比较函数值、梯度范数与参数距离。",
         "常见误区": "把凸情形保证推广到任意深网；把经验收敛曲线当定理证明。"
       },
-      "status": "in_review",
+      "status": "published",
       "artifacts": {
         "lecture": "units/033/lecture.pdf",
         "lab": "units/033/lab.pdf",
@@ -1069,14 +1069,22 @@
         "script": "units/033/experiment.py"
       },
       "checks": {
-        "scientific": "owner_passed_independent_pending",
-        "sources": "owner_passed_independent_pending",
-        "code": "owner_passed_independent_pending",
-        "notebook": "owner_passed_independent_pending",
-        "visual": "owner_passed_independent_pending"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "fresh_inprocess_kernel_passed",
+        "visual": "all_23_pages_and_8_notebook_images_independently_viewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "c43e8d1cc388cde76dc41489ef5f5910fdd50e99",
+        "verified_file_count": 29,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/033"
+      },
+      "independent_qa": {
+        "report_sha256": "a45acc6f119515449bdc5a2d71f045774ab75a6a33f65efd4854598c9416a6ad",
+        "release_allowlist_sha256": "8fe77c76964001ca4ea6aedbc5a44eb4526a0ca248dc5a57a6c3c503c4051a01"
       }
     },
     {
@@ -1089,7 +1097,7 @@
         "实验与验收": "对同一任务比较full-batch、SGD、mini-batch，多种子画均值与波动。",
         "常见误区": "用迭代次数比较不同batch的效率；忽略数据顺序和梯度噪声。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/034/lecture.pdf",
         "lab": "units/034/lab.pdf",
@@ -1105,7 +1113,11 @@
         "visual": "all19pdfpages_and6notebookPNGs_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "c43e8d1cc388cde76dc41489ef5f5910fdd50e99",
+        "verified_file_count": 27,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/034"
       }
     },
     {
