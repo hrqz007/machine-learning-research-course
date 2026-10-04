@@ -1,0 +1,27 @@
+{
+  "unit": "004",
+  "notebook": "experiment.ipynb",
+  "status": "passed",
+  "checked_on": "2026-10-04",
+  "python_version": "3.12.14",
+  "code_cells": 16,
+  "all_execution_counts_sequential": true,
+  "saved_error_outputs": 0,
+  "execution": "Fresh Python process; actual ipykernel InProcessKernel; cells executed in order; outputs saved",
+  "final_expected_metrics": {
+    "best_model": "B",
+    "candidate_train_mae_wan": [
+      10,
+      0,
+      7.5
+    ],
+    "test_mae_wan": 5,
+    "baseline_test_mae_wan": 15
+  },
+  "independent_checks_called_in_notebook": 122,
+  "limitations": [
+    "External socket transport and Jupyter browser UI not tested",
+    "No macOS or Windows runtime verification"
+  ],
+  "path_privacy_check": "Notebook source/output and result JSON contain no absolute build-workspace paths"
+}

@@ -1,0 +1,10 @@
+{
+  "frozen_model": {
+    "name": "linear_grid",
+    "weight": 2.0,
+    "bias": 10.0
+  },
+  "test_mae_wan": 4.666666666666667,
+  "baseline_test_mae_wan": 32.333333333333336,
+  "tolerance": 1e-12
+}

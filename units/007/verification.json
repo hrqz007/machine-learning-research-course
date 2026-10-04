@@ -1,0 +1,172 @@
+{
+  "unit": "007",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 10,
+    "figures": 11
+  },
+  "lab": {
+    "pages": 5
+  },
+  "visual_review": "all final pages rendered and inspected",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "fresh_process_identical_records": true,
+    "different_cwd_run": true,
+    "regenerated_data_byte_identical": true,
+    "changed_input_cannot_overwrite_old_run": true,
+    "independent_fraction_checks": {
+      "training_mean": "5479/36",
+      "test_absolute_error_sum": 56,
+      "baseline_absolute_error_sum": 388,
+      "test_mae": "14/3",
+      "baseline_test_mae": "97/3"
+    },
+    "invalid_config_checks": 7
+  },
+  "notebook": {
+    "code_cells": 9,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential order, outputs saved"
+  },
+  "limitations": [
+    "synthetic public data only",
+    "single fixed split does not establish robustness",
+    "Jupyter browser UI/socket transport not tested",
+    "actual learner Anaconda installation not tested"
+  ],
+  "source_checks": "source-checks.json",
+  "files": {
+    "lecture.md": {
+      "bytes": 21751,
+      "sha256": "aa39d44f0c663d29b15ae2c144ca636f8c871018f9f4c2633fb58aba51b22fd6"
+    },
+    "lecture.pdf": {
+      "bytes": 1096353,
+      "sha256": "f90414183d15b6eb9f5eaa6d93e83a8fca971fb94f080f2eac7bb7ca3cf0c2ae"
+    },
+    "lab.md": {
+      "bytes": 12376,
+      "sha256": "af029983f2b97704cf438994dfe2172e760704401d31f8f783272fa6b7e89a91"
+    },
+    "lab.pdf": {
+      "bytes": 598029,
+      "sha256": "f843534235b05cb80750dbcecb2a65bff6480a53cf4a68d3a03e6df66f89f3e3"
+    },
+    "experiment.py": {
+      "bytes": 11911,
+      "sha256": "c3e296052813fdcf0be5ac7c4541a209c3b598781ae5346cefeeeeec3170d864"
+    },
+    "experiment.ipynb": {
+      "bytes": 11689,
+      "sha256": "c03248af80e71a2565ce8557a516c86039e20aec7848feaddade51e5cce0f06a"
+    },
+    "README.md": {
+      "bytes": 1769,
+      "sha256": "029a323473ccafe657c231fbe7d9ffc47f6e2b2346fb9fae76e3b8ae5793232c"
+    },
+    "requirements.txt": {
+      "bytes": 16,
+      "sha256": "1986590f068fa10c02086f967ba365ede5c96e3a9ae5c08ac026b34ee183df8f"
+    },
+    "config.json": {
+      "bytes": 392,
+      "sha256": "5bc22bf6eb1428d214176555ca2d714979fc8c9ab1bb0a3ad9d60e4887f89635"
+    },
+    "expected_result.json": {
+      "bytes": 197,
+      "sha256": "0dd70a5566383d9d8571fbbb19840154c2e8f1b257dce3f92f9e8fe0bd1d3951"
+    },
+    "generate_data.py": {
+      "bytes": 1560,
+      "sha256": "83209b8e2eda0323629afaba2259165eec50a89170b04adcc724677143fba7f5"
+    },
+    "make_figures.py": {
+      "bytes": 5604,
+      "sha256": "25c7b6cee382aa478eb77b2ff40526ed1f2a9b3db62d19b8d1377e518af30aa9"
+    },
+    "source-checks.json": {
+      "bytes": 955,
+      "sha256": "2b0951bee239e45a06d691fdc13ceb983e0b27d10d206562497d372984847990"
+    },
+    "data/houses.csv": {
+      "bytes": 800,
+      "sha256": "592cb539089de8661e39c57c1f148fc2a5f73aaa1f93ed92ad25554568968e85"
+    },
+    "data/split.csv": {
+      "bytes": 783,
+      "sha256": "9e7f29d99da6b1ab7077f16d0083fd02b5207e0fe34f578f1a0cb8032f6c75fc"
+    },
+    "data/README.md": {
+      "bytes": 880,
+      "sha256": "b4d54c586f6e8554b9a11488f76ba32611a32283777cbd6e635c03600e88ff84"
+    },
+    "figures/01_chain.png": {
+      "bytes": 39050,
+      "sha256": "440d5db9b11cc84924428601c34e07e441ee25baa6a6cc5946101679697ab7b8"
+    },
+    "figures/02_fixed_data.png": {
+      "bytes": 31856,
+      "sha256": "6e6fe725ebba6807421c1c203a15964891fcbab081328cb6f9f0a9c37479d927"
+    },
+    "figures/03_roles.png": {
+      "bytes": 39586,
+      "sha256": "ac5f64415df7ebe1b305e18953b22e889933170cc54212b524aafb0be0788d81"
+    },
+    "figures/04_split.png": {
+      "bytes": 36094,
+      "sha256": "50d4f10427c4165e8a2547dc8effd1714d7c62312891304c764ce545421a1c46"
+    },
+    "figures/05_seed.png": {
+      "bytes": 45775,
+      "sha256": "46de5dceeccfa93e25f296132e4a5db736c788c75f87a04dc90e4ba388ccafb0"
+    },
+    "figures/06_grid.png": {
+      "bytes": 55228,
+      "sha256": "581a493e852feb9b36b21b188f76132ea0cd7a6b69f59159ffd46f73c42644d1"
+    },
+    "figures/07_selection.png": {
+      "bytes": 41461,
+      "sha256": "3c323d68f11ac816c5ab9d341106e588286e1e3fe91c2134d447547fbf93dc4d"
+    },
+    "figures/08_unseal.png": {
+      "bytes": 46110,
+      "sha256": "48997cac364534c19ab0a2cb845ac562fb8b447a168e7c6e2b34d856e7970a7e"
+    },
+    "figures/09_hash.png": {
+      "bytes": 38436,
+      "sha256": "8640722b4895f8b67bba1ccb59cc03922a1df6b15bce79e0630173ef2bba58e4"
+    },
+    "figures/10_environment.png": {
+      "bytes": 46630,
+      "sha256": "38c8207c79930db1152758a118a91de002e6b92b787e45a84feef8f31a2c9404"
+    },
+    "figures/11_rerun.png": {
+      "bytes": 34769,
+      "sha256": "272a7a55388a7f229061ebe28783f432337d66f0058eed36633192bbe7e79099"
+    }
+  },
+  "review_fixes": [
+    "Stored fitted model parameters and per-record training and validation predictions.",
+    "Rejected unsupported tie_rule.",
+    "Validated tolerance finite/nonnegative and candidate grid nonempty with finite numeric entries.",
+    "Figure 7 caption describes left/right charts rather than nonexistent upper/lower tables.",
+    "Moved source check date into reference heading to remove orphaned final sentence page."
+  ],
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all final 10 lecture and 5 lab pages",
+      "independent rational arithmetic for candidate grid and test metrics",
+      "fresh CLI processes byte-identical",
+      "CSV regeneration and old-output protection",
+      "invalid config rejection and per-record training/validation evidence",
+      "9 notebook cells in fresh IPython kernel",
+      "27 payload hashes matched"
+    ]
+  }
+}

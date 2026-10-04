@@ -1,0 +1,102 @@
+{
+  "unit": "004",
+  "checked_on": "2026-10-04",
+  "method": "Opened each first-party page and checked the relevant semantics; examples and synthetic data independently authored",
+  "sources": [
+    {
+      "reference": "1a",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+      "claim_checked": "Function definitions, positional/keyword parameters, return and argument unpacking",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "1b",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+      "claim_checked": "Dictionaries, tuples and set semantics",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "2",
+      "url": "https://docs.python.org/3/tutorial/errors.html",
+      "claim_checked": "Specific exception handling, propagation, else and chaining",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "3",
+      "url": "https://docs.python.org/3/library/pathlib.html",
+      "claim_checked": "Path joining, resolve, parent and text I/O",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "4a",
+      "url": "https://docs.python.org/3/library/csv.html",
+      "claim_checked": "DictReader, newline handling, text fields and quoted CSV",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "4b",
+      "url": "https://docs.python.org/3/library/math.html",
+      "claim_checked": "isfinite rejects NaN and infinities",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "5",
+      "url": "https://docs.python.org/3/library/json.html",
+      "claim_checked": "dumps/loads, ensure_ascii, indent and allow_nan=False",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "6",
+      "url": "https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement",
+      "claim_checked": "assert removal under optimized mode",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "7a",
+      "url": "https://docs.python.org/3/library/__main__.html",
+      "claim_checked": "Direct execution versus import and entrypoint guard",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "7b",
+      "url": "https://docs.python.org/3/library/argparse.html",
+      "claim_checked": "Command-line option parsing and help",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "8",
+      "url": "https://docs.python.org/3/library/hashlib.html",
+      "claim_checked": "SHA-256 bytes digest and hexadecimal representation",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "9a",
+      "url": "https://docs.python.org/3/library/tempfile.html",
+      "claim_checked": "TemporaryDirectory lifecycle",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    },
+    {
+      "reference": "9b",
+      "url": "https://docs.python.org/3/library/subprocess.html",
+      "claim_checked": "run, cwd, capture_output and return code behavior",
+      "status": "verified",
+      "checked_on": "2026-10-04"
+    }
+  ],
+  "limits": [
+    "Official documentation semantics are not a substitute for local execution tests",
+    "No external textbook paragraphs or datasets reproduced"
+  ]
+}

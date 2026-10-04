@@ -1,0 +1,12 @@
+{
+  "task": "synthetic_house_price_regression",
+  "metric": "mae_wan",
+  "candidate_weights": [1.5, 2.0, 2.5],
+  "candidate_biases": [0.0, 10.0, 20.0],
+  "model_order": ["constant", "linear_grid"],
+  "tie_rule": "first_in_config_order",
+  "tolerance": 1e-12,
+  "data_generation_seed": 20261004,
+  "split_generation_seed": 7,
+  "expected_counts": {"train": 36, "validation": 12, "test": 12}
+}

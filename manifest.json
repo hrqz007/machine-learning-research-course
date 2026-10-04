@@ -120,14 +120,19 @@
         "实验与验收": "把预测、损失、读数据分成函数；故意制造并定位索引、类型和路径错误。",
         "常见误区": "隐藏全局状态；捕获异常后无声忽略；只在自己的机器上能跑。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/004/lecture.pdf",
+        "lab": "units/004/lab.pdf",
+        "notebook": "units/004/experiment.ipynb",
+        "script": "units/004/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed_122_checks",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -143,7 +148,7 @@
         "实验与验收": "用循环与NumPy算同一批预测和误差；逐项比对并测试非方阵和单样本输入。",
         "常见误区": "误把广播后的结果当目标形状；混淆复制与视图。"
       },
-      "status": "drafting",
+      "status": "in_review",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -166,7 +171,7 @@
         "实验与验收": "完成一个小型公开数据或本地教学数据的探索报告；核验合并前后行数和分组统计。",
         "常见误区": "在全数据上确定预处理参数；把异常值一律删掉；忽略合并造成的一对多膨胀。"
       },
-      "status": "drafting",
+      "status": "in_review",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -189,7 +194,7 @@
         "实验与验收": "交付基线、split文件、环境说明和命令行脚本；新进程重跑得到约定容差内结果。",
         "常见误区": "固定一个种子就宣称结果稳健；在最终测试上反复改方案。"
       },
-      "status": "in_review",
+      "status": "verified",
       "artifacts": {
         "lecture": "units/007/lecture.pdf",
         "lab": "units/007/lab.pdf",
@@ -197,11 +202,11 @@
         "script": "units/007/experiment.py"
       },
       "checks": {
-        "scientific": "author_passed_independent_pending",
+        "scientific": "independent_passed",
         "sources": "passed",
         "code": "passed",
         "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
-        "visual": "author_passed_independent_pending"
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -240,7 +245,7 @@
         "实验与验收": "手算二维投影和距离，再用数组验证；改变单位观察距离排名。",
         "常见误区": "把向量仅当列表；混淆范数与平方范数；默认不同尺度可直接比较。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
@@ -263,7 +268,7 @@
         "实验与验收": "画二维变换网格；实现批量预测并核验每个轴的含义。",
         "常见误区": "把逐元素乘法当矩阵乘法；默认矩阵乘法可交换。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",

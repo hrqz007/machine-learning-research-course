@@ -1,0 +1,592 @@
+{
+  "unit": "004",
+  "status": "passed",
+  "checked_on": "2026-10-04",
+  "python_version": "3.12.14",
+  "dependency_scope": "Python standard library only",
+  "check_count": 122,
+  "checks": [
+    {
+      "name": "prediction_known_answer",
+      "status": "passed"
+    },
+    {
+      "name": "numeric_core_allows_zero_area",
+      "status": "passed"
+    },
+    {
+      "name": "numeric_core_allows_negative_area",
+      "status": "passed"
+    },
+    {
+      "name": "prediction_float",
+      "status": "passed"
+    },
+    {
+      "name": "prediction_reject_type_0_bool",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_0_str",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_0_NoneType",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_0_list",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_nan_0",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_inf_0",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_negative_inf_0",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_type_1_bool",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_1_str",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_1_NoneType",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_1_list",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_nan_1",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_inf_1",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_negative_inf_1",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_type_2_bool",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_2_str",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_2_NoneType",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_type_2_list",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "prediction_reject_nan_2",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_inf_2",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_reject_negative_inf_2",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_product_overflow",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_sum_overflow",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_oversized_int",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "prediction_ignores_module_global_names",
+      "status": "passed"
+    },
+    {
+      "name": "mae_known_answer",
+      "status": "passed"
+    },
+    {
+      "name": "mae_single_sample",
+      "status": "passed"
+    },
+    {
+      "name": "mae_tuple_inputs",
+      "status": "passed"
+    },
+    {
+      "name": "mae_identity",
+      "status": "passed"
+    },
+    {
+      "name": "mae_joint_permutation",
+      "status": "passed"
+    },
+    {
+      "name": "mae_joint_translation",
+      "status": "passed"
+    },
+    {
+      "name": "mae_empty",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_length_mismatch",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_reject_text_container",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_reject_dict_container",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_prediction_bool",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_label_bool",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_prediction_text",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_label_text",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_prediction_none",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_label_none",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "mae_prediction_nan",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_label_nan",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_prediction_inf",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_label_inf",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_prediction_negative_inf",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_label_negative_inf",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_difference_overflow",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_total_overflow",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "mae_does_not_mutate",
+      "status": "passed"
+    },
+    {
+      "name": "train_four_rows",
+      "status": "passed"
+    },
+    {
+      "name": "csv_numeric_conversion",
+      "status": "passed"
+    },
+    {
+      "name": "candidate_scores",
+      "status": "passed"
+    },
+    {
+      "name": "selection_B",
+      "status": "passed"
+    },
+    {
+      "name": "fit_does_not_mutate",
+      "status": "passed"
+    },
+    {
+      "name": "training_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "baseline_single_sample",
+      "status": "passed"
+    },
+    {
+      "name": "candidate_config_not_shared",
+      "status": "passed"
+    },
+    {
+      "name": "tie_first_candidate",
+      "status": "passed"
+    },
+    {
+      "name": "fit_empty_train",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "fit_empty_candidates",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "fit_duplicate_names",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "fit_nonfinite_weight",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "schema_unknown",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "records_require_list",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "records_require_dict",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "records_boolean_area",
+      "status": "passed",
+      "expected_error": "TypeError"
+    },
+    {
+      "name": "predictions",
+      "status": "passed"
+    },
+    {
+      "name": "evaluation",
+      "status": "passed"
+    },
+    {
+      "name": "evaluation_reordered_labels",
+      "status": "passed"
+    },
+    {
+      "name": "evaluation_single_sample",
+      "status": "passed"
+    },
+    {
+      "name": "evaluate_missing_id",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "evaluate_wrong_id",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "evaluate_duplicate_label",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "evaluate_duplicate_prediction",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "predict_refuses_label_field",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "deliberate_index_error",
+      "status": "passed",
+      "expected_error": "IndexError"
+    },
+    {
+      "name": "harness_does_not_swallow_unknown_error",
+      "status": "passed"
+    },
+    {
+      "name": "deliberate_missing_path",
+      "status": "passed",
+      "expected_error": "FileNotFoundError"
+    },
+    {
+      "name": "csv_empty_file",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_header_only",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_wrong_header",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_reordered_header",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_duplicate_header",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_extra_header",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_extra_cell",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_missing_cell",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_blank_numeric_cell",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_nonnumeric",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_nan",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_inf",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_negative_inf",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_overflow_token",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_zero_area",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_negative_area",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_empty_id",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_whitespace_id",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_duplicate_id",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_malformed_quote",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "csv_quoted_comma_supported",
+      "status": "passed"
+    },
+    {
+      "name": "csv_utf8_crlf_single",
+      "status": "passed"
+    },
+    {
+      "name": "full_result_metric",
+      "status": "passed"
+    },
+    {
+      "name": "json_roundtrip",
+      "status": "passed"
+    },
+    {
+      "name": "output_contains_no_absolute_internal_path",
+      "status": "passed"
+    },
+    {
+      "name": "result_filenames_only",
+      "status": "passed"
+    },
+    {
+      "name": "rerun_same_result",
+      "status": "passed"
+    },
+    {
+      "name": "test_labels_cannot_change_model",
+      "status": "passed"
+    },
+    {
+      "name": "test_labels_cannot_change_train_scores",
+      "status": "passed"
+    },
+    {
+      "name": "test_labels_cannot_change_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_labels_change_only_evaluation",
+      "status": "passed"
+    },
+    {
+      "name": "reject_train_test_id_overlap",
+      "status": "passed",
+      "expected_error": "ValueError"
+    },
+    {
+      "name": "failed_run_does_not_write_result",
+      "status": "passed"
+    },
+    {
+      "name": "cli_from_unrelated_cwd",
+      "status": "passed"
+    },
+    {
+      "name": "cli_result_equal",
+      "status": "passed"
+    },
+    {
+      "name": "cli_explicit_data_dir",
+      "status": "passed"
+    },
+    {
+      "name": "optimized_mode_still_rejects_invalid_input",
+      "status": "passed"
+    },
+    {
+      "name": "import_has_no_stdout",
+      "status": "passed"
+    },
+    {
+      "name": "cli_help_available",
+      "status": "passed"
+    }
+  ],
+  "coverage": [
+    "core contracts",
+    "CSV schema and malformed inputs",
+    "ID-aligned evaluation",
+    "training-only selection",
+    "JSON roundtrip",
+    "CLI from unrelated working directory",
+    "input validation retained with Python -O",
+    "unknown errors propagate"
+  ],
+  "limitations": [
+    "finite ordinary int/float convertible to float; no arbitrary precision promise",
+    "small explicit tests do not prove all inputs correct",
+    "macOS and Windows runtime behavior not tested here",
+    "Jupyter browser UI and external socket transport not tested"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "unit": "004",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 17,
+    "figures": 11
+  },
+  "lab": {
+    "pages": 8
+  },
+  "visual_review": "All final lecture and lab pages rendered and inspected; no clipping or missing glyphs observed.",
+  "code": {
+    "python": "3.12.14",
+    "dependencies": "standard library only",
+    "status": "passed",
+    "test_checks": 122,
+    "test_suite_rerun_from_unrelated_cwd": true
+  },
+  "notebook": {
+    "unit": "004",
+    "notebook": "experiment.ipynb",
+    "status": "passed",
+    "checked_on": "2026-10-04",
+    "python_version": "3.12.14",
+    "code_cells": 16,
+    "all_execution_counts_sequential": true,
+    "saved_error_outputs": 0,
+    "execution": "Fresh Python process; actual ipykernel InProcessKernel; cells executed in order; outputs saved",
+    "final_expected_metrics": {
+      "best_model": "B",
+      "candidate_train_mae_wan": [
+        10,
+        0,
+        7.5
+      ],
+      "test_mae_wan": 5,
+      "baseline_test_mae_wan": 15
+    },
+    "independent_checks_called_in_notebook": 122,
+    "limitations": [
+      "External socket transport and Jupyter browser UI not tested",
+      "No macOS or Windows runtime verification"
+    ],
+    "path_privacy_check": "Notebook source/output and result JSON contain no absolute build-workspace paths"
+  },
+  "sources": "source-checks.json",
+  "files": {
+    "lecture.md": {
+      "bytes": 37077,
+      "sha256": "3ba094a1d8fc5543d4ef4d806a5f0f6a97b4d89671bbac9c1b733d6d200ef1ce"
+    },
+    "lecture.pdf": {
+      "bytes": 2188572,
+      "sha256": "4de7c1c8417cb6049bf9a04969cee414a9f9b7e9a20d484f7f56a2844da24163"
+    },
+    "lab.md": {
+      "bytes": 17590,
+      "sha256": "8d5f41ff41ddcdcbed89d951352b4ea45dbb8e10a91db27432811bf11331e5b5"
+    },
+    "lab.pdf": {
+      "bytes": 978025,
+      "sha256": "d5259cc6d7abd84de493a9f964c69fe20027afc073866016d472d9824153d369"
+    },
+    "experiment.py": {
+      "bytes": 13455,
+      "sha256": "b1ced6f292f26fb60929b80c1ff16e7a4279f106a89c69b7c85f43fcb2936be1"
+    },
+    "experiment.ipynb": {
+      "bytes": 26714,
+      "sha256": "48915fd57d5fc94cc68bd4d60b87aa41be0fc64a9ac668a81ea2338561bf60f3"
+    },
+    "test_experiment.py": {
+      "bytes": 14799,
+      "sha256": "631c80749d1774cd63eb161b4a659b9410dad38c1174d012e22fd610922074a5"
+    },
+    "README.md": {
+      "bytes": 3786,
+      "sha256": "ab7a333876c68bb44892ef40ef8e1b7a56b3409cbd935a8041502b4137bb3a16"
+    },
+    "make_figures.py": {
+      "bytes": 20088,
+      "sha256": "62ca68ee56473e87ef5fcbe7282b6c579fbcd107d6af32f3306256c38d6a1ac3"
+    },
+    "source-checks.json": {
+      "bytes": 3503,
+      "sha256": "3b5a4bc632cb90bb04627b8c50a1bd27a44d704dfe507f4215ed7d0114dac3cf"
+    },
+    "test-result.json": {
+      "bytes": 13202,
+      "sha256": "52583542af08646d937f7c2a5bd8636b2933be2b86ec1ec560992cccf1a8faa9"
+    },
+    "notebook-check.json": {
+      "bytes": 817,
+      "sha256": "8ab72575e2980de9e00565bd4719f6e99ca4b7ac4aa31ee649a9307a72d3ec76"
+    },
+    "data/train.csv": {
+      "bytes": 61,
+      "sha256": "2dff3f62e1ef5229b9c49930c1a73853704b3b3918562fb89fb9beab027929c7"
+    },
+    "data/test_inputs.csv": {
+      "bytes": 23,
+      "sha256": "0a908727130ecea849de0af51ff004827da1e3665fee17ea29f94387cb1fb41a"
+    },
+    "data/test_labels.csv": {
+      "bytes": 27,
+      "sha256": "8b6bd0f4ce9922633f3ddb8e98f03934f4a5bbed78f5d5a3ff1afb95bc668be9"
+    },
+    "data/README.md": {
+      "bytes": 592,
+      "sha256": "07e0cce4f5f80332f5cd50088c5c8a7438a4cd62fc2ac54a3e345e9a68453f10"
+    },
+    "figures/01_single_source.png": {
+      "bytes": 153526,
+      "sha256": "45712f08469ae3325b981f1e4f726a94540ec01999780a03eac3bf88ec127abb"
+    },
+    "figures/02_return.png": {
+      "bytes": 116270,
+      "sha256": "a84a5dfe3f44aeae8f0e10eb17249a857fecc0432a65c3e6cb92fddcfaddc283"
+    },
+    "figures/03_scope.png": {
+      "bytes": 114509,
+      "sha256": "660dbacc3de1e75f90bf2a18d482b78296d1768b61649452b7ed64440f5f0486"
+    },
+    "figures/04_contract.png": {
+      "bytes": 171917,
+      "sha256": "334ddf06e744783cbb5b5f66bf125008042a917eb033a08c4f63c95646fa7bdb"
+    },
+    "figures/05_mae.png": {
+      "bytes": 114460,
+      "sha256": "372448ef259fb7829ef19256293b9601ed8941f54f606fd983ec0c9c65f03d3f"
+    },
+    "figures/06_records.png": {
+      "bytes": 150926,
+      "sha256": "e95ac0dbb3bc9f0a5f2d58752608ca16678436b45d49974443ace30c4e1b65a9"
+    },
+    "figures/07_traceback.png": {
+      "bytes": 165344,
+      "sha256": "19316011b74cdea81c778a25187df4aa36b72874ff53d419afcae673187b669a"
+    },
+    "figures/08_paths.png": {
+      "bytes": 139524,
+      "sha256": "4b7478c9abb236bd1b4ccf9a7c93c5c07c30875b73b3920d03447622f1a601ba"
+    },
+    "figures/09_csv.png": {
+      "bytes": 154145,
+      "sha256": "bb5ae78cd21cfb8d55479d3a30a86bcce6c26957e0861a054f7769988329739c"
+    },
+    "figures/10_outputs.png": {
+      "bytes": 151836,
+      "sha256": "37ce9283471aca5ad129248b767cbf3a1b187e8ecad5019bf96c4e111f615914"
+    },
+    "figures/11_tests.png": {
+      "bytes": 186604,
+      "sha256": "cbfc48fee44d0f647f6665d0035c7e000565f9f24ddcdc221777fdb23ccb35e4"
+    }
+  },
+  "review_fixes": [
+    "Protected exact double-underscore Python identifiers with inline code; official __main__ link is explicit Markdown link."
+  ],
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 17 lecture and 8 lab pages visually reviewed",
+      "122 tests under normal and -O modes",
+      "300 independent arithmetic checks",
+      "16 notebook cells in fresh IPython kernel",
+      "exact Python identifiers and main-entry reference links rendered correctly",
+      "27 payload hashes matched"
+    ],
+    "limitations": [
+      "Jupyter browser UI and external socket transport not tested",
+      "actual learner Anaconda installation and macOS/Windows not tested"
+    ]
+  }
+}

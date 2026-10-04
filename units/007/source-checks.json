@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Improving Reproducibility in Machine Learning Research",
+    "url": "https://jmlr.org/papers/v22/20-303.html",
+    "role": "原始研究：可复现报告和流程",
+    "checked": "2026-10-04",
+    "status": "read_primary_source"
+  },
+  {
+    "title": "scikit-learn Common pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "role": "官方文档：数据角色与随机性",
+    "checked": "2026-10-04",
+    "status": "read_primary_source"
+  },
+  {
+    "title": "NumPy random compatibility",
+    "url": "https://numpy.org/doc/stable/reference/random/compatibility.html",
+    "role": "官方文档：随机流兼容条件",
+    "checked": "2026-10-04",
+    "status": "read_primary_source"
+  },
+  {
+    "title": "Python hashlib",
+    "url": "https://docs.python.org/3/library/hashlib.html",
+    "role": "官方文档：内容摘要",
+    "checked": "2026-10-04",
+    "status": "read_primary_source"
+  }
+]
