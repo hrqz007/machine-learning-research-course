@@ -1,0 +1,162 @@
+{
+  "unit": "005",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 20,
+    "figures": 10
+  },
+  "lab": {
+    "pages": 6
+  },
+  "answers": {
+    "pages": 4
+  },
+  "visual_review": "All final PDF pages rendered and inspected; no clipping, broken equations or missing glyphs observed.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "test_groups_or_assertions": 10,
+    "details": "test-result.json"
+  },
+  "notebook": {
+    "code_cells": 19,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential execution; outputs saved",
+    "saved_errors": 0,
+    "private_path_check": "passed"
+  },
+  "limitations": [
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested",
+    "synthetic teaching data; no real-world performance claims"
+  ],
+  "source_checks": "source-checks.json",
+  "files": {
+    "lecture.md": {
+      "bytes": 48925,
+      "sha256": "6cda9ce6a380513421fcd01b02b14db96ca116a50c7c0681e05e7ec046bb794d"
+    },
+    "lecture.pdf": {
+      "bytes": 1604724,
+      "sha256": "e4ca23e46bc2097d247cf5d445739918fe5d7006681209f1c6b9cab5f3583b4b"
+    },
+    "lab.md": {
+      "bytes": 14494,
+      "sha256": "75ec09a1842201a1d15650afa2b6caa2cf49b9a5931b375ae8d1b016130082e3"
+    },
+    "lab.pdf": {
+      "bytes": 535841,
+      "sha256": "f0d721fc3af448db9b0eec145cb34fb0a48aea3f11b25d02bae767df59a67849"
+    },
+    "answers.md": {
+      "bytes": 9059,
+      "sha256": "e4e243f6bbf23dbe703287bd1af9fee0c3191fb3894b9d22b560b051a3687a7c"
+    },
+    "answers.pdf": {
+      "bytes": 490679,
+      "sha256": "3001b9205a9ee53dd4d63888d29a557621357717f6bea0aa411dee27c524e0b3"
+    },
+    "experiment.py": {
+      "bytes": 11228,
+      "sha256": "bae2c07cab0fdd9e3858ace59c415e8f91b7fe55b46f27a836ac71a32690a0f7"
+    },
+    "experiment.ipynb": {
+      "bytes": 23209,
+      "sha256": "eb16810fe94303d4112c8f792a3d4e01ffe3acf6b02e54b51f1c7b003a2aa51b"
+    },
+    "README.md": {
+      "bytes": 3790,
+      "sha256": "6b150760be84da49cfc28b636ee2b002479e2a05a5427cd65bbd06bdb5d9bffc"
+    },
+    "requirements.txt": {
+      "bytes": 16,
+      "sha256": "1986590f068fa10c02086f967ba365ede5c96e3a9ae5c08ac026b34ee183df8f"
+    },
+    "build_figures.py": {
+      "bytes": 9349,
+      "sha256": "a3c348cabd672d3ff862191eda82d6809b9a51569578257e7533fb85c8c878da"
+    },
+    "source-checks.json": {
+      "bytes": 6021,
+      "sha256": "9b99aa265cf83b77619272292137e501310dd8a9731cfff2022ccf74e6734c32"
+    },
+    "test-result.json": {
+      "bytes": 3290,
+      "sha256": "fb0ee3dc887c922172093a65adf1444f5c9c729c6acae28c325e7108ddad72e0"
+    },
+    "data/README.md": {
+      "bytes": 1079,
+      "sha256": "712955cfbaf691d3a4cbac07e12393b86d690b193a3064c127dcb1681bf9594b"
+    },
+    "data/house_training.csv": {
+      "bytes": 92,
+      "sha256": "48256da518ae0355d68230390da51a3abf434f33c3b8cbdb62fac18824ec9270"
+    },
+    "data/multifeature_demo.csv": {
+      "bytes": 100,
+      "sha256": "3d4609496ecec631b974954b9c72b6baf83a9503825318aeaf44666e7efcec45"
+    },
+    "data/house_test_fixed.csv": {
+      "bytes": 58,
+      "sha256": "2be150278f80c05011723388ab33310cb63825fb44274c9519348092956c086a"
+    },
+    "figures/01_shape_map.png": {
+      "bytes": 63882,
+      "sha256": "70b4f6f937f06debb3b1192f6b66fae6e504fcd5306596a8bb27125b3d88c335"
+    },
+    "figures/02_slicing.png": {
+      "bytes": 88747,
+      "sha256": "f0f2fe8f3a04938579fe4086da125dbb3c557407bdc573685676e334187863b3"
+    },
+    "figures/03_error_pipeline.png": {
+      "bytes": 86365,
+      "sha256": "3f04d243e4d8d178884742e426d7b7b7dffad18eb191034db9cbfdc70a7dca1e"
+    },
+    "figures/04_axis_reductions.png": {
+      "bytes": 65851,
+      "sha256": "00904c5f3a211915c42a20b30f751d637122ff42838783a0b7e835f6d7a2a82b"
+    },
+    "figures/05_weighted_broadcast.png": {
+      "bytes": 86803,
+      "sha256": "0a8ab6b72a0c0c37903645d5bc41c411ded123213899fde45180deb03bf5216e"
+    },
+    "figures/06_broadcast_trap.png": {
+      "bytes": 85884,
+      "sha256": "b1326453dceb295dff99fd6cb397dfe71c14e08584b6159c169bf98332471a5e"
+    },
+    "figures/07_contract_checks.png": {
+      "bytes": 123650,
+      "sha256": "2125293f0eeff3e613a544366b801c5a4afec25e09376a86c9f760d00a83a485"
+    },
+    "figures/08_views_copies.png": {
+      "bytes": 103047,
+      "sha256": "f83804a1a4145495d7a30eae9aa2fba9ae355e05f05ba31fef83671ebfd6e433"
+    },
+    "figures/09_dtype_precision.png": {
+      "bytes": 118244,
+      "sha256": "2f33609cd4be90c1f44d3c04db9bf5ac7c790eb19ca203b52da392d2ee72f30b"
+    },
+    "figures/10_cost_growth.png": {
+      "bytes": 153265,
+      "sha256": "5825b79ffdcf49299fd50b5a7b771721f0d99e06b06396331695ca26fbe21bf4"
+    }
+  },
+  "review_fixes": [
+    "Reject boolean leaves before conversion for ordinary list/tuple inputs; ndarray checked by current dtype only.",
+    "Corrected view/copy cross-reference to section ten."
+  ],
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 20 lecture,6 lab,4 answer pages",
+      "19 cells in fresh IPython kernel",
+      "300 independent arithmetic/shape tests",
+      "mixed bool regression checks",
+      "dtype,views,timing-scope checks",
+      "27 payload hashes matched"
+    ]
+  }
+}

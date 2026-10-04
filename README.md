@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–004 讲与第 007 讲的完整教学包。第 005–006 讲已成稿、正在最终验收，第 008–010 讲制作中，其余单元尚未完成。规划目录不代表正文或实验已经完成。
+> **制作中。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–007 讲的完整教学包。其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
 
 ## 从这里开始
 
@@ -25,6 +25,12 @@
 - [第 004 讲：函数与可调试程序](units/004/README.md)
   - [正文 PDF（17 页）](units/004/lecture.pdf) · [实验指南（8 页）](units/004/lab.pdf)
   - [Notebook](units/004/experiment.ipynb) · [Python 脚本](units/004/experiment.py) · [122 项测试](units/004/test_experiment.py) · [验证记录](units/004/verification.json)
+- [第 005 讲：NumPy 数组与数值计算](units/005/README.md)
+  - [正文（20 页）](units/005/lecture.pdf) · [实验指南（6 页）](units/005/lab.pdf) · [详解（4 页）](units/005/answers.pdf)
+  - [Notebook](units/005/experiment.ipynb) · [Python 脚本](units/005/experiment.py) · [验证记录](units/005/verification.json)
+- [第 006 讲：读表清洗与可视化](units/006/README.md)
+  - [正文（22 页）](units/006/lecture.pdf) · [实验指南（5 页）](units/006/lab.pdf) · [详解（4 页）](units/006/answers.pdf) · [报告示例（2 页）](units/006/example_report.pdf)
+  - [Notebook](units/006/experiment.ipynb) · [Python 脚本](units/006/experiment.py) · [验证记录](units/006/verification.json)
 - [第 007 讲：第一个可重现实验](units/007/README.md)
   - [正文 PDF（10 页）](units/007/lecture.pdf) · [实验指南（5 页）](units/007/lab.pdf)
   - [Notebook](units/007/experiment.ipynb) · [Python 脚本](units/007/experiment.py) · [验证记录](units/007/verification.json)

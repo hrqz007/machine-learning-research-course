@@ -1,0 +1,106 @@
+{
+  "unit": "006",
+  "checked_on": "2026-10-04",
+  "method": "Opened official documentation with web tools; verified core API claims and ran local deterministic examples. No textbook text copied.",
+  "actual_runtime": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "sources": [
+    {
+      "title": "Pandas read_csv",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.read_csv.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "dtype、keep_default_na、na_values、encoding；显式读入约定"
+    },
+    {
+      "title": "Pandas to_numeric",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.to_numeric.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "raise与coerce的差异；未知文本不无声改成缺失"
+    },
+    {
+      "title": "Pandas loc",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.DataFrame.loc.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "标签选择、布尔索引、标签切片与位置选择区别"
+    },
+    {
+      "title": "Pandas drop_duplicates",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.DataFrame.drop_duplicates.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "subset与keep参数；索引不代替判重字段"
+    },
+    {
+      "title": "Pandas missing data",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/user_guide/missing_data.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "缺失表示、isna/notna、保留与填补"
+    },
+    {
+      "title": "Pandas merge",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.DataFrame.merge.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "left/inner、validate、indicator、空键可匹配的警告"
+    },
+    {
+      "title": "Pandas join",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.DataFrame.join.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "索引连接与on参数，多对一约束"
+    },
+    {
+      "title": "Pandas groupby size",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.core.groupby.DataFrameGroupBy.size.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "分组行数"
+    },
+    {
+      "title": "Pandas groupby count",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.core.groupby.DataFrameGroupBy.count.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "分组非缺失计数"
+    },
+    {
+      "title": "Pandas Series quantile",
+      "url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.Series.quantile.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "线性插值与其他插值选项；本讲手算另以程序逐项验证"
+    },
+    {
+      "title": "NumPy histogram",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.histogram.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "箱边界、范围外计数、最后一箱包含右端"
+    },
+    {
+      "title": "Matplotlib hist",
+      "url": "https://matplotlib.org/3.10.8/api/_as_gen/matplotlib.pyplot.hist.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "计数直方图与显式bins"
+    },
+    {
+      "title": "Matplotlib scatter",
+      "url": "https://matplotlib.org/3.10.8/api/_as_gen/matplotlib.axes.Axes.scatter.html",
+      "publisher": "Official project documentation",
+      "checked_on": "2026-10-04",
+      "supports": "横纵坐标与散点样式"
+    }
+  ],
+  "version_note": "Current stable documentation initially resolved to newer versions; linked teaching references use 2.2 / 2.3 / 3.10.8 versioned official pages matching tested package families.",
+  "data_note": "All teaching tables and figures are original synthetic constructions; no real private data, no market or model-performance claims."
+}

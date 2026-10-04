@@ -1,0 +1,6 @@
+district_code,district_name,distance_km,source_id
+N,北片区,1.2,A
+N,北片区,1.8,B
+S,南片区,2.0,A
+E,东片区,1.5,A
+W,西片区,2.5,A

@@ -181,7 +181,7 @@
         "实验与验收": "完成一个小型公开数据或本地教学数据的探索报告；核验合并前后行数和分组统计。",
         "常见误区": "在全数据上确定预处理参数；把异常值一律删掉；忽略合并造成的一对多膨胀。"
       },
-      "status": "in_review",
+      "status": "verified",
       "artifacts": {
         "lecture": "units/006/lecture.pdf",
         "lab": "units/006/lab.pdf",
@@ -190,11 +190,11 @@
         "script": "units/006/experiment.py"
       },
       "checks": {
-        "scientific": "author_passed_independent_pending",
+        "scientific": "independent_passed",
         "sources": "passed",
         "code": "passed",
         "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
-        "visual": "author_passed_independent_pending"
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
         "status": "not_uploaded"
@@ -242,14 +242,20 @@
         "实验与验收": "把同一个预测式写成文字、公式、表格和程序；验证对数恒等式的定义域。",
         "常见误区": "忽视定义域；把相关例子当证明；看不懂下标却继续套公式。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/008/lecture.pdf",
+        "lab": "units/008/lab.pdf",
+        "answers": "units/008/answers.pdf",
+        "notebook": "units/008/experiment.ipynb",
+        "script": "units/008/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_passed_independent_pending",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "author_passed_independent_pending"
       },
       "publication": {
         "status": "not_uploaded"

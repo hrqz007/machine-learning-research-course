@@ -1,0 +1,231 @@
+{
+  "status": "passed",
+  "checked_on": "2026-10-04",
+  "test_count": 43,
+  "tests": [
+    {
+      "name": "raw rows 16",
+      "passed": true
+    },
+    {
+      "name": "clean rows 14",
+      "passed": true
+    },
+    {
+      "name": "unique properties 12",
+      "passed": true
+    },
+    {
+      "name": "unique event key",
+      "passed": true
+    },
+    {
+      "name": "duplicate original lines 16 and 17",
+      "passed": true
+    },
+    {
+      "name": "two re-listing events preserved",
+      "passed": true
+    },
+    {
+      "name": "H01 twice H02 twice",
+      "passed": true
+    },
+    {
+      "name": "missing IDs L004 L010",
+      "passed": true
+    },
+    {
+      "name": "observed area count 12",
+      "passed": true
+    },
+    {
+      "name": "price count 14",
+      "passed": true
+    },
+    {
+      "name": "area sum 1220",
+      "passed": true
+    },
+    {
+      "name": "price sum 2888",
+      "passed": true
+    },
+    {
+      "name": "correct mean 2888/14",
+      "passed": true
+    },
+    {
+      "name": "conflicting N has two candidate rows",
+      "passed": true
+    },
+    {
+      "name": "cardinality rejected",
+      "passed": true
+    },
+    {
+      "name": "safe left merge 14",
+      "passed": true
+    },
+    {
+      "name": "matched 13 unmatched 1",
+      "passed": true
+    },
+    {
+      "name": "unmatched event L012",
+      "passed": true
+    },
+    {
+      "name": "unsafe merge 19",
+      "passed": true
+    },
+    {
+      "name": "unsafe sum 3576",
+      "passed": true
+    },
+    {
+      "name": "unsafe mean 3576/19",
+      "passed": true
+    },
+    {
+      "name": "inner join mean 176",
+      "passed": true
+    },
+    {
+      "name": "group event counts",
+      "passed": true
+    },
+    {
+      "name": "group observed area counts",
+      "passed": true
+    },
+    {
+      "name": "south missing fraction 2/3",
+      "passed": true
+    },
+    {
+      "name": "south area mean uses one observation",
+      "passed": true
+    },
+    {
+      "name": "group counts reconcile",
+      "passed": true
+    },
+    {
+      "name": "histogram counts",
+      "passed": true
+    },
+    {
+      "name": "histogram includes all observed values",
+      "passed": true
+    },
+    {
+      "name": "quartile hand q25",
+      "passed": true
+    },
+    {
+      "name": "quartile hand q50",
+      "passed": true
+    },
+    {
+      "name": "quartile hand q75",
+      "passed": true
+    },
+    {
+      "name": "split 10 and 4",
+      "passed": true
+    },
+    {
+      "name": "train observed count 9",
+      "passed": true
+    },
+    {
+      "name": "train mean 670/9",
+      "passed": true
+    },
+    {
+      "name": "all data mean counterexample 1220/12",
+      "passed": true
+    },
+    {
+      "name": "both missing values use train mean",
+      "passed": true
+    },
+    {
+      "name": "exploration retains missing values",
+      "passed": true
+    },
+    {
+      "name": "legitimate large event retained",
+      "passed": true
+    },
+    {
+      "name": "no cross-split property overlap",
+      "passed": true
+    },
+    {
+      "name": "conflicting repeated event is rejected",
+      "passed": true
+    },
+    {
+      "name": "unexpected numeric token is rejected",
+      "passed": true
+    },
+    {
+      "name": "raw hashes unchanged",
+      "passed": true
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "script": "experiment.py",
+  "raw_hashes_unchanged": true,
+  "limitations": [
+    "Synthetic teaching data, no market inference or model-performance claim.",
+    "Anaconda installation and browser Jupyter UI not exercised in this environment."
+  ],
+  "notebook": {
+    "status": "passed",
+    "code_cells": 23,
+    "total_cells": 49,
+    "all_cells_executed": true,
+    "error_outputs": 0,
+    "embedded_png_outputs": 2,
+    "kernel": "ipykernel InProcessKernel in a fresh Python process; sequential cell execution",
+    "command_template": "python shared/execute_notebook_inprocess.py units/006/experiment.ipynb",
+    "browser_ui_tested": false,
+    "anaconda_installation_tested": false,
+    "socket_transport_tested": false
+  },
+  "deterministic_rerun": {
+    "status": "passed",
+    "independent_script_processes": 2,
+    "byte_equal_derived_files": {
+      "clean_events.csv": true,
+      "cleaning_audit.csv": true,
+      "decisions.json": true,
+      "district_conflicts.csv": true,
+      "group_summary.csv": true,
+      "imputation_demo.csv": true,
+      "raw_hashes.json": true,
+      "summary.json": true,
+      "test-result.json": true,
+      "verified_join.csv": true
+    }
+  },
+  "figures": {
+    "count": 10,
+    "contact_sheet_reviewed": true,
+    "final_full_size_review": "passed: all 10 teaching figures and 2 embedded notebook plots inspected; no missing glyphs or clipped labels"
+  },
+  "lecture": {
+    "characters": 24389,
+    "cjk_characters": 12502,
+    "exercises": 15
+  },
+  "sources_checked": "2026-10-04",
+  "pdf_rendering": "Final PDF rendering and page checks are recorded in verification.json."
+}

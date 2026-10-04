@@ -1,0 +1,186 @@
+{
+  "unit": "006",
+  "status": "verified",
+  "date": "2026-10-04",
+  "lecture": {
+    "pages": 22,
+    "figures": 10
+  },
+  "lab": {
+    "pages": 5
+  },
+  "answers": {
+    "pages": 4
+  },
+  "visual_review": "All final PDF pages rendered and inspected; no clipping, broken equations or missing glyphs observed.",
+  "code": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "status": "passed",
+    "test_groups_or_assertions": 43,
+    "details": "test-result.json",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "notebook": {
+    "code_cells": 23,
+    "status": "passed",
+    "execution": "fresh Python process, real ipykernel InProcessKernel, sequential execution; outputs saved",
+    "saved_errors": 0,
+    "private_path_check": "passed"
+  },
+  "limitations": [
+    "Jupyter browser UI and external socket transport not tested",
+    "actual learner Anaconda installation not tested",
+    "synthetic teaching data; no real-world performance claims"
+  ],
+  "source_checks": "source-checks.json",
+  "files": {
+    "lecture.md": {
+      "bytes": 52335,
+      "sha256": "644dc065463263fe763cbaa2ff398a214061777abafa01466469984046e0be39"
+    },
+    "lecture.pdf": {
+      "bytes": 1492729,
+      "sha256": "dba08230303e4ce938759e2a1c3b9bc88406b7d1bbedc8ad4090ccae12bb9370"
+    },
+    "lab.md": {
+      "bytes": 12120,
+      "sha256": "57fb0c8a00feb1fb328cef4849b332afb5d7de2c574a9e5d5b79192449593e04"
+    },
+    "lab.pdf": {
+      "bytes": 525141,
+      "sha256": "bc6df930849662eab81a0939931ff95f3ce9474978bcfbd4db87804c18c58ad6"
+    },
+    "answers.md": {
+      "bytes": 10278,
+      "sha256": "f973a9bc27e014224c913457e2938137c0ab10dbee570c91c0783f70688cb581"
+    },
+    "answers.pdf": {
+      "bytes": 450159,
+      "sha256": "2c446a779d24e0ad9e64804f6e2b0717e6aeeaac6dce4122012b1aeb0be0639d"
+    },
+    "example_report.md": {
+      "bytes": 2615,
+      "sha256": "3a89d4f3588791c13d8ce9d18553304f427249aae4528310181c10e72c257746"
+    },
+    "example_report.pdf": {
+      "bytes": 587991,
+      "sha256": "bf358db35c0215dc1b158d6f4301a35f5d0b43f3d6259b41f0fb2074be930b87"
+    },
+    "experiment.py": {
+      "bytes": 15861,
+      "sha256": "c36bcf7a9c4c63793360e723e605555ffbeb50d88d5f3a56a0f4f1361bb172c8"
+    },
+    "experiment.ipynb": {
+      "bytes": 168078,
+      "sha256": "dbd38d940db2b1e8b7f4c34c5fdb7b1547575ae7b8addb74006c9f48280b6852"
+    },
+    "README.md": {
+      "bytes": 3906,
+      "sha256": "1f0f568cbcb044c9f3488cb5b48cac29f72fff87d01a3f0dd9add22c6d8d719f"
+    },
+    "requirements.txt": {
+      "bytes": 54,
+      "sha256": "9ea47710e96f0911e98e4dda570b6afbf4bcc11ef17bd918384d0f48bc11bb1c"
+    },
+    "environment.yml": {
+      "bytes": 270,
+      "sha256": "8857fbeababb64016b76dd553aa1cd09ce0e04038fff8c7cbed278dd561c2138"
+    },
+    "make_figures.py": {
+      "bytes": 9598,
+      "sha256": "9019408f67e4e23dc99e4d852df63c5d82501891b48a6219d7e5be8dd0fb6fc9"
+    },
+    "source-checks.json": {
+      "bytes": 4681,
+      "sha256": "865791dbf21000bac110e94ac6fcbef9fcd8b32c3527b2e681e697d213584cd5"
+    },
+    "test-result.json": {
+      "bytes": 5025,
+      "sha256": "bd4b540d2ba9e617ba315e15f7d1d8993ab8c8f2d325e821fbadb3a424e16488"
+    },
+    "data/data_dictionary.md": {
+      "bytes": 3108,
+      "sha256": "a04b83fb5fa0b487f5dafbb7947f50855ee85cd5bcc42144c69487c3fc41d926"
+    },
+    "data/raw/district_candidates.csv": {
+      "bytes": 140,
+      "sha256": "46121564b6b96cff836c1a0c242399bed014adf710dd9e57e24e225d19db4dca"
+    },
+    "data/raw/district_registry.csv": {
+      "bytes": 238,
+      "sha256": "5200115551d5f053f0d06874efaa7eec13fe943754318be7aa4db66eff19448c"
+    },
+    "data/raw/listings.csv": {
+      "bytes": 544,
+      "sha256": "c76d31da54922992e276dcddf876063b2bb6c205ece7c7f7c0ed1274d027b7b7"
+    },
+    "data/raw/split_manifest.csv": {
+      "bytes": 165,
+      "sha256": "ee6cf50e950b2e7aef2dcabd45ebc690d684616c449b59be4f59d3fbda31b969"
+    },
+    "figures/01_table_identity.png": {
+      "bytes": 71490,
+      "sha256": "94c9e46fcbf8437d5968209b651c2643a9fd75e6c1e0b57d48e9692b1b190aa6"
+    },
+    "figures/02_duplicate_vs_relisting.png": {
+      "bytes": 83544,
+      "sha256": "a957d0b6a285dc2a9d2ed0c09e8b8862e4a9a7f4a7c047a51fce65a896f526ac"
+    },
+    "figures/03_missing_matrix.png": {
+      "bytes": 52905,
+      "sha256": "28e3d111b968c517121505eadd70b4e1d9602439315aa7a4904148d8ce5bada2"
+    },
+    "figures/04_join_cardinality.png": {
+      "bytes": 103679,
+      "sha256": "2b900d575199cb9553f69d9902bbc90b70723f00ab5a8849d57032add8e7df3e"
+    },
+    "figures/05_join_changes_mean.png": {
+      "bytes": 75115,
+      "sha256": "ea4ca9b38c0580d2ae1cba7fbba43aa35da049827acd20d02721723647dda13d"
+    },
+    "figures/06_group_denominators.png": {
+      "bytes": 73014,
+      "sha256": "b439b05c3ee52d1721fe6bcafc1f10dc17f549d3b417da825a83ae6e0e4712df"
+    },
+    "figures/07_quantile_interpolation.png": {
+      "bytes": 84933,
+      "sha256": "54c8d1b0c581744d090c617dd796b1f2a44c9da074eea3c26f348d7752855d7c"
+    },
+    "figures/08_histogram_bins.png": {
+      "bytes": 55058,
+      "sha256": "ab8625ef027436fb63f0267ca3ed65e03b25dc1afc1fedb30d11a7298c47fbfa"
+    },
+    "figures/09_scatter_scope.png": {
+      "bytes": 102982,
+      "sha256": "89364fc8f2ca150c96d5d9615fbad065136e8b332ca063b17e86cc5d6f060c7f"
+    },
+    "figures/10_train_only_imputation.png": {
+      "bytes": 82075,
+      "sha256": "bc0799d749119177aa3c0789514c55df700fc2e9294d98b391c7281b08086870"
+    }
+  },
+  "example_report": {
+    "pages": 2
+  },
+  "review_fixes": [
+    "Protected literal Pandas <NA> markers with inline code so Markdown does not remove them as HTML."
+  ],
+  "independent_review": {
+    "date": "2026-10-04",
+    "status": "passed",
+    "checks": [
+      "all 33 PDF pages and 2 Notebook figures",
+      "43 script checks in independent processes",
+      "23 notebook cells in fresh IPython kernel",
+      "exact arithmetic for summaries/quantiles",
+      "11 extra boundary checks",
+      "train-only imputation unaffected by changed test values",
+      "raw CSV files unchanged and derived outputs repeated identically",
+      "31 payload hashes matched",
+      "literal <NA> markers visually restored"
+    ]
+  },
+  "final_metadata_check": "Passed: removed stale source-stage PDF note; numerical evidence, code and PDFs unchanged."
+}

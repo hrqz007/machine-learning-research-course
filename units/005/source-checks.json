@@ -1,0 +1,249 @@
+{
+  "unit": "005",
+  "title": "NumPy数组与数值计算",
+  "checked_on": "2026-10-04",
+  "curriculum_scope": {
+    "prerequisites": [
+      "003",
+      "004"
+    ],
+    "central_question": "怎样用数组表示一批样本，并确保向量化没有算错？",
+    "included": [
+      "shape",
+      "axis",
+      "indexing and slicing",
+      "elementwise arithmetic",
+      "broadcasting",
+      "reductions",
+      "shape contracts",
+      "loop agreement",
+      "non-square and single-sample cases",
+      "views and copies",
+      "dtype and precision",
+      "introductory complexity and measured timing"
+    ],
+    "not_required": [
+      "matrix multiplication theory",
+      "linear algebra proofs",
+      "model fitting"
+    ]
+  },
+  "official_sources": [
+    {
+      "title": "数组属性与索引",
+      "url": "https://numpy.org/doc/2.3/user/absolute_beginners.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "shape",
+        "ndim",
+        "size",
+        "dtype",
+        "indexing"
+      ]
+    },
+    {
+      "title": "归约与轴",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.mean.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "axis",
+        "keepdims",
+        "accumulator dtype"
+      ]
+    },
+    {
+      "title": "广播",
+      "url": "https://numpy.org/doc/2.3/user/basics.broadcasting.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "right aligned dimensions",
+        "equal or one",
+        "result shape"
+      ]
+    },
+    {
+      "title": "复制与视图",
+      "url": "https://numpy.org/doc/2.3/user/basics.copies.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "basic slices are views",
+        "advanced indexing creates copies",
+        "reshape may copy"
+      ]
+    },
+    {
+      "title": "数值类型",
+      "url": "https://numpy.org/doc/2.3/user/basics.types.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "integer bounds",
+        "overflow",
+        "precision"
+      ]
+    },
+    {
+      "title": "数值容差",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.allclose.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "atol + rtol * abs(reference)",
+        "broadcasting"
+      ]
+    },
+    {
+      "title": "求和精度",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.sum.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "dtype accumulator",
+        "floating rounding"
+      ]
+    },
+    {
+      "title": "数组转换",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.asarray.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "may reuse input storage"
+      ]
+    },
+    {
+      "title": "共享存储",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.shares_memory.html",
+      "accessed_on": "2026-10-04",
+      "verification": "opened and checked",
+      "facts_checked": [
+        "memory sharing test"
+      ]
+    }
+  ],
+  "original_content": {
+    "data": "synthetic teaching data only",
+    "figures": "10 locally generated original diagrams",
+    "text": "original Chinese teaching narrative and worked examples",
+    "external_images_used": false
+  },
+  "counts": {
+    "README.md": {
+      "characters": 1802,
+      "cjk_characters": 781
+    },
+    "lab.md": {
+      "characters": 7300,
+      "cjk_characters": 3229
+    },
+    "lecture.md": {
+      "characters": 21662,
+      "cjk_characters": 12193
+    },
+    "answers.md": {
+      "characters": 4653,
+      "cjk_characters": 1981
+    }
+  },
+  "validation": {
+    "lecture_figure_references": 10,
+    "figure_files_exist": true,
+    "figure_files": [
+      {
+        "file": "01_shape_map.png",
+        "pixels": [
+          1588,
+          844
+        ]
+      },
+      {
+        "file": "02_slicing.png",
+        "pixels": [
+          1588,
+          844
+        ]
+      },
+      {
+        "file": "03_error_pipeline.png",
+        "pixels": [
+          1728,
+          788
+        ]
+      },
+      {
+        "file": "04_axis_reductions.png",
+        "pixels": [
+          1588,
+          941
+        ]
+      },
+      {
+        "file": "05_weighted_broadcast.png",
+        "pixels": [
+          1728,
+          927
+        ]
+      },
+      {
+        "file": "06_broadcast_trap.png",
+        "pixels": [
+          1588,
+          954
+        ]
+      },
+      {
+        "file": "07_contract_checks.png",
+        "pixels": [
+          1588,
+          982
+        ]
+      },
+      {
+        "file": "08_views_copies.png",
+        "pixels": [
+          1588,
+          899
+        ]
+      },
+      {
+        "file": "09_dtype_precision.png",
+        "pixels": [
+          1728,
+          885
+        ]
+      },
+      {
+        "file": "10_cost_growth.png",
+        "pixels": [
+          1878,
+          1129
+        ]
+      }
+    ],
+    "all_ten_figures_visually_reviewed": true,
+    "exercises": 14,
+    "detailed_solutions": 14,
+    "notebook_code_cells": 19,
+    "notebook_all_executed_in_order": true,
+    "notebook_unhandled_errors": 0,
+    "mathtext_formulas_parsed": 29,
+    "python_syntax_passed": true,
+    "csv_and_code_values_agree": true,
+    "no_internal_workspace_paths_in_teaching_text_or_notebook": true
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "limitations": [
+    "Jupyter browser UI not tested",
+    "Anaconda installation not tested",
+    "Socket kernel transport not tested",
+    "Timing is one CPU environment measurement; no universal speedup claim"
+  ]
+}

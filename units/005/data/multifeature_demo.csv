@@ -1,0 +1,4 @@
+sample_id,area_m2,room_count,rule_prediction_wan
+demo_01,50,1,115
+demo_02,60,2,140
+demo_03,80,1,175

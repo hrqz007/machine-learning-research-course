@@ -1,0 +1,145 @@
+{
+  "unit": "005",
+  "status": "passed",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "checks": [
+    {
+      "name": "house_predictions_loop_array_and_mae",
+      "passed": true
+    },
+    {
+      "name": "fixed_test_b_5_and_training_mean_baseline_15",
+      "passed": true
+    },
+    {
+      "name": "non_square_3_by_2_prediction_and_no_mutation",
+      "passed": true
+    },
+    {
+      "name": "single_sample_retains_batch_axis",
+      "passed": true
+    },
+    {
+      "name": "single_feature_retains_feature_axis",
+      "passed": true
+    },
+    {
+      "name": "axis_reductions_and_keepdims",
+      "passed": true
+    },
+    {
+      "name": "broadcast_bug_reproduced_and_contract_rejects_it",
+      "passed": true
+    },
+    {
+      "name": "invalid_dimensions_empty_nonfinite_strings_booleans_rejected",
+      "passed": true
+    },
+    {
+      "name": "slice_view_explicit_copy_and_advanced_index_copy",
+      "passed": true
+    },
+    {
+      "name": "dtype_overflow_truncation_accumulation_and_tolerance",
+      "passed": true
+    }
+  ],
+  "results": {
+    "training_mae_wan": {
+      "A": 10.0,
+      "B": 0.0,
+      "C": 7.5
+    },
+    "test_b_mae_wan": 5.0,
+    "test_baseline_mae_wan": 15.0,
+    "weighted_prediction_wan": [
+      115.0,
+      140.0,
+      175.0
+    ],
+    "broadcast_wrong_mae_wan": 26.666666666666668,
+    "sum_float32": 0.0,
+    "sum_float64_accumulator": 1.0
+  },
+  "timing": [
+    {
+      "n": 4,
+      "repeats": 5,
+      "calls_per_repeat": 100,
+      "loop_ms_per_call": 0.0006611599928874057,
+      "array_ms_per_call": 0.004298029998608399,
+      "input_preparation_included": false
+    },
+    {
+      "n": 100,
+      "repeats": 5,
+      "calls_per_repeat": 100,
+      "loop_ms_per_call": 0.007969580001372378,
+      "array_ms_per_call": 0.004338270009611733,
+      "input_preparation_included": false
+    },
+    {
+      "n": 10000,
+      "repeats": 5,
+      "calls_per_repeat": 5,
+      "loop_ms_per_call": 0.8277214001282118,
+      "array_ms_per_call": 0.017580999701749533,
+      "input_preparation_included": false
+    },
+    {
+      "n": 100000,
+      "repeats": 5,
+      "calls_per_repeat": 5,
+      "loop_ms_per_call": 8.163584399881074,
+      "array_ms_per_call": 0.6188191997352988,
+      "input_preparation_included": false
+    }
+  ],
+  "limitations": [
+    "CPU and offline only",
+    "Timing is machine-specific, not a promised speedup",
+    "Anaconda installation and Jupyter browser UI are not tested by this script"
+  ],
+  "notebook": {
+    "status": "passed",
+    "code_cells": 19,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "outputs_retained": true,
+    "kernel": "ipykernel InProcessKernel in fresh Python process; all code cells sequentially executed",
+    "browser_ui_tested": false,
+    "socket_transport_tested": false
+  },
+  "portability": {
+    "status": "passed",
+    "invoked_from_different_working_directory": true,
+    "checks": 10
+  },
+  "additional_boundary_checks": [
+    "mixed Python bool in features",
+    "mixed numpy.bool_ in features",
+    "mixed bool in weights",
+    "mixed bool in prediction",
+    "mixed numpy.bool_ in target"
+  ]
+}
