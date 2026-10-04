@@ -1335,7 +1335,7 @@
         "实验与验收": "在共线和稀疏数据上画系数路径；仅用训练/验证选择强度，再与库交叉核验。",
         "常见误区": "正则化强度直接跨不同损失归一化约定比较；用测试集选稀疏度。"
       },
-      "status": "in_review",
+      "status": "published",
       "artifacts": {
         "lecture": "units/040/lecture.pdf",
         "lab": "units/040/lab.pdf",
@@ -1344,14 +1344,23 @@
         "script": "units/040/experiment.py"
       },
       "checks": {
-        "scientific": "coordinator_passed_independent_pending",
+        "scientific": "independent_passed",
         "sources": "passed",
-        "code": "768_checks_normal_O_two_cwd_passed",
-        "notebook": "two_fresh_real_kernels_whole_core_equal_15_cells_7_PNG",
-        "visual": "all_20_final_PDF_pages_and_7_true_PNG_individually_viewed"
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_independent_passed",
+        "visual": "all20_final_PDF_pages_and7_PNG_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "53bf2b7c71bceca52f760be61e9fcfbec51a421f",
+        "tree": "4c0ea84afd89bf645a0830139326fa7b44a1a462",
+        "verified_file_count": 31,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/040"
+      },
+      "independent_qa": {
+        "report_sha256": "5b1c7df6eddf051d0fae8691e10dcb1863b8435bc50dd92dcfe38d9593b843f1",
+        "release_allowlist_sha256": "f53ffeb1aa1190e17aff2856f1e60bf825593fb2a18c54ea8543ed84291278b5"
       }
     },
     {
@@ -1364,17 +1373,32 @@
         "实验与验收": "交付可重跑的回归比较包；含手算样例、梯度测试、至少一个失败案例和解释。",
         "常见误区": "只交一条漂亮训练曲线；不报告未收敛运行与停止条件。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/041/lecture.pdf",
+        "lab": "units/041/lab.pdf",
+        "answers": "units/041/answers.pdf",
+        "notebook": "units/041/experiment.ipynb",
+        "script": "units/041/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "fresh_real_kernel_independent_passed",
+        "visual": "all26_final_PDF_pages_and12_PNG_independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "53bf2b7c71bceca52f760be61e9fcfbec51a421f",
+        "tree": "4c0ea84afd89bf645a0830139326fa7b44a1a462",
+        "verified_file_count": 37,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/041"
+      },
+      "independent_qa": {
+        "report_sha256": "81326e8790e4506d9c327627b9a4621709fe42b559ddaabc1b484eaccd7927fa",
+        "release_allowlist_sha256": "3568a454ca03d895b75e77e55898a9ef83db1dd54598ccda1fb71e3be26f22f4"
       }
     },
     {
@@ -1387,17 +1411,28 @@
         "实验与验收": "手推并从零实现逻辑回归；使用稳定损失，与库结果及数值梯度比对。",
         "常见误区": "把概率阈值固定为永远0.5；把线性概率输出与逻辑回归混淆。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/042/lecture.pdf",
+        "lab": "units/042/lab.pdf",
+        "answers": "units/042/answers.pdf",
+        "notebook": "units/042/experiment.ipynb",
+        "script": "units/042/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_21_pages_9_png_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "commit": "53bf2b7c71bceca52f760be61e9fcfbec51a421f",
+        "tree": "4c0ea84afd89bf645a0830139326fa7b44a1a462",
+        "verified_file_count": 30,
+        "remote_hash_matched": true,
+        "url": "https://github.com/hrqz007/machine-learning-research-course/tree/main/units/042"
       }
     },
     {
@@ -1410,14 +1445,20 @@
         "实验与验收": "手算三类损失与梯度；实现稳定softmax，验证概率和为1及平移不变性。",
         "常见误区": "把多标签任务当互斥多类；把KL当对称距离；忽略数值上溢。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "in_review",
+      "artifacts": {
+        "lecture": "units/043/lecture.pdf",
+        "lab": "units/043/lab.pdf",
+        "answers": "units/043/answers.pdf",
+        "notebook": "units/043/experiment.ipynb",
+        "script": "units/043/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_passed_independent_pending",
+        "sources": "author_passed_independent_pending",
+        "code": "author_passed_independent_pending",
+        "notebook": "author_passed_independent_pending",
+        "visual": "author_passed_independent_pending"
       },
       "publication": {
         "status": "not_uploaded"
@@ -1433,7 +1474,7 @@
         "实验与验收": "模拟计数数据，比较线性和Poisson模型；检验曝光量处理与过度离散。",
         "常见误区": "链接函数和概率分布不区分；计数问题只按分类处理。"
       },
-      "status": "planned",
+      "status": "drafting",
       "artifacts": {},
       "checks": {
         "scientific": "not_started",
