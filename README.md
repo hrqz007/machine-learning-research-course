@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–050 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–052 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -95,6 +95,9 @@
 - [第048讲 泛化误差与复杂度](units/048/README.md)：[正文](units/048/lecture.pdf) · [实验指南](units/048/lab.pdf) · [完整答案](units/048/answers.pdf) · [Notebook](units/048/experiment.ipynb)
 - [第049讲 学习理论的第一组保证](units/049/README.md)：[正文](units/049/lecture.pdf) · [实验指南](units/049/lab.pdf) · [完整答案](units/049/answers.pdf) · [Notebook](units/049/learning_guarantees.ipynb)
 - [第050讲 数据划分与评价对象](units/050/README.md)：[正文](units/050/lecture.pdf) · [实验指南](units/050/lab.pdf) · [完整答案](units/050/answers.pdf) · [Notebook](units/050/experiment.ipynb)
+
+- [第051讲 交叉验证与模型选择](units/051/README.md)：[正文](units/051/lecture.pdf) · [实验指南](units/051/lab.pdf) · [完整答案](units/051/answers.pdf) · [Notebook](units/051/nested_cross_validation.ipynb)
+- [第052讲 无泄漏的数据处理流水线](units/052/README.md)：[正文](units/052/lecture.pdf) · [实验指南](units/052/lab.pdf) · [完整答案](units/052/answers.pdf) · [Notebook](units/052/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
