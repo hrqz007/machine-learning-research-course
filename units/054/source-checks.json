@@ -1,0 +1,37 @@
+{
+  "date_utc": "2026-10-05",
+  "sources": [
+    {
+      "title": "Guyon and Elisseeff (2003)",
+      "url": "https://jmlr.org/papers/v3/guyon03a.html",
+      "supports": "feature selection background",
+      "access_scope": "paper page"
+    },
+    {
+      "title": "Ambroise and McLachlan (2002)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.102102699",
+      "supports": "selection bias",
+      "access_scope": "paper page"
+    },
+    {
+      "title": "Nogueira et al. (2018)",
+      "url": "https://jmlr.org/papers/v18/17-514.html",
+      "supports": "stability and chance correction",
+      "access_scope": "paper page"
+    },
+    {
+      "title": "PolynomialFeatures 1.8",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.PolynomialFeatures.html",
+      "supports": "feature count",
+      "access_scope": "official indexed page retrieved by search"
+    },
+    {
+      "title": "Feature selection guide",
+      "url": "https://scikit-learn.org/stable/modules/feature_selection.html",
+      "supports": "selection terminology",
+      "access_scope": "stable 1.9.1 page; 1.8 fetch failed"
+    }
+  ],
+  "failed_url": "https://scikit-learn.org/1.8/modules/feature_selection.html",
+  "fallback": "official stable guide for concepts only"
+}

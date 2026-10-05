@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "independent_outer_predictions": 144,
+  "independent_inner_predictions": 1152,
+  "independent_confirmation_predictions": 36,
+  "checks": [
+    "manual Pearson ranks at correct boundaries",
+    "independent ridge solve",
+    "disjoint splits",
+    "selected k",
+    "Jaccard",
+    "interaction table",
+    "constant feature",
+    "shape and NaN errors"
+  ],
+  "limits": [
+    "no proof that selected variables cause y",
+    "Jaccard not chance adjusted",
+    "fold stability descriptive, folds dependent"
+  ]
+}

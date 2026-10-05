@@ -1,0 +1,34 @@
+{
+  "n_development": 160,
+  "n_confirmation": 200,
+  "features": 80,
+  "outer_folds": 4,
+  "inner_folds": 3,
+  "k_candidates": [
+    2,
+    5,
+    15,
+    40
+  ],
+  "ridge_alpha": 1.0,
+  "repeats_per_mechanism": 6,
+  "global_leakage_scope": "uses all 160 development labels, never 200 confirmation labels",
+  "split_seed_outer": 540,
+  "split_seed_inner": 541,
+  "signal_seeds": [
+    5400,
+    5401,
+    5402,
+    5403,
+    5404,
+    5405
+  ],
+  "null_seeds": [
+    5450,
+    5451,
+    5452,
+    5453,
+    5454,
+    5455
+  ]
+}
