@@ -1,0 +1,96 @@
+{
+  "unit": "051",
+  "title": "交叉验证与模型选择",
+  "author_checks": "passed; independent QA is a separate review",
+  "verified_date": "2026-10-05",
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "weasyprint": "70.0",
+    "markdown": "3.11"
+  },
+  "numerics": {
+    "result_sha256": "716ce52cd6bfd131da7150444e8750effbd63fa4490e2d40dc5acfc7a073da73",
+    "audit_sha256": "4f2b0f719d04bc0ca6244c9a44df4a2bea93d6b0ee975399942bcf674ec82cb2",
+    "normal_O_three_working_directories_identical": true,
+    "reference": "Fraction hand calculations, different SciPy basis with pivoted QR for all81 datasets all grid SSE, actual sklearn Ridge/GridSearchCV, Gauss-Legendre quadrature",
+    "independent_SSE_max_scaled_error": 1.1985751391458695e-13,
+    "negative_results_retained": true
+  },
+  "notebook": {
+    "executed_code_cells": 13,
+    "actual_PNGs": 10,
+    "fresh_normal_O_processes_full_outputs_identical": true,
+    "raw_notebooks_byte_identical": true,
+    "first_physical_cell_contract_files": 17,
+    "single_file_tamper_checks_rejected_before_teaching_imports": true,
+    "full_result_equals_script": true,
+    "kernel": "ipykernel InProcessKernel in new Python process; browser UI and external socket transport not tested",
+    "stream_comparison": "Adjacent same-channel stdout fragments concatenated only for comparison; raw notebook outputs preserved"
+  },
+  "ordinary_input_checks": {
+    "unequal_fold_extension_normal_O_identical": true,
+    "invalid_final_config_field_preserves_old_output": true,
+    "row_indices_groups_time_and_weighting_checked": true
+  },
+  "visual": {
+    "PDF_pages": {
+      "lecture": 12,
+      "lab": 6,
+      "answers": 6
+    },
+    "all_24_final_PDF_pages_visually_reviewed": true,
+    "all_10_actual_Notebook_PNGs_equal_visually_reviewed_assets": true,
+    "last_visual_revision": "Clarified answers section8: add the full penalty before averaging, or divided penalty to already-averaged row contributions before summing. All6 answer pages re-reviewed; pages1/2 unchanged; lecture/lab and all10 figures unchanged.",
+    "PDF_sha256": {
+      "lecture": "1eca0f36af7bc421a073408111e2889be271b2546f31aacae862a190c4032b1b",
+      "lab": "7ee3e9f5c04b54e895eea940a2474009fc5871129896e85545fe8625197252db",
+      "answers": "edb79c395ef7a641754b21be6a78484810a7e1d40c61a99c313af3da1e014283"
+    },
+    "renderer": "MathJax3.2.2 SVG, WeasyPrint70, Noto CJK fonts"
+  },
+  "recovery": {
+    "archive_extract_full_build_in_different_directory": "passed",
+    "numerical_normal_O_and_audit_identical": true,
+    "data_and_all10_figures_byte_identical": true,
+    "Notebook_all_cells_text_and_PNG_identical": true,
+    "PDFs": {
+      "lecture": {
+        "pages": 12,
+        "every_page_pixel_identical": true,
+        "PDF_byte_identical": false
+      },
+      "lab": {
+        "pages": 6,
+        "every_page_pixel_identical": true,
+        "PDF_byte_identical": false
+      },
+      "answers": {
+        "pages": 6,
+        "every_page_pixel_identical": true,
+        "PDF_byte_identical": true
+      }
+    },
+    "scope": "Complete archive rebuild precedes the prose-only section8 correction. Numerical code, data, plots and Notebook are unchanged; corrected answers were separately rebuilt in the extracted directory and all6 page pixels matched.",
+    "revised_answers_all6_pages_pixel_identical": true
+  },
+  "boundaries": [
+    "Synthetic data only; no real-world deployment validation",
+    "Nested CV targets the outer-training-size selection/refitting procedure, not exact risk of the final full-data model",
+    "Folds are not independent replications; Monte Carlo SE uses independently generated datasets",
+    "Oracle parameters are diagnostics only; final test generated after selection fingerprint",
+    "Default-protocol audit and figures do not validate arbitrary custom protocols",
+    "Numeric rank or declared-domain failures are explicit, never clipped or filtered"
+  ],
+  "review_requested_correction": {
+    "section": "answers section8",
+    "only_teaching_change": "Correct the misleading divide-then-average regularization instruction",
+    "scientific_code_and_results_unchanged": true,
+    "all_other44_files_unchanged_before_metadata_rehash": true
+  }
+}

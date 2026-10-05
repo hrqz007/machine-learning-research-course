@@ -1,0 +1,30 @@
+{
+  "actual_GridSearchCV_primary_five_inner_and_final_checked": true,
+  "actual_sklearn_selected_models_checked": true,
+  "all_81_datasets_inner_and_outer_grid_scores_checked": true,
+  "core_sha256": "716ce52cd6bfd131da7150444e8750effbd63fa4490e2d40dc5acfc7a073da73",
+  "data_CSV_byte_reproduced": true,
+  "guards": {
+    "JSON_preservation_and_alias_checks": true,
+    "ordinary_invalid_input_and_precompute_last_field_checks": true,
+    "unequal_fold_weighting_checked": true
+  },
+  "hand": {
+    "Fraction_inner_scores": [
+      "1/2",
+      "51/50"
+    ],
+    "three_forward_stages_all_rows_checked": true,
+    "two_synchronous_updates_checked": true
+  },
+  "independence": {
+    "final_test_not_passed_to_selection_API": true,
+    "oracle_change_leaves_all_choices_identical": true,
+    "outer_label_mutation_leaves_its_choice_byte_identical": true
+  },
+  "independent_all_grid_SSE_max_absolute_error": 2.142769517377019e-09,
+  "independent_all_grid_SSE_max_scaled_error": 1.1985751391458695e-13,
+  "selected_predictor_population_risks_checked_by_quadrature": true,
+  "splitter_group_time_constraints_checked": true,
+  "unit": "051"
+}

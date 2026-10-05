@@ -1,0 +1,7 @@
+{
+  "sha256": {
+    "data/development.csv": "de5a9a21a0fc87b346eac6867bd72351ae29276eedf50abce02aa4f905bda2a2",
+    "data/protocol.json": "9198f86b5d490b6d83293f47774c0451899edd13b16a57e2273430e244e10e20",
+    "data/repeated_development.csv": "a1cb11336f49825267a24d6880a6770720450db88ec435c44e53accae4c40736"
+  }
+}
