@@ -1,0 +1,41 @@
+{
+  "date_utc": "2026-10-05",
+  "sources": [
+    {
+      "title": "Elkan (2001)",
+      "url": "https://cseweb.ucsd.edu/~elkan/rescale.pdf",
+      "supports": "cost-sensitive decision theory",
+      "scope": "author-hosted PDF retrieved"
+    },
+    {
+      "title": "Saerens et al. (2002)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11747533/",
+      "supports": "prior-shift correction background",
+      "scope": "original paper abstract/index; DOI fetch 403 and university PDF open failed"
+    },
+    {
+      "title": "Lakkaraju et al. (2017)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5958915/",
+      "supports": "selective labels and unobservables",
+      "scope": "full original article retrieved"
+    },
+    {
+      "title": "Natarajan et al. (2013)",
+      "url": "https://papers.nips.cc/paper_files/paper/2013/hash/3871bd64012152bfb53fdf04b401193f-Abstract.html",
+      "supports": "class conditional label noise",
+      "scope": "original abstract"
+    },
+    {
+      "title": "LogisticRegression 1.8",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.LogisticRegression.html",
+      "supports": "weights and optimization API",
+      "scope": "versioned official documentation"
+    },
+    {
+      "title": "NIST proportion intervals",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "supports": "Wilson formula and terminology",
+      "scope": "official handbook formula retrieved"
+    }
+  ]
+}

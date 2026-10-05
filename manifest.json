@@ -1813,18 +1813,32 @@
         "实验与验收": "构造信号与噪声特征，比较嵌套选择和全数据选择；报告选择稳定性。",
         "常见误区": "相关性低就删掉交互特征；在分割前筛选特征。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/054/lecture.pdf",
+        "lab": "units/054/lab.pdf",
+        "answers": "units/054/answers.pdf",
+        "notebook": "units/054/experiment.ipynb",
+        "script": "units/054/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "6a8ffff18b89df4e4f60c4d9d4091aa300badcc6",
+        "verified_file_count": 37,
+        "verified_bytes": 15204163,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-05"
+      },
+      "release_record": "releases/053-055.json"
     },
     {
       "id": "055",

@@ -1,0 +1,28 @@
+{
+  "unit": "055",
+  "status": "author_verified",
+  "pdf_pages": {
+    "lecture": 9,
+    "lab": 4,
+    "answers": 4
+  },
+  "all_pdf_pages_visually_inspected": true,
+  "actual_notebook_pngs_visually_inspected": 7,
+  "notebook_code_cells": 14,
+  "fresh_kernel_execution": true,
+  "kernel": "fresh process IPython InProcessKernel",
+  "normal_and_optimized_audit_passed": true,
+  "full_rebuild_scientific_content_matches": true,
+  "unverified": [
+    "Jupyter browser UI",
+    "external socket kernel transport"
+  ],
+  "data_sha256": "9968a75fb1df5171ac02473290c38f740e56052366e475f6a20685344e0b9524",
+  "fitted_models": 42,
+  "metric_records_independently_checked": 72,
+  "interpretation_limits": [
+    "natural test prevalence preserved",
+    "Wilson fixed-classifier pointwise intervals",
+    "oracle propensities known only by simulator"
+  ]
+}

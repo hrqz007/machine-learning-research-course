@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "metric_records_independently_checked": 72,
+  "checks": [
+    "confusion matrix",
+    "cost",
+    "Brier",
+    "Wilson recall interval",
+    "stored coefficient logits",
+    "validation-only threshold ledger",
+    "training-only resample IDs",
+    "prior correction",
+    "observation IDs",
+    "absent minority and invalid inputs"
+  ],
+  "limits": [
+    "oracle propensities known only in simulation",
+    "Wilson conditions on fixed classifier and observed positive count",
+    "no guarantee correction repairs arbitrary covariate or concept shift"
+  ]
+}
