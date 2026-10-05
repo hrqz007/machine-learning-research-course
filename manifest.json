@@ -1702,18 +1702,32 @@
         "实验与验收": "实现内层选参、外层评估；保存每折索引和结果，比较非嵌套估计的乐观程度。",
         "常见误区": "把外层测试折继续用于挑模型；将相关折分数当独立样本做简单检验。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/051/lecture.pdf",
+        "lab": "units/051/lab.pdf",
+        "answers": "units/051/answers.pdf",
+        "notebook": "units/051/nested_cross_validation.ipynb",
+        "script": "units/051/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "88b11943cde98722d7c6cd18be7127998a919ecc",
+        "verified_file_count": 48,
+        "verified_bytes": 24630232,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-05"
+      },
+      "release_record": "releases/051-052.json"
     },
     {
       "id": "052",
@@ -1725,18 +1739,32 @@
         "实验与验收": "故意构造泄漏版本与正确版本；验证每折预处理只fit训练部分。",
         "常见误区": "先对全数据做标准化或特征选择；目标编码看见验证标签。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/052/lecture.pdf",
+        "lab": "units/052/lab.pdf",
+        "answers": "units/052/answers.pdf",
+        "notebook": "units/052/experiment.ipynb",
+        "script": "units/052/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "88b11943cde98722d7c6cd18be7127998a919ecc",
+        "verified_file_count": 47,
+        "verified_bytes": 14144348,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-05"
+      },
+      "release_record": "releases/051-052.json"
     },
     {
       "id": "053",
