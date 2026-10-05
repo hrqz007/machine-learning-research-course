@@ -1,0 +1,7 @@
+row_id,x,type,y,role
+H1,1,A,1,train
+H2,,A,2,train
+H3,3,B,2,train
+H4,5,B,5,train
+H5,7,C,6,valid
+H6,,B,3,valid
