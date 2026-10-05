@@ -1850,18 +1850,32 @@
         "实验与验收": "比较权重、阈值与重采样，保持测试分布自然；报告少数类区间和误判代价。",
         "常见误区": "在划分之前过采样；重采样后仍把输出当原总体校准概率。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/055/lecture.pdf",
+        "lab": "units/055/lab.pdf",
+        "answers": "units/055/answers.pdf",
+        "notebook": "units/055/experiment.ipynb",
+        "script": "units/055/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "abf17eeaaadb61e4c220f9dec58cfec11cc232c3",
+        "verified_file_count": 38,
+        "verified_bytes": 15422157,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-05"
+      },
+      "release_record": "releases/053-055.json"
     },
     {
       "id": "056",
