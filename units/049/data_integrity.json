@@ -1,0 +1,8 @@
+{
+  "sha256": {
+    "data/hand_sample.csv": "3c7cc010c9754a4b4b12f0db7b6c37059f1de290caa51a3888a5e3a4f66cb1ba",
+    "data/hypotheses.csv": "610ba1964cabb28bd3f9da0c644d216bcb9a25b4d1e0b1304f2567660e26392f",
+    "data/population.csv": "7339f0a1cd8029af6fc5fefd444225a322345c0539a566d1c91bf500e5129e65",
+    "data/protocol.json": "25d2affebd5b83daf3d29eff35eda04acd3378445370a950f113e55d8eb112fc"
+  }
+}

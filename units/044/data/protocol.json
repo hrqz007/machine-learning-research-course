@@ -1,0 +1,16 @@
+{
+  "schema": "ml044-protocol-v1",
+  "seed": 4402026,
+  "n_train": 320,
+  "n_test": 240,
+  "x_uniform": [-2.0, 2.0],
+  "exposure_uniform": [0.5, 2.0],
+  "true_beta": [0.2, 1.1],
+  "gamma_shape": 2.0,
+  "tiny_learning_rate": 0.2,
+  "tiny_updates": 2,
+  "newton_gradient_tolerance": 1e-9,
+  "newton_max_updates": 100,
+  "metrics": ["count_mse", "count_mae", "nonpositive_predictions", "mean_poisson_deviance_if_all_positive"],
+  "selection": "No tuning or seed search. All models are fit on train; test is only scored after fitting."
+}

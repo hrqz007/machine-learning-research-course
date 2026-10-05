@@ -1,0 +1,150 @@
+{
+  "CSV_and_draws_exact_match": "passed",
+  "actual_sklearn_GroupShuffleSplit": "passed; 45 train groups and 15 test groups",
+  "actual_sklearn_TimeSeriesSplit_day_blocks": [
+    {
+      "test_first_day": 24,
+      "test_last_day": 31,
+      "train_last_day": 21
+    },
+    {
+      "test_first_day": 32,
+      "test_last_day": 39,
+      "train_last_day": 29
+    },
+    {
+      "test_first_day": 40,
+      "test_last_day": 47,
+      "train_last_day": 37
+    }
+  ],
+  "all_repeated_fits": 960,
+  "balanced_group_weight_identity": "passed",
+  "exact_hand": {
+    "gradient": [
+      "-5/2",
+      "-7/4",
+      "-1",
+      "-3/2"
+    ],
+    "next_objective": "5483/3200",
+    "next_prediction": [
+      "7/10",
+      "21/20",
+      "4/5",
+      "23/20"
+    ],
+    "ridge_optimum": [
+      "2",
+      "1",
+      "-1/3",
+      "1/3"
+    ],
+    "theta_next": [
+      "1/2",
+      "7/20",
+      "1/5",
+      "3/10"
+    ]
+  },
+  "gradient_finite_difference_max_error": 1.4651391211373266e-10,
+  "heldout_target_mutation_test": "passed",
+  "independent_reference_fits": [
+    {
+      "model": "pooled",
+      "scipy_QR_max_prediction_error": 3.552713678800501e-15,
+      "sklearn_max_prediction_error": 5.329070518200751e-15,
+      "split": "random"
+    },
+    {
+      "model": "personalized",
+      "scipy_QR_max_prediction_error": 1.199040866595169e-14,
+      "sklearn_max_prediction_error": 1.2434497875801753e-14,
+      "split": "random"
+    },
+    {
+      "model": "trend",
+      "scipy_QR_max_prediction_error": 1.4210854715202004e-14,
+      "sklearn_max_prediction_error": 6.750155989720952e-14,
+      "split": "random"
+    },
+    {
+      "model": "pooled",
+      "scipy_QR_max_prediction_error": 3.552713678800501e-15,
+      "sklearn_max_prediction_error": 7.105427357601002e-15,
+      "split": "group"
+    },
+    {
+      "model": "personalized",
+      "scipy_QR_max_prediction_error": 6.217248937900877e-15,
+      "sklearn_max_prediction_error": 7.105427357601002e-15,
+      "split": "group"
+    },
+    {
+      "model": "trend",
+      "scipy_QR_max_prediction_error": 5.329070518200751e-15,
+      "sklearn_max_prediction_error": 1.4210854715202004e-14,
+      "split": "group"
+    },
+    {
+      "model": "pooled",
+      "scipy_QR_max_prediction_error": 3.552713678800501e-15,
+      "sklearn_max_prediction_error": 3.552713678800501e-15,
+      "split": "time"
+    },
+    {
+      "model": "personalized",
+      "scipy_QR_max_prediction_error": 6.439293542825908e-15,
+      "sklearn_max_prediction_error": 8.881784197001252e-15,
+      "split": "time"
+    },
+    {
+      "model": "trend",
+      "scipy_QR_max_prediction_error": 1.0658141036401503e-14,
+      "sklearn_max_prediction_error": 1.5987211554602254e-14,
+      "split": "time"
+    },
+    {
+      "model": "pooled",
+      "scipy_QR_max_prediction_error": 3.1086244689504383e-15,
+      "sklearn_max_prediction_error": 2.220446049250313e-15,
+      "split": "group_time"
+    },
+    {
+      "model": "personalized",
+      "scipy_QR_max_prediction_error": 1.3322676295501878e-14,
+      "sklearn_max_prediction_error": 9.769962616701378e-15,
+      "split": "group_time"
+    },
+    {
+      "model": "trend",
+      "scipy_QR_max_prediction_error": 6.8833827526759706e-15,
+      "sklearn_max_prediction_error": 1.0880185641326534e-14,
+      "split": "group_time"
+    }
+  ],
+  "max_normal_gradient": 9.649585657272113e-15,
+  "negative_tests": [
+    "NaN feature",
+    "mismatched lengths",
+    "empty data",
+    "nonintegral group",
+    "nonpositive alpha",
+    "source overwrite",
+    "same row both splits",
+    "same group in group split",
+    "label delay ignored",
+    "future trained past evaluation",
+    "nonfinite JSON preserves existing output",
+    "symlink output",
+    "hardlinked output"
+  ],
+  "scope": "author self-check; not a deployment guarantee or independent course review",
+  "status": "passed",
+  "supported_inputs": [
+    "single row",
+    "constant x",
+    "unknown device",
+    "reversed training rows"
+  ]
+}

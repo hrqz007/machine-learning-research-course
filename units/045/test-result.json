@@ -1,0 +1,41 @@
+{
+  "core_sha256": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e",
+  "guards": {
+    "all_config_fields_pre_RNG_checked": true,
+    "atomic_and_alias_protection_checked": true,
+    "raw_posterior_and_cost_tail_cases": 18,
+    "zero_cost_and_reject_boundaries_checked": true
+  },
+  "science": {
+    "all_deterministic_policies": [
+      {
+        "actions_per_bin": 2,
+        "minimum": "11/32",
+        "optimal_policy_count": 2,
+        "policies": 256
+      },
+      {
+        "actions_per_bin": 3,
+        "minimum": "1/4",
+        "optimal_policy_count": 4,
+        "policies": 6561
+      }
+    ],
+    "expected_cost_exact": {
+      "accuracy_optimal": "17/32",
+      "cost_optimal": "11/32",
+      "reject": "1/4"
+    },
+    "oracle_shift_exact": [
+      "1/13",
+      "1/4",
+      "4/7",
+      "3/7",
+      "3/4",
+      "12/13"
+    ],
+    "rectangular_cases": 3,
+    "sklearn_weighted_confusion_verified": true
+  },
+  "unit": "045"
+}

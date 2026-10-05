@@ -1,0 +1,20 @@
+{
+  "kind": "finite_class_learning_guarantees_v1",
+  "main_seed": 4905,
+  "main_sample_sizes": [8,16,32,64,128,256,512],
+  "main_repetitions": 2000,
+  "delta": 0.05,
+  "exact_sample_sizes": [2,4,6,8],
+  "exact_epsilon_numerators": [1,2,3,4],
+  "exact_epsilon_denominator": 8,
+  "noise_seed": 4906,
+  "noise_sample_sizes": [20,50,100],
+  "noise_candidate_counts": [1,8,64,512],
+  "noise_repetitions": 2000,
+  "holdout_count": 100,
+  "dependent_repeat_count": 20,
+  "tie_rule": "first_declared_hypothesis",
+  "loss": "zero_one",
+  "hand_added_batch": [[-1,0],[1,1]],
+  "vc_max_points": 5
+}

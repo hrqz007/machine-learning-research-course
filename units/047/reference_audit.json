@@ -1,0 +1,141 @@
+{
+  "core_sha256": "159d689b66383bfe5ece6cf734585382e57c4dd19efe382e8a7e77c325bbcbe2",
+  "guards": {
+    "all_protocol_fields_precompute_checked": true,
+    "atomic_output_checked": true,
+    "loaded_last_fields_precompute_checked": true,
+    "rank_and_quantile_domain_checked": true
+  },
+  "hand": {
+    "Decimal_precision": 100,
+    "distinct_ECE_definitions_checked": true,
+    "finite_difference_best_errors": [
+      2.6550872611608156e-11,
+      2.1428053775807143e-11,
+      1.617772582562793e-11
+    ],
+    "full_hand_states": 3,
+    "temperature_boundary_states_checked": true
+  },
+  "rank": {
+    "correct_coverage": "9/10",
+    "higher_recipe_example": {
+      "direct_kth": 9,
+      "quantile_higher": 10
+    },
+    "naive_interpolation_coverage": "8/10",
+    "rank_cases": [
+      {
+        "alpha": 0.1,
+        "infinite": false,
+        "n": 9,
+        "rank": 9
+      },
+      {
+        "alpha": 0.05,
+        "infinite": true,
+        "n": 9,
+        "rank": 10
+      },
+      {
+        "alpha": 0.29,
+        "infinite": false,
+        "n": 9,
+        "rank": 8
+      },
+      {
+        "alpha": 0.29,
+        "infinite": false,
+        "n": 99,
+        "rank": 71
+      },
+      {
+        "alpha": 0.05,
+        "infinite": false,
+        "n": 19,
+        "rank": 19
+      },
+      {
+        "alpha": 0.1,
+        "infinite": true,
+        "n": 1,
+        "rank": 2
+      }
+    ],
+    "ten_exchangeable_rank_cases": [
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 1,
+        "naive_quantile": 8.2,
+        "test_score": 0.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 2,
+        "naive_quantile": 8.2,
+        "test_score": 1.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 3,
+        "naive_quantile": 8.2,
+        "test_score": 2.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 4,
+        "naive_quantile": 8.2,
+        "test_score": 3.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 5,
+        "naive_quantile": 8.2,
+        "test_score": 4.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 6,
+        "naive_quantile": 8.2,
+        "test_score": 5.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 7,
+        "naive_quantile": 8.2,
+        "test_score": 6.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 8,
+        "naive_quantile": 8.2,
+        "test_score": 7.0
+      },
+      {
+        "correct_quantile": 9.0,
+        "held_out_rank": 9,
+        "naive_quantile": 7.4,
+        "test_score": 8.0
+      },
+      {
+        "correct_quantile": 8.0,
+        "held_out_rank": 10,
+        "naive_quantile": 7.2,
+        "test_score": 9.0
+      }
+    ],
+    "ties_and_infinity_checked": true
+  },
+  "regression": {
+    "actual_sklearn_invalid_1NN_counterexample_checked": true,
+    "all_repeated_splits_checked": 120,
+    "independent_scalar_OLS_max_coefficient_error": 6.661338147750939e-16,
+    "sorted_residual_quantiles_checked": true
+  },
+  "temperature": {
+    "SciPy_fit_verified": true,
+    "evaluation_label_mutation_leaves_choice_byte_identical": true,
+    "sklearn_Brier_log_loss_verified": true
+  },
+  "unit": "047"
+}

@@ -1,0 +1,170 @@
+{
+  "VC": {
+    "all_ordered_pattern_counts_verified": true,
+    "interval_VC": 2,
+    "threshold_VC": 1
+  },
+  "bounds": {
+    "Decimal80_radius_examples": [
+      {
+        "M": 1,
+        "delta": 0.05,
+        "n": 1,
+        "radius": 1.3581015157406195
+      },
+      {
+        "M": 512,
+        "delta": 0.05,
+        "n": 20,
+        "radius": 0.49817677783979064
+      },
+      {
+        "M": 5,
+        "delta": 1e-12,
+        "n": 1000,
+        "radius": 0.12233888631363822
+      },
+      {
+        "M": 1048576,
+        "delta": 0.2,
+        "n": 1000000,
+        "radius": 0.0028430202869653386
+      }
+    ],
+    "sample_requirement_inversions_checked": true
+  },
+  "core_sha256": "dbb5d325609935cf1c301f2b1180a396da575ff814c65b0518384b9ae578c360",
+  "dependence_failure_probability": 1.0,
+  "exact": {
+    "all_fixed_Binomial_tails_and_event_union_checked": true,
+    "exact_composition_n": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "ordered_sequences_checked": 4096,
+    "population_risk_fractions": [
+      "1/2",
+      "13/32",
+      "7/32",
+      "13/32",
+      "1/2"
+    ]
+  },
+  "guards": {
+    "all_config_fields_and_loaded_last_values_precompute_checked": true,
+    "atomic_output_and_aliases_checked": true,
+    "numeric_integer_bool_complex_domain_checked": true
+  },
+  "hand": {
+    "full_forward_loss_chain_stages": 2,
+    "initial_tie_set": [
+      1,
+      2
+    ],
+    "no_gradient_claim": true,
+    "selected_transition": [
+      "H1",
+      "H2"
+    ]
+  },
+  "main_repetitions": {
+    "all_forward_counts_selected_risks_gaps_checked": true,
+    "all_repetitions_reconstructed": 14000,
+    "pointwise_ERM_2epsilon_implication_checked": true
+  },
+  "noise": {
+    "MC_diagnostics_not_acceptance_thresholds": [
+      {
+        "M": 1,
+        "MC_z_difference": 0.3732926822487866,
+        "analytic_misused_bound_failure": 0.0025768280029296875,
+        "n": 20,
+        "observed_failure": 0.003
+      },
+      {
+        "M": 8,
+        "MC_z_difference": -0.7814625604774424,
+        "analytic_misused_bound_failure": 0.010260951292859399,
+        "n": 20,
+        "observed_failure": 0.0085
+      },
+      {
+        "M": 64,
+        "MC_z_difference": -0.19860930168474114,
+        "analytic_misused_bound_failure": 0.07919930068086514,
+        "n": 20,
+        "observed_failure": 0.078
+      },
+      {
+        "M": 512,
+        "MC_z_difference": -0.28609958795573953,
+        "analytic_misused_bound_failure": 0.4831968838579677,
+        "n": 20,
+        "observed_failure": 0.48
+      },
+      {
+        "M": 1,
+        "MC_z_difference": 0.4968125997786778,
+        "analytic_misused_bound_failure": 0.006600447966810918,
+        "n": 50,
+        "observed_failure": 0.0075
+      },
+      {
+        "M": 8,
+        "MC_z_difference": 0.3930395476526357,
+        "analytic_misused_bound_failure": 0.026098835073701646,
+        "n": 50,
+        "observed_failure": 0.0275
+      },
+      {
+        "M": 64,
+        "MC_z_difference": -0.19150613873116798,
+        "analytic_misused_bound_failure": 0.19068221825311477,
+        "n": 50,
+        "observed_failure": 0.189
+      },
+      {
+        "M": 512,
+        "MC_z_difference": -1.147414387970439,
+        "analytic_misused_bound_failure": 0.8159428639712752,
+        "n": 50,
+        "observed_failure": 0.806
+      },
+      {
+        "M": 1,
+        "MC_z_difference": 0.7506346993400539,
+        "analytic_misused_bound_failure": 0.006637120515926126,
+        "n": 100,
+        "observed_failure": 0.008
+      },
+      {
+        "M": 8,
+        "MC_z_difference": -0.487391460713011,
+        "analytic_misused_bound_failure": 0.02624216063491991,
+        "n": 100,
+        "observed_failure": 0.0245
+      },
+      {
+        "M": 64,
+        "MC_z_difference": -1.9469161138672402,
+        "analytic_misused_bound_failure": 0.19163456290209743,
+        "n": 100,
+        "observed_failure": 0.1745
+      },
+      {
+        "M": 512,
+        "MC_z_difference": -1.2935620225857902,
+        "analytic_misused_bound_failure": 0.8176684220415824,
+        "n": 100,
+        "observed_failure": 0.8065
+      }
+    ],
+    "actual_SciPy_stable_binomial_PMF_max_error": 9.853229343548264e-16,
+    "all_noise_and_holdout_draws_reproduced": true,
+    "holdout_mutation_selection_invariant": true,
+    "naive_survival_subtraction_max_error": 3.5940548158571416e-14
+  },
+  "unit": "049"
+}

@@ -1,0 +1,8 @@
+{
+  "data/draws.npz": "844aff958276f0f26949cfddab8e64b007c0afaf8c57c1043d3ef2e919657e71",
+  "data/hand.csv": "7a8051fd56ad96b26d2b80427f7fb796a610d44f41f4645dcff49c26b5db102a",
+  "data/panel.csv": "647faabfa26b7e6f1f132e5a389914d1caf980f1da05b547a72aab8e5e9d0845",
+  "data/protocol.json": "137325bcfb7365ad550706084af9b30866665a236e8beb9e6e0a21aa661dcb0e",
+  "data/split_membership.csv": "def800c0a10674b33ca394bf10fe97d4cf319d884f9a6575162ad099431591f6",
+  "data/splits.npz": "f6e32ea1b69e246b4306da9b8caa932ea3da10e92387a6c5099806c32eafd7eb"
+}

@@ -1,0 +1,365 @@
+{
+  "unit": "048",
+  "verification_date_utc": "2026-10-05",
+  "status": "author checks complete; not independent course acceptance",
+  "runtime": {
+    "Python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "Markdown": "3.11",
+    "WeasyPrint": "70.0",
+    "MathJax": "3.2.2"
+  },
+  "processes": {
+    "ordinary": "passed",
+    "python_optimized_mode": "passed",
+    "different_cwd": "passed",
+    "fresh_notebook_kernel": "passed",
+    "standalone_build_all": "passed"
+  },
+  "identical_result_sha256": "26ae3564e21fa4b272194d760f85d457ce2a5aa92ca4102eae9cc3fb8eb883d6",
+  "notebook": {
+    "code_cells": 12,
+    "image_outputs": 10,
+    "kernel": "fresh ipykernel InProcessKernel in a new Python process",
+    "external_transport_and_browser_ui_tested": false
+  },
+  "numerics": {
+    "status": "author self-check passed; independent course QA pending",
+    "exact_reference": [
+      {
+        "p": 1,
+        "risk": "4/3",
+        "mean_train": "2/3"
+      },
+      {
+        "p": 2,
+        "risk": "3/2",
+        "mean_train": "1/3"
+      },
+      {
+        "p": 3,
+        "risk": "9/5",
+        "mean_train": "0"
+      }
+    ],
+    "tests": [
+      "Fraction all-eight exact enumeration and monomial risk integral",
+      "15 fits against SciPy pivoted QR, sklearn; 32-node integration independent of coefficient risk",
+      "worst-risk replicate from all 27 blocks checked by function integration and pivoted QR, without excluding any result",
+      "all 10800 fits retained, normal equations and both finite-repetition identities",
+      "input guards remain explicit exceptions, independent of assert / -O",
+      "atomic strict JSON, symlink rejection, previous output preserved on serialization failure"
+    ],
+    "max_quadrature_difference": 9.992007221626409e-16,
+    "max_scipy_qr_coef_difference": 4.6629367034256575e-15,
+    "max_sklearn_prediction_difference": 0.0,
+    "max_normal_equation_residual": 6.802544638695451e-14,
+    "max_finite_repetition_identity_residual": 5.455358387251863e-14,
+    "worst_risk_checks": [
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 1,
+        "rep": 141,
+        "risk": 0.8782216738343209,
+        "quadrature_abs_difference": 8.881784197001252e-16,
+        "quadrature_scaled_difference": 8.881784197001252e-16,
+        "QR_prediction_scaled_difference": 0.0
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 2,
+        "rep": 224,
+        "risk": 0.49635785361979223,
+        "quadrature_abs_difference": 1.8318679906315083e-15,
+        "quadrature_scaled_difference": 1.8318679906315083e-15,
+        "QR_prediction_scaled_difference": 3.632257883487512e-16
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 3,
+        "rep": 224,
+        "risk": 0.3656761557679168,
+        "quadrature_abs_difference": 1.27675647831893e-15,
+        "quadrature_scaled_difference": 1.27675647831893e-15,
+        "QR_prediction_scaled_difference": 1.8202110356608777e-16
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 4,
+        "rep": 350,
+        "risk": 0.2373796809677315,
+        "quadrature_abs_difference": 6.661338147750939e-16,
+        "quadrature_scaled_difference": 6.661338147750939e-16,
+        "QR_prediction_scaled_difference": 3.3871453110400414e-16
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 5,
+        "rep": 16,
+        "risk": 0.33206973597546247,
+        "quadrature_abs_difference": 1.4988010832439613e-15,
+        "quadrature_scaled_difference": 1.4988010832439613e-15,
+        "QR_prediction_scaled_difference": 8.550484984146775e-16
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 6,
+        "rep": 86,
+        "risk": 1.2289399012497058,
+        "quadrature_abs_difference": 1.0436096431476471e-14,
+        "quadrature_scaled_difference": 8.491950192897173e-15,
+        "QR_prediction_scaled_difference": 1.106368184338493e-14
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 7,
+        "rep": 224,
+        "risk": 1.5937701860524478,
+        "quadrature_abs_difference": 1.4210854715202004e-14,
+        "quadrature_scaled_difference": 8.916501789006581e-15,
+        "QR_prediction_scaled_difference": 1.5582136729812337e-14
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 8,
+        "rep": 16,
+        "risk": 10.879269499493045,
+        "quadrature_abs_difference": 1.1368683772161603e-13,
+        "quadrature_scaled_difference": 1.0449859499014491e-14,
+        "QR_prediction_scaled_difference": 3.826090789165433e-15
+      },
+      {
+        "kind": "complexity",
+        "n": 40,
+        "p": 9,
+        "rep": 86,
+        "risk": 76.17727923465027,
+        "quadrature_abs_difference": 1.0373923942097463e-12,
+        "quadrature_scaled_difference": 1.3618133971603888e-14,
+        "QR_prediction_scaled_difference": 3.9722330011308895e-16
+      },
+      {
+        "kind": "learning",
+        "n": 16,
+        "p": 2,
+        "rep": 37,
+        "risk": 0.868380238440406,
+        "quadrature_abs_difference": 3.1086244689504383e-15,
+        "quadrature_scaled_difference": 3.1086244689504383e-15,
+        "QR_prediction_scaled_difference": 1.6897071249175688e-16
+      },
+      {
+        "kind": "learning",
+        "n": 32,
+        "p": 2,
+        "rep": 221,
+        "risk": 0.5222678662981786,
+        "quadrature_abs_difference": 1.887379141862766e-15,
+        "quadrature_scaled_difference": 1.887379141862766e-15,
+        "QR_prediction_scaled_difference": 1.9361105382476714e-16
+      },
+      {
+        "kind": "learning",
+        "n": 64,
+        "p": 2,
+        "rep": 230,
+        "risk": 0.45107065836612514,
+        "quadrature_abs_difference": 1.6653345369377348e-15,
+        "quadrature_scaled_difference": 1.6653345369377348e-15,
+        "QR_prediction_scaled_difference": 1.8852899209151832e-16
+      },
+      {
+        "kind": "learning",
+        "n": 128,
+        "p": 2,
+        "rep": 228,
+        "risk": 0.39485397583960125,
+        "quadrature_abs_difference": 2.7755575615628914e-16,
+        "quadrature_scaled_difference": 2.7755575615628914e-16,
+        "QR_prediction_scaled_difference": 8.873944753475125e-16
+      },
+      {
+        "kind": "learning",
+        "n": 256,
+        "p": 2,
+        "rep": 174,
+        "risk": 0.3691524881614444,
+        "quadrature_abs_difference": 1.1657341758564144e-15,
+        "quadrature_scaled_difference": 1.1657341758564144e-15,
+        "QR_prediction_scaled_difference": 2.0746606676845644e-16
+      },
+      {
+        "kind": "learning",
+        "n": 16,
+        "p": 4,
+        "rep": 43,
+        "risk": 1.3986157504719015,
+        "quadrature_abs_difference": 6.661338147750939e-15,
+        "quadrature_scaled_difference": 4.762807901672324e-15,
+        "QR_prediction_scaled_difference": 5.061645248527491e-16
+      },
+      {
+        "kind": "learning",
+        "n": 32,
+        "p": 4,
+        "rep": 240,
+        "risk": 0.3626935651661465,
+        "quadrature_abs_difference": 9.992007221626409e-16,
+        "quadrature_scaled_difference": 9.992007221626409e-16,
+        "QR_prediction_scaled_difference": 7.7329955617737455e-16
+      },
+      {
+        "kind": "learning",
+        "n": 64,
+        "p": 4,
+        "rep": 398,
+        "risk": 0.1626872856549243,
+        "quadrature_abs_difference": 1.942890293094024e-16,
+        "quadrature_scaled_difference": 1.942890293094024e-16,
+        "QR_prediction_scaled_difference": 1.6183343144077694e-15
+      },
+      {
+        "kind": "learning",
+        "n": 128,
+        "p": 4,
+        "rep": 32,
+        "risk": 0.14099510895485495,
+        "quadrature_abs_difference": 5.551115123125783e-17,
+        "quadrature_scaled_difference": 5.551115123125783e-17,
+        "QR_prediction_scaled_difference": 3.5038161440654077e-16
+      },
+      {
+        "kind": "learning",
+        "n": 256,
+        "p": 4,
+        "rep": 32,
+        "risk": 0.1335997150202125,
+        "quadrature_abs_difference": 0.0,
+        "quadrature_scaled_difference": 0.0,
+        "QR_prediction_scaled_difference": 6.180513047546582e-16
+      },
+      {
+        "kind": "learning",
+        "n": 16,
+        "p": 8,
+        "rep": 226,
+        "risk": 118455.52785075578,
+        "quadrature_abs_difference": 1.0331859812140465e-09,
+        "quadrature_scaled_difference": 8.722142393521523e-15,
+        "QR_prediction_scaled_difference": 3.217377952268101e-14
+      },
+      {
+        "kind": "learning",
+        "n": 32,
+        "p": 8,
+        "rep": 199,
+        "risk": 598.377080386283,
+        "quadrature_abs_difference": 5.7980287238024175e-12,
+        "quadrature_scaled_difference": 9.689590249779443e-15,
+        "QR_prediction_scaled_difference": 1.534342657447644e-14
+      },
+      {
+        "kind": "learning",
+        "n": 64,
+        "p": 8,
+        "rep": 131,
+        "risk": 0.7077428288011128,
+        "quadrature_abs_difference": 7.993605777301127e-15,
+        "quadrature_scaled_difference": 7.993605777301127e-15,
+        "QR_prediction_scaled_difference": 3.569698990419232e-15
+      },
+      {
+        "kind": "learning",
+        "n": 128,
+        "p": 8,
+        "rep": 283,
+        "risk": 0.18901643777647353,
+        "quadrature_abs_difference": 8.326672684688674e-16,
+        "quadrature_scaled_difference": 8.326672684688674e-16,
+        "QR_prediction_scaled_difference": 1.1038472194473267e-15
+      },
+      {
+        "kind": "learning",
+        "n": 256,
+        "p": 8,
+        "rep": 32,
+        "risk": 0.13425551162175306,
+        "quadrature_abs_difference": 0.0,
+        "quadrature_scaled_difference": 0.0,
+        "QR_prediction_scaled_difference": 7.222620258021385e-16
+      },
+      {
+        "kind": "fixed_design",
+        "n": 40,
+        "p": 2,
+        "rep": 16,
+        "risk": 0.4092665983737363,
+        "quadrature_abs_difference": 1.2212453270876722e-15,
+        "quadrature_scaled_difference": 1.2212453270876722e-15,
+        "QR_prediction_scaled_difference": 0.0
+      },
+      {
+        "kind": "fixed_design",
+        "n": 40,
+        "p": 4,
+        "rep": 237,
+        "risk": 0.19879864640777617,
+        "quadrature_abs_difference": 4.440892098500626e-16,
+        "quadrature_scaled_difference": 4.440892098500626e-16,
+        "QR_prediction_scaled_difference": 2.2836268604344687e-16
+      },
+      {
+        "kind": "fixed_design",
+        "n": 40,
+        "p": 8,
+        "rep": 66,
+        "risk": 0.24479299685563355,
+        "quadrature_abs_difference": 1.6653345369377348e-15,
+        "quadrature_scaled_difference": 1.6653345369377348e-15,
+        "QR_prediction_scaled_difference": 7.032990760728473e-16
+      }
+    ],
+    "checked_fits": 10800
+  },
+  "visuals": {
+    "figures": 10,
+    "pdf_pages": {
+      "lecture": 15,
+      "lab": 7,
+      "answers": 7
+    },
+    "method": "all actual PNG figures and every rendered PDF page visually reviewed by the author; no independent QA claim"
+  },
+  "rebuild_commands": [
+    "python experiment.py --out outputs/result.json",
+    "python -O experiment.py --out outputs/result-O.json",
+    "python audit.py --report outputs/result.json --out outputs/audit.json",
+    "python plots.py --report outputs/result.json --directory outputs/figures",
+    "python build_notebook.py",
+    "python execute_notebook.py experiment.ipynb",
+    "python build_pdf.py --directory outputs/pdf",
+    "bash build_all.sh"
+  ],
+  "limitations": [
+    "synthetic mechanism, no real application performance claim",
+    "all 400 repeats retained; moment existence for every random-design risk configuration not established",
+    "sample SD/sqrt(B) is not an unconditional CLT confidence guarantee",
+    "XeLaTeX unavailable due missing format files; used local MathJax SVG and WeasyPrint",
+    "in-process notebook execution only; no Jupyter browser or external kernel transport validation",
+    "runtime local-interface discovery warning observed; execution succeeded",
+    "PDF source is trusted course content; not an untrusted HTML/TeX sandbox"
+  ]
+}

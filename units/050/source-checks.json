@@ -1,0 +1,47 @@
+{
+  "checked_on": "2026-10-05",
+  "primary_sources": [
+    {
+      "title": "Roberts et al. 2017",
+      "url": "https://www.biom.uni-freiburg.de/mitarbeiter/dormann/roberts-et-al-2017-ecography.pdf/at_download/file",
+      "checked_claim": "Original paper via author institution; prediction objectives and dependence blocking",
+      "status": "read_via_web"
+    },
+    {
+      "title": "Kapoor and Narayanan preprint",
+      "url": "https://arxiv.org/abs/2207.07048",
+      "checked_claim": "Author preprint; leakage taxonomy and explicit reporting",
+      "status": "read_via_web"
+    },
+    {
+      "title": "GroupShuffleSplit",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.model_selection.GroupShuffleSplit.html",
+      "checked_claim": "test_size uses groups; groups non-overlap within a split",
+      "status": "read_via_web"
+    },
+    {
+      "title": "TimeSeriesSplit",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+      "checked_claim": "gap counts samples; ordered equally spaced comparison",
+      "status": "read_via_web"
+    },
+    {
+      "title": "OneHotEncoder",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.OneHotEncoder.html",
+      "checked_claim": "unknown ignore encodes all zeros",
+      "status": "read_via_web"
+    },
+    {
+      "title": "Ridge",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.Ridge.html",
+      "checked_claim": "squared residual sum plus alpha penalty; SVD solver",
+      "status": "read_via_web"
+    }
+  ],
+  "local_reference_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "online_stable_version_not_assumed_equal": true
+}

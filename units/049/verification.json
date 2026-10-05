@@ -1,0 +1,127 @@
+{
+  "unit": "049",
+  "scope": "author reproducibility checks; independent review is a separate process",
+  "date": "2026-10-05",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "WeasyPrint": "70.0",
+    "MathJax": "3.2.2"
+  },
+  "scientific_core_sha256": "dbb5d325609935cf1c301f2b1180a396da575ff814c65b0518384b9ae578c360",
+  "audit_sha256": "a6896b2c44a9165aae941f9a168d16421077ef67a5e3fd8211e748db86a47598",
+  "PDF_pages": {
+    "lecture": 13,
+    "lab": 6,
+    "answers": 6
+  },
+  "visual_review": {
+    "all_25_final_PDF_pages_reviewed": true,
+    "all_10_original_figures_reviewed": true,
+    "actual_notebook_PNGs_byte_equal_reviewed_assets": true,
+    "display_formula_block_box_fix_changed_pages": [
+      "lecture 4",
+      "lecture 5",
+      "lecture 6",
+      "lecture 9"
+    ],
+    "changed_pages_rechecked": true,
+    "remaining_pages_pixel_identical": 21
+  },
+  "execution_checks": {
+    "full_normal_O_two_cwd_hashes": {
+      "normal-unit": {
+        "experiment.py": "dbb5d325609935cf1c301f2b1180a396da575ff814c65b0518384b9ae578c360",
+        "audit.py": "a6896b2c44a9165aae941f9a168d16421077ef67a5e3fd8211e748db86a47598"
+      },
+      "normal-other": {
+        "experiment.py": "dbb5d325609935cf1c301f2b1180a396da575ff814c65b0518384b9ae578c360",
+        "audit.py": "a6896b2c44a9165aae941f9a168d16421077ef67a5e3fd8211e748db86a47598"
+      },
+      "O-unit": {
+        "experiment.py": "dbb5d325609935cf1c301f2b1180a396da575ff814c65b0518384b9ae578c360",
+        "audit.py": "a6896b2c44a9165aae941f9a168d16421077ef67a5e3fd8211e748db86a47598"
+      },
+      "O-other": {
+        "experiment.py": "dbb5d325609935cf1c301f2b1180a396da575ff814c65b0518384b9ae578c360",
+        "audit.py": "a6896b2c44a9165aae941f9a168d16421077ef67a5e3fd8211e748db86a47598"
+      }
+    },
+    "edge_CLI_cases": [
+      {
+        "case": "delta_02",
+        "normal_O_same_json": true,
+        "sha256": "0c748df34e93d8a071dafbb796449c302d727a575c3bd25999c75d3446cb830c"
+      },
+      {
+        "case": "vacuous_tiny_delta",
+        "normal_O_same_json": true,
+        "sha256": "35afd51d8a205da39614c1433dd7c5dc1bbf634335fe895c86548e61fedb0298"
+      },
+      {
+        "case": "one_noise_candidate",
+        "normal_O_same_json": true,
+        "sha256": "340afb7edb192788858e6a815c6691e6e9bfabad9ed5d374d30b22271a5a2077"
+      },
+      {
+        "case": "fewer_exact_epsilon",
+        "normal_O_same_json": true,
+        "sha256": "aa3bbcc3c4f7402388da095c4ee9b6a884250a7f67ec9ecd9502233371acc2cc"
+      }
+    ],
+    "invalid_final_config_and_CSV_normal_O_preserve_output": true,
+    "fixed_CSV_files_bound_by_SHA256": true,
+    "all_ten_figures_byte_reproduced": true,
+    "notebook_code_cells": 13,
+    "actual_notebook_PNGs": 10,
+    "all_notebook_PNGs_equal_assets": true,
+    "fresh_normal_O_notebooks_raw_byte_equal": true,
+    "fresh_normal_O_notebooks_full_text_and_PNG_equal": true,
+    "stream_comparison": "Only consecutive same-channel stdout fragments concatenated for comparison; all raw Notebooks retained; no output rewriting",
+    "first_cell_tamper_checks": [
+      "data/protocol.json",
+      "data/population.csv",
+      "data/hypotheses.csv",
+      "data/hand_sample.csv",
+      "data_integrity.json",
+      "numeric.py",
+      "protocol.py",
+      "bounds.py",
+      "finite_class.py",
+      "selection.py",
+      "experiment.py",
+      "audit.py",
+      "plots.py",
+      "requirements.txt",
+      "environment.yml"
+    ],
+    "notebook_full_result_equal_script": true,
+    "notebook_sha256": "41b3cde0a8d6ecb5fe7d7be089cd1be3fe798369963b601340045232cbf95fe9",
+    "warnings": [
+      "Frozen-module debugger warning",
+      "Network-interface discovery not permitted; in-process execution completed"
+    ]
+  },
+  "ZIP_recovery_preflight": {
+    "CRC_checked": true,
+    "extracted_to_separate_directory": true,
+    "full_build_all_from_different_cwd_succeeded": true,
+    "normal_O_audit_science_data_figures_reproduced": true,
+    "new_kernel_completed": true,
+    "all_25_PDF_page_pixels_equal": true
+  },
+  "source_scope": "Original synthetic data and figures; primary links in sources.md; no third-party personal data",
+  "statistical_boundaries": [
+    "Fixed-model versus simultaneous finite-class bounds distinguished",
+    "IID observations and bounded losses are necessary assumptions for the stated bounds",
+    "Union bound does not need independent candidate hypotheses",
+    "ERM selection inside the predeclared class is data-dependent but protected by the uniform event",
+    "Noisy default population is not realizable",
+    "Exact rational enumeration, Decimal analytic probabilities and Monte Carlo frequencies distinguished",
+    "Negative observed mean optimism and zero observed failure counts retained",
+    "VC patterns introduce shattering without claiming an infinite-class proof"
+  ]
+}

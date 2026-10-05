@@ -1,0 +1,10 @@
+{
+  "experiment.py": "a731367881fdf816f8da1a0e3af24d2dcce14da026c066a63e2b234b80e7e14b",
+  "plots.py": "8fe3a0a7dadd7e1f154f1a3d13a41bd60802f303cadbf648c20409541fb0e1aa",
+  "audit.py": "b422dfce0b95812aaae48a7c85266f22d14b1c80bfb21185f100e2af60e040a3",
+  "generate_data.py": "775ebe3f896656c6ed6784de6ce67a500d88d3ecb52ff0e6514c8cd2c9ef2d10",
+  "data_integrity.json": "87e6d65ab8da80275befe8825479923d154673cbc802e512866870e4929b550d",
+  "data/protocol.json": "3bcd2b494f60f042e44f774f2b17ed6e2cac6ba2c42e47cfc7d05743554a6731",
+  "data/tiny.csv": "ae7c1f762f078971e717826d2fd421ee2d705d9e901f9e332ce4a8a1df11ccac",
+  "data/simulated.csv": "48e131cbdaea94b4a9a894a03189e4550c76aa166c66b63b7de1e0dd6bc51824"
+}

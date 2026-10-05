@@ -1,0 +1,106 @@
+{
+  "unit": "050",
+  "checked_on": "2026-10-05",
+  "status": "author_verified_pending_independent_review",
+  "pages": {
+    "lecture": 16,
+    "lab": 8,
+    "answers": 9
+  },
+  "figures": 10,
+  "notebook": {
+    "code_cells": 13,
+    "all_executed_in_order": true,
+    "embedded_png_outputs": 10,
+    "execution": "fresh Python process and real ipykernel InProcessKernel",
+    "not_tested": [
+      "Jupyter browser UI",
+      "external socket transport"
+    ]
+  },
+  "science": {
+    "main_fits": 12,
+    "independent_panel_fits": 960,
+    "exact_hand": "Fraction Gauss-Jordan and synchronized gradient update",
+    "reference_solvers": [
+      "SciPy column-pivoted QR gelsy",
+      "sklearn OneHotEncoder plus Ridge SVD"
+    ],
+    "sklearn_max_prediction_difference": 6.750155989720952e-14,
+    "scipy_max_prediction_difference": 1.4210854715202004e-14,
+    "hand_gradient_finite_difference_max_difference": 1.4651391211373266e-10,
+    "all_960_gradient_residual_max": 9.649585657272113e-15,
+    "all_unfavorable_comparisons_retained": true,
+    "held_out_target_mutation_no_training_effect": true
+  },
+  "execution": {
+    "ordinary": "passed",
+    "python_optimized_O": "passed",
+    "different_cwd": "passed",
+    "canonical_results_identical": true,
+    "negative_tests": 13,
+    "reasonable_input_cases": [
+      "single row",
+      "constant x",
+      "unknown device",
+      "reversed training rows"
+    ],
+    "output_preservation": [
+      "nonfinite JSON",
+      "source overwrite refusal",
+      "symlink refusal",
+      "hardlink refusal"
+    ]
+  },
+  "standalone_zip_recovery": {
+    "status": "passed",
+    "new_directory": true,
+    "fresh_kernel_and_complete_PDF_rebuild": true,
+    "result": {
+      "numeric_same_as_reference": true,
+      "ordinary_equals_optimized": true,
+      "all_ten_figures_byte_identical": true,
+      "all_fixed_data_byte_identical": true,
+      "fresh_notebook_code_cells": 13,
+      "fresh_notebook_images": 10,
+      "all_three_PDFs_rebuilt": true,
+      "PDF_byte_identity_required": false
+    },
+    "PDF_rebuild": {
+      "lecture": {
+        "original_sha256": "1e18ab17ec6b1ab78bb2a975a83f2e4d1ef0f453871c2451aa394cdef8a2a37a",
+        "rebuilt_sha256": "82661f862a06eabe4f6dc617d12dc067a58a9d16315f94f2047d592ed687434b",
+        "byte_identical": false
+      },
+      "lab": {
+        "original_sha256": "69a244a46c909c9f14cc7a9a81df7a3df4e9c0cdda06de4af0185c5100a5710c",
+        "rebuilt_sha256": "69a244a46c909c9f14cc7a9a81df7a3df4e9c0cdda06de4af0185c5100a5710c",
+        "byte_identical": true
+      },
+      "answers": {
+        "original_sha256": "17b8ded6a428c2a2ed8ede2deed09cf136940836fe72101e3c89f9412bed851d",
+        "rebuilt_sha256": "17b8ded6a428c2a2ed8ede2deed09cf136940836fe72101e3c89f9412bed851d",
+        "byte_identical": true
+      }
+    }
+  },
+  "visual": {
+    "all_final_PDF_pages_rendered_and_inspected": 33,
+    "all_final_PNG_figures_inspected": 10,
+    "status": "passed",
+    "corrections_applied": [
+      "distinguish marker shapes from eligibility colors",
+      "remove overlapping scatter labels",
+      "increase split-map display size",
+      "preserve literal protocol prompts"
+    ],
+    "scope": "final page images and actual figure PNGs; no contact sheet alone"
+  },
+  "limitations": [
+    "Synthetic balanced panel with linear drift and no missing labels or common shocks",
+    "Bootstrap percentile coverage not validated",
+    "Three predeclared models are educational probes; no real-world test-set model selection claim",
+    "Conda environment resolution and browser UI not tested",
+    "PDF text extraction does not retain MathJax SVG formulas as searchable text; editable equations remain in Markdown"
+  ]
+}

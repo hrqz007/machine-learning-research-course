@@ -1,0 +1,33 @@
+{
+  "protocol_version": "050-v1-pre-result",
+  "data_seed": 50017,
+  "split_seed": 50053,
+  "bootstrap_seed": 50059,
+  "independent_repetitions": 80,
+  "n_devices": 60,
+  "n_days": 48,
+  "label_delay_days": 2,
+  "fit_cutoff_day": 32,
+  "future_first_day": 33,
+  "test_fraction": 0.25,
+  "intercept": 2.0,
+  "signal_slope": 1.4,
+  "device_sd": 1.2,
+  "response_drift_per_day": 0.045,
+  "x_drift_per_day": 0.015,
+  "noise_sd": 0.5,
+  "ridge_alpha": 1.0,
+  "models": [
+    "pooled",
+    "personalized",
+    "trend"
+  ],
+  "splits": [
+    "random",
+    "group",
+    "time",
+    "group_time"
+  ],
+  "bootstrap_repetitions": 800,
+  "interpretation": "Replicate 0 is the worked table; replicates 1..80 are independent new synthetic panels. Split indices, models, alpha and all constants fixed before observing scores. Each split targets a different evaluation population. No tuning, filtering or chosen seeds."
+}

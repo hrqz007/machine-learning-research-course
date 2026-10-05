@@ -1,0 +1,16 @@
+{
+  "checked_date_utc": "2026-10-05",
+  "original_work": "All datasets, toy enumerations, derivations, code and figures are original teaching material; no external dataset downloaded.",
+  "api_scope": "Web stable documentation can be newer than the installed runtime. Actual numerical compatibility was tested on NumPy 2.3.5, SciPy 1.17.0 and scikit-learn 1.8.0; no claim that every future release is verified.",
+  "sources": [
+    {"url":"https://www.statlearning.com/","role":"Primary textbook site, statistical learning background; no copied figures or dataset"},
+    {"url":"https://scikit-learn.org/stable/modules/learning_curve.html","role":"Learning and validation curve terminology"},
+    {"url":"https://scikit-learn.org/stable/auto_examples/ensemble/plot_bias_variance.html","role":"Repeated training interpretation of prediction bias and variance; original experiment not reused"},
+    {"url":"https://numpy.org/doc/stable/reference/generated/numpy.var.html","role":"ddof divisor convention"},
+    {"url":"https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html","role":"Least-squares return values, rank and singular values"},
+    {"url":"https://numpy.org/doc/stable/reference/generated/numpy.polynomial.legendre.legvander.html","role":"Legendre pseudo-Vandermonde basis"},
+    {"url":"https://numpy.org/doc/stable/reference/generated/numpy.polynomial.legendre.leggauss.html","role":"Independent function integration route"},
+    {"url":"https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html","role":"fit_intercept=False and least-squares alignment"},
+    {"url":"https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lstsq.html","role":"Independent gelsy pivoted QR driver"}
+  ]
+}

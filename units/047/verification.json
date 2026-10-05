@@ -1,0 +1,126 @@
+{
+  "unit": "047",
+  "scope": "author reproducibility checks; independent review is a separate process",
+  "date": "2026-10-05",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "WeasyPrint": "70.0",
+    "MathJax": "3.2.2"
+  },
+  "scientific_core_sha256": "159d689b66383bfe5ece6cf734585382e57c4dd19efe382e8a7e77c325bbcbe2",
+  "audit_sha256": "df90c94794c7598606caa7c15d0f0c24e23abe4e672372dd29f2df39b8aea712",
+  "PDF_pages": {
+    "lecture": 13,
+    "lab": 6,
+    "answers": 6
+  },
+  "visual_review": {
+    "all_25_final_PDF_pages_reviewed": true,
+    "all_10_original_figures_reviewed": true,
+    "actual_notebook_PNGs_byte_equal_reviewed_assets": true,
+    "last_caption_only_revision_changed_pages": [
+      "lecture 3",
+      "lecture 5",
+      "lecture 11"
+    ],
+    "changed_pages_rechecked": true,
+    "remaining_pages_pixel_identical": 22
+  },
+  "execution_checks": {
+    "full_normal_O_two_cwd_hashes": {
+      "normal-unit": {
+        "experiment.py": "159d689b66383bfe5ece6cf734585382e57c4dd19efe382e8a7e77c325bbcbe2",
+        "audit.py": "df90c94794c7598606caa7c15d0f0c24e23abe4e672372dd29f2df39b8aea712"
+      },
+      "normal-other": {
+        "experiment.py": "159d689b66383bfe5ece6cf734585382e57c4dd19efe382e8a7e77c325bbcbe2",
+        "audit.py": "df90c94794c7598606caa7c15d0f0c24e23abe4e672372dd29f2df39b8aea712"
+      },
+      "O-unit": {
+        "experiment.py": "159d689b66383bfe5ece6cf734585382e57c4dd19efe382e8a7e77c325bbcbe2",
+        "audit.py": "df90c94794c7598606caa7c15d0f0c24e23abe4e672372dd29f2df39b8aea712"
+      },
+      "O-other": {
+        "experiment.py": "159d689b66383bfe5ece6cf734585382e57c4dd19efe382e8a7e77c325bbcbe2",
+        "audit.py": "df90c94794c7598606caa7c15d0f0c24e23abe4e672372dd29f2df39b8aea712"
+      }
+    },
+    "edge_CLI_cases": [
+      {
+        "case": "infinite_intervals",
+        "normal_O_same_json": true,
+        "sha256": "713660a9daa33bd25c69d3c7126d3bc3dd214940532230a67d07442e6d7add4a"
+      },
+      {
+        "case": "decimal_rank",
+        "normal_O_same_json": true,
+        "sha256": "4b63e0f2d12497b4c11b5cc420923a079292ee002838f6be8dd0cbb5eba81605"
+      },
+      {
+        "case": "two_bins",
+        "normal_O_same_json": true,
+        "sha256": "6a5816929586217e0ea8f562cc3a510bbe6dd8634e119890e8ff48f6d51a33d3"
+      },
+      {
+        "case": "different_hand_labels",
+        "normal_O_same_json": true,
+        "sha256": "937e31c9514a15dd924d010ffd941ac572c436e323189658a3044932f393e356"
+      }
+    ],
+    "invalid_final_config_and_CSV_normal_O_preserve_output": true,
+    "all_four_CSV_byte_reproduced": true,
+    "all_ten_figures_byte_reproduced": true,
+    "notebook_code_cells": 13,
+    "actual_notebook_PNGs": 10,
+    "all_notebook_PNGs_equal_assets": true,
+    "fresh_normal_O_notebooks_raw_byte_equal": true,
+    "fresh_normal_O_notebooks_full_text_and_PNG_equal": true,
+    "stream_comparison": "Only consecutive same-channel stdout fragments concatenated for comparison; all raw Notebooks retained; no output rewriting",
+    "first_cell_tamper_checks": [
+      "data/protocol.json",
+      "data/classification.csv",
+      "data/regression_train.csv",
+      "data/regression_calibration.csv",
+      "data/regression_evaluation.csv",
+      "data_integrity.json",
+      "numeric.py",
+      "protocol.py",
+      "calibration.py",
+      "conformal.py",
+      "generate_data.py",
+      "experiment.py",
+      "audit.py",
+      "plots.py",
+      "requirements.txt",
+      "environment.yml"
+    ],
+    "notebook_full_result_equal_script": true,
+    "notebook_sha256": "a9e4ba3366f7f91e9f7f16319c71f6507b596a1f5237acc305f7b63552651601",
+    "warnings": [
+      "Frozen-module debugger warning",
+      "Network-interface discovery not permitted; in-process execution completed"
+    ]
+  },
+  "ZIP_recovery_preflight": {
+    "CRC_checked": true,
+    "extracted_to_separate_directory": true,
+    "full_build_all_from_different_cwd_succeeded": true,
+    "normal_O_audit_science_data_figures_reproduced": true,
+    "new_kernel_completed": true,
+    "all_25_PDF_page_pixels_equal": true
+  },
+  "source_scope": "Original synthetic data and figures; primary links in sources.md; no third-party personal data",
+  "statistical_boundaries": [
+    "Positive-class and top-label reliability are distinct",
+    "Brier and NLL are probability scores, not isolated calibration error",
+    "Finite positive T preserves argmax; infinite-T boundary treated separately",
+    "Split conformal is marginal under exchangeability; ties and infinity explicit",
+    "Independent repeated experiments are the MCSE unit",
+    "Observed subgroup undercoverage and noise-shift failure retained",
+    "Calibration-label reuse is a deliberately invalid counterexample"
+  ]
+}

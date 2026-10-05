@@ -1,0 +1,8 @@
+{
+  "file": "data/review_scores.csv",
+  "sha256": "38d69f6e543ce12d435b4b62b6e2941782cb28b336eb0786908f382a044c9d84",
+  "rows": 12,
+  "positive": 3,
+  "negative": 9,
+  "source": "author-created fixed synthetic example; no real personal records"
+}

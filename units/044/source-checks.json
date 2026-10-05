@@ -1,0 +1,16 @@
+{
+  "unit": "044",
+  "checked_on": "2026-10-05",
+  "original_material": "All three lessons, hand-example data, simulated data, code and eight figures are original course material. No third-party datasets or figures are copied.",
+  "sources": [
+    {"id": 1, "url": "https://cs229.stanford.edu/notes_archive/cs229-notes1.pdf", "provider": "Stanford CS229", "checked": "original course PDF opened", "use": "Exponential-family and GLM framework; not the source of our numerical example or simulation."},
+    {"id": 2, "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html", "provider": "SciPy", "checked": "official documentation opened", "use": "Poisson support, mass function, logpmf interface; actual cross-check uses installed SciPy 1.17.0."},
+    {"id": 3, "url": "https://www.statsmodels.org/stable/generated/statsmodels.genmod.generalized_linear_model.GLM.html", "provider": "statsmodels", "checked": "offset/exposure entries inspected", "use": "log(exposure) offset has coefficient fixed to one. Documentation only; statsmodels not executed."},
+    {"id": 4, "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.linear_model.PoissonRegressor.html", "provider": "scikit-learn 1.8", "checked": "official versioned documentation opened", "use": "Log link, alpha=0, intercept, and Newton-Cholesky solver. Actual library fits executed."},
+    {"id": 5, "url": "https://scikit-learn.org/1.8/auto_examples/linear_model/plot_poisson_regression_non_normal_loss.html", "provider": "scikit-learn 1.8", "checked": "official example and weighting/scoring code inspected", "use": "Exposure-weighted rate formulation. This unit does NOT copy the example's practice of excluding invalid predictions for deviance."},
+    {"id": 6, "url": "https://www.statsmodels.org/stable/generated/statsmodels.genmod.generalized_linear_model.GLM.fit.html", "provider": "statsmodels", "checked": "scale parameter description inspected", "use": "Pearson chi-square / residual degrees of freedom convention. Our diagnostic computed independently; no statsmodels execution."},
+    {"id": 7, "url": "https://www.statsmodels.org/stable/generated/statsmodels.genmod.families.family.NegativeBinomial.html", "provider": "statsmodels", "checked": "NB2 mean/variance formula inspected", "use": "NB2 variance mu + alpha*mu^2; this unit independently derives alpha=1/2 from Gamma-Poisson mixing."},
+    {"id": "supplement", "url": "https://web.stanford.edu/class/stats305b/slides/Generalized-linear-models.html", "provider": "Stanford STATS305B", "checked": "official course material opened", "use": "Exponential-family mean/variance, links, and IRLS context; no copied figures or datasets."}
+  ],
+  "version_note": "Online stable documentation may change and can show versions newer than the installed runtime. Actual executed versions are recorded by experiment.py, not inferred from current website titles."
+}

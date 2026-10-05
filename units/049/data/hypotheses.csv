@@ -1,0 +1,6 @@
+id,predict_x_minus2,predict_x_minus1,predict_x_plus1,predict_x_plus2
+H0,1,1,1,1
+H1,0,1,1,1
+H2,0,0,1,1
+H3,0,0,0,1
+H4,0,0,0,0

@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "data/classification.csv": "7e8ff3c2066f3b042cc24af9f8ba1b419d9b1857cf7a9709761d9d3df031e8de",
+    "data/regression_calibration.csv": "c1d7f458a9a3e80e7287b34455bcfb19cfdcc56078219611ef1283465efa74b1",
+    "data/regression_evaluation.csv": "c25a4306db3cdfefd1d000942c8eb01b2987b858b6e70efc109e438d98ba7ae8",
+    "data/regression_train.csv": "06f0317280c0948abe464bdf81b863aa8780ea7e3175a3d11dc15f36c925eaff",
+    "data/protocol.json": "ac41c663df03f05c32be53289515862ad804464a3331b9e58ee4027fcf929664"
+  }
+}

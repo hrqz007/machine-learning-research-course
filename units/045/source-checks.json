@@ -1,0 +1,40 @@
+{
+  "unit": "045",
+  "checked_utc": "2026-10-05",
+  "sources": [
+    {
+      "title": "scikit-learn 1.8 classification threshold",
+      "url": "https://scikit-learn.org/1.8/modules/classification_threshold.html",
+      "scope": "Read probability estimation versus decision, fixed/tuned threshold and validation/overfitting cautions. TunedThresholdClassifierCV not executed; no trained model claimed.",
+      "status": "read"
+    },
+    {
+      "title": "Bartlett and Wegkamp original reject-option paper",
+      "url": "https://www.stat.berkeley.edu/~bartlett/papers/bw-crouhl-06.pdf",
+      "scope": "Read introduction pages 1-2, symmetric error/reject costs and minimum conditional risk. Course asymmetric thresholds and eight-group counts derived independently. Hinge-learning method not implemented.",
+      "status": "read"
+    },
+    {
+      "title": "Garg et al original label-shift paper abstract",
+      "url": "https://proceedings.neurips.cc/paper/2020/hash/219e052492f4008818b8adb6366c7ed6-Abstract.html",
+      "scope": "Read label-shift condition P(X|Y) invariant, class marginal shift and calibration-related limitations. Course uses known priors, not their estimator or empirical claims.",
+      "status": "read"
+    },
+    {
+      "title": "NumPy 2.3 argmin",
+      "url": "https://numpy.org/doc/2.3/reference/generated/numpy.argmin.html",
+      "scope": "Read axis semantics and first occurrence when minimum repeats; exact main dyadic ties and rectangular action matrices actually checked.",
+      "status": "read"
+    },
+    {
+      "title": "scikit-learn 1.8 confusion_matrix",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.metrics.confusion_matrix.html",
+      "scope": "Read true-row/predicted-column definition, explicit labels and sample_weight; actual weighted matrices used to independently recompute observed costs.",
+      "status": "read"
+    }
+  ],
+  "limitations": [
+    "All teaching data, diagrams and worked calculations original. No external datasets or protected source figures copied.",
+    "CMU page retrieval failed and is not used as a source."
+  ]
+}

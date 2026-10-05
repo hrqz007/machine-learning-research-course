@@ -1,0 +1,43 @@
+{
+  "unit": "048",
+  "seed": 48019,
+  "repetitions": 400,
+  "sigma": 0.35,
+  "complexity_n": 40,
+  "parameters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "learning_n": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "learning_p": [
+    2,
+    4,
+    8
+  ],
+  "test_n": 256,
+  "beta": [
+    1.0,
+    0.6,
+    0.4,
+    -0.25,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "protocol": "random design, independent repetitions; within each repetition shared nested training prefixes and independent test set; no selection or tuning"
+}

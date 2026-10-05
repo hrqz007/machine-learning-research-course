@@ -1,0 +1,351 @@
+{
+  "course_scope": 166,
+  "date_utc": "2026-10-05",
+  "execution": {
+    "actual_notebook_PNGs": 9,
+    "edge_CLI_cases": [
+      {
+        "costs": {
+          "accuracy_optimal": 0.0,
+          "cost_optimal": 0.0,
+          "with_reject": 0.0
+        },
+        "name": "zero_costs",
+        "optimized": false
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.0,
+          "cost_optimal": 0.0,
+          "with_reject": 0.0
+        },
+        "name": "zero_costs",
+        "optimized": true
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.53125,
+          "cost_optimal": 0.34375,
+          "with_reject": 0.0
+        },
+        "name": "free_reject",
+        "optimized": false
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.53125,
+          "cost_optimal": 0.34375,
+          "with_reject": 0.0
+        },
+        "name": "free_reject",
+        "optimized": true
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.53125,
+          "cost_optimal": 0.34375,
+          "with_reject": 0.34375
+        },
+        "name": "high_reject",
+        "optimized": false
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.53125,
+          "cost_optimal": 0.34375,
+          "with_reject": 0.34375
+        },
+        "name": "high_reject",
+        "optimized": true
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.53125,
+          "cost_optimal": 0.34375,
+          "with_reject": 0.25
+        },
+        "name": "single_sample_per_group",
+        "optimized": false
+      },
+      {
+        "costs": {
+          "accuracy_optimal": 0.53125,
+          "cost_optimal": 0.34375,
+          "with_reject": 0.25
+        },
+        "name": "single_sample_per_group",
+        "optimized": true
+      }
+    ],
+    "environment_warnings": [
+      "frozen-module debugger warning",
+      "network-interface discovery not permitted; all in-process cells still executed"
+    ],
+    "first_cell_independent_tamper_files": [
+      "data/posteriors.csv",
+      "data/label_shift.csv",
+      "data/decision_spec.json",
+      "data_integrity.json",
+      "experiment.py",
+      "audit.py",
+      "plots.py",
+      "requirements.txt",
+      "environment.yml"
+    ],
+    "full_normal_O_two_cwd_hashes": {
+      "O-other": {
+        "audit.py": "e7a972132121835e4ee080738e43666c1bea9abe89bb41abbf1c5f49b4e1c08a",
+        "experiment.py": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e"
+      },
+      "O-unit": {
+        "audit.py": "e7a972132121835e4ee080738e43666c1bea9abe89bb41abbf1c5f49b4e1c08a",
+        "experiment.py": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e"
+      },
+      "normal-other": {
+        "audit.py": "e7a972132121835e4ee080738e43666c1bea9abe89bb41abbf1c5f49b4e1c08a",
+        "experiment.py": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e"
+      },
+      "normal-unit": {
+        "audit.py": "e7a972132121835e4ee080738e43666c1bea9abe89bb41abbf1c5f49b4e1c08a",
+        "experiment.py": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e"
+      }
+    },
+    "invalid_last_field_normal_O_preserved": true,
+    "normal_O_all_cell_text_and_PNG_outputs_equal": true,
+    "normal_O_fresh_notebooks_byte_identical": true,
+    "notebook_code_cells": 13,
+    "notebook_core_matches_script": true,
+    "notebook_sha256": "35689da8fe417ee8e2421b7ba543408dc48e792b6769def81587d9319c82b66e",
+    "stream_comparison_note": "Consecutive same-channel stream fragments compared by full concatenated text; raw notebook files are retained and not rewritten for byte equality"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5864,
+      "sha256": "5b3088d3b0bfda53abee1a6e3e8cb33ba71656107e36a1937ce9c22e87acc2c8"
+    },
+    "answers.md": {
+      "bytes": 11003,
+      "sha256": "e5146a1d0fb0f53936b899180c2738c86fa3f655fd7fa83780fa397e2665c954"
+    },
+    "answers.pdf": {
+      "bytes": 523758,
+      "sha256": "0966c05166c3761702a432d6c96001559df8a134c1e909cde1b098f2451ef615"
+    },
+    "audit.py": {
+      "bytes": 9476,
+      "sha256": "c0f09b21bf6af5cb99ce08f0db25489663c7036d7214e4a7043323d0a41b157b"
+    },
+    "build-requirements.txt": {
+      "bytes": 327,
+      "sha256": "54ae61026ee207ae1c081d754f4bda7d2911ccfd860c008e38b04fcd1d7b41fd"
+    },
+    "build_notebook.py": {
+      "bytes": 8281,
+      "sha256": "bd62583802eaa997c14cffdc612e76a21692ad303c0c9b86ece4186b29299806"
+    },
+    "build_pdf.py": {
+      "bytes": 3489,
+      "sha256": "6b5c9494f3051c925bacc11050291f7b9a1b814d51c82a033fa5447adaab1b06"
+    },
+    "data/README.md": {
+      "bytes": 1030,
+      "sha256": "959880982de415c9bc0f7d706b78c19d1d2de17b91c60e3e6f05aa1c7bbd648c"
+    },
+    "data/decision_spec.json": {
+      "bytes": 560,
+      "sha256": "fd00afbdeb107797b9631476d5a6de13ffc76beb605c6e5605fd29c78ce14f37"
+    },
+    "data/label_shift.csv": {
+      "bytes": 89,
+      "sha256": "7964d15388fb422c8ff5f90d6d70d6fc019f752e80910f01f7a6ba47546b8f1c"
+    },
+    "data/posteriors.csv": {
+      "bytes": 130,
+      "sha256": "d958b5713d0012db7186a7e63c77ff80069bee0ff7de54f3b3ed07daafd1b98b"
+    },
+    "data_integrity.json": {
+      "bytes": 311,
+      "sha256": "29093baf11bea1d28568bb9086613c09996e8929df6eccd8fffac42a87a853d0"
+    },
+    "environment.yml": {
+      "bytes": 246,
+      "sha256": "89461240297987037fbd340a7fa1dad366342c4ad77fb7a8b82c9a28380eb9cf"
+    },
+    "execute_notebook.py": {
+      "bytes": 2215,
+      "sha256": "e6e9e3f52473e1fae2b0733156ffbdf51ae21049b4be3a264065d079690d5f74"
+    },
+    "experiment-result.json": {
+      "bytes": 32519,
+      "sha256": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e"
+    },
+    "experiment.ipynb": {
+      "bytes": 1035548,
+      "sha256": "35689da8fe417ee8e2421b7ba543408dc48e792b6769def81587d9319c82b66e"
+    },
+    "experiment.py": {
+      "bytes": 17025,
+      "sha256": "f1e7a79346c0549c6e4cc83e2a1e3f81b649d82f06be0e839d6745f9cc67be22"
+    },
+    "figures/01_probability_to_action.png": {
+      "bytes": 67936,
+      "sha256": "d9775158dd3a4ee9c7889052dfeff6475fdfd08e0d3a5902a6551f073e8febcc"
+    },
+    "figures/02_conditional_risk_lines.png": {
+      "bytes": 107981,
+      "sha256": "bbd463a31ecfebdc9c0d8dfffb6bf25a7e356b997e70deb28a26c90282b0698a"
+    },
+    "figures/03_eight_row_ledger.png": {
+      "bytes": 75409,
+      "sha256": "e9274d3447b3a41d826e3e2cd485f76ea152213719a1b2c44408167167d8b1a0"
+    },
+    "figures/04_cost_and_accuracy.png": {
+      "bytes": 62759,
+      "sha256": "8c37f57db0a36f15135901f6ecc19efbb2bd2436a810dfcd57398c2069b8faf1"
+    },
+    "figures/05_reject_decision.png": {
+      "bytes": 105082,
+      "sha256": "167615f664c237dcd3ca563656b4e9803da0c357788c43c72e832cf11cb6f81e"
+    },
+    "figures/06_multiclass_costs.png": {
+      "bytes": 58405,
+      "sha256": "c943b60ecf920a846b988e5076e0ab57f82fb4b9d4af255f9f56a2ceaf67a601"
+    },
+    "figures/07_prior_shift.png": {
+      "bytes": 73293,
+      "sha256": "b34ad8727d95f87991a7c1219e3885df7034056a7919ce3245ac573607f630ee"
+    },
+    "figures/08_exact_and_observed.png": {
+      "bytes": 92109,
+      "sha256": "31cc18f7adb7cfe56299fe69107e9c6e3154c31f482dcb456f54a96fa2ef64fc"
+    },
+    "figures/09_threshold_and_protocol.png": {
+      "bytes": 107605,
+      "sha256": "37db2bf6ce1a4521b4fe63389b386f5261976c99f6338b82c6c36c50ca2b8a5a"
+    },
+    "lab.md": {
+      "bytes": 8619,
+      "sha256": "40bf5fdbe4fc696de77d582c236c520fc214ce3ad588f1de2d1e259f6c628769"
+    },
+    "lab.pdf": {
+      "bytes": 689272,
+      "sha256": "adcd039dcb993568a760da20ce1e11bff558848c55a046553cf18b96d607f936"
+    },
+    "lecture.md": {
+      "bytes": 22882,
+      "sha256": "9ca474f7766db9af02a35f8c88f8a98e572fa43fc07a2953a6baf7b393b87c7a"
+    },
+    "lecture.pdf": {
+      "bytes": 1470424,
+      "sha256": "750a99dc5d03d6dc47b231fd15de2a1be452ce3ef7be99feddc7840a50979f58"
+    },
+    "mathjax_render.cjs": {
+      "bytes": 1146,
+      "sha256": "59e9a209ac31a7ff0d048ec7d4328c9f80347e8a957f438ba91e9770302629ee"
+    },
+    "package.json": {
+      "bytes": 207,
+      "sha256": "a93e5fbb8752453a33db37dd39ecc62af9cf06c64d38666f73e00a010eb5ba39"
+    },
+    "pdf.css": {
+      "bytes": 2152,
+      "sha256": "8a9e516a332d2e43e5e7ae142b405a0426af800c3ce1f8649d4f988a28d4b028"
+    },
+    "plots.py": {
+      "bytes": 10831,
+      "sha256": "5491c15c1391298e836d7b692ecd1d8035d385b07af1d85051070d2fe47883d2"
+    },
+    "requirements.txt": {
+      "bytes": 103,
+      "sha256": "cb0a0b450f412768b1fd6bfa3a779efc68cf2fb04651c3ebad61c1a360196763"
+    },
+    "source-checks.json": {
+      "bytes": 2115,
+      "sha256": "48d2422eb54a9bbb1fad5ed845bf829770b3b49ca712903632132b8ee9663c3d"
+    },
+    "test-result.json": {
+      "bytes": 961,
+      "sha256": "e7a972132121835e4ee080738e43666c1bea9abe89bb41abbf1c5f49b4e1c08a"
+    }
+  },
+  "full_exercise_solutions": 18,
+  "lecture_sections": 20,
+  "limitations": [
+    "Fixed supplied oracle probabilities, no trained/calibrated real model claim.",
+    "Known toy population risk separate from one stratified observed sample; no test-label threshold selection.",
+    "Rejection modeled by constant all-inclusive loss, no real review capacity optimization.",
+    "Prior correction requires invariant class conditionals and known nondegenerate priors.",
+    "Exact computed-risk ties use first action; no blanket exact-boundary promise for arbitrary decimal floats.",
+    "Fixed teaching figure layouts reject reports with nondefault data/config.",
+    "Real fresh InProcessKernel normal and -O; browser UI/external transport/cross-platform installation not tested.",
+    "Raw notebook stdout chunk boundaries may vary by flushing; semantic full text and actual PNGs compared without dropping any content."
+  ],
+  "original_figures": 9,
+  "pdf_pages": {
+    "answers": 5,
+    "lab": 5,
+    "lecture": 12
+  },
+  "science": {
+    "core_sha256": "740731e6c7d15081b92a2ae68e0d6c712aff4b78ce455c8ddc71dc843fc6452e",
+    "guards": {
+      "all_config_fields_pre_RNG_checked": true,
+      "atomic_and_alias_protection_checked": true,
+      "raw_posterior_and_cost_tail_cases": 18,
+      "zero_cost_and_reject_boundaries_checked": true
+    },
+    "science": {
+      "all_deterministic_policies": [
+        {
+          "actions_per_bin": 2,
+          "minimum": "11/32",
+          "optimal_policy_count": 2,
+          "policies": 256
+        },
+        {
+          "actions_per_bin": 3,
+          "minimum": "1/4",
+          "optimal_policy_count": 4,
+          "policies": 6561
+        }
+      ],
+      "expected_cost_exact": {
+        "accuracy_optimal": "17/32",
+        "cost_optimal": "11/32",
+        "reject": "1/4"
+      },
+      "oracle_shift_exact": [
+        "1/13",
+        "1/4",
+        "4/7",
+        "3/7",
+        "3/4",
+        "12/13"
+      ],
+      "rectangular_cases": 3,
+      "sklearn_weighted_confusion_verified": true
+    },
+    "unit": "045"
+  },
+  "status": "author complete and frozen; independent review pending",
+  "title": "从概率到决策",
+  "unit": "045",
+  "versions": {
+    "MathJax": "3.2.2",
+    "WeasyPrint": "70.0",
+    "ipykernel": "7.4.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sklearn": "1.8.0"
+  },
+  "visual": {
+    "all9_final_figures_individually_viewed": true,
+    "all9_notebook_PNGs_byte_identical_to_viewed_figure_files": true,
+    "all_final_pdf_pages_individually_viewed": 22,
+    "bar_annotation_moved_off_data_and_heatmap_text_contrast_checked": true,
+    "escaped_conditional_probability_table_header_and_rechecked_pages_8_9_10": true,
+    "remaining19_page_PNGs_unchanged_from_previously_viewed": true
+  }
+}

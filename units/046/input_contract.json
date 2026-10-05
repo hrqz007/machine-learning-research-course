@@ -1,0 +1,9 @@
+{
+  "labels": "1-D numeric or bool, exactly 0/1, both classes present",
+  "scores": "1-D real int/float, finite, [0,1], same length 2..100000; larger scores favor label 1",
+  "weights": "None or 1-D real finite [1e-6,1e6], same length; zero/negative weights excluded by teaching API",
+  "threshold": "real non-bool scalar in [0,1] or +inf/-inf; >= convention",
+  "prevalence": "prior_weights accepts [.01,.99], explicitly conditional-score-preserving reweighting",
+  "precision_at_no_predictions": "returned as 0 with precision_defined=false; PR display endpoint uses 1 by separate convention",
+  "scope": "binary one-label-per-record; no missing labels, zero-weight filtering, multiclass probabilities, ranking groups or arbitrary decision-function scale in the wrapper; sklearn itself supports more"
+}
