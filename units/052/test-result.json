@@ -1,0 +1,101 @@
+{
+  "TargetEncoder_max_encoding_error_vs_count_sum_manual_KFold": 2.220446049250313e-16,
+  "TargetEncoder_max_prediction_error_vs_manual_encoding_and_QR": 5.273559366969494e-16,
+  "actual_TargetEncoder_Pipeline": "passed",
+  "exact_hand": {
+    "gradient_non_scaled": [
+      "-5/2",
+      "-3/4",
+      "-7/4",
+      "-1/2"
+    ],
+    "gradient_w_div_sqrt2": "-1",
+    "next_mean_half_loss": "1751/800",
+    "next_predictions": [
+      "1/4",
+      "3/4",
+      "17/20",
+      "5/4"
+    ],
+    "theta_non_scaled": [
+      "1/2",
+      "3/20",
+      "7/20",
+      "1/10"
+    ],
+    "theta_w_div_sqrt2": "1/5",
+    "validation_next": [
+      "9/10",
+      "19/20"
+    ]
+  },
+  "failures_preserved": [
+    {
+      "case": "transform before fit",
+      "error_type": "NotFittedError",
+      "message": "This QuantileClipper instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator."
+    },
+    {
+      "case": "invalid quantile order",
+      "error_type": "ValueError",
+      "message": "require 0 <= lower < upper <= 1"
+    },
+    {
+      "case": "nonfinite numeric",
+      "error_type": "ValueError",
+      "message": "Input contains infinity or a value too large for dtype('float64')."
+    },
+    {
+      "case": "feature count changed",
+      "error_type": "ValueError",
+      "message": "feature count changed"
+    },
+    {
+      "case": "empty fit",
+      "error_type": "ValueError",
+      "message": "Found array with 0 sample(s) (shape=(0, 2)) while a minimum of 1 is required."
+    },
+    {
+      "case": "nonpositive ridge alpha",
+      "error_type": "ValueError",
+      "message": "positive finite alpha required"
+    },
+    {
+      "case": "source overwrite",
+      "error_type": "ValueError",
+      "message": "output must not overwrite course files"
+    },
+    {
+      "case": "nonfinite JSON preserves output",
+      "error_type": "ValueError",
+      "message": "Out of range float values are not JSON compliant: nan"
+    },
+    {
+      "case": "symlink output",
+      "error_type": "ValueError",
+      "message": "symlink output is not supported"
+    },
+    {
+      "case": "hardlink output",
+      "error_type": "ValueError",
+      "message": "output must be a single regular file"
+    }
+  ],
+  "fit_row_memberships_checked": 10368,
+  "global_encoding_mutation_max_change": 23.214285714285715,
+  "group_max_prediction_error_vs_manual_preprocessing_and_SciPy_QR": 5.329070518200751e-15,
+  "hand_gradient_difference_max": 1.046145392535891e-10,
+  "heldout_X_train_statistics_invariance": "passed",
+  "heldout_label_mutation": "correct unchanged; forbidden global encoding changes",
+  "independent_reference_scope": "all 12 datasets and 4 folds in each of 3 mechanisms",
+  "ordinary_support": {
+    "all_missing_training_column": "retained and imputed zero; fitted clip range collapses to zero",
+    "constant_column": "passed",
+    "one_row": "passed",
+    "unknown_category": "all-zero one-hot; no new column"
+  },
+  "own_label_crossfit_invariance": "passed",
+  "scope_limit": "author self-check; independent course review and real-world validation are distinct",
+  "selection_max_MSE_error_vs_manual_Pearson_and_QR": 6.661338147750939e-16,
+  "status": "passed"
+}

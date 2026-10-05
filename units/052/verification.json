@@ -1,0 +1,67 @@
+{
+  "unit": "052",
+  "author_checks": "passed; independent course review remains separate",
+  "verified_date": "2026-10-05",
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "weasyprint": "70.0",
+    "markdown": "3.11"
+  },
+  "numerics": {
+    "normal_optimized_different_cwd_equal": true,
+    "result_sha256": "7447b52e6872fcf2a5d6fa27e1acd04413769f3bb3ce5500ddb4eef0cc395f56",
+    "retained_main_predictor_fits": 336,
+    "independent_reference": "all 12 datasets times 4 folds for each mechanism, manual preprocessing/correlation/target encoding plus SciPy QR",
+    "reference_report": "test-result.json",
+    "negative_results_kept": true
+  },
+  "notebook": {
+    "real_kernel": "new Python process; ipykernel InProcessKernel",
+    "executed_code_cells": 13,
+    "displayed_rebuilt_images": 10,
+    "first_cell_source_data_integrity_gate": true,
+    "not_tested": [
+      "Jupyter browser UI",
+      "external socket kernel transport"
+    ]
+  },
+  "visual": {
+    "PDF_pages": {
+      "lecture": 15,
+      "lab": 7,
+      "answers": 8
+    },
+    "all_final_PDF_pages_rendered_and_visually_reviewed": true,
+    "all_ten_source_PNGs_visually_reviewed": true,
+    "PDF_sha256": {
+      "lecture": "f1af6dfe5471663a75715de00fbae7a163588597dbbe481ded16b11d11091514",
+      "lab": "cd69c8fda2044608d44b057e5d1d142e1afd7798c746bdf9a719ab4445139e8d",
+      "answers": "a0a4c0396b50577e474b429ff56e12b02839c32c81fbebc0f8b2fdd6028f8c94"
+    },
+    "corrected_after_review": "Clarified that same-shape feature-column swaps may not be detected automatically; final lab rerendered and all 7 pages reviewed",
+    "formula_renderer": "local MathJax 3.2.2 SVG plus WeasyPrint 70"
+  },
+  "rebuild": {
+    "numeric_reference_equal": true,
+    "ordinary_equals_optimized": true,
+    "ten_figures_byte_equal": true,
+    "fixed_data_byte_equal": true,
+    "fresh_notebook_code_cells": 13,
+    "fresh_notebook_images": 10,
+    "three_PDFs_rebuilt": true,
+    "PDF_byte_identity_required": false
+  },
+  "boundaries": [
+    "three separate mechanisms, no pooled causal leakage effect",
+    "all synthetic teaching results; no real-world deployment validation",
+    "A group-generalization only; C independent-row target cross-fitting",
+    "whole-archive recovery checks and external review kept separately to avoid self-referential hashes"
+  ],
+  "public_data": "original synthetic, no personal data or credentials"
+}

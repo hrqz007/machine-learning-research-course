@@ -1,0 +1,57 @@
+{
+  "checked_date": "2026-10-05",
+  "runtime_sklearn": "1.8.0",
+  "records": [
+    {
+      "source": "Rubin 1976",
+      "url": "https://dash.harvard.edu/entities/publication/73120378-8764-6bd4-e053-0100007fdf3b",
+      "verified_scope": "institutional abstract and bibliography verified; full proof not audited"
+    },
+    {
+      "source": "van Buuren author source",
+      "url": "https://github.com/stefvanbuuren/fimdbook/blob/master/Rmd/01-introduction.Rmd",
+      "verified_scope": "MCAR/MAR/MNAR section read from author source; static page incomplete"
+    },
+    {
+      "source": "Common pitfalls",
+      "url": "https://scikit-learn.org/1.8/common_pitfalls.html",
+      "verified_scope": "fit scope and supervised feature selection"
+    },
+    {
+      "source": "SimpleImputer",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.impute.SimpleImputer.html",
+      "verified_scope": "median and keep_empty_features plus actual all-missing test"
+    },
+    {
+      "source": "StandardScaler",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.StandardScaler.html",
+      "verified_scope": "ddof=0, stored train state and constant feature behavior"
+    },
+    {
+      "source": "OneHotEncoder",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.OneHotEncoder.html",
+      "verified_scope": "unknown ignored to all-zero columns; actual test"
+    },
+    {
+      "source": "Pipeline",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.pipeline.Pipeline.html",
+      "verified_scope": "actual TargetEncoder intermediate fit_transform prediction check"
+    },
+    {
+      "source": "TargetEncoder",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.TargetEncoder.html",
+      "verified_scope": "fit_transform inner cross-fitting distinct from fit-transform chain; cv integer; independent reconstruction"
+    },
+    {
+      "source": "TargetEncoder guide",
+      "url": "https://scikit-learn.org/1.8/modules/preprocessing.html#target-encoder",
+      "verified_scope": "smoothed count/target-mean mapping"
+    },
+    {
+      "source": "TargetEncoder internal cross-fitting example",
+      "url": "https://scikit-learn.org/1.8/auto_examples/preprocessing/plot_target_encoder_cross_val.html",
+      "verified_scope": "self-label overfitting motivation; no numerical results copied"
+    }
+  ],
+  "copyright": "original prose, data and figures; no copied source datasets or results"
+}
