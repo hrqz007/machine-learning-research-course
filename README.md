@@ -91,9 +91,9 @@
 - [第044讲 广义线性模型](units/044/README.md)：[正文](units/044/lecture.pdf) · [实验指南](units/044/lab.pdf) · [完整答案](units/044/answers.pdf) · [Notebook](units/044/experiment.ipynb)
 - [第045讲 从概率到决策](units/045/README.md)：[正文](units/045/lecture.pdf) · [实验指南](units/045/lab.pdf) · [完整答案](units/045/answers.pdf) · [Notebook](units/045/experiment.ipynb)
 - [第046讲 分类指标与排序评价](units/046/README.md)：[正文](units/046/lecture.pdf) · [实验指南](units/046/lab.pdf) · [完整答案](units/046/answers.pdf) · [Notebook](units/046/experiment.ipynb)
-- [第047讲 校准与预测不确定性](units/047/README.md)：[正文](units/047/lecture.pdf) · [实验指南](units/047/lab.pdf) · [完整答案](units/047/answers.pdf) · [Notebook](units/047/experiment.ipynb)
+- [第047讲 校准与预测不确定性](units/047/README.md)：[正文](units/047/lecture.pdf) · [实验指南](units/047/lab.pdf) · [完整答案](units/047/answers.pdf) · [Notebook](units/047/calibration_uncertainty.ipynb)
 - [第048讲 泛化误差与复杂度](units/048/README.md)：[正文](units/048/lecture.pdf) · [实验指南](units/048/lab.pdf) · [完整答案](units/048/answers.pdf) · [Notebook](units/048/experiment.ipynb)
-- [第049讲 学习理论的第一组保证](units/049/README.md)：[正文](units/049/lecture.pdf) · [实验指南](units/049/lab.pdf) · [完整答案](units/049/answers.pdf) · [Notebook](units/049/experiment.ipynb)
+- [第049讲 学习理论的第一组保证](units/049/README.md)：[正文](units/049/lecture.pdf) · [实验指南](units/049/lab.pdf) · [完整答案](units/049/answers.pdf) · [Notebook](units/049/learning_guarantees.ipynb)
 - [第050讲 数据划分与评价对象](units/050/README.md)：[正文](units/050/lecture.pdf) · [实验指南](units/050/lab.pdf) · [完整答案](units/050/answers.pdf) · [Notebook](units/050/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
