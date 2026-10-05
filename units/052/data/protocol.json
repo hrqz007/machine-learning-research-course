@@ -1,0 +1,54 @@
+{
+  "unit": "052",
+  "fixed_before_first_score": true,
+  "data_seed": 52017,
+  "outer_seed": 52031,
+  "encoder_seed": 52043,
+  "independent_repetitions": 12,
+  "outer_folds": 4,
+  "group_experiment": {
+    "devices": 48,
+    "rows_per_device": 6,
+    "numeric_features": 2,
+    "device_sd": 0.8,
+    "noise_sd": 0.6,
+    "missing_rate": [
+      0.18,
+      0.12
+    ],
+    "contamination_rate": 0.04,
+    "contamination_shift": 12.0,
+    "clip_quantiles": [
+      0.05,
+      0.95
+    ],
+    "ridge_alpha": 15.0,
+    "target": "new independent devices during the same observation regime; no time forecasting claim",
+    "comparison": "change scaler fit scope only; median imputer, clip bounds, one-hot vocabulary stay outer-training-only"
+  },
+  "selection_experiment": {
+    "rows": 200,
+    "noise_features": 300,
+    "selected_features": 5,
+    "ridge_alpha": 1.0,
+    "target": "independent rows, all X independent of standard-normal y",
+    "comparison": "f_regression selection on all labels versus inside each training fold; no other preprocessing"
+  },
+  "encoding_experiment": {
+    "rows": 360,
+    "categories": 120,
+    "target_sd": 1.0,
+    "smooth": 5.0,
+    "inner_folds": 3,
+    "ridge_alpha": 1.0,
+    "target": "independent categorical draws and independent labels; repeated category is not a shared random effect",
+    "comparison": "outer-training cross-fit; outer-training self-encoding; global target-encoding with forbidden validation labels"
+  },
+  "reporting": {
+    "loss": "MSE without factor 1/2",
+    "keep_all": true,
+    "selection_after_scores": false,
+    "folds_are_not_independent_replicates": true,
+    "real_deployment_or_pilot": false
+  }
+}
