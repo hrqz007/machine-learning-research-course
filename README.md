@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> **制作暂停，已有资料已备份。** 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库目前提供完整课程大纲，以及第 001–050 讲的现有教学资料。其中 001–046、048 已通过独立验收；047、049、050 为完整作者包的待验收备份，不计入已验收教材。教程制作目前暂停，其余单元尚未完整发布，制作与验收状态见下方进度清单。规划目录不代表正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–050 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -87,22 +87,18 @@
 - [第041讲 回归与优化阶段项目](units/041/README.md)：[正文](units/041/lecture.pdf) · [实验指南](units/041/lab.pdf) · [完整答案](units/041/answers.pdf) · [Notebook](units/041/experiment.ipynb)
 - [第042讲 二分类与逻辑回归](units/042/README.md)：[正文](units/042/lecture.pdf) · [实验指南](units/042/lab.pdf) · [完整答案](units/042/answers.pdf) · [Notebook](units/042/experiment.ipynb)
 
+- [第043讲 多分类与信息论损失](units/043/README.md)：[正文](units/043/lecture.pdf) · [实验指南](units/043/lab.pdf) · [完整答案](units/043/answers.pdf) · [Notebook](units/043/experiment.ipynb)
+- [第044讲 广义线性模型](units/044/README.md)：[正文](units/044/lecture.pdf) · [实验指南](units/044/lab.pdf) · [完整答案](units/044/answers.pdf) · [Notebook](units/044/experiment.ipynb)
+- [第045讲 从概率到决策](units/045/README.md)：[正文](units/045/lecture.pdf) · [实验指南](units/045/lab.pdf) · [完整答案](units/045/answers.pdf) · [Notebook](units/045/experiment.ipynb)
+- [第046讲 分类指标与排序评价](units/046/README.md)：[正文](units/046/lecture.pdf) · [实验指南](units/046/lab.pdf) · [完整答案](units/046/answers.pdf) · [Notebook](units/046/experiment.ipynb)
+- [第047讲 校准与预测不确定性](units/047/README.md)：[正文](units/047/lecture.pdf) · [实验指南](units/047/lab.pdf) · [完整答案](units/047/answers.pdf) · [Notebook](units/047/experiment.ipynb)
+- [第048讲 泛化误差与复杂度](units/048/README.md)：[正文](units/048/lecture.pdf) · [实验指南](units/048/lab.pdf) · [完整答案](units/048/answers.pdf) · [Notebook](units/048/experiment.ipynb)
+- [第049讲 学习理论的第一组保证](units/049/README.md)：[正文](units/049/lecture.pdf) · [实验指南](units/049/lab.pdf) · [完整答案](units/049/answers.pdf) · [Notebook](units/049/experiment.ipynb)
+- [第050讲 数据划分与评价对象](units/050/README.md)：[正文](units/050/lecture.pdf) · [实验指南](units/050/lab.pdf) · [完整答案](units/050/answers.pdf) · [Notebook](units/050/experiment.ipynb)
+
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
 - [运行环境说明](shared/README.md)
-
-## 第 043–050 讲
-
-- [043 多分类与信息论损失](units/043/README.md)：独立验收通过
-- [044 广义线性模型](units/044/README.md)：独立验收通过
-- [045 从概率到决策](units/045/README.md)：独立验收通过
-- [046 分类指标与排序评价](units/046/README.md)：独立验收通过
-- [047 校准与预测不确定性](units/047/README.md)：作者包备份，待独立验收
-- [048 泛化误差与复杂度](units/048/README.md)：独立验收通过
-- [049 学习理论的第一组保证](units/049/README.md)：作者包备份，待独立验收
-- [050 数据划分与评价对象](units/050/README.md)：作者包备份，待独立验收
-
-[原文件大小与SHA256](releases/043-050-backup.json)。本次仅备份已有资料，没有新增教程或重新开展科学验收。
 
 ## 怎样学习
 
