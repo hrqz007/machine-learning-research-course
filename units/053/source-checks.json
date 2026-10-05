@@ -1,0 +1,42 @@
+{
+  "checked_date_utc": "2026-10-05",
+  "scope": "Primary paper landing pages/abstracts and versioned official API documentation retrieved; no full-proof replication claimed.",
+  "sources": [
+    {
+      "title": "Bergstra and Bengio (2012)",
+      "url": "https://jmlr.org/papers/v13/bergstra12a.html",
+      "supports": "random search motivation",
+      "retrieved": true
+    },
+    {
+      "title": "Jamieson and Talwalkar (2016)",
+      "url": "https://proceedings.mlr.press/v51/jamieson16.html",
+      "supports": "successive allocation",
+      "retrieved": true
+    },
+    {
+      "title": "Snoek et al. (2012)",
+      "url": "https://papers.nips.cc/paper_files/paper/2012/hash/05311655a15b75fab86956663e1819cd-Abstract.html",
+      "supports": "Bayesian optimization motivation",
+      "retrieved": true
+    },
+    {
+      "title": "scikit-learn 1.8 RandomForestRegressor",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.RandomForestRegressor.html",
+      "supports": "API semantics",
+      "retrieved": true
+    },
+    {
+      "title": "scikit-learn 1.8 tuning",
+      "url": "https://scikit-learn.org/1.8/modules/grid_search.html",
+      "supports": "search and resource semantics",
+      "retrieved": true
+    },
+    {
+      "title": "Cawley and Talbot (2010)",
+      "url": "https://jmlr.org/papers/v11/cawley10a.html",
+      "supports": "selection bias",
+      "retrieved": true
+    }
+  ]
+}

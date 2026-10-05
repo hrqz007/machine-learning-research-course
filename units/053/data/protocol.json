@@ -1,0 +1,158 @@
+{
+  "seeds": [
+    5300,
+    5301,
+    5302,
+    5303,
+    5304,
+    5305
+  ],
+  "n_development": 240,
+  "n_test": 360,
+  "folds": 3,
+  "fold_seed": 531,
+  "domain": [
+    [
+      2,
+      0.2
+    ],
+    [
+      2,
+      0.4
+    ],
+    [
+      2,
+      0.6
+    ],
+    [
+      2,
+      0.8
+    ],
+    [
+      2,
+      1.0
+    ],
+    [
+      4,
+      0.2
+    ],
+    [
+      4,
+      0.4
+    ],
+    [
+      4,
+      0.6
+    ],
+    [
+      4,
+      0.8
+    ],
+    [
+      4,
+      1.0
+    ],
+    [
+      6,
+      0.2
+    ],
+    [
+      6,
+      0.4
+    ],
+    [
+      6,
+      0.6
+    ],
+    [
+      6,
+      0.8
+    ],
+    [
+      6,
+      1.0
+    ],
+    [
+      8,
+      0.2
+    ],
+    [
+      8,
+      0.4
+    ],
+    [
+      8,
+      0.6
+    ],
+    [
+      8,
+      0.8
+    ],
+    [
+      8,
+      1.0
+    ],
+    [
+      null,
+      0.2
+    ],
+    [
+      null,
+      0.4
+    ],
+    [
+      null,
+      0.6
+    ],
+    [
+      null,
+      0.8
+    ],
+    [
+      null,
+      1.0
+    ]
+  ],
+  "grid": [
+    [
+      2,
+      0.4
+    ],
+    [
+      2,
+      1.0
+    ],
+    [
+      6,
+      0.4
+    ],
+    [
+      6,
+      1.0
+    ],
+    [
+      null,
+      0.4
+    ],
+    [
+      null,
+      1.0
+    ]
+  ],
+  "random_candidates": 6,
+  "halving_candidates": [
+    12,
+    4,
+    1
+  ],
+  "halving_resources": [
+    15,
+    30,
+    60
+  ],
+  "search_trees_per_method": 1080,
+  "final_refit_trees_per_method": 60,
+  "restart_each_stage": true,
+  "comparison": "equal requested trees, not equal time/FLOPs",
+  "test_policy": "Only after winner and all search records are fixed"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checked_search_predictions": 522,
+  "independent_final_refits": 18,
+  "checks": [
+    "cost ledger",
+    "disjoint folds",
+    "stage survival",
+    "all MSE arithmetic",
+    "test-label intervention",
+    "separate failed attempt",
+    "MSE unequal shapes",
+    "MSE NaN",
+    "unknown method"
+  ],
+  "not_claimed": [
+    "global optimum",
+    "equal wall-clock time",
+    "statistical superiority across real datasets"
+  ]
+}

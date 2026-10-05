@@ -1,0 +1,28 @@
+{
+  "unit": "053",
+  "status": "author_verified",
+  "pdf_pages": {
+    "lecture": 10,
+    "lab": 4,
+    "answers": 5
+  },
+  "all_pdf_pages_visually_inspected": true,
+  "actual_notebook_pngs_visually_inspected": 7,
+  "notebook_code_cells": 14,
+  "fresh_kernel_execution": true,
+  "kernel": "fresh process IPython InProcessKernel",
+  "main_search_fits": 522,
+  "main_refit_fits": 18,
+  "normal_and_optimized_audit_passed": true,
+  "full_rebuild_scientific_content_matches": true,
+  "comparison_exclusions": [
+    "measured seconds",
+    "Python patch metadata",
+    "unordered library exception wording"
+  ],
+  "unverified": [
+    "Jupyter browser UI",
+    "external socket kernel transport"
+  ],
+  "data_sha256": "1f426a96d4a7a876a0efce7298fbe681caea38b160cbf9ccd2b884a0abd1f1db"
+}
