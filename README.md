@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–053 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–054 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -100,6 +100,8 @@
 - [第052讲 无泄漏的数据处理流水线](units/052/README.md)：[正文](units/052/lecture.pdf) · [实验指南](units/052/lab.pdf) · [完整答案](units/052/answers.pdf) · [Notebook](units/052/experiment.ipynb)
 
 - [第053讲 调参与实验预算](units/053/README.md)：[正文](units/053/lecture.pdf) · [实验指南](units/053/lab.pdf) · [完整答案](units/053/answers.pdf) · [Notebook](units/053/experiment.ipynb)
+
+- [第054讲 特征设计与维度问题](units/054/README.md)：[正文](units/054/lecture.pdf) · [实验指南](units/054/lab.pdf) · [完整答案](units/054/answers.pdf) · [Notebook](units/054/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
