@@ -10,7 +10,8 @@
     "drafting": "正文或实验正在制作",
     "in_review": "文件完整但验收未结束",
     "verified": "全部必需文件及科学、来源、执行、版面验收通过",
-    "published": "verified 且远端逐文件校验通过"
+    "published": "verified 且远端逐文件校验通过",
+    "archived_pending_review": "作者包原样备份且远端大小/SHA256核对通过，独立内容验收尚未完成；不计入已验收教材。"
   },
   "units": [
     {
@@ -1445,7 +1446,7 @@
         "实验与验收": "手算三类损失与梯度；实现稳定softmax，验证概率和为1及平移不变性。",
         "常见误区": "把多标签任务当互斥多类；把KL当对称距离；忽略数值上溢。"
       },
-      "status": "in_review",
+      "status": "published",
       "artifacts": {
         "lecture": "units/043/lecture.pdf",
         "lab": "units/043/lab.pdf",
@@ -1454,14 +1455,17 @@
         "script": "units/043/experiment.py"
       },
       "checks": {
-        "scientific": "author_passed_independent_pending",
-        "sources": "author_passed_independent_pending",
-        "code": "author_passed_independent_pending",
-        "notebook": "author_passed_independent_pending",
-        "visual": "author_passed_independent_pending"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed",
+        "visual": "independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 38,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1474,17 +1478,26 @@
         "实验与验收": "模拟计数数据，比较线性和Poisson模型；检验曝光量处理与过度离散。",
         "常见误区": "链接函数和概率分布不区分；计数问题只按分类处理。"
       },
-      "status": "drafting",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/044/lecture.pdf",
+        "lab": "units/044/lab.pdf",
+        "answers": "units/044/answers.pdf",
+        "notebook": "units/044/experiment.ipynb",
+        "script": "units/044/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed",
+        "visual": "independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 36,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1497,17 +1510,26 @@
         "实验与验收": "在不同代价与类别先验下推并验证最优阈值；报告决策成本而非只报准确率。",
         "常见误区": "把最佳概率模型当任何代价下的最佳决策；用事后测试结果挑阈值。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/045/lecture.pdf",
+        "lab": "units/045/lab.pdf",
+        "answers": "units/045/answers.pdf",
+        "notebook": "units/045/experiment.ipynb",
+        "script": "units/045/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed",
+        "visual": "independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 39,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1520,17 +1542,26 @@
         "实验与验收": "手算一个不平衡例子，再用库核验曲线；改变阳性率解释PR指标变化。",
         "常见误区": "把AUC当某一部署阈值的效果；忽略基准率和平均方式。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/046/lecture.pdf",
+        "lab": "units/046/lab.pdf",
+        "answers": "units/046/answers.pdf",
+        "notebook": "units/046/experiment.ipynb",
+        "script": "units/046/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed",
+        "visual": "independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 37,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1543,17 +1574,26 @@
         "实验与验收": "用独立校准集比较校准前后指标与覆盖率；展示分布偏移下覆盖失效。",
         "常见误区": "将置信分数当正确率；把边际覆盖保证说成每个个体的条件保证。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "archived_pending_review",
+      "artifacts": {
+        "lecture": "units/047/lecture.pdf",
+        "lab": "units/047/lab.pdf",
+        "answers": "units/047/answers.pdf",
+        "notebook": "units/047/calibration_uncertainty.ipynb",
+        "script": "units/047/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_complete_independent_pending",
+        "sources": "author_complete_independent_pending",
+        "code": "author_complete_independent_pending",
+        "notebook": "author_complete_independent_pending",
+        "visual": "author_complete_independent_pending"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "archived_pending_review",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 47,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1566,17 +1606,26 @@
         "实验与验收": "画学习曲线和复杂度曲线；多数据重采样区分方差与单次随机波动。",
         "常见误区": "把一张U形图当所有模型的规律；把统计误差与优化误差混为一谈。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/048/lecture.pdf",
+        "lab": "units/048/lab.pdf",
+        "answers": "units/048/answers.pdf",
+        "notebook": "units/048/experiment.ipynb",
+        "script": "units/048/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_passed",
+        "notebook": "independent_passed",
+        "visual": "independent_passed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 41,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1589,17 +1638,26 @@
         "实验与验收": "对小假设类计算界与实测差距；明确独立抽样、有界损失和数据依赖选择条件。",
         "常见误区": "界很松就说理论无用；将单模型界用于经过大量筛选的模型。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "archived_pending_review",
+      "artifacts": {
+        "lecture": "units/049/lecture.pdf",
+        "lab": "units/049/lab.pdf",
+        "answers": "units/049/answers.pdf",
+        "notebook": "units/049/learning_guarantees.ipynb",
+        "script": "units/049/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_complete_independent_pending",
+        "sources": "author_complete_independent_pending",
+        "code": "author_complete_independent_pending",
+        "notebook": "author_complete_independent_pending",
+        "visual": "author_complete_independent_pending"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "archived_pending_review",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 46,
+        "remote_hash_matched": true
       }
     },
     {
@@ -1612,17 +1670,26 @@
         "实验与验收": "对同一数据构造随机、按组、按时间划分；解释差异而不只比较分数。",
         "常见误区": "同一人的记录跨训练和测试；时间窗口重叠；把未来训练数据放入过去预测。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "archived_pending_review",
+      "artifacts": {
+        "lecture": "units/050/lecture.pdf",
+        "lab": "units/050/lab.pdf",
+        "answers": "units/050/answers.pdf",
+        "notebook": "units/050/experiment.ipynb",
+        "script": "units/050/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "author_complete_independent_pending",
+        "sources": "author_complete_independent_pending",
+        "code": "author_complete_independent_pending",
+        "notebook": "author_complete_independent_pending",
+        "visual": "author_complete_independent_pending"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "archived_pending_review",
+        "content_commit": "0ba3d835b7843efa071c4bcd7b963882474b5c91",
+        "verified_file_count": 46,
+        "remote_hash_matched": true
       }
     },
     {
