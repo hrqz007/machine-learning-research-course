@@ -1,0 +1,39 @@
+{
+  "unit": "043",
+  "checked_utc": "2026-10-05",
+  "sources": [
+    {
+      "title": "Stanford CS229 section 3.2.3",
+      "url": "https://cs229.stanford.edu/notes2022fall/main_notes.pdf",
+      "scope": "Read printed pages 30-34, mutually exclusive categorical responses, reference class, softmax probabilities and likelihood. Course data, figures, row calculus and grouped-count finite-MLE certificate original.",
+      "status": "read"
+    },
+    {
+      "title": "SciPy 1.17.0 softmax",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.special.softmax.html",
+      "scope": "Read normalization axes, shifted exponential implementation and probability shape; CPU NumPy comparison actually executed.",
+      "status": "read"
+    },
+    {
+      "title": "SciPy 1.17.0 log_softmax",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.special.log_softmax.html",
+      "scope": "Read direct log-probabilities and saturated probability counterexample; ordinary and extreme outputs actually compared, tiny winning tail difference retained.",
+      "status": "read"
+    },
+    {
+      "title": "SciPy 1.17.0 entropy",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.stats.entropy.html",
+      "scope": "Read entropy, relative entropy, logarithm base and automatic input normalization. Course probability entry point deliberately rejects arbitrary counts; actual entropy/KL comparison executed.",
+      "status": "read"
+    },
+    {
+      "title": "MIT 6.441 Lecture 2",
+      "url": "https://ocw.mit.edu/courses/6-441-information-theory-spring-2010/5c0b5a8a544cb2320778e4c9e5dea64f_MIT6_441S10_lec02.pdf",
+      "scope": "Read pages 2-5 for convexity/Jensen, entropy concavity and uniform maximum. Course KL proof independently written with log inequality and explicit support; no mutual information/Fano implementation claim.",
+      "status": "read"
+    }
+  ],
+  "limitations": [
+    "Sources linked, not copied whole; no external dataset or protected source figures included."
+  ]
+}

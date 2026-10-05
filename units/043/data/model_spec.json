@@ -1,0 +1,13 @@
+{
+  "kind": "multiclass_information_v1",
+  "class_names": ["甲", "乙", "丙"],
+  "initial_theta": [[0, 0, 0], [0, 0, 0]],
+  "learning_rate": 0.6,
+  "max_updates": 600,
+  "gradient_tolerance": 1e-10,
+  "fd_steps": [0.01, 0.001, 0.0001, 0.00001, 0.000001],
+  "shift_constants": [-1000, -7, 0, 11, 1000],
+  "extreme_logits": [[0, -40, -40], [1000, 0, -1000], [-1000, -1000, -1000]],
+  "information_q": [0.5, 0.3, 0.2],
+  "information_p": [0.7, 0.2, 0.1]
+}

@@ -1,0 +1,58 @@
+{
+  "core_sha256": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b",
+  "guards": {
+    "atomic_output_preservation": true,
+    "config_all_fields_checked": true,
+    "failure_cost_checked": true,
+    "invalid_numeric_tail_cases": 24,
+    "zero_short_stationary_rejected_states_checked": true
+  },
+  "science": {
+    "Decimal_checked_full_states": 86,
+    "Decimal_precision": 100,
+    "exact_initial_gradient": [
+      [
+        "-1/24",
+        "1/12",
+        "-1/24"
+      ],
+      [
+        "1/8",
+        "0",
+        "-1/8"
+      ]
+    ],
+    "non_square_shapes": [
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        7,
+        2,
+        3
+      ],
+      [
+        2,
+        5,
+        2
+      ],
+      [
+        9,
+        1,
+        7
+      ]
+    ],
+    "reference_optimizer_message": "Desired error not necessarily achieved due to precision loss.",
+    "reference_optimizer_success": false,
+    "reference_recomputed_gradient": 7.521933084315595e-11,
+    "tail_precision": 1000
+  },
+  "unit": "043"
+}

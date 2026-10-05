@@ -1,0 +1,342 @@
+{
+  "course_scope": 166,
+  "date_utc": "2026-10-05",
+  "execution": {
+    "actual_environment_warnings": [
+      "ipykernel frozen-module debugger warning",
+      "Jupyter network-interface discovery Operation not permitted; in-process kernel still executed all cells"
+    ],
+    "bad_last_config_preserves_old_output_normal_O": true,
+    "edge_cli_cases": [
+      {
+        "name": "zero",
+        "optimized": false,
+        "status": "max_updates",
+        "updates": 0
+      },
+      {
+        "name": "zero",
+        "optimized": true,
+        "status": "max_updates",
+        "updates": 0
+      },
+      {
+        "name": "one",
+        "optimized": false,
+        "status": "max_updates",
+        "updates": 1
+      },
+      {
+        "name": "one",
+        "optimized": true,
+        "status": "max_updates",
+        "updates": 1
+      },
+      {
+        "name": "stationary",
+        "optimized": false,
+        "status": "gradient_tolerance",
+        "updates": 0
+      },
+      {
+        "name": "stationary",
+        "optimized": true,
+        "status": "gradient_tolerance",
+        "updates": 0
+      },
+      {
+        "name": "rejected",
+        "optimized": false,
+        "status": "step_rejected",
+        "updates": 0
+      },
+      {
+        "name": "rejected",
+        "optimized": true,
+        "status": "step_rejected",
+        "updates": 0
+      }
+    ],
+    "first_cell_tamper_files": [
+      "data/observations.csv",
+      "data/model_spec.json",
+      "data_integrity.json",
+      "experiment.py",
+      "audit.py",
+      "plots.py",
+      "requirements.txt",
+      "environment.yml"
+    ],
+    "fresh_notebooks_byte_identical": true,
+    "mode_cwd_full_hashes": {
+      "O-other": {
+        "audit.py": "1832167978b709bd7b3a534c5296f44393a06a1eaab3be05b02f40a740924611",
+        "experiment.py": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b"
+      },
+      "O-unit": {
+        "audit.py": "1832167978b709bd7b3a534c5296f44393a06a1eaab3be05b02f40a740924611",
+        "experiment.py": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b"
+      },
+      "normal-other": {
+        "audit.py": "1832167978b709bd7b3a534c5296f44393a06a1eaab3be05b02f40a740924611",
+        "experiment.py": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b"
+      },
+      "normal-unit": {
+        "audit.py": "1832167978b709bd7b3a534c5296f44393a06a1eaab3be05b02f40a740924611",
+        "experiment.py": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b"
+      }
+    },
+    "notebook_actual_pngs": 9,
+    "notebook_code_cells": 11,
+    "notebook_matches_full_scientific_script_result": true,
+    "notebook_sha256": "bdbcdaa0e43583a3386314d64c83cbcd4adfcfbbb6add335406573b5a3c0c310"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 6143,
+      "sha256": "9b2143726776711779157e17d6c5b25ae32a3b7fbb180c6764e7150fe6c5d633"
+    },
+    "answers.md": {
+      "bytes": 12250,
+      "sha256": "f05d4f24ed8f4cc312582d8dfe0bacdad3538b7937207ea49ab1329f0fbbf614"
+    },
+    "answers.pdf": {
+      "bytes": 672435,
+      "sha256": "74f346a48679e265a90227dc0dbc5ebe0996a79f524fff74d84d3074bc5cc540"
+    },
+    "audit.py": {
+      "bytes": 10765,
+      "sha256": "62702112f4321b6131dc6252686af4bae7f538164412ae384391b890631abd06"
+    },
+    "build-requirements.txt": {
+      "bytes": 327,
+      "sha256": "54ae61026ee207ae1c081d754f4bda7d2911ccfd860c008e38b04fcd1d7b41fd"
+    },
+    "build_notebook.py": {
+      "bytes": 7812,
+      "sha256": "9a865f2440adb35242465da00d708158b8582526a2fa1d362b3f622738986c69"
+    },
+    "build_pdf.py": {
+      "bytes": 3489,
+      "sha256": "1e463a5a0696fb43bb0734bf4437cd0e6082208e92a5ba1facd252d4425867cf"
+    },
+    "data/README.md": {
+      "bytes": 847,
+      "sha256": "c59fdc6e8e20bdf3006780778ade3c5b9b792474de3e84a3c17300a8cdfa30fe"
+    },
+    "data/model_spec.json": {
+      "bytes": 455,
+      "sha256": "c78f52d40006d082b1ad9e20daa0622c94705d28e9164347bf6e09348b834861"
+    },
+    "data/observations.csv": {
+      "bytes": 67,
+      "sha256": "2ddeddcd35016ea1d8450f89bfd8a4ca4c2533b4448b1238db127fe68f8a38d6"
+    },
+    "data_integrity.json": {
+      "bytes": 214,
+      "sha256": "1bdfdf61631a2afa5476679c4c46f1cb65471ba0ca09e35862ae5ff6bae93261"
+    },
+    "environment.yml": {
+      "bytes": 241,
+      "sha256": "40e0dbf07693df6becaf8aa67e5a10e58880d0a308a7501497ec32126c161179"
+    },
+    "execute_notebook.py": {
+      "bytes": 2215,
+      "sha256": "e6e9e3f52473e1fae2b0733156ffbdf51ae21049b4be3a264065d079690d5f74"
+    },
+    "experiment-result.json": {
+      "bytes": 1518908,
+      "sha256": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b"
+    },
+    "experiment.ipynb": {
+      "bytes": 1137231,
+      "sha256": "bdbcdaa0e43583a3386314d64c83cbcd4adfcfbbb6add335406573b5a3c0c310"
+    },
+    "experiment.py": {
+      "bytes": 17562,
+      "sha256": "9cadbbc45169c17a5a07e52147f0f6ad39e86eb4370f46a05855ce40b08ef237"
+    },
+    "figures/01_task_and_normalization.png": {
+      "bytes": 50572,
+      "sha256": "341140362778e885e06580dc79a0947b3362af4d7ff4e9d3b66be7cec6ee4894"
+    },
+    "figures/02_simplex_and_shift.png": {
+      "bytes": 63807,
+      "sha256": "6e664e0c43b9e9ffd164f01468c20ef0b90d66152a89477677f497456676b4e8"
+    },
+    "figures/03_forward_and_derivative.png": {
+      "bytes": 132567,
+      "sha256": "10d7732253e09978a9a89035740c97c5b18694e9dbf24b122203794699a1a0e0"
+    },
+    "figures/04_two_round_rows.png": {
+      "bytes": 95044,
+      "sha256": "83f303853a323b5c20c9fd3fe195a20d181a29eaf083dfd7731b7b0b7b51a292"
+    },
+    "figures/05_jacobian_geometry.png": {
+      "bytes": 64219,
+      "sha256": "95e8b74e31fe43772cae3a626757784f3cc30aa5adddf81638708c4b51cf1a33"
+    },
+    "figures/06_fit_and_certificate.png": {
+      "bytes": 106952,
+      "sha256": "f363e754169620cbd56d2dd15d390a79c7b277d25f724f929e5a980c796092f6"
+    },
+    "figures/07_information_decomposition.png": {
+      "bytes": 69701,
+      "sha256": "18ba08b47095371f0271942f01c0d607d254ac0962becfaa8f3cbfcaaaed351f"
+    },
+    "figures/08_support_and_direction.png": {
+      "bytes": 100918,
+      "sha256": "6159b216ac5fad47fddc3844a23418d77814031173c3668133d2d4e42be8c697"
+    },
+    "figures/09_numerical_diagnostics.png": {
+      "bytes": 134724,
+      "sha256": "6698aefecc5b2ae700c2cd722a1647cf3dc4f44a7f4775ccce3c604ab05b0c84"
+    },
+    "lab.md": {
+      "bytes": 8911,
+      "sha256": "96329bd7e6aaba44cbddcd6d9ef990388e551b1355378a8ba67a749f2ca1a774"
+    },
+    "lab.pdf": {
+      "bytes": 745993,
+      "sha256": "f1852f8b5fb80d7111cec9d0f045e56fbc5068c4c63d866239849fd1a57e1205"
+    },
+    "lecture.md": {
+      "bytes": 26691,
+      "sha256": "bd737687a9950ab610ee4139bfb615aea745e46c7e27c9c54c1185621b81d6ff"
+    },
+    "lecture.pdf": {
+      "bytes": 1676108,
+      "sha256": "43bfe56f2b94d8847d713d35bc9f96805a23d181f40b767dbd76a886a85b12cd"
+    },
+    "mathjax_render.cjs": {
+      "bytes": 1146,
+      "sha256": "59e9a209ac31a7ff0d048ec7d4328c9f80347e8a957f438ba91e9770302629ee"
+    },
+    "package.json": {
+      "bytes": 207,
+      "sha256": "a93e5fbb8752453a33db37dd39ecc62af9cf06c64d38666f73e00a010eb5ba39"
+    },
+    "pdf.css": {
+      "bytes": 2152,
+      "sha256": "8a9e516a332d2e43e5e7ae142b405a0426af800c3ce1f8649d4f988a28d4b028"
+    },
+    "plots.py": {
+      "bytes": 11296,
+      "sha256": "7d00a6342d8e970aa3c89fbfcd220a3d6d6c7c5ea4a5b3fc473b6f6445525c7f"
+    },
+    "requirements.txt": {
+      "bytes": 97,
+      "sha256": "ed69e3c545b2f877637b883acdbb36124381dfc2605b2284e8a6a6b125464d5e"
+    },
+    "source-checks.json": {
+      "bytes": 2074,
+      "sha256": "c202bdd19417458e5260b7d650888c194ebc2ae2862ada2045641663c5a254a0"
+    },
+    "test-result.json": {
+      "bytes": 1093,
+      "sha256": "1832167978b709bd7b3a534c5296f44393a06a1eaab3be05b02f40a740924611"
+    }
+  },
+  "full_exercise_solutions": 18,
+  "lecture_sections": 20,
+  "limitations": [
+    "No generalization, calibration or causal evidence from the synthetic eight rows.",
+    "Finite-MLE certificate only for the declared grouped-count data.",
+    "BFGS success=False/precision-loss retained, with separately recomputed residual.",
+    "Input ranges explicit; no arbitrary extreme floating-domain support claim.",
+    "Real fresh InProcessKernel; browser UI, external kernel transport and cross-platform installation not tested.",
+    "PDF rebuilt by local MathJax/WeasyPrint; initial XeLaTeX route failed because format files unavailable."
+  ],
+  "original_figures": 9,
+  "pdf_pages": {
+    "answers": 6,
+    "lab": 5,
+    "lecture": 13
+  },
+  "scientific_checks": {
+    "core_sha256": "87e056534607741fbaac07f3fdcd535baa94db70b26790a8355466b181f4d34b",
+    "guards": {
+      "atomic_output_preservation": true,
+      "config_all_fields_checked": true,
+      "failure_cost_checked": true,
+      "invalid_numeric_tail_cases": 24,
+      "zero_short_stationary_rejected_states_checked": true
+    },
+    "science": {
+      "Decimal_checked_full_states": 86,
+      "Decimal_precision": 100,
+      "exact_initial_gradient": [
+        [
+          "-1/24",
+          "1/12",
+          "-1/24"
+        ],
+        [
+          "1/8",
+          "0",
+          "-1/8"
+        ]
+      ],
+      "non_square_shapes": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          4,
+          3,
+          5
+        ],
+        [
+          7,
+          2,
+          3
+        ],
+        [
+          2,
+          5,
+          2
+        ],
+        [
+          9,
+          1,
+          7
+        ]
+      ],
+      "reference_optimizer_message": "Desired error not necessarily achieved due to precision loss.",
+      "reference_optimizer_success": false,
+      "reference_recomputed_gradient": 7.521933084315595e-11,
+      "tail_precision": 1000
+    },
+    "unit": "043"
+  },
+  "status": "author complete and frozen; independent review pending",
+  "title": "多分类与信息论损失",
+  "unit": "043",
+  "versions": {
+    "Markdown": "3.11",
+    "MathJax": "3.2.2",
+    "WeasyPrint": "70.0",
+    "ipykernel": "7.4.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "visual": {
+    "actual_notebook_pngs_byte_identical_to_viewed_original_figures": true,
+    "all_final_pdf_pages_individually_viewed": 24,
+    "all_nine_original_figures_individually_viewed": true,
+    "corrected_triangle_title_spacing_and_diagnostic_annotations": true,
+    "figure_2_4_6_label_legend_and_text_occlusions_corrected": true,
+    "revision1_changed_pages_viewed": [
+      "lecture2",
+      "lecture7",
+      "lecture9",
+      "lab3"
+    ],
+    "revision1_other20_page_PNGs_byte_identical_to_previously_viewed_final_pages": true
+  }
+}
