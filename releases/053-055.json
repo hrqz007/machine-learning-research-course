@@ -1,0 +1,174 @@
+{
+  "course": "面向研究的机器学习课程",
+  "requested_lessons": [
+    "053",
+    "054",
+    "055"
+  ],
+  "published_lessons": [
+    "053"
+  ],
+  "units": {
+    "053": {
+      "content_commit": "c83c44a4ba331e2709b0bc8c3b9eaeac76efaa1a",
+      "independent_review": "passed",
+      "remote_verified_on": "2026-10-05",
+      "file_count": 38,
+      "bytes": 7479758,
+      "files": {
+        "units/053/README.md": {
+          "bytes": 2390,
+          "sha256": "e3042cd54aff221ce03e902e6242133b896b860050bcfdbc546fa111e68b3a6c"
+        },
+        "units/053/answers.md": {
+          "bytes": 11723,
+          "sha256": "c24add720a64dc7c785894110569a6eb6ab6029a6b0632d24b3590e8fe6698d4"
+        },
+        "units/053/answers.pdf": {
+          "bytes": 510831,
+          "sha256": "c2d716fa50162e790f6aa63c4cd0ff406ed4d1dc082186b67eb5c7fccf311047"
+        },
+        "units/053/audit.py": {
+          "bytes": 4159,
+          "sha256": "4083be1d7ccd6d3913d985fdb91b4b5771fa0ce4cd1c0271308ea09ffcb44d26"
+        },
+        "units/053/build-requirements.txt": {
+          "bytes": 327,
+          "sha256": "54ae61026ee207ae1c081d754f4bda7d2911ccfd860c008e38b04fcd1d7b41fd"
+        },
+        "units/053/build_all.sh": {
+          "bytes": 1090,
+          "sha256": "e6109a9ca5448dedf7f641afe0ddca28977c61bdb6363473698769fd182e4cd4"
+        },
+        "units/053/build_notebook.py": {
+          "bytes": 3909,
+          "sha256": "5463812566930a27eeb07361bc05228719c08bf8985b7b87dbfb28b320a9b18a"
+        },
+        "units/053/build_pdf.py": {
+          "bytes": 3489,
+          "sha256": "26dd9235b06112c6e2db7119669407a6076e365236293659411cc46c1e5cf15f"
+        },
+        "units/053/data/README.md": {
+          "bytes": 866,
+          "sha256": "2cc57b791c890c619ca38768753ae49b1293f7a672afa3b190f812bf750bb849"
+        },
+        "units/053/data/draws.npz": {
+          "bytes": 307061,
+          "sha256": "1f426a96d4a7a876a0efce7298fbe681caea38b160cbf9ccd2b884a0abd1f1db"
+        },
+        "units/053/data/protocol.json": {
+          "bytes": 1569,
+          "sha256": "c501d40670aa1ce3b792bfa043889e81e7523321b1a5924b98fb100b8e190e01"
+        },
+        "units/053/environment.yml": {
+          "bytes": 244,
+          "sha256": "9696af264986a7dc6224d782aee4a6edd63cd7b75871da900b34885a1c7ce8d1"
+        },
+        "units/053/execute_notebook.py": {
+          "bytes": 2290,
+          "sha256": "596a94deb4dd5cffa26d23b4e6f14d984221528b0e924e1efdf0788b9bed1a79"
+        },
+        "units/053/experiment-result.json": {
+          "bytes": 3898779,
+          "sha256": "dbd6e1babda9087679299d32d3d701f485b71619c0d9a97fa4d5d3825e85a8ed"
+        },
+        "units/053/experiment.ipynb": {
+          "bytes": 608556,
+          "sha256": "a8a08081fd8c864c1b66751972ec7c4ce81618b093c62caabd13c126290b9de6"
+        },
+        "units/053/experiment.py": {
+          "bytes": 8559,
+          "sha256": "7e603af3a324b7f887b2d5a9ba5d9d7a757c1ec31033c9e325a4ccf1415136cf"
+        },
+        "units/053/figures/01_protocol.png": {
+          "bytes": 61077,
+          "sha256": "0b4fd515ed02c8f0fcea4d9d1ae43695dab4a18c36efeab8b7183d7fa906538b"
+        },
+        "units/053/figures/02_search_space.png": {
+          "bytes": 38991,
+          "sha256": "6d849fca472273bfe726357ea94efe7c9d6d459da00f4399074b416ce749478b"
+        },
+        "units/053/figures/03_halving.png": {
+          "bytes": 62043,
+          "sha256": "f541dcca0724aefbcaf27a2d49320ac4d7e2cac7ad071437c0d4d358d52335e8"
+        },
+        "units/053/figures/04_results.png": {
+          "bytes": 94348,
+          "sha256": "a48079133ff22b5c0cc22eb328c8935106466a4c8390c0567579b4d012c6fad9"
+        },
+        "units/053/figures/05_costs.png": {
+          "bytes": 53440,
+          "sha256": "4756183bd0237a28b7ef26ae54bcec0475a7db03e4665df071e1aed962b025e5"
+        },
+        "units/053/figures/06_selection_noise.png": {
+          "bytes": 70139,
+          "sha256": "ae6f006526e38f8b3b318950494c1bf9a0e1aedfe6593197f85cac88dab66e63"
+        },
+        "units/053/figures/07_early_stop.png": {
+          "bytes": 65177,
+          "sha256": "26106007cdfcff91c5e73d0a0666175fc2d41299cdfcedf2b5b7caa0a71022a0"
+        },
+        "units/053/generate_data.py": {
+          "bytes": 365,
+          "sha256": "97d904cc23628c5ebbbd7dd72ba9225baa120824ef0e3e19e17b96b66dbd9b04"
+        },
+        "units/053/lab.md": {
+          "bytes": 10303,
+          "sha256": "a068fd09646627e423f719868f08a24f3f16bee9186d9c83edd7933502555b9e"
+        },
+        "units/053/lab.pdf": {
+          "bytes": 514072,
+          "sha256": "0cd416a9815229f72f6e1e4deb5ef8502f1a0829f75bf4b11b41e6ac5bdc756f"
+        },
+        "units/053/lecture.md": {
+          "bytes": 19042,
+          "sha256": "81182fa7b782eab912487d8addc06695f8347d793f4d5bd170984b4cc7bef748"
+        },
+        "units/053/lecture.pdf": {
+          "bytes": 1111175,
+          "sha256": "8a9cf72f2e916680cc15a7a662094717b791e6d21a5ffda6a2ec6d21406a6daa"
+        },
+        "units/053/mathjax_render.cjs": {
+          "bytes": 1146,
+          "sha256": "59e9a209ac31a7ff0d048ec7d4328c9f80347e8a957f438ba91e9770302629ee"
+        },
+        "units/053/package.json": {
+          "bytes": 207,
+          "sha256": "a93e5fbb8752453a33db37dd39ecc62af9cf06c64d38666f73e00a010eb5ba39"
+        },
+        "units/053/pdf.css": {
+          "bytes": 2318,
+          "sha256": "ac9cf39cc9e3b1d5b21a84ef083331b557e1adf398a4852d01f76951512892bd"
+        },
+        "units/053/plots.py": {
+          "bytes": 4553,
+          "sha256": "bc0a138def2cdfe925cf2794e78e5a19ae4ecfb0443be05534128d290330696d"
+        },
+        "units/053/requirements.txt": {
+          "bytes": 117,
+          "sha256": "a05b37a1734d6c0e6f9b927ad9e65ac44672a103906ef75e740143a500c92f9d"
+        },
+        "units/053/source-checks.json": {
+          "bytes": 1433,
+          "sha256": "5bb78f0ee58a9c17a1c06c8e5516db390d13a19af20db944ee003486770700e9"
+        },
+        "units/053/sources.md": {
+          "bytes": 1043,
+          "sha256": "8fcb1bbb7395f4e54ae26820cec01a8c0c3b79bb2e8bce59851d90945ff81eba"
+        },
+        "units/053/test-result.json": {
+          "bytes": 453,
+          "sha256": "9ba86abd7cb304eebbaa55d01de12c68da46e14d7039926d60aab251315dc84c"
+        },
+        "units/053/verification.json": {
+          "bytes": 780,
+          "sha256": "7bbb345c431637b78854b98705eddb397ddd2d48f2b16a7d48014872018272f7"
+        },
+        "units/053/verify_rebuild.py": {
+          "bytes": 1694,
+          "sha256": "6350611c76a128f142d30e0859bf7e7eb0f8a92fa520c51e1b4b05114826a2bc"
+        }
+      }
+    }
+  }
+}

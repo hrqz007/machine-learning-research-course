@@ -1776,18 +1776,32 @@
         "实验与验收": "比较等时间或等训练预算的搜索方案；预先固定搜索空间，记录失败和总成本。",
         "常见误区": "给新方法更多调参机会却声称算法更强；测试集反复充当搜索信号。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/053/lecture.pdf",
+        "lab": "units/053/lab.pdf",
+        "answers": "units/053/answers.pdf",
+        "notebook": "units/053/experiment.ipynb",
+        "script": "units/053/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "c83c44a4ba331e2709b0bc8c3b9eaeac76efaa1a",
+        "verified_file_count": 38,
+        "verified_bytes": 7479758,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-05"
+      },
+      "release_record": "releases/053-055.json"
     },
     {
       "id": "054",
