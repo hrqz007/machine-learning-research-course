@@ -1,0 +1,32 @@
+[
+  {
+    "title": "JMLR Cawley and Talbot 2010",
+    "url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+    "accessed": "2026-10-06",
+    "scope": "期刊摘要与书目信息已读；未将全文下载冒称完整阅读"
+  },
+  {
+    "title": "scikit-learn nested CV",
+    "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html",
+    "accessed": "2026-10-06",
+    "scope": "正文与示例方法已读"
+  },
+  {
+    "title": "scikit-learn threshold tuning",
+    "url": "https://scikit-learn.org/stable/modules/classification_threshold.html",
+    "accessed": "2026-10-06",
+    "scope": "正文中阈值与验证说明已读"
+  },
+  {
+    "title": "scikit-learn common pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "accessed": "2026-10-06",
+    "scope": "预处理和泄漏章节已读"
+  },
+  {
+    "title": "SciPy bootstrap",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
+    "accessed": "2026-10-06",
+    "scope": "方法和paired参数说明已读"
+  }
+]

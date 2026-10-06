@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "independently_reconstructed_validation_candidates": 24,
+  "training_only_scalers": 2,
+  "hand_cases": 4,
+  "random_library_comparisons": 12,
+  "common_invalid_inputs": 9,
+  "report_routes": 8,
+  "bias_variance_identities": 4,
+  "library_tolerance": 1e-09
+}

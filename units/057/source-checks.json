@@ -1,0 +1,26 @@
+[
+  {
+    "title": "scikit-learn Nearest Neighbors",
+    "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+    "accessed": "2026-10-06",
+    "scope": "已读分类、回归、距离加权、暴力搜索与树搜索及维度影响章节。"
+  },
+  {
+    "title": "scikit-learn Nearest Neighbors Classification",
+    "url": "https://scikit-learn.org/stable/auto_examples/neighbors/plot_classification.html",
+    "accessed": "2026-10-06",
+    "scope": "已读示例的训练内StandardScaler管道、两种权重与决策区域解释。"
+  },
+  {
+    "title": "scikit-learn StandardScaler",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html",
+    "accessed": "2026-10-06",
+    "scope": "已核对训练均值尺度、常数列scale=1、异常值敏感性和ddof=0约定。"
+  },
+  {
+    "title": "scikit-learn Bias Variance Decomposition",
+    "url": "https://scikit-learn.org/stable/auto_examples/ensemble/plot_bias_variance.html",
+    "accessed": "2026-10-06",
+    "scope": "已读跨独立训练集的偏差方差和新观测噪声解释；本包原创40次近邻实验，未复制其树模型示例。"
+  }
+]

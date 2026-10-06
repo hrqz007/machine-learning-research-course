@@ -1,0 +1,48 @@
+{
+  "classification_split": [
+    360,
+    180,
+    360
+  ],
+  "regression_split": [
+    100,
+    80,
+    200
+  ],
+  "ks": [
+    1,
+    5,
+    21,
+    61
+  ],
+  "tie_break": "smaller k",
+  "reference": "sklearn brute force; random draws have no distance ties",
+  "all_routes_fixed_before_test": true,
+  "classification_routes": [
+    "raw",
+    "scaled",
+    "scaled_noise20"
+  ],
+  "weights": [
+    "uniform",
+    "distance"
+  ],
+  "scaler_fit_rows": [
+    0,
+    360
+  ],
+  "dimension_ablation_fixed_k": 21,
+  "dimension_ablation_noise_dimensions": [
+    0,
+    2,
+    5,
+    10,
+    20
+  ],
+  "bias_variance_repetitions": 40,
+  "bias_variance_training_rows": 80,
+  "bias_variance_target": "true conditional mean",
+  "vote_tie": "predict 0",
+  "distance_tie": "stable training row order",
+  "test_used_for_selection": false
+}

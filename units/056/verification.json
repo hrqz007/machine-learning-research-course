@@ -1,0 +1,19 @@
+{
+  "author_execution": "passed",
+  "code_cells": 8,
+  "embedded_images": 6,
+  "pdf_pages": {
+    "lecture": 8,
+    "lab": 3,
+    "answers": 3
+  },
+  "author_visual_review": "every final PDF page and all six matching notebook images inspected",
+  "numerical_audit": "passed in normal and optimized Python",
+  "fit_count": 76,
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "notebook_kernel": "fresh Python process, real IPython InProcessKernel"
+}

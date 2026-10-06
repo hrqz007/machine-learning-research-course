@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "negative_mutations_rejected": 2,
+  "independently_reconstructed_inner_fits": 72,
+  "total_fits": 76,
+  "threshold_candidates_checked": 120,
+  "checks": [
+    "fold isolation",
+    "OOF coverage",
+    "train-only median/mean/scale",
+    "plain-array probability forward",
+    "global tie-breaking",
+    "test metrics",
+    "paired difference",
+    "group counts",
+    "hand boundary"
+  ]
+}
