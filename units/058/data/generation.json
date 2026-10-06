@@ -1,0 +1,12 @@
+{
+  "seed": 58058,
+  "kind": "original synthetic data",
+  "classification_rows": [
+    320,
+    160
+  ],
+  "regression_rows": [
+    240,
+    120
+  ]
+}

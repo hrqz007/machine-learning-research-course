@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-10-06",
+  "method": "actual web tool open and local scikit-learn 1.8.0 execution",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.8/modules/tree.html",
+      "status": "retrieved",
+      "title": "Decision Trees — scikit-learn 1.8.0 documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.tree.DecisionTreeRegressor.html",
+      "status": "retrieved",
+      "title": "DecisionTreeRegressor — scikit-learn 1.8.0 documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/auto_examples/tree/plot_unveil_tree_structure.html",
+      "status": "retrieved",
+      "title": "Understanding the decision tree structure — scikit-learn 1.8.0 documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/common_pitfalls.html",
+      "status": "retrieved",
+      "title": "Common pitfalls and recommended practices — scikit-learn 1.8.0 documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+      "status": "web_tool_internal_error",
+      "attempts": 2,
+      "fallback": "versioned tree guide plus executed local sklearn 1.8.0 comparison"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+      "status": "retrieved_for_discovery_only",
+      "page_version": "1.9.1",
+      "used_as_version_1_8_evidence": false
+    }
+  ]
+}

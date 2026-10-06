@@ -1,0 +1,44 @@
+{
+  "unit": "058",
+  "title": "决策树的分裂机制",
+  "checked_on": "2026-10-06",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 8,
+  "embedded_images": 6,
+  "pdf_pages": {
+    "lecture": 10,
+    "lab": 4,
+    "answers": 4
+  },
+  "author_visual_review": "Every page of all three final PDFs and six matching notebook figures inspected; no missing glyphs or clipping found.",
+  "numerical_audit": "284 explicit checks passed in normal and optimized Python",
+  "test_checks": 284,
+  "optimized_test_checks": 284,
+  "mutation_audit": {
+    "rejected": [
+      "wrong reported accuracy",
+      "wrong leaf value",
+      "wrong split threshold",
+      "wrong held-out prediction"
+    ],
+    "passed": 4
+  },
+  "reproducibility": {
+    "full_build_all": "passed",
+    "fresh_result_equal_to_published": true,
+    "fresh_figures_byte_equal": true,
+    "notebook_images_byte_equal_to_published_figures": true
+  },
+  "source_checks": {
+    "versioned_official_sources_retrieved": 4,
+    "failed_api_page": "1.8 DecisionTreeClassifier API not retrieved by web tool; versioned tree guide plus actual installed 1.8.0 comparison used"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Original offline synthetic teaching data; no pruning or unit059 authored."
+}
