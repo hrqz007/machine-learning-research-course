@@ -1887,18 +1887,32 @@
         "实验与验收": "交付数据说明、基线、嵌套验证、一次最终测试和分组错误分析；保留全部运行记录。",
         "常见误区": "只交最高分；不区分探索结果与预先设定的确认性结论。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/056/lecture.pdf",
+        "lab": "units/056/lab.pdf",
+        "answers": "units/056/answers.pdf",
+        "notebook": "units/056/experiment.ipynb",
+        "script": "units/056/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "1f05811dafb8f53ed7552a544f3dc9e509138c3e",
+        "verified_file_count": 37,
+        "verified_bytes": 5465357,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-06"
+      },
+      "release_record": "releases/056-058.json"
     },
     {
       "id": "057",
@@ -1910,18 +1924,32 @@
         "实验与验收": "从零实现小规模kNN，和库比较；改变k、尺度和噪声维度分析边界。",
         "常见误区": "训练成本低就认为部署成本低；距离有数值就认为有语义。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/057/lecture.pdf",
+        "lab": "units/057/lab.pdf",
+        "answers": "units/057/answers.pdf",
+        "notebook": "units/057/experiment.ipynb",
+        "script": "units/057/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "1f05811dafb8f53ed7552a544f3dc9e509138c3e",
+        "verified_file_count": 37,
+        "verified_bytes": 4361124,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-06"
+      },
+      "release_record": "releases/056-058.json"
     },
     {
       "id": "058",
@@ -1933,18 +1961,32 @@
         "实验与验收": "从零建立浅树，验证每个分裂和叶子；画决策区域并测试边界样本。",
         "常见误区": "把贪心分裂当全局最优；把树路径解释为因果机制。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/058/lecture.pdf",
+        "lab": "units/058/lab.pdf",
+        "answers": "units/058/answers.pdf",
+        "notebook": "units/058/experiment.ipynb",
+        "script": "units/058/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "eecca5e65a1b48b13e551679c733dc2903507811",
+        "verified_file_count": 40,
+        "verified_bytes": 3633747,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-06"
+      },
+      "release_record": "releases/056-058.json"
     },
     {
       "id": "059",

@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–055 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–058 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -105,6 +105,12 @@
 
 - [第055讲 不平衡与有偏标签](units/055/README.md)：[正文](units/055/lecture.pdf) · [实验指南](units/055/lab.pdf) · [完整答案](units/055/answers.pdf) · [Notebook](units/055/experiment.ipynb)
 
+- [第056讲 可信分类阶段项目](units/056/README.md)：[正文](units/056/lecture.pdf) · [实验指南](units/056/lab.pdf) · [完整答案](units/056/answers.pdf) · [Notebook](units/056/experiment.ipynb)
+
+- [第057讲 最近邻与局部预测](units/057/README.md)：[正文](units/057/lecture.pdf) · [实验指南](units/057/lab.pdf) · [完整答案](units/057/answers.pdf) · [Notebook](units/057/experiment.ipynb)
+
+- [第058讲 决策树的分裂机制](units/058/README.md)：[正文](units/058/lecture.pdf) · [实验指南](units/058/lab.pdf) · [完整答案](units/058/answers.pdf) · [Notebook](units/058/experiment.ipynb)
+
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
 - [运行环境说明](shared/README.md)
@@ -129,6 +135,8 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 每讲按问题、图解、数学推导、手算、实现、诊断、练习与详解展开。完成的教学包包含正文 PDF、独立实验指南、Notebook、Python 脚本、教学数据或合法下载说明、来源及验证记录。
 
 玩具数据只用于对应机制的教学，不构成现实性能或新的研究贡献证据。来源记录链接原始资料，不包含受版权保护教材的整章复制。
+
+第056–058讲的文件清单与远端校验记录见[核验说明](releases/056-058.json)。
 
 ## 使用说明
 
