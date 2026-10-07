@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-10-07",
+  "method": "opened primary sources through research tool",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.BaggingClassifier.html",
+      "status": "content retrieved"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.RandomForestClassifier.html",
+      "status": "content retrieved"
+    },
+    {
+      "url": "https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf",
+      "status": "content retrieved"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/auto_examples/ensemble/plot_ensemble_oob.html",
+      "status": "content retrieved"
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/blob/1.8.0/sklearn/ensemble/_forest.py",
+      "status": "content retrieved"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
+      "status": "content retrieved"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/ensemble.html#bagging-meta-estimator",
+      "status": "content retrieved"
+    }
+  ]
+}

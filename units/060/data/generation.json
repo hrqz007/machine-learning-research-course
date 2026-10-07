@@ -1,0 +1,14 @@
+{
+  "seed": 60060,
+  "iid_rows": 720,
+  "iid_split": [
+    360,
+    360
+  ],
+  "iid_features": 8,
+  "group_train_groups": 60,
+  "group_test_groups": 60,
+  "rows_per_group": 6,
+  "group_label_independent_of_features": true,
+  "original_synthetic": true
+}

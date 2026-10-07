@@ -1,0 +1,43 @@
+{
+  "status": "producer_verified",
+  "date_utc": "2026-10-07",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "Markdown": "3.11",
+    "WeasyPrint": "70.0",
+    "MathJax": "3.2.2"
+  },
+  "tests": {
+    "normal": 859,
+    "optimized": 859,
+    "explicit_exceptions": true
+  },
+  "notebook": {
+    "code_cells": 7,
+    "executed": "fresh Python process, true ipykernel InProcessKernel",
+    "errors": 0,
+    "embedded_figures": 6
+  },
+  "pdf_pages": {
+    "lecture": 10,
+    "lab": 4,
+    "answers": 4
+  },
+  "visual_review": "all18pages rendered and inspected; no overlap, clipping or missing Chinese glyphs observed",
+  "scope": [
+    "original iid synthetic classification and group-correlated counterexample",
+    "own bootstrap aggregation/OOB; sklearn base trees",
+    "independent membership, probability, covariance, selection and group audit"
+  ],
+  "not_tested": [
+    "fresh Conda creation",
+    "Jupyter browser UI",
+    "external socket kernel transport",
+    "real-world performance"
+  ]
+}
