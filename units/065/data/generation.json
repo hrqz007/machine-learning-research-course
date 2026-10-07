@@ -1,0 +1,14 @@
+{
+  "seed": 65021,
+  "kind": "original synthetic nonpersonal data",
+  "sizes": {
+    "train": 16,
+    "validation": 24,
+    "test": 80
+  },
+  "sha256": {
+    "train.csv": "a35bd51a525f42dbc3428f1c08ba873e2cdc5bbe20243ee1f6e735d433916264",
+    "validation.csv": "48d78d471a55b52d5a6f67f4e573edf7add168a84fb3ee42758c3a8ed3bf8f73",
+    "test.csv": "d458fe3ac36f974445cf1329929ff72aa2fd6d433a9c0c595d00b423cb755d48"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-07",
+  "method": "official documentation and primary mathematical references opened; relevant Slater/KKT sections located",
+  "sources": [
+    {
+      "url": "https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+      "scope": "Chapter5: weak/strong duality, Slater condition and KKT; original algebra/examples reconstructed for this lesson",
+      "status": "read"
+    },
+    {
+      "url": "https://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf",
+      "scope": "C-SVC formulation and implementation background",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/svm.html",
+      "scope": "precomputed Gram semantics and signed coefficients",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.svm.SVC.html",
+      "scope": "poly kernel, gamma, coef0 and fit/predict shapes",
+      "status": "read"
+    },
+    {
+      "url": "https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote14.html",
+      "scope": "kernel PSD properties and closure background",
+      "status": "read"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/optimize.minimize-slsqp.html",
+      "scope": "numerical constrained minimizer and success/tolerance inspection",
+      "status": "read"
+    }
+  ]
+}
