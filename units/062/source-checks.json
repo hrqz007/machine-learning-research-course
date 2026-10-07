@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-10-07",
+  "method": "Actual web tool open/click/find plus local scikit-learn 1.8.0 execution",
+  "sources": [
+    {
+      "url": "https://doi.org/10.1214/aos/1013203451",
+      "title": "Friedman 2001 journal publication record",
+      "status": "retrieved_metadata_only",
+      "scope": "publication identification; full page iframe did not expose article body"
+    },
+    {
+      "url": "https://www.cse.iitb.ac.in/~soumen/readings/papers/Friedman1999GreedyFuncApprox.pdf",
+      "title": "Friedman original manuscript mirrored by IIT Bombay",
+      "status": "retrieved",
+      "scope": "Algorithm 1, negative functional gradient, half-squared loss; preprint pagination differs from journal"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html",
+      "title": "GradientBoostingRegressor 1.8.0 API",
+      "status": "retrieved",
+      "scope": "frozen version parameters"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html",
+      "title": "GradientBoostingClassifier 1.8.0 API",
+      "status": "retrieved",
+      "scope": "frozen version classifier interface"
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/blob/1.8.0/sklearn/ensemble/_gb.py",
+      "title": "scikit-learn 1.8.0 implementation",
+      "status": "retrieved",
+      "scope": "full-logit versus half-logit note and Newton leaf numerator/denominator"
+    }
+  ],
+  "limitations": [
+    "Some older Princeton/Stanford PDF URLs failed; successful author-hosted or manuscript mirror sources listed above were used."
+  ]
+}

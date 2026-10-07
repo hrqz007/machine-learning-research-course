@@ -1,0 +1,53 @@
+{
+  "unit": "062",
+  "title": "梯度提升的函数视角",
+  "checked_on": "2026-10-07",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 8,
+  "embedded_images": 6,
+  "pdf_pages": {
+    "lecture": 10,
+    "lab": 5,
+    "answers": 4
+  },
+  "author_visual_review": "Every page of all three final PDFs and all six figures inspected after rendering; no missing glyphs, clipping or overlaps found. Logistic hand-table probability corrected to 0.156574; final five-page lab re-rendered and fully reviewed.",
+  "numerical_audit": "120 explicit checks passed in normal and optimized Python, including finite differences and every raw-score stage versus sklearn",
+  "test_checks": 120,
+  "optimized_test_checks": 120,
+  "mutation_audit": {
+    "rejected": [
+      "changed reported metric",
+      "changed pseudo residual",
+      "changed learning rate step",
+      "changed CSV",
+      "changed CSV plus matching digest",
+      "symlink output",
+      "hardlink output"
+    ]
+  },
+  "reproducibility": {
+    "full_build_all": "passed in copied directory with separate outputs",
+    "fresh_result_equal_to_published": true,
+    "fresh_figures_byte_equal": true,
+    "notebook_images_byte_equal_to_published_figures": true,
+    "fresh_pdf_page_pixels_equal": {
+      "lecture": true,
+      "lab": true,
+      "answers": true
+    },
+    "all_formal_steps_equal_configured_learning_rate": true
+  },
+  "source_checks": {
+    "retrieved_full_primary_sources": 4,
+    "journal_publication_metadata_records": 1,
+    "method": "web retrieval and installed sklearn 1.8.0 numerical comparison"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Original synthetic regression and classification data; half squared loss, full-logit gradient, gradient-only and Newton leaf modes explicit."
+}
