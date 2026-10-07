@@ -2257,18 +2257,32 @@
         "实验与验收": "在同等验证预算下比较核与线性模型；记录支持向量数、延迟和内存。",
         "常见误区": "认为核化免费；只看训练样本附近的漂亮边界。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/066/lecture.pdf",
+        "lab": "units/066/lab.pdf",
+        "answers": "units/066/answers.pdf",
+        "notebook": "units/066/experiment.ipynb",
+        "script": "units/066/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "f9180f3befb8ce5fab435286198fa9e52336ed19",
+        "verified_file_count": 41,
+        "verified_bytes": 6463835,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/063-067.json"
     },
     {
       "id": "067",
@@ -2280,18 +2294,32 @@
         "实验与验收": "手算小GP后验，核验库预测均值方差；观察核假设、噪声与外推。",
         "常见误区": "预测方差自动覆盖所有模型错误；忽略立方级训练代价与数值抖动项。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/067/lecture.pdf",
+        "lab": "units/067/lab.pdf",
+        "answers": "units/067/answers.pdf",
+        "notebook": "units/067/experiment.ipynb",
+        "script": "units/067/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "fdd6a561d6c608161e0204ade2b8e3e01167ca93",
+        "verified_file_count": 42,
+        "verified_bytes": 5401438,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/063-067.json"
     },
     {
       "id": "068",
