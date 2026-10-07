@@ -1,0 +1,51 @@
+{
+  "unit": "061",
+  "title": "AdaBoost与加性模型",
+  "checked_on": "2026-10-07",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 6,
+  "embedded_images": 6,
+  "pdf_pages": {
+    "lecture": 10,
+    "lab": 5,
+    "answers": 4
+  },
+  "author_visual_review": "All pages of all three PDFs and all six figures inspected after rendering; no missing glyphs, clipping or overlapping text found. Final reference-link edit re-rendered separately.",
+  "numerical_audit": "55 explicit checks passed in normal and optimized Python",
+  "test_checks": 55,
+  "optimized_test_checks": 55,
+  "mutation_audit": {
+    "rejected": [
+      "changed reported metric",
+      "changed coefficient",
+      "changed sample weight",
+      "changed CSV",
+      "changed CSV plus matching digest",
+      "symlink output",
+      "hardlink output"
+    ]
+  },
+  "reproducibility": {
+    "full_build_all": "passed in copied directory with separate outputs",
+    "fresh_result_equal_to_published": true,
+    "fresh_figures_byte_equal": true,
+    "notebook_images_byte_equal_to_published_figures": true,
+    "fresh_pdf_page_pixels_equal": {
+      "lecture": true,
+      "lab": true,
+      "answers": true
+    }
+  },
+  "source_checks": {
+    "retrieved_primary_sources": 3,
+    "method": "web retrieval and installed sklearn 1.8.0 numerical comparison"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Original synthetic binary AdaBoost data; weighted-error stump versus sklearn weighted-Gini distinction explicit."
+}

@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-10-07",
+  "method": "Actual web tool open/click/find plus local scikit-learn 1.8.0 execution",
+  "sources": [
+    {
+      "url": "https://www.schapire.net/papers/FreundSc95.pdf",
+      "title": "Freund and Schapire AdaBoost original author-hosted paper",
+      "status": "retrieved",
+      "scope": "boosting weighted distribution and training-error bound; author-hosted manuscript states 1997 publication"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.AdaBoostClassifier.html",
+      "title": "AdaBoostClassifier 1.8.0 API",
+      "status": "retrieved",
+      "scope": "frozen version parameters and estimator behavior"
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/blob/1.8.0/sklearn/ensemble/_weight_boosting.py",
+      "title": "scikit-learn 1.8.0 implementation",
+      "status": "retrieved",
+      "scope": "SAMME coefficient and sample-weight update"
+    }
+  ],
+  "limitations": [
+    "Some older Princeton/Stanford PDF URLs failed; successful author-hosted or manuscript mirror sources listed above were used."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "lesson": "061",
+  "seeds": {
+    "train": 61001,
+    "validation": 61002,
+    "test": 61003
+  },
+  "generator": "NumPy default_rng PCG64",
+  "sha256": {
+    "train.csv": "4383b28626aab9141b499c142bf2ad8060e96e575cd9a7c2cab79ea44b141e83",
+    "validation.csv": "8d4f892e9b960deb288c38908b831563ef4f1554eb5a0d489c06bbc098cfd97e",
+    "test.csv": "9a940f0dbafa8d436206e8d212ad28bf52a4bec3df65913439d0dce62fe7f881"
+  }
+}
