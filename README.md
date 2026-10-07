@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–058 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–062 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -111,6 +111,14 @@
 
 - [第058讲 决策树的分裂机制](units/058/README.md)：[正文](units/058/lecture.pdf) · [实验指南](units/058/lab.pdf) · [完整答案](units/058/answers.pdf) · [Notebook](units/058/experiment.ipynb)
 
+- [第059讲 树的复杂度与剪枝](units/059/README.md)：[正文（9页）](units/059/lecture.pdf) · [实验指南（4页）](units/059/lab.pdf) · [完整答案（4页）](units/059/answers.pdf) · [Notebook](units/059/experiment.ipynb)
+
+- [第060讲 Bagging与随机森林](units/060/README.md)：[正文（10页）](units/060/lecture.pdf) · [实验指南（4页）](units/060/lab.pdf) · [完整答案（4页）](units/060/answers.pdf) · [Notebook](units/060/experiment.ipynb)
+
+- [第061讲 AdaBoost与加性模型](units/061/README.md)：[正文（10页）](units/061/lecture.pdf) · [实验指南（5页）](units/061/lab.pdf) · [完整答案（4页）](units/061/answers.pdf) · [Notebook](units/061/experiment.ipynb)
+
+- [第062讲 梯度提升的函数视角](units/062/README.md)：[正文（10页）](units/062/lecture.pdf) · [实验指南（5页）](units/062/lab.pdf) · [完整答案（4页）](units/062/answers.pdf) · [Notebook](units/062/experiment.ipynb)
+
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
 - [运行环境说明](shared/README.md)
@@ -137,6 +145,8 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 玩具数据只用于对应机制的教学，不构成现实性能或新的研究贡献证据。来源记录链接原始资料，不包含受版权保护教材的整章复制。
 
 第056–058讲的文件清单与远端校验记录见[核验说明](releases/056-058.json)。
+
+第059–062讲的文件清单与逐文件远端校验记录见[核验说明](releases/059-062.json)。
 
 ## 使用说明
 

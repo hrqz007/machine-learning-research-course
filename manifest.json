@@ -1998,18 +1998,32 @@
         "实验与验收": "对扰动数据训练多棵树；比较预剪枝与后剪枝，并记录深度和稳定性。",
         "常见误区": "只凭训练纯度选树；把一个小样本叶子的高置信度当可靠证据。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/059/lecture.pdf",
+        "lab": "units/059/lab.pdf",
+        "answers": "units/059/answers.pdf",
+        "notebook": "units/059/experiment.ipynb",
+        "script": "units/059/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "dce1371fda6a96ba3b7c4ea7a4cb0701a4ca218a",
+        "verified_file_count": 39,
+        "verified_bytes": 4028750,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/059-062.json"
     },
     {
       "id": "060",
@@ -2021,18 +2035,32 @@
         "实验与验收": "实现简化bagging，再比较随机森林；检验树数、特征数与OOB/独立测试差异。",
         "常见误区": "认为树越多能消除所有偏差；有群组相关数据仍无条件相信OOB。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/060/lecture.pdf",
+        "lab": "units/060/lab.pdf",
+        "answers": "units/060/answers.pdf",
+        "notebook": "units/060/experiment.ipynb",
+        "script": "units/060/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "878b32283583038e1ec2e331df3821818ba0b778",
+        "verified_file_count": 40,
+        "verified_bytes": 6548350,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/059-062.json"
     },
     {
       "id": "061",
@@ -2044,18 +2072,32 @@
         "实验与验收": "手算两轮提升并实现；加入标签噪声观察权重和测试表现。",
         "常见误区": "将全部boosting都说成简单“加大错例权重”；忽略异常标签影响。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/061/lecture.pdf",
+        "lab": "units/061/lab.pdf",
+        "answers": "units/061/answers.pdf",
+        "notebook": "units/061/experiment.ipynb",
+        "script": "units/061/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "14d3ad145ec7855d07f5ae0d6bf4332da4984c99",
+        "verified_file_count": 40,
+        "verified_bytes": 4838671,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/059-062.json"
     },
     {
       "id": "062",
@@ -2067,18 +2109,32 @@
         "实验与验收": "从零实现小型GBDT，逐轮核验伪残差与目标下降；与库对照。",
         "常见误区": "未说明对概率还是logit求导；把平方损失的y-f(x)机械套到其他损失。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/062/lecture.pdf",
+        "lab": "units/062/lab.pdf",
+        "answers": "units/062/answers.pdf",
+        "notebook": "units/062/experiment.ipynb",
+        "script": "units/062/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "6a76b709c3be6d41209a3f6ed95a166da6133977",
+        "verified_file_count": 40,
+        "verified_bytes": 4960021,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/059-062.json"
     },
     {
       "id": "063",
