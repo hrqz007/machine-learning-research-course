@@ -1,0 +1,10 @@
+{
+  "seed": 67021,
+  "noise_std": 0.18,
+  "kind": "original synthetic sinusoid plus trend",
+  "sha256": {
+    "train.csv": "00d292e75b8829ea3b18b79c0aa59d395a4662d478a241dd6974fa964650d0ae",
+    "interpolation.csv": "adac951a974c9b8e0788cd91f74938e2b6ea337921e78d1a4824cf69700d465f",
+    "extrapolation.csv": "cc38da2d492d094f31eb565135e89ba5042ae28ea5face2d776d6fe2d0a733b2"
+  }
+}

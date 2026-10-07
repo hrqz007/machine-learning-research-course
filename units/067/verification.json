@@ -1,0 +1,56 @@
+{
+  "unit": "067",
+  "title": "Gaussian过程回归",
+  "checked_on": "2026-10-07",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 15,
+  "embedded_images": 7,
+  "pdf_pages": {
+    "lecture": 9,
+    "lab": 5,
+    "answers": 4
+  },
+  "author_visual_review": "All pages of all three final PDFs and every colored figure visually reviewed after rasterization. Final altered pages re-rendered and checked; unchanged pages verified pixel-identical. No missing glyphs, text overlap, or clipped content. GP mechanism plots intentionally use a fixed y range, explicitly disclosed in the figure caption.",
+  "test_checks": 95,
+  "optimized_test_checks": 95,
+  "numerical_audit": "95 explicit checks passed in normal and optimized Python, including independent hand calculation, sklearn comparison, deterministic report recomputation and invalid inputs.",
+  "mutation_audit": {
+    "rejected": [
+      "changed CSV",
+      "changed CSV plus matching digest",
+      "changed report metric or variance",
+      "changed algebraic or selected-model report field",
+      "symlink output",
+      "hardlink output"
+    ]
+  },
+  "reproducibility": {
+    "full_build_all": "passed in copied directory with separate outputs",
+    "fresh_deterministic_result_fields_exactly_equal": true,
+    "fresh_pdf_page_pixels_equal": {
+      "lecture": true,
+      "lab": true,
+      "answers": true
+    },
+    "fresh_figures_byte_equal_except_timing_chart": true,
+    "timing_chart_exception": null
+  },
+  "source_checks": {
+    "primary_source_records": 4,
+    "method": "fresh official/author-site web retrieval and actual pinned sklearn 1.8.0 numerical execution"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "notebook_private_path_scan": "passed; no absolute workspace or private authoring paths in cells or outputs",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Small dense exact zero-mean RBF GP; latent/observation uncertainty, physical noise/jitter, complete posterior covariance and LML comparison, descriptive interpolation/extrapolation grid checks. No distribution-free coverage guarantee.",
+  "library_max_errors": {
+    "mean": 1.1624479157035239e-11,
+    "covariance": 1.1468603844377867e-13,
+    "lml": 5.941842573520262e-10
+  }
+}

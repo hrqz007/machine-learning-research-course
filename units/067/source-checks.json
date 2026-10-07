@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-10-07",
+  "method": "actual web open/find/click retrieval plus actual installed sklearn 1.8.0 execution",
+  "sources": [
+    {
+      "title": "Rasmussen and Williams GPML chapter 2",
+      "url": "https://gaussianprocess.org/gpml/chapters/RW2.pdf",
+      "status": "retrieved",
+      "scope": "26页原书章节；式2.22至2.24条件后验与Cholesky算法"
+    },
+    {
+      "title": "Rasmussen and Williams GPML chapter 5",
+      "url": "https://gaussianprocess.org/gpml/chapters/RW5.pdf",
+      "status": "retrieved",
+      "scope": "24页原书章节；式5.8对数边际似然与局部最优限制"
+    },
+    {
+      "title": "GaussianProcessRegressor 1.8.0 API",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html",
+      "status": "retrieved",
+      "scope": "alpha训练对角、optimizer、normalize_y与协方差返回"
+    },
+    {
+      "title": "Gaussian processes official guide",
+      "url": "https://scikit-learn.org/stable/modules/gaussian_process.html",
+      "status": "retrieved",
+      "scope": "核类型、噪声参数和WhiteKernel；stable文档当前为1.9.1，实验冻结1.8.0"
+    }
+  ],
+  "limitations": [
+    "No private data or third-party figures were reused. Stable documentation can differ from the pinned runtime."
+  ]
+}
