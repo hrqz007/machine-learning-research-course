@@ -1,0 +1,13 @@
+{
+  "seed": 59059,
+  "rows": 900,
+  "split": [
+    450,
+    225,
+    225
+  ],
+  "features": 4,
+  "original_synthetic": true,
+  "noise_proxy": "x2=x0+0.22*normal",
+  "label_probability": "x0<=-0.3:0.10; otherwise x1>0.25:0.82; otherwise0.36"
+}

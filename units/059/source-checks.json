@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-07",
+  "method": "opened primary documentation through research tool",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+      "status": "content retrieved",
+      "version": "scikit-learn1.8.0"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/tree.html#minimal-cost-complexity-pruning",
+      "status": "content retrieved",
+      "version": "scikit-learn1.8.0"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/auto_examples/tree/plot_cost_complexity_pruning.html",
+      "status": "content retrieved",
+      "version": "scikit-learn1.8.0"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
+      "status": "content retrieved",
+      "version": "scikit-learn1.8.0"
+    }
+  ]
+}
