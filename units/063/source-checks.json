@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-07",
+  "method": "official documentation opened with web tool; installed sklearn inspected",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html",
+      "scope": "1.8 API/defaults/external X_val and y_val, explicit categorical mask",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/calibration.html",
+      "scope": "calibration data independence and proper scoring rules",
+      "status": "read"
+    },
+    {
+      "url": "https://xgboost.readthedocs.io/en/stable/tutorials/model.html",
+      "scope": "second-order regularized leaf objective; pedagogical convention, not identical internal histogram implementation",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/ensemble.html#histogram-based-gradient-boosting",
+      "scope": "histograms, missing and categorical support",
+      "status": "read"
+    }
+  ]
+}

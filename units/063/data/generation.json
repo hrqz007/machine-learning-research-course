@@ -1,0 +1,18 @@
+{
+  "seed": 63021,
+  "kind": "original synthetic nonpersonal data",
+  "sizes": {
+    "train": 480,
+    "stop": 120,
+    "tune": 160,
+    "calibration": 160,
+    "test": 240
+  },
+  "sha256": {
+    "train.csv": "8e6041b156d0833401debeceebf8dc604880b8bd250cc4475bb52eb53d31f46a",
+    "stop.csv": "547bfc1e56d7652506791c4eefc541ac47c8139f87455807bae8b3097bacf03c",
+    "tune.csv": "bb9ff28755ea3f64bf38f7b61c1e5c432e626146d8e29375c370b15e7b8774ef",
+    "calibration.csv": "8cbaa7be1cef0e34a947081ee7867f8045f543faf106732c20d3c0273aec9b82",
+    "test.csv": "83cd33f722b33ae5f391ee316359c1f8618aef79117e710f8ebac88f08c1f4ef"
+  }
+}
