@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-07",
+  "method": "official documentation and primary paper opened with web tool",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.8/modules/svm.html",
+      "scope": "linear SVC objective, margins versus probabilities; LinearSVC differences",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.svm.SVC.html",
+      "scope": "C, tol, support_, coef_, intercept_ interfaces",
+      "status": "read"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/optimize.minimize-slsqp.html",
+      "scope": "SLSQP constraints, success and convergence tolerance",
+      "status": "read"
+    },
+    {
+      "url": "https://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf",
+      "scope": "LIBSVM primary algorithm paper and C-SVC formulation",
+      "status": "read"
+    }
+  ]
+}

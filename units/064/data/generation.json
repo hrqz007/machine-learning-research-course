@@ -1,0 +1,15 @@
+{
+  "seed": 64021,
+  "kind": "original synthetic nonpersonal data",
+  "sizes": {
+    "train": 64,
+    "validation": 80,
+    "test": 160
+  },
+  "outlier": "train-0000 fixed x=(1.8,0.8), y=-1",
+  "sha256": {
+    "train.csv": "850994e269ffa98948a7ccad194a1047dbe4cfd6eecc12c966eb10dc8f94fee7",
+    "validation.csv": "235d25f3c2e8c8c19f0d74120c8716642c595f3942fabeae765a64ff6dba92ef",
+    "test.csv": "183637be54dca8ad1501bcc8226e25f45ef03185c5a64b3491bd18dcda8a3f8c"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "lesson": "064",
+  "status": "author_verified",
+  "date_utc": "2026-10-07",
+  "pdf_pages": {
+    "lecture": 8,
+    "lab": 3,
+    "answers": 3
+  },
+  "figures": [
+    "01_functional_geometric.png",
+    "02_hinge_regions.png",
+    "03_c_boundaries.png",
+    "04_c_tradeoff.png",
+    "05_outlier_probe.png",
+    "06_scaling_probe.png"
+  ],
+  "notebook_code_cells": 6,
+  "notebook_embedded_png": 6,
+  "normal_tests": 342,
+  "optimized_tests": 342,
+  "experiment": "executed on CPU; actual outputs saved",
+  "pdf_visual_review": "all page renders inspected; no clipping or missing glyphs observed",
+  "kernel": "fresh Python process, true IPython InProcessKernel",
+  "not_tested": [
+    "Jupyter browser UI",
+    "external socket kernel transport",
+    "fresh Conda installation"
+  ],
+  "independent_qa": "separately required before publication"
+}
