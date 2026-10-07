@@ -2183,18 +2183,32 @@
         "实验与验收": "手算二维最大间隔例子；数值求解软间隔，观察异常点与C的影响。",
         "常见误区": "把间隔当概率置信度；忽略特征缩放；认为数据总可分。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/064/lecture.pdf",
+        "lab": "units/064/lab.pdf",
+        "answers": "units/064/answers.pdf",
+        "notebook": "units/064/experiment.ipynb",
+        "script": "units/064/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "9d6468afe44ce1845350e82db472a3d303cb5ffb",
+        "verified_file_count": 40,
+        "verified_bytes": 3383911,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/063-067.json"
     },
     {
       "id": "065",
