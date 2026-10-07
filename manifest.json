@@ -2146,18 +2146,32 @@
         "实验与验收": "选择可用的主流提升树实现；核对文档默认值、预算、校准和泄漏风险。",
         "常见误区": "不同库同名参数当完全等价；只比较默认参数；用测试集早停。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/063/lecture.pdf",
+        "lab": "units/063/lab.pdf",
+        "answers": "units/063/answers.pdf",
+        "notebook": "units/063/experiment.ipynb",
+        "script": "units/063/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "cfcabbd872d2c2532667d25f9d14b432b96c4761",
+        "verified_file_count": 42,
+        "verified_bytes": 3119508,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-07"
+      },
+      "release_record": "releases/063-067.json"
     },
     {
       "id": "064",
