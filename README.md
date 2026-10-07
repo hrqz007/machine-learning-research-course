@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–064 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–065 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -122,6 +122,8 @@
 - [第063讲 提升树的实际训练](units/063/README.md)：[正文（8页）](units/063/lecture.pdf) · [实验指南（4页）](units/063/lab.pdf) · [完整答案（4页）](units/063/answers.pdf) · [Notebook](units/063/experiment.ipynb)
 
 - [第064讲 最大间隔与软间隔](units/064/README.md)：[正文（8页）](units/064/lecture.pdf) · [实验指南（3页）](units/064/lab.pdf) · [完整答案（3页）](units/064/answers.pdf) · [Notebook](units/064/experiment.ipynb)
+
+- [第065讲 对偶与核技巧](units/065/README.md)：[正文（8页）](units/065/lecture.pdf) · [实验指南（4页）](units/065/lab.pdf) · [完整答案（3页）](units/065/answers.pdf) · [Notebook](units/065/experiment.ipynb)
 
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
