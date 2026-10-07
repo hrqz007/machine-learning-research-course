@@ -1,0 +1,83 @@
+{
+  "unit": "066",
+  "title": "核方法的选择与代价",
+  "checked_on": "2026-10-07",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 13,
+  "embedded_images": 6,
+  "pdf_pages": {
+    "lecture": 9,
+    "lab": 5,
+    "answers": 4
+  },
+  "author_visual_review": "All pages of all three final PDFs and every colored figure visually reviewed after rasterization. Final altered pages re-rendered and checked; unchanged pages verified pixel-identical. No missing glyphs, text overlap, or clipped content.",
+  "test_checks": 175,
+  "optimized_test_checks": 175,
+  "numerical_audit": "175 explicit checks passed in normal and optimized Python, including independent hand calculation, sklearn comparison, deterministic report recomputation and invalid inputs.",
+  "mutation_audit": {
+    "rejected": [
+      "changed CSV",
+      "changed CSV plus matching digest",
+      "changed report metric or variance",
+      "changed algebraic or selected-model report field",
+      "symlink output",
+      "hardlink output"
+    ]
+  },
+  "reproducibility": {
+    "full_build_all": "passed in copied directory before documentation-only gamma clarification; code and Notebook unchanged; both revised PDFs separately rebuilt twice with identical page pixels",
+    "fresh_deterministic_result_fields_exactly_equal": true,
+    "fresh_pdf_page_pixels_equal": {
+      "lecture": true,
+      "lab": true,
+      "answers": true
+    },
+    "fresh_figures_byte_equal_except_timing_chart": true,
+    "timing_chart_exception": "066 resources chart uses newly measured wall-clock latency"
+  },
+  "source_checks": {
+    "primary_source_records": 6,
+    "method": "fresh official/author-site web retrieval and actual pinned sklearn 1.8.0 numerical execution"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "notebook_private_path_scan": "passed; no absolute workspace or private authoring paths in cells or outputs",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Original synthetic classification; equal validation candidate counts, support vectors, warm latency samples, selected-array/serialization storage, kernel ridge hand check, five-seed Nyström/RFF errors. Peak process RSS not measured.",
+  "documentation_revision": {
+    "date": "2026-10-07",
+    "change": "Explicitly fixed gamma=1 together with degree=2 and coef0=0 in the homogeneous polynomial expansion, matching exercise 3 and its answer.",
+    "files_changed": [
+      "lecture.md",
+      "lecture.pdf",
+      "answers.md",
+      "answers.pdf",
+      "verification.json"
+    ],
+    "visual_review": {
+      "lecture_changed_pages": [
+        3,
+        9
+      ],
+      "answers_changed_pages": [
+        1
+      ],
+      "changed_pages_visually_reviewed": true,
+      "other_10_pages_pixel_identical_to_previous_revision": true,
+      "lab_pdf_byte_unchanged": true,
+      "repeat_render_all_13_pages_pixel_identical": true
+    },
+    "cross_surface_check": "Lab and Notebook contain no matching omitted-gamma expansion; both remain unchanged. Code, figures, data and numerical reports also unchanged.",
+    "additional_math_check": {
+      "gamma": 1,
+      "coef0": 0,
+      "degree": 2,
+      "explicit_feature_gram_max_error": 8.881784197001252e-16
+    },
+    "notebook_execution": "Existing executed Notebook retained unchanged; no Notebook or code source changed."
+  }
+}

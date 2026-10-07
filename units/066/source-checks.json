@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-10-07",
+  "method": "actual web open/find/click retrieval plus actual installed sklearn 1.8.0 execution",
+  "sources": [
+    {
+      "title": "KernelRidge 1.8.0 API",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.kernel_ridge.KernelRidge.html",
+      "status": "retrieved",
+      "scope": "alpha、kernel、gamma接口与实际库对照"
+    },
+    {
+      "title": "SVC 1.8.0 API",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.svm.SVC.html",
+      "status": "retrieved",
+      "scope": "支持向量属性、核参数与缓存设置"
+    },
+    {
+      "title": "Kernel ridge regression guide",
+      "url": "https://scikit-learn.org/stable/modules/kernel_ridge.html",
+      "status": "retrieved",
+      "scope": "KRR和SVR损失及稀疏表示区别；不引用来源性能倍数"
+    },
+    {
+      "title": "Kernel approximation guide",
+      "url": "https://scikit-learn.org/stable/modules/kernel_approximation.html",
+      "status": "retrieved",
+      "scope": "Nystroem、RBFSampler、核内积与近似特征"
+    },
+    {
+      "title": "Williams and Seeger Nyström paper record",
+      "url": "https://papers.nips.cc/paper_files/paper/2000/hash/19de10adbaa1b2ee13f77f679fa1483a-Abstract.html",
+      "status": "retrieved_metadata",
+      "scope": "NIPS 2000论文身份；官方PDF文本编码异常，算法说明以官方库指南交叉核对"
+    },
+    {
+      "title": "Rahimi and Recht original RFF paper",
+      "url": "https://papers.nips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf",
+      "status": "retrieved",
+      "scope": "8页原论文；随机特征内积近似机制"
+    }
+  ],
+  "limitations": [
+    "No private data or third-party figures were reused. Stable documentation can differ from the pinned runtime."
+  ]
+}

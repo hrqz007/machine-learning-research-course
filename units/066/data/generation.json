@@ -1,0 +1,9 @@
+{
+  "seed": 66021,
+  "kind": "original synthetic concentric circles",
+  "sha256": {
+    "train.csv": "487dd7f635b94c032848b7afa2350259fcce1ed16259eb9fc947fbf2aacd3d7d",
+    "validation.csv": "f9d3b394cd2708e5e362deef7f3560602ef0bed73089a65eb896692062bd03c1",
+    "test.csv": "1130e4af68c914483cd84a5fb683597b3ef75fca31d056de5e69d37345f4a091"
+  }
+}
