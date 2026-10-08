@@ -1,0 +1,25 @@
+{
+  "unit": "068",
+  "title": "经典方法比较项目",
+  "checked_on": "2026-10-08",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "test_checks": 63,
+  "optimized_test_checks": 63,
+  "code_cells": 15,
+  "embedded_images": 7,
+  "pdf_pages": {
+    "answers": 3,
+    "lab": 3,
+    "lecture": 7
+  },
+  "author_visual_review": "Every page rasterized and opened at full page size; Chinese text, formulas, tables and figures inspected, no clipping, overlap or missing glyphs found.",
+  "notebook_kernel": "fresh Python process, true IPython InProcessKernel",
+  "reproducibility": "complete deterministic report recomputed in ordinary and optimized tests; timing fields excluded from equality by design",
+  "not_tested": [
+    "Jupyter browser UI",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "fixed synthetic task and single independent split; uncertainty conditional on fitted models, not all model-selection uncertainty"
+}

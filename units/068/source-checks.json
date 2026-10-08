@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-08",
+  "sources": [
+    {
+      "title": "Cross-validation",
+      "url": "https://scikit-learn.org/1.8/modules/cross_validation.html",
+      "method": "opened official versioned documentation with web retrieval",
+      "status": "read"
+    },
+    {
+      "title": "Calibration",
+      "url": "https://scikit-learn.org/1.8/modules/calibration.html",
+      "method": "opened official versioned documentation with web retrieval",
+      "status": "read"
+    },
+    {
+      "title": "log_loss",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.metrics.log_loss.html",
+      "method": "opened official versioned documentation with web retrieval",
+      "status": "read"
+    },
+    {
+      "title": "RandomForestClassifier",
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.RandomForestClassifier.html",
+      "method": "opened official versioned documentation with web retrieval",
+      "status": "read"
+    }
+  ]
+}

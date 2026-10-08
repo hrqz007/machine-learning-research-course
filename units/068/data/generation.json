@@ -1,0 +1,9 @@
+{
+  "seed": 68021,
+  "kind": "original synthetic independent binary quality-inspection examples",
+  "sha256": {
+    "train.csv": "1f98f4750e239cfa303e812b7466b59dc1225432fc7f4dc63dcccd6ac4d996b1",
+    "validation.csv": "34fce1cecb975c5793c2ad967cd8800726d245e0b0fa51b2f7cec2cc56e28ab4",
+    "test.csv": "f66b175714d8d97afa0e7f7488136d28bcbf30519e5231ab2de400c50fe66d1b"
+  }
+}
