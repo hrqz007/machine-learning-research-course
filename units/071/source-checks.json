@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-10-08",
+  "method": "opened and read public primary-source pages or original PDFs",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html",
+      "title": "KMeans official API",
+      "verified_claims": "explicit n_init; init and stopping semantics",
+      "status": "read"
+    },
+    {
+      "url": "https://theory.stanford.edu/~sergei/papers/kMeansPP-soda.pdf",
+      "title": "Arthur and Vassilvitskii 2007 original paper",
+      "verified_claims": "D-squared initialization; expected approximation bound",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+      "title": "scikit-learn clustering guide",
+      "verified_claims": "geometry assumptions and local optima",
+      "status": "read"
+    }
+  ]
+}

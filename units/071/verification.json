@@ -1,0 +1,50 @@
+{
+  "unit": "071",
+  "title": "K均值与原型学习",
+  "checked_on": "2026-10-08",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 7,
+  "embedded_images": 5,
+  "pdf_pages": {
+    "lecture": 8,
+    "lab": 4,
+    "answers": 4
+  },
+  "author_visual_review": "All 16 pages rasterized and reviewed as complete-page contact sheets; key formula and figure pages inspected at full size. Final changed objective plot inspected after regeneration. Independent review also inspected all 16 pages with no issue. No missing glyphs, overlap, or clipped content observed.",
+  "test_checks": 113,
+  "optimized_test_checks": 113,
+  "numerical_audit": "Explicit checks cover manual substep objectives, mean update, closest-center labels, monotonicity, empty and duplicate clusters, seeded restarts, same-initialization sklearn comparison, scaling equivariance, invalid inputs, altered data and report rejection.",
+  "reproducibility": {
+    "full_build_all": "passed in clean copied unit with separate outputs",
+    "fresh_deterministic_result_fields_exactly_equal": true,
+    "fresh_figures_byte_equal": true,
+    "fresh_pdf_page_pixels_equal": {
+      "lecture": true,
+      "lab": true,
+      "answers": true
+    }
+  },
+  "mutation_audit": {
+    "rejected": [
+      "changed CSV",
+      "changed CSV and matching digest",
+      "changed full report",
+      "increased objective field",
+      "symlink output",
+      "hardlink output"
+    ]
+  },
+  "source_checks": {
+    "primary_source_records": 3,
+    "method": "opened and read official docs and original author-hosted paper; pinned numerical execution"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "notebook_private_path_scan": "passed; no private authoring paths in code or outputs",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Squared Euclidean Lloyd K-means; random and basic D-squared seeding; multiple restarts; empty centers, repeated observations, scaling and nonconvex ring failure. Synthetic observations only; generated group labels excluded from fitting."
+}

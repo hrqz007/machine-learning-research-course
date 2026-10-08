@@ -1,0 +1,15 @@
+{
+  "seed": 7101,
+  "columns": [
+    "id",
+    "x1",
+    "x2",
+    "generated_group"
+  ],
+  "purpose": "synthetic teaching only; generated_group is never a fit input",
+  "sha256": {
+    "restarts.csv": "dd7344d59c90ead5522d253a5d93eab08377ca889554ebc0631c0a9e93bcb3c6",
+    "scale.csv": "1e7e5e0a810501c905de67e2929b39ca8ec79a37383cfeb9d1919cce6aef8c5d",
+    "rings.csv": "2762f71745d6117aac9b891962333ba9907acf5c0a781a3a2143ce3f11729dfe"
+  }
+}
