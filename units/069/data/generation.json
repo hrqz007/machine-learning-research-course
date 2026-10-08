@@ -1,0 +1,10 @@
+{
+  "seed": 69021,
+  "kind": "original synthetic low-rank data and variance-prediction counterexample",
+  "sha256": {
+    "train.csv": "2c4ea64e2642392850b791735109b1e6a16bd5d2ed4a58e8ca23329e4cd29dd6",
+    "test.csv": "dda93779c8fc8dbdcf3a19af8444ab94b74f5bb710f4fa7fd526dd5f754da2b5",
+    "signal_train.csv": "182b7dffc0c44b9db27605d2d454ceb643a5242f3bd40dc2888b21bc55e77031",
+    "signal_test.csv": "ca3fc864fa2bda84b65ed3b986fe4dd6b34423d5bdf306eaa6f812db8864df0d"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-10-08",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/1.8/modules/decomposition.html#pca",
+      "status": "read",
+      "method": "opened official primary documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.decomposition.PCA.html",
+      "status": "read",
+      "method": "opened official primary documentation"
+    },
+    {
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.svd.html",
+      "status": "read",
+      "method": "opened official primary documentation"
+    },
+    {
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eigh.html",
+      "status": "read",
+      "method": "opened official primary documentation"
+    }
+  ]
+}

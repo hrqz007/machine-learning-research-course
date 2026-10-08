@@ -1,0 +1,25 @@
+{
+  "unit": "069",
+  "title": "主成分分析的推导",
+  "checked_on": "2026-10-08",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "test_checks": 109,
+  "optimized_test_checks": 109,
+  "code_cells": 14,
+  "embedded_images": 7,
+  "pdf_pages": {
+    "answers": 3,
+    "lab": 3,
+    "lecture": 8
+  },
+  "author_visual_review": "All14 PDF pages rasterized and visually opened; formulas, Chinese text, figures and tables readable without clipping or overlap.",
+  "notebook_kernel": "fresh Python process, real IPython InProcessKernel",
+  "reproducibility": "complete deterministic report recomputed by both normal and optimized tests",
+  "not_tested": [
+    "Jupyter browser UI",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "linear centered Euclidean PCA; original low-rank data plus unit, centering and prediction counterexamples"
+}
