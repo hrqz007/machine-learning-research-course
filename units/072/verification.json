@@ -1,0 +1,50 @@
+{
+  "unit": "072",
+  "title": "密度与层次聚类",
+  "checked_on": "2026-10-08",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "code_cells": 7,
+  "embedded_images": 6,
+  "pdf_pages": {
+    "lecture": 8,
+    "lab": 4,
+    "answers": 4
+  },
+  "author_visual_review": "All 16 pages rasterized and reviewed as complete-page contact sheets; formula, hierarchy and density-figure pages inspected at full size. Dendrogram y-limit corrected to expose the 3.2 cut line in all panels; density legend moved so it does not obscure the noise observation. Revised figure pages inspected after rebuilding. No missing glyphs, overlap, or clipped content observed.",
+  "test_checks": 224,
+  "optimized_test_checks": 224,
+  "numerical_audit": "Explicit tests cover neighbor counts including self, core/border/noise, direct core components, ambiguous border and permutation behavior, full linkage validation including unused tails, tie and exact-K cut behavior, Ward increment/height, independent SciPy/sklearn comparisons, three actual failure scenarios, invalid inputs and data/report tampering.",
+  "reproducibility": {
+    "full_build_all": "passed in clean copied unit with separate outputs",
+    "fresh_deterministic_result_fields_exactly_equal": true,
+    "fresh_figures_byte_equal": true,
+    "fresh_pdf_page_pixels_equal": {
+      "lecture": true,
+      "lab": true,
+      "answers": true
+    }
+  },
+  "mutation_audit": {
+    "rejected": [
+      "changed CSV",
+      "changed CSV and matching digest",
+      "changed full report",
+      "malformed hierarchy tail even beyond requested cut",
+      "symlink output",
+      "hardlink output"
+    ]
+  },
+  "source_checks": {
+    "primary_source_records": 4,
+    "method": "opened and read official SciPy and scikit-learn docs plus original conference-hosted DBSCAN paper; pinned numerical execution"
+  },
+  "notebook_kernel": "Fresh Python process, real IPython InProcessKernel",
+  "notebook_private_path_scan": "passed; no private authoring paths in cells or outputs",
+  "not_tested": [
+    "Jupyter browser user interface",
+    "external socket kernel transport",
+    "clean separate Conda installation"
+  ],
+  "scope": "Euclidean single/complete/average teaching implementation; SciPy Ward comparison; core-graph DBSCAN; rings, unequal densities and bridging noise; parameter effects and implementation-specific complexity. Synthetic generated group labels excluded from fitting."
+}

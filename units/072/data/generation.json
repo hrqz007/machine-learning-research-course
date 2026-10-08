@@ -1,0 +1,15 @@
+{
+  "seed": 7201,
+  "columns": [
+    "id",
+    "x1",
+    "x2",
+    "generated_group"
+  ],
+  "purpose": "synthetic teaching; generated_group withheld from all algorithms",
+  "sha256": {
+    "rings.csv": "ec5e24a8f7340532ed1e63603f650ece384d55d9cca113034d4ab06b6d979b7d",
+    "unequal.csv": "f27b749b45e4c519b96319cf9567126f5b81ef050e14e06ce3a4cee2b1fc82af",
+    "bridge.csv": "27849861324e0b023156f1f6a76ee5d7037610ab9fe2a0460a5a4d03f6af8566"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-10-08",
+  "method": "opened and read public primary-source pages or original PDFs",
+  "sources": [
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html",
+      "title": "SciPy linkage official API",
+      "verified_claims": "linkage definitions; Euclidean Ward; implementation complexity",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html",
+      "title": "DBSCAN official API",
+      "verified_claims": "min_samples includes self; eps and memory semantics",
+      "status": "read"
+    },
+    {
+      "url": "https://cdn.aaai.org/KDD/1996/KDD96-037.pdf",
+      "title": "Ester et al 1996 original paper",
+      "verified_claims": "core, direct density reachability and global threshold limitations",
+      "status": "read"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/clustering.html",
+      "title": "scikit-learn clustering guide",
+      "verified_claims": "density and hierarchy implementation limitations",
+      "status": "read"
+    }
+  ]
+}

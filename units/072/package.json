@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "description": "Optional local formula renderer for trusted course sources",
+  "dependencies": {
+    "mathjax-full": "3.2.2"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12"
+  }
+}
