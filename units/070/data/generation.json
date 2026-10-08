@@ -1,0 +1,8 @@
+{
+  "seed": 70021,
+  "kind": "original continuous Swiss roll and single standard Gaussian null control",
+  "sha256": {
+    "roll.csv": "935dc98386216c984d3073da9eb05e25d88a95c26127c3679386ff237b832fc0",
+    "gaussian.csv": "7c581233fc4f3382f422a300023caeeb71ce33ec42dde1b8cde931fcb0e9a6a6"
+  }
+}

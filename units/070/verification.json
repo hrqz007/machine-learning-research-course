@@ -1,0 +1,26 @@
+{
+  "unit": "070",
+  "title": "流形与可视化的边界",
+  "checked_on": "2026-10-08",
+  "author_execution": "passed",
+  "python": "3.12.14",
+  "test_checks": 212,
+  "optimized_test_checks": 212,
+  "code_cells": 13,
+  "embedded_images": 7,
+  "pdf_pages": {
+    "answers": 3,
+    "lab": 3,
+    "lecture": 8
+  },
+  "author_visual_review": "All14 final PDF pages rasterized and opened. Formula, Chinese text, multiseed grids and captions readable. Revised3D geometry chart uses wider panel spacing; page2 re-opened and all other lecture pages pixel-identical. No overlap or clipping.",
+  "notebook_kernel": "fresh Python process, real IPython InProcessKernel",
+  "reproducibility": "Full clean-ZIP build_all passed; all14 seeded roll and2 null embeddings recomputed in both modes. Final geometry chart revision followed by PDF rebuild and true Notebook re-execution; timing excluded from equality.",
+  "not_tested": [
+    "Jupyter browser UI",
+    "external socket kernel transport",
+    "clean separate Conda installation",
+    "out-of-sample transform"
+  ],
+  "scope": "exploratory embeddings of fixed synthetic datasets; local input geometry and intrinsic global geometry explicitly separated; no claim of true clusters or unseen-sample accuracy"
+}

@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-08",
+  "sources": [
+    {
+      "url": "https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    },
+    {
+      "url": "https://arxiv.org/abs/1802.03426",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    },
+    {
+      "url": "https://umap-learn.readthedocs.io/en/latest/how_umap_works.html",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    },
+    {
+      "url": "https://umap-learn.readthedocs.io/en/latest/parameters.html",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    },
+    {
+      "url": "https://umap-learn.readthedocs.io/en/latest/reproducibility.html",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.manifold.TSNE.html",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    },
+    {
+      "url": "https://scikit-learn.org/1.8/modules/generated/sklearn.manifold.trustworthiness.html",
+      "status": "read",
+      "method": "opened primary author paper or official documentation"
+    }
+  ],
+  "retrieval_note": "JMLR PDF timed out, same paper read successfully at original author site"
+}
