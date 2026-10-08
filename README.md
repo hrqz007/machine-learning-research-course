@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–067 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–072 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -129,6 +129,16 @@
 
 - [第067讲 Gaussian过程回归](units/067/README.md)：[正文（9页）](units/067/lecture.pdf) · [实验指南（5页）](units/067/lab.pdf) · [完整答案（4页）](units/067/answers.pdf) · [Notebook](units/067/experiment.ipynb)
 
+- [第068讲 经典方法比较项目](units/068/README.md)：[正文（7页）](units/068/lecture.pdf) · [实验指南（3页）](units/068/lab.pdf) · [完整答案（3页）](units/068/answers.pdf) · [Notebook](units/068/experiment.ipynb)
+
+- [第069讲 主成分分析的推导](units/069/README.md)：[正文（8页）](units/069/lecture.pdf) · [实验指南（3页）](units/069/lab.pdf) · [完整答案（3页）](units/069/answers.pdf) · [Notebook](units/069/experiment.ipynb)
+
+- [第070讲 流形与可视化的边界](units/070/README.md)：[正文（8页）](units/070/lecture.pdf) · [实验指南（3页）](units/070/lab.pdf) · [完整答案（3页）](units/070/answers.pdf) · [Notebook](units/070/experiment.ipynb)
+
+- [第071讲 K均值与原型学习](units/071/README.md)：[正文（8页）](units/071/lecture.pdf) · [实验指南（4页）](units/071/lab.pdf) · [完整答案（4页）](units/071/answers.pdf) · [Notebook](units/071/experiment.ipynb)
+
+- [第072讲 密度与层次聚类](units/072/README.md)：[正文（8页）](units/072/lecture.pdf) · [实验指南（4页）](units/072/lab.pdf) · [完整答案（4页）](units/072/answers.pdf) · [Notebook](units/072/experiment.ipynb)
+
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
 - [运行环境说明](shared/README.md)
@@ -158,7 +168,7 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 
 第059–062讲的文件清单与逐文件远端校验记录见[核验说明](releases/059-062.json)。
 
-第063–067讲的文件清单与逐文件远端校验记录见[核验说明](releases/063-067.json)。各单元执行方式及环境边界以单元说明为准。
+第063–067讲的文件清单与逐文件远端校验记录见[核验说明](releases/063-067.json)。第068–072讲的文件清单与逐文件远端校验记录见[核验说明](releases/068-072.json)。各单元执行方式及环境边界以单元说明为准。
 
 ## 使用说明
 

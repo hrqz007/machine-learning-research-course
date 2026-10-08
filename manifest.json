@@ -2332,18 +2332,32 @@
         "实验与验收": "比较线性、树集成、距离或核基线；保存同一拆分与公平搜索记录，做失败样本分析。",
         "常见误区": "跨不同拆分直接比较排行榜；只挑对新方法有利的数据集。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/068/lecture.pdf",
+        "lab": "units/068/lab.pdf",
+        "answers": "units/068/answers.pdf",
+        "notebook": "units/068/experiment.ipynb",
+        "script": "units/068/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "a9a553272540be61d69065d5450f81135ef962d3",
+        "verified_file_count": 41,
+        "verified_bytes": 2657026,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-08"
+      },
+      "release_record": "releases/068-072.json"
     },
     {
       "id": "069",
@@ -2355,18 +2369,32 @@
         "实验与验收": "手推二维PCA，从零实现并核验重构误差；仅在训练集fit中心与主轴。",
         "常见误区": "高方差必然包含预测信号；把主成分符号差异当结果不一致。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/069/lecture.pdf",
+        "lab": "units/069/lab.pdf",
+        "answers": "units/069/answers.pdf",
+        "notebook": "units/069/experiment.ipynb",
+        "script": "units/069/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "1a286e5c06b650afcee9f4466281416cf6073058",
+        "verified_file_count": 43,
+        "verified_bytes": 2733446,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-08"
+      },
+      "release_record": "releases/068-072.json"
     },
     {
       "id": "070",
@@ -2378,18 +2406,32 @@
         "实验与验收": "对已知结构数据改变种子和关键参数，比较邻域保持而不只看图美观。",
         "常见误区": "把二维簇大小和间隔直接当高维真实结构；把可视化当证据终点。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/070/lecture.pdf",
+        "lab": "units/070/lab.pdf",
+        "answers": "units/070/answers.pdf",
+        "notebook": "units/070/experiment.ipynb",
+        "script": "units/070/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "4312482261a42e1e71e6841878f181f849bf3812",
+        "verified_file_count": 41,
+        "verified_bytes": 5452162,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-08"
+      },
+      "release_record": "releases/068-072.json"
     },
     {
       "id": "071",
@@ -2401,18 +2443,32 @@
         "实验与验收": "手算两轮K-means，再实现多次重启；核对目标不增与空簇处理。",
         "常见误区": "算法分出几组就说自然界有几类；把局部最优当全局最优。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/071/lecture.pdf",
+        "lab": "units/071/lab.pdf",
+        "answers": "units/071/answers.pdf",
+        "notebook": "units/071/experiment.ipynb",
+        "script": "units/071/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "0c076e6d54bb79a7ce37fd0e0c345d03651d9628",
+        "verified_file_count": 38,
+        "verified_bytes": 3220774,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-08"
+      },
+      "release_record": "releases/068-072.json"
     },
     {
       "id": "072",
@@ -2424,18 +2480,32 @@
         "实验与验收": "构造环形、不同密度和噪声数据；比较层次和密度方法并解释失败。",
         "常见误区": "默认一个密度阈值适合所有簇；树状图切法没有研究依据。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/072/lecture.pdf",
+        "lab": "units/072/lab.pdf",
+        "answers": "units/072/answers.pdf",
+        "notebook": "units/072/experiment.ipynb",
+        "script": "units/072/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "passed",
+        "code": "passed",
+        "notebook": "passed_inprocess_kernel_transport_limitation_disclosed",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "c233794efd9aed1be146850aebee1999032b71ba",
+        "verified_file_count": 39,
+        "verified_bytes": 4221379,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-08"
+      },
+      "release_record": "releases/068-072.json"
     },
     {
       "id": "073",
