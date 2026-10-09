@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–072 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–077 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -139,6 +139,16 @@
 
 - [第072讲 密度与层次聚类](units/072/README.md)：[正文（8页）](units/072/lecture.pdf) · [实验指南（4页）](units/072/lab.pdf) · [完整答案（4页）](units/072/answers.pdf) · [Notebook](units/072/experiment.ipynb)
 
+- [第073讲 聚类结果的验证](units/073/README.md)：[正文（6页）](units/073/lecture.pdf) · [实验指南（3页）](units/073/lab.pdf) · [完整答案（3页）](units/073/answers.pdf) · [Notebook](units/073/experiment.ipynb)
+
+- [第074讲 混合模型与EM算法](units/074/README.md)：[正文（6页）](units/074/lecture.pdf) · [实验指南（3页）](units/074/lab.pdf) · [完整答案（3页）](units/074/answers.pdf) · [Notebook](units/074/experiment.ipynb)
+
+- [第075讲 隐变量与可识别性](units/075/README.md)：[正文（6页）](units/075/lecture.pdf) · [实验指南（3页）](units/075/lab.pdf) · [完整答案（3页）](units/075/answers.pdf) · [Notebook](units/075/experiment.ipynb)
+
+- [第076讲 概率图模型的语言](units/076/README.md)：[正文（9页）](units/076/lecture.pdf) · [实验指南（3页）](units/076/lab.pdf) · [完整答案（3页）](units/076/answers.pdf) · [Notebook](units/076/experiment.ipynb)
+
+- [第077讲 精确概率推断](units/077/README.md)：[正文（8页）](units/077/lecture.pdf) · [实验指南（3页）](units/077/lab.pdf) · [完整答案（3页）](units/077/answers.pdf) · [Notebook](units/077/experiment.ipynb)
+
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
 - [运行环境说明](shared/README.md)
@@ -173,3 +183,5 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 ## 使用说明
 
 仓库公开，方便在线学习与交流。目前未附加开源许可证；公开可读不代表授予未明确约定的再许可权。
+
+第073–077讲的完整文件清单、课程编号映射、PDF页数及逐文件远端大小/SHA256核验记录见[核验说明](releases/073-077.json)。本批实验使用本地合成数据离线执行，普通与优化模式测试及新内核Notebook已独立重跑；未测试Jupyter浏览器界面或跨平台安装。

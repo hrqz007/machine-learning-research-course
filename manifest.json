@@ -2517,18 +2517,32 @@
         "实验与验收": "比较轮廓系数、ARI和稳定性；用无结构随机数据作为负对照。",
         "常见误区": "用用于调参的同一指标证明发现；把高轮廓系数当业务或科学意义。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/073/lecture.pdf",
+        "lab": "units/073/lab.pdf",
+        "answers": "units/073/answers.pdf",
+        "notebook": "units/073/experiment.ipynb",
+        "script": "units/073/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "checked_access_limits_disclosed_in_source_records",
+        "code": "independent_offline_normal_and_optimized_passed",
+        "notebook": "independent_fresh_kernel_passed_browser_not_tested",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "10f9de5d8da3bece629238cc5f2e59c3a7db6050",
+        "verified_file_count": 40,
+        "verified_bytes": 2586727,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-09"
+      },
+      "release_record": "releases/073-077.json"
     },
     {
       "id": "074",
@@ -2540,18 +2554,32 @@
         "实验与验收": "手算小GMM一次迭代，实施EM；检查似然、协方差退化与重启差异。",
         "常见误区": "EM保证全局最优；忽略方差趋零导致的退化；标签交换当科学差异。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/074/lecture.pdf",
+        "lab": "units/074/lab.pdf",
+        "answers": "units/074/answers.pdf",
+        "notebook": "units/074/experiment.ipynb",
+        "script": "units/074/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "checked_access_limits_disclosed_in_source_records",
+        "code": "independent_offline_normal_and_optimized_passed",
+        "notebook": "independent_fresh_kernel_passed_browser_not_tested",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "10f9de5d8da3bece629238cc5f2e59c3a7db6050",
+        "verified_file_count": 39,
+        "verified_bytes": 2806408,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-09"
+      },
+      "release_record": "releases/073-077.json"
     },
     {
       "id": "075",
@@ -2563,18 +2591,32 @@
         "实验与验收": "模拟已知潜因子，比较重构、似然和因子恢复；展示等价参数解。",
         "常见误区": "重构好就说明发现真实机制；给任意旋转的潜变量强加唯一语义。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/075/lecture.pdf",
+        "lab": "units/075/lab.pdf",
+        "answers": "units/075/answers.pdf",
+        "notebook": "units/075/experiment.ipynb",
+        "script": "units/075/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "checked_access_limits_disclosed_in_source_records",
+        "code": "independent_offline_normal_and_optimized_passed",
+        "notebook": "independent_fresh_kernel_passed_browser_not_tested",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "10f9de5d8da3bece629238cc5f2e59c3a7db6050",
+        "verified_file_count": 41,
+        "verified_bytes": 2784723,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-09"
+      },
+      "release_record": "releases/073-077.json"
     },
     {
       "id": "076",
@@ -2586,18 +2628,32 @@
         "实验与验收": "手写小图对应联合分布，枚举核验独立关系；比较两个Markov等价图。",
         "常见误区": "图上有箭头就自动是因果；看见缺边就推任意条件独立。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/076/lecture.pdf",
+        "lab": "units/076/lab.pdf",
+        "answers": "units/076/answers.pdf",
+        "notebook": "units/076/experiment.ipynb",
+        "script": "units/076/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "checked_access_limits_disclosed_in_source_records",
+        "code": "independent_offline_normal_and_optimized_passed",
+        "notebook": "independent_fresh_kernel_passed_browser_not_tested",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "10f9de5d8da3bece629238cc5f2e59c3a7db6050",
+        "verified_file_count": 44,
+        "verified_bytes": 3011706,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-09"
+      },
+      "release_record": "releases/073-077.json"
     },
     {
       "id": "077",
@@ -2609,18 +2665,32 @@
         "实验与验收": "对链式离散模型手算并实现推断，用穷举作基准验证。",
         "常见误区": "只看变量个数估算代价；在有环图上套树消息传递仍称精确。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/077/lecture.pdf",
+        "lab": "units/077/lab.pdf",
+        "answers": "units/077/answers.pdf",
+        "notebook": "units/077/experiment.ipynb",
+        "script": "units/077/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "checked_access_limits_disclosed_in_source_records",
+        "code": "independent_offline_normal_and_optimized_passed",
+        "notebook": "independent_fresh_kernel_passed_browser_not_tested",
+        "visual": "independent_all_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "10f9de5d8da3bece629238cc5f2e59c3a7db6050",
+        "verified_file_count": 44,
+        "verified_bytes": 3152080,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-09"
+      },
+      "release_record": "releases/073-077.json"
     },
     {
       "id": "078",
