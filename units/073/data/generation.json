@@ -1,0 +1,9 @@
+{
+  "seed": 7301,
+  "origin": "original synthetic; no download",
+  "sha256": {
+    "development.csv": "d3074046a702135b34fbe7905030f9115834ebcbbf4bfbc61dd23100ac34e4dd",
+    "audit.csv": "309443428ad9cef7e5c651d5fde1691bac01fd577ccbc5a6eb84afd673809862",
+    "null.csv": "66396b5b1cb65d52732aef49ff56796a69fd39a69fc1a7df5be3ec0c5985f17c"
+  }
+}

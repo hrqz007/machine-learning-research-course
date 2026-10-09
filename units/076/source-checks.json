@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-10-09",
+  "method": "web browser open; actual source content read",
+  "sources": [
+    {
+      "title": "Bayesian networks",
+      "url": "https://ermongroup.github.io/cs228-notes/representation/directed/",
+      "status": "read",
+      "role": "definition and algorithm verification"
+    },
+    {
+      "title": "Markov random fields",
+      "url": "https://ermongroup.github.io/cs228-notes/representation/undirected/",
+      "status": "read",
+      "role": "definition and algorithm verification"
+    }
+  ],
+  "external_dataset_downloads": false
+}

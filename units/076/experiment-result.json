@@ -1,0 +1,16 @@
+{
+  "chain_total": 1.0000000000000002,
+  "chain_ac_residual": 0.11760000000000007,
+  "chain_ac_given_b_residual": 1.1102230246251565e-16,
+  "collider_rs_residual": 1.1102230246251565e-16,
+  "collider_rs_given_w_residual": 0.1626526869772103,
+  "rain_given_wet": 0.4840731070496084,
+  "rain_given_wet_sprinkler": 0.23627684964200474,
+  "reverse_max_error": 5.551115123125783e-17,
+  "markov_equivalent": true,
+  "descendant_unobserved_d_separated": true,
+  "descendant_observed_d_separated": false,
+  "mrf_partition": 24.0,
+  "mrf_total": 1.0,
+  "mrf_ac_given_b_residual": 0.0
+}

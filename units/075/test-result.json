@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": [
+    "covariance_max_difference",
+    "rotation_reconstruction_max_difference",
+    "rotation_log_density_max_difference",
+    "score_rotation_max_difference",
+    "scale_covariance_max_difference",
+    "scipy independent density",
+    "PPCA and PCA same principal subspace",
+    "zero-rank projector",
+    "rank-deficient projector",
+    "reject nonfinite mean",
+    "noise from discarded eigenvalues",
+    "alignment needed for coordinate comparison",
+    "PCA minimizes observed rank-q reconstruction",
+    "FA convergence within cap",
+    "unequal-noise counterexample",
+    "reject q equals dimension",
+    "reject zero residual variance"
+  ],
+  "count": 17
+}

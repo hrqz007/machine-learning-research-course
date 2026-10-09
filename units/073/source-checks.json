@@ -1,0 +1,12 @@
+[
+  {
+    "title": "scikit-learn clustering evaluation",
+    "url": "https://scikit-learn.org/stable/modules/clustering.html",
+    "retrieved_url": "https://scikit-learn.org/stable/modules/clustering.html",
+    "http_status": 200,
+    "response_bytes": 245702,
+    "checked_utc": "2026-10-09",
+    "checked_scope": "ARI, silhouette, invariance, definition boundaries",
+    "status": "readable"
+  }
+]

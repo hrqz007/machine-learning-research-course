@@ -1,0 +1,14 @@
+{
+  "kind": "original deterministic teaching tables",
+  "seed": null,
+  "files": {
+    "models.json": {
+      "bytes": 669,
+      "sha256": "72c83b45bb52deb9a9138ee5ab998ff8de84613e5cfb7df2969db21b4ba9a65e"
+    },
+    "joint-tables.json": {
+      "bytes": 2007,
+      "sha256": "4142a5ac8cbe239494d480a01f3a9251a004c4abde157f0fb0e959c1288be4e6"
+    }
+  }
+}

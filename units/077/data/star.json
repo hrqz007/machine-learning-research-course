@@ -1,0 +1,9 @@
+{
+  "leaves": 6,
+  "center_prior": [
+    0.6,
+    0.4
+  ],
+  "same_weight": 3.0,
+  "different_weight": 1.0
+}

@@ -1,0 +1,29 @@
+{
+  "seed": 7501,
+  "origin": "original synthetic; no download",
+  "true_W": [
+    [
+      1.4,
+      0.2
+    ],
+    [
+      0.9,
+      -0.6
+    ],
+    [
+      0.1,
+      1.2
+    ],
+    [
+      -0.7,
+      0.8
+    ]
+  ],
+  "isotropic_noise_variance": 0.0625,
+  "sha256": {
+    "train.csv": "c8b104c0093110bcae2a95a8d044e64d1bf9fd7acfda6fa3ee695247bc678e71",
+    "audit.csv": "8fe6ad02657749e4c2e3b62bbf247a573fab924dab9672575fa0d3df560f5f44",
+    "hetero_train.csv": "23c52c2b8240e28881500790478511de72b0705bac2a4351a83ed12e5e4ce36b",
+    "hetero_audit.csv": "9cdccf41c4fa3cb15f27696cc94f56186ddd4650846bf52c7e4307f83d042737"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-10-09",
+  "method": "web browser open; actual source content read",
+  "sources": [
+    {
+      "title": "Variable Elimination",
+      "url": "https://ermongroup.github.io/cs228-notes/inference/ve/",
+      "status": "read",
+      "role": "definition and algorithm verification"
+    },
+    {
+      "title": "Junction Tree Algorithm",
+      "url": "https://ermongroup.github.io/cs228-notes/inference/jt/",
+      "status": "read",
+      "role": "definition and algorithm verification"
+    }
+  ],
+  "external_dataset_downloads": false
+}

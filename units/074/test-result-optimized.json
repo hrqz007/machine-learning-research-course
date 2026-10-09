@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": [
+    "monotonic run 0",
+    "monotonic run 1",
+    "monotonic run 2",
+    "monotonic run 3",
+    "monotonic run 4",
+    "monotonic run 5",
+    "monotonic run 6",
+    "monotonic run 7",
+    "midpoint responsibility",
+    "hand logistic identity",
+    "weighted mean hand result",
+    "hand likelihood increase",
+    "extreme values log space",
+    "component permutation invariance",
+    "exact constrained floor",
+    "sklearn independent implementation",
+    "symmetric initialization counterexample",
+    "unbounded collapse path tendency",
+    "reject zero variance"
+  ],
+  "count": 19
+}

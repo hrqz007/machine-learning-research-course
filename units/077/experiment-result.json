@@ -1,0 +1,256 @@
+{
+  "chain_p1_given_e1": [
+    0.5025722200237436,
+    0.5594578551642264,
+    0.6648199445983379,
+    0.8467550455085081
+  ],
+  "evidence_probability": 0.40432,
+  "max_method_error": 1.1102230246251565e-16,
+  "forward": [
+    [
+      0.6,
+      0.4
+    ],
+    [
+      0.61,
+      0.39
+    ],
+    [
+      0.616,
+      0.384
+    ],
+    [
+      0.6195999999999999,
+      0.3804
+    ]
+  ],
+  "backward": [
+    [
+      0.33520000000000005,
+      0.508
+    ],
+    [
+      0.29200000000000004,
+      0.5800000000000001
+    ],
+    [
+      0.22000000000000003,
+      0.7000000000000001
+    ],
+    [
+      0.1,
+      0.9
+    ]
+  ],
+  "chain_trace_x0": [
+    {
+      "variable": "X1",
+      "joint_scope": [
+        "X0",
+        "X1",
+        "X2"
+      ],
+      "entries": 8,
+      "result_scope": [
+        "X0",
+        "X2"
+      ]
+    },
+    {
+      "variable": "X2",
+      "joint_scope": [
+        "X2",
+        "X3",
+        "X0"
+      ],
+      "entries": 8,
+      "result_scope": [
+        "X3",
+        "X0"
+      ]
+    },
+    {
+      "variable": "X3",
+      "joint_scope": [
+        "X3",
+        "X0"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "X0"
+      ]
+    }
+  ],
+  "star_p_l5_1": 0.45000000000000007,
+  "star_partition": 4096.0,
+  "star_order_difference": 5.551115123125783e-17,
+  "star_good_peak_entries": 4,
+  "star_bad_peak_entries": 128,
+  "star_good_trace": [
+    {
+      "variable": "L0",
+      "joint_scope": [
+        "C",
+        "L0"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "C"
+      ]
+    },
+    {
+      "variable": "L1",
+      "joint_scope": [
+        "C",
+        "L1"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "C"
+      ]
+    },
+    {
+      "variable": "L2",
+      "joint_scope": [
+        "C",
+        "L2"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "C"
+      ]
+    },
+    {
+      "variable": "L3",
+      "joint_scope": [
+        "C",
+        "L3"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "C"
+      ]
+    },
+    {
+      "variable": "L4",
+      "joint_scope": [
+        "C",
+        "L4"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "C"
+      ]
+    },
+    {
+      "variable": "C",
+      "joint_scope": [
+        "C",
+        "L5"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "L5"
+      ]
+    }
+  ],
+  "star_bad_trace": [
+    {
+      "variable": "C",
+      "joint_scope": [
+        "C",
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "entries": 128,
+      "result_scope": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "variable": "L0",
+      "joint_scope": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "entries": 64,
+      "result_scope": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "variable": "L1",
+      "joint_scope": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "entries": 32,
+      "result_scope": [
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "variable": "L2",
+      "joint_scope": [
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "entries": 16,
+      "result_scope": [
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "variable": "L3",
+      "joint_scope": [
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "entries": 8,
+      "result_scope": [
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "variable": "L4",
+      "joint_scope": [
+        "L4",
+        "L5"
+      ],
+      "entries": 4,
+      "result_scope": [
+        "L5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "PPCA author publication page",
+    "url": "https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/",
+    "retrieved_url": "https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/",
+    "http_status": 200,
+    "response_bytes": 169383,
+    "checked_utc": "2026-10-09",
+    "checked_scope": "original publication and PCA relation",
+    "status": "readable"
+  },
+  {
+    "title": "FactorAnalysis official API",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.FactorAnalysis.html",
+    "retrieved_url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.FactorAnalysis.html",
+    "http_status": 200,
+    "response_bytes": 149607,
+    "checked_utc": "2026-10-09",
+    "checked_scope": "diagonal noise covariance and loading shape",
+    "status": "readable"
+  },
+  {
+    "title": "Tipping and Bishop original PPCA paper PDF",
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-ppca-jrss.pdf",
+    "http_status": 200,
+    "response_bytes": 265532,
+    "sha256": "eff6a1a0866b3502d9c45da4405e5c6e29fe1a9ba3da63ab024b2f672741e889",
+    "checked_utc": "2026-10-09",
+    "checked_scope": "visually read pages 3-5: factor model, marginal covariance, posterior Gaussian, orthogonal R in ML W, discarded-eigenvalue noise estimate",
+    "status": "readable"
+  }
+]

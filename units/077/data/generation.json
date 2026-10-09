@@ -1,0 +1,14 @@
+{
+  "kind": "original deterministic teaching model",
+  "seed": null,
+  "files": {
+    "chain.json": {
+      "bytes": 185,
+      "sha256": "086d84af77fe635aadc93972cac8c924353afb60f056d470d0471560eb606f45"
+    },
+    "star.json": {
+      "bytes": 109,
+      "sha256": "1097662b97e40a7b86e32a31a8999c22d1ef85c7d73693c5bbc0a0752ccb6df7"
+    }
+  }
+}

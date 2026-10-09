@@ -1,0 +1,69 @@
+{
+  "lesson": "074",
+  "scope": "synthetic CPU teaching experiment; no network calls in experiment or notebook",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "Markdown": "3.11",
+    "WeasyPrint": "70.0"
+  },
+  "experiment": {
+    "status": "executed in fresh Python process",
+    "report": "experiment-result.json"
+  },
+  "tests": {
+    "normal": "passed",
+    "optimized": "passed",
+    "count_each": 19,
+    "reports": [
+      "test-result.json",
+      "test-result-optimized.json"
+    ]
+  },
+  "notebook": {
+    "status": "executed",
+    "code_cells": 5,
+    "embedded_png_outputs": 4,
+    "errors": 0,
+    "kernel": "real ipykernel InProcessKernel in a fresh Python process"
+  },
+  "pdf": {
+    "builder": "local MathJax SVG + WeasyPrint + Noto CJK",
+    "pages": {
+      "lecture.pdf": 6,
+      "lab.pdf": 3,
+      "answers.pdf": 3
+    },
+    "all_pages_rendered_and_visually_reviewed": true,
+    "review_scope": "Chinese and formula legibility, margins, figures, captions, tables, command line wrapping",
+    "text_media_box_violations": 0
+  },
+  "relative_markdown_links": {
+    "status": "passed",
+    "broken": []
+  },
+  "data": "load_data verifies recorded SHA256 and exact original generator bytes",
+  "not_checked": [
+    "Jupyter browser interface",
+    "external socket kernel transport",
+    "other operating systems",
+    "CI; no CI run claimed"
+  ],
+  "artifact_sha256": {
+    "lecture.md": "c3966b3dce9e0cb938b6ad485a7848b69d13279f909c9bec3c3b9e16784e67b5",
+    "lecture.pdf": "e1f11b57607b1cdfd5951b5a58d77c936787fe557b6fd93055ad9edc2db3c47f",
+    "lab.md": "fd7870030b0e5b426f49d72149ddd30bdecf51a6ff0cb2ef28a207f8b53a7f0c",
+    "lab.pdf": "b8444cbc8057a3755b53ca4d65bf826f439b4d79e18c35165a23d51c5f37de62",
+    "answers.md": "6d0af9547e91f1a251f014e0012340cdc28a53e39db88bc6d6f9994cc8ff74f9",
+    "answers.pdf": "efd4fdcb4a6d829268f71544012c8ccd552a1eb64157a83481dbd763a1eaec99",
+    "experiment.ipynb": "c285a1b1f4c54022c7963eedffcfeb99ca781b332697dffcb0d4a03d37f4c002",
+    "experiment-result.json": "dcd87d30da4949fc4fbc5421d63684f60711578360be0ba8cc3d30cd68799625",
+    "test-result.json": "21ac31d408e5f7cf1f1aa387bef5ac75f901e6e28042dcc6454bcf49bfd87193",
+    "test-result-optimized.json": "21ac31d408e5f7cf1f1aa387bef5ac75f901e6e28042dcc6454bcf49bfd87193"
+  }
+}

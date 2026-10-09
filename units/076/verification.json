@@ -1,0 +1,70 @@
+{
+  "unit": "076",
+  "title": "概率图模型的语言",
+  "checked_date": "2026-10-09",
+  "status": "complete",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "matplotlib": "3.10.8",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0",
+      "Markdown": "3.11",
+      "WeasyPrint": "70.0"
+    }
+  },
+  "data": {
+    "source": "original deterministic synthetic probability tables",
+    "external_downloads": false,
+    "rebuild": "models.json, joint-tables.json, generation.json byte-identical in independent QA"
+  },
+  "execution": {
+    "experiment": "executed in clean process; independent replay JSON exact match",
+    "tests_normal": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0
+    },
+    "tests_optimized": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0
+    },
+    "notebook": {
+      "engine": "nbclient with new current-Python ipykernel",
+      "executed_code_cells": 6,
+      "error_outputs": 0,
+      "independent_reexecution": "passed; localhost kernel communication only"
+    }
+  },
+  "pdf": {
+    "renderer": "local MathJax 3.2.2 SVG plus WeasyPrint 70.0; Noto CJK fonts",
+    "pages": {
+      "lecture": 9,
+      "lab": 3,
+      "answers": 3
+    },
+    "visual_review": "all 15 pages rendered and independently inspected at 1.5x; no clipping, overlap, missing glyphs or table overflow"
+  },
+  "figures": {
+    "count": 5,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "rebuild": "five PNG files byte-identical; SVG visual structure identical after removing generated date/automatic IDs"
+  },
+  "independent_mathematics": {
+    "all_four_node_DAGs": 543,
+    "d_separation_queries": 13032,
+    "reference_method": "ancestral subgraph + moralization + evidence deletion + connectivity",
+    "agreements": "all",
+    "markov_equivalence_classes_checked": 185
+  },
+  "limitations": [
+    "Teaching-scale binary enumeration and path search only.",
+    "No real-world causal validation or production performance claim.",
+    "No external CI claimed."
+  ]
+}

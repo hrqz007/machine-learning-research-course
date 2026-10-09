@@ -1,0 +1,87 @@
+{
+  "unit": "077",
+  "title": "精确概率推断",
+  "checked_date": "2026-10-09",
+  "status": "complete",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "matplotlib": "3.10.8",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0",
+      "Markdown": "3.11",
+      "WeasyPrint": "70.0"
+    }
+  },
+  "data": {
+    "source": "original deterministic synthetic model parameters",
+    "external_downloads": false,
+    "rebuild": "chain.json, star.json, generation.json byte-identical in independent QA"
+  },
+  "execution": {
+    "experiment": "executed in clean process; independent replay JSON exact match",
+    "tests_normal": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0
+    },
+    "tests_optimized": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0
+    },
+    "notebook": {
+      "engine": "nbclient with new current-Python ipykernel",
+      "executed_code_cells": 6,
+      "error_outputs": 0,
+      "independent_reexecution": "passed; localhost kernel communication only"
+    },
+    "document_examples": "lab example executed; lecture internal excerpt executed in stated work/variable context and produced [0.22, 0.70]"
+  },
+  "pdf": {
+    "renderer": "local MathJax 3.2.2 SVG plus WeasyPrint 70.0; Noto CJK fonts",
+    "pages": {
+      "lecture": 8,
+      "lab": 3,
+      "answers": 3
+    },
+    "visual_review": "all 14 pages rendered and independently inspected; no clipping, overlap, missing glyphs or table overflow"
+  },
+  "figures": {
+    "count": 5,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "rebuild": "five PNG files byte-identical; SVG visual structure identical after removing generated date/automatic IDs"
+  },
+  "independent_mathematics": {
+    "integer_factor_queries_and_orders": 744,
+    "reference_method": "Fraction exact arithmetic complete-state enumeration, including arbitrary factor axis order",
+    "zero_mass_queries_rejected": 1216,
+    "chain_sum_product_marginals_checked": 126,
+    "chain_lengths_checked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "degenerate_priors_included": true,
+    "agreements": "all"
+  },
+  "numerical_summary": {
+    "max_three_method_error": 1.1102230246251565e-16,
+    "evidence_probability": 0.40432,
+    "star_good_peak_entries": 4,
+    "star_bad_peak_entries": 128,
+    "star_partition": 4096.0
+  },
+  "limitations": [
+    "Binary discrete teaching implementation; chain-specific sum-product.",
+    "Unscaled short-chain arithmetic; long-chain underflow not addressed.",
+    "No real-world model validation, parameter learning or external CI claimed."
+  ]
+}

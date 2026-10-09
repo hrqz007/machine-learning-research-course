@@ -1,0 +1,22 @@
+[
+  {
+    "title": "scikit-learn Gaussian mixtures",
+    "url": "https://scikit-learn.org/stable/modules/mixture.html",
+    "retrieved_url": "https://scikit-learn.org/stable/modules/mixture.html",
+    "http_status": 200,
+    "response_bytes": 64237,
+    "checked_utc": "2026-10-09",
+    "checked_scope": "covariance families and singularities",
+    "status": "readable"
+  },
+  {
+    "title": "EM original paper DOI metadata",
+    "url": "https://api.crossref.org/works/10.1111/j.2517-6161.1977.tb01600.x",
+    "retrieved_url": "https://api.crossref.org/works/10.1111/j.2517-6161.1977.tb01600.x",
+    "http_status": 200,
+    "response_bytes": 17426,
+    "checked_utc": "2026-10-09",
+    "checked_scope": "bibliographic metadata only; no claim of full-paper retrieval",
+    "status": "readable"
+  }
+]
