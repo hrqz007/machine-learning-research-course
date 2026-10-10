@@ -1,0 +1,8 @@
+{
+  "seed": 82021,
+  "dataset.json": {
+    "sha256": "99293eae1485108837c562105fd4baf6192f55be6a2b0219aede716c0de0f770",
+    "bytes": 222605
+  },
+  "real_source": "sklearn.datasets.load_wine; columns [0,6]; original row indices retained"
+}
