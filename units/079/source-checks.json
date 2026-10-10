@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Blei, Kucukelbir, McAuliffe (2017): Variational Inference: A Review for Statisticians",
+    "url": "https://www.cs.columbia.edu/~blei/papers/BleiKucukelbirMcAuliffe2017.pdf",
+    "scope": "KL(q||p), ELBO decomposition, mean-field coordinate update; original course Gaussian model not copied",
+    "checked_date": "2026-10-10",
+    "status": "opened_primary_source",
+    "method": "web tool open; no full reproduction claimed"
+  },
+  {
+    "title": "Stan: ADVI for Variational Inference",
+    "url": "https://mc-stan.org/docs/cmdstan-guide/variational_config.html",
+    "scope": "meanfield vs fullrank option terminology only; no Stan execution",
+    "checked_date": "2026-10-10",
+    "status": "opened_primary_source",
+    "method": "web tool open; no full reproduction claimed"
+  }
+]

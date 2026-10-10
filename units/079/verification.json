@@ -1,0 +1,113 @@
+{
+  "unit": "079",
+  "title": "变分推断与ELBO",
+  "checked_date": "2026-10-10",
+  "status": "complete",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.8",
+      "nbformat": "5.11.1",
+      "IPython": "9.17.1",
+      "Markdown": "3.11",
+      "WeasyPrint": "70.0"
+    }
+  },
+  "data": {
+    "source": "original deterministic synthetic model",
+    "external_downloads": false,
+    "independent_regeneration": "all generated JSON byte-identical, including generation.json"
+  },
+  "execution": {
+    "experiment": "fresh process; exact-byte JSON independent replay confirmed",
+    "tests_normal": {
+      "tests_run": 9,
+      "failures": 0,
+      "errors": 0,
+      "optimized": false
+    },
+    "tests_optimized": {
+      "tests_run": 9,
+      "failures": 0,
+      "errors": 0,
+      "optimized": true
+    },
+    "notebook": {
+      "engine": "fresh Python process with in-process IPython InteractiveShell; no socket kernel",
+      "executed_code_cells": 5,
+      "sequential_execution_counts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "error_outputs": 0,
+      "embedded_png_outputs": 5,
+      "reexecuted_after_final_code_changes": true
+    }
+  },
+  "content": {
+    "han_characters": {
+      "lecture": 6551,
+      "lab": 3067,
+      "answers": 2736
+    },
+    "required_curriculum_title_preserved": true
+  },
+  "pdf": {
+    "renderer": "local MathJax 3.2.2 SVG + WeasyPrint 70.0; Noto CJK fonts",
+    "pages": {
+      "lecture": 11,
+      "lab": 4,
+      "answers": 4
+    },
+    "sha256": {
+      "lecture": "15272177b10e9cff51b80d9f8bd9d474d9ef4f54d118ca391694ae023dba2923",
+      "lab": "a988368d338d1023bd4dddc29f2a12244a3f489f2e8522151c3da503aab8876e",
+      "answers": "25f64685ee16b20a448a4179a6f2f139da053d5c6143e589e640b581b273dccb"
+    },
+    "text_checks": {
+      "lecture": {
+        "all_pages_have_text": true,
+        "replacement_character_count": 0,
+        "page_count": 11
+      },
+      "lab": {
+        "all_pages_have_text": true,
+        "replacement_character_count": 0,
+        "page_count": 4
+      },
+      "answers": {
+        "all_pages_have_text": true,
+        "replacement_character_count": 0,
+        "page_count": 4
+      }
+    },
+    "visual_review": "all pages rendered and inspected in contact sheets by author and independently by parent; formula and figure close-ups inspected; no clipping, overlap, missing glyphs",
+    "final_minor_edit": "079 lab execution-engine wording and 080 >= threshold wording clarified, re-rendered and page-checked"
+  },
+  "figures": {
+    "count": 5,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "replay_png_byte_identical": true,
+    "external_assets": false
+  },
+  "limitations": [
+    "Synthetic teaching examples; no real-world data validation or external CI.",
+    "Notebook real sequential IPython execution; no Jupyter socket-kernel or browser interaction test."
+  ],
+  "numerical_summary": {
+    "max_mean_error": 1.3045675650857902e-12,
+    "variance_ratio": [
+      0.36,
+      0.36
+    ],
+    "kl_q_p": 0.5108256237659907,
+    "max_decomposition_error": 1.1102230246251565e-15
+  }
+}
