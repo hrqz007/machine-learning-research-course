@@ -1,0 +1,39 @@
+{
+  "checked_date_utc": "2026-10-10",
+  "online_sklearn_stable_version": "1.9.1",
+  "executed_sklearn_version": "1.8.0",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/stable/modules/outlier_detection.html",
+      "actual_scope": "read; novelty/outlier distinction and LOF warning"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.LocalOutlierFactor.html",
+      "actual_scope": "read; public API"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html",
+      "actual_scope": "read; nu training bound and score relation"
+    },
+    {
+      "url": "https://arxiv.org/abs/2107.07511",
+      "actual_scope": "abstract and paper metadata read; rank derivation provided independently"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/density.html",
+      "actual_scope": "read; density-estimation background"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html",
+      "actual_scope": "read; bundled subset dimensions and provenance"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/80/optical%2Brecognition%2Bof%2Bhandwritten%2Bdigits",
+      "actual_scope": "read; dataset attribution and CC BY 4.0 verified"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/342009.335388",
+      "actual_scope": "access failed; no full-paper validation claimed"
+    }
+  ]
+}

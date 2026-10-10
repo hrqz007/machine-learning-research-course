@@ -1,0 +1,98 @@
+{
+  "unit": "081",
+  "completed_utc": "2026-10-10T03:07:19.468488+00:00",
+  "numerical_experiment": "executed with deterministic make_data; frozen results in experiment-result.json",
+  "tests_normal": {
+    "tests_run": 15,
+    "failures": 0,
+    "errors": 0,
+    "optimized": false
+  },
+  "tests_optimized": {
+    "tests_run": 15,
+    "failures": 0,
+    "errors": 0,
+    "optimized": true
+  },
+  "notebook": {
+    "code_cells": 8,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "error_outputs": 0,
+    "image_outputs": 5,
+    "engine": "fresh Python process, in-process IPython InteractiveShell; no socket kernel",
+    "actual_execution": true,
+    "browser_interaction_tested": false,
+    "jupyter_socket_kernel_tested": false,
+    "output_path_resolved_before_chdir": true,
+    "accidental_nested_outputs_removed": true
+  },
+  "documents": {
+    "lecture": {
+      "chinese_characters": 6776,
+      "pdf_pages": 10,
+      "pdf_sha256": "ad681d31ab0388b63e3c40ef74a3a23cb8225d8ee768e454d64f1d1e7009e5aa",
+      "all_pages_rendered": true,
+      "all_pages_visually_reviewed": true,
+      "source_sha256": "5792ce483064559512e23d751812308cf368a783682cc64e084c3b9a9238c5e0"
+    },
+    "lab": {
+      "chinese_characters": 3188,
+      "pdf_pages": 4,
+      "pdf_sha256": "62d5834ed30ccec7eda8c1ca67acc9b131c04f87094ae16693a6560590fa9b79",
+      "all_pages_rendered": true,
+      "all_pages_visually_reviewed": true,
+      "source_sha256": "2559e02985ca371e20441da1617967167ee9f109115cd3ce7a61a35115f4ff76"
+    },
+    "answers": {
+      "chinese_characters": 3149,
+      "pdf_pages": 4,
+      "pdf_sha256": "732d0f833a105f0d307eae4ab1461e5f403f7febc3fbdc45b0aaff4d2faa7d30",
+      "all_pages_rendered": true,
+      "all_pages_visually_reviewed": true,
+      "source_sha256": "df61f9ed7f2a58e143fcc137572b11f638346ce30678097cfea66c8b584be383"
+    }
+  },
+  "figures": {
+    "png_count": 5,
+    "svg_count": 5,
+    "source": "plots.py; actual data and fitted results",
+    "visually_reviewed_in_pdf": true
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "IPython": "9.17.1",
+    "nbformat": "5.11.1"
+  },
+  "pdf_review": {
+    "method": "pdftoppm all-page rasterization; all-page contact sheets and enlarged formula/figure pages visually inspected",
+    "issues_corrected": [
+      "none in initial PDF"
+    ],
+    "remaining_known_visual_defects": []
+  },
+  "limitations": [
+    "fixed-seed teaching experiment, not a deployment guarantee",
+    "exchangeability of real digit collection is not proved",
+    "only 43 real normal holdout observations"
+  ],
+  "independent_parent_review": {
+    "all_final_pdf_pages_reviewed": true,
+    "pages_in_unit": 18,
+    "combined_pages": 37,
+    "result": "no remaining clipping, overlap, orphaned heading or glyph defects; final review confirmed 2026-10-10 03:07 UTC",
+    "optimized_tests_reviewed": 15
+  }
+}
