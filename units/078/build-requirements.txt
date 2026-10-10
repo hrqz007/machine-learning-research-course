@@ -1,0 +1,9 @@
+# Optional PDF builder Python packages; numerical experiment deps are separate.
+Markdown==3.11
+WeasyPrint==70.0
+# Node.js plus npm install from package.json supplies MathJax 3.2.2.
+# System: Pango and Noto Sans/Serif CJK fonts, DejaVu Sans Mono.
+# This builder handles trusted course sources, not arbitrary untrusted HTML/TeX.
+# Optional all-page PDF QA script qa_pdf.py:
+PyMuPDF==1.26.6
+Pillow==12.3.0

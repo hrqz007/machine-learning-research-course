@@ -1,0 +1,140 @@
+{
+  "lecture": {
+    "pages": 8,
+    "page_checks": [
+      {
+        "page": 1,
+        "text_chars": 849,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 2,
+        "text_chars": 1023,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 3,
+        "text_chars": 730,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 4,
+        "text_chars": 900,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 5,
+        "text_chars": 615,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 6,
+        "text_chars": 624,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 7,
+        "text_chars": 684,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 8,
+        "text_chars": 1278,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      }
+    ],
+    "fonts": [
+      "DFCEGX+Noto-Sans-CJK-SC-Bold",
+      "HUQPOW+Noto-Serif",
+      "LWGGBP+Noto-Serif-CJK-SC",
+      "TSPJMR+Noto-Sans-CJK-SC"
+    ]
+  },
+  "lab": {
+    "pages": 3,
+    "page_checks": [
+      {
+        "page": 1,
+        "text_chars": 1550,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 2,
+        "text_chars": 1393,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 3,
+        "text_chars": 1185,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      }
+    ],
+    "fonts": [
+      "DFCEGX+Noto-Sans-CJK-SC-Bold",
+      "IKCJUC+DejaVu-Sans-Mono",
+      "LWGGBP+Noto-Serif-CJK-SC",
+      "TSPJMR+Noto-Sans-CJK-SC"
+    ]
+  },
+  "answers": {
+    "pages": 4,
+    "page_checks": [
+      {
+        "page": 1,
+        "text_chars": 1032,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 2,
+        "text_chars": 1244,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 3,
+        "text_chars": 1196,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      },
+      {
+        "page": 4,
+        "text_chars": 265,
+        "replacement_glyphs": 0,
+        "outside_page_text": [],
+        "embedded_fonts": true
+      }
+    ],
+    "fonts": [
+      "DFCEGX+Noto-Sans-CJK-SC-Bold",
+      "HUQPOW+Noto-Serif",
+      "LWGGBP+Noto-Serif-CJK-SC",
+      "TSPJMR+Noto-Sans-CJK-SC"
+    ]
+  }
+}

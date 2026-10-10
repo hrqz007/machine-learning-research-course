@@ -1,0 +1,63 @@
+{
+  "unit": "078",
+  "title": "Monte Carlo与MCMC",
+  "checked_date": "2026-10-10",
+  "status": "complete",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.8",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0",
+      "Markdown": "3.11",
+      "WeasyPrint": "70.0",
+      "IPython": "9.17.1"
+    }
+  },
+  "data": {
+    "source": "original fixed synthetic readings",
+    "external_downloads": false,
+    "rebuild": "model.json and generation.json byte-identical"
+  },
+  "execution": {
+    "experiment": "executed and independently replayed; JSON byte-identical",
+    "tests_normal": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "successful": true
+    },
+    "tests_optimized": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "successful": true
+    },
+    "notebook": {
+      "engine": "fresh Python process; in-process IPython InteractiveShell, top-to-bottom",
+      "code_cells": 6,
+      "image_outputs": 3,
+      "error_outputs": 0,
+      "limitation": "TCP/IPC socket kernel unavailable in environment; no independent Jupyter socket-kernel or browser UI test claimed"
+    }
+  },
+  "pdf": {
+    "renderer": "local MathJax3.2.2 SVG + WeasyPrint70; Noto CJK fonts embedded",
+    "pages": {
+      "lecture": 8,
+      "lab": 3,
+      "answers": 4
+    },
+    "visual_review": "all 15 pages rendered and inspected as contact sheets; formulas page2 and trace/formula page6 inspected at full-page resolution; no clipping/overlap/missing characters detected",
+    "machine_audit": "pdf-audit.json: all text bounds within page, zero replacement glyphs, embedded fonts on each page"
+  },
+  "scientific_limits": [
+    "classic split-Rhat, not rank-normalized/folded",
+    "single-chain positive-pair-truncated teaching ESS, not Stan estimator",
+    "tiny-step failure intentionally retained; MCSE not reliable for that group",
+    "only synthetic known-answer target; no claims of real scientific inference"
+  ],
+  "scope": "only units/078 authored; no global index edits or publication"
+}
