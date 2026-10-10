@@ -2888,18 +2888,32 @@
         "实验与验收": "手算小MLP前向结果；用随机或固定权重可视化中间表示。",
         "常见误区": "把更多层当自动更好；通用逼近定理误读为可训练或可泛化保证。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/083/lecture.pdf",
+        "lab": "units/083/lab.pdf",
+        "answers": "units/083/answers.pdf",
+        "notebook": "units/083/experiment.ipynb",
+        "script": "units/083/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "independent_primary_source_spotchecks_and_author_source_records_reviewed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_all_cells_passed_socket_kernel_and_browser_not_tested",
+        "visual": "independent_lecture_page_3_visual_sample_and_all_pdf_page_boundary_checks_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "15af97ff4a4a0821a575129ec3d1bde92b3e89d3",
+        "verified_file_count": 39,
+        "verified_bytes": 4130449,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/083-087.json"
     },
     {
       "id": "084",
@@ -2911,18 +2925,32 @@
         "实验与验收": "从零实现标量计算图与反向累积；用复合函数和分支共享节点核验。",
         "常见误区": "反向模式是逐个参数做有限差分；共享节点梯度覆盖而不累加。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/084/lecture.pdf",
+        "lab": "units/084/lab.pdf",
+        "answers": "units/084/answers.pdf",
+        "notebook": "units/084/experiment.ipynb",
+        "script": "units/084/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "independent_primary_source_spotchecks_and_author_source_records_reviewed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_all_cells_passed_socket_kernel_and_browser_not_tested",
+        "visual": "independent_lecture_page_3_visual_sample_and_all_pdf_page_boundary_checks_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "15af97ff4a4a0821a575129ec3d1bde92b3e89d3",
+        "verified_file_count": 39,
+        "verified_bytes": 3571932,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/083-087.json"
     },
     {
       "id": "085",
@@ -2934,18 +2962,32 @@
         "实验与验收": "纸笔手算一批样本的前向和反向，从零训练；逐层有限差分核验。",
         "常见误区": "把反向传播当优化器；漏掉batch因子；矩阵转置靠试错。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/085/lecture.pdf",
+        "lab": "units/085/lab.pdf",
+        "answers": "units/085/answers.pdf",
+        "notebook": "units/085/experiment.ipynb",
+        "script": "units/085/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "independent_primary_source_spotchecks_and_author_source_records_reviewed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_all_cells_passed_socket_kernel_and_browser_not_tested",
+        "visual": "independent_lecture_page_3_visual_sample_and_all_pdf_page_boundary_checks_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "15af97ff4a4a0821a575129ec3d1bde92b3e89d3",
+        "verified_file_count": 41,
+        "verified_bytes": 4192501,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/083-087.json"
     },
     {
       "id": "086",
@@ -2957,18 +2999,32 @@
         "实验与验收": "把NumPy网络迁到PyTorch；对齐参数和输入，核验前向、梯度与一步更新。",
         "常见误区": "忘记清梯度或错误detach；验证阶段仍启用训练态；CPU/GPU数据不一致。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/086/lecture.pdf",
+        "lab": "units/086/lab.pdf",
+        "answers": "units/086/answers.pdf",
+        "notebook": "units/086/experiment.ipynb",
+        "script": "units/086/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "independent_primary_source_spotchecks_and_author_source_records_reviewed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_all_cells_passed_socket_kernel_and_browser_not_tested",
+        "visual": "independent_lecture_page_3_visual_sample_and_all_pdf_page_boundary_checks_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "15af97ff4a4a0821a575129ec3d1bde92b3e89d3",
+        "verified_file_count": 41,
+        "verified_bytes": 3045545,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/083-087.json"
     },
     {
       "id": "087",
@@ -2980,18 +3036,32 @@
         "实验与验收": "对不同深度画激活和梯度分布；改变初始化，验证小数据过拟合能力。",
         "常见误区": "只靠增大学习率救消失梯度；以训练不动推断模型表达力不足。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/087/lecture.pdf",
+        "lab": "units/087/lab.pdf",
+        "answers": "units/087/answers.pdf",
+        "notebook": "units/087/experiment.ipynb",
+        "script": "units/087/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "independent_primary_source_spotchecks_and_author_source_records_reviewed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_all_cells_passed_socket_kernel_and_browser_not_tested",
+        "visual": "independent_lecture_page_3_visual_sample_and_all_pdf_page_boundary_checks_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "15af97ff4a4a0821a575129ec3d1bde92b3e89d3",
+        "verified_file_count": 38,
+        "verified_bytes": 6764322,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/083-087.json"
     },
     {
       "id": "088",
