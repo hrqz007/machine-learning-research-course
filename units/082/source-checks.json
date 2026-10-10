@@ -1,0 +1,23 @@
+{
+  "checked_date_utc": "2026-10-10",
+  "online_sklearn_stable_version": "1.9.1",
+  "executed_sklearn_version": "1.8.0",
+  "sources": [
+    {
+      "url": "https://archive.ics.uci.edu/dataset/109/wine",
+      "actual_scope": "read; attribution, dimensions, origin and CC BY 4.0"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html",
+      "actual_scope": "read; public bundled loader"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/mixture.html",
+      "actual_scope": "read; mixture modeling and model selection"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html",
+      "actual_scope": "read; public APIs and covariance regularization"
+    }
+  ]
+}

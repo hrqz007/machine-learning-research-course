@@ -1,0 +1,100 @@
+{
+  "unit": "082",
+  "completed_utc": "2026-10-10T03:07:19.828626+00:00",
+  "numerical_experiment": "executed with deterministic make_data; frozen results in experiment-result.json",
+  "tests_normal": {
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "optimized": false
+  },
+  "tests_optimized": {
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "optimized": true
+  },
+  "notebook": {
+    "code_cells": 8,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "error_outputs": 0,
+    "image_outputs": 5,
+    "engine": "fresh Python process, in-process IPython InteractiveShell; no socket kernel",
+    "actual_execution": true,
+    "browser_interaction_tested": false,
+    "jupyter_socket_kernel_tested": false,
+    "output_path_resolved_before_chdir": true,
+    "accidental_nested_outputs_removed": true
+  },
+  "documents": {
+    "lecture": {
+      "chinese_characters": 7419,
+      "pdf_pages": 10,
+      "pdf_sha256": "555438a34efb5f25352c0c33919a59d180956d6b50bdaab8d8227a2b8162d8da",
+      "all_pages_rendered": true,
+      "all_pages_visually_reviewed": true,
+      "source_sha256": "3a8a49aadcfda9945e334c5b55ab1d6482150d7ace12dbba10555d3e7bcd3b76"
+    },
+    "lab": {
+      "chinese_characters": 3457,
+      "pdf_pages": 4,
+      "pdf_sha256": "3a38ba75f20282b31f5d08883f0ad26e1788631a61927ea3dac26d93e7772121",
+      "all_pages_rendered": true,
+      "all_pages_visually_reviewed": true,
+      "source_sha256": "86e549d8e11d9c5606025d9be92cb84e3db6c23bad2b494ec00f7fe9f3d406c8"
+    },
+    "answers": {
+      "chinese_characters": 3444,
+      "pdf_pages": 5,
+      "pdf_sha256": "fcd9cf7cf23c506abd551f26b89dbcd70b510ff921c20c2615865c2b8235ede2",
+      "all_pages_rendered": true,
+      "all_pages_visually_reviewed": true,
+      "source_sha256": "d91ddd2d95bf1cefc9336fee0ad47445325b12183acfef3ff9fe920e9f132460"
+    }
+  },
+  "figures": {
+    "png_count": 5,
+    "svg_count": 5,
+    "source": "plots.py; actual data and fitted results",
+    "visually_reviewed_in_pdf": true
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "IPython": "9.17.1",
+    "nbformat": "5.11.1"
+  },
+  "pdf_review": {
+    "method": "pdftoppm all-page rasterization; all-page contact sheets and enlarged formula/figure pages visually inspected",
+    "issues_corrected": [
+      "shortened lab/answers titles to avoid single-character title wrap",
+      "kept headings unbroken across pages",
+      "adjusted lecture line height to avoid references-only trailing page"
+    ],
+    "remaining_known_visual_defects": []
+  },
+  "limitations": [
+    "main GMM predictive checks hold parameters fixed",
+    "separate scalar conjugate baseline performs genuine parameter posterior prediction",
+    "Wine holdout has 36 rows and two features; no causal latent-class claim"
+  ],
+  "independent_parent_review": {
+    "all_final_pdf_pages_reviewed": true,
+    "pages_in_unit": 19,
+    "combined_pages": 37,
+    "result": "no remaining clipping, overlap, orphaned heading or glyph defects; final review confirmed 2026-10-10 03:07 UTC",
+    "optimized_tests_reviewed": 17
+  }
+}

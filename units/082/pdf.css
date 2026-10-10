@@ -1,0 +1,41 @@
+
+@page { size:A4; margin:20mm 19mm 19mm; @top-left {content: string(shorttitle); font-family:"Noto Sans CJK SC"; font-size:8pt;color:#64748b;} @bottom-right {content:counter(page);font-size:9pt;color:#64748b;} }
+body { font-family:"Noto Serif CJK SC",serif; font-size:10.5pt; line-height:1.73;color:#18202a; }
+h1,h2,h3,h4 {font-family:"Noto Sans CJK SC",sans-serif;color:#000;break-after:avoid; font-weight:700;}
+h1 {font-size:24pt;line-height:1.4;margin:0 0 7mm;string-set:shorttitle content();}
+h2 {font-size:16pt;line-height:1.4;margin:8mm 0 3mm;}
+h3 {font-size:12.3pt;line-height:1.45;margin:5mm 0 2mm;}
+p {margin:0 0 3mm;orphans:3;widows:3;text-align:left;overflow-wrap:anywhere;}
+a {color:#1e5a8a;text-decoration:none;overflow-wrap:anywhere;}
+strong {font-family:"Noto Sans CJK SC";font-weight:700;}
+figure {margin:4mm 0 4mm;break-inside:avoid;}
+figure img {display:block;margin:auto;max-width:100%;max-height:83mm;object-fit:contain;}
+figcaption {font-family:"Noto Sans CJK SC";font-size:9pt;line-height:1.55;color:#435064;margin-top:2mm;text-align:left;}
+p>img {display:block;margin:4mm auto;max-width:100%;max-height:87mm;object-fit:contain;}
+pre {white-space:pre-wrap;overflow-wrap:anywhere;font:8.5pt/1.5 "DejaVu Sans Mono",monospace;background:#f4f6f8;padding:3mm;break-inside:avoid;}
+code {font-family:"DejaVu Sans Mono","Noto Sans CJK SC",monospace;font-size:9pt;}
+table {border-collapse:collapse;width:100%;font-size:8.6pt;margin:4mm 0;line-height:1.5;}
+thead {display:table-header-group;} th,td {border:0.5pt solid #d9dfe6;padding:2mm;vertical-align:middle;} th{background:#e7edf4;font-family:"Noto Sans CJK SC";} tr{break-inside:avoid;} tbody tr:nth-child(even){background:#f8fafc;}
+li {margin-bottom:1.5mm;} ul,ol{padding-left:7mm;margin:2mm 0 4mm;}
+.math-display {text-align:center;margin:4mm 0;break-inside:avoid;} .math-display img {max-width:100%;max-height:25mm;}
+.math-inline {display:inline!important;vertical-align:-0.25em;max-height:1.5em!important;margin:0!important;}
+hr {border:0;border-top:.5pt solid #ddd;margin:5mm 0;}
+
+.math-display img{max-height:none}.math-inline{max-height:none!important;vertical-align:baseline;}
+
+table {break-inside:avoid;}
+
+figure img[src*="01_split_maps"] {max-height:105mm;}
+.math-display img {display:block;margin:0 auto;vertical-align:baseline!important;}
+
+body.lab {font-size:10pt;line-height:1.58;}
+
+.page-break {break-before:page;}
+body.answers h2+p {break-after:avoid;}
+
+.callout {background:#e9f5fb;border-left:4pt solid #24789b;padding:3mm;margin:3mm 0;}
+.warning {background:#fff2dd;border-left:4pt solid #c57913;padding:3mm;margin:3mm 0;}
+
+/* Keep the source note with the final lesson page, without shrinking type. */
+body.lecture {line-height:1.66;}
+h1,h2,h3,h4 {break-inside:avoid;}
