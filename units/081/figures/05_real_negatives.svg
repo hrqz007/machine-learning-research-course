@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="604.8pt" height="259.662313pt" viewBox="0 0 604.8 259.662313" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T04:44:09.020537</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 259.662313 
+L 604.8 259.662313 
+L 604.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g clip-path="url(#p255b61ad3a)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAAChUlEQVR4nO3dQXFiQRhGUZiKgEiIBBwECZEQCcQBUp4EJMQBWEBCFLxxMNn8r7jUnCPgq17c6l1X79d1XXf/mcPhkN5blmV07xn8efQBYLcTIhFCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJOHl0Qf4zel0evQRfnW5XEb3pt+sfH5+ju5twY1IghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRhX//w5+3tbXxz+kHW19fX6N77+/vo3vf39+jeFtyIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSkP/w536/j29Ov+G4Xq+je8fjcXTvGbgRSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkIf9mZQvTb0IOh8Po3s/Pz+jeM3AjkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIwn5d1/XRh/iX6fcgW5j+t2X6Tc3tdhvd24IbkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIQv7Dn2VZxjenHydN753P59G9Z+BGJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRhPyblS0+/Pn4+Bjde319Hd2bPt8zcCOSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjCXxIaNlPBxJquAAAAAElFTkSuQmCC" id="imageee84a47d9f" transform="scale(1 -1) translate(0 -89.723077)" x="7.2" y="-54.318412" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(33.68 39.167989)">真0：误报</text>
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(34.74 48.641489)">分数-23.5</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g clip-path="url(#p4665ee3ebf)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACwElEQVR4nO3dQVEjYRRG0Z8p9sQBSAAH4KAlIAEJkRAJSEACDkACOAgKMg5mNi/FHeYcAV91Urd696ovTqfTaf1nnp6eRvdeX19H9/b7/ejetm2je+fw67sfANYSIhFCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJOGifrPy/v4+vnl3dze+Oen6+np07xz/4W63G93zRiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhknA5PXg8Hkf3DofD6N5a88dJ07/58/NzdO/j42N0b621bm9vR/e8EUkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJGH8ZuXl5WV07xwfq5m+4Zi+WZm+BznHf+hmhR9JiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYTxm5X7+/vRvf1+P7q31vxdzbZto3s3Nzeje+f4zso0b0QShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEm4OJ1Op+9+iD/Z7Xbf/Qh/NX0D8/DwMLr39vY2ureW76zwQwmRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQS8sdT04dJa631+Pg4uvf19TW6d3V1Nbp3PB5H987BG5EEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBIuv/sB/mbbtvHN6ZuV5+fn0b3D4TC69y/wRiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYTfPQhVGQ23Ww8AAAAASUVORK5CYII=" id="imagef8489c0143" transform="scale(1 -1) translate(0 -89.723077)" x="107.4" y="-54.318412" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(133.88 39.167989)">真0：误报</text>
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(134.94 48.641489)">分数-24.3</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g clip-path="url(#pfcc89d2afd)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACvElEQVR4nO3dUU1sWRRF0cNLC7gOAAWAAySUA0oCOMAJSCgJSAAHJQEU3HbwvjZhdjOGgJVbycz526mLfd/3Ffb+/j6+eTgcxjcnTf/mbdtG977Dn5/+AFhLiEQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYSL6ZuV8/k8Obeur69H99Za6+XlZXRv+sbk8/NzdO/19XV07zt4EUkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJPwzPfj29ja6d3NzM7q31lrH43F8c9L9/f3o3nf8adLt7e3onheRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQSxm9Wtm2bnvx1pu9BTqfT6N5ablb4nxIiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkYfxmZfqW4ePjY3Rvrfn/HZn+zb/x7seLSIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCeM3K1dXV6N7l5eXo3trrXV3dze69/DwMLr3G3kRSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkjB9PTXt8fBzffHp6Gt07nU6je19fX6N7/4XjLi8iCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkXOz7vv/0R/zN+Xwe3zwcDqN709/4/Pw8unc8Hkf31lpr27bRPS8iCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgk/AvN3kSQQr1ZAQAAAABJRU5ErkJggg==" id="image1d1445e1d6" transform="scale(1 -1) translate(0 -89.723077)" x="207.6" y="-54.318412" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(234.08 39.167989)">真0：接纳</text>
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(235.14 48.641489)">分数-30.5</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g clip-path="url(#pc6a1171736)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACtUlEQVR4nO3dUU1jURSG0XMn8w4SkIAEHLQSkFIJdQASkFAJOAAJrYI7DuZpN3wzWUvAnyb9ct527rbv+77CLpfL+ObpdBrfnHQ+n0f3np+fR/fu4ddP/wBYS4hECJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJGErX6zsm3b+ObhcBjdu16vo3ufn5+je/e4+5m+g/EikiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJ+D09+P39Pbr38PAwurfWWu/v7+Obk47H4+je9H+yluMp/lNCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJIzfrHx8fIzuTd9GrLXW4+Pj+Oak0+k0ujf9AaF78CKSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjC+M3Ky8vL6N70/ca/4HK5jO5N/yf34EUkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJGE8ZuV6e+i3G630b215r8FczweR/fcrMAPESIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCRs+77vP/0j/mb6MGmtta7X6+je9LHTtm2je19fX6N7a6319PQ0uudFJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRhPEP/kx7fX0d3zyfz6N70zcwb29vo3vT9yX34EUkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJGEPxXyS00gu1qZAAAAAElFTkSuQmCC" id="image141c10e950" transform="scale(1 -1) translate(0 -89.723077)" x="307.8" y="-54.318412" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(334.28 39.167989)">真0：接纳</text>
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(335.34 48.641489)">分数-30.5</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g clip-path="url(#pd9557435b2)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACjklEQVR4nO3dUW3jUBRFUXc0AArFEAqhDFIIhmAIhVAIhRAIDYNACAMPg/m6VnfVtQAcOdLW+7vK03EcxxJ2vV7HN9/e3sY3J319fY3uPT8/j+6d4c93fwAsixCJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJT/WblTPuLbZtG92b/sbpm5WPj4/RvTN4EUkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJPydHvz8/BzdW9d1dG9ZlmXf9/HNSfU/JDqDF5EEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBLGb1bO+IOe3+b9/X1074wbnelNLyIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCTkb1Yej8fo3k/wG+9+vIgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIwfrOyruvo3u12G91blvk7mPqNyU+4+/EikiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJGD+emna5XMY3pw+8Xl5eRvemj52mf+8ZvIgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZLwdBzH8d0f8T/3+3188/X1dXRv+hu3bRvd2/d9dO8MXkQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEn4B6CjPjBBCbtqAAAAAElFTkSuQmCC" id="image69d0bfcdb3" transform="scale(1 -1) translate(0 -89.723077)" x="408" y="-54.318412" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(434.48 39.167989)">真0：接纳</text>
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(435.54 48.641489)">分数-34.9</text>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g clip-path="url(#p95d097ea11)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACvUlEQVR4nO3dUU0kQRhG0WKz7+CAwQEOAAcjASnjhJGAhHEAEgYHOOh1sE9/h0tyjoAv3clNvVXqZtu2bYVdLpfxzZeXl9G929vb0b3z+Ty6dzweR/f28OenPwDWEiIRQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiThZvrOyvf39+Tcen5+Ht1ba63D4TC6N32v5u7ubnTver2O7u3BiUiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJGH88tT0RZ2Hh4fRvbXW+vj4GN2bvuw0/c9vb2+je2ut9fr6OrrnRCRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYS/04PTD/7s4XQ6je69v7+P7j09PY3ufX5+ju7twYlIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJ43dWHh8fR/fu7+9H99aafwtm2vS7Lb+BE5EEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBLG76xMOx6P45vT76JMvy1zuVxG987n8+jeHpyIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQS8pen9nj85uvra3TvcDiM7k0/mrTHBbRpTkQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEm42bZt++mP+J/r9Tq+OX0nZPrOyvSDRNPftwcnIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJPwD2ZJLJsN1pdgAAAAASUVORK5CYII=" id="image8b1a756fe3" transform="scale(1 -1) translate(0 -89.723077)" x="508.2" y="-54.318412" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(534.68 39.167989)">真0：接纳</text>
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'" transform="translate(535.74 48.641489)">分数-36.2</text>
+   </g>
+  </g>
+  <g id="axes_7">
+   <g clip-path="url(#pfebc2887ad)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACl0lEQVR4nO3dYW0iARRG0emmAiqhEioBB7SOsICDSkACEsABEkDBrINtsnkst9tzBHyZSW7m38s8reu6LmHX63V8c7fbje59fn6O7m02m9G96fddlmV5e3sb3fs1ugZ/SYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJGE50c/wFem70GWZVn2+/3o3na7Hd07Ho+je4fDYXRvWdys8J8SIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJPzI46lpl8tldO92u43uvb+/j+7dgy8iCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkPK3ruj76If7k5eVlfHP6ZzXTNyHTe6+vr6N79+CLSIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCfmblXvcW0zfwZxOp9G9n8gXkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEp4f/QBfucd/Vs7n8+je9M3K9H9gvgNfRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCfnjqd1uN7758fExunc4HEb3HE/BgwiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGS8LSu6/roh/jXNpvN6N71eh3dm/6B0Hfgi0iCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIgm/AUI7QpJbVOB1AAAAAElFTkSuQmCC" id="image9431f37f08" transform="scale(1 -1) translate(0 -89.723077)" x="7.2" y="-162.739236" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="51.9" y="157.062313" transform="rotate(-0 51.9 157.062313)">真6：任务外类别</text>
+   </g>
+  </g>
+  <g id="axes_8">
+   <g clip-path="url(#p2d23963654)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACoUlEQVR4nO3dUU2jQRiG0WGzAuoAUAAS6gCkFAeVUCmVgoMiART8K4Fk87F9mj1HwJu5eDJ3k7nbtm1b/5nT6TS6dzweR/e+vr5G915eXkb31lrrfD6P7v0aXYO/JEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjCXf3Nyvv7+/jm6+treu9wOIzuPT4+ju6ttdblchndcyOSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEn4fe0DfGe/349vTn+oM236Q6L7+/vRvbXWenh4GN1zI5IgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESEL+w5/p9xtrrfX29ja+Oenp6Wl073g8ju6tNf/JkRuRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQS8v+s7Ha7ax/hW5fLZXRv+g+TW+BGJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRhPyblefn52sf4Vvn83l073A4jO7dAjciCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJGEu23btmsf4l/b7/ejex8fH+m9W+BGJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRhPyHPz9h+s3K6XQa3fv8/Bzd2+12o3s/wY1IghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJfwACNUFmEvykGQAAAABJRU5ErkJggg==" id="imaged09a3443c1" transform="scale(1 -1) translate(0 -89.723077)" x="107.4" y="-162.739236" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="152.1" y="157.062313" transform="rotate(-0 152.1 157.062313)">真6：任务外类别</text>
+   </g>
+  </g>
+  <g id="axes_9">
+   <g clip-path="url(#p8613e72b9a)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAAClklEQVR4nO3dYW1iURhFUZiMABwUB+CglVAJlYAE6gApSAAHldA6wMEbBzPJ5CPdpGsJOLkv2bn/bt56WZZlFfbx8TG+eTgcRvemz7jZbEb3pr/3Hpu/RtfgPwmRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSsJ5+s3K73SbnVvv9fnRvtVqtvr6+xjfLnp+fxzcvl8vonhuRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjC7+nBz8/P0b2f9tDpHt7e3r77CP/kRiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYT8m5V7eHp6Gt07nU6je6+vr6N7j8CNSIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCeNvVrbb7fTkuOkzvry8jO79RG5EEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJGH+zstlspifHXa/X0b3pf8vs9/vRvUfgRiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkrBelmX57kP8zfF4HN98f38f3dvtdqN75/N5dO8RfsLkRiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYTxH/5MOxwO45vTb0Jut1t67xG4EUkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJOEPnfpBY4uAPCcAAAAASUVORK5CYII=" id="image2f6d40c17c" transform="scale(1 -1) translate(0 -89.723077)" x="207.6" y="-162.739236" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="252.3" y="157.062313" transform="rotate(-0 252.3 157.062313)">真6：任务外类别</text>
+   </g>
+  </g>
+  <g id="axes_10">
+   <g clip-path="url(#p04c0ab1b54)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACr0lEQVR4nO3dUU0jQBhG0WHDe3FAJVRCcQAOkFAnIAEJlVApldAqKBI22fzNXsI5Ar7Mw828Tebhdrvd1i9zPB5H997e3kb3NpvN6N7pdBrdW2ut3W43uvdndA3+kRBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJD/U3K/d4b/Hy8jK69/HxMbr39fU1urff70f31lrr8/NzdM+NSIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIk4XF68Hw+j+4dDofRvbXWen5+Ht17f38f3Zv+kOgncCOSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjC+Ic/l8tlcm5tt9vRvbXWul6vo3ubzWZ0b/qDnukPhNZa6+npaXTPjUiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIgnjb1am3eO9xfTfLdNnfH19Hd37CdyIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGS8Pi/D/A30/95rDX/z8putxvd+43ciCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEvIf/lwul/HN/X4/urfdbkf3jsfj6N5P4EYkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJGE/JuVe5h+E3I4HEb3TqfT6N70m5p7cCOSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjCNyPATjvWkHJcAAAAAElFTkSuQmCC" id="imageb03c6eb6f8" transform="scale(1 -1) translate(0 -89.723077)" x="307.8" y="-162.739236" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="352.5" y="157.062313" transform="rotate(-0 352.5 157.062313)">真6：任务外类别</text>
+   </g>
+  </g>
+  <g id="axes_11">
+   <g clip-path="url(#pbe372eeb97)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACk0lEQVR4nO3dQW0bYRRG0UnVvQMhUAxhIASCzcAMYgYJFENwGASCGUz3XVbP6rV8DoBPs7j6d0/zsm3btjyZ8/k8unc6nUb3pn19fY1vrus6uvdrdA3+kRBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJL/Wblen7kmVZluPxOLr38fExujd9Y3K73Ub3lmVZfn5+Rve8iCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEn5PD14ul9G96UOne5g+dvr+/h7d+/z8HN27By8iCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkjN+sPILdbje6t67r6N70T472+/3o3j14EUkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJOEpb1ambzhOp9Po3jPyIpIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESML4zcrb29v05Ljb7fa/P4G/eBFJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCS8bNu2TQ5OHya9v7+P7i3L/Deu6zq6dzgcRvcegReRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQSxm9WHsH0Hcz1eh3du1wuo3uvr6+je/fgRSRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYQ/5WBE+WaEi9cAAAAASUVORK5CYII=" id="image6c345aea70" transform="scale(1 -1) translate(0 -89.723077)" x="408" y="-162.739236" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="452.7" y="157.062313" transform="rotate(-0 452.7 157.062313)">真6：任务外类别</text>
+   </g>
+  </g>
+  <g id="axes_12">
+   <g clip-path="url(#p9b8f981be1)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAACmklEQVR4nO3dUW1iURSG0dNJ34uUOmhxgAQkgAPqoBKQUAmVgITrhJEwyWST+SZdS8AfQr6ct537dL/f7+uHuV6v6b1t20b3DofD6N5aa31+fo7u/Rpdg78kRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESMJT/WblcrmMb07fmEzfb3x/f4/ufX19je6tNX9X40UkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZLwPD04fVTz8fExurfWWm9vb6N7u91udG/6P3x/fx/dewQvIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJIx/8Gf6YzX7/X50b621Xl5eRvdeX19H9w6Hw+je6XQa3XsELyIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCSM36xMm/6GyVprXS6X0b3/4SakzotIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJ+ZuV6W+YPML0t2UecadT50UkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZIgRBKESIIQSRAiCUIkQYgkCJEEIZLw/K9/wJ8cj8fxzfP5PLp3vV5H937iB4S8iCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkpC/WXnE/ca2baN7t9ttdO8n8iKSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjCbzRrSqW8h32qAAAAAElFTkSuQmCC" id="image565fe2cf4a" transform="scale(1 -1) translate(0 -89.723077)" x="508.2" y="-162.739236" width="89.723077" height="89.723077"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="552.9" y="157.062313" transform="rotate(-0 552.9 157.062313)">真6：任务外类别</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="302.4" y="16.75125" transform="rotate(-0 302.4 16.75125)">真实保留样本：上排为高分正常负例，下排为真实新类别</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p255b61ad3a">
+   <rect x="7.2" y="54.641489" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="p4665ee3ebf">
+   <rect x="107.4" y="54.641489" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="pfcc89d2afd">
+   <rect x="207.6" y="54.641489" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="pc6a1171736">
+   <rect x="307.8" y="54.641489" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="pd9557435b2">
+   <rect x="408" y="54.641489" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="p95d097ea11">
+   <rect x="508.2" y="54.641489" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="pfebc2887ad">
+   <rect x="7.2" y="163.062313" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="p2d23963654">
+   <rect x="107.4" y="163.062313" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="p8613e72b9a">
+   <rect x="207.6" y="163.062313" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="p04c0ab1b54">
+   <rect x="307.8" y="163.062313" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="pbe372eeb97">
+   <rect x="408" y="163.062313" width="89.4" height="89.4"/>
+  </clipPath>
+  <clipPath id="p9b8f981be1">
+   <rect x="508.2" y="163.062313" width="89.4" height="89.4"/>
+  </clipPath>
+ </defs>
+</svg>
