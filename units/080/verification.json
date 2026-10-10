@@ -1,0 +1,116 @@
+{
+  "unit": "080",
+  "title": "半监督与弱监督学习",
+  "checked_date": "2026-10-10",
+  "status": "complete",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.8",
+      "nbformat": "5.11.1",
+      "IPython": "9.17.1",
+      "Markdown": "3.11",
+      "WeasyPrint": "70.0"
+    }
+  },
+  "data": {
+    "source": "original synthetic data with fixed PCG64 seeds",
+    "external_downloads": false,
+    "independent_regeneration": "all generated JSON byte-identical, including generation.json"
+  },
+  "execution": {
+    "experiment": "fresh process; exact-byte JSON independent replay confirmed",
+    "tests_normal": {
+      "tests_run": 10,
+      "failures": 0,
+      "errors": 0,
+      "optimized": false
+    },
+    "tests_optimized": {
+      "tests_run": 10,
+      "failures": 0,
+      "errors": 0,
+      "optimized": true
+    },
+    "notebook": {
+      "engine": "fresh Python process with in-process IPython InteractiveShell; no socket kernel",
+      "executed_code_cells": 6,
+      "sequential_execution_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "error_outputs": 0,
+      "embedded_png_outputs": 5,
+      "reexecuted_after_final_code_changes": true
+    }
+  },
+  "content": {
+    "han_characters": {
+      "lecture": 6749,
+      "lab": 3161,
+      "answers": 2913
+    },
+    "required_curriculum_title_preserved": true
+  },
+  "pdf": {
+    "renderer": "local MathJax 3.2.2 SVG + WeasyPrint 70.0; Noto CJK fonts",
+    "pages": {
+      "lecture": 10,
+      "lab": 4,
+      "answers": 4
+    },
+    "sha256": {
+      "lecture": "a450f4328442b2b96500777192ead18eafc33cceadfe1c23790018288bdc02ac",
+      "lab": "4c06d98b2aa4644b92f6c8a253d087c244f48ffc7f9af3dca056b03cc5613672",
+      "answers": "e89497c6529a21d285ec40726f295476dfeb5ddda9e9109e3f3d7c6ba681cdb9"
+    },
+    "text_checks": {
+      "lecture": {
+        "all_pages_have_text": true,
+        "replacement_character_count": 0,
+        "page_count": 10
+      },
+      "lab": {
+        "all_pages_have_text": true,
+        "replacement_character_count": 0,
+        "page_count": 4
+      },
+      "answers": {
+        "all_pages_have_text": true,
+        "replacement_character_count": 0,
+        "page_count": 4
+      }
+    },
+    "visual_review": "all pages rendered and inspected in contact sheets by author and independently by parent; formula and figure close-ups inspected; no clipping, overlap, missing glyphs",
+    "final_minor_edit": "079 lab execution-engine wording and 080 >= threshold wording clarified, re-rendered and page-checked"
+  },
+  "figures": {
+    "count": 5,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "replay_png_byte_identical": true,
+    "external_assets": false
+  },
+  "limitations": [
+    "Synthetic teaching examples; no real-world data validation or external CI.",
+    "Notebook real sequential IPython execution; no Jupyter socket-kernel or browser interaction test.",
+    "Given-accuracy weak-label aggregation illustrates conditional independence; no learned Snorkel label model or FixMatch implementation."
+  ],
+  "numerical_summary": {
+    "predetermined_configurations": 45,
+    "valid_configurations": 44,
+    "single_observed_class_reported": 1,
+    "wrong_pseudolabels_in_stress": 120,
+    "weak_rule_duplication_probability_change": [
+      0.5,
+      0.8
+    ]
+  }
+}

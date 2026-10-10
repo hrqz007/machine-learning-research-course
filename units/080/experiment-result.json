@@ -1,0 +1,2406 @@
+{
+  "protocol": {
+    "ratios": [
+      0.02,
+      0.1,
+      0.3
+    ],
+    "nominal_noise_probabilities": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "seeds": [
+      7,
+      19,
+      31,
+      43,
+      59
+    ],
+    "threshold": 0.8,
+    "pseudo_weight": 0.5,
+    "rounds": 5,
+    "l2": 0.05,
+    "test_selection": "none; all predetermined conditions reported",
+    "validation_usage": "reserved; no tuning in frozen experiment"
+  },
+  "summaries": [
+    {
+      "ratio": 0.02,
+      "noise": 0.0,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.7933333333333332,
+      "pseudo_mean_accuracy": 0.7826666666666668,
+      "mean_accuracy_change": -0.010666666666666647,
+      "change_std_ddof1": 0.027603341182625807,
+      "mean_pseudo_error_rate": 0.15062751276793027
+    },
+    {
+      "ratio": 0.02,
+      "noise": 0.25,
+      "valid_seeds": 4,
+      "supervised_mean_accuracy": 0.59625,
+      "pseudo_mean_accuracy": 0.5758333333333333,
+      "mean_accuracy_change": -0.020416666666666652,
+      "change_std_ddof1": 0.09204844738868041,
+      "mean_pseudo_error_rate": 0.4050220165660466
+    },
+    {
+      "ratio": 0.02,
+      "noise": 0.5,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.3443333333333333,
+      "pseudo_mean_accuracy": 0.3976666666666667,
+      "mean_accuracy_change": 0.05333333333333333,
+      "change_std_ddof1": 0.10789655539759677,
+      "mean_pseudo_error_rate": 0.625976223994713
+    },
+    {
+      "ratio": 0.1,
+      "noise": 0.0,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.8823333333333334,
+      "pseudo_mean_accuracy": 0.8773333333333333,
+      "mean_accuracy_change": -0.004999999999999982,
+      "change_std_ddof1": 0.005137011669140852,
+      "mean_pseudo_error_rate": 0.04949947274976649
+    },
+    {
+      "ratio": 0.1,
+      "noise": 0.25,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.784,
+      "pseudo_mean_accuracy": 0.7449999999999999,
+      "mean_accuracy_change": -0.039000000000000014,
+      "change_std_ddof1": 0.03843464871990147,
+      "mean_pseudo_error_rate": 0.1218490012955662
+    },
+    {
+      "ratio": 0.1,
+      "noise": 0.5,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.45999999999999996,
+      "pseudo_mean_accuracy": 0.44833333333333336,
+      "mean_accuracy_change": -0.011666666666666681,
+      "change_std_ddof1": 0.017911821050170543,
+      "mean_pseudo_error_rate": 0.5957246293529479
+    },
+    {
+      "ratio": 0.3,
+      "noise": 0.0,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.8950000000000001,
+      "pseudo_mean_accuracy": 0.8976666666666666,
+      "mean_accuracy_change": 0.002666666666666684,
+      "change_std_ddof1": 0.0034560735588879156,
+      "mean_pseudo_error_rate": 0.026018348623853216
+    },
+    {
+      "ratio": 0.3,
+      "noise": 0.25,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.8426666666666666,
+      "pseudo_mean_accuracy": 0.8363333333333334,
+      "mean_accuracy_change": -0.006333333333333369,
+      "change_std_ddof1": 0.004915960401250839,
+      "mean_pseudo_error_rate": 0.01585501670547737
+    },
+    {
+      "ratio": 0.3,
+      "noise": 0.5,
+      "valid_seeds": 5,
+      "supervised_mean_accuracy": 0.43533333333333335,
+      "pseudo_mean_accuracy": 0.43533333333333335,
+      "mean_accuracy_change": 0.0,
+      "change_std_ddof1": 0.0,
+      "mean_pseudo_error_rate": null
+    }
+  ],
+  "runs": [
+    {
+      "seed": 7,
+      "ratio": 0.02,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8283333333333334,
+        "brier": 0.12080327916030474,
+        "log_loss": 0.38524293042900715
+      },
+      "pseudo": {
+        "accuracy": 0.8283333333333334,
+        "brier": 0.12103532306138277,
+        "log_loss": 0.3841439536357829
+      },
+      "accuracy_change": 0.0,
+      "accepted": 164,
+      "wrong_accepted": 14,
+      "pseudo_error_rate": 0.08536585365853659,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 157,
+          "new_count": 157,
+          "wrong_new": 14,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 160,
+          "new_count": 3,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 162,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 163,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 164,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.02,
+      "noise": 0.25,
+      "status": "single_observed_class",
+      "label_count": 4
+    },
+    {
+      "seed": 7,
+      "ratio": 0.02,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.75,
+      "supervised": {
+        "accuracy": 0.255,
+        "brier": 0.5921098213530657,
+        "log_loss": 2.1111863348761837
+      },
+      "pseudo": {
+        "accuracy": 0.49333333333333335,
+        "brier": 0.5026684856557508,
+        "log_loss": 2.555625507005375
+      },
+      "accuracy_change": 0.23833333333333334,
+      "accepted": 227,
+      "wrong_accepted": 128,
+      "pseudo_error_rate": 0.5638766519823789,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 140,
+          "new_count": 140,
+          "wrong_new": 120,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 175,
+          "new_count": 35,
+          "wrong_new": 6,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 197,
+          "new_count": 22,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 216,
+          "new_count": 19,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 227,
+          "new_count": 11,
+          "wrong_new": 0,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.1,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.885,
+        "brier": 0.08019961918160262,
+        "log_loss": 0.26525225075727044
+      },
+      "pseudo": {
+        "accuracy": 0.8866666666666667,
+        "brier": 0.07981517671919744,
+        "log_loss": 0.26506399633409755
+      },
+      "accuracy_change": 0.0016666666666667052,
+      "accepted": 152,
+      "wrong_accepted": 7,
+      "pseudo_error_rate": 0.046052631578947366,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 147,
+          "new_count": 147,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 149,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 152,
+          "new_count": 3,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 152,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.1,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.3333333333333333,
+      "supervised": {
+        "accuracy": 0.8533333333333334,
+        "brier": 0.14052276433229713,
+        "log_loss": 0.45195490159999013
+      },
+      "pseudo": {
+        "accuracy": 0.84,
+        "brier": 0.12375466279212517,
+        "log_loss": 0.3931916994797307
+      },
+      "accuracy_change": -0.01333333333333342,
+      "accepted": 126,
+      "wrong_accepted": 9,
+      "pseudo_error_rate": 0.07142857142857142,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 24,
+          "new_count": 24,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 73,
+          "new_count": 49,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 110,
+          "new_count": 37,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 123,
+          "new_count": 13,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 126,
+          "new_count": 3,
+          "wrong_new": 1,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.1,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.5416666666666666,
+      "supervised": {
+        "accuracy": 0.315,
+        "brier": 0.32059840446527366,
+        "log_loss": 0.8433243484814678
+      },
+      "pseudo": {
+        "accuracy": 0.3016666666666667,
+        "brier": 0.4296926635627119,
+        "log_loss": 1.1725754826579546
+      },
+      "accuracy_change": -0.013333333333333308,
+      "accepted": 33,
+      "wrong_accepted": 30,
+      "pseudo_error_rate": 0.9090909090909091,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 1,
+          "new_count": 1,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 2,
+          "new_count": 1,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 5,
+          "new_count": 3,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 12,
+          "new_count": 7,
+          "wrong_new": 6,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 33,
+          "new_count": 21,
+          "wrong_new": 20,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.3,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8983333333333333,
+        "brier": 0.08058710678059149,
+        "log_loss": 0.27347013469649234
+      },
+      "pseudo": {
+        "accuracy": 0.8983333333333333,
+        "brier": 0.07921713005429469,
+        "log_loss": 0.267118324889914
+      },
+      "accuracy_change": 0.0,
+      "accepted": 109,
+      "wrong_accepted": 3,
+      "pseudo_error_rate": 0.027522935779816515,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 105,
+          "new_count": 105,
+          "wrong_new": 3,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 109,
+          "new_count": 4,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 109,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.3,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.2638888888888889,
+      "supervised": {
+        "accuracy": 0.8666666666666667,
+        "brier": 0.155150751706449,
+        "log_loss": 0.49332687300001604
+      },
+      "pseudo": {
+        "accuracy": 0.8633333333333333,
+        "brier": 0.15422439963384557,
+        "log_loss": 0.4910377741015397
+      },
+      "accuracy_change": -0.0033333333333334103,
+      "accepted": 1,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": 0.0,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 1,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 1,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "ratio": 0.3,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.4722222222222222,
+      "supervised": {
+        "accuracy": 0.38166666666666665,
+        "brier": 0.275371190364224,
+        "log_loss": 0.7449784918004222
+      },
+      "pseudo": {
+        "accuracy": 0.38166666666666665,
+        "brier": 0.275371190364224,
+        "log_loss": 0.7449784918004222
+      },
+      "accuracy_change": 0.0,
+      "accepted": 0,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": null,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 0,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.02,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.6683333333333333,
+        "brier": 0.24638597665309855,
+        "log_loss": 0.8311791457572184
+      },
+      "pseudo": {
+        "accuracy": 0.61,
+        "brier": 0.30930575671240973,
+        "log_loss": 1.0765530435923956
+      },
+      "accuracy_change": -0.05833333333333335,
+      "accepted": 206,
+      "wrong_accepted": 75,
+      "pseudo_error_rate": 0.3640776699029126,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 179,
+          "new_count": 179,
+          "wrong_new": 54,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 192,
+          "new_count": 13,
+          "wrong_new": 8,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 200,
+          "new_count": 8,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 204,
+          "new_count": 4,
+          "wrong_new": 4,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 206,
+          "new_count": 2,
+          "wrong_new": 2,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.02,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.6683333333333333,
+        "brier": 0.24638597665309855,
+        "log_loss": 0.8311791457572184
+      },
+      "pseudo": {
+        "accuracy": 0.61,
+        "brier": 0.30930575671240973,
+        "log_loss": 1.0765530435923956
+      },
+      "accuracy_change": -0.05833333333333335,
+      "accepted": 206,
+      "wrong_accepted": 75,
+      "pseudo_error_rate": 0.3640776699029126,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 179,
+          "new_count": 179,
+          "wrong_new": 54,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 192,
+          "new_count": 13,
+          "wrong_new": 8,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 200,
+          "new_count": 8,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 204,
+          "new_count": 4,
+          "wrong_new": 4,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 206,
+          "new_count": 2,
+          "wrong_new": 2,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.02,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.75,
+      "supervised": {
+        "accuracy": 0.5816666666666667,
+        "brier": 0.32651403443206156,
+        "log_loss": 1.13428666189359
+      },
+      "pseudo": {
+        "accuracy": 0.5416666666666666,
+        "brier": 0.349516734519778,
+        "log_loss": 1.1798602673610783
+      },
+      "accuracy_change": -0.040000000000000036,
+      "accepted": 146,
+      "wrong_accepted": 63,
+      "pseudo_error_rate": 0.4315068493150685,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 142,
+          "new_count": 142,
+          "wrong_new": 59,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 145,
+          "new_count": 3,
+          "wrong_new": 3,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 146,
+          "new_count": 1,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 146,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.1,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.865,
+        "brier": 0.10004818806155825,
+        "log_loss": 0.3292820526019901
+      },
+      "pseudo": {
+        "accuracy": 0.8583333333333333,
+        "brier": 0.1044842570524874,
+        "log_loss": 0.34065282096030614
+      },
+      "accuracy_change": -0.00666666666666671,
+      "accepted": 139,
+      "wrong_accepted": 10,
+      "pseudo_error_rate": 0.07194244604316546,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 139,
+          "new_count": 139,
+          "wrong_new": 10,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 139,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.1,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.25,
+      "supervised": {
+        "accuracy": 0.87,
+        "brier": 0.15496398300441047,
+        "log_loss": 0.49320165508597164
+      },
+      "pseudo": {
+        "accuracy": 0.8283333333333334,
+        "brier": 0.12531793071682087,
+        "log_loss": 0.3990214433786841
+      },
+      "accuracy_change": -0.04166666666666663,
+      "accepted": 80,
+      "wrong_accepted": 2,
+      "pseudo_error_rate": 0.025,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 6,
+          "new_count": 6,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 20,
+          "new_count": 14,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 43,
+          "new_count": 23,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 67,
+          "new_count": 24,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 80,
+          "new_count": 13,
+          "wrong_new": 0,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.1,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.4583333333333333,
+      "supervised": {
+        "accuracy": 0.6833333333333333,
+        "brier": 0.20084784017298682,
+        "log_loss": 0.5836507536675286
+      },
+      "pseudo": {
+        "accuracy": 0.6716666666666666,
+        "brier": 0.22800065098051314,
+        "log_loss": 0.6817624268262562
+      },
+      "accuracy_change": -0.011666666666666714,
+      "accepted": 113,
+      "wrong_accepted": 24,
+      "pseudo_error_rate": 0.21238938053097345,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 50,
+          "new_count": 50,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 90,
+          "new_count": 40,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 110,
+          "new_count": 20,
+          "wrong_new": 9,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 113,
+          "new_count": 3,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 113,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.3,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.9183333333333333,
+        "brier": 0.07555150942843869,
+        "log_loss": 0.2673695610822835
+      },
+      "pseudo": {
+        "accuracy": 0.9233333333333333,
+        "brier": 0.07429611213429316,
+        "log_loss": 0.26221509713561103
+      },
+      "accuracy_change": 0.0050000000000000044,
+      "accepted": 109,
+      "wrong_accepted": 1,
+      "pseudo_error_rate": 0.009174311926605505,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 102,
+          "new_count": 102,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 108,
+          "new_count": 6,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 109,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 109,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.3,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.2361111111111111,
+      "supervised": {
+        "accuracy": 0.88,
+        "brier": 0.12512333997511127,
+        "log_loss": 0.41749892493343194
+      },
+      "pseudo": {
+        "accuracy": 0.8683333333333333,
+        "brier": 0.11349355607329649,
+        "log_loss": 0.38070125507946034
+      },
+      "accuracy_change": -0.011666666666666714,
+      "accepted": 51,
+      "wrong_accepted": 1,
+      "pseudo_error_rate": 0.0196078431372549,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 31,
+          "new_count": 31,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 47,
+          "new_count": 16,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 51,
+          "new_count": 4,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 51,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "ratio": 0.3,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.5,
+      "supervised": {
+        "accuracy": 0.5116666666666667,
+        "brier": 0.2571915087857708,
+        "log_loss": 0.7080842502134304
+      },
+      "pseudo": {
+        "accuracy": 0.5116666666666667,
+        "brier": 0.2571915087857708,
+        "log_loss": 0.7080842502134304
+      },
+      "accuracy_change": 0.0,
+      "accepted": 0,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": null,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 0,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.02,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8933333333333333,
+        "brier": 0.0811945354553089,
+        "log_loss": 0.26981214099752665
+      },
+      "pseudo": {
+        "accuracy": 0.89,
+        "brier": 0.08261682885249669,
+        "log_loss": 0.27638245457754773
+      },
+      "accuracy_change": -0.0033333333333332993,
+      "accepted": 162,
+      "wrong_accepted": 5,
+      "pseudo_error_rate": 0.030864197530864196,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 162,
+          "new_count": 162,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 162,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.02,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8933333333333333,
+        "brier": 0.0811945354553089,
+        "log_loss": 0.26981214099752665
+      },
+      "pseudo": {
+        "accuracy": 0.89,
+        "brier": 0.08261682885249669,
+        "log_loss": 0.27638245457754773
+      },
+      "accuracy_change": -0.0033333333333332993,
+      "accepted": 162,
+      "wrong_accepted": 5,
+      "pseudo_error_rate": 0.030864197530864196,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 162,
+          "new_count": 162,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 162,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.02,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.5,
+      "supervised": {
+        "accuracy": 0.3883333333333333,
+        "brier": 0.5062713252322615,
+        "log_loss": 2.1045713382480753
+      },
+      "pseudo": {
+        "accuracy": 0.4066666666666667,
+        "brier": 0.4855914916748249,
+        "log_loss": 1.9599241920591939
+      },
+      "accuracy_change": 0.018333333333333368,
+      "accepted": 182,
+      "wrong_accepted": 107,
+      "pseudo_error_rate": 0.5879120879120879,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 169,
+          "new_count": 169,
+          "wrong_new": 103,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 176,
+          "new_count": 7,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 180,
+          "new_count": 4,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 182,
+          "new_count": 2,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 182,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.1,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8983333333333333,
+        "brier": 0.08368410874507376,
+        "log_loss": 0.2818542961937137
+      },
+      "pseudo": {
+        "accuracy": 0.8916666666666667,
+        "brier": 0.0817623190994992,
+        "log_loss": 0.2738476463167809
+      },
+      "accuracy_change": -0.006666666666666599,
+      "accepted": 137,
+      "wrong_accepted": 3,
+      "pseudo_error_rate": 0.021897810218978103,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 129,
+          "new_count": 129,
+          "wrong_new": 3,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 134,
+          "new_count": 5,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 135,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 137,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 137,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.1,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.25,
+      "supervised": {
+        "accuracy": 0.7733333333333333,
+        "brier": 0.15690745486846586,
+        "log_loss": 0.4793717571968616
+      },
+      "pseudo": {
+        "accuracy": 0.78,
+        "brier": 0.15279497124181127,
+        "log_loss": 0.4711382718044975
+      },
+      "accuracy_change": 0.00666666666666671,
+      "accepted": 117,
+      "wrong_accepted": 12,
+      "pseudo_error_rate": 0.10256410256410256,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 81,
+          "new_count": 81,
+          "wrong_new": 8,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 112,
+          "new_count": 31,
+          "wrong_new": 3,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 117,
+          "new_count": 5,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 117,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.1,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.5833333333333334,
+      "supervised": {
+        "accuracy": 0.26666666666666666,
+        "brier": 0.33715198731778384,
+        "log_loss": 0.8772088084601876
+      },
+      "pseudo": {
+        "accuracy": 0.22833333333333333,
+        "brier": 0.4434214001748499,
+        "log_loss": 1.1742614194854109
+      },
+      "accuracy_change": -0.03833333333333333,
+      "accepted": 30,
+      "wrong_accepted": 30,
+      "pseudo_error_rate": 1.0,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 1,
+          "new_count": 1,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 3,
+          "new_count": 2,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 6,
+          "new_count": 3,
+          "wrong_new": 3,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 13,
+          "new_count": 7,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 30,
+          "new_count": 17,
+          "wrong_new": 17,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.3,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8883333333333333,
+        "brier": 0.08712315416321556,
+        "log_loss": 0.295038486979754
+      },
+      "pseudo": {
+        "accuracy": 0.8916666666666667,
+        "brier": 0.08458173088721845,
+        "log_loss": 0.28490121287973286
+      },
+      "accuracy_change": 0.0033333333333334103,
+      "accepted": 100,
+      "wrong_accepted": 2,
+      "pseudo_error_rate": 0.02,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 97,
+          "new_count": 97,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 100,
+          "new_count": 3,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 100,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.3,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.25,
+      "supervised": {
+        "accuracy": 0.7683333333333333,
+        "brier": 0.16372304809323115,
+        "log_loss": 0.5047449625587871
+      },
+      "pseudo": {
+        "accuracy": 0.7566666666666667,
+        "brier": 0.15930589956539568,
+        "log_loss": 0.48601568234701614
+      },
+      "accuracy_change": -0.011666666666666603,
+      "accepted": 42,
+      "wrong_accepted": 2,
+      "pseudo_error_rate": 0.047619047619047616,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 18,
+          "new_count": 18,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 29,
+          "new_count": 11,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 40,
+          "new_count": 11,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 42,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 42,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "ratio": 0.3,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.5,
+      "supervised": {
+        "accuracy": 0.4583333333333333,
+        "brier": 0.2637650156759644,
+        "log_loss": 0.7212023269948171
+      },
+      "pseudo": {
+        "accuracy": 0.4583333333333333,
+        "brier": 0.2637650156759644,
+        "log_loss": 0.7212023269948171
+      },
+      "accuracy_change": 0.0,
+      "accepted": 0,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": null,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 0,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.02,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.815,
+        "brier": 0.12696139350804278,
+        "log_loss": 0.3905606619314126
+      },
+      "pseudo": {
+        "accuracy": 0.8283333333333334,
+        "brier": 0.11584674962698752,
+        "log_loss": 0.3592291086978787
+      },
+      "accuracy_change": 0.01333333333333342,
+      "accepted": 163,
+      "wrong_accepted": 7,
+      "pseudo_error_rate": 0.04294478527607362,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 142,
+          "new_count": 142,
+          "wrong_new": 6,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 152,
+          "new_count": 10,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 160,
+          "new_count": 8,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 161,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 163,
+          "new_count": 2,
+          "wrong_new": 1,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.02,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.5,
+      "supervised": {
+        "accuracy": 0.2,
+        "brier": 0.3501529017446316,
+        "log_loss": 0.9049716707262502
+      },
+      "pseudo": {
+        "accuracy": 0.29833333333333334,
+        "brier": 0.5628863611130484,
+        "log_loss": 2.0112311995589796
+      },
+      "accuracy_change": 0.09833333333333333,
+      "accepted": 153,
+      "wrong_accepted": 119,
+      "pseudo_error_rate": 0.7777777777777778,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 3,
+          "new_count": 3,
+          "wrong_new": 3,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 66,
+          "new_count": 63,
+          "wrong_new": 56,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 134,
+          "new_count": 68,
+          "wrong_new": 49,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 149,
+          "new_count": 15,
+          "wrong_new": 9,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 153,
+          "new_count": 4,
+          "wrong_new": 2,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.02,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.75,
+      "supervised": {
+        "accuracy": 0.25833333333333336,
+        "brier": 0.6032480701192248,
+        "log_loss": 2.3161772275982986
+      },
+      "pseudo": {
+        "accuracy": 0.30333333333333334,
+        "brier": 0.5770872429903688,
+        "log_loss": 2.3700234658376105
+      },
+      "accuracy_change": 0.044999999999999984,
+      "accepted": 170,
+      "wrong_accepted": 132,
+      "pseudo_error_rate": 0.7764705882352941,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 153,
+          "new_count": 153,
+          "wrong_new": 126,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 158,
+          "new_count": 5,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 162,
+          "new_count": 4,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 166,
+          "new_count": 4,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 170,
+          "new_count": 4,
+          "wrong_new": 1,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.1,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8933333333333333,
+        "brier": 0.08741099964658669,
+        "log_loss": 0.28952656794430237
+      },
+      "pseudo": {
+        "accuracy": 0.8916666666666667,
+        "brier": 0.08847937749839152,
+        "log_loss": 0.2935673419568257
+      },
+      "accuracy_change": -0.0016666666666665941,
+      "accepted": 145,
+      "wrong_accepted": 6,
+      "pseudo_error_rate": 0.041379310344827586,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 145,
+          "new_count": 145,
+          "wrong_new": 6,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 145,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.1,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.375,
+      "supervised": {
+        "accuracy": 0.6433333333333333,
+        "brier": 0.21252016241175406,
+        "log_loss": 0.6097065584035577
+      },
+      "pseudo": {
+        "accuracy": 0.59,
+        "brier": 0.2813474157780043,
+        "log_loss": 0.8135324516220462
+      },
+      "accuracy_change": -0.053333333333333344,
+      "accepted": 131,
+      "wrong_accepted": 31,
+      "pseudo_error_rate": 0.2366412213740458,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 39,
+          "new_count": 39,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 87,
+          "new_count": 48,
+          "wrong_new": 6,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 107,
+          "new_count": 20,
+          "wrong_new": 6,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 122,
+          "new_count": 15,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 131,
+          "new_count": 9,
+          "wrong_new": 7,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.1,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.5416666666666666,
+      "supervised": {
+        "accuracy": 0.355,
+        "brier": 0.363579497671167,
+        "log_loss": 0.9661123839607554
+      },
+      "pseudo": {
+        "accuracy": 0.34833333333333333,
+        "brier": 0.4776945626748457,
+        "log_loss": 1.5004002389870872
+      },
+      "accuracy_change": -0.006666666666666654,
+      "accepted": 112,
+      "wrong_accepted": 82,
+      "pseudo_error_rate": 0.7321428571428571,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 36,
+          "new_count": 36,
+          "wrong_new": 26,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 79,
+          "new_count": 43,
+          "wrong_new": 31,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 101,
+          "new_count": 22,
+          "wrong_new": 17,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 108,
+          "new_count": 7,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 112,
+          "new_count": 4,
+          "wrong_new": 3,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.3,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8933333333333333,
+        "brier": 0.08631219116985893,
+        "log_loss": 0.2896028150380857
+      },
+      "pseudo": {
+        "accuracy": 0.8916666666666667,
+        "brier": 0.08676024274559598,
+        "log_loss": 0.29074753800504505
+      },
+      "accuracy_change": -0.0016666666666665941,
+      "accepted": 109,
+      "wrong_accepted": 3,
+      "pseudo_error_rate": 0.027522935779816515,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 106,
+          "new_count": 106,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 107,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 109,
+          "new_count": 2,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 109,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.3,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.3194444444444444,
+      "supervised": {
+        "accuracy": 0.8,
+        "brier": 0.1817037311808659,
+        "log_loss": 0.5513318004534744
+      },
+      "pseudo": {
+        "accuracy": 0.7966666666666666,
+        "brier": 0.17943603867044491,
+        "log_loss": 0.5459673116212936
+      },
+      "accuracy_change": -0.0033333333333334103,
+      "accepted": 2,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": 0.0,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 1,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 2,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 2,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "ratio": 0.3,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.5277777777777778,
+      "supervised": {
+        "accuracy": 0.2683333333333333,
+        "brier": 0.2913885996051679,
+        "log_loss": 0.7772080219249097
+      },
+      "pseudo": {
+        "accuracy": 0.2683333333333333,
+        "brier": 0.2913885996051679,
+        "log_loss": 0.7772080219249097
+      },
+      "accuracy_change": 0.0,
+      "accepted": 0,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": null,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 0,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.02,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.7616666666666667,
+        "brier": 0.17525851804134335,
+        "log_loss": 0.5766404934071323
+      },
+      "pseudo": {
+        "accuracy": 0.7566666666666667,
+        "brier": 0.17719778632857267,
+        "log_loss": 0.5600512822575624
+      },
+      "accuracy_change": -0.0050000000000000044,
+      "accepted": 174,
+      "wrong_accepted": 40,
+      "pseudo_error_rate": 0.22988505747126436,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 168,
+          "new_count": 168,
+          "wrong_new": 38,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 171,
+          "new_count": 3,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 174,
+          "new_count": 3,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 174,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.02,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 0.5,
+      "supervised": {
+        "accuracy": 0.6233333333333333,
+        "brier": 0.24159545553085587,
+        "log_loss": 0.6902281371967195
+      },
+      "pseudo": {
+        "accuracy": 0.505,
+        "brier": 0.42429596042652024,
+        "log_loss": 1.6196730290102268
+      },
+      "accuracy_change": -0.11833333333333329,
+      "accepted": 228,
+      "wrong_accepted": 102,
+      "pseudo_error_rate": 0.4473684210526316,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 92,
+          "new_count": 92,
+          "wrong_new": 22,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 169,
+          "new_count": 77,
+          "wrong_new": 42,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 200,
+          "new_count": 31,
+          "wrong_new": 17,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 219,
+          "new_count": 19,
+          "wrong_new": 14,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 228,
+          "new_count": 9,
+          "wrong_new": 7,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.02,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 4,
+      "actual_noise_fraction": 1.0,
+      "supervised": {
+        "accuracy": 0.23833333333333334,
+        "brier": 0.6402978733014164,
+        "log_loss": 2.6709416381605338
+      },
+      "pseudo": {
+        "accuracy": 0.24333333333333335,
+        "brier": 0.6114520992226804,
+        "log_loss": 2.339627196460581
+      },
+      "accuracy_change": 0.0050000000000000044,
+      "accepted": 174,
+      "wrong_accepted": 134,
+      "pseudo_error_rate": 0.7701149425287356,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 168,
+          "new_count": 168,
+          "wrong_new": 130,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 171,
+          "new_count": 3,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 174,
+          "new_count": 3,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 174,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.1,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.87,
+        "brier": 0.09416989336162498,
+        "log_loss": 0.30009040238029383
+      },
+      "pseudo": {
+        "accuracy": 0.8583333333333333,
+        "brier": 0.10077490991354683,
+        "log_loss": 0.3164424081254589
+      },
+      "accuracy_change": -0.011666666666666714,
+      "accepted": 151,
+      "wrong_accepted": 10,
+      "pseudo_error_rate": 0.06622516556291391,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 148,
+          "new_count": 148,
+          "wrong_new": 10,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 150,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 151,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 151,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.1,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.20833333333333334,
+      "supervised": {
+        "accuracy": 0.78,
+        "brier": 0.14691718975166773,
+        "log_loss": 0.4440856277902746
+      },
+      "pseudo": {
+        "accuracy": 0.6866666666666666,
+        "brier": 0.199603677332467,
+        "log_loss": 0.5772138902004784
+      },
+      "accuracy_change": -0.09333333333333338,
+      "accepted": 144,
+      "wrong_accepted": 25,
+      "pseudo_error_rate": 0.1736111111111111,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 102,
+          "new_count": 102,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 129,
+          "new_count": 27,
+          "wrong_new": 12,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 141,
+          "new_count": 12,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 143,
+          "new_count": 2,
+          "wrong_new": 2,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 144,
+          "new_count": 1,
+          "wrong_new": 1,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.1,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 24,
+      "actual_noise_fraction": 0.4166666666666667,
+      "supervised": {
+        "accuracy": 0.68,
+        "brier": 0.1973421420080005,
+        "log_loss": 0.5806745307256168
+      },
+      "pseudo": {
+        "accuracy": 0.6916666666666667,
+        "brier": 0.1908838713179585,
+        "log_loss": 0.5525594242405564
+      },
+      "accuracy_change": 0.011666666666666603,
+      "accepted": 96,
+      "wrong_accepted": 12,
+      "pseudo_error_rate": 0.125,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 3,
+          "new_count": 3,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 13,
+          "new_count": 10,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 36,
+          "new_count": 23,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 71,
+          "new_count": 35,
+          "wrong_new": 7,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 96,
+          "new_count": 25,
+          "wrong_new": 5,
+          "reason": "refit"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.3,
+      "noise": 0.0,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.0,
+      "supervised": {
+        "accuracy": 0.8766666666666667,
+        "brier": 0.08462795316062786,
+        "log_loss": 0.2797418082356762
+      },
+      "pseudo": {
+        "accuracy": 0.8833333333333333,
+        "brier": 0.08384611687910544,
+        "log_loss": 0.2755071181029586
+      },
+      "accuracy_change": 0.006666666666666599,
+      "accepted": 109,
+      "wrong_accepted": 5,
+      "pseudo_error_rate": 0.045871559633027525,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 107,
+          "new_count": 107,
+          "wrong_new": 5,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 109,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 109,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.3,
+      "noise": 0.25,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.19444444444444445,
+      "supervised": {
+        "accuracy": 0.8983333333333333,
+        "brier": 0.10146678135271901,
+        "log_loss": 0.35307663825694635
+      },
+      "pseudo": {
+        "accuracy": 0.8966666666666666,
+        "brier": 0.09003813288551077,
+        "log_loss": 0.31285067766728436
+      },
+      "accuracy_change": -0.0016666666666667052,
+      "accepted": 83,
+      "wrong_accepted": 1,
+      "pseudo_error_rate": 0.012048192771084338,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 62,
+          "new_count": 62,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 2,
+          "accepted_total": 80,
+          "new_count": 18,
+          "wrong_new": 1,
+          "reason": "refit"
+        },
+        {
+          "round": 3,
+          "accepted_total": 82,
+          "new_count": 2,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 4,
+          "accepted_total": 83,
+          "new_count": 1,
+          "wrong_new": 0,
+          "reason": "refit"
+        },
+        {
+          "round": 5,
+          "accepted_total": 83,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    },
+    {
+      "seed": 59,
+      "ratio": 0.3,
+      "noise": 0.5,
+      "status": "ok",
+      "label_count": 72,
+      "actual_noise_fraction": 0.4722222222222222,
+      "supervised": {
+        "accuracy": 0.5566666666666666,
+        "brier": 0.2261453036131726,
+        "log_loss": 0.642280792865956
+      },
+      "pseudo": {
+        "accuracy": 0.5566666666666666,
+        "brier": 0.2261453036131726,
+        "log_loss": 0.642280792865956
+      },
+      "accuracy_change": 0.0,
+      "accepted": 0,
+      "wrong_accepted": 0,
+      "pseudo_error_rate": null,
+      "history": [
+        {
+          "round": 1,
+          "accepted_total": 0,
+          "new_count": 0,
+          "wrong_new": 0,
+          "reason": "no_new_confident_points"
+        }
+      ]
+    }
+  ],
+  "stress": {
+    "description": "deliberately inverted seed labels; same sign-based underlying target",
+    "accepted": 120,
+    "wrong_accepted": 120,
+    "stages": [
+      {
+        "stage": 0,
+        "accuracy": 0.0,
+        "mean_wrong_confidence": 0.9844316899646613,
+        "coef": [
+          -1.0409397145463708e-16,
+          -1.99879426999935
+        ]
+      },
+      {
+        "stage": 1,
+        "accuracy": 0.0,
+        "mean_wrong_confidence": 0.9627829835189097,
+        "coef": [
+          2.4467060679884187e-16,
+          -1.5361981674434522
+        ]
+      }
+    ]
+  },
+  "weak_labels": {
+    "coverage": 0.8166666666666667,
+    "abstention_rate": 0.18333333333333332,
+    "covered_accuracy": 0.8622448979591837,
+    "conflict_rate": 0.17916666666666667,
+    "rule_coverage": [
+      0.7708333333333334,
+      0.7583333333333333,
+      0.525
+    ],
+    "rule_accuracy": [
+      0.9567567567567568,
+      0.8681318681318682,
+      0.5634920634920635
+    ],
+    "duplicate_conflict_rows": 9,
+    "independent_conflict_mean_confidence": 0.5,
+    "duplicate_conflict_mean_confidence": 0.8,
+    "assumed_accuracy": 0.8,
+    "assumption": "given symmetric class accuracy; conditional independence; ignorable abstention; not learned from hidden labels"
+  }
+}

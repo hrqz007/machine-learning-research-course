@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Sohn et al. (2020): FixMatch",
+    "url": "https://papers.nips.cc/paper/2020/file/06964dce9addb1c5cb5d6e3d9838f733-Paper.pdf",
+    "scope": "confidence screening and consistency background; this unit does not implement FixMatch",
+    "checked_date": "2026-10-10",
+    "status": "opened_primary_source",
+    "method": "web tool open; no full reproduction claimed"
+  },
+  {
+    "title": "Ratner et al. (2016): Data Programming",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2016/hash/6709e8d64a5f47269ed5cea9f625f7ab-Abstract.html",
+    "scope": "labeling functions, noisy/conflicting sources; course aggregation is a given-accuracy teaching formula",
+    "checked_date": "2026-10-10",
+    "status": "opened_primary_source",
+    "method": "web tool open; no full reproduction claimed"
+  },
+  {
+    "title": "Snorkel: Intro to Labeling Functions",
+    "url": "https://snorkelproject.org/use-cases/01-spam-tutorial/",
+    "scope": "labeling function outputs, abstention, aggregation workflow",
+    "checked_date": "2026-10-10",
+    "status": "opened_primary_source",
+    "method": "web tool open; no full reproduction claimed"
+  }
+]
