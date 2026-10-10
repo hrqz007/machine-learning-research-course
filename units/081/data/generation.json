@@ -1,0 +1,8 @@
+{
+  "seed": 81021,
+  "dataset.json": {
+    "sha256": "41cc1b832121f05ef3cf47be1363adc1042f833a756d5fa0ccbe84f4d505add9",
+    "bytes": 511115
+  },
+  "source": "sklearn.datasets.load_digits; fixed original row indices; values divided by 16"
+}
