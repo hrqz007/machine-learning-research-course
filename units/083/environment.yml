@@ -1,0 +1,11 @@
+name: ml-083
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.3.5
+      - matplotlib==3.10.8
+      - nbformat==5.11.1
+      - IPython==9.16.1

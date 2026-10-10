@@ -1,0 +1,12 @@
+{
+  "seed": 85086,
+  "sha256": "608f4cbb6d27ea1e276fbabb605e6b1edcd1b32ab5a1bbafe57d5220730c1878",
+  "sizes": {
+    "train": 323,
+    "validation": 157,
+    "test": 160
+  },
+  "provenance": "Original educational synthetic data; no personal data or external downloads",
+  "license": "CC0-1.0",
+  "split_policy": "Generate disjoint independent samples before training"
+}

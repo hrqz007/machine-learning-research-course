@@ -1,0 +1,10 @@
+name: ml-unit-086
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt
+# Optional: pip install -r plot-requirements.txt -r notebook-requirements.txt
+# PDF dependencies are separate in build-requirements.txt and package.json.

@@ -1,0 +1,2 @@
+# Optional, only for rebuilding PNG/SVG figures.
+matplotlib==3.10.8

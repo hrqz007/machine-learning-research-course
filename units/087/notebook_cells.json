@@ -1,0 +1,78 @@
+[
+  {
+    "kind": "markdown",
+    "source": "# 第087课 激活初始化与梯度传播\n\n先做预测，再运行；二阶矩不等于方差，真实小样本记忆不等于泛化。全部运行离线。"
+  },
+  {
+    "kind": "code",
+    "source": "import os\nos.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\")\nos.environ.setdefault(\"OMP_NUM_THREADS\", \"1\")\nfrom pathlib import Path\nimport json\nimport numpy as np\nimport experiment as ex\nfrom IPython.display import display, Image\nx, y, metadata = ex.load_wine()\nprint(\"真实数据形状\", x.shape, \"类别数量\", np.bincount(y).tolist())\nprint(\"原始行号\", metadata[\"row_ids\"])\nprint(\"标准化每列均值最大绝对误差\", float(np.max(np.abs(x.mean(0)))))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 先验证统计量\n四点ReLU输出的均值为1，二阶矩2.5，方差1.5。分别计算，不把名字相近的量混在一起。"
+  },
+  {
+    "kind": "code",
+    "source": "z = np.array([-3., -1., 1., 3.])\na = ex.activate(z, \"relu\")\nprint(\"input\", z.tolist(), \"ReLU\", a.tolist())\nprint(\"moments\", ex.moments(a))\nfor mode in [\"xavier\", \"he\"]:\n    std = ex.weight_std(64, 32, mode)\n    print(mode, \"64→32 std\", std, \"variance\", std**2)\nprint(\"24层等宽Xavier/ReLU理论二阶矩\", 2.0**(-24))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 真正执行完整实验\n72组传播、18组残差、9组真实小样本训练。三个种子全部保留，small没有因训练失败被剔除。"
+  },
+  {
+    "kind": "code",
+    "source": "result = ex.run()\nout = Path(\"outputs\")\nout.mkdir(exist_ok=True)\n(out / \"notebook-result.json\").write_text(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))\nprint(\"传播/残差/训练组数\", len(result[\"propagation\"]), len(result[\"residual\"]), len(result[\"training\"]))\nfor mode in [\"small\", \"xavier\", \"he\", \"large\"]:\n    group = [p for p in result[\"propagation\"] if p[\"depth\"] == 24 and p[\"activation\"] == \"relu\" and p[\"initialization\"] == mode]\n    print(mode, \"末层二阶矩中位数\", np.median([p[\"final_second_moment\"] for p in group]), \"梯度RMS比中位数\", np.median([p[\"gradient_rms_ratio\"] for p in group]))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 训练验收用两个指标\n准确率需要100%，且平均交叉熵小于0.02。small的硬准确率可以高，但概率仍近均匀。"
+  },
+  {
+    "kind": "code",
+    "source": "for row in result[\"training\"]:\n    print(row[\"seed\"], row[\"initialization\"], \"CE\", row[\"final_loss\"], \"accuracy\", row[\"final_accuracy\"], \"pass\", row[\"memorization_pass\"])\nprint(\"均匀三分类CE\", np.log(3.0))\nprint(\"所有He均通过\", result[\"all_he_memorization_pass\"])"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 用真正unittest核对反向传播\n包括激活、输入VJP、分类器全部参数和残差VJP的中心有限差分。不使用可能被-O删除的裸assert。"
+  },
+  {
+    "kind": "code",
+    "source": "import unittest\nimport test_experiment\nsuite = unittest.defaultTestLoader.loadTestsFromTestCase(test_experiment.InitializationTests)\ntest_result = unittest.TextTestRunner(verbosity=1).run(suite)\nprint(\"tests\", test_result.testsRun, \"success\", test_result.wasSuccessful())\nif not test_result.wasSuccessful():\n    raise RuntimeError(\"Gradient or training verification failed\")"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 原创图1：理论曲线与二阶矩\n重画四幅图，图1右下角的均值、二阶矩和方差刻意不同。"
+  },
+  {
+    "kind": "code",
+    "source": "import plots\nfig_dir = Path(\"outputs/notebook-figures\")\nplots.draw(fig_dir, result)\ndisplay(Image(filename=str(fig_dir / \"01_activation_moments.png\")))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 原创图2：尺度跨越多个数量级\n线为三个种子中位数，阴影是最小–最大，不是置信区间。逐层横轴由输入指向输出。"
+  },
+  {
+    "kind": "code",
+    "source": "display(Image(filename=str(fig_dir / \"02_depth_propagation.png\")))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 原创图3：非零分布与零点质量\n横轴是log10绝对值；激活零值比例另标。相同种子的正缩放ReLU网络具有相同门控模式。"
+  },
+  {
+    "kind": "code",
+    "source": "display(Image(filename=str(fig_dir / \"03_distributions.png\")))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 原创图4：训练成功与残差边界\n上半是真实Wine训练，下半是独立简化残差探针。输入、结构和任务不同，不混称同一实验。"
+  },
+  {
+    "kind": "code",
+    "source": "display(Image(filename=str(fig_dir / \"04_training_residual.png\")))\nprint(\"24块残差：\")\nfor row in result[\"residual\"]:\n    if row[\"depth\"] == 24 and row[\"seed\"] == 8701:\n        print(row)\nprint(\"分支F=-h时一块导数\", 1 + (-1), \"分支F=h时24块导数\", 2**24)"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 结论\nHe与Xavier都在当前六层网络和预算下通过30条真实记录的记忆验收；small没有通过。传播式解释平均尺度，不保证全部雅可比方向。这里没有独立测试集，不作泛化结论。详见lecture.md、lab.md与answers.md。"
+  }
+]

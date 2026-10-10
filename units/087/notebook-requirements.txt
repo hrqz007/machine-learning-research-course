@@ -1,0 +1,3 @@
+# Optional executed-notebook tooling, separate from the numerical experiment.
+nbformat==5.11.1
+IPython==9.16.1

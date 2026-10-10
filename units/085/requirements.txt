@@ -1,0 +1,2 @@
+# Core offline computation only. Install once from PyPI.
+numpy==2.3.5

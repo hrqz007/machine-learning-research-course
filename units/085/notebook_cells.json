@@ -1,0 +1,70 @@
+[
+  {
+    "kind": "markdown",
+    "source": "# 第085课：反向传播的可执行证据\n先预测，再运行。这个Notebook真实计算手算例、全部17参数差分、批量归约与训练，并显示四幅重建图。"
+  },
+  {
+    "kind": "code",
+    "source": "import json, platform\nfrom pathlib import Path\nimport numpy as np\nfrom numpy_core import *\nfrom experiment import hand_example, gradient_audit, run\nprint({'python': platform.python_version(), 'numpy': np.__version__})\ndata = load_data()\nprint({k: {'X': X.shape, 'y': y.shape} for k,(X,y) in data.items()})"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 1 手算前向\n对照纸上的Z、A、S与概率。代码缓存H对应讲义中的隐藏表示A。"
+  },
+  {
+    "kind": "code",
+    "source": "hand = hand_example()\nfor name in ['Z','H','S','P']:\n    print(name, np.array(hand['cache'][name]))\nprint('per-sample losses:', hand['cache']['losses'], 'mean:', hand['loss'])"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 2 反向中间量和四块梯度\n特别检查第二条样本第一个ReLU通道的梯度为零。"
+  },
+  {
+    "kind": "code",
+    "source": "for name in ['dS','dH','dZ']:\n    print(name, np.array(hand['cache'][name]))\nfor name, value in hand['gradients'].items():\n    print('gradient', name, np.array(value))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 3 全参数中心差分\n这是17项全部检查，不是随机抽两项。"
+  },
+  {
+    "kind": "code",
+    "source": "audit = gradient_audit()\nprint(json.dumps(audit, indent=2))\nif audit['total_parameters'] != 17:\n    raise RuntimeError('Incomplete parameter audit')"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 4 批量复制与归约\n先猜重复两次以后平均损失与梯度应如何变化。"
+  },
+  {
+    "kind": "code",
+    "source": "X=np.array([[.3,-.7],[1.2,.4],[-.5,.9]]); y=np.array([0,1,0]); p=initialize(8502,3)\nl,g,_=loss_and_grad(X,y,p)\nll,gg,_=loss_and_grad(np.repeat(X,2,axis=0),np.repeat(y,2),p)\nprint('loss original / duplicated:',l,ll)\nprint('max gradient difference:',max(np.max(np.abs(g[k]-gg[k])) for k in g))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 5 从零训练\n固定预算，验证仅诊断，最终一次测试。"
+  },
+  {
+    "kind": "code",
+    "source": "result = run()\nPath('outputs').mkdir(exist_ok=True)\nPath('outputs/notebook-result.json').write_text(json.dumps(result,indent=2))\nprint({k:v for k,v in result['training'].items() if k!='history'})"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 6 执行真正的单元测试\n不依赖可被-O删除的普通assert。"
+  },
+  {
+    "kind": "code",
+    "source": "import unittest\nfrom test_experiment import BackpropTests\ntests=unittest.TextTestRunner(verbosity=1).run(unittest.defaultTestLoader.loadTestsFromTestCase(BackpropTests))\nif not tests.wasSuccessful():\n    raise RuntimeError('Tests failed')"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 7 重建并显示四幅图\n输出图片与本Notebook刚计算的结果一致。"
+  },
+  {
+    "kind": "code",
+    "source": "from plots import main as plot_all\nfrom IPython.display import Image, display\npaths=plot_all('outputs/notebook-figures','outputs/notebook-result.json')\nfor path in paths:\n    print(Path(path).name)\n    display(Image(filename=path))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 结论边界\n数值审计支持实现一致；一次合成训练不能证明现实泛化、校准或全局最优。请回到lab.md完成8题。"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "kind": "markdown",
+    "source": "# 第083课：表示能力的可执行证据\n所有参数固定。本Notebook不训练网络，不报告泛化准确率。"
+  },
+  {
+    "kind": "code",
+    "source": "from experiment import affine, collapse, fixed_xor, alternative_xor, parameter_count, interpolate_square, run\nprint(\"核心模块已导入；无深度学习框架依赖\")\nfrom IPython.display import display, Image"
+  },
+  {
+    "kind": "code",
+    "source": "W1,b1=[[1,2],[3,4]],[5,6]\nW2,b2=[[7,8]],[9]\nW,b=collapse(W1,b1,W2,b2)\nprint(\"合并\",W,b)\nfor x in [[1,0],[0,1]]:\n    print(x,affine(affine(x,W1,b1),W2,b2),affine(x,W,b))\ndisplay(Image(filename=\"figures/01_affine_collapse.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "for x in [[0,0],[0,1],[1,0],[1,1]]:\n    h,s=fixed_xor(x)\n    print(\"输入\",x,\"隐藏\",h,\"分数\",s,\"预测\",int(s>=.5))\ndisplay(Image(filename=\"figures/02_xor_representation.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "for x in [[0,0],[0,1],[1,0],[1,1]]:\n    print(\"去掉激活\",x,fixed_xor(x,False))\nprint(\"参数位置\",parameter_count([2,2,1]),parameter_count([2,4,3,1]))"
+  },
+  {
+    "kind": "code",
+    "source": "for x in [[.5,.5],[.25,.25],[2,2]]:\n    print(x,\"三角帽\",fixed_xor(x)[1],\"绝对差\",alternative_xor(x))\nprint(\"四点相同不决定连续区域答案；原始分数不等于概率\")\ndisplay(Image(filename=\"figures/03_extension_ambiguity.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "for n in [2,4,8,16]:\n    e=max(abs(interpolate_square(i/1024,n)-(i/1024)**2) for i in range(1025))\n    print(\"分段数\",n,\"网格误差\",e,\"区间精确最大\",1/(4*n*n))\ndisplay(Image(filename=\"figures/04_piecewise_approximation.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "result=run()\nprint(\"固定XOR\",result[\"fixed_accuracy\"])\nprint(\"仿射复合最大差\",result[\"affine_collapse_max_abs_error\"])\nprint(\"有限搜索\",result[\"finite_linear_search\"])\nprint(\"数据哈希\",result[\"data_sha256\"])"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 独立实现验收\n运行真正的unittest测试，不依赖优化模式可能移除的assert。"
+  },
+  {
+    "kind": "code",
+    "source": "import unittest\nsuite=unittest.defaultTestLoader.discover(\".\", pattern=\"test_experiment.py\")\nchecks=unittest.TextTestRunner(verbosity=1).run(suite)\nif not checks.wasSuccessful():\n    raise RuntimeError(\"unit tests failed\")"
+  }
+]

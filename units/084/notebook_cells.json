@@ -1,0 +1,46 @@
+[
+  {
+    "kind": "markdown",
+    "source": "# 第084课：标量自动微分的可执行证据\n本实现每次backward清空可达图梯度，区别于PyTorch默认叶子累积；这里只求一阶导数。"
+  },
+  {
+    "kind": "code",
+    "source": "from autodiff import Value,Dual,finite_difference\nfrom experiment import composite,composite_float,vector_function,run\nprint(\"自有标量AD模块已导入\")\nfrom IPython.display import display, Image"
+  },
+  {
+    "kind": "code",
+    "source": "a,b=Value(2),Value(3)\nz=a*b;z.backward()\nprint(\"乘积\",z.data,\"梯度\",a.grad,b.grad)\nx=Value(3);z=x*x;z.backward();print(\"重复槽位\",z.data,x.grad)"
+  },
+  {
+    "kind": "code",
+    "source": "x,y=Value(2,label=\"x\"),Value(3,label=\"y\")\nt=x*y;t.label=\"t\"\nq=t*t;q.label=\"q\"\nz=q+t;z.label=\"z\"\nfor node in z.backward():\n    print(node.label,node.data,node.grad)\nprint(\"共享节点梯度必须是13\")\ndisplay(Image(filename=\"figures/01_shared_graph.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "x=Value(3);z=x*x+x\nfor seed in [1,1,2,0]:\n    z.backward(seed);print(\"seed\",seed,\"值\",z.data,\"梯度\",x.grad)\ndisplay(Image(filename=\"figures/02_accumulated_paths.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "x,y=Value(.7),Value(-1.2)\nz=composite(x,y);z.backward()\nprint(\"reverse\",z.data,x.grad,y.grad)\nprint(\"forward\",composite(Dual(.7,1),Dual(-1.2,0)).tangent,composite(Dual(.7,0),Dual(-1.2,1)).tangent)\nprint(\"finite\",finite_difference(composite_float,[.7,-1.2],1e-5))\ndisplay(Image(filename=\"figures/03_gradient_check.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "print(\"JVP\",[v.tangent for v in vector_function(Dual(2,1),Dual(3,-1))])\nx,y=Value(2),Value(3)\na,b=vector_function(x,y);loss=2*a-b;loss.backward()\nprint(\"VJP列向量\",x.grad,y.grad)\ndisplay(Image(filename=\"figures/04_jvp_vjp.png\"))"
+  },
+  {
+    "kind": "code",
+    "source": "x=Value(0);x.relu().backward()\nprint(\"ReLU零点选定规则\",x.grad,\"中心差分\",finite_difference(lambda a:max(0.,a),[0.])[0])\nprint(\"该点不可微，不应期待两个约定相等\")"
+  },
+  {
+    "kind": "code",
+    "source": "result=run()\nprint(\"五点最大差分误差\",max(c[\"max_finite_abs_error\"] for c in result[\"gradient_checks\"]))\nprint(\"神经元\",result[\"neuron\"])\nprint(\"步长扫描\",result[\"finite_difference_sweep\"])"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 独立实现验收\n运行真正的unittest测试，不依赖优化模式可能移除的assert。"
+  },
+  {
+    "kind": "code",
+    "source": "import unittest\nsuite=unittest.defaultTestLoader.discover(\".\", pattern=\"test_experiment.py\")\nchecks=unittest.TextTestRunner(verbosity=1).run(suite)\nif not checks.wasSuccessful():\n    raise RuntimeError(\"unit tests failed\")"
+  }
+]

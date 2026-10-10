@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+PYTHON="${PYTHON:-python}"
+OUT="${1:-outputs/rebuild}"
+mkdir -p "$OUT"
+OUT="$(cd "$OUT" && pwd)"
+export OPENBLAS_NUM_THREADS="${OPENBLAS_NUM_THREADS:-1}"
+export OMP_NUM_THREADS="${OMP_NUM_THREADS:-1}"
+export MPLCONFIGDIR="${MPLCONFIGDIR:-$OUT/mpl-cache}"
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$OUT/cache}"
+export IPYTHONDIR="${IPYTHONDIR:-$OUT/ipython}"
+"$PYTHON" experiment.py --out "$OUT/result.json"
+"$PYTHON" test_experiment.py --out "$OUT/test-result.json"
+"$PYTHON" -O test_experiment.py --out "$OUT/test-result-optimized.json"
+"$PYTHON" plots.py --directory "$OUT/figures"
+"$PYTHON" execute_notebook.py --out "$OUT/experiment.ipynb"
+"$PYTHON" build_pdf.py --directory "$OUT/pdf"

@@ -1,0 +1,86 @@
+[
+  {
+    "kind": "markdown",
+    "source": "# 第086课：真实PyTorch迁移与训练循环\n从Python对象和迭代桥梁开始，再做三层数值对齐。缺少PyTorch必须报错，不跳过或模拟。"
+  },
+  {
+    "kind": "code",
+    "source": "import json, platform\nfrom pathlib import Path\nimport numpy as np\nimport torch\nfrom experiment import *\nprint({'python':platform.python_version(),'numpy':np.__version__,'torch':torch.__version__,'device':str(DEVICE),'dtype':str(DTYPE)})"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 1 类、继承、实例与方法\n两个实例拥有各自状态，super完成基类初始化。"
+  },
+  {
+    "kind": "code",
+    "source": "class Counter:\n    def __init__(self,start=0): self.value=start\n    def add(self,amount): self.value+=amount; return self.value\nclass NamedCounter(Counter):\n    def __init__(self,name,start=0):\n        super().__init__(start); self.name=name\na=NamedCounter('train'); b=NamedCounter('validation'); a.add(3)\nprint(a.name,a.value,b.name,b.value)"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 2 迭代器与生成器\n观察耗尽；新epoch应建立新遍历。"
+  },
+  {
+    "kind": "code",
+    "source": "def mini_batches(values,size):\n    for start in range(0,len(values),size):\n        yield values[start:start+size]\nit=mini_batches(list(range(5)),3)\nprint(next(it)); print(next(it))\ntry:\n    next(it)\nexcept StopIteration:\n    print('iterator exhausted')\nprint('new traversal:',list(mini_batches(list(range(5)),3)))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 3 Dataset/DataLoader与参数形状\n标签为long，特征为float64；尾批只有3条。"
+  },
+  {
+    "kind": "code",
+    "source": "data=load_data(); loaders=make_loaders(data)\nprint([(tuple(X.shape),tuple(y.shape),str(X.dtype),str(y.dtype)) for X,y in loaders['train']])\nmodel=TwoLayer(3)\nprint([(name,tuple(p.shape),p.numel()) for name,p in model.named_parameters()])"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 4 三层对齐\n同参数、同输入、同平均损失、同SGD更新。"
+  },
+  {
+    "kind": "code",
+    "source": "print(json.dumps(parity_audit(),indent=2))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 5 累积、清空和detach断链\n重新前向不等于清空旧梯度。"
+  },
+  {
+    "kind": "code",
+    "source": "print(accumulation_audit())\nx=torch.tensor(2.,requires_grad=True); z=(x*x).detach()\nprint('detached requires_grad:',z.requires_grad)\ntry:\n    z.backward()\nexcept RuntimeError as exc:\n    print('Expected detach error:',str(exc).splitlines()[0])"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 6 状态与梯度记录分别控制\n主迁移模型没有Dropout，状态差异单独演示。"
+  },
+  {
+    "kind": "code",
+    "source": "print(state_audit())"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 7 完整训练、验证选型与一次测试\n固定训练指标使用单独的不打乱加载器，不影响训练随机顺序。"
+  },
+  {
+    "kind": "code",
+    "source": "result=run()\nPath('outputs').mkdir(exist_ok=True)\nPath('outputs/notebook-result.json').write_text(json.dumps(result,indent=2))\nprint({k:v for k,v in result['training'].items() if k!='history'})"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 8 真正的unittest验收"
+  },
+  {
+    "kind": "code",
+    "source": "import unittest\nfrom test_experiment import FrameworkTests\ntests=unittest.TextTestRunner(verbosity=1).run(unittest.defaultTestLoader.loadTestsFromTestCase(FrameworkTests))\nif not tests.wasSuccessful():\n    raise RuntimeError('Framework tests failed')"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 9 重建并显示四图"
+  },
+  {
+    "kind": "code",
+    "source": "from plots import main as plot_all\nfrom IPython.display import Image, display\nfor path in plot_all('outputs/notebook-figures','outputs/notebook-result.json'):\n    print(Path(path).name)\n    display(Image(filename=path))"
+  },
+  {
+    "kind": "markdown",
+    "source": "## 结论边界\nCPU迁移验收不代表GPU已测试；两讲训练预算不同，不能根据最终损失宣布框架优劣。继续完成lab.md的9题。"
+  }
+]

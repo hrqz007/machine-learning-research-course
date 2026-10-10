@@ -1,0 +1,3 @@
+# Optional real in-process Notebook execution/export.
+IPython==9.16.1
+nbformat==5.11.1
