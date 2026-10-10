@@ -2702,18 +2702,32 @@
         "实验与验收": "实现小后验采样器；报告轨迹、自相关、有效样本量与多链诊断。",
         "常见误区": "采样次数大就认为混合充分；把相关样本当独立样本算标准误。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/078/lecture.pdf",
+        "lab": "units/078/lab.pdf",
+        "answers": "units/078/answers.pdf",
+        "notebook": "units/078/experiment.ipynb",
+        "script": "units/078/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_sequential_passed_socket_kernel_unavailable_browser_not_tested",
+        "visual": "independent_all_pdf_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "4d340500a6ef210fdb91c64e66eb13b45a0570ed",
+        "verified_file_count": 46,
+        "verified_bytes": 4889534,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/078-082.json"
     },
     {
       "id": "079",
@@ -2725,18 +2739,32 @@
         "实验与验收": "对有解析后验的小模型做VI，比较ELBO、均值和方差偏差。",
         "常见误区": "ELBO增大等于真实后验完全恢复；混淆KL方向及其后果。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/079/lecture.pdf",
+        "lab": "units/079/lab.pdf",
+        "answers": "units/079/answers.pdf",
+        "notebook": "units/079/experiment.ipynb",
+        "script": "units/079/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_sequential_passed_socket_kernel_unavailable_browser_not_tested",
+        "visual": "independent_all_pdf_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "5517c363bb95dbe1b6aa077bf7df5271d9ab1a5d",
+        "verified_file_count": 45,
+        "verified_bytes": 3686218,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/078-082.json"
     },
     {
       "id": "080",
@@ -2748,18 +2776,32 @@
         "实验与验收": "控制标注比例与噪声，比较监督基线和伪标签；报告错误自我强化。",
         "常见误区": "无标签数据一定改善效果；把伪标签当新真实观测。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/080/lecture.pdf",
+        "lab": "units/080/lab.pdf",
+        "answers": "units/080/answers.pdf",
+        "notebook": "units/080/experiment.ipynb",
+        "script": "units/080/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_sequential_passed_socket_kernel_unavailable_browser_not_tested",
+        "visual": "independent_all_pdf_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "09461467f4a93db74ea316d4b4c41a829e85ab77",
+        "verified_file_count": 53,
+        "verified_bytes": 4106512,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/078-082.json"
     },
     {
       "id": "081",
@@ -2771,18 +2813,32 @@
         "实验与验收": "用可控异常和真实负例验证；仅用允许的数据选阈值并报告误报预算。",
         "常见误区": "低似然必定语义异常；在混入测试异常的数据上调阈值。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/081/lecture.pdf",
+        "lab": "units/081/lab.pdf",
+        "answers": "units/081/answers.pdf",
+        "notebook": "units/081/experiment.ipynb",
+        "script": "units/081/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_sequential_passed_socket_kernel_unavailable_browser_not_tested",
+        "visual": "independent_all_pdf_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "ed9873dca32bb1b7e8238670fd8c4671a7f794b3",
+        "verified_file_count": 44,
+        "verified_bytes": 4905722,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/078-082.json"
     },
     {
       "id": "082",
@@ -2795,18 +2851,32 @@
         "实验与验收": "完成一项聚类/潜因子/概率推断研究；交付合成真值对照和真实数据边界分析。",
         "常见误区": "只展示可视化；用生成的故事替代可检验的结构证据。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/082/lecture.pdf",
+        "lab": "units/082/lab.pdf",
+        "answers": "units/082/answers.pdf",
+        "notebook": "units/082/experiment.ipynb",
+        "script": "units/082/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_passed",
+        "sources": "independent_passed",
+        "code": "independent_normal_and_optimized_tests_passed",
+        "notebook": "independent_fresh_process_ipython_sequential_passed_socket_kernel_unavailable_browser_not_tested",
+        "visual": "independent_all_pdf_pages_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "c7eb4d1cc0812ef4170b036ba742d92ce701d145",
+        "verified_file_count": 44,
+        "verified_bytes": 4462688,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-10"
+      },
+      "release_record": "releases/078-082.json"
     },
     {
       "id": "083",
