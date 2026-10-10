@@ -1,0 +1,16 @@
+{
+  "generator": "generate_data.py",
+  "randomness": "none",
+  "files": [
+    {
+      "file": "correlated.json",
+      "bytes": 246,
+      "sha256": "5770270cb27dbfae8b9740d969c6dcae8879e407e0599b89c172b436e2b7a377"
+    },
+    {
+      "file": "independent.json",
+      "bytes": 336,
+      "sha256": "4681363f26aba20619d97e6633d365c46351f6332637fd2d649b3a8218c3bc4a"
+    }
+  ]
+}
