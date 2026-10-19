@@ -3073,18 +3073,32 @@
         "实验与验收": "固定数据与预算比较优化配置；中断恢复后核验训练连续性并报告资源。",
         "常见误区": "只保存权重却声称精确续训；累积梯度未匹配损失缩放。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/088/lecture.pdf",
+        "lab": "units/088/lab.pdf",
+        "answers": "units/088/answers.pdf",
+        "notebook": "units/088/experiment.ipynb",
+        "script": "units/088/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "author_source_records_and_independent_scope_review",
+        "code": "independent_tests_and_complete_numerical_replay_passed",
+        "notebook": "independent_fresh_process_inprocess_kernel_passed_browser_and_socket_not_tested",
+        "visual": "independent_pdf_visual_samples_and_all_page_text_extraction_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "39bd15a81bc385772b4fb4eb57ef54181f089014",
+        "verified_file_count": 34,
+        "verified_bytes": 2515701,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-19"
+      },
+      "release_record": "releases/088-092.json"
     },
     {
       "id": "089",
@@ -3096,18 +3110,32 @@
         "实验与验收": "控制变量比较归一化和dropout；测试batch大小、训练/推理切换与分布变化。",
         "常见误区": "把各种归一化当可互换；在测试集上决定何时停止。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/089/lecture.pdf",
+        "lab": "units/089/lab.pdf",
+        "answers": "units/089/answers.pdf",
+        "notebook": "units/089/experiment.ipynb",
+        "script": "units/089/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "author_source_records_and_independent_scope_review",
+        "code": "independent_tests_and_complete_numerical_replay_passed",
+        "notebook": "independent_fresh_process_inprocess_kernel_passed_browser_and_socket_not_tested",
+        "visual": "independent_pdf_visual_samples_and_all_page_text_extraction_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "39bd15a81bc385772b4fb4eb57ef54181f089014",
+        "verified_file_count": 33,
+        "verified_bytes": 2755167,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-19"
+      },
+      "release_record": "releases/088-092.json"
     },
     {
       "id": "090",
@@ -3119,18 +3147,32 @@
         "实验与验收": "建立训练前检查清单并注入错误；输出可定位的诊断图而非只报最终分数。",
         "常见误区": "从大模型长训练开始调试；把最好一个种子作为方法结果。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/090/lecture.pdf",
+        "lab": "units/090/lab.pdf",
+        "answers": "units/090/answers.pdf",
+        "notebook": "units/090/experiment.ipynb",
+        "script": "units/090/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "author_source_records_and_independent_scope_review",
+        "code": "independent_tests_and_complete_numerical_replay_passed",
+        "notebook": "independent_fresh_process_inprocess_kernel_passed_browser_and_socket_not_tested",
+        "visual": "independent_pdf_visual_samples_and_all_page_text_extraction_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "39bd15a81bc385772b4fb4eb57ef54181f089014",
+        "verified_file_count": 33,
+        "verified_bytes": 2404961,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-19"
+      },
+      "release_record": "releases/088-092.json"
     },
     {
       "id": "091",
@@ -3142,18 +3184,32 @@
         "实验与验收": "手算小图像卷积并从零实现；与框架核验前向和梯度。",
         "常见误区": "核大小当整个网络感受野；padding细节忽略边界影响。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/091/lecture.pdf",
+        "lab": "units/091/lab.pdf",
+        "answers": "units/091/answers.pdf",
+        "notebook": "units/091/experiment.ipynb",
+        "script": "units/091/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "author_source_records_and_independent_scope_review",
+        "code": "independent_tests_and_complete_numerical_replay_passed",
+        "notebook": "independent_fresh_process_inprocess_kernel_passed_browser_and_socket_not_tested",
+        "visual": "independent_pdf_visual_samples_and_all_page_text_extraction_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "39bd15a81bc385772b4fb4eb57ef54181f089014",
+        "verified_file_count": 33,
+        "verified_bytes": 1764819,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-19"
+      },
+      "release_record": "releases/088-092.json"
     },
     {
       "id": "092",
@@ -3165,18 +3221,32 @@
         "实验与验收": "构造小型CNN与残差网络，在相同预算下比较；记录参数、FLOPs估计和延迟。",
         "常见误区": "参数少就断言推理快；平移等变性误说成无条件平移不变。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "published",
+      "artifacts": {
+        "lecture": "units/092/lecture.pdf",
+        "lab": "units/092/lab.pdf",
+        "answers": "units/092/answers.pdf",
+        "notebook": "units/092/experiment.ipynb",
+        "script": "units/092/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_topic_derivation_and_code_review_passed",
+        "sources": "author_source_records_and_independent_scope_review",
+        "code": "independent_tests_and_complete_numerical_replay_passed",
+        "notebook": "independent_fresh_process_inprocess_kernel_passed_browser_and_socket_not_tested",
+        "visual": "independent_pdf_visual_samples_and_all_page_text_extraction_passed"
       },
       "publication": {
-        "status": "not_uploaded"
-      }
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "39bd15a81bc385772b4fb4eb57ef54181f089014",
+        "verified_file_count": 35,
+        "verified_bytes": 2093204,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-19"
+      },
+      "release_record": "releases/088-092.json"
     },
     {
       "id": "093",

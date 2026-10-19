@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–087 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–092 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -169,6 +169,16 @@
 
 - [第087讲 激活初始化与梯度传播](units/087/README.md)：[正文（12页）](units/087/lecture.pdf) · [实验指南（5页）](units/087/lab.pdf) · [完整答案（5页）](units/087/answers.pdf) · [Notebook](units/087/experiment.ipynb)
 
+- [第088讲 深度网络的优化实践](units/088/README.md)：[正文（6页）](units/088/lecture.pdf) · [实验指南（2页）](units/088/lab.pdf) · [完整答案（2页）](units/088/answers.pdf) · [Notebook](units/088/experiment.ipynb)
+
+- [第089讲 归一化与正则化](units/089/README.md)：[正文（6页）](units/089/lecture.pdf) · [实验指南（2页）](units/089/lab.pdf) · [完整答案（2页）](units/089/answers.pdf) · [Notebook](units/089/experiment.ipynb)
+
+- [第090讲 神经实验的诊断顺序](units/090/README.md)：[正文（7页）](units/090/lecture.pdf) · [实验指南（2页）](units/090/lab.pdf) · [完整答案（2页）](units/090/answers.pdf) · [Notebook](units/090/experiment.ipynb)
+
+- [第091讲 卷积的计算与归纳偏置](units/091/README.md)：[正文（5页）](units/091/lecture.pdf) · [实验指南（2页）](units/091/lab.pdf) · [完整答案（1页）](units/091/answers.pdf) · [Notebook](units/091/experiment.ipynb)
+
+- [第092讲 卷积网络与视觉表示](units/092/README.md)：[正文（6页）](units/092/lecture.pdf) · [实验指南（2页）](units/092/lab.pdf) · [完整答案（1页）](units/092/answers.pdf) · [Notebook](units/092/experiment.ipynb)
+
 - [完整单元导航（JSON）](catalog/curriculum.json)
 - [逐单元制作与发布状态](manifest.json)
 - [运行环境说明](shared/README.md)
@@ -209,3 +219,5 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 第078–082讲的完整公开文件清单、课程编号映射、PDF页数及逐文件远端大小/SHA256核验记录见[核验说明](releases/078-082.json)。执行方式、数据来源与环境边界以各讲说明及verification.json为准；不据此声称验证Jupyter浏览器界面或跨平台安装。
 
 第083–087讲的公开文件清单、课程编号映射、PDF页数及逐文件远端核验记录见[核验说明](releases/083-087.json)。执行方式、数据来源与环境边界以各讲README及实验指南为准。
+
+第088–092讲的公开文件清单、课程编号映射、PDF页数及逐文件远端核验记录见[核验说明](releases/088-092.json)。实验、数据和验证边界以各讲README及verification.json为准；不据此声称验证Jupyter浏览器界面、跨平台安装或真实部署效果。
