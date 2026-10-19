@@ -1,0 +1,166 @@
+{
+  "lesson": "091",
+  "self_excluded": "file-manifest.json",
+  "files": [
+    {
+      "path": "DATA_LICENSE.md",
+      "bytes": 403,
+      "sha256": "2da4c7c6854d97d80c0c5310ffadfb4e4f1b360a5e5a6dcee9fb8b40034395fa"
+    },
+    {
+      "path": "PUBLIC_FILES.json",
+      "bytes": 780,
+      "sha256": "94518abdd70e0deaf9fc44d9580c8e7df81da6002749f8185447d3609746fe85"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2163,
+      "sha256": "cc8b7801f21ea6264420d86fcd48bdc6d8f08c1ccd749afebc6e57c6fe69d5fb"
+    },
+    {
+      "path": "answers.md",
+      "bytes": 1774,
+      "sha256": "54c9b97b927f0e0ba277535a51555f14500742f766a4843326b34a069a193851"
+    },
+    {
+      "path": "answers.pdf",
+      "bytes": 327441,
+      "sha256": "e37c75c89d27bf73ebbcbcad019be91dd9600fc0968c1810a07ccc467d28d2fb"
+    },
+    {
+      "path": "build-requirements.txt",
+      "bytes": 48,
+      "sha256": "3126dde1d8edda2e73f86eeabc51a9573b59a4c7b576a900bbe96e9c43504e6f"
+    },
+    {
+      "path": "build_all.sh",
+      "bytes": 319,
+      "sha256": "ebd46499ad54540a06f9bf06558db061ee391db8179b61af999feb6c606cf187"
+    },
+    {
+      "path": "build_pdf.py",
+      "bytes": 3514,
+      "sha256": "6e5e95053b620a6fc0943f1c630d053b5da2d565cf3219cfd195dc5b7af0e129"
+    },
+    {
+      "path": "execute_notebook.py",
+      "bytes": 3121,
+      "sha256": "a553ad53ae39b04c68a51f190bb659ad131a4b6cc90b9e5f0c4b4bbe2a75570d"
+    },
+    {
+      "path": "experiment.ipynb",
+      "bytes": 95767,
+      "sha256": "b18e7f7997a24b2aebb9591b39f030c71f93235964c1371536c92e637f27e1d2"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 5418,
+      "sha256": "d341fd3b7f0c7ac76dacafdeb650556d40524aff3cd779fdb8970a40ff29ccb8"
+    },
+    {
+      "path": "figures/01_hand_calculation.png",
+      "bytes": 19598,
+      "sha256": "1474aa278e89787dc9eec25bb4b3945b258d73cd30f1ca8971d6083aa028d804"
+    },
+    {
+      "path": "figures/02_receptive_field.png",
+      "bytes": 19397,
+      "sha256": "ec935ec774e032264b18352f680527900a180642865e3752e5aa56a5fd231a88"
+    },
+    {
+      "path": "figures/03_boundary_equivariance.png",
+      "bytes": 26192,
+      "sha256": "01b184371a3a0eb878a31ed7954136eebdb89c2a134f6c9460ac24e56e6508a0"
+    },
+    {
+      "path": "lab.md",
+      "bytes": 2685,
+      "sha256": "ed19eea03fddf3575226afd954291304d5d82c3baaaddd207a81db8fb5898b16"
+    },
+    {
+      "path": "lab.pdf",
+      "bytes": 510558,
+      "sha256": "4c0617e37e0f6944ce440463b3f766718567aac283d107e5867fd2c74bcc631a"
+    },
+    {
+      "path": "lecture.md",
+      "bytes": 11294,
+      "sha256": "0aee722fc87e3c7ab2b02485c8f91180c1b264a0b4b722a46a6d3ea7582b7e70"
+    },
+    {
+      "path": "lecture.pdf",
+      "bytes": 713933,
+      "sha256": "8fb6d3ab97f5ef05e229f6135ab60ecc30d7d161d72c5930c3281ce1889cb519"
+    },
+    {
+      "path": "mathjax_render.cjs",
+      "bytes": 1147,
+      "sha256": "f1b2d2a9fe50f99e84d7d57e5f8f62424fbc1b2d8ecda2ba18de2092fb9d57a0"
+    },
+    {
+      "path": "outputs/environment.json",
+      "bytes": 316,
+      "sha256": "77501a0eacc6db06b47b38a2dd5201c52d97045df69adba2d68582ee27377941"
+    },
+    {
+      "path": "outputs/notebook-execution.json",
+      "bytes": 226,
+      "sha256": "69a78c3de517023925bd30863024426941711cf55a8704ab3c09f95658c73037"
+    },
+    {
+      "path": "outputs/notebook-run.log",
+      "bytes": 213,
+      "sha256": "9baad6f3c8c83033a535c874ce5aa852e475a03dc2d6ebbc35d5416cbd3c200f"
+    },
+    {
+      "path": "outputs/pdf-build.log",
+      "bytes": 302,
+      "sha256": "27c18a57410d35d14c62509398487ef094e394a1d12ab21f27d2fdbd50bb5bd0"
+    },
+    {
+      "path": "outputs/results.json",
+      "bytes": 1415,
+      "sha256": "f264294afa48378752c820dd9e37cef0f49b1f102fbe2aa52b6ac8b675b41ad4"
+    },
+    {
+      "path": "outputs/test.log",
+      "bytes": 2957,
+      "sha256": "4c4f6ff82e63ed2392a6e28f48c5401e4ef27bd4548ab7e184df49e433d9e8d6"
+    },
+    {
+      "path": "outputs/tests-normal.txt",
+      "bytes": 1713,
+      "sha256": "38c05f5163ef4aaac0b7e07f45a80fb06566cf44b12a163397918282845611b5"
+    },
+    {
+      "path": "outputs/tests-optimized.txt",
+      "bytes": 1713,
+      "sha256": "3c99fbac33fbf6eaec9f08058f43efa9a584fc8073a0129aa864d8140bab6a49"
+    },
+    {
+      "path": "package.json",
+      "bytes": 208,
+      "sha256": "038dc9652c938409a249efea90c3c3f88c585add3636ee69203aad6d46031d42"
+    },
+    {
+      "path": "pdf.css",
+      "bytes": 3126,
+      "sha256": "356833c050fce836d695df34c2a14a2eb88d54e0e060e3955dde0e09b7361749"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 99,
+      "sha256": "7691e181894b2ddb8cd626499f16526a8fb5ef4f75822cefd86fdc6c791cda5e"
+    },
+    {
+      "path": "test_experiment.py",
+      "bytes": 927,
+      "sha256": "e6b28b9d363129bf1fffa448bea07ced9fee04fa41d5d3f01ad21d53904e891f"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1093,
+      "sha256": "6ce5173c4e4497d07a6e16502ec73e3683ba17da84cf0b9de4950754fe463463"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "nbformat": "5.11.1",
+  "weasyprint": "70.0",
+  "device": "cpu",
+  "torch_threads": 1,
+  "notebook_execution": "fresh-process in-process IPython, no socket kernel"
+}

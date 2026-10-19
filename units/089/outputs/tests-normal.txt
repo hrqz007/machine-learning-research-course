@@ -1,0 +1,8 @@
+test_axes (test_experiment.Tests.test_axes) ... ok
+test_dropout (test_experiment.Tests.test_dropout) ... ok
+test_training_only_standardization (test_experiment.Tests.test_training_only_standardization) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK

@@ -1,0 +1,3 @@
+markdown>=3.7,<4
+weasyprint>=63,<71
+pypdf>=5,<7

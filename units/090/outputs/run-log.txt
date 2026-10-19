@@ -1,0 +1,60 @@
+{
+  "integrity": {
+    "valid_input_finite": true,
+    "labels_in_range": true,
+    "correct_pairing_check": true,
+    "wrong_pairing_check": false,
+    "gradient_without_step": 0.6222883462905884,
+    "parameter_change_without_step": 0.0
+  },
+  "summary": {
+    "clean": {
+      "train_loss": [
+        1.6490520238221507e-06,
+        7.947274411890248e-07,
+        1.4503748388960958e-06
+      ],
+      "val_acc": [
+        0.7578125,
+        0.73046875,
+        0.75
+      ]
+    },
+    "no_step": {
+      "train_loss": [
+        0.6830920577049255,
+        0.7131798267364502,
+        0.7538455128669739
+      ],
+      "val_acc": [
+        0.45703125,
+        0.42578125,
+        0.4609375
+      ]
+    },
+    "misaligned_order": {
+      "train_loss": [
+        0.6892545223236084,
+        0.6888034343719482,
+        0.682605504989624
+      ],
+      "val_acc": [
+        0.51171875,
+        0.51171875,
+        0.5
+      ]
+    },
+    "shuffled_labels": {
+      "train_loss": [
+        1.948019598785322e-05,
+        3.2552361517446116e-05,
+        8.21046887722332e-06
+      ],
+      "val_acc": [
+        0.52734375,
+        0.47265625,
+        0.5390625
+      ]
+    }
+  }
+}

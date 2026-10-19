@@ -1,0 +1,8 @@
+test_data (test_experiment.TestCNN.test_data) ... ok
+test_identity_path (test_experiment.TestCNN.test_identity_path) ... ok
+test_shapes_and_gradient (test_experiment.TestCNN.test_shapes_and_gradient) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.154s
+
+OK

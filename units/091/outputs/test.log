@@ -1,0 +1,110 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.716s
+
+OK
+{
+  "seed": 91,
+  "device": "cpu",
+  "torch": "2.14.1+cpu",
+  "python": "3.12.14",
+  "hand_output": [
+    [
+      -4.0,
+      -4.0
+    ],
+    [
+      -4.0,
+      -4.0
+    ]
+  ],
+  "audits": [
+    {
+      "stride": 1,
+      "padding": 0,
+      "shape": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "errors": {
+        "forward": 1.7763568394002505e-15,
+        "dx": 3.552713678800501e-15,
+        "dw": 5.329070518200751e-15,
+        "db": 1.7763568394002505e-15,
+        "finite_difference_dw": 1.9096457748446483e-10
+      }
+    },
+    {
+      "stride": 1,
+      "padding": 1,
+      "shape": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "errors": {
+        "forward": 8.881784197001252e-16,
+        "dx": 3.552713678800501e-15,
+        "dw": 3.1086244689504383e-15,
+        "db": 1.3322676295501878e-15,
+        "finite_difference_dw": 1.5696297595013675e-09
+      }
+    },
+    {
+      "stride": 2,
+      "padding": 1,
+      "shape": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "errors": {
+        "forward": 8.881784197001252e-16,
+        "dx": 8.881784197001252e-16,
+        "dw": 1.7763568394002505e-15,
+        "db": 1.3322676295501878e-15,
+        "finite_difference_dw": 6.596381219026171e-10
+      }
+    }
+  ],
+  "circular_equivariance_max_error": 0.0,
+  "zero_padding_circular_shift_max_error": 6.3094985468071005,
+  "rf_nonzero_pixels": [
+    9,
+    25
+  ]
+}

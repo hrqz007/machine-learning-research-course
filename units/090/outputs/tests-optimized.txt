@@ -1,0 +1,9 @@
+test_group_totals (test_experiment.Tests.test_group_totals) ... ok
+test_integrity (test_experiment.Tests.test_integrity) ... ok
+test_no_step (test_experiment.Tests.test_no_step) ... ok
+test_tiny_fit_and_random_memory (test_experiment.Tests.test_tiny_fit_and_random_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.122s
+
+OK

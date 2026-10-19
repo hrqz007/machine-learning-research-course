@@ -1,0 +1,40 @@
+{
+  "axis_probe": {
+    "bn_train_companion_difference": 5.291499614715576,
+    "ln_companion_difference": 0.0,
+    "bn_eval_companion_difference": 0.0,
+    "bn_eval_shift_difference": 9.4830904006958,
+    "ln_shift_difference": 0.0
+  },
+  "dropout_probe": {
+    "p": 0.25,
+    "input": 3.0,
+    "train_mean": 3.0049800872802734,
+    "train_var": 2.9900152683258057,
+    "expected_mean": 3.0,
+    "expected_variance": 3.0,
+    "eval_max_error": 0.0
+  },
+  "validation_last": {
+    "none_drop0.0": [
+      0.6090970039367676,
+      0.5923820734024048,
+      0.686505138874054
+    ],
+    "none_drop0.35": [
+      0.694281816482544,
+      0.678791344165802,
+      0.8293865323066711
+    ],
+    "ln_drop0.0": [
+      0.8853813409805298,
+      0.8673604726791382,
+      0.909692108631134
+    ],
+    "ln_drop0.35": [
+      0.7703808546066284,
+      0.8440244793891907,
+      0.9204959273338318
+    ]
+  }
+}

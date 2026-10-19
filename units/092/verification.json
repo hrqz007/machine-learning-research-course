@@ -1,0 +1,34 @@
+{
+  "lesson": "092",
+  "status": "PASS",
+  "pdf_pages": {
+    "lecture": 6,
+    "lab": 2,
+    "answers": 1
+  },
+  "pdf_count": 3,
+  "rendered_pages": 9,
+  "visual_review": "All pages rendered with pdftoppm, contact sheets inspected; Chinese text, formula SVGs, charts and pagination checked.",
+  "pdf_text_bounds_violations": [],
+  "normal_tests": 3,
+  "optimized_tests": 3,
+  "tests_pass": true,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "notebook_engine": "fresh-process in-process IPython; real execution, no socket kernel/UI test",
+  "data": "original synthetic local data; no downloads",
+  "device": "cpu",
+  "figures": 3,
+  "evidence": [
+    "outputs/results.json",
+    "outputs/tests-normal.txt",
+    "outputs/tests-optimized.txt",
+    "outputs/notebook-execution.json",
+    "outputs/environment.json"
+  ],
+  "pdf_sha256": {
+    "lecture": "abbbe53df9869f821f071d14f16feb59d558336ef9198f04c51050fe831f762f",
+    "lab": "90ff8e11601fe349dac9a7f8c8c9cdfc2ec861f57825fb21c3a11df871bd8e6e",
+    "answers": "40f3ce3357fcc95a6bd36b5e13478cbe6421e91dfbb2c501431c6903be1f8482"
+  }
+}

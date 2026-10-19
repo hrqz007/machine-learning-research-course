@@ -1,0 +1,8 @@
+test_accumulation (test_experiment.Tests.test_accumulation) ... ok
+test_resume (test_experiment.Tests.test_resume) ... ok
+test_schedule (test_experiment.Tests.test_schedule) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.646s
+
+OK
