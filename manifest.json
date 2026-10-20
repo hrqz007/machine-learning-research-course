@@ -3439,7 +3439,7 @@
         "实验与验收": "比较RNN与门控网络的延迟依赖任务；验证padding不影响有效token损失。",
         "常见误区": "预测未来时使用双向未来信息；门控结构保证无限记忆。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/098/lecture.pdf",
         "lab": "units/098/lab.pdf",
@@ -3454,7 +3454,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "f441e406a855d778356e2c7e2795fad579cfb189",
+        "verified_file_count": 36,
+        "verified_bytes": 2126425,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/098-102.json"
     },
@@ -3468,7 +3475,7 @@
         "实验与验收": "手算三token注意力，从零实现并核验框架；测试因果mask和padding mask。",
         "常见误区": "把注意力权重直接当因果解释；mask方向反了仍凭loss判断。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/099/lecture.pdf",
         "lab": "units/099/lab.pdf",
@@ -3483,7 +3490,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "f441e406a855d778356e2c7e2795fad579cfb189",
+        "verified_file_count": 34,
+        "verified_bytes": 1833407,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/098-102.json"
     },
@@ -3497,7 +3511,7 @@
         "实验与验收": "从零实现小Transformer块，与参考实现对齐；做顺序敏感性和mask单元测试。",
         "常见误区": "没有位置机制仍认为模型天然知道顺序；混淆encoder和causal decoder。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/100/lecture.pdf",
         "lab": "units/100/lab.pdf",
@@ -3512,7 +3526,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "f441e406a855d778356e2c7e2795fad579cfb189",
+        "verified_file_count": 35,
+        "verified_bytes": 1858145,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/098-102.json"
     },
@@ -3526,7 +3547,7 @@
         "实验与验收": "在小语料训练分词器和小语言模型；逐token核对输入标签，按文档划分数据。",
         "常见误区": "把不同词表的困惑度直接比较；重叠文本片段跨训练测试。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/101/lecture.pdf",
         "lab": "units/101/lab.pdf",
@@ -3541,7 +3562,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "f441e406a855d778356e2c7e2795fad579cfb189",
+        "verified_file_count": 36,
+        "verified_bytes": 2457445,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/098-102.json"
     },
@@ -3555,7 +3583,7 @@
         "实验与验收": "用可负担的小配置做受控尺度实验或分析公开日志；区分测量与外推。",
         "常见误区": "把经验规模律当无条件定律；用玩具实验声称复现大模型能力。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/102/lecture.pdf",
         "lab": "units/102/lab.pdf",
@@ -3570,7 +3598,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "f441e406a855d778356e2c7e2795fad579cfb189",
+        "verified_file_count": 36,
+        "verified_bytes": 2773900,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/098-102.json"
     },
