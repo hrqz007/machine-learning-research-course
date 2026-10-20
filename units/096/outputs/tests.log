@@ -1,0 +1,10 @@
+test_corpus_count (test_experiment.TestMechanism.test_corpus_count) ... ok
+test_lookup_equivalence (test_experiment.TestMechanism.test_lookup_equivalence) ... ok
+test_no_cross_sentence (test_experiment.TestMechanism.test_no_cross_sentence) ... ok
+test_repeated_gradient (test_experiment.TestMechanism.test_repeated_gradient) ... ok
+test_window_edges (test_experiment.TestMechanism.test_window_edges) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK

@@ -1,0 +1,75 @@
+{
+  "course": "面向研究的机器学习课程",
+  "requested_lessons": [
+    "093",
+    "094",
+    "095",
+    "096",
+    "097"
+  ],
+  "baseline_commit": "d99211f0a806045538f370ba41fce4e835bacd03",
+  "independent_review": "passed",
+  "units": [
+    {
+      "id": "093",
+      "title": "视觉任务与迁移学习",
+      "pages": {
+        "lecture": 5,
+        "lab": 2,
+        "answers": 2
+      },
+      "tests": 6,
+      "path": "units/093",
+      "files": 37
+    },
+    {
+      "id": "094",
+      "title": "表示学习与对比目标",
+      "pages": {
+        "lecture": 6,
+        "lab": 2,
+        "answers": 1
+      },
+      "tests": 6,
+      "path": "units/094",
+      "files": 37
+    },
+    {
+      "id": "095",
+      "title": "深度视觉阶段项目",
+      "pages": {
+        "lecture": 6,
+        "lab": 2,
+        "answers": 1
+      },
+      "tests": 5,
+      "path": "units/095",
+      "files": 41
+    },
+    {
+      "id": "096",
+      "title": "离散表示与词嵌入",
+      "pages": {
+        "lecture": 5,
+        "lab": 2,
+        "answers": 1
+      },
+      "tests": 5,
+      "path": "units/096",
+      "files": 39
+    },
+    {
+      "id": "097",
+      "title": "循环网络与时间反传",
+      "pages": {
+        "lecture": 5,
+        "lab": 2,
+        "answers": 1
+      },
+      "tests": 6,
+      "path": "units/097",
+      "files": 37
+    }
+  ],
+  "verification_scope": "Independent content review, 28 tests, 25 Notebook code cells, numerical replay and all 43 PDF pages reviewed. Browser Jupyter UI/socket communication and cross-platform installation not tested."
+}

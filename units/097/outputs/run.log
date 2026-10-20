@@ -1,0 +1,30 @@
+[Publication note: environment diagnostics omitted; original numerical output unchanged.]
+{
+  "length_accuracy": {
+    "6": 1.0,
+    "12": 0.0,
+    "24": 1.0,
+    "48": 0.2734375
+  },
+  "manual_hidden_states": [
+    0.0,
+    0.139092447878458,
+    -0.0004537760296249044,
+    0.2726950775289676
+  ],
+  "manual_loss": 0.03718130265426482,
+  "manual_dw": 0.017440088303720087,
+  "finite_difference_error": 7.284766539994436e-12,
+  "autograd_error": 0.0,
+  "reset_vs_leaked_max_logit_difference": 3.803727865219116,
+  "truncate_forward_max_error": 0.0,
+  "truncate_gradient_max_difference": 2.1166950318729505e-05,
+  "seconds": 2.0133012960000087,
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu",
+    "threads": 1
+  }
+}

@@ -1,0 +1,11 @@
+test_collapsed_loss (test_experiment.TestMechanism.test_collapsed_loss) ... ok
+test_correct_pairs_better (test_experiment.TestMechanism.test_correct_pairs_better) ... ok
+test_finite_backward (test_experiment.TestMechanism.test_finite_backward) ... ok
+test_pair_permutation (test_experiment.TestMechanism.test_pair_permutation) ... ok
+test_probe_does_not_mutate_encoder (test_experiment.TestMechanism.test_probe_does_not_mutate_encoder) ... ok
+test_temperature_validation (test_experiment.TestMechanism.test_temperature_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.039s
+
+OK

@@ -1,0 +1,11 @@
+test_bptt_finite_difference (test_experiment.TestMechanism.test_bptt_finite_difference) ... ok
+test_first_bit_label (test_experiment.TestMechanism.test_first_bit_label) ... ok
+test_parameter_count (test_experiment.TestMechanism.test_parameter_count) ... ok
+test_reset_batch_independence (test_experiment.TestMechanism.test_reset_batch_independence) ... ok
+test_truncate_forward_gradient (test_experiment.TestMechanism.test_truncate_forward_gradient) ... ok
+test_zero_recurrent_memory (test_experiment.TestMechanism.test_zero_recurrent_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.018s
+
+OK

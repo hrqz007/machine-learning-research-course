@@ -1,0 +1,63 @@
+{
+  "vocabulary_size": 17,
+  "sentences": 242,
+  "context_pairs": 2420,
+  "initial_loss": 3.0304763317108154,
+  "final_loss": 1.4880650043487549,
+  "lookup_max_error": 0.0,
+  "repeated_index_gradient_error": 0.0,
+  "neighbors": {
+    "cat": [
+      "dog",
+      "likes",
+      "eats"
+    ],
+    "dog": [
+      "cat",
+      "likes",
+      "eats"
+    ],
+    "car": [
+      "bus",
+      "eats",
+      "road"
+    ],
+    "bus": [
+      "car",
+      "uses",
+      "moves"
+    ],
+    "comet": [
+      "crosses",
+      "rare",
+      "sky"
+    ]
+  },
+  "frequency": {
+    "bus": 60,
+    "car": 60,
+    "cat": 60,
+    "comet": 2,
+    "crosses": 2,
+    "dog": 60,
+    "eats": 60,
+    "fast": 60,
+    "food": 60,
+    "likes": 60,
+    "moves": 60,
+    "play": 60,
+    "rare": 2,
+    "road": 60,
+    "sky": 2,
+    "the": 240,
+    "uses": 60
+  },
+  "seconds": 1.4310843329999443,
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu",
+    "threads": 1
+  }
+}

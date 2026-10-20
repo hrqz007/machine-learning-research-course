@@ -1,0 +1,3 @@
+[build path redacted] UserWarning: IPython parent '[build path redacted]' is not a writable location, using a temp directory.
+  warn("IPython parent '{}' is not a writable location,"
+{'executed': True, 'engine': 'fresh-process in-process IPython; not a socket kernel', 'code_cells': 5, 'errors': 0, 'seconds': 6.314489841461182, 'python': '3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]'}

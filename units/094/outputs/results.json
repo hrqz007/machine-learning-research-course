@@ -1,0 +1,26 @@
+{
+  "probe": {
+    "random": {
+      "linear_probe_accuracy": 0.9549999833106995,
+      "feature_std_mean": 0.0026371809653937817
+    },
+    "contrastive": {
+      "linear_probe_accuracy": 1.0,
+      "feature_std_mean": 0.03371661528944969
+    }
+  },
+  "initial_loss": 5.540591239929199,
+  "final_loss": 3.3189034461975098,
+  "collapsed_loss_16_views": 2.708050012588501,
+  "collapsed_expected_log15": 2.70805020110221,
+  "unlabeled_updates": 180,
+  "probe_updates": 150,
+  "seconds": 2.561334640000041,
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu",
+    "threads": 1
+  }
+}

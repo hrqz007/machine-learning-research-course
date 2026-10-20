@@ -3258,18 +3258,24 @@
         "实验与验收": "完整实现小型分类迁移实验；手算检测/分割评价例子，审计重复与近重复图像。",
         "常见误区": "对任务破坏性的增强照搬；预训练数据重叠却宣称纯粹独立测试。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/093/lecture.pdf",
+        "lab": "units/093/lab.pdf",
+        "answers": "units/093/answers.pdf",
+        "notebook": "units/093/experiment.ipynb",
+        "script": "units/093/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_content_review_passed",
+        "code": "independent_complete_replay_and_tests_passed",
+        "notebook": "fresh_process_inprocess_kernel_passed_browser_socket_not_tested",
+        "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
         "status": "not_uploaded"
-      }
+      },
+      "release_record": "releases/093-097.json"
     },
     {
       "id": "094",
@@ -3281,18 +3287,24 @@
         "实验与验收": "用小数据实现简化对比学习，冻结编码器做线性探测；检查增强与负样本假设。",
         "常见误区": "低对比损失就代表通用好表示；训练与评价视图泄漏。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/094/lecture.pdf",
+        "lab": "units/094/lab.pdf",
+        "answers": "units/094/answers.pdf",
+        "notebook": "units/094/experiment.ipynb",
+        "script": "units/094/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_content_review_passed",
+        "code": "independent_complete_replay_and_tests_passed",
+        "notebook": "fresh_process_inprocess_kernel_passed_browser_socket_not_tested",
+        "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
         "status": "not_uploaded"
-      }
+      },
+      "release_record": "releases/093-097.json"
     },
     {
       "id": "095",
@@ -3305,18 +3317,24 @@
         "实验与验收": "交付手写小网络核验与框架视觉实验；记录误差分组、置信区间、训练代价和失败案例。",
         "常见误区": "将预训练数据与算力优势全部归因于新结构。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/095/lecture.pdf",
+        "lab": "units/095/lab.pdf",
+        "answers": "units/095/answers.pdf",
+        "notebook": "units/095/experiment.ipynb",
+        "script": "units/095/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_content_review_passed",
+        "code": "independent_complete_replay_and_tests_passed",
+        "notebook": "fresh_process_inprocess_kernel_passed_browser_socket_not_tested",
+        "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
         "status": "not_uploaded"
-      }
+      },
+      "release_record": "releases/093-097.json"
     },
     {
       "id": "096",
@@ -3328,18 +3346,24 @@
         "实验与验收": "训练小型词或字符表示；核对查表与矩阵乘法等价性，检查近邻与频率偏差。",
         "常见误区": "近邻语义当事实推理能力；将词表编码直接当连续大小关系。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/096/lecture.pdf",
+        "lab": "units/096/lab.pdf",
+        "answers": "units/096/answers.pdf",
+        "notebook": "units/096/experiment.ipynb",
+        "script": "units/096/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_content_review_passed",
+        "code": "independent_complete_replay_and_tests_passed",
+        "notebook": "fresh_process_inprocess_kernel_passed_browser_socket_not_tested",
+        "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
         "status": "not_uploaded"
-      }
+      },
+      "release_record": "releases/093-097.json"
     },
     {
       "id": "097",
@@ -3351,18 +3375,24 @@
         "实验与验收": "手算短序列前后向，实现RNN并做序列任务；测试长度外推和状态重置。",
         "常见误区": "序列之间错误共享隐藏状态；把截断反传视为精确全序列梯度。"
       },
-      "status": "planned",
-      "artifacts": {},
+      "status": "verified",
+      "artifacts": {
+        "lecture": "units/097/lecture.pdf",
+        "lab": "units/097/lab.pdf",
+        "answers": "units/097/answers.pdf",
+        "notebook": "units/097/experiment.ipynb",
+        "script": "units/097/experiment.py"
+      },
       "checks": {
-        "scientific": "not_started",
-        "sources": "not_started",
-        "code": "not_started",
-        "notebook": "not_started",
-        "visual": "not_started"
+        "scientific": "independent_content_review_passed",
+        "code": "independent_complete_replay_and_tests_passed",
+        "notebook": "fresh_process_inprocess_kernel_passed_browser_socket_not_tested",
+        "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
         "status": "not_uploaded"
-      }
+      },
+      "release_record": "releases/093-097.json"
     },
     {
       "id": "098",

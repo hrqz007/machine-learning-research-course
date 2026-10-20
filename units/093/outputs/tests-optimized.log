@@ -1,0 +1,11 @@
+test_duplicate_detector (test_experiment.TestMechanism.test_duplicate_detector) ... ok
+test_frozen_encoder_unchanged (test_experiment.TestMechanism.test_frozen_encoder_unchanged) ... ok
+test_independent_data (test_experiment.TestMechanism.test_independent_data) ... ok
+test_iou_disjoint_identical (test_experiment.TestMechanism.test_iou_disjoint_identical) ... ok
+test_iou_invalid (test_experiment.TestMechanism.test_iou_invalid) ... ok
+test_iou_known (test_experiment.TestMechanism.test_iou_known) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.277s
+
+OK

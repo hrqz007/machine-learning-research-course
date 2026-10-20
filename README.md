@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–092 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–097 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -221,3 +221,15 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 第083–087讲的公开文件清单、课程编号映射、PDF页数及逐文件远端核验记录见[核验说明](releases/083-087.json)。执行方式、数据来源与环境边界以各讲README及实验指南为准。
 
 第088–092讲的公开文件清单、课程编号映射、PDF页数及逐文件远端核验记录见[核验说明](releases/088-092.json)。实验、数据和验证边界以各讲README及verification.json为准；不据此声称验证Jupyter浏览器界面、跨平台安装或真实部署效果。
+
+## 第093–097讲
+
+| 讲次 | 主题 | 教学资料 |
+|---|---|---|
+| 093 | [视觉任务与迁移学习](units/093/README.md) | [正文](units/093/lecture.pdf) · [实验](units/093/lab.pdf) · [答案](units/093/answers.pdf) · [Notebook](units/093/experiment.ipynb) |
+| 094 | [表示学习与对比目标](units/094/README.md) | [正文](units/094/lecture.pdf) · [实验](units/094/lab.pdf) · [答案](units/094/answers.pdf) · [Notebook](units/094/experiment.ipynb) |
+| 095 | [深度视觉阶段项目](units/095/README.md) | [正文](units/095/lecture.pdf) · [实验](units/095/lab.pdf) · [答案](units/095/answers.pdf) · [Notebook](units/095/experiment.ipynb) |
+| 096 | [离散表示与词嵌入](units/096/README.md) | [正文](units/096/lecture.pdf) · [实验](units/096/lab.pdf) · [答案](units/096/answers.pdf) · [Notebook](units/096/experiment.ipynb) |
+| 097 | [循环网络与时间反传](units/097/README.md) | [正文](units/097/lecture.pdf) · [实验](units/097/lab.pdf) · [答案](units/097/answers.pdf) · [Notebook](units/097/experiment.ipynb) |
+
+本批通过独立内容、完整实验重跑、28项测试、5份Notebook及15份PDF共43页检查。小型合成数据实验的适用边界以各讲说明为准，不代表真实部署效果。详见[发布核验记录](releases/093-097.json)。

@@ -1,0 +1,108 @@
+{
+  "records": [
+    {
+      "seed": 0,
+      "mode": "scratch",
+      "accuracy": 0.9700000286102295,
+      "encoder_max_change": 1.380875825881958,
+      "target_updates": 100
+    },
+    {
+      "seed": 0,
+      "mode": "frozen",
+      "accuracy": 0.9399999976158142,
+      "encoder_max_change": 0.0,
+      "target_updates": 100
+    },
+    {
+      "seed": 0,
+      "mode": "finetune",
+      "accuracy": 0.9549999833106995,
+      "encoder_max_change": 0.4568338990211487,
+      "target_updates": 100
+    },
+    {
+      "seed": 1,
+      "mode": "scratch",
+      "accuracy": 0.9100000262260437,
+      "encoder_max_change": 1.0597344636917114,
+      "target_updates": 100
+    },
+    {
+      "seed": 1,
+      "mode": "frozen",
+      "accuracy": 0.9399999976158142,
+      "encoder_max_change": 0.0,
+      "target_updates": 100
+    },
+    {
+      "seed": 1,
+      "mode": "finetune",
+      "accuracy": 0.9599999785423279,
+      "encoder_max_change": 0.49598294496536255,
+      "target_updates": 100
+    },
+    {
+      "seed": 2,
+      "mode": "scratch",
+      "accuracy": 0.9449999928474426,
+      "encoder_max_change": 1.4238327741622925,
+      "target_updates": 100
+    },
+    {
+      "seed": 2,
+      "mode": "frozen",
+      "accuracy": 0.9449999928474426,
+      "encoder_max_change": 0.0,
+      "target_updates": 100
+    },
+    {
+      "seed": 2,
+      "mode": "finetune",
+      "accuracy": 0.9549999833106995,
+      "encoder_max_change": 0.3956559896469116,
+      "target_updates": 100
+    }
+  ],
+  "source_updates": 120,
+  "source_train_accuracy": 1.0,
+  "source_test_audit": {
+    "exact_count": 0,
+    "near_count_rmse_lt_0_03": 0,
+    "minimum_rmse": 0.2637816369533539
+  },
+  "source_target_train_audit": {
+    "exact_count": 0,
+    "near_count_rmse_lt_0_03": 0,
+    "minimum_rmse": 0.25872713327407837
+  },
+  "original_audit": {
+    "exact_count": 0,
+    "near_count_rmse_lt_0_03": 0,
+    "minimum_rmse": 0.3551829159259796
+  },
+  "injected_audit": {
+    "exact_count": 1,
+    "near_count_rmse_lt_0_03": 2,
+    "minimum_rmse": 0.0
+  },
+  "metric_handcheck": {
+    "box_iou": 0.3333333333333333,
+    "detection_tp_fp_fn_at_0_5": [
+      1,
+      1,
+      1
+    ],
+    "foreground_iou": 0.6,
+    "foreground_dice": 0.75,
+    "pixel_accuracy": 0.875
+  },
+  "seconds": 3.40419510799984,
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu",
+    "threads": 1
+  }
+}

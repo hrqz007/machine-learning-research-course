@@ -1,0 +1,19 @@
+{
+  "bus": 0,
+  "car": 1,
+  "cat": 2,
+  "comet": 3,
+  "crosses": 4,
+  "dog": 5,
+  "eats": 6,
+  "fast": 7,
+  "food": 8,
+  "likes": 9,
+  "moves": 10,
+  "play": 11,
+  "rare": 12,
+  "road": 13,
+  "sky": 14,
+  "the": 15,
+  "uses": 16
+}

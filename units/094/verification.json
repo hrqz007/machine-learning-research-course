@@ -1,0 +1,39 @@
+{
+  "unit": "094",
+  "title": "表示学习与对比目标",
+  "status": "locally_verified_pending_independent_release_review",
+  "curriculum_source": "https://github.com/hrqz007/machine-learning-research-course/blob/main/catalog/curriculum.json",
+  "source_commit": "d99211f0a806045538f370ba41fce4e835bacd03",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu",
+    "threads": 1
+  },
+  "tests": {
+    "normal": 6,
+    "optimized": 6,
+    "failures": 0
+  },
+  "notebook": {
+    "executed": true,
+    "engine": "fresh-process in-process IPython; not a socket kernel",
+    "code_cells": 5,
+    "errors": 0,
+    "seconds": 8.400245189666748,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "pdf_pages": {
+    "lecture": 6,
+    "lab": 2,
+    "answers": 1
+  },
+  "pdf_review": "Rendered all pages to PNG; visual review tracked in release QA report",
+  "boundaries": [
+    "CPU synthetic mechanism experiment only",
+    "No real-world deployment evaluation",
+    "Notebook fresh-process in-process IPython, not browser or socket kernel",
+    "No cross-platform installation verification"
+  ]
+}

@@ -1,0 +1,10 @@
+test_balanced_splits (test_experiment.TestMechanism.test_balanced_splits) ... ok
+test_manual_gradient (test_experiment.TestMechanism.test_manual_gradient) ... ok
+test_one_sample_gradient (test_experiment.TestMechanism.test_one_sample_gradient) ... ok
+test_prediction_shape (test_experiment.TestMechanism.test_prediction_shape) ... ok
+test_zero_input_gradient (test_experiment.TestMechanism.test_zero_input_gradient) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.138s
+
+OK

@@ -1,0 +1,3 @@
+markdown>=3.7
+weasyprint>=63
+# Node.js and npm install are required for local MathJax 3.2.2
