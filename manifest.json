@@ -3258,7 +3258,7 @@
         "实验与验收": "完整实现小型分类迁移实验；手算检测/分割评价例子，审计重复与近重复图像。",
         "常见误区": "对任务破坏性的增强照搬；预训练数据重叠却宣称纯粹独立测试。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/093/lecture.pdf",
         "lab": "units/093/lab.pdf",
@@ -3273,7 +3273,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "66ac837e1d61befc6c142f278d12cd433b0c77ec",
+        "verified_file_count": 37,
+        "verified_bytes": 2159996,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/093-097.json"
     },
@@ -3287,7 +3294,7 @@
         "实验与验收": "用小数据实现简化对比学习，冻结编码器做线性探测；检查增强与负样本假设。",
         "常见误区": "低对比损失就代表通用好表示；训练与评价视图泄漏。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/094/lecture.pdf",
         "lab": "units/094/lab.pdf",
@@ -3302,7 +3309,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "66ac837e1d61befc6c142f278d12cd433b0c77ec",
+        "verified_file_count": 37,
+        "verified_bytes": 2071776,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/093-097.json"
     },
@@ -3317,7 +3331,7 @@
         "实验与验收": "交付手写小网络核验与框架视觉实验；记录误差分组、置信区间、训练代价和失败案例。",
         "常见误区": "将预训练数据与算力优势全部归因于新结构。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/095/lecture.pdf",
         "lab": "units/095/lab.pdf",
@@ -3332,7 +3346,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "66ac837e1d61befc6c142f278d12cd433b0c77ec",
+        "verified_file_count": 41,
+        "verified_bytes": 2272535,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/093-097.json"
     },
@@ -3346,7 +3367,7 @@
         "实验与验收": "训练小型词或字符表示；核对查表与矩阵乘法等价性，检查近邻与频率偏差。",
         "常见误区": "近邻语义当事实推理能力；将词表编码直接当连续大小关系。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/096/lecture.pdf",
         "lab": "units/096/lab.pdf",
@@ -3361,7 +3382,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "66ac837e1d61befc6c142f278d12cd433b0c77ec",
+        "verified_file_count": 39,
+        "verified_bytes": 1880094,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/093-097.json"
     },
@@ -3375,7 +3403,7 @@
         "实验与验收": "手算短序列前后向，实现RNN并做序列任务；测试长度外推和状态重置。",
         "常见误区": "序列之间错误共享隐藏状态；把截断反传视为精确全序列梯度。"
       },
-      "status": "verified",
+      "status": "published",
       "artifacts": {
         "lecture": "units/097/lecture.pdf",
         "lab": "units/097/lab.pdf",
@@ -3390,7 +3418,14 @@
         "visual": "all_pdf_pages_independently_rendered_and_reviewed"
       },
       "publication": {
-        "status": "not_uploaded"
+        "status": "published",
+        "repository": "hrqz007/machine-learning-research-course",
+        "branch": "main",
+        "content_commit": "66ac837e1d61befc6c142f278d12cd433b0c77ec",
+        "verified_file_count": 37,
+        "verified_bytes": 1987854,
+        "remote_file_hashes_verified": true,
+        "verified_on": "2026-10-20"
       },
       "release_record": "releases/093-097.json"
     },
