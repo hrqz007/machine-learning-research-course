@@ -1,0 +1,29 @@
+{
+  "runs": 18,
+  "mean_validation_nll": {
+    "12-120": 0.8619579690040192,
+    "12-1800": 0.8690489109609237,
+    "24-120": 0.6428951459496379,
+    "24-1800": 0.6251677823167278,
+    "48-120": 0.5729699313860973,
+    "48-1800": 0.5306432464064046
+  },
+  "selected_setting": {
+    "width": 48,
+    "unique_docs": 1800
+  },
+  "selected_test": {
+    "nll": 0.537384630581628,
+    "ppl": 1.711524734081041,
+    "target_tokens": 12350,
+    "nll_sum": 6636.7001876831055,
+    "bits_per_utf8_byte": 0.3670449455124308
+  },
+  "fit": {
+    "slope": -0.2259701077107016,
+    "intercept": 1.5606246153091006,
+    "points": 3,
+    "irreducible_floor_assumed": 0,
+    "warning": "Descriptive interpolation only; not a scaling-law replication."
+  }
+}

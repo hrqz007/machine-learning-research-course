@@ -2,7 +2,7 @@
 
 从零基础逐步进入可推导、可实现、可检验的机器学习研究实践。
 
-> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–097 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
+> 课程地图规划了 136 讲主体和 6 条高级分支共 30 个专题单元。本仓库提供完整课程大纲与第 001–102 讲的现有教学资料。下方目录直接链接各讲正文、实验与代码；逐单元制作与验收记录见 [manifest.json](manifest.json)。规划目录不代表其余正文或实验已经完成。
 
 ## 从这里开始
 
@@ -233,3 +233,15 @@ Notebook 的计算单元已在新进程中的 IPython InProcessKernel 顺序执�
 | 097 | [循环网络与时间反传](units/097/README.md) | [正文](units/097/lecture.pdf) · [实验](units/097/lab.pdf) · [答案](units/097/answers.pdf) · [Notebook](units/097/experiment.ipynb) |
 
 本批通过独立内容、完整实验重跑、28项测试、5份Notebook及15份PDF共43页检查。小型合成数据实验的适用边界以各讲说明为准，不代表真实部署效果。详见[发布核验记录](releases/093-097.json)。
+
+## 第098–102讲
+
+| 讲次 | 主题 | 教学资料 |
+|---|---|---|
+| 098 | [门控记忆与序列任务](units/098/README.md) | [正文](units/098/lecture.pdf) · [实验](units/098/lab.pdf) · [答案](units/098/answers.pdf) · [Notebook](units/098/experiment.ipynb) |
+| 099 | [注意力的完整计算](units/099/README.md) | [正文](units/099/lecture.pdf) · [实验](units/099/lab.pdf) · [答案](units/099/answers.pdf) · [Notebook](units/099/experiment.ipynb) |
+| 100 | [Transformer块与位置](units/100/README.md) | [正文](units/100/lecture.pdf) · [实验](units/100/lab.pdf) · [答案](units/100/answers.pdf) · [Notebook](units/100/experiment.ipynb) |
+| 101 | [分词与语言学习目标](units/101/README.md) | [正文](units/101/lecture.pdf) · [实验](units/101/lab.pdf) · [答案](units/101/answers.pdf) · [Notebook](units/101/experiment.ipynb) |
+| 102 | [语言模型训练与规模](units/102/README.md) | [正文](units/102/lecture.pdf) · [实验](units/102/lab.pdf) · [答案](units/102/answers.pdf) · [Notebook](units/102/experiment.ipynb) |
+
+本批通过独立内容、完整实验重跑、39项测试（普通与优化模式）、5份Notebook共25个代码单元及15份PDF共43页检查。小型合成数据实验的适用边界以各讲说明为准，不代表真实部署效果。详见[发布核验记录](releases/098-102.json)。

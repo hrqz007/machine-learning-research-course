@@ -1,0 +1,205 @@
+{
+  "lesson": "101",
+  "device": "cpu",
+  "split_sizes": {
+    "train": 1800,
+    "validation": 400,
+    "test": 776
+  },
+  "models": {
+    "character": {
+      "seed": 7,
+      "width": 24,
+      "parameters": 4825,
+      "steps": 120,
+      "processed_target_tokens": 99483,
+      "unique_train_docs": 1800,
+      "unique_train_target_tokens": 62206,
+      "train_seconds": 1.020877737999399,
+      "history": [
+        {
+          "step": 0,
+          "tokens": 0,
+          "validation_nll": 3.265134832881759
+        },
+        {
+          "step": 20,
+          "tokens": 16555,
+          "validation_nll": 1.5354252594108704
+        },
+        {
+          "step": 40,
+          "tokens": 33124,
+          "validation_nll": 0.727103534889056
+        },
+        {
+          "step": 60,
+          "tokens": 49699,
+          "validation_nll": 0.44915077612643084
+        },
+        {
+          "step": 80,
+          "tokens": 66279,
+          "validation_nll": 0.3456467725691546
+        },
+        {
+          "step": 100,
+          "tokens": 82938,
+          "validation_nll": 0.3139101634850366
+        },
+        {
+          "step": 120,
+          "tokens": 99483,
+          "validation_nll": 0.3025929392881556
+        }
+      ],
+      "validation": {
+        "nll": 0.3025929392881556,
+        "ppl": 1.3533634512121435,
+        "target_tokens": 13852,
+        "nll_sum": 4191.517395019531,
+        "bits_per_utf8_byte": 0.4495302824557318
+      },
+      "train": {
+        "nll": 0.30349751583990153,
+        "ppl": 1.3545882259238273,
+        "target_tokens": 62206,
+        "nll_sum": 18879.366470336914,
+        "bits_per_utf8_byte": 0.4509017048286667
+      },
+      "initial_validation": {
+        "nll": 3.265134832881759,
+        "ppl": 26.183641168619292,
+        "target_tokens": 13852,
+        "nll_sum": 45228.647705078125,
+        "bits_per_utf8_byte": 4.850665012654639
+      },
+      "test": {
+        "nll": 0.3037932416313625,
+        "ppl": 1.3549888718367873,
+        "target_tokens": 26862,
+        "nll_sum": 8160.49405670166,
+        "bits_per_utf8_byte": 0.4513188801198859
+      },
+      "vocab": 25
+    },
+    "bpe": {
+      "seed": 7,
+      "width": 24,
+      "parameters": 6001,
+      "steps": 120,
+      "processed_target_tokens": 45745,
+      "unique_train_docs": 1800,
+      "unique_train_target_tokens": 28617,
+      "train_seconds": 1.1756442690002586,
+      "history": [
+        {
+          "step": 0,
+          "tokens": 0,
+          "validation_nll": 3.8957896078402054
+        },
+        {
+          "step": 20,
+          "tokens": 7618,
+          "validation_nll": 1.6951526939226416
+        },
+        {
+          "step": 40,
+          "tokens": 15275,
+          "validation_nll": 0.7802664863003583
+        },
+        {
+          "step": 60,
+          "tokens": 22895,
+          "validation_nll": 0.6515122473081598
+        },
+        {
+          "step": 80,
+          "tokens": 30522,
+          "validation_nll": 0.6238878819555477
+        },
+        {
+          "step": 100,
+          "tokens": 38138,
+          "validation_nll": 0.6177454911029222
+        },
+        {
+          "step": 120,
+          "tokens": 45745,
+          "validation_nll": 0.6060790014423405
+        }
+      ],
+      "validation": {
+        "nll": 0.6060790014423405,
+        "ppl": 1.8332291990562648,
+        "target_tokens": 6401,
+        "nll_sum": 3879.511688232422,
+        "bits_per_utf8_byte": 0.4160684116624803
+      },
+      "train": {
+        "nll": 0.6075103279345981,
+        "ppl": 1.835855027335751,
+        "target_tokens": 28617,
+        "nll_sum": 17385.123054504395,
+        "bits_per_utf8_byte": 0.4152142306389743
+      },
+      "initial_validation": {
+        "nll": 3.8957896078402054,
+        "ppl": 49.194882695768094,
+        "target_tokens": 6401,
+        "nll_sum": 24936.949279785156,
+        "bits_per_utf8_byte": 2.6744285653319695
+      },
+      "test": {
+        "nll": 0.603893026127989,
+        "ppl": 1.8292261821237086,
+        "target_tokens": 12350,
+        "nll_sum": 7458.078872680664,
+        "bits_per_utf8_byte": 0.41247157111765487
+      },
+      "vocab": 49
+    }
+  },
+  "alignment": {
+    "text": "the small bird follows the calm cat.",
+    "input": [
+      "<bos>",
+      "the ",
+      "small ",
+      "b",
+      "i",
+      "r",
+      "d ",
+      "foll",
+      "o",
+      "w",
+      "s the ",
+      "calm ",
+      "c",
+      "a",
+      "t",
+      "."
+    ],
+    "label": [
+      "the ",
+      "small ",
+      "b",
+      "i",
+      "r",
+      "d ",
+      "foll",
+      "o",
+      "w",
+      "s the ",
+      "calm ",
+      "c",
+      "a",
+      "t",
+      ".",
+      "<eos>"
+    ],
+    "padding_loss": "ignored",
+    "eos_loss": "included"
+  },
+  "future_invariance_max_difference": 0.0
+}

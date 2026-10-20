@@ -1,0 +1,8 @@
+{
+  "executed": true,
+  "engine": "fresh-process in-process IPython; not a socket kernel",
+  "code_cells": 5,
+  "errors": 0,
+  "seconds": 13.653218269348145,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}

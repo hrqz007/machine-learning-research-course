@@ -1,0 +1,55 @@
+{
+  "course": "面向研究的机器学习课程",
+  "requested_lessons": [
+    "098",
+    "099",
+    "100",
+    "101",
+    "102"
+  ],
+  "baseline_commit": "419571f3c84f7880766dd290cf9f78412e81279f",
+  "independent_review": "passed",
+  "units": [
+    {
+      "id": "098",
+      "title": "门控记忆与序列任务",
+      "tests": 7,
+      "pdf_pages": 9,
+      "notebook_code_cells": 5,
+      "files": 36
+    },
+    {
+      "id": "099",
+      "title": "注意力的完整计算",
+      "tests": 9,
+      "pdf_pages": 9,
+      "notebook_code_cells": 5,
+      "files": 34
+    },
+    {
+      "id": "100",
+      "title": "Transformer块与位置",
+      "tests": 10,
+      "pdf_pages": 9,
+      "notebook_code_cells": 5,
+      "files": 35
+    },
+    {
+      "id": "101",
+      "title": "分词与语言学习目标",
+      "tests": 6,
+      "pdf_pages": 8,
+      "notebook_code_cells": 5,
+      "files": 36
+    },
+    {
+      "id": "102",
+      "title": "语言模型训练与规模",
+      "tests": 7,
+      "pdf_pages": 8,
+      "notebook_code_cells": 5,
+      "files": 36
+    }
+  ],
+  "verification_scope": "Independent content review, 39 tests in normal and optimized modes, 25 Notebook code cells, numerical replay and all 43 PDF pages reviewed. Browser Jupyter UI/socket communication and cross-platform installation not tested."
+}

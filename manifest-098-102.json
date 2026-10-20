@@ -1,0 +1,51 @@
+{
+  "course": "machine-learning",
+  "lessons": [
+    {
+      "id": "098",
+      "title": "门控记忆与序列任务",
+      "tests": 7,
+      "pdf_pages": 9,
+      "notebook_code_cells": 5,
+      "files": 36
+    },
+    {
+      "id": "099",
+      "title": "注意力的完整计算",
+      "tests": 9,
+      "pdf_pages": 9,
+      "notebook_code_cells": 5,
+      "files": 34
+    },
+    {
+      "id": "100",
+      "title": "Transformer块与位置",
+      "tests": 10,
+      "pdf_pages": 9,
+      "notebook_code_cells": 5,
+      "files": 35
+    },
+    {
+      "id": "101",
+      "title": "分词与语言学习目标",
+      "tests": 6,
+      "pdf_pages": 8,
+      "notebook_code_cells": 5,
+      "files": 36
+    },
+    {
+      "id": "102",
+      "title": "语言模型训练与规模",
+      "tests": 7,
+      "pdf_pages": 8,
+      "notebook_code_cells": 5,
+      "files": 36
+    }
+  ],
+  "pdf_count": 15,
+  "pdf_pages": 43,
+  "tests": 39,
+  "executed_code_cells": 25,
+  "device": "cpu",
+  "notes": "Experimental scope and negative results are preserved in each lesson."
+}

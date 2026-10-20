@@ -1,0 +1,246 @@
+{
+  "checks": {
+    "lstm_cell_max_error": 0.0,
+    "valid_loss": 1.2796443436030598,
+    "padded_valid_loss": 1.2796443436030596,
+    "loss_padding_error": 2.220446049250313e-16,
+    "valid_readout_padding_error": 0.0,
+    "wrong_last_readout_change": 0.022004750985094523,
+    "constant_forget_0.9_after_50": 0.00515377520732012,
+    "constant_forget_0.99_after_50": 0.6050060671375364
+  },
+  "configuration": {
+    "train_examples": 192,
+    "test_examples_per_length": 256,
+    "hidden": 12,
+    "updates": 200,
+    "learning_rate": 0.02,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "train_length": 12,
+    "data_seed": 198,
+    "device": "cpu"
+  },
+  "evaluation": [
+    {
+      "seed": 0,
+      "model": "RNN",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 8.47937844810076e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 0,
+      "model": "RNN",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 8.484127465635538e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 0,
+      "model": "RNN",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 8.47644405439496e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 0,
+      "model": "GRU",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 3.4828903153538704e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 0,
+      "model": "GRU",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 3.1381270673591644e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 0,
+      "model": "GRU",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 2.976688847411424e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 0,
+      "model": "LSTM",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 0.00011002208339050412,
+      "parameters": 746
+    },
+    {
+      "seed": 0,
+      "model": "LSTM",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 0.00010987962014041841,
+      "parameters": 746
+    },
+    {
+      "seed": 0,
+      "model": "LSTM",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 0.00010985214612446725,
+      "parameters": 746
+    },
+    {
+      "seed": 1,
+      "model": "RNN",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 7.244448352139443e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 1,
+      "model": "RNN",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 7.234483200591058e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 1,
+      "model": "RNN",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 7.24365672795102e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 1,
+      "model": "GRU",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 3.7384907045634463e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 1,
+      "model": "GRU",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 3.356335946591571e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 1,
+      "model": "GRU",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 3.146095332340337e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 1,
+      "model": "LSTM",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 2.7153586415806785e-05,
+      "parameters": 746
+    },
+    {
+      "seed": 1,
+      "model": "LSTM",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 2.7200154363526963e-05,
+      "parameters": 746
+    },
+    {
+      "seed": 1,
+      "model": "LSTM",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 2.7130772650707513e-05,
+      "parameters": 746
+    },
+    {
+      "seed": 2,
+      "model": "RNN",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 5.558676639338955e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 2,
+      "model": "RNN",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 5.551506546908058e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 2,
+      "model": "RNN",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 5.573251110035926e-05,
+      "parameters": 206
+    },
+    {
+      "seed": 2,
+      "model": "GRU",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 1.6866573787410744e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 2,
+      "model": "GRU",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 1.4999766790424474e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 2,
+      "model": "GRU",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 1.4822817320236936e-05,
+      "parameters": 566
+    },
+    {
+      "seed": 2,
+      "model": "LSTM",
+      "length": 12,
+      "accuracy": 1.0,
+      "loss": 9.376279194839299e-05,
+      "parameters": 746
+    },
+    {
+      "seed": 2,
+      "model": "LSTM",
+      "length": 24,
+      "accuracy": 1.0,
+      "loss": 9.326783037977293e-05,
+      "parameters": 746
+    },
+    {
+      "seed": 2,
+      "model": "LSTM",
+      "length": 48,
+      "accuracy": 1.0,
+      "loss": 9.333580965176225e-05,
+      "parameters": 746
+    }
+  ],
+  "scope": "Synthetic first-bit retention only; equal hidden width and updates, unequal parameter count."
+}

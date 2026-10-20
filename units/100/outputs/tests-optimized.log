@@ -1,0 +1,16 @@
+Matplotlib is building the font cache; this may take a moment.
+test_all_blocked (test_experiment.Tests.test_all_blocked) ... ok
+test_causal_future (test_experiment.Tests.test_causal_future) ... ok
+test_equivariance (test_experiment.Tests.test_equivariance) ... ok
+test_forward_reference (test_experiment.Tests.test_forward_reference) ... ok
+test_input_gradient (test_experiment.Tests.test_input_gradient) ... ok
+test_parameter_gradients (test_experiment.Tests.test_parameter_gradients) ... ok
+test_parameters (test_experiment.Tests.test_parameters) ... ok
+test_pool_invariance (test_experiment.Tests.test_pool_invariance) ... ok
+test_position_shape (test_experiment.Tests.test_position_shape) ... ok
+test_positions_break_symmetry (test_experiment.Tests.test_positions_break_symmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.147s
+
+OK

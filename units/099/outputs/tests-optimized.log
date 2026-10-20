@@ -1,0 +1,14 @@
+test_all_blocked_rejected (test_experiment.Tests.test_all_blocked_rejected) ... ok
+test_causal_future (test_experiment.Tests.test_causal_future) ... ok
+test_cross_attention_shape (test_experiment.Tests.test_cross_attention_shape) ... ok
+test_finite_difference (test_experiment.Tests.test_finite_difference) ... ok
+test_manual_gradients (test_experiment.Tests.test_manual_gradients) ... ok
+test_padding (test_experiment.Tests.test_padding) ... ok
+test_probability (test_experiment.Tests.test_probability) ... ok
+test_reference (test_experiment.Tests.test_reference) ... ok
+test_unmasked_counterexample (test_experiment.Tests.test_unmasked_counterexample) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.005s
+
+OK

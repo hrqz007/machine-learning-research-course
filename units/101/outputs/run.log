@@ -1,0 +1,13 @@
+{
+  "models": {
+    "character": {
+      "test_ppl": 1.3549888718367873,
+      "test_bits_per_byte": 0.4513188801198859
+    },
+    "bpe": {
+      "test_ppl": 1.8292261821237086,
+      "test_bits_per_byte": 0.41247157111765487
+    }
+  },
+  "future_invariance": 0.0
+}

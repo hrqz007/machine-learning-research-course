@@ -1,0 +1,17 @@
+{
+  "lesson": "100",
+  "cpu_experiment_executed": true,
+  "notebook_executed": true,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "unittest_count": 10,
+  "unittest_passed": true,
+  "optimized_tests_passed": true,
+  "pdf_pages": {
+    "lecture": 5,
+    "lab": 2,
+    "answers": 2
+  },
+  "public_output_sanitation": "Only exact Fontconfig cache diagnostic lines removed; experiment values and test verdicts preserved. Raw environment logs excluded from course package.",
+  "pdf_review": "Rendered pages and Chinese/formula/figure layout checked."
+}

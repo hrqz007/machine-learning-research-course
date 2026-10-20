@@ -1,0 +1,11 @@
+test_alignment (test_experiment.TestExperiment.test_alignment) ... ok
+test_causality (test_experiment.TestExperiment.test_causality) ... ok
+test_parameter_formula (test_experiment.TestExperiment.test_parameter_formula) ... ok
+test_split (test_experiment.TestExperiment.test_split) ... ok
+test_tokenizer (test_experiment.TestExperiment.test_tokenizer) ... ok
+test_training (test_experiment.TestExperiment.test_training) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.284s
+
+OK

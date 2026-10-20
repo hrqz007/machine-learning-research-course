@@ -1,0 +1,24 @@
+{
+  "lesson": "102",
+  "cpu_experiment_executed": true,
+  "notebook_executed": true,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "unittest_passed": true,
+  "unittest_count": 7,
+  "data_split": [
+    1800,
+    400,
+    776
+  ],
+  "pdf_pages": {
+    "lecture": 4,
+    "lab": 2,
+    "answers": 2
+  },
+  "pdf_visual_review": "All pages rendered and inspected; final enlarged mechanism figure checked.",
+  "public_output_sanitation": "No internal absolute paths, debugger or fontconfig output in logs/notebook.",
+  "review_scope": "No external publication; self-contained course files.",
+  "recovery_verified_utc": "2026-10-20T02:21:46Z",
+  "recovery_checks": "Experiments, unit tests, executed notebooks and all 16 PDF pages freshly rebuilt and verified after recovery; renamed-directory diagram check passed."
+}

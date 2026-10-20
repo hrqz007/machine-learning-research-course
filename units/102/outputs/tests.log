@@ -1,0 +1,12 @@
+test_alignment (test_experiment.TestExperiment.test_alignment) ... ok
+test_budgets (test_experiment.TestExperiment.test_budgets) ... ok
+test_grid (test_experiment.TestExperiment.test_grid) ... ok
+test_parameter_formula (test_experiment.TestExperiment.test_parameter_formula) ... ok
+test_split (test_experiment.TestExperiment.test_split) ... ok
+test_tokenizer (test_experiment.TestExperiment.test_tokenizer) ... ok
+test_validation_selection (test_experiment.TestExperiment.test_validation_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.300s
+
+OK

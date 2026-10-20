@@ -1,0 +1,7 @@
+torch==2.14.1+cpu
+numpy==2.3.5
+matplotlib==3.10.8
+nbformat==5.11.1
+ipython==9.17.1
+Markdown==3.11.2
+weasyprint==70.0
